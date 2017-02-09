@@ -1,7 +1,7 @@
 Basil.js
 ========
 
-This repo will hold the site/docs for Basil.js  
+This repo will hold the [site/docs for Basil.js](https://basiljs.github.io/)  
 
 ## License ##
 
