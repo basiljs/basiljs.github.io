@@ -1,0 +1,24 @@
+{
+  "name": "basiljs.github.io",
+  "version": "0.1.0",
+  "description": "the docs for Basil.js",
+  "scripts": {
+    "json-transform":"node .bin/json-transform"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/basiljs/basiljs.github.io.git"
+  },
+  "keywords": [
+    "Basil.js",
+    "extendscript",
+    "InDesign"
+  ],
+  "author": "Fabian 'fabiantheblind' Morón Zirfas <fabian.moron.zirfas@gmail.com> (http://fabianmoronzirfas.me)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/basiljs/basiljs.github.io/issues"
+  },
+  "homepage": "https://github.com/basiljs/basiljs.github.io#readme",
+  "devDependencies": {}
+}
