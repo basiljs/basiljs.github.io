@@ -2,6 +2,9 @@ const fs = require('fs');
 const api = require('../_data/api.json');
 const Entry = require('./lib/entry');
 const Parameter = require('./lib/parameter');
+const Category = require('./lib/category');
+const _ = require('lodash');
+
 
 let data = [];
 
@@ -14,6 +17,9 @@ api.forEach((e, i, arr)=> {
     let des = e.description.children[0].children[0].value;
     // console.log(`## Description:\n${des}`);
     entry.description = des;
+  }
+  if(e.hasOwnProperty('kind') === true) {
+    entry.kind = e.kind;
   }
 
   if(Array.isArray(e.params)) {
@@ -66,8 +72,38 @@ api.forEach((e, i, arr)=> {
 });
 
 // console.log(JSON.stringify(data, null, 2));
+// taken from here
+// http://stackoverflow.com/questions/23600897/using-lodash-groupby-how-to-add-your-own-keys-for-grouped-output
+let sortedByCategory = _.chain(data)
+ .groupBy('category')
+ .map((key, val)=>{
+   return {
+     entries: key,
+     cat: val
+   };
+ }).value();
 
-fs.writeFile('./_data/data.json', JSON.stringify(data), (err)=>{
+let sortedBySubCategory = _.chain(data)
+ .groupBy('subcategory')
+ .map((key, val)=>{
+   return {
+     entries: key,
+     subcat: val
+   };
+ }).value();
+
+
+// console.log(JSON.stringify(sortedBySubCategory, null, 2));
+
+
+fs.writeFile('./_data/categories.json', JSON.stringify(sortedByCategory, null, 2), (err)=>{
+  if(err) {
+    throw err;
+  }
+  // //console.log('saved');
+});
+
+fs.writeFile('./_data/sub-categories.json', JSON.stringify(sortedBySubCategory, null, 2), (err)=>{
   if(err) {
     throw err;
   }
