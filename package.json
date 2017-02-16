@@ -21,9 +21,15 @@
   },
   "homepage": "https://github.com/basiljs/basiljs.github.io#readme",
   "devDependencies": {
+    "cz-conventional-changelog": "^1.2.0",
     "fs-extra": "^2.0.0",
     "lodash": "^4.17.4",
     "yamljs": "^0.2.8"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }
