@@ -8,6 +8,7 @@ function Entry() {
   this.subcategory = null;
   this.parameters = [];
   this.kind = null;
+  this.tags = [];
 }
 
 module.exports = Entry;

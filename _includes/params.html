@@ -1,0 +1,8 @@
+<!-- test if a paramter is optional and return the text if [] -->
+{% if include.tag.title == 'param' %}
+{% if include.tag.type %}
+{% if include.tag.type.type %}
+{% if include.tag.type.type == 'OptionalType' %}[{% endif %}{{include.tag.name}}{% if include.tag.type.type == 'OptionalType' %}]{% endif %}
+{% endif %}
+{% endif %}
+{% endif %}

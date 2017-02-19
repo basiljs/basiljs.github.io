@@ -1,9 +1,10 @@
 var exports = module.exports = {};
 
-function Paramter() {
+function Tag() {
   this.name = null;
+  this.title = null;
   this.description = null;
-  this.optional = null;
+  this.type = null;
 }
 
-module.exports = Paramter;
+module.exports = Tag;
