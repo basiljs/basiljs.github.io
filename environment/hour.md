@@ -1,11 +1,15 @@
 ---
 layout: entry
-title: hour()
+title: hour
+codetitle: b.hour()
 description: 'The hour() function returns the current hour as a value from 0 - 23.'
 category: Environment
 subcategory: Date
-returns: null
+returns:
+    name: null
+    description: 'The current hour.'
+    type: [Number]
 parameters: []
+kind: function
 
 ---
-The hour() function returns the current hour as a value from 0 - 23.

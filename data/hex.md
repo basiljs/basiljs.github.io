@@ -1,13 +1,17 @@
 ---
 layout: entry
-title: hex()
+title: hex
+codetitle: 'b.hex(value, [len])'
 description: 'Convert a number to a hex representation.'
 category: Data
 subcategory: Conversion
-returns: 'The hex representation as a string'
+returns:
+    name: null
+    description: 'The hex representation as a string'
+    type: [String]
 parameters:
-    - {name: value, description: 'The number to convert'}
-    - {name: len, description: 'The length of the hex number to be created, default: 8'}
+    - {name: value, description: 'The number to convert', optional: false, type: [Number]}
+    - {name: len, description: 'The length of the hex number to be created, default: 8', optional: true, type: [Number]}
+kind: function
 
 ---
-Convert a number to a hex representation.

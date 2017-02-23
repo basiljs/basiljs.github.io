@@ -1,11 +1,15 @@
 ---
 layout: entry
-title: second()
+title: second
+codetitle: b.second()
 description: 'The second() function returns the current second as a value from 0 - 59.'
 category: Environment
 subcategory: Date
-returns: null
+returns:
+    name: null
+    description: 'The current second.'
+    type: [Number]
 parameters: []
+kind: function
 
 ---
-The second() function returns the current second as a value from 0 - 59.

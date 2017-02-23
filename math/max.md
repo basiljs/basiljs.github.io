@@ -1,14 +1,18 @@
 ---
 layout: entry
-title: max()
+title: max
+codetitle: 'b.max(a, [b], [c])'
 description: 'Determines the largest value in a sequence of numbers.'
 category: Math
 subcategory: Calculation
-returns: 'The highest value'
+returns:
+    name: null
+    description: 'The highest value.'
+    type: [Number]
 parameters:
-    - {name: param1, description: 'Either the first value or an array of Numbers'}
-    - {name: param2, description: 'Another value to be compared'}
-    - {name: param3, description: 'Another value to be compared'}
+    - {name: a, description: 'A value or an array of Numbers.', optional: false, type: [Number, Array]}
+    - {name: b, description: 'Another value to be compared.', optional: true, type: [Number]}
+    - {name: c, description: 'Another value to be compared.', optional: true, type: [Number]}
+kind: function
 
 ---
-Determines the largest value in a sequence of numbers.

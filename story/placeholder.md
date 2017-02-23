@@ -1,12 +1,16 @@
 ---
 layout: entry
-title: placeholder()
+title: placeholder
+codetitle: b.placeholder(textFrame)
 description: 'Fills the given textFrame and all linked textFrame with random placeholder text. The placeholder text will be added at the end of any already existing text in the text frame.'
 category: Story
 subcategory: null
-returns: 'The inserted placeholder text.'
+returns:
+    name: null
+    description: 'The inserted placeholder text.'
+    type: [Text]
 parameters:
-    - {name: textFrame, description: ""}
+    - {name: textFrame, description: null, optional: false, type: [TextFrame]}
+kind: function
 
 ---
-Fills the given textFrame and all linked textFrame with random placeholder text. The placeholder text will be added at the end of any already existing text in the text frame.

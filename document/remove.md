@@ -1,12 +1,13 @@
 ---
 layout: entry
-title: remove()
+title: remove
+codetitle: b.remove(obj)
 description: 'Removes the provided Page, Layer, PageItem, Swatch, etc.'
 category: Document
 subcategory: null
 returns: null
 parameters:
-    - {name: obj, description: 'The object to be removed'}
+    - {name: obj, description: 'The object to be removed', optional: false, type: [PageItem]}
+kind: function
 
 ---
-Removes the provided Page, Layer, PageItem, Swatch, etc.

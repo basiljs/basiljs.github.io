@@ -3,7 +3,8 @@ var exports = module.exports = {};
 function Paramter() {
   this.name = null;
   this.description = null;
-  this.optional = null;
+  this.optional = false;
+  this.type = [];
 }
 
 module.exports = Paramter;

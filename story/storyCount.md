@@ -1,11 +1,15 @@
 ---
 layout: entry
-title: storyCount()
+title: storyCount
+codetitle: b.storyCount()
 description: 'The number of all stories in the current document.'
 category: Story
 subcategory: null
-returns: 'count The amount of stories.'
+returns:
+    name: null
+    description: 'count The amount of stories.'
+    type: [Number]
 parameters: []
+kind: function
 
 ---
-The number of all stories in the current document.

@@ -1,14 +1,18 @@
 ---
 layout: entry
-title: constrain()
+title: constrain
+codetitle: 'b.constrain(aNumber, aMin, aMax)'
 description: 'Constrains a value to not exceed a maximum and minimum value.'
 category: Math
 subcategory: Calculation
-returns: 'The constrained value'
+returns:
+    name: null
+    description: 'The constrained value.'
+    type: [Number]
 parameters:
-    - {name: aNumber, description: 'the value to constrain'}
-    - {name: aMin, description: 'minimum limit'}
-    - {name: aMax, description: 'maximum limit'}
+    - {name: aNumber, description: 'The value to constrain.', optional: false, type: [Number]}
+    - {name: aMin, description: 'Minimum limit.', optional: false, type: [Number]}
+    - {name: aMax, description: 'Maximum limit.', optional: false, type: [Number]}
+kind: function
 
 ---
-Constrains a value to not exceed a maximum and minimum value.

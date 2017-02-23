@@ -1,11 +1,15 @@
 ---
 layout: entry
-title: HashList.getSortedKeys()
+title: HashList.getSortedKeys
+codetitle: b.HashList.getSortedKeys()
 description: 'Returns an array with all keys in a sorted order from higher to lower magnitude.'
 category: Data
 subcategory: HashList
-returns: 'An array with all the keys'
+returns:
+    name: null
+    description: 'An array with all the keys'
+    type: [Array]
 parameters: []
+kind: function
 
 ---
-Returns an array with all keys in a sorted order from higher to lower magnitude.

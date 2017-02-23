@@ -1,11 +1,15 @@
 ---
 layout: entry
-title: day()
+title: day
+codetitle: b.day()
 description: 'The day() function returns the current day as a value from 1 - 31.'
 category: Environment
 subcategory: Date
-returns: null
+returns:
+    name: null
+    description: 'The current day number.'
+    type: [Number]
 parameters: []
+kind: function
 
 ---
-The day() function returns the current day as a value from 1 - 31.

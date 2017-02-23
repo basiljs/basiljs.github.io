@@ -1,15 +1,17 @@
 ---
 layout: entry
-title: pasteboard()
+title: pasteboard
+codetitle: 'b.pasteboard(h, v)'
 description: 'Returns the current horizontal and vertical pasteboard margins and sets them if both arguements are given.'
 category: Document
 subcategory: Page
-returns: 'The current horizontal, vertical pasteboard margins.'
+returns:
+    name: null
+    description: 'The current horizontal, vertical pasteboard margins.'
+    type: [Array]
 parameters:
-    - {name: The, description: 'desired horizontal pasteboard margin.'}
-    - {name: The, description: 'desired vertical pasteboard margin.'}
-    - {name: h, description: ""}
-    - {name: v, description: ""}
+    - {name: h, description: 'The desired horizontal pasteboard margin.', optional: false, type: [Number]}
+    - {name: v, description: 'The desired vertical pasteboard margin.', optional: false, type: [Number]}
+kind: function
 
 ---
-Returns the current horizontal and vertical pasteboard margins and sets them if both arguements are given.

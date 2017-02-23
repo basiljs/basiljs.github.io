@@ -1,11 +1,15 @@
 ---
 layout: entry
-title: pageCount()
+title: pageCount
+codetitle: b.pageCount()
 description: 'The number of all pages in the current document.'
 category: Document
 subcategory: Page
-returns: 'The amount of pages.'
+returns:
+    name: null
+    description: 'The amount of pages.'
+    type: [Number]
 parameters: []
+kind: function
 
 ---
-The number of all pages in the current document.

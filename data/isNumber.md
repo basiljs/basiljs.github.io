@@ -1,12 +1,16 @@
 ---
 layout: entry
-title: isNumber()
+title: isNumber
+codetitle: b.isNumber(num)
 description: 'Checks whether a var is a number, returns true if this is the case'
 category: Data
 subcategory: Type-Check
-returns: 'returns true if this is the case'
+returns:
+    name: null
+    description: 'returns true if this is the case'
+    type: [Boolean]
 parameters:
-    - {name: num, description: 'The number to check'}
+    - {name: num, description: 'The number to check', optional: false, type: [Object, String, Number, Boolean]}
+kind: function
 
 ---
-Checks whether a var is a number, returns true if this is the case

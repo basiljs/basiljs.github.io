@@ -1,11 +1,12 @@
 ---
 layout: entry
 title: PIE
+codetitle: b.PIE
 description: 'Pie, used for arc() modes.'
 category: Document
 subcategory: Primitives
 returns: null
 parameters: []
+kind: constant
 
 ---
-Pie, used for arc() modes.

@@ -1,13 +1,14 @@
 ---
 layout: entry
-title: linkTextFrames()
+title: linkTextFrames
+codetitle: 'b.linkTextFrames(textFrameA, textFrameB)'
 description: 'Links the stories of two textframes to one story. Text of first textframe overflows to second one.'
 category: Story
 subcategory: null
 returns: null
 parameters:
-    - {name: textFrameA, description: ""}
-    - {name: textFrameB, description: ""}
+    - {name: textFrameA, description: null, optional: false, type: [TextFrame]}
+    - {name: textFrameB, description: null, optional: false, type: [TextFrame]}
+kind: function
 
 ---
-Links the stories of two textframes to one story. Text of first textframe overflows to second one.

@@ -1,12 +1,16 @@
 ---
 layout: entry
-title: textTracking()
+title: textTracking
+codetitle: 'b.textTracking([tracking])'
 description: 'Returns the current tracking and sets it if argument tracking is given.'
 category: Typography
 subcategory: null
-returns: 'The current tracking.'
+returns:
+    name: null
+    description: 'The current tracking.'
+    type: [Number]
 parameters:
-    - {name: tracking, description: 'The value to set.'}
+    - {name: tracking, description: 'The value to set.', optional: true, type: [Number]}
+kind: function
 
 ---
-Returns the current tracking and sets it if argument tracking is given.

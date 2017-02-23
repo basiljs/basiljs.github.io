@@ -1,13 +1,14 @@
 ---
 layout: entry
-title: transform()
+title: transform
+codetitle: 'b.transform(obj, matrix)'
 description: 'Transforms the given PageItem with the given Matrix2D object.'
 category: Document
 subcategory: Transformation
 returns: null
 parameters:
-    - {name: obj, description: 'The item to be transformed'}
-    - {name: matrix, description: 'The matrix to be applied'}
+    - {name: obj, description: 'The item to be transformed', optional: false, type: [PageItem]}
+    - {name: matrix, description: 'The matrix to be applied', optional: false, type: [Matrix2D]}
+kind: function
 
 ---
-Transforms the given PageItem with the given Matrix2D object.

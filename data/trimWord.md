@@ -1,12 +1,16 @@
 ---
 layout: entry
-title: trimWord()
+title: trimWord
+codetitle: b.trimWord(s)
 description: 'Removes multiple, leading or trailing spaces and punctuation from "words". E.g. converts "word!" to "word". Especially useful together with b.words();'
 category: Data
 subcategory: 'String Functions'
-returns: null
+returns:
+    name: null
+    description: 'The trimmed string'
+    type: [String]
 parameters:
-    - {name: s, description: 'The String to trim'}
+    - {name: s, description: 'The String to trim', optional: false, type: [String]}
+kind: function
 
 ---
-Removes multiple, leading or trailing spaces and punctuation from "words". E.g. converts "word!" to "word". Especially useful together with b.words();

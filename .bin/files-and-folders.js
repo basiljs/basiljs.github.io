@@ -17,32 +17,20 @@ data.forEach((element, index, array)=>{
       let file = `./${element.cat.toLowerCase()}/${e.name}.md`;
       let frontmatter = YAML.stringify({
         layout: 'entry',
-        title: e.name + (e.kind === 'function' ? '()' : ''),
+        title: e.name,
+        codetitle: e.codetitle,
         description: e.description,
         category: e.category,
         subcategory: e.subcategory,
         returns: e.returns,
-        parameters: e.parameters
+        parameters: e.parameters,
+        kind: e.kind
       }, 2);
-      fs.outputFile(file, `---\n${frontmatter}\n---\n${e.description}`, (error)=>{
+      fs.outputFile(file, `---\n${frontmatter}\n---\n`, (error)=>{
         if(error) {
           console.log(error);
         }
       });
     });
-    // test if the folder exists
-    // try{
-    //   fs.accessSync(dir);
-    //   console.log(`folder ${dir} exists`);
-    // }catch(error) {
-    //   if (error && error.code === 'ENOENT') {
-    //     console.log(`folder '${dir}' does not exist`);
-    //     try{
-
-    //     fs.mkdirSync(dir);
-    //   }catch(e)
-    //   }
-
-    // }
   }
 });

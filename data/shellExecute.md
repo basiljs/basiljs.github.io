@@ -1,12 +1,16 @@
 ---
 layout: entry
-title: shellExecute()
+title: shellExecute
+codetitle: b.shellExecute(cmd)
 description: 'Executes a shell command and returns the result, currently Mac only.'
 category: Data
 subcategory: Input
-returns: null
+returns:
+    name: null
+    description: null
+    type: [String]
 parameters:
-    - {name: cmd, description: 'The shell command to execute'}
+    - {name: cmd, description: 'The shell command to execute', optional: false, type: [String]}
+kind: function
 
 ---
-Executes a shell command and returns the result, currently Mac only.

@@ -1,13 +1,21 @@
 ---
 layout: entry
-title: Group()
-description: 'Returns the Group instance and sets it if argument Group is given.'
+title: Group
+codetitle: 'b.Group([pItem], name)'
+description: 'Returns an array of the items that were within the Group before b.ungroup() was called'
 category: Document
 subcategory: null
-returns: 'the current Group instance'
+returns:
+    name: null
+    description: 'The Page Item(s) that were grouped.'
+    type: [Group]
 parameters:
-    - {name: pItem, description: 'The PageItems array (must be at least 2) or name of Group name instance'}
-    - {name: name, description: '(optional) The name of the Group, only when creating a Group from Page Item(s)'}
+    - {name: pItem, description: 'The Group or name of Group name instance.', optional: true, type: [null]}
+    - {name: name, description: 'The name of the Group, only when creating a Group from Page Item(s).', optional: false, type: [String]}
+kind: function
 
 ---
-Returns the Group instance and sets it if argument Group is given.called
+g]}
+kind: function
+
+---

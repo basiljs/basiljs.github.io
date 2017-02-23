@@ -1,11 +1,12 @@
 ---
 layout: entry
-title: resetMatrix()
+title: resetMatrix
+codetitle: b.resetMatrix()
 description: 'Replaces the current matrix with the identity matrix.'
 category: Document
 subcategory: Transformation
 returns: null
 parameters: []
+kind: function
 
 ---
-Replaces the current matrix with the identity matrix.

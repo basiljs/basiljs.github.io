@@ -1,12 +1,16 @@
 ---
 layout: entry
-title: unhex()
+title: unhex
+codetitle: b.unhex(hex)
 description: 'Convert a hex representation to a number.'
 category: Data
 subcategory: Conversion
-returns: 'The number'
+returns:
+    name: null
+    description: 'The number'
+    type: [Number]
 parameters:
-    - {name: hex, description: 'The hex representation'}
+    - {name: hex, description: 'The hex representation', optional: false, type: [String]}
+kind: function
 
 ---
-Convert a hex representation to a number.

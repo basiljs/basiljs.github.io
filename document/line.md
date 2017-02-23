@@ -1,15 +1,19 @@
 ---
 layout: entry
-title: line()
+title: line
+codetitle: 'b.line(x1, y1, x2, y2)'
 description: 'Draws a line (a direct path between two points) to the page.'
 category: Document
 subcategory: Primitives
-returns: 'New GraphicLine'
+returns:
+    name: null
+    description: 'New GraphicLine'
+    type: [GraphicLine]
 parameters:
-    - {name: x1, description: 'Point A x-value'}
-    - {name: y1, description: 'Point A y-value'}
-    - {name: x2, description: 'Point B x-value'}
-    - {name: y2, description: 'Point B y-value'}
+    - {name: x1, description: 'Point A x-value', optional: false, type: [Number]}
+    - {name: y1, description: 'Point A y-value', optional: false, type: [Number]}
+    - {name: x2, description: 'Point B x-value', optional: false, type: [Number]}
+    - {name: y2, description: 'Point B y-value', optional: false, type: [Number]}
+kind: function
 
 ---
-Draws a line (a direct path between two points) to the page.

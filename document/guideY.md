@@ -1,12 +1,16 @@
 ---
 layout: entry
-title: guideY()
+title: guideY
+codetitle: b.guideY(y)
 description: 'Creates a horizontal guide line at the current spread and current layer.'
 category: Document
 subcategory: null
-returns: 'New guide'
+returns:
+    name: null
+    description: 'New guide line.'
+    type: [Guide]
 parameters:
-    - {name: y, description: 'Position of the new guide'}
+    - {name: y, description: 'Position of the new guide line.', optional: false, type: [Number]}
+kind: function
 
 ---
-Creates a horizontal guide line at the current spread and current layer.

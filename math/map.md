@@ -1,16 +1,20 @@
 ---
 layout: entry
-title: map()
-description: 'Re-maps a number from one range to another. In the example above, the number ''25'' is converted from a value in the range 0..100 into a value that ranges from the left edge (0) to the right edge (width) of the screen.'
+title: map
+codetitle: 'b.map(value, istart, istop, ostart, ostop)'
+description: 'Re-maps a number from one range to another.'
 category: Math
 subcategory: Calculation
-returns: 'the mapped value'
+returns:
+    name: null
+    description: 'The mapped value.'
+    type: [Number]
 parameters:
-    - {name: value, description: 'the value to be mapped'}
-    - {name: istart, description: 'start of the input range'}
-    - {name: istop, description: 'end of the input range'}
-    - {name: ostart, description: 'start of the output range'}
-    - {name: ostop, description: 'end of the output range'}
+    - {name: value, description: 'The value to be mapped.', optional: false, type: [Number]}
+    - {name: istart, description: 'The start of the input range.', optional: false, type: [Number]}
+    - {name: istop, description: 'The end of the input range.', optional: false, type: [Number]}
+    - {name: ostart, description: 'The start of the output range.', optional: false, type: [Number]}
+    - {name: ostop, description: 'The end of the output range.', optional: false, type: [Number]}
+kind: function
 
 ---
-Re-maps a number from one range to another. In the example above, the number '25' is converted from a value in the range 0..100 into a value that ranges from the left edge (0) to the right edge (width) of the screen.

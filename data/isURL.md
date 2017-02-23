@@ -1,12 +1,16 @@
 ---
 layout: entry
-title: isURL()
+title: isURL
+codetitle: b.isURL(url)
 description: 'Checks whether an URL string is valid.'
 category: Data
 subcategory: 'String Functions'
-returns: 'Returns either true or false'
+returns:
+    name: null
+    description: 'Returns either true or false'
+    type: [Boolean]
 parameters:
-    - {name: url, description: 'An url string to be checked'}
+    - {name: url, description: 'An url string to be checked', optional: false, type: [String]}
+kind: function
 
 ---
-Checks whether an URL string is valid.

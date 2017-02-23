@@ -1,11 +1,15 @@
 ---
 layout: entry
-title: month()
+title: month
+codetitle: b.month()
 description: 'The month() function returns the current month as a value from 1 - 12.'
 category: Environment
 subcategory: Date
-returns: null
+returns:
+    name: null
+    description: 'The current month number.'
+    type: [Number]
 parameters: []
+kind: function
 
 ---
-The month() function returns the current month as a value from 1 - 12.

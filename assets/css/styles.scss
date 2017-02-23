@@ -4,7 +4,17 @@
 ---
 
 // content
-body{
-  margin: 0 auto;
-  max-width: 50em;
-  }
+body {
+    margin: 0 auto;
+    max-width: 50em;
+    font-size: 1.1em;
+}
+
+.entry {
+    border-bottom: 1px dotted;
+}
+
+li {
+    line-height: 1.5em;
+    height: auto;
+}

@@ -1,12 +1,16 @@
 ---
 layout: entry
-title: exp()
-description: 'Returns Euler''s number e (2.71828...) raised to the power of the value parameter.'
+title: exp
+codetitle: b.exp(x)
+description: 'The Math.exp() function returns ex, where x is the argument, and e is Euler''s number (also known as Napier''s constant), the base of the natural logarithms.'
 category: Math
 subcategory: Calculation
-returns: null
+returns:
+    name: null
+    description: 'A number representing ex.'
+    type: [Number]
 parameters:
-    - {name: a, description: value}
+    - {name: x, description: 'A number.', optional: false, type: [Number]}
+kind: function
 
 ---
-Returns Euler's number e (2.71828...) raised to the power of the value parameter.

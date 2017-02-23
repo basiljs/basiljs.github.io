@@ -1,12 +1,16 @@
 ---
 layout: entry
-title: floor()
+title: floor
+codetitle: b.floor(a)
 description: 'Calculates the closest int value that is less than or equal to the value of the parameter.'
 category: Math
 subcategory: Calculation
-returns: null
+returns:
+    name: null
+    description: 'Integer number.'
+    type: [Number]
 parameters:
-    - {name: a, description: value}
+    - {name: a, description: 'A number.', optional: false, type: [Number]}
+kind: function
 
 ---
-Calculates the closest int value that is less than or equal to the value of the parameter.

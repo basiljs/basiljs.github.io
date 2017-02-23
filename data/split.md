@@ -1,16 +1,17 @@
 ---
 layout: entry
-title: split()
+title: split
+codetitle: 'b.split(str, [delim])'
 description: "The split() function breaks a string into pieces using a\ncharacter or string as the divider. The delim parameter specifies the\ncharacter or characters that mark the boundaries between each piece. A\nString[] array is returned that contains each of the pieces."
 category: Data
 subcategory: 'String Functions'
-returns: 'Array of strings'
+returns:
+    name: null
+    description: 'Array of strings'
+    type: [Array]
 parameters:
-    - {name: str, description: 'the String to be split'}
-    - {name: delim, description: 'The string used to separate the data'}
+    - {name: str, description: 'the String to be split', optional: false, type: [String]}
+    - {name: delim, description: 'The string used to separate the data', optional: true, type: [String]}
+kind: function
 
 ---
-The split() function breaks a string into pieces using a
-character or string as the divider. The delim parameter specifies the
-character or characters that mark the boundaries between each piece. A
-String[] array is returned that contains each of the pieces.
