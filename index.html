@@ -4,69 +4,23 @@ title: Basil.js Reference
 ---
 
 <h2 id="cat-ndx">Categories</h2>
-{% for element in site.data.cats-and-subcats %}
-{% for ele in element %}
+{% for element in site.data.cats-and-subcats %}{% for ele in element %}
   <h3>{{ele.cat}} {%unless ele.subcat == 'null' %}<em>{{ele.subcat}}</em>{% endunless %}</h3>
   <ul>
     {% for entry in ele.entries %}
     {% assign eid = entry.name |downcase %}
     <li id="{{eid}}-ndx"><a href="#{{eid}}">{{entry.codetitle}}</a></li>
     {% endfor %}
-  </ul>
-{% endfor %}
-<br>
-<br>
-{% endfor %}
-
-{% comment %}
-![](./assets/images/out.gif)
-* TOC
-{:toc}
-
-
-<!-- start categories index loop -->
-
-{% for item in site.data.categories %}
-{% assign id = item.cat | downcase %}
-<a href="#{{id}}"><h3 id="{{id}}-ndx">{{item.cat}}</h3></a>
-<ul>
-<!-- start entries in cat loop -->
-{% for entry in item.entries %}
-{% assign eid = entry.name |downcase %}
-<!-- end entry method test loop -->
-<a href="#{{eid}}"><li id="{{eid}}-ndx">{{entry.codetitle}}</li></a>
-{% endfor %}
-<!-- end entries in cat loop -->
-</ul>
-{% endfor %}
-<!-- end categories index loop -->
-
-
-<h3 id="sub-cat-ndx">Sub-Categories</h3>
-<!-- start items in sub cat loop -->
-<ul>
-{% for item in site.data.sub-categories %}
-{% assign id = item.subcat | downcase %}
-<li id="{{id}}-ndx">{{item.subcat}}</li>
-{% endfor %}
-<!-- end items in sub cat loop -->
-</ul>
-{% endcomment %}
+  </ul>{% endfor %}{% endfor %}
 <!-- start item in cat loop -->
-{% for item in site.data.categories %}
-{% assign id = item.cat | downcase %}
+{% for item in site.data.categories %}{% assign id = item.cat | downcase %}
 <h3 id="{{id}}">{{item.cat}}</h3>
 <!-- start entries in cat loop -->
-{% for entry in item.entries %}
-{% include entry-card.html entry=entry ispage=false %}
-{% endfor %}
+{% for entry in item.entries %}{% include entry-card.html entry=entry ispage=false %}{% endfor %}
 <!-- end entries in cat loop -->
-
 {% endfor %}
 <!-- end item in cat loop -->
-
 <div class="totop"><a href="#">back to index</a></div>
-
 <script type="text/javascript">
 var searchindex = {{site.data.categories | jsonify}};
 </script>

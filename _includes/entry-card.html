@@ -7,16 +7,16 @@
 <!-- we test if the include.entry has a parameters -->
 {% if include.entry.parameters.first %}
 <div class="parameters">
-<p>Parameter(s):</p>
+<p><strong>Parameter(s):</strong></p>
 <ul>
 {% for param in include.entry.parameters %}
-<li>{{param.name}} {% raw %}{{% endraw %}{% for type in param.type %}{{type}}{% unless forloop.last %} | {% endunless %}{% endfor %}{% raw %}}{% endraw %}{% if param.optional %} <em>Optional:</em>{%else%}:{% endif %}<br>{{param.description}}</li>{% endfor %}
+<li><strong>{{param.name}}</strong> {% raw %}{{% endraw %}{% for type in param.type %}{{type}}{% unless forloop.last %} | {% endunless %}{% endfor %}{% raw %}}{% endraw %}{% if param.optional %} <em>Optional:</em>{%else%}:{% endif %}<br>{{param.description}}</li>{% endfor %}
 </ul>
 </div> <!-- end parameters div -->
 {% endif %}
   {% if include.entry.returns != null %}
 <div class="returns">
-  <p>Returns:</p>
+  <p><strong>Returns:</strong></p>
   <ul>
     <li>
     {% raw %}{{% endraw %}{% for type in include.entry.returns.type %}{{type}}{% unless forloop.last %} | {% endunless %}{% endfor %}{% raw %}}{% endraw %}:<br>
