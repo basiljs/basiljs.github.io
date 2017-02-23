@@ -7,8 +7,8 @@ category: Math
 subcategory: Random
 returns: null
 parameters:
-    - {name: octaves, description: 'number of octaves to be used by the noise() function', optional: false, type: [Number]}
-    - {name: fallout, description: 'falloff factor for each octave', optional: false, type: [Number]}
+    - {name: octaves, description: 'Number of octaves to be used by the noise() function.', optional: false, type: [Number]}
+    - {name: fallout, description: 'Falloff factor for each octave.', optional: false, type: [Number]}
 kind: function
 
 ---

@@ -17,7 +17,7 @@ function generator(data) {
       });
 
       element.codetitle = `b.${element.name}(${params})`;
-      console.log(element);
+      // console.log(element);
 
     }else if (element.kind.toString() === 'constant') {
       element.codetitle = `b.${element.name}`;

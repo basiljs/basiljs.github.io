@@ -7,6 +7,7 @@ const Tag = require('./lib/tag');
 const Category = require('./lib/category');
 const _ = require('lodash');
 const generator = require('./lib/generator');
+const Filters = require('./lib/filters');
 
 
 let data = [];
@@ -106,6 +107,14 @@ api.forEach((e, i, arr)=> {
     });
   }
   data.push(entry);
+});
+
+// Some filtering
+let filter = new Filters();
+data.forEach((element)=>{
+
+  console.log(element);
+  element.name = filter.dotNull(element.name);
 });
 
 data = generator(data);
