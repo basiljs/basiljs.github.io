@@ -10,27 +10,55 @@ const YAML = require('yamljs');
 const data = require('../_data/categories.json'); // load the cats
 const OVERWRITE = true; // if we want to recreate everyting
 // console.log(process.cwd());
-data.forEach((element, index, array)=>{
-  if(element.cat !== null && element.cat !== 'null') {
-    element.entries.forEach((e, i, arr)=>{
-      console.log(e);
-      let file = `./${element.cat.toLowerCase()}/${e.name}.md`;
-      let frontmatter = YAML.stringify({
-        layout: 'entry',
-        title: e.name,
-        codetitle: e.codetitle,
-        description: e.description,
-        category: e.category,
-        subcategory: e.subcategory,
-        returns: e.returns,
-        parameters: e.parameters,
-        kind: e.kind
-      }, 2);
-      fs.outputFile(file, `---\n${frontmatter}\n---\n`, (error)=>{
-        if(error) {
-          console.log(error);
-        }
-      });
+
+function process(ele, folder) {
+  ele.entries.forEach((e, i, arr)=>{
+    // console.log(e);
+    let file = `${folder}${e.name}.md`;
+    let frontmatter = YAML.stringify({
+      layout: 'entry',
+      title: e.name,
+      codetitle: e.codetitle,
+      description: e.description,
+      category: e.category,
+      subcategory: e.subcategory,
+      returns: e.returns,
+      parameters: e.parameters,
+      kind: e.kind
+    }, 2);
+    fs.outputFile(file, `---\n${frontmatter}\n---\n`, (error)=>{
+      if(error) {
+        console.log(error);
+      }
     });
+  });
+}
+
+data.forEach((element, index, array)=>{
+  if(element.cat !== 'null') {
+    process(element, `./${element.cat.toLowerCase()}/`);
+    // element.entries.forEach((e, i, arr)=>{
+    //   console.log(e);
+    //   let file = `./${element.cat.toLowerCase()}/${e.name}.md`;
+    //   let frontmatter = YAML.stringify({
+    //     layout: 'entry',
+    //     title: e.name,
+    //     codetitle: e.codetitle,
+    //     description: e.description,
+    //     category: e.category,
+    //     subcategory: e.subcategory,
+    //     returns: e.returns,
+    //     parameters: e.parameters,
+    //     kind: e.kind
+    //   }, 2);
+    //   fs.outputFile(file, `---\n${frontmatter}\n---\n`, (error)=>{
+    //     if(error) {
+    //       console.log(error);
+    //     }
+    //   });
+    // });
+  }else{
+    process(element, './global/');
   }
+
 });

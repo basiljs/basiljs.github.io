@@ -5,7 +5,7 @@
         "name": "b",
         "description": null,
         "returns": null,
-        "category": null,
+        "category": "global",
         "subcategory": null,
         "parameters": [],
         "kind": "class",
@@ -24,7 +24,7 @@
         "codetitle": "b"
       }
     ],
-    "cat": "null"
+    "cat": "global"
   },
   {
     "entries": [

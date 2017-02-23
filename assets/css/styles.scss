@@ -8,13 +8,74 @@ body {
     margin: 0 auto;
     max-width: 50em;
     font-size: 1.1em;
+  line-height: 1.5;
+  padding: 1em 1em;
+  background-image: url('/assets/images/stripe_c40ccfac0db9e43c48e95a530d787366.png');
+
+}
+.main{
+    border: 1px solid #eaeaea;
+    border-right: 1px solid #9636FC;
+    border-bottom: 1px solid #FF4EFF;
+    background: #fff;
+    margin: 0.2em auto 1em auto;
+    padding-top: 0.2em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
 }
 
-.entry {
-    border-bottom: 1px dotted;
+h1,
+h2,
+strong {
+  color: #333;
+}
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+    border-bottom: 1px solid #9636FC;
+}
+h1, h2, h3, h4, h5, h6{
+  text-decoration:underline;
 }
 
+h4.entries {
+  text-decoration:none !important;
+
+}
+a:hover{
+  background-image: url('/assets/images/stripe_c40ccfac0db9e43c48e95a530d787366.png');
+}
 li {
     line-height: 1.5em;
     height: auto;
+}
+ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+li {
+  padding-left: 1em;
+  text-indent: -1em;
+}
+
+li:before {
+  content: "☛";
+  padding-right: 5px;
+}
+
+.entry {
+    border-bottom: 1px dashed #000;
+}
+
+.totop {
+    position: fixed;
+    left: 2em;
+    bottom: 2em;
+    z-index: 10;
+    background-color: white;
+    padding:0.5em;
 }

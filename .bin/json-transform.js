@@ -113,8 +113,9 @@ api.forEach((e, i, arr)=> {
 let filter = new Filters();
 data.forEach((element)=>{
 
-  console.log(element);
+  // console.log(element);
   element.name = filter.dotNull(element.name);
+  element.category = filter.nullToGlobal(element.category);
 });
 
 data = generator(data);
@@ -138,6 +139,44 @@ let sortedBySubCategory = _.chain(data)
    };
  }).value();
 
+let catsAndSubcats = [];
+sortedByCategory.forEach((ele)=>{
+  let res = _.chain(ele.entries)
+  .groupBy('subcategory')
+  .map((key, val)=>{
+    return {
+      entries: key,
+      subcat: val,
+      cat: ele.cat
+    };
+  }).value();
+  catsAndSubcats.push(res);
+});
+
+catsAndSubcats.forEach((element)=>{
+  element.forEach((ele)=>{
+    // console.log(ele);
+    if(ele.subcat === 'null') {
+      ele.subcat = '0';
+    }
+  });
+
+  element.sort((a, b)=>{
+    let txt1 = a.subcat.toUpperCase();
+    let txt2 = b.subcat.toUpperCase();
+    return (txt1 < txt2) ? -1 : (txt1 > txt2) ? 1 : 0;
+  });
+
+  element.forEach((ele)=>{
+    // console.log(ele);
+    if(ele.subcat === '0') {
+      ele.subcat = 'null';
+    }
+  });
+});
+
+
+// console.log(JSON.stringify(catsAndSubcats, null, 2));
 
 fs.writeFile('./_data/categories.json', JSON.stringify(sortedByCategory, null, 2), (err)=>{
   if(err) {
@@ -150,3 +189,10 @@ fs.writeFile('./_data/sub-categories.json', JSON.stringify(sortedBySubCategory, 
     throw err;
   }
 });
+
+fs.writeFile('./_data/cats-and-subcats.json', JSON.stringify(catsAndSubcats, null, 2), (err)=>{
+  if(err) {
+    throw err;
+  }
+});
+

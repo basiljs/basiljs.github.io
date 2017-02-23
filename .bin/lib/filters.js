@@ -8,6 +8,13 @@ function Filters () {
     }
     return str;
   };
+
+  this.nullToGlobal = function(str) {
+    if(str === null) {
+      str = 'global';
+    }
+    return str;
+  };
 }
 
 module.exports = Filters;

@@ -1,6 +1,6 @@
 <div class="entry">
 {% assign eid = include.entry.name |downcase %}
-<a href="/{{id}}/{{include.entry.name}}.html"><h4 id="{{eid}}" class="entries">{{include.entry.codetitle}}</h4></a>
+<h4 id="{{eid}}" class="entries">{% if include.ispage == false %}<a href="/{{id}}/{{include.entry.name}}.html">{% endif %}{{include.entry.codetitle}}{% if include.ispage == false %}</a>{% endif %}</h4>
 {% if include.entry.description != null %}
 <p class="descriptions">{{include.entry.description}}</p>
 {% endif %}
