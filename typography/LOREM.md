@@ -7,6 +7,6 @@ category: Typography
 subcategory: null
 returns: null
 parameters: []
-kind: constant
+kind: property
 
 ---

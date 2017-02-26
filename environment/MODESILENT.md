@@ -7,6 +7,6 @@ category: Environment
 subcategory: modes
 returns: null
 parameters: []
-kind: constant
+kind: property
 
 ---

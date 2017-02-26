@@ -5,7 +5,7 @@ title: Basil.js Reference
 
 <h2 id="cat-ndx">Categories</h2>
 {% for element in site.data.cats-and-subcats %}{% for ele in element %}
-  <h3>{{ele.cat}} {%unless ele.subcat == 'null' %}<em>{{ele.subcat}}</em>{% endunless %}</h3>
+  <h3>{{ele.cat}} {%unless ele.subcat == 'null' %}<span class="h3-subcat">{{ele.subcat}}</span class="h3-subcat">{% endunless %}</h3>
   <ul>
     {% for entry in ele.entries %}
     {% assign eid = entry.name |downcase %}
@@ -20,7 +20,8 @@ title: Basil.js Reference
 <!-- end entries in cat loop -->
 {% endfor %}
 <!-- end item in cat loop -->
-<div class="totop"><a href="#">back to index</a></div>
+<div class="totop"><a href="#">☝︎ back to index</a></div>
+<div class="totop-shadow"><a href="#">☝︎ back to index</a></div>
 <script type="text/javascript">
 var searchindex = {{site.data.categories | jsonify}};
 </script>

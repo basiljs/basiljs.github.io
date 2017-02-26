@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "the docs for Basil.js",
   "scripts": {
-    "json-transform": "node .bin/json-transform"
+    "generator": "node .bin/index"
   },
   "repository": {
     "type": "git",
@@ -24,6 +24,7 @@
     "cz-conventional-changelog": "^1.2.0",
     "fs-extra": "^2.0.0",
     "lodash": "^4.17.4",
+    "path-exists": "^3.0.0",
     "yamljs": "^0.2.8"
   },
   "dependencies": {},

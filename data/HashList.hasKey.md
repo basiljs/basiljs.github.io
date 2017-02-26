@@ -7,10 +7,10 @@ category: Data
 subcategory: HashList
 returns:
     name: null
-    description: null
+    description: 'Returns true or false.'
     type: [Boolean]
 parameters:
-    - {name: key, description: 'The key to check', optional: false, type: [any]}
+    - {name: key, description: 'The key to check.', optional: false, type: [String]}
 kind: function
 
 ---

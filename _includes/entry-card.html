@@ -5,6 +5,9 @@
 <p class="descriptions">{{include.entry.description}}</p>
 {% endif %}
 <!-- we test if the include.entry has a parameters -->
+<div class="type">
+  <p><strong>Type: {{ include.entry.kind  }}</strong></p>
+</div>
 {% if include.entry.parameters.first %}
 <div class="parameters">
 <p><strong>Parameter(s):</strong></p>
@@ -24,5 +27,16 @@
     </li>
   </ul>
 </div>
+  {% endif %}
+  {% if include.entry.examples.first %}
+  <div class="examples">
+  {% for example in include.entry.examples %}
+    <div class="example">
+    <pre><code>
+      {{example}}
+    </code></pre>
+    </div>
+  {% endfor %}
+  </div>
   {% endif %}
 </div> <!-- end entry div -->

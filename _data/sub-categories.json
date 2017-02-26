@@ -30,7 +30,7 @@
         "category": "Environment",
         "subcategory": null,
         "parameters": [],
-        "kind": "constant",
+        "kind": "property",
         "tags": [],
         "codetitle": "b.VERSION"
       },
@@ -41,7 +41,7 @@
         "category": "Color",
         "subcategory": null,
         "parameters": [],
-        "kind": "constant",
+        "kind": "property",
         "tags": [],
         "codetitle": "b.RGB"
       },
@@ -52,7 +52,7 @@
         "category": "Color",
         "subcategory": null,
         "parameters": [],
-        "kind": "constant",
+        "kind": "property",
         "tags": [],
         "codetitle": "b.CMYK"
       },
@@ -63,7 +63,7 @@
         "category": "Color",
         "subcategory": null,
         "parameters": [],
-        "kind": "constant",
+        "kind": "property",
         "tags": [],
         "codetitle": "b.LINEAR"
       },
@@ -74,7 +74,7 @@
         "category": "Color",
         "subcategory": null,
         "parameters": [],
-        "kind": "constant",
+        "kind": "property",
         "tags": [],
         "codetitle": "b.RADIAL"
       },
@@ -85,7 +85,7 @@
         "category": "Typography",
         "subcategory": null,
         "parameters": [],
-        "kind": "constant",
+        "kind": "property",
         "tags": [],
         "codetitle": "b.LOREM"
       },
@@ -96,7 +96,7 @@
         "category": "Environment",
         "subcategory": null,
         "parameters": [],
-        "kind": "constant",
+        "kind": "property",
         "tags": [],
         "codetitle": "b.width"
       },
@@ -107,7 +107,7 @@
         "category": "Environment",
         "subcategory": null,
         "parameters": [],
-        "kind": "constant",
+        "kind": "property",
         "tags": [],
         "codetitle": "b.height"
       },
@@ -1508,6 +1508,23 @@
         "codetitle": "b.placeholder(textFrame)"
       },
       {
+        "name": "Random.nextGaussian",
+        "description": null,
+        "returns": {
+          "name": null,
+          "description": "The next Gaussian random value.",
+          "type": [
+            "Number"
+          ]
+        },
+        "category": "global",
+        "subcategory": null,
+        "parameters": [],
+        "kind": "function",
+        "tags": [],
+        "codetitle": "b.Random.nextGaussian()"
+      },
+      {
         "name": "units",
         "description": "Sets the units of the document (like right clicking the rulers). The default units of basil.js are PT.",
         "returns": {
@@ -1565,7 +1582,7 @@
         "category": "Document",
         "subcategory": "Units",
         "parameters": [],
-        "kind": "constant",
+        "kind": "property",
         "tags": [],
         "codetitle": "b.PT"
       },
@@ -1576,7 +1593,7 @@
         "category": "Document",
         "subcategory": "Units",
         "parameters": [],
-        "kind": "constant",
+        "kind": "property",
         "tags": [],
         "codetitle": "b.PX"
       },
@@ -1587,7 +1604,7 @@
         "category": "Document",
         "subcategory": "Units",
         "parameters": [],
-        "kind": "constant",
+        "kind": "property",
         "tags": [],
         "codetitle": "b.CM"
       },
@@ -1598,7 +1615,7 @@
         "category": "Document",
         "subcategory": "Units",
         "parameters": [],
-        "kind": "constant",
+        "kind": "property",
         "tags": [],
         "codetitle": "b.MM"
       },
@@ -1609,7 +1626,7 @@
         "category": "Document",
         "subcategory": "Units",
         "parameters": [],
-        "kind": "constant",
+        "kind": "property",
         "tags": [],
         "codetitle": "b.IN"
       }
@@ -1625,7 +1642,7 @@
         "category": "Document",
         "subcategory": "Primitives",
         "parameters": [],
-        "kind": "constant",
+        "kind": "property",
         "tags": [],
         "codetitle": "b.CORNER"
       },
@@ -1636,7 +1653,7 @@
         "category": "Document",
         "subcategory": "Primitives",
         "parameters": [],
-        "kind": "constant",
+        "kind": "property",
         "tags": [],
         "codetitle": "b.CORNERS"
       },
@@ -1647,7 +1664,7 @@
         "category": "Document",
         "subcategory": "Primitives",
         "parameters": [],
-        "kind": "constant",
+        "kind": "property",
         "tags": [],
         "codetitle": "b.CENTER"
       },
@@ -1658,7 +1675,7 @@
         "category": "Document",
         "subcategory": "Primitives",
         "parameters": [],
-        "kind": "constant",
+        "kind": "property",
         "tags": [],
         "codetitle": "b.RADIUS"
       },
@@ -1669,7 +1686,7 @@
         "category": "Document",
         "subcategory": "Primitives",
         "parameters": [],
-        "kind": "constant",
+        "kind": "property",
         "tags": [],
         "codetitle": "b.CLOSE"
       },
@@ -1680,7 +1697,7 @@
         "category": "Document",
         "subcategory": "Primitives",
         "parameters": [],
-        "kind": "constant",
+        "kind": "property",
         "tags": [],
         "codetitle": "b.OPEN"
       },
@@ -1691,7 +1708,7 @@
         "category": "Document",
         "subcategory": "Primitives",
         "parameters": [],
-        "kind": "constant",
+        "kind": "property",
         "tags": [],
         "codetitle": "b.CHORD"
       },
@@ -1702,7 +1719,7 @@
         "category": "Document",
         "subcategory": "Primitives",
         "parameters": [],
-        "kind": "constant",
+        "kind": "property",
         "tags": [],
         "codetitle": "b.PIE"
       },
@@ -2050,7 +2067,7 @@
         "category": "Math",
         "subcategory": "Constants",
         "parameters": [],
-        "kind": "constant",
+        "kind": "property",
         "tags": [],
         "codetitle": "b.TWO_PI"
       },
@@ -2061,7 +2078,7 @@
         "category": "Math",
         "subcategory": "Constants",
         "parameters": [],
-        "kind": "constant",
+        "kind": "property",
         "tags": [],
         "codetitle": "b.PI"
       },
@@ -2072,7 +2089,7 @@
         "category": "Math",
         "subcategory": "Constants",
         "parameters": [],
-        "kind": "constant",
+        "kind": "property",
         "tags": [],
         "codetitle": "b.HALF_PI"
       },
@@ -2083,7 +2100,7 @@
         "category": "Math",
         "subcategory": "Constants",
         "parameters": [],
-        "kind": "constant",
+        "kind": "property",
         "tags": [],
         "codetitle": "b.QUARTER_PI"
       },
@@ -2094,7 +2111,7 @@
         "category": "Math",
         "subcategory": "Constants",
         "parameters": [],
-        "kind": "constant",
+        "kind": "property",
         "tags": [],
         "codetitle": "b.SINCOS_LENGTH"
       },
@@ -2105,7 +2122,7 @@
         "category": "Math",
         "subcategory": "Constants",
         "parameters": [],
-        "kind": "constant",
+        "kind": "property",
         "tags": [],
         "codetitle": "b.EPSILON"
       },
@@ -2116,7 +2133,7 @@
         "category": "Math",
         "subcategory": "Constants",
         "parameters": [],
-        "kind": "constant",
+        "kind": "property",
         "tags": [],
         "codetitle": "b.KAPPA"
       }
@@ -2132,7 +2149,7 @@
         "category": "Document",
         "subcategory": "Page",
         "parameters": [],
-        "kind": "constant",
+        "kind": "property",
         "tags": [],
         "codetitle": "b.PAGE"
       },
@@ -2143,7 +2160,7 @@
         "category": "Document",
         "subcategory": "Page",
         "parameters": [],
-        "kind": "constant",
+        "kind": "property",
         "tags": [],
         "codetitle": "b.MARGIN"
       },
@@ -2154,7 +2171,7 @@
         "category": "Document",
         "subcategory": "Page",
         "parameters": [],
-        "kind": "constant",
+        "kind": "property",
         "tags": [],
         "codetitle": "b.BLEED"
       },
@@ -2165,7 +2182,7 @@
         "category": "Document",
         "subcategory": "Page",
         "parameters": [],
-        "kind": "constant",
+        "kind": "property",
         "tags": [],
         "codetitle": "b.FACING_PAGES"
       },
@@ -2176,7 +2193,7 @@
         "category": "Document",
         "subcategory": "Page",
         "parameters": [],
-        "kind": "constant",
+        "kind": "property",
         "tags": [],
         "codetitle": "b.FACING_BLEEDS"
       },
@@ -2187,7 +2204,7 @@
         "category": "Document",
         "subcategory": "Page",
         "parameters": [],
-        "kind": "constant",
+        "kind": "property",
         "tags": [],
         "codetitle": "b.FACING_MARGINS"
       },
@@ -2198,7 +2215,7 @@
         "category": "Document",
         "subcategory": "Page",
         "parameters": [],
-        "kind": "constant",
+        "kind": "property",
         "tags": [],
         "codetitle": "b.AT_BEGINNING"
       },
@@ -2209,7 +2226,7 @@
         "category": "Document",
         "subcategory": "Page",
         "parameters": [],
-        "kind": "constant",
+        "kind": "property",
         "tags": [],
         "codetitle": "b.AT_END"
       },
@@ -2220,7 +2237,7 @@
         "category": "Document",
         "subcategory": "Page",
         "parameters": [],
-        "kind": "constant",
+        "kind": "property",
         "tags": [],
         "codetitle": "b.BEFORE"
       },
@@ -2231,7 +2248,7 @@
         "category": "Document",
         "subcategory": "Page",
         "parameters": [],
-        "kind": "constant",
+        "kind": "property",
         "tags": [],
         "codetitle": "b.AFTER"
       },
@@ -2590,7 +2607,7 @@
         "category": "Environment",
         "subcategory": "modes",
         "parameters": [],
-        "kind": "constant",
+        "kind": "property",
         "tags": [],
         "codetitle": "b.MODESILENT"
       },
@@ -2601,7 +2618,7 @@
         "category": "Environment",
         "subcategory": "modes",
         "parameters": [],
-        "kind": "constant",
+        "kind": "property",
         "tags": [],
         "codetitle": "b.MODEHIDDEN"
       },
@@ -2612,7 +2629,7 @@
         "category": "Environment",
         "subcategory": "modes",
         "parameters": [],
-        "kind": "constant",
+        "kind": "property",
         "tags": [],
         "codetitle": "b.MODEVISIBLE"
       }
@@ -5496,14 +5513,7 @@
           }
         ],
         "kind": "function",
-        "tags": [
-          {
-            "name": null,
-            "title": "constructor",
-            "description": null,
-            "type": null
-          }
-        ],
+        "tags": [],
         "codetitle": "b.Random(seed)"
       },
       {
@@ -5602,11 +5612,73 @@
   {
     "entries": [
       {
-        "name": "forEach",
+        "name": "Array.filter",
+        "description": "The ",
+        "returns": {
+          "name": null,
+          "description": "The new array with the elements that pass the test.",
+          "type": [
+            "Array"
+          ]
+        },
+        "category": "Data",
+        "subcategory": "Array",
+        "parameters": [
+          {
+            "name": "callback",
+            "description": "The Function is a predicate, to test each element of the array. Return true to keep the element, false otherwise.",
+            "optional": false,
+            "type": [
+              "Function"
+            ]
+          }
+        ],
+        "kind": "function",
+        "tags": [
+          {
+            "title": "description",
+            "description": "The <a href=\"https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/filter\">filter()</a> method creates a new array with all elements that pass the test implemented by the provided function."
+          }
+        ],
+        "codetitle": "b.Array.filter(callback)"
+      },
+      {
+        "name": "Array.map",
+        "description": "The ",
+        "returns": {
+          "name": null,
+          "description": "The new array with each element being the result of the callback function.",
+          "type": [
+            "Array"
+          ]
+        },
+        "category": "Data",
+        "subcategory": "Array",
+        "parameters": [
+          {
+            "name": "callback",
+            "description": "Function that produces an element of the new Array.",
+            "optional": false,
+            "type": [
+              "Function"
+            ]
+          }
+        ],
+        "kind": "function",
+        "tags": [
+          {
+            "title": "description",
+            "description": "The <a href=\"https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Array/map\">map()</a> method creates a new array with the results of calling a provided function on every element in this array."
+          }
+        ],
+        "codetitle": "b.Array.map(callback)"
+      },
+      {
+        "name": "Array.forEach",
         "description": "Used to run a function on all elements of an array. Please note the existance of the convenience methods b.stories(), b.paragraphs(), b.lines(), b.words() and b.characters() that are used to iterate through all instances of the given type in the given document.",
         "returns": null,
         "category": "Data",
-        "subcategory": "Array Functions",
+        "subcategory": "Array",
         "parameters": [
           {
             "name": "collection",
@@ -5627,39 +5699,32 @@
         ],
         "kind": "function",
         "tags": [],
-        "codetitle": "b.forEach(collection, cb)"
+        "codetitle": "b.Array.forEach(collection, cb)"
       }
     ],
-    "subcat": "Array Functions"
+    "subcat": "Array"
   },
   {
     "entries": [
       {
         "name": "HashList",
-        "description": "HashList is a data container that allows you to store information as key -> value pairs. As usual in JavaScript mixed types of keys and values are accepted in one HashList instance.",
+        "description": "HashList is a data container that allows you to store information as key - value pairs. As usual in JavaScript mixed types of keys and values are accepted in one HashList instance.",
         "returns": null,
         "category": "Data",
         "subcategory": "HashList",
         "parameters": [],
         "kind": "function",
-        "tags": [
-          {
-            "name": null,
-            "title": "constructor",
-            "description": null,
-            "type": null
-          }
-        ],
+        "tags": [],
         "codetitle": "b.HashList()"
       },
       {
         "name": "HashList.remove",
-        "description": "This removes a key -> value pair by its key.",
+        "description": "This removes a key - value pair by its key.",
         "returns": {
           "name": null,
-          "description": "The value before deletion",
+          "description": "The value before deletion.",
           "type": [
-            "any"
+            "Object"
           ]
         },
         "category": "Data",
@@ -5667,10 +5732,10 @@
         "parameters": [
           {
             "name": "key",
-            "description": "The key to delete",
+            "description": "The key to delete.",
             "optional": false,
             "type": [
-              "any"
+              "String"
             ]
           }
         ],
@@ -5683,9 +5748,9 @@
         "description": "This gets a value by its key.",
         "returns": {
           "name": null,
-          "description": "The value",
+          "description": "The value.",
           "type": [
-            "any"
+            "Object"
           ]
         },
         "category": "Data",
@@ -5693,10 +5758,10 @@
         "parameters": [
           {
             "name": "key",
-            "description": "The key to look for",
+            "description": "The key to look for.",
             "optional": false,
             "type": [
-              "any"
+              "String"
             ]
           }
         ],
@@ -5706,12 +5771,12 @@
       },
       {
         "name": "HashList.set",
-        "description": "This sets a key -> value pair. If a key is already existing, the value will be updated. Please note that Functions are currently not supported as values.",
+        "description": "This sets a key - value pair. If a key is already existing, the value will be updated. Please note that Functions are currently not supported as values.",
         "returns": {
           "name": null,
-          "description": "The value after setting",
+          "description": "The value after setting.",
           "type": [
-            "any"
+            "Object"
           ]
         },
         "category": "Data",
@@ -5719,18 +5784,21 @@
         "parameters": [
           {
             "name": "key",
-            "description": "The key to use",
+            "description": "The key to use.",
             "optional": false,
             "type": [
-              "any"
+              "String"
             ]
           },
           {
             "name": "value",
-            "description": "The value to set",
+            "description": "The value to set.",
             "optional": false,
             "type": [
-              "any"
+              "Object",
+              "String",
+              "Number",
+              "Boolean"
             ]
           }
         ],
@@ -5743,7 +5811,7 @@
         "description": "Checks for the existence of a given key.",
         "returns": {
           "name": null,
-          "description": null,
+          "description": "Returns true or false.",
           "type": [
             "Boolean"
           ]
@@ -5753,10 +5821,10 @@
         "parameters": [
           {
             "name": "key",
-            "description": "The key to check",
+            "description": "The key to check.",
             "optional": false,
             "type": [
-              "any"
+              "String"
             ]
           }
         ],
@@ -5766,10 +5834,10 @@
       },
       {
         "name": "HashList.hasValue",
-        "description": "Checks if a certain value exists at least once in all of the key -> value pairs.",
+        "description": "Checks if a certain value exists at least once in all of the key - value pairs.",
         "returns": {
           "name": null,
-          "description": null,
+          "description": "Returns true or false.",
           "type": [
             "Boolean"
           ]
@@ -5779,10 +5847,13 @@
         "parameters": [
           {
             "name": "value",
-            "description": null,
+            "description": "The value to check.",
             "optional": false,
             "type": [
-              "any"
+              "Object",
+              "String",
+              "Number",
+              "Boolean"
             ]
           }
         ],
@@ -5795,7 +5866,7 @@
         "description": "Returns an array of all keys that are sorted by their values from highest to lowest. Please note that this only works if you have conistently used Numbers for values.",
         "returns": {
           "name": null,
-          "description": "An array with all the keys",
+          "description": "An array with all the keys.",
           "type": [
             "Array"
           ]
@@ -5812,7 +5883,7 @@
         "description": "Returns an array with all keys in a sorted order from higher to lower magnitude.",
         "returns": {
           "name": null,
-          "description": "An array with all the keys",
+          "description": "An array with all the keys sorted.",
           "type": [
             "Array"
           ]
@@ -5829,7 +5900,7 @@
         "description": "Returns an array with all keys.",
         "returns": {
           "name": null,
-          "description": "An array with all the keys",
+          "description": "An array with all the keys.",
           "type": [
             "Array"
           ]
@@ -5842,11 +5913,11 @@
         "codetitle": "b.HashList.getKeys()"
       },
       {
-        "name": "HashList.getKeys",
-        "description": "Returns an array with all keys.",
+        "name": "HashList.getValues",
+        "description": "Returns an array with all values.",
         "returns": {
           "name": null,
-          "description": "An array with all the keys",
+          "description": "An array with all the values.",
           "type": [
             "Array"
           ]
@@ -5856,11 +5927,11 @@
         "parameters": [],
         "kind": "function",
         "tags": [],
-        "codetitle": "b.HashList.getKeys()"
+        "codetitle": "b.HashList.getValues()"
       },
       {
         "name": "HashList.clear",
-        "description": "Deletes all the key -> value pairs in this HashList.",
+        "description": "Deletes all the key - value pairs in this HashList.",
         "returns": null,
         "category": "Data",
         "subcategory": "HashList",
@@ -6136,15 +6207,595 @@
           }
         ],
         "kind": "function",
-        "tags": [
+        "tags": [],
+        "codetitle": "b.Vector(x, y, [z])"
+      },
+      {
+        "name": "Vector.set",
+        "description": "Sets the x, y, and z component of the vector using three separate variables, the data from a Vector, or the values from a float array.",
+        "returns": null,
+        "category": "Math",
+        "subcategory": "Vector",
+        "parameters": [
           {
-            "name": null,
-            "title": "constructor",
-            "description": null,
-            "type": null
+            "name": "v",
+            "description": "Either a vector, array or x component.",
+            "optional": false,
+            "type": [
+              "Number",
+              "Array",
+              "Vector"
+            ]
+          },
+          {
+            "name": "y",
+            "description": "Optional, the y component.",
+            "optional": true,
+            "type": [
+              "Number"
+            ]
+          },
+          {
+            "name": "z",
+            "description": "Optional, the z component.",
+            "optional": true,
+            "type": [
+              "Number"
+            ]
           }
         ],
-        "codetitle": "b.Vector(x, y, [z])"
+        "kind": "function",
+        "tags": [],
+        "codetitle": "b.Vector.set(v, [y], [z])"
+      },
+      {
+        "name": "Vector.get",
+        "description": "Gets a copy of the vector, returns a Vector object.",
+        "returns": {
+          "name": null,
+          "description": "A copy of the vector.",
+          "type": [
+            "Vector"
+          ]
+        },
+        "category": "Math",
+        "subcategory": "Vector",
+        "parameters": [],
+        "kind": "function",
+        "tags": [],
+        "codetitle": "b.Vector.get()"
+      },
+      {
+        "name": "Vector.mag",
+        "description": "Calculates the magnitude (length) of the vector and returns the result as a float",
+        "returns": {
+          "name": null,
+          "description": "The length.",
+          "type": [
+            "Number"
+          ]
+        },
+        "category": "Math",
+        "subcategory": "Vector",
+        "parameters": [],
+        "kind": "function",
+        "tags": [],
+        "codetitle": "b.Vector.mag()"
+      },
+      {
+        "name": "Vector.add",
+        "description": "Adds x, y, and z components to a vector, adds one vector to another.",
+        "returns": null,
+        "category": "Math",
+        "subcategory": "Vector",
+        "parameters": [
+          {
+            "name": "v",
+            "description": "Either a full vector or an x component.",
+            "optional": false,
+            "type": [
+              "Vector",
+              "Number"
+            ]
+          },
+          {
+            "name": "y",
+            "description": "Optional, the y component.",
+            "optional": true,
+            "type": [
+              "Number"
+            ]
+          },
+          {
+            "name": "z",
+            "description": "Optional, the z component.",
+            "optional": true,
+            "type": [
+              "Number"
+            ]
+          }
+        ],
+        "kind": "function",
+        "tags": [],
+        "codetitle": "b.Vector.add(v, [y], [z])"
+      },
+      {
+        "name": "Vector.sub",
+        "description": "Substract x, y, and z components or a full vector from this vector",
+        "returns": null,
+        "category": "Math",
+        "subcategory": "Vector",
+        "parameters": [
+          {
+            "name": "v",
+            "description": "Either a full vector or an x component.",
+            "optional": false,
+            "type": [
+              "Vector",
+              "Number"
+            ]
+          },
+          {
+            "name": "y",
+            "description": "Optional, the y component.",
+            "optional": true,
+            "type": [
+              "Number"
+            ]
+          },
+          {
+            "name": "z",
+            "description": "Optional, the z component.",
+            "optional": true,
+            "type": [
+              "Number"
+            ]
+          }
+        ],
+        "kind": "function",
+        "tags": [],
+        "codetitle": "b.Vector.sub(v, [y], [z])"
+      },
+      {
+        "name": "Vector.mult",
+        "description": "Multiplies this vector with x, y, and z components or another vector.",
+        "returns": null,
+        "category": "Math",
+        "subcategory": "Vector",
+        "parameters": [
+          {
+            "name": "v",
+            "description": "Either a full vector or an x component.",
+            "optional": false,
+            "type": [
+              "Vector",
+              "Number"
+            ]
+          },
+          {
+            "name": "y",
+            "description": "Optional, the y component.",
+            "optional": true,
+            "type": [
+              "Number"
+            ]
+          },
+          {
+            "name": "z",
+            "description": "Optional, the z component.",
+            "optional": true,
+            "type": [
+              "Number"
+            ]
+          }
+        ],
+        "kind": "function",
+        "tags": [],
+        "codetitle": "b.Vector.mult(v, [y], [z])"
+      },
+      {
+        "name": "Vector.div",
+        "description": "Divides this vector through x, y, and z components or another vector.",
+        "returns": null,
+        "category": "Math",
+        "subcategory": "Vector",
+        "parameters": [
+          {
+            "name": "v",
+            "description": "Either a full vector or an x component.",
+            "optional": false,
+            "type": [
+              "Vector",
+              "Number"
+            ]
+          },
+          {
+            "name": "y",
+            "description": "Optional, the y component.",
+            "optional": true,
+            "type": [
+              "Number"
+            ]
+          },
+          {
+            "name": "z",
+            "description": "Optional, the z component.",
+            "optional": true,
+            "type": [
+              "Number"
+            ]
+          }
+        ],
+        "kind": "function",
+        "tags": [],
+        "codetitle": "b.Vector.div(v, [y], [z])"
+      },
+      {
+        "name": "Vector.dist",
+        "description": "Calculates the distance from this vector to another as x, y, and z components or full vector.",
+        "returns": {
+          "name": null,
+          "description": "The distance.",
+          "type": [
+            "Number"
+          ]
+        },
+        "category": "Math",
+        "subcategory": "Vector",
+        "parameters": [
+          {
+            "name": "v",
+            "description": "Either a full vector or an x component.",
+            "optional": false,
+            "type": [
+              "Vector",
+              "Number"
+            ]
+          },
+          {
+            "name": "y",
+            "description": "Optional, the y component.",
+            "optional": true,
+            "type": [
+              "Number"
+            ]
+          },
+          {
+            "name": "z",
+            "description": "Optional, the z component.",
+            "optional": true,
+            "type": [
+              "Number"
+            ]
+          }
+        ],
+        "kind": "function",
+        "tags": [],
+        "codetitle": "b.Vector.dist(v, [y], [z])"
+      },
+      {
+        "name": "Vector.dot",
+        "description": "Calculates the dot product from this vector to another as x, y, and z components or full vector.",
+        "returns": {
+          "name": null,
+          "description": "The dot product.",
+          "type": [
+            "Number"
+          ]
+        },
+        "category": "Math",
+        "subcategory": "Vector",
+        "parameters": [
+          {
+            "name": "v",
+            "description": "Either a full vector or an x component.",
+            "optional": false,
+            "type": [
+              "Vector",
+              "Number"
+            ]
+          },
+          {
+            "name": "y",
+            "description": "Optional, the y component.",
+            "optional": true,
+            "type": [
+              "Number"
+            ]
+          },
+          {
+            "name": "z",
+            "description": "Optional, the z component.",
+            "optional": true,
+            "type": [
+              "Number"
+            ]
+          }
+        ],
+        "kind": "function",
+        "tags": [],
+        "codetitle": "b.Vector.dot(v, [y], [z])"
+      },
+      {
+        "name": "Vector.cross",
+        "description": "Calculates the cross product from this vector to another as x, y, and z components or full vector.",
+        "returns": {
+          "name": null,
+          "description": "The cross product.",
+          "type": [
+            "Number"
+          ]
+        },
+        "category": "Math",
+        "subcategory": "Vector",
+        "parameters": [
+          {
+            "name": "v",
+            "description": "Either a full vector or an x component.",
+            "optional": false,
+            "type": [
+              "Vector",
+              "Number"
+            ]
+          },
+          {
+            "name": "y",
+            "description": "Optional, the y component.",
+            "optional": true,
+            "type": [
+              "Number"
+            ]
+          },
+          {
+            "name": "z",
+            "description": "Optional, the z component.",
+            "optional": true,
+            "type": [
+              "Number"
+            ]
+          }
+        ],
+        "kind": "function",
+        "tags": [],
+        "codetitle": "b.Vector.cross(v, [y], [z])"
+      },
+      {
+        "name": "Vector.normalize",
+        "description": "Normalizes the length of this vector to 1.",
+        "returns": null,
+        "category": "Math",
+        "subcategory": "Vector",
+        "parameters": [],
+        "kind": "function",
+        "tags": [],
+        "codetitle": "b.Vector.normalize()"
+      },
+      {
+        "name": "Vector.limit",
+        "description": "Normalizes the length of this vector to the given parameter.",
+        "returns": null,
+        "category": "Math",
+        "subcategory": "Vector",
+        "parameters": [
+          {
+            "name": "high",
+            "description": "The value to scale to.",
+            "optional": false,
+            "type": [
+              "Number"
+            ]
+          }
+        ],
+        "kind": "function",
+        "tags": [],
+        "codetitle": "b.Vector.limit(high)"
+      },
+      {
+        "name": "Vector.heading",
+        "description": "The 2D orientation (heading) of this vector in radian.",
+        "returns": {
+          "name": null,
+          "description": "A radian angle value.",
+          "type": [
+            "Number"
+          ]
+        },
+        "category": "Math",
+        "subcategory": "Vector",
+        "parameters": [],
+        "kind": "function",
+        "tags": [],
+        "codetitle": "b.Vector.heading()"
+      },
+      {
+        "name": "Vector.toString",
+        "description": "Returns data about this vector as a string.",
+        "returns": {
+          "name": null,
+          "description": "The x, y and z components as a string.",
+          "type": [
+            "String"
+          ]
+        },
+        "category": "Math",
+        "subcategory": "Vector",
+        "parameters": [],
+        "kind": "function",
+        "tags": [],
+        "codetitle": "b.Vector.toString()"
+      },
+      {
+        "name": "Vector.array",
+        "description": "Returns this vector as an array ",
+        "returns": {
+          "name": null,
+          "description": "The x, y and z components as  an Array of [x,y,z].",
+          "type": [
+            "Array"
+          ]
+        },
+        "category": "Math",
+        "subcategory": "Vector",
+        "parameters": [],
+        "kind": "function",
+        "tags": [],
+        "codetitle": "b.Vector.array()"
+      },
+      {
+        "name": "Vector.dist",
+        "description": "Static function. Calculates the Euclidean distance between two points (considering a point as a vector object).\nIs meant to be called \"static\" i.e. Vector.dist(v1, v2);",
+        "returns": {
+          "name": null,
+          "description": "The distance.",
+          "type": [
+            "Number"
+          ]
+        },
+        "category": "Math",
+        "subcategory": "Vector",
+        "parameters": [
+          {
+            "name": "v1",
+            "description": "The first vector.",
+            "optional": false,
+            "type": [
+              "Vector"
+            ]
+          },
+          {
+            "name": "v2",
+            "description": "The second vector.",
+            "optional": false,
+            "type": [
+              "Vector"
+            ]
+          }
+        ],
+        "kind": "function",
+        "tags": [
+          {
+            "title": "static",
+            "description": null
+          }
+        ],
+        "codetitle": "b.Vector.dist(v1, v2)"
+      },
+      {
+        "name": "Vector.dot",
+        "description": "Static function. Calculates the dot product of two vectors.\nIs meant to be called \"static\" i.e. Vector.dot(v1, v2);",
+        "returns": {
+          "name": null,
+          "description": "The dot product.",
+          "type": [
+            "Number"
+          ]
+        },
+        "category": "Math",
+        "subcategory": "Vector",
+        "parameters": [
+          {
+            "name": "v1",
+            "description": "The first vector.",
+            "optional": false,
+            "type": [
+              "Vector"
+            ]
+          },
+          {
+            "name": "v2",
+            "description": "The second vector.",
+            "optional": false,
+            "type": [
+              "Vector"
+            ]
+          }
+        ],
+        "kind": "function",
+        "tags": [
+          {
+            "title": "static",
+            "description": null
+          }
+        ],
+        "codetitle": "b.Vector.dot(v1, v2)"
+      },
+      {
+        "name": "Vector.cross",
+        "description": "Static function. Calculates the cross product of two vectors.\nIs meant to be called \"static\" i.e. Vector.cross(v1, v2);",
+        "returns": {
+          "name": null,
+          "description": "The cross product.",
+          "type": [
+            "Number"
+          ]
+        },
+        "category": "Math",
+        "subcategory": "Vector",
+        "parameters": [
+          {
+            "name": "v1",
+            "description": "The first vector.",
+            "optional": false,
+            "type": [
+              "Vector"
+            ]
+          },
+          {
+            "name": "v2",
+            "description": "The second vector.",
+            "optional": false,
+            "type": [
+              "Vector"
+            ]
+          }
+        ],
+        "kind": "function",
+        "tags": [
+          {
+            "title": "static",
+            "description": null
+          }
+        ],
+        "codetitle": "b.Vector.cross(v1, v2)"
+      },
+      {
+        "name": "Vector.angleBetween",
+        "description": "Static function. Calculates the angle between two vectors.\nIs meant to be called \"static\" i.e. Vector.angleBetween(v1, v2);",
+        "returns": {
+          "name": null,
+          "description": "The angle.",
+          "type": [
+            "Number"
+          ]
+        },
+        "category": "Math",
+        "subcategory": "Vector",
+        "parameters": [
+          {
+            "name": "v1",
+            "description": "The first vector.",
+            "optional": false,
+            "type": [
+              "Vector"
+            ]
+          },
+          {
+            "name": "v2",
+            "description": "The second vector.",
+            "optional": false,
+            "type": [
+              "Vector"
+            ]
+          }
+        ],
+        "kind": "function",
+        "tags": [
+          {
+            "title": "static",
+            "description": null
+          }
+        ],
+        "codetitle": "b.Vector.angleBetween(v1, v2)"
       }
     ],
     "subcat": "Vector"

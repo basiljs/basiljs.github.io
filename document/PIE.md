@@ -7,6 +7,6 @@ category: Document
 subcategory: Primitives
 returns: null
 parameters: []
-kind: constant
+kind: property
 
 ---

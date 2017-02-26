@@ -7,10 +7,10 @@ category: Data
 subcategory: HashList
 returns:
     name: null
-    description: 'The value'
-    type: [any]
+    description: 'The value.'
+    type: [Object]
 parameters:
-    - {name: key, description: 'The key to look for', optional: false, type: [any]}
+    - {name: key, description: 'The key to look for.', optional: false, type: [String]}
 kind: function
 
 ---

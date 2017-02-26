@@ -7,6 +7,6 @@ category: Document
 subcategory: Page
 returns: null
 parameters: []
-kind: constant
+kind: property
 
 ---

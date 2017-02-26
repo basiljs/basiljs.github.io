@@ -7,6 +7,6 @@ category: Document
 subcategory: Units
 returns: null
 parameters: []
-kind: constant
+kind: property
 
 ---

@@ -6,12 +6,14 @@ const Return = require('./lib/returns');
 const Tag = require('./lib/tag');
 const Category = require('./lib/category');
 const _ = require('lodash');
-const generator = require('./lib/generator');
+const generateData = require('./lib/data-generator');
 const Filters = require('./lib/filters');
+const generateFiles = require('./lib/files-and-folders');
 
 
 let data = [];
-api.forEach((e, i, arr)=> {
+
+function buildEntry(e) {
   let entry = new Entry();
   entry.name = e.name;
   if(e.description instanceof Object) {
@@ -76,9 +78,12 @@ api.forEach((e, i, arr)=> {
         entry.parameters.push(param);
       } else if (ele.title === 'method') {
         entry.kind = 'function';
-      }else if (ele.title === 'constant' || ele.title === 'property') {
+      }else if (ele.title === 'constant') {
         entry.kind = 'constant';
-
+      } else if (ele.title === 'property') {
+        entry.kind = 'property';
+      } else if (ele.title === 'constructor') {
+        entry.kind = 'constructor';
       } else if (ele.title === 'return' || ele.title === 'returns') {
         let returnValue = new Return();
         returnValue.description = ele.description;
@@ -107,6 +112,24 @@ api.forEach((e, i, arr)=> {
     });
   }
   data.push(entry);
+  if(e.members.instance.length > 0) {
+    e.members.instance.forEach((el)=>{
+      buildEntry(el);
+    });
+  }
+  if(e.members.static.length > 0) {
+    e.members.static.forEach((el)=>{
+      buildEntry(el);
+    });
+  }
+  // if(e.members.events.length > 0) {
+  //   e.members.events.forEach((el)=>{
+  //     buildEntry(el);
+  //   });
+  // }
+}
+api.forEach((el)=> {
+  buildEntry(el);
 });
 
 // Some filtering
@@ -118,7 +141,7 @@ data.forEach((element)=>{
   element.category = filter.nullToGlobal(element.category);
 });
 
-data = generator(data);
+data = generateData(data);
 // taken from here
 // http://stackoverflow.com/questions/23600897/using-lodash-groupby-how-to-add-your-own-keys-for-grouped-output
 let sortedByCategory = _.chain(data)
@@ -196,3 +219,4 @@ fs.writeFile('./_data/cats-and-subcats.json', JSON.stringify(catsAndSubcats, nul
   }
 });
 
+generateFiles(true);

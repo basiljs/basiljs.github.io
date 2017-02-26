@@ -7,7 +7,7 @@ category: Data
 subcategory: HashList
 returns:
     name: null
-    description: 'An array with all the keys'
+    description: 'An array with all the keys.'
     type: [Array]
 parameters: []
 kind: function

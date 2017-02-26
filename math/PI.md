@@ -7,6 +7,6 @@ category: Math
 subcategory: Constants
 returns: null
 parameters: []
-kind: constant
+kind: property
 
 ---
