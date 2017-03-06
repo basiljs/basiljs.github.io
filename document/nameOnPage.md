@@ -11,5 +11,7 @@ returns:
     type: [Object]
 parameters: []
 kind: function
+todo: null
+examples: []
 
 ---

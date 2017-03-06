@@ -12,5 +12,7 @@ returns:
 parameters:
     - {name: pointSize, description: 'The size in points to set.', optional: true, type: [Number]}
 kind: function
+todo: null
+examples: []
 
 ---

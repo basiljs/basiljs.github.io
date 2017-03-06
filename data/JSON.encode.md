@@ -12,5 +12,7 @@ returns:
 parameters:
     - {name: Object, description: 'to be converted to a JSON-string', optional: false, type: [Object]}
 kind: function
+todo: null
+examples: []
 
 ---

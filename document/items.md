@@ -7,11 +7,13 @@ category: Document
 subcategory: Multi-Getters
 returns:
     name: null
-    description: 'array or PageItems.'
-    type: []
+    description: 'A collection of PageItem objects.'
+    type: [PageItems]
 parameters:
     - {name: container, description: 'The container where the PageItems sit in', optional: false, type: [Document, Page, Layer, Group]}
     - {name: cb, description: 'Optional: The callback function to call for each PageItem. When this function returns false the loop stops. Passed arguments: item, loopCount.', optional: true, type: [null]}
 kind: function
+todo: null
+examples: []
 
 ---

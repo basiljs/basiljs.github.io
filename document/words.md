@@ -7,11 +7,13 @@ category: Document
 subcategory: Multi-Getters
 returns:
     name: null
-    description: 'Array of Words.'
-    type: []
+    description: 'A collection of Word objects.'
+    type: [Words]
 parameters:
-    - {name: container, description: "The document, page, story, textFrame, paragraph or line instance\n                                                       to iterate the words in", optional: false, type: [Document, Page, Story, TextFrame, Paragraph, Line]}
-    - {name: cb, description: 'Optional: The callback function to call with each word. When this function returns false the loop stops. Passed arguments: word, loopCount', optional: true, type: [Function]}
+    - {name: container, description: 'The document, page, story, textFrame, paragraph or line instance to iterate the words in.', optional: false, type: [Document, Page, Story, TextFrame, Paragraph, Line]}
+    - {name: cb, description: 'The callback function to call with each word. When this function returns false the loop stops. Passed arguments: word, loopCount.', optional: true, type: [Function]}
 kind: function
+todo: null
+examples: []
 
 ---

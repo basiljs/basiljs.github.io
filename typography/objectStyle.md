@@ -13,5 +13,7 @@ parameters:
     - {name: pageItemOrName, description: 'A page item whose style to return or the name of the object style to return.', optional: false, type: [PageItem, String]}
     - {name: props, description: 'Optional: An object of property name/value pairs to set the style''s properties.', optional: true, type: [Object]}
 kind: function
+todo: null
+examples: []
 
 ---

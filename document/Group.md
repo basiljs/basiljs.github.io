@@ -13,9 +13,11 @@ parameters:
     - {name: pItem, description: 'The Group or name of Group name instance.', optional: true, type: [null]}
     - {name: name, description: 'The name of the Group, only when creating a Group from Page Item(s).', optional: false, type: [String]}
 kind: function
+todo: null
+examples: []
 
 ---
-g]}
-kind: function
+ null
+examples: []
 
 ---

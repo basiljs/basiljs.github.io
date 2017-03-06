@@ -9,5 +9,7 @@ returns: null
 parameters:
     - {name: modes, description: 'Optional: Switch performanceMode', optional: true, type: [null]}
 kind: function
+todo: null
+examples: []
 
 ---

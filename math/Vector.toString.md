@@ -11,5 +11,7 @@ returns:
     type: [String]
 parameters: []
 kind: function
+todo: null
+examples: []
 
 ---

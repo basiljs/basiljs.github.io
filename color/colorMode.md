@@ -9,5 +9,7 @@ returns: null
 parameters:
     - {name: colorMode, description: 'Either b.RGB or b.CMYK', optional: false, type: [Number]}
 kind: function
+todo: null
+examples: []
 
 ---

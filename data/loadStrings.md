@@ -12,5 +12,7 @@ returns:
 parameters:
     - {name: file, description: 'The text file name in the document''s data directory or a File instance or an URL', optional: false, type: [String, File]}
 kind: function
+todo: null
+examples: []
 
 ---

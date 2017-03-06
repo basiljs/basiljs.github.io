@@ -12,5 +12,7 @@ returns:
 parameters:
     - {name: layer, description: 'Optional, the layer or layer name to set the current layer to.', optional: true, type: [null]}
 kind: function
+todo: null
+examples: []
 
 ---

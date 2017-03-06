@@ -14,5 +14,7 @@ parameters:
     - {name: b, description: 'Another value to be compared.', optional: true, type: [Number]}
     - {name: c, description: 'Another value to be compared.', optional: true, type: [Number]}
 kind: function
+todo: null
+examples: []
 
 ---

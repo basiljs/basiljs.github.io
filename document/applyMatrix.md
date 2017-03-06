@@ -7,7 +7,9 @@ category: Document
 subcategory: Transformation
 returns: null
 parameters:
-    - {name: matrix, description: 'The matrix to be applied', optional: false, type: [Matrix2D]}
+    - {name: matrix, description: 'The matrix to be applied.', optional: false, type: [Matrix2D]}
 kind: function
+todo: null
+examples: []
 
 ---

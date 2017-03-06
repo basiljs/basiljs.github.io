@@ -9,6 +9,8 @@ function Entry() {
   this.parameters = [];
   this.kind = null;
   this.tags = [];
+  this.examples = [];
+  this.todo = null;
 }
 
 module.exports = Entry;

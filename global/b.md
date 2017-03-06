@@ -8,5 +8,7 @@ subcategory: null
 returns: null
 parameters: []
 kind: class
+todo: null
+examples: []
 
 ---

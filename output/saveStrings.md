@@ -10,5 +10,7 @@ parameters:
     - {name: file, description: 'The file name or a File instance', optional: false, type: [String, File]}
     - {name: strings, description: 'The string array to be written', optional: false, type: []}
 kind: function
+todo: null
+examples: []
 
 ---

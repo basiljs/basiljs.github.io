@@ -9,5 +9,7 @@ returns: null
 parameters:
     - {name: gradientMode, description: 'Either b.LINEAR or b.RADIAL', optional: false, type: [String]}
 kind: function
+todo: null
+examples: []
 
 ---

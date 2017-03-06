@@ -13,5 +13,7 @@ parameters:
     - {name: width, description: 'The new width.', optional: false, type: [Number]}
     - {name: height, description: 'The new height.', optional: false, type: [Number]}
 kind: function
+todo: null
+examples: []
 
 ---

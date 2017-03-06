@@ -10,5 +10,7 @@ parameters:
     - {name: obj, description: 'The Object to be inspected.', optional: false, type: [Object]}
     - {name: maxlevel, description: 'Optional, recursion limit, default maxlevel = 2.', optional: false, type: [Number]}
 kind: function
+todo: null
+examples: []
 
 ---

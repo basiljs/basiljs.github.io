@@ -12,5 +12,7 @@ returns:
 parameters:
     - {name: s, description: 'The String to trim', optional: false, type: [String]}
 kind: function
+todo: null
+examples: []
 
 ---

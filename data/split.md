@@ -13,5 +13,7 @@ parameters:
     - {name: str, description: 'the String to be split', optional: false, type: [String]}
     - {name: delim, description: 'The string used to separate the data', optional: true, type: [String]}
 kind: function
+todo: null
+examples: []
 
 ---

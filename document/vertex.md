@@ -14,5 +14,7 @@ parameters:
     - {name: xAnchorRight, description: 'position xAnchorRight-value', optional: true, type: [Number]}
     - {name: yAnchorRight, description: 'position yAnchorRight-value', optional: true, type: [Number]}
 kind: function
+todo: null
+examples: []
 
 ---

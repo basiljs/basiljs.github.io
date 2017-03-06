@@ -9,5 +9,7 @@ returns: null
 parameters:
     - {name: weight, description: 'The width of the stroke', optional: false, type: [Number]}
 kind: function
+todo: null
+examples: []
 
 ---

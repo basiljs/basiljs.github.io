@@ -14,5 +14,7 @@ parameters:
     - {name: property, description: "The text property name or an object of key/value property/value pairs.\n                                  If property is a string and no value is given, the function acts as getter.", optional: false, type: [String, Object]}
     - {name: value, description: 'The value to apply to the property.', optional: true, type: [null]}
 kind: function
+todo: null
+examples: []
 
 ---

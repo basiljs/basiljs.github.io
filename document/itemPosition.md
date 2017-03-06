@@ -7,12 +7,14 @@ category: Document
 subcategory: Transformation
 returns:
     name: null
-    description: 'Returns an object with the fields x and y'
+    description: 'Returns an object with the fields x and y.'
     type: [Object]
 parameters:
-    - {name: pItem, description: 'The PageItem to alter', optional: false, type: [PageItem]}
-    - {name: x, description: 'The new x coordinate', optional: true, type: [Number]}
-    - {name: y, description: 'The new y coordinate', optional: true, type: [Number]}
+    - {name: pItem, description: 'The PageItem to alter.', optional: false, type: [PageItem]}
+    - {name: x, description: 'The new x coordinate.', optional: true, type: [Number]}
+    - {name: y, description: 'The new y coordinate.', optional: true, type: [Number]}
 kind: function
+todo: null
+examples: []
 
 ---

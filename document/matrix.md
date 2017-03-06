@@ -7,10 +7,12 @@ category: Document
 subcategory: Transformation
 returns:
     name: null
-    description: 'Returns the current matrix'
+    description: 'Returns the current matrix.'
     type: [Matrix2D]
 parameters:
-    - {name: matrix, description: 'The matrix to be set as new current matrix', optional: true, type: [Matrix2D]}
+    - {name: matrix, description: 'The matrix to be set as new current matrix.', optional: true, type: [Matrix2D]}
 kind: function
+todo: null
+examples: []
 
 ---

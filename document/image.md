@@ -16,5 +16,7 @@ parameters:
     - {name: w, description: 'The width of the rectangle to add the image to. Ignored if x is not a number.', optional: true, type: [Number]}
     - {name: h, description: 'The height of the rectangle to add the image to. Ignored if x is not a number.', optional: true, type: [Number]}
 kind: function
+todo: null
+examples: []
 
 ---

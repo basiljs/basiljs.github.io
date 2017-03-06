@@ -12,5 +12,7 @@ returns:
 parameters:
     - {name: key, description: 'The key to delete.', optional: false, type: [String]}
 kind: function
+todo: null
+examples: []
 
 ---

@@ -13,5 +13,7 @@ parameters:
     - {name: item, description: 'The page item to apply the style to.', optional: false, type: [PageItem]}
     - {name: style, description: 'An object style instance or the name of the object style to apply.', optional: false, type: [ObjectStyle, String]}
 kind: function
+todo: null
+examples: []
 
 ---

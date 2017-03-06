@@ -12,5 +12,7 @@ returns:
 parameters:
     - {name: aAngle, description: 'An angle in degree.', optional: false, type: [Number]}
 kind: function
+todo: null
+examples: []
 
 ---

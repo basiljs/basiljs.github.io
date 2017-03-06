@@ -12,5 +12,7 @@ returns:
 parameters:
     - {name: doc, description: 'The document to set the current document to.', optional: true, type: [Document]}
 kind: function
+todo: null
+examples: []
 
 ---

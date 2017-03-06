@@ -11,5 +11,7 @@ returns:
     type: [GraphicLine, Polygon]
 parameters: []
 kind: function
+todo: null
+examples: []
 
 ---

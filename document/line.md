@@ -15,5 +15,7 @@ parameters:
     - {name: x2, description: 'Point B x-value', optional: false, type: [Number]}
     - {name: y2, description: 'Point B y-value', optional: false, type: [Number]}
 kind: function
+todo: null
+examples: []
 
 ---

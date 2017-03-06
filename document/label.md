@@ -12,5 +12,7 @@ returns:
 parameters:
     - {name: label, description: 'The label identifier.', optional: false, type: [String]}
 kind: function
+todo: null
+examples: []
 
 ---

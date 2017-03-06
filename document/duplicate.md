@@ -12,5 +12,7 @@ returns:
 parameters:
     - {name: item, description: 'The item to duplicate', optional: false, type: [PageItem, Page]}
 kind: function
+todo: null
+examples: []
 
 ---

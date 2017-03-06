@@ -12,5 +12,7 @@ returns:
 parameters:
     - {name: value, description: 'The value to check.', optional: false, type: [Object, String, Number, Boolean]}
 kind: function
+todo: null
+examples: []
 
 ---

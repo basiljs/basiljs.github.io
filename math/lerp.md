@@ -14,5 +14,7 @@ parameters:
     - {name: value2, description: 'Second value.', optional: false, type: [Number]}
     - {name: amt, description: 'Amount between 0.0 and 1.0.', optional: false, type: [Number]}
 kind: function
+todo: null
+examples: []
 
 ---

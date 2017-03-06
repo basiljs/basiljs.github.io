@@ -7,11 +7,13 @@ category: Document
 subcategory: Transformation
 returns:
     name: null
-    description: 'The current width'
+    description: 'The current width.'
     type: [Number]
 parameters:
-    - {name: pItem, description: 'The PageItem to alter', optional: false, type: [PageItem]}
-    - {name: width, description: 'The new width', optional: true, type: [Number]}
+    - {name: pItem, description: 'The PageItem to alter.', optional: false, type: [PageItem]}
+    - {name: width, description: 'The new width.', optional: true, type: [Number]}
 kind: function
+todo: null
+examples: []
 
 ---

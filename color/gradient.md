@@ -14,5 +14,7 @@ parameters:
     - {name: c2, description: 'Second color of the gradient. Alternatively: Array of gradient stop positions (if first parameter is an array of colors).', optional: false, type: [Color, Array, String]}
     - {name: name, description: 'Optional name of the gradient.', optional: true, type: [String]}
 kind: function
+todo: null
+examples: []
 
 ---

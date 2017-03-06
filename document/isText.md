@@ -12,5 +12,7 @@ returns:
 parameters:
     - {name: obj, description: 'The object to check', optional: false, type: [Character, InsertionPoint, Line, Paragraph, TextColumn, TextStyleRange, Word]}
 kind: function
+todo: null
+examples: []
 
 ---

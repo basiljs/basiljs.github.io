@@ -11,5 +11,7 @@ parameters:
     - {name: itemOrString, description: 'The itemOrString either a PageItem, a String or one the following constants: b.AT_BEGINNING and b.AT_END.', optional: false, type: [PageItem, String]}
     - {name: insertionPointOrMode, description: 'InsertionPoint or one the following constants: b.AT_BEGINNING and b.AT_END.', optional: false, type: [InsertionPoint, String]}
 kind: function
+todo: null
+examples: []
 
 ---

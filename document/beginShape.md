@@ -9,5 +9,7 @@ returns: null
 parameters:
     - {name: shapeMode, description: 'Set b.CLOSE if the new Path should be auto-closed.', optional: false, type: []}
 kind: function
+todo: null
+examples: []
 
 ---

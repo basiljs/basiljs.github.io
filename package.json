@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "description": "the docs for Basil.js",
   "scripts": {
-    "generator": "node .bin/index"
+    "generator": "node .bin/index",
+    "docs-json-test": "./node_modules/.bin/documentation build .bin/test/index.js -o .bin/test/api.json"
   },
   "repository": {
     "type": "git",
@@ -21,7 +22,9 @@
   },
   "homepage": "https://github.com/basiljs/basiljs.github.io#readme",
   "devDependencies": {
+    "basiljs": "github:basiljs/basil.js#develop",
     "cz-conventional-changelog": "^1.2.0",
+    "documentation": "^4.0.0-beta.18",
     "fs-extra": "^2.0.0",
     "lodash": "^4.17.4",
     "path-exists": "^3.0.0",

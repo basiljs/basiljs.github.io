@@ -7,11 +7,14 @@ category: Document
 subcategory: Multi-Getters
 returns:
     name: null
-    description: 'Array of Stories.'
-    type: []
+    description: 'A collection of Story objects.'
+    type: [Stories]
 parameters:
     - {name: doc, description: 'The document instance to iterate the stories in', optional: false, type: [Document]}
-    - {name: cb, description: 'Optional: The callback function to call with each story. When this function returns false the loop stops. Passed arguments: story, loopCount;', optional: true, type: [Function]}
+    - {name: cb, description: 'The callback function to call with each story. When this function returns false the loop stops. Passed arguments: story, loopCount.', optional: true, type: [Function]}
 kind: function
+todo: null
+examples:
+    - {description: null, code: "b.stories(b.doc(), function(story, loopCount){\n  b.println(\"Number of words in each Story:\");\n  b.println(story.words.length);\n});"}
 
 ---

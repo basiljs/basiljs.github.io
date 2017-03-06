@@ -10,5 +10,7 @@ parameters:
     - {name: file, description: 'The file name or a File instance', optional: false, type: [String, File]}
     - {name: showOptions, description: 'Whether to show the export dialog', optional: true, type: [Boolean]}
 kind: function
+todo: null
+examples: []
 
 ---

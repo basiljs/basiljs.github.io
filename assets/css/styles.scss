@@ -6,7 +6,9 @@
 @import 'typescale';
 
 $textColor: #000;
-$headLine: #333;
+$headLineColor: #333;
+$guideOneColor: #9636FC;
+$guideTwoColor: #FF4EFF;
 body {
   margin: 0 auto;
   max-width: 50em;
@@ -17,8 +19,8 @@ body {
 }
 .main {
   border: 1px solid #eaeaea;
-  border-right: 1px solid #9636FC;
-  border-bottom: 1px solid #FF4EFF;
+  border-right: 1px solid $guideOneColor;
+  border-bottom: 1px solid $guideTwoColor;
   background: #fff;
   margin: 0.2em auto 1em auto;
   padding-top: 0.2em;
@@ -27,7 +29,7 @@ body {
   padding-left: 1em;
 }
 h1, h2, strong {
-  color: $headLine;
+  color: $headLineColor;
 }
 a {
   cursor: pointer;
@@ -37,15 +39,14 @@ a {
 }
 h1, h2, h3, h4, h5, h6 {
   text-decoration: underline;
-  color:$headLine;
+  color:$headLineColor;
 }
-h4.entries {
+h4.entries-title {
   text-decoration: none !important;
 }
 
 .h3-subcat{
-
-  color:lighten($headLine, 20%);
+  color:lighten($headLineColor, 20%);
 }
 a:hover {
   background-image: url("/assets/images/stripe_c40ccfac0db9e43c48e95a530d787366.png");
@@ -67,9 +68,22 @@ li:before {
   content: "+";
   padding-right: 5px;
 }
+.index {
+  padding-bottom:2em;
+  border-bottom: 1px solid $guideTwoColor;
+}
 .entry {
   border-bottom: 1px dashed #000;
   padding-right:2em;
+}
+.todo {
+  @extend .font_small;
+  border-top: 1px dashed $guideTwoColor;
+  width :100%;
+  color:$headLineColor;
+  font-style:italic;
+  padding:0.5em;
+  padding-bottom:0.5em;
 }
 .totop {
   position: fixed;
@@ -89,6 +103,8 @@ li:before {
   color: white;
   background-image: url("/assets/images/stripe_c40ccfac0db9e43c48e95a530d787366.png");
 }
+
+@import "syntax";
 //-------media queries
 
 @media only screen

@@ -13,5 +13,7 @@ parameters:
     - {name: pItem, description: 'The PageItem to alter.', optional: false, type: [PageItem]}
     - {name: x, description: 'The new x position, optional.', optional: true, type: [Number]}
 kind: function
+todo: null
+examples: []
 
 ---

@@ -12,5 +12,7 @@ returns:
 parameters:
     - {name: String, description: 'to be parsed as JSON-object.', optional: false, type: [String]}
 kind: function
+todo: null
+examples: []
 
 ---

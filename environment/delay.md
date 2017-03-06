@@ -7,7 +7,9 @@ category: Environment
 subcategory: null
 returns: null
 parameters:
-    - {name: milliseconds, description: 'The delay time in milliseconds', optional: false, type: [Number]}
+    - {name: milliseconds, description: 'The delay time in milliseconds.', optional: false, type: [Number]}
 kind: function
+todo: null
+examples: []
 
 ---

@@ -9,5 +9,7 @@ returns: null
 parameters:
     - {name: seed, description: 'Noise seed value.', optional: false, type: [Number]}
 kind: function
+todo: null
+examples: []
 
 ---

@@ -12,5 +12,7 @@ returns:
 parameters:
     - {name: aNumber, description: 'The value to be squared.', optional: false, type: [Number]}
 kind: function
+todo: null
+examples: []
 
 ---

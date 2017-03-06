@@ -12,5 +12,7 @@ returns:
 parameters:
     - {name: x, description: 'A number.', optional: false, type: [Number]}
 kind: function
+todo: null
+examples: []
 
 ---

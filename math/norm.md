@@ -14,5 +14,7 @@ parameters:
     - {name: low, description: 'The lowest value to be expected.', optional: false, type: [Number]}
     - {name: high, description: 'The highest value to be expected.', optional: false, type: [Number]}
 kind: function
+todo: null
+examples: []
 
 ---

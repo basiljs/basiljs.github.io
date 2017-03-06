@@ -12,5 +12,7 @@ returns:
 parameters:
     - {name: mode, description: 'The canvas mode to set.', optional: false, type: [String]}
 kind: function
+todo: null
+examples: []
 
 ---

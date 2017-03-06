@@ -15,5 +15,7 @@ parameters:
     - {name: x2, description: 'The x-coordinate of the second point.', optional: false, type: [Number]}
     - {name: y2, description: 'The y-coordinate of the second point.', optional: false, type: [Number]}
 kind: function
+todo: null
+examples: []
 
 ---

@@ -13,5 +13,7 @@ parameters:
     - {name: textOrName, description: 'A text object whose style to return or the name of the character style to return.', optional: false, type: [Text, String]}
     - {name: props, description: 'Optional: An object of property name/value pairs to set the style''s properties.', optional: true, type: [Object]}
 kind: function
+todo: null
+examples: []
 
 ---

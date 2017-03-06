@@ -12,5 +12,7 @@ returns:
 parameters:
     - {name: rad, description: 'A value in radians.', optional: false, type: [Number]}
 kind: function
+todo: null
+examples: []
 
 ---

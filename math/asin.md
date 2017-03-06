@@ -12,5 +12,7 @@ returns:
 parameters:
     - {name: value, description: 'The value whose arc sine is to be returned.', optional: false, type: [Number]}
 kind: function
+todo: null
+examples: []
 
 ---

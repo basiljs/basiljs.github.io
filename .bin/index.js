@@ -1,10 +1,11 @@
 const fs = require('fs');
-const api = require('../_data/api.json');
+const api = require('../node_modules/basiljs/doc/api.json');
 const Entry = require('./lib/entry');
 const Parameter = require('./lib/parameter');
 const Return = require('./lib/returns');
 const Tag = require('./lib/tag');
 const Category = require('./lib/category');
+const Example = require('./lib/example');
 const _ = require('lodash');
 const generateData = require('./lib/data-generator');
 const Filters = require('./lib/filters');
@@ -40,11 +41,14 @@ function buildEntry(e) {
   }
   if(Array.isArray(e.tags)) {
     e.tags.forEach((ele, ndx, array)=>{
-      if(ele.title === 'cat') {
+
+      if(ele.title === 'cat') { // get the categories
         entry.category = ele.description;
-      } else if(ele.title === 'subcat') {
+
+      } else if(ele.title === 'subcat') { // get the sub categories
         entry.subcategory = ele.description;
-      } else if (ele.title === 'param') {
+
+      } else if (ele.title === 'param') { // get the parameters
         var param = new Parameter();
         param.name = ele.name;
         param.description = ele.description;
@@ -64,27 +68,38 @@ function buildEntry(e) {
                   });
                 }else{
                   param.type.push(ele.type.expression.name);
-
                 }
               }else if (ele.type.type === 'UnionType') {
                 ele.type.elements.forEach((element, index)=>{
                   param.type.push(element.name);
-
                 });
               }
             }
           }
         }
         entry.parameters.push(param);
-      } else if (ele.title === 'method') {
+      } else if (ele.title === 'method') { // get the method
         entry.kind = 'function';
-      }else if (ele.title === 'constant') {
+      }else if (ele.title === 'constant') { // get the constant
         entry.kind = 'constant';
-      } else if (ele.title === 'property') {
+      } else if (ele.title === 'property') { // get the property
         entry.kind = 'property';
-      } else if (ele.title === 'constructor') {
+      } else if (ele.title === 'constructor') { // get the constructor
         entry.kind = 'constructor';
-      } else if (ele.title === 'return' || ele.title === 'returns') {
+      } else if(ele.title === 'type') {
+        entry.kind = ele.type.name;
+      } else if(ele.title === 'example') {
+        let example = new Example();
+        if (ele.hasOwnProperty('caption')) {
+          example.description = ele.caption;
+        }
+        if(ele.hasOwnProperty('description')) {
+          example.code = ele.description;
+        }
+        entry.examples.push(example);
+      }else if(ele.title === 'todo') {
+        entry.todo = ele.description;
+      } else if (ele.title === 'return' || ele.title === 'returns') { // get the return
         let returnValue = new Return();
         returnValue.description = ele.description;
         if(ele.hasOwnProperty('type')) {
@@ -135,8 +150,6 @@ api.forEach((el)=> {
 // Some filtering
 let filter = new Filters();
 data.forEach((element)=>{
-
-  // console.log(element);
   element.name = filter.dotNull(element.name);
   element.category = filter.nullToGlobal(element.category);
 });

@@ -13,9 +13,13 @@ parameters:
     - {name: v1, description: 'The first vector.', optional: false, type: [Vector]}
     - {name: v2, description: 'The second vector.', optional: false, type: [Vector]}
 kind: function
+todo: null
+examples: []
 
 ---
-- {name: z, description: 'Optional, the z component.', optional: true, type: [Number]}
+ 'Optional, the z component.', optional: true, type: [Number]}
 kind: function
+todo: null
+examples: []
 
 ---

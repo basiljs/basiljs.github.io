@@ -12,5 +12,7 @@ returns:
 parameters:
     - {name: callback, description: 'The Function is a predicate, to test each element of the array. Return true to keep the element, false otherwise.', optional: false, type: [Function]}
 kind: function
+todo: null
+examples: []
 
 ---

@@ -9,5 +9,7 @@ returns: null
 parameters:
     - {name: mode, description: 'Either b.CENTER, b.RADIUS, b.CORNER, or b.CORNERS', optional: false, type: [String]}
 kind: function
+todo: null
+examples: []
 
 ---

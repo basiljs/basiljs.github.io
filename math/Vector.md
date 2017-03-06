@@ -11,5 +11,7 @@ parameters:
     - {name: y, description: 'The second vector.', optional: false, type: [Number]}
     - {name: z, description: 'Optional, the third vector.', optional: true, type: [Number]}
 kind: function
+todo: null
+examples: []
 
 ---

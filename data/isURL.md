@@ -12,5 +12,7 @@ returns:
 parameters:
     - {name: url, description: 'An url string to be checked', optional: false, type: [String]}
 kind: function
+todo: null
+examples: []
 
 ---

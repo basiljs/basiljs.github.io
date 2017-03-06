@@ -34,7 +34,9 @@ function process(ele, folder, ow) {
       subcategory: e.subcategory,
       returns: e.returns,
       parameters: e.parameters,
-      kind: e.kind
+      kind: e.kind,
+      todo: e.todo,
+      examples: e.examples
     }, 2);
     let frontmatter = `---\n${yamlstr}\n---\n`;
     if(ow === true) {

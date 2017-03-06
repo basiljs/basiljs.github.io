@@ -12,5 +12,7 @@ returns:
 parameters:
     - {name: cmd, description: 'The shell command to execute', optional: false, type: [String]}
 kind: function
+todo: null
+examples: []
 
 ---

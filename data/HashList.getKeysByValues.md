@@ -11,5 +11,7 @@ returns:
     type: [Array]
 parameters: []
 kind: function
+todo: null
+examples: []
 
 ---

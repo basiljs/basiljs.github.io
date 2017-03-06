@@ -13,5 +13,7 @@ parameters:
     - {name: str, description: 'A string to be checked', optional: false, type: [String]}
     - {name: prefix, description: 'The string to look for', optional: false, type: [String]}
 kind: function
+todo: null
+examples: []
 
 ---

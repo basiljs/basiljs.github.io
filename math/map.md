@@ -16,5 +16,7 @@ parameters:
     - {name: ostart, description: 'The start of the output range.', optional: false, type: [Number]}
     - {name: ostop, description: 'The end of the output range.', optional: false, type: [Number]}
 kind: function
+todo: null
+examples: []
 
 ---

@@ -12,5 +12,7 @@ returns:
 parameters:
     - {name: str, description: 'A string or an array of strings to be trimmed', optional: false, type: [String, Array]}
 kind: function
+todo: null
+examples: []
 
 ---

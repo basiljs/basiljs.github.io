@@ -9,5 +9,7 @@ returns: null
 parameters:
     - {name: msg, description: 'The message to print', optional: false, type: [String]}
 kind: function
+todo: null
+examples: []
 
 ---

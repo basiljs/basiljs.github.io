@@ -10,5 +10,7 @@ parameters:
     - {name: textFrameA, description: null, optional: false, type: [TextFrame]}
     - {name: textFrameB, description: null, optional: false, type: [TextFrame]}
 kind: function
+todo: null
+examples: []
 
 ---

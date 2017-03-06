@@ -13,5 +13,7 @@ parameters:
     - {name: array, description: 'A string array', optional: false, type: [Array]}
     - {name: separator, description: 'The separator to be inserted', optional: false, type: [String]}
 kind: function
+todo: null
+examples: []
 
 ---

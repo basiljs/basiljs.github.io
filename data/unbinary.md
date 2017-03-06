@@ -12,5 +12,7 @@ returns:
 parameters:
     - {name: binaryString, description: 'value to convert', optional: false, type: [String]}
 kind: function
+todo: null
+examples: []
 
 ---

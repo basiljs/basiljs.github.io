@@ -8,5 +8,7 @@ subcategory: Vector
 returns: null
 parameters: []
 kind: function
+todo: null
+examples: []
 
 ---

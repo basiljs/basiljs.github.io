@@ -7,11 +7,13 @@ category: Document
 subcategory: Multi-Getters
 returns:
     name: null
-    description: 'Array of lines.'
-    type: []
+    description: 'A collection of Line objects.'
+    type: [Lines]
 parameters:
-    - {name: container, description: "The document, page, story, textFrame or paragraph instance to\n                                                  iterate the lines in", optional: false, type: [Document, Page, Story, TextFrame, Paragraph]}
-    - {name: cb, description: 'Optional: The callback function to call with each line. When this function returns false the loop stops. Passed arguments: line, loopCount', optional: true, type: [Function]}
+    - {name: container, description: 'The document, page, story, textFrame or paragraph instance to iterate the lines in.', optional: false, type: [Document, Page, Story, TextFrame, Paragraph]}
+    - {name: cb, description: 'Optional: The callback function to call with each line. When this function returns false the loop stops. Passed arguments: line, loopCount.', optional: true, type: [Function]}
 kind: function
+todo: null
+examples: []
 
 ---

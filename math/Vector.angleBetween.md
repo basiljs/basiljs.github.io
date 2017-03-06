@@ -13,5 +13,7 @@ parameters:
     - {name: v1, description: 'The first vector.', optional: false, type: [Vector]}
     - {name: v2, description: 'The second vector.', optional: false, type: [Vector]}
 kind: function
+todo: null
+examples: []
 
 ---

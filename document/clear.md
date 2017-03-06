@@ -7,7 +7,9 @@ category: Document
 subcategory: null
 returns: null
 parameters:
-    - {name: container, description: 'The container where the PageItems sit in', optional: false, type: [Document, Page, Layer, Group]}
+    - {name: container, description: 'The container where the PageItems sit in.', optional: false, type: [Document, Page, Layer, Group]}
 kind: function
+todo: null
+examples: []
 
 ---

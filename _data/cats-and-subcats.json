@@ -22,6 +22,8 @@
               "description": null
             }
           ],
+          "examples": [],
+          "todo": null,
           "codetitle": "b"
         },
         {
@@ -39,6 +41,8 @@
           "parameters": [],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.Random.nextGaussian()"
         }
       ],
@@ -58,6 +62,8 @@
           "parameters": [],
           "kind": "property",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.VERSION"
         },
         {
@@ -69,6 +75,8 @@
           "parameters": [],
           "kind": "property",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.width"
         },
         {
@@ -80,6 +88,8 @@
           "parameters": [],
           "kind": "property",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.height"
         },
         {
@@ -100,6 +110,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.go([modes])"
         },
         {
@@ -120,6 +132,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.loop(framerate)"
         },
         {
@@ -131,6 +145,8 @@
           "parameters": [],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.noLoop()"
         },
         {
@@ -142,7 +158,7 @@
           "parameters": [
             {
               "name": "milliseconds",
-              "description": "The delay time in milliseconds",
+              "description": "The delay time in milliseconds.",
               "optional": false,
               "type": [
                 "Number"
@@ -150,7 +166,14 @@
             }
           ],
           "kind": "function",
-          "tags": [],
+          "tags": [
+            {
+              "title": "description",
+              "description": "Suspends the calling thread for a number of milliseconds.\nDuring a sleep period, checks at 100 millisecond intervals to see whether the sleep should be terminated."
+            }
+          ],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.delay(milliseconds)"
         }
       ],
@@ -174,6 +197,8 @@
           "parameters": [],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.year()"
         },
         {
@@ -191,6 +216,8 @@
           "parameters": [],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.month()"
         },
         {
@@ -208,6 +235,8 @@
           "parameters": [],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.day()"
         },
         {
@@ -225,6 +254,8 @@
           "parameters": [],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.weekday()"
         },
         {
@@ -242,6 +273,8 @@
           "parameters": [],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.hour()"
         },
         {
@@ -259,6 +292,8 @@
           "parameters": [],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.minute()"
         },
         {
@@ -276,6 +311,8 @@
           "parameters": [],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.second()"
         },
         {
@@ -293,6 +330,8 @@
           "parameters": [],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.millis()"
         },
         {
@@ -310,6 +349,8 @@
           "parameters": [],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.millisecond()"
         },
         {
@@ -327,6 +368,8 @@
           "parameters": [],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.timestamp()"
         }
       ],
@@ -344,6 +387,8 @@
           "parameters": [],
           "kind": "property",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.MODESILENT"
         },
         {
@@ -355,6 +400,8 @@
           "parameters": [],
           "kind": "property",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.MODEHIDDEN"
         },
         {
@@ -366,6 +413,8 @@
           "parameters": [],
           "kind": "property",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.MODEVISIBLE"
         }
       ],
@@ -385,7 +434,7 @@
           "parameters": [
             {
               "name": "container",
-              "description": "The container where the PageItems sit in",
+              "description": "The container where the PageItems sit in.",
               "optional": false,
               "type": [
                 "Document",
@@ -396,7 +445,14 @@
             }
           ],
           "kind": "function",
-          "tags": [],
+          "tags": [
+            {
+              "title": "description",
+              "description": "Removes all PageItems (including locked ones) in the given Document, Page, Layer or Group. If the selected container is a Group, the Group itself will be removed as well."
+            }
+          ],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.clear(container)"
         },
         {
@@ -408,7 +464,7 @@
           "parameters": [
             {
               "name": "obj",
-              "description": "The object to be removed",
+              "description": "The object to be removed.",
               "optional": false,
               "type": [
                 "PageItem"
@@ -416,7 +472,14 @@
             }
           ],
           "kind": "function",
-          "tags": [],
+          "tags": [
+            {
+              "title": "description",
+              "description": "Removes the provided Page, Layer, PageItem, Swatch, etc."
+            }
+          ],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.remove(obj)"
         },
         {
@@ -443,6 +506,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.doc([doc])"
         },
         {
@@ -477,6 +542,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.size(width, [height])"
         },
         {
@@ -505,6 +572,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.close([saveOptions], [file])"
         },
         {
@@ -544,6 +613,8 @@
               "description": "Page"
             }
           ],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.Group([pItem], name)"
         },
         {
@@ -583,6 +654,8 @@
               "description": "Page"
             }
           ],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.Group([pItem], name)"
         },
         {
@@ -609,6 +682,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.guideX(x)"
         },
         {
@@ -635,6 +710,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.guideY(y)"
         },
         {
@@ -661,6 +738,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.units([units])"
         }
       ],
@@ -687,6 +766,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.rectMode(mode)"
         },
         {
@@ -707,6 +788,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.ellipseMode(mode)"
         },
         {
@@ -727,6 +810,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.strokeWeight(weight)"
         }
       ],
@@ -797,6 +882,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.image(img, x, [y], [w], [h])"
         },
         {
@@ -849,6 +936,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.transformImage(img, x, y, width, height)"
         },
         {
@@ -875,6 +964,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.imageMode([mode])"
         }
       ],
@@ -898,6 +989,8 @@
           "parameters": [],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.projectFolder()"
         }
       ],
@@ -911,8 +1004,10 @@
           "description": "If no callback function is given it returns a Collection of items otherwise calls the given callback function with each story of the given document.",
           "returns": {
             "name": null,
-            "description": "Array of Stories.",
-            "type": []
+            "description": "A collection of Story objects.",
+            "type": [
+              "Stories"
+            ]
           },
           "category": "Document",
           "subcategory": "Multi-Getters",
@@ -927,7 +1022,7 @@
             },
             {
               "name": "cb",
-              "description": "Optional: The callback function to call with each story. When this function returns false the loop stops. Passed arguments: story, loopCount;",
+              "description": "The callback function to call with each story. When this function returns false the loop stops. Passed arguments: story, loopCount.",
               "optional": true,
               "type": [
                 "Function"
@@ -935,7 +1030,19 @@
             }
           ],
           "kind": "function",
-          "tags": [],
+          "tags": [
+            {
+              "title": "description",
+              "description": "If no callback function is given it returns a Collection of items otherwise calls the given callback function with each story of the given document."
+            }
+          ],
+          "examples": [
+            {
+              "description": null,
+              "code": "b.stories(b.doc(), function(story, loopCount){\n  b.println(\"Number of words in each Story:\");\n  b.println(story.words.length);\n});"
+            }
+          ],
+          "todo": null,
           "codetitle": "b.stories(doc, [cb])"
         },
         {
@@ -943,15 +1050,17 @@
           "description": "If no callback function is given it returns a Collection of paragraphs in the container otherwise calls the given callback function with each paragraph of the given document, page, story or textFrame.",
           "returns": {
             "name": null,
-            "description": "Array of Paragraphs.",
-            "type": []
+            "description": "A collection of Paragraph objects.",
+            "type": [
+              "Paragraphs"
+            ]
           },
           "category": "Document",
           "subcategory": "Multi-Getters",
           "parameters": [
             {
               "name": "container",
-              "description": "The document, story, page or textFrame instance to iterate the paragraphs in",
+              "description": "The document, story, page or textFrame instance to iterate the paragraphs in.",
               "optional": false,
               "type": [
                 "Document",
@@ -962,7 +1071,7 @@
             },
             {
               "name": "cb",
-              "description": "Optional: The callback function to call with each paragraph. When this function returns false the loop stops. Passed arguments: para, loopCount",
+              "description": "Optional: The callback function to call with each paragraph. When this function returns false the loop stops. Passed arguments: para, loopCount.",
               "optional": true,
               "type": [
                 "Function"
@@ -970,7 +1079,14 @@
             }
           ],
           "kind": "function",
-          "tags": [],
+          "tags": [
+            {
+              "title": "description",
+              "description": "If no callback function is given it returns a Collection of paragraphs in the container otherwise calls the given callback function with each paragraph of the given document, page, story or textFrame."
+            }
+          ],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.paragraphs(container, [cb])"
         },
         {
@@ -978,15 +1094,17 @@
           "description": "If no callback function is given it returns a Collection of lines in the container otherwise calls the given callback function with each line of the given document, page, story, textFrame or paragraph.",
           "returns": {
             "name": null,
-            "description": "Array of lines.",
-            "type": []
+            "description": "A collection of Line objects.",
+            "type": [
+              "Lines"
+            ]
           },
           "category": "Document",
           "subcategory": "Multi-Getters",
           "parameters": [
             {
               "name": "container",
-              "description": "The document, page, story, textFrame or paragraph instance to\n                                                  iterate the lines in",
+              "description": "The document, page, story, textFrame or paragraph instance to iterate the lines in.",
               "optional": false,
               "type": [
                 "Document",
@@ -998,7 +1116,7 @@
             },
             {
               "name": "cb",
-              "description": "Optional: The callback function to call with each line. When this function returns false the loop stops. Passed arguments: line, loopCount",
+              "description": "Optional: The callback function to call with each line. When this function returns false the loop stops. Passed arguments: line, loopCount.",
               "optional": true,
               "type": [
                 "Function"
@@ -1006,7 +1124,14 @@
             }
           ],
           "kind": "function",
-          "tags": [],
+          "tags": [
+            {
+              "title": "description",
+              "description": "If no callback function is given it returns a Collection of lines in the container otherwise calls the given callback function with each line of the given document, page, story, textFrame or paragraph."
+            }
+          ],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.lines(container, [cb])"
         },
         {
@@ -1014,15 +1139,17 @@
           "description": "If no callback function is given it returns a Collection of words in the container otherwise calls the given callback function with each word of the given document, page, story, textFrame, paragraph or line.",
           "returns": {
             "name": null,
-            "description": "Array of Words.",
-            "type": []
+            "description": "A collection of Word objects.",
+            "type": [
+              "Words"
+            ]
           },
           "category": "Document",
           "subcategory": "Multi-Getters",
           "parameters": [
             {
               "name": "container",
-              "description": "The document, page, story, textFrame, paragraph or line instance\n                                                       to iterate the words in",
+              "description": "The document, page, story, textFrame, paragraph or line instance to iterate the words in.",
               "optional": false,
               "type": [
                 "Document",
@@ -1035,7 +1162,7 @@
             },
             {
               "name": "cb",
-              "description": "Optional: The callback function to call with each word. When this function returns false the loop stops. Passed arguments: word, loopCount",
+              "description": "The callback function to call with each word. When this function returns false the loop stops. Passed arguments: word, loopCount.",
               "optional": true,
               "type": [
                 "Function"
@@ -1043,7 +1170,14 @@
             }
           ],
           "kind": "function",
-          "tags": [],
+          "tags": [
+            {
+              "title": "description",
+              "description": "If no callback function is given it returns a Collection of words in the container otherwise calls the given callback function with each word of the given document, page, story, textFrame, paragraph or line."
+            }
+          ],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.words(container, [cb])"
         },
         {
@@ -1051,7 +1185,7 @@
           "description": "If no callback function is given it returns a Collection of characters in the container otherwise calls the given callback function with each character of the given document, page, story, textFrame, paragraph, line or word.",
           "returns": {
             "name": null,
-            "description": "You can use it like an array.",
+            "description": "A collection of Character objects.",
             "type": [
               "Characters"
             ]
@@ -1061,7 +1195,7 @@
           "parameters": [
             {
               "name": "container",
-              "description": "The document, page, story, textFrame, paragraph, line or word instance to\n                                                   iterate the characters in",
+              "description": "The document, page, story, textFrame, paragraph, line or word instance to  iterate the characters in.",
               "optional": false,
               "type": [
                 "Document",
@@ -1083,7 +1217,14 @@
             }
           ],
           "kind": "function",
-          "tags": [],
+          "tags": [
+            {
+              "title": "description",
+              "description": "If no callback function is given it returns a Collection of characters in the container otherwise calls the given callback function with each character of the given document, page, story, textFrame, paragraph, line or word."
+            }
+          ],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.characters(container, [cb])"
         },
         {
@@ -1091,8 +1232,10 @@
           "description": "If no callback function is given it returns a Collection of items otherwise calls the given callback function for each of the PageItems in the given Document, Page, Layer or Group.",
           "returns": {
             "name": null,
-            "description": "array or PageItems.",
-            "type": []
+            "description": "A collection of PageItem objects.",
+            "type": [
+              "PageItems"
+            ]
           },
           "category": "Document",
           "subcategory": "Multi-Getters",
@@ -1118,7 +1261,14 @@
             }
           ],
           "kind": "function",
-          "tags": [],
+          "tags": [
+            {
+              "title": "description",
+              "description": "If no callback function is given it returns a Collection of items otherwise calls the given callback function for each of the PageItems in the given Document, Page, Layer or Group."
+            }
+          ],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.items(container, [cb])"
         },
         {
@@ -1153,6 +1303,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.labels(label, [cb])"
         },
         {
@@ -1179,6 +1331,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.label(label)"
         },
         {
@@ -1196,6 +1350,8 @@
           "parameters": [],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.selection()"
         },
         {
@@ -1222,6 +1378,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.selections([cb])"
         },
         {
@@ -1239,6 +1397,8 @@
           "parameters": [],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.nameOnPage()"
         }
       ],
@@ -1256,6 +1416,8 @@
           "parameters": [],
           "kind": "property",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.PAGE"
         },
         {
@@ -1267,6 +1429,8 @@
           "parameters": [],
           "kind": "property",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.MARGIN"
         },
         {
@@ -1278,6 +1442,8 @@
           "parameters": [],
           "kind": "property",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.BLEED"
         },
         {
@@ -1289,6 +1455,8 @@
           "parameters": [],
           "kind": "property",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.FACING_PAGES"
         },
         {
@@ -1300,6 +1468,8 @@
           "parameters": [],
           "kind": "property",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.FACING_BLEEDS"
         },
         {
@@ -1311,6 +1481,8 @@
           "parameters": [],
           "kind": "property",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.FACING_MARGINS"
         },
         {
@@ -1322,6 +1494,8 @@
           "parameters": [],
           "kind": "property",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.AT_BEGINNING"
         },
         {
@@ -1333,6 +1507,8 @@
           "parameters": [],
           "kind": "property",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.AT_END"
         },
         {
@@ -1344,6 +1520,8 @@
           "parameters": [],
           "kind": "property",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.BEFORE"
         },
         {
@@ -1355,6 +1533,8 @@
           "parameters": [],
           "kind": "property",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.AFTER"
         },
         {
@@ -1381,6 +1561,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.canvasMode(mode)"
         },
         {
@@ -1415,6 +1597,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.pasteboard(h, v)"
         },
         {
@@ -1441,6 +1625,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.page([page])"
         },
         {
@@ -1467,6 +1653,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.addPage([location])"
         },
         {
@@ -1487,6 +1675,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.removePage([page])"
         },
         {
@@ -1513,6 +1703,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.pageNumber([pageObj])"
         },
         {
@@ -1530,6 +1722,8 @@
           "parameters": [],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.nextPage()"
         },
         {
@@ -1547,6 +1741,8 @@
           "parameters": [],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.previousPage()"
         },
         {
@@ -1564,6 +1760,8 @@
           "parameters": [],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.pageCount()"
         },
         {
@@ -1590,6 +1788,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.layer([layer])"
         },
         {
@@ -1648,6 +1848,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.margins([top], [right], [bottom], [left], [pageNumber])"
         },
         {
@@ -1698,6 +1900,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.bleeds([top], [right], [bottom], [left])"
         }
       ],
@@ -1715,6 +1919,8 @@
           "parameters": [],
           "kind": "property",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.CORNER"
         },
         {
@@ -1726,6 +1932,8 @@
           "parameters": [],
           "kind": "property",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.CORNERS"
         },
         {
@@ -1737,6 +1945,8 @@
           "parameters": [],
           "kind": "property",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.CENTER"
         },
         {
@@ -1748,6 +1958,8 @@
           "parameters": [],
           "kind": "property",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.RADIUS"
         },
         {
@@ -1759,6 +1971,8 @@
           "parameters": [],
           "kind": "property",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.CLOSE"
         },
         {
@@ -1770,6 +1984,8 @@
           "parameters": [],
           "kind": "property",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.OPEN"
         },
         {
@@ -1781,6 +1997,8 @@
           "parameters": [],
           "kind": "property",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.CHORD"
         },
         {
@@ -1792,6 +2010,8 @@
           "parameters": [],
           "kind": "property",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.PIE"
         },
         {
@@ -1842,6 +2062,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.ellipse(x, y, w, h)"
         },
         {
@@ -1892,6 +2114,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.line(x1, y1, x2, y2)"
         },
         {
@@ -1910,6 +2134,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.beginShape(shapeMode)"
         },
         {
@@ -1970,6 +2196,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.vertex(x, y, [xAnchorLeft], [yAnchorLeft], [xAnchorRight], [yAnchorRight])"
         },
         {
@@ -2045,6 +2273,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.arc(cx, cy, w, h, startAngle, endAngle, mode)"
         },
         {
@@ -2056,6 +2286,8 @@
           "parameters": [],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.addPath()"
         },
         {
@@ -2074,6 +2306,8 @@
           "parameters": [],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.endShape()"
         },
         {
@@ -2124,6 +2358,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.rect(x, y, w, h)"
         }
       ],
@@ -2147,6 +2383,8 @@
           "parameters": [],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.storyCount()"
         },
         {
@@ -2185,6 +2423,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.addToStory(story, itemOrString, insertionPointOrMode)"
         }
       ],
@@ -2218,6 +2458,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.duplicate(item)"
         },
         {
@@ -2245,6 +2487,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.bounds(obj)"
         },
         {
@@ -2279,6 +2523,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.itemX(pItem, [x])"
         },
         {
@@ -2313,6 +2559,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.itemY(pItem, [y])"
         },
         {
@@ -2320,7 +2568,7 @@
           "description": "Scales the given PageItem to the given width. If width is not given as argument the current width is returned.",
           "returns": {
             "name": null,
-            "description": "The current width",
+            "description": "The current width.",
             "type": [
               "Number"
             ]
@@ -2330,7 +2578,7 @@
           "parameters": [
             {
               "name": "pItem",
-              "description": "The PageItem to alter",
+              "description": "The PageItem to alter.",
               "optional": false,
               "type": [
                 "PageItem"
@@ -2338,7 +2586,7 @@
             },
             {
               "name": "width",
-              "description": "The new width",
+              "description": "The new width.",
               "optional": true,
               "type": [
                 "Number"
@@ -2346,7 +2594,14 @@
             }
           ],
           "kind": "function",
-          "tags": [],
+          "tags": [
+            {
+              "title": "description",
+              "description": "Scales the given PageItem to the given width. If width is not given as argument the current width is returned."
+            }
+          ],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.itemWidth(pItem, [width])"
         },
         {
@@ -2354,7 +2609,7 @@
           "description": "Scales the given PageItem to the given height. If height is not given as argument the current height is returned.",
           "returns": {
             "name": null,
-            "description": "The current height",
+            "description": "The current height.",
             "type": [
               "Number"
             ]
@@ -2364,7 +2619,7 @@
           "parameters": [
             {
               "name": "pItem",
-              "description": "The PageItem to alter",
+              "description": "The PageItem to alter.",
               "optional": false,
               "type": [
                 "PageItem"
@@ -2372,7 +2627,7 @@
             },
             {
               "name": "height",
-              "description": "The new height",
+              "description": "The new height.",
               "optional": true,
               "type": [
                 "Number"
@@ -2380,7 +2635,14 @@
             }
           ],
           "kind": "function",
-          "tags": [],
+          "tags": [
+            {
+              "title": "description",
+              "description": "Scales the given PageItem to the given height. If height is not given as argument the current height is returned."
+            }
+          ],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.itemHeight(pItem, [height])"
         },
         {
@@ -2388,7 +2650,7 @@
           "description": "Moves the given PageItem to the given position. If x or y is not given as argument the current position is returned.",
           "returns": {
             "name": null,
-            "description": "Returns an object with the fields x and y",
+            "description": "Returns an object with the fields x and y.",
             "type": [
               "Object"
             ]
@@ -2398,7 +2660,7 @@
           "parameters": [
             {
               "name": "pItem",
-              "description": "The PageItem to alter",
+              "description": "The PageItem to alter.",
               "optional": false,
               "type": [
                 "PageItem"
@@ -2406,7 +2668,7 @@
             },
             {
               "name": "x",
-              "description": "The new x coordinate",
+              "description": "The new x coordinate.",
               "optional": true,
               "type": [
                 "Number"
@@ -2414,7 +2676,7 @@
             },
             {
               "name": "y",
-              "description": "The new y coordinate",
+              "description": "The new y coordinate.",
               "optional": true,
               "type": [
                 "Number"
@@ -2422,7 +2684,14 @@
             }
           ],
           "kind": "function",
-          "tags": [],
+          "tags": [
+            {
+              "title": "description",
+              "description": "Moves the given PageItem to the given position. If x or y is not given as argument the current position is returned."
+            }
+          ],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.itemPosition(pItem, [x], [y])"
         },
         {
@@ -2430,7 +2699,7 @@
           "description": "Scales the given PageItem to the given size. If width or height is not given as argument the current size is returned.",
           "returns": {
             "name": null,
-            "description": "Returns an object with the fields width and height",
+            "description": "Returns an object with the fields width and height.",
             "type": [
               "Object"
             ]
@@ -2440,7 +2709,7 @@
           "parameters": [
             {
               "name": "pItem",
-              "description": "The PageItem to alter",
+              "description": "The PageItem to alter.",
               "optional": false,
               "type": [
                 "PageItem"
@@ -2448,7 +2717,7 @@
             },
             {
               "name": "width",
-              "description": "The new width",
+              "description": "The new width.",
               "optional": true,
               "type": [
                 "Number"
@@ -2456,7 +2725,7 @@
             },
             {
               "name": "height",
-              "description": "The new height",
+              "description": "The new height.",
               "optional": true,
               "type": [
                 "Number"
@@ -2464,7 +2733,14 @@
             }
           ],
           "kind": "function",
-          "tags": [],
+          "tags": [
+            {
+              "title": "description",
+              "description": "Scales the given PageItem to the given size. If width or height is not given as argument the current size is returned."
+            }
+          ],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.itemSize(pItem, [width], [height])"
         },
         {
@@ -2472,7 +2748,7 @@
           "description": "Returns the current matrix as a Matrix2D object for altering existing PageItems with b.transform(). If a Matrix2D object is provided to the function it will overwrite the current matrix.",
           "returns": {
             "name": null,
-            "description": "Returns the current matrix",
+            "description": "Returns the current matrix.",
             "type": [
               "Matrix2D"
             ]
@@ -2482,7 +2758,7 @@
           "parameters": [
             {
               "name": "matrix",
-              "description": "The matrix to be set as new current matrix",
+              "description": "The matrix to be set as new current matrix.",
               "optional": true,
               "type": [
                 "Matrix2D"
@@ -2490,7 +2766,14 @@
             }
           ],
           "kind": "function",
-          "tags": [],
+          "tags": [
+            {
+              "title": "description",
+              "description": "Returns the current matrix as a Matrix2D object for altering existing PageItems with b.transform(). If a Matrix2D object is provided to the function it will overwrite the current matrix."
+            }
+          ],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.matrix([matrix])"
         },
         {
@@ -2502,7 +2785,7 @@
           "parameters": [
             {
               "name": "obj",
-              "description": "The item to be transformed",
+              "description": "The item to be transformed.",
               "optional": false,
               "type": [
                 "PageItem"
@@ -2510,7 +2793,7 @@
             },
             {
               "name": "matrix",
-              "description": "The matrix to be applied",
+              "description": "The matrix to be applied.",
               "optional": false,
               "type": [
                 "Matrix2D"
@@ -2518,7 +2801,14 @@
             }
           ],
           "kind": "function",
-          "tags": [],
+          "tags": [
+            {
+              "title": "description",
+              "description": "Transforms the given PageItem with the given Matrix2D object."
+            }
+          ],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.transform(obj, matrix)"
         },
         {
@@ -2530,7 +2820,7 @@
           "parameters": [
             {
               "name": "matrix",
-              "description": "The matrix to be applied",
+              "description": "The matrix to be applied.",
               "optional": false,
               "type": [
                 "Matrix2D"
@@ -2538,18 +2828,32 @@
             }
           ],
           "kind": "function",
-          "tags": [],
+          "tags": [
+            {
+              "title": "description",
+              "description": "Multiplies the current matrix by the one specified through the parameters."
+            }
+          ],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.applyMatrix(matrix)"
         },
         {
           "name": "popMatrix",
-          "description": "Pops the current transformation matrix off the matrix stack. Understanding pushing and popping requires understanding the concept of a matrix stack. The pushMatrix() function saves the current coordinate system to the stack and popMatrix() restores the prior coordinate system. pushMatrix() and popMatrix() are used in conjuction with the other transformation methods and may be embedded to control the scope of the transformations.",
+          "description": "Pops the current transformation matrix off the matrix stack. Understanding pushing and popping requires understanding the concept of a matrix stack. The ",
           "returns": null,
           "category": "Document",
           "subcategory": "Transformation",
           "parameters": [],
           "kind": "function",
-          "tags": [],
+          "tags": [
+            {
+              "title": "description",
+              "description": "Pops the current transformation matrix off the matrix stack. Understanding pushing and popping requires understanding the concept of a matrix stack. The <code>pushMatrix()</code> function saves the current coordinate system to the stack and <code>popMatrix()</code> restores the prior coordinate system. <code>pushMatrix()</code> and <code>popMatrix()</code> are used in conjuction with the other transformation methods and may be embedded to control the scope of the transformations."
+            }
+          ],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.popMatrix()"
         },
         {
@@ -2561,17 +2865,26 @@
           "parameters": [],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.printMatrix()"
         },
         {
           "name": "pushMatrix",
-          "description": "Pushes the current transformation matrix onto the matrix stack. Understanding pushMatrix() and popMatrix() requires understanding the concept of a matrix stack. The pushMatrix() function saves the current coordinate system to the stack and popMatrix() restores the prior coordinate system. pushMatrix() and popMatrix() are used in conjuction with the other transformation methods and may be embedded to control the scope of the transformations.",
+          "description": "Pushes the current transformation matrix onto the matrix stack. Understanding ",
           "returns": null,
           "category": "Document",
           "subcategory": "Transformation",
           "parameters": [],
           "kind": "function",
-          "tags": [],
+          "tags": [
+            {
+              "title": "description",
+              "description": "Pushes the current transformation matrix onto the matrix stack. Understanding <code>pushMatrix()</code> and <code>popMatrix()</code> requires understanding the concept of a matrix stack. The <code>pushMatrix()</code> function saves the current coordinate system to the stack and <code>popMatrix()</code> restores the prior coordinate system. <code>pushMatrix()</code> and <code>popMatrix()</code> are used in conjuction with the other transformation methods and may be embedded to control the scope of the transformations."
+            }
+          ],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.pushMatrix()"
         },
         {
@@ -2583,11 +2896,13 @@
           "parameters": [],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.resetMatrix()"
         },
         {
           "name": "rotate",
-          "description": "Rotates an object the amount specified by the angle parameter. Angles should be specified in radians (values from 0 to PI*2) or converted to radians with the radians() function. Objects are always rotated around their relative position to the origin and positive numbers rotate objects in a clockwise direction with 0 radians or degrees being up and HALF_PI being to the right etc. Transformations apply to everything that happens after and subsequent calls to the function accumulates the effect. For example, calling rotate(PI/2) and then rotate(PI/2) is the same as rotate(PI). If rotate() is called within the draw(), the transformation is reset when the loop begins again. Technically, rotate() multiplies the current transformation matrix by a rotation matrix. This function can be further controlled by the pushMatrix() and popMatrix().",
+          "description": "Rotates an object the amount specified by the angle parameter. Angles should be specified in radians (values from 0 to ",
           "returns": null,
           "category": "Document",
           "subcategory": "Transformation",
@@ -2602,12 +2917,19 @@
             }
           ],
           "kind": "function",
-          "tags": [],
+          "tags": [
+            {
+              "title": "description",
+              "description": "Rotates an object the amount specified by the angle parameter. Angles should be specified in radians (values from 0 to <code>PI</code>*2) or converted to radians with the <code>radians()</code> function. Objects are always rotated around their relative position to the origin and positive numbers rotate objects in a clockwise direction with 0 radians or degrees being up and <code>HALF_PI</code> being to the right etc. Transformations apply to everything that happens after and subsequent calls to the function accumulates the effect. For example, calling <code>rotate(PI/2)</code> and then <code>rotate(PI/2)</code> is the same as <code>rotate(PI)</code>. If <code>rotate()</code> is called within the <code>draw()</code>, the transformation is reset when the loop begins again. Technically, <code>rotate()</code> multiplies the current transformation matrix by a rotation matrix. This function can be further controlled by the <code>pushMatrix()</code> and <code>popMatrix()</code>."
+            }
+          ],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.rotate(angle)"
         },
         {
           "name": "scale",
-          "description": "Increasing and decreasing the size of an object by expanding and contracting vertices. Scale values are specified as decimal percentages. The function call scale(2.0) increases the dimension of a shape by 200%. Objects always scale from their relative origin to the coordinate system. Transformations apply to everything that happens after and subsequent calls to the function multiply the effect. For example, calling scale(2.0) and then scale(1.5) is the same as scale(3.0). If scale() is called within draw(), the transformation is reset when the loop begins again. This function can be further controlled by pushMatrix() and popMatrix().\nIf only one parameter is given, it is applied on X and Y axis.",
+          "description": "Increasing and decreasing the size of an object by expanding and contracting vertices. Scale values are specified as decimal percentages. The function call ",
           "returns": null,
           "category": "Document",
           "subcategory": "Transformation",
@@ -2630,12 +2952,19 @@
             }
           ],
           "kind": "function",
-          "tags": [],
+          "tags": [
+            {
+              "title": "description",
+              "description": "Increasing and decreasing the size of an object by expanding and contracting vertices. Scale values are specified as decimal percentages. The function call <code>scale(2.0)</code> increases the dimension of a shape by 200%. Objects always scale from their relative origin to the coordinate system. Transformations apply to everything that happens after and subsequent calls to the function multiply the effect. For example, calling <code>scale(2.0)</code> and then <code>scale(1.5)</code> is the same as <code>scale(3.0)</code>. If <code>scale()</code> is called within <code>draw()</code>, the transformation is reset when the loop begins again. This function can be further controlled by <code>pushMatrix()</code> and <code>popMatrix()</code>.\nIf only one parameter is given, it is applied on X and Y axis."
+            }
+          ],
+          "examples": [],
+          "todo": "Can we make the argument comparison typesafe? != vs !==",
           "codetitle": "b.scale(scaleX, scaleY)"
         },
         {
           "name": "translate",
-          "description": "Specifies an amount to displace objects within the page. The x parameter specifies left/right translation, the y parameter specifies up/down translation. Transformations apply to everything that happens after and subsequent calls to the function accumulates the effect. For example, calling translate(50, 0) and then translate(20, 0) is the same as translate(70, 0). This function can be further controlled by the pushMatrix() and popMatrix().",
+          "description": "Specifies an amount to displace objects within the page. The x parameter specifies left/right translation, the y parameter specifies up/down translation. Transformations apply to everything that happens after and subsequent calls to the function accumulates the effect. For example, calling ",
           "returns": null,
           "category": "Document",
           "subcategory": "Transformation",
@@ -2658,8 +2987,624 @@
             }
           ],
           "kind": "function",
-          "tags": [],
+          "tags": [
+            {
+              "title": "description",
+              "description": "Specifies an amount to displace objects within the page. The x parameter specifies left/right translation, the y parameter specifies up/down translation. Transformations apply to everything that happens after and subsequent calls to the function accumulates the effect. For example, calling <code>translate(50, 0)</code> and then <code>translate(20, 0)</code> is the same as <code>translate(70, 0)</code>. This function can be further controlled by the <code>pushMatrix()</code> and <code>popMatrix()</code>."
+            }
+          ],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.translate(tx, ty)"
+        },
+        {
+          "name": "Matrix2D",
+          "description": "A matrix.",
+          "returns": null,
+          "category": "Document",
+          "subcategory": "Transformation",
+          "parameters": [],
+          "kind": "function",
+          "tags": [
+            {
+              "title": "description",
+              "description": "A matrix."
+            }
+          ],
+          "examples": [],
+          "todo": "Add more description.",
+          "codetitle": "b.Matrix2D()"
+        },
+        {
+          "name": "Matrix2D.set",
+          "description": "Set a Matrix.",
+          "returns": null,
+          "category": "Document",
+          "subcategory": "Transformation",
+          "parameters": [],
+          "kind": "property",
+          "tags": [
+            {
+              "title": "description",
+              "description": "Set a Matrix."
+            }
+          ],
+          "examples": [],
+          "todo": "More description.",
+          "codetitle": "b.Matrix2D.set"
+        },
+        {
+          "name": "Matrix2D.get",
+          "description": "Get a Matrix.",
+          "returns": {
+            "name": null,
+            "description": "The current Matrix.",
+            "type": [
+              "Matrix2D"
+            ]
+          },
+          "category": "Document",
+          "subcategory": "Transformation",
+          "parameters": [],
+          "kind": "property",
+          "tags": [
+            {
+              "title": "description",
+              "description": "Get a Matrix."
+            }
+          ],
+          "examples": [],
+          "todo": "More description.",
+          "codetitle": "b.Matrix2D.get"
+        },
+        {
+          "name": "Matrix2D.reset",
+          "description": "Reset the Matrix.",
+          "returns": null,
+          "category": "Document",
+          "subcategory": "Transformation",
+          "parameters": [],
+          "kind": "property",
+          "tags": [
+            {
+              "title": "description",
+              "description": "Reset the Matrix."
+            }
+          ],
+          "examples": [],
+          "todo": null,
+          "codetitle": "b.Matrix2D.reset"
+        },
+        {
+          "name": "Matrix2D.array",
+          "description": "Slice the Matrix into an array.",
+          "returns": {
+            "name": null,
+            "description": "Returns an sliced array.",
+            "type": [
+              "Array"
+            ]
+          },
+          "category": "Document",
+          "subcategory": "Transformation",
+          "parameters": [],
+          "kind": "function",
+          "tags": [
+            {
+              "title": "description",
+              "description": "Slice the Matrix into an array."
+            }
+          ],
+          "examples": [],
+          "todo": "More description.\n[array description]",
+          "codetitle": "b.Matrix2D.array()"
+        },
+        {
+          "name": "Matrix2D.adobeMatrix",
+          "description": "Slice the Matrix into an array.",
+          "returns": {
+            "name": null,
+            "description": "Returns an Adobe Matrix.",
+            "type": [
+              "Array"
+            ]
+          },
+          "category": "Document",
+          "subcategory": "Transformation",
+          "parameters": [],
+          "kind": "function",
+          "tags": [
+            {
+              "title": "description",
+              "description": "Slice the Matrix into an array."
+            }
+          ],
+          "examples": [],
+          "todo": "More description.",
+          "codetitle": "b.Matrix2D.adobeMatrix()"
+        },
+        {
+          "name": "Matrix2D.translate",
+          "description": "translate Needs more description.",
+          "returns": null,
+          "category": "Document",
+          "subcategory": "Transformation",
+          "parameters": [
+            {
+              "name": "tx",
+              "description": "…",
+              "optional": false,
+              "type": [
+                "Number"
+              ]
+            },
+            {
+              "name": "ty",
+              "description": "…",
+              "optional": false,
+              "type": [
+                "Number"
+              ]
+            }
+          ],
+          "kind": "function",
+          "tags": [
+            {
+              "title": "description",
+              "description": "translate Needs more description."
+            }
+          ],
+          "examples": [],
+          "todo": "More description.",
+          "codetitle": "b.Matrix2D.translate(tx, ty)"
+        },
+        {
+          "name": "Matrix2D.invTranslate",
+          "description": "invTranslate Needs more description.",
+          "returns": null,
+          "category": "Document",
+          "subcategory": "Transformation",
+          "parameters": [
+            {
+              "name": "tx",
+              "description": "…",
+              "optional": false,
+              "type": [
+                "Number"
+              ]
+            },
+            {
+              "name": "ty",
+              "description": "…",
+              "optional": false,
+              "type": [
+                "Number"
+              ]
+            }
+          ],
+          "kind": "function",
+          "tags": [
+            {
+              "title": "description",
+              "description": "invTranslate Needs more description."
+            }
+          ],
+          "examples": [],
+          "todo": "More description.",
+          "codetitle": "b.Matrix2D.invTranslate(tx, ty)"
+        },
+        {
+          "name": "Matrix2D.transpose",
+          "description": "transpose Needs more description.",
+          "returns": null,
+          "category": "Document",
+          "subcategory": "Transformation",
+          "parameters": [],
+          "kind": "function",
+          "tags": [
+            {
+              "title": "description",
+              "description": "transpose Needs more description."
+            }
+          ],
+          "examples": [],
+          "todo": "More description.",
+          "codetitle": "b.Matrix2D.transpose()"
+        },
+        {
+          "name": "Matrix2D.mult",
+          "description": "mult Needs more description.",
+          "returns": {
+            "name": null,
+            "description": "A multiplied Vector.",
+            "type": [
+              "Vector"
+            ]
+          },
+          "category": "Document",
+          "subcategory": "Transformation",
+          "parameters": [
+            {
+              "name": "source",
+              "description": "…",
+              "optional": false,
+              "type": [
+                "Vector",
+                "Array"
+              ]
+            },
+            {
+              "name": "target",
+              "description": "…",
+              "optional": true,
+              "type": [
+                null
+              ]
+            }
+          ],
+          "kind": "function",
+          "tags": [
+            {
+              "title": "description",
+              "description": "mult Needs more description."
+            }
+          ],
+          "examples": [],
+          "todo": "More description.",
+          "codetitle": "b.Matrix2D.mult(source, [target])"
+        },
+        {
+          "name": "Matrix2D.multX",
+          "description": "multX Needs more description.",
+          "returns": {
+            "name": null,
+            "description": "A mulitplied X value.",
+            "type": [
+              "Number"
+            ]
+          },
+          "category": "Document",
+          "subcategory": "Transformation",
+          "parameters": [
+            {
+              "name": "x",
+              "description": "…",
+              "optional": false,
+              "type": [
+                "Number"
+              ]
+            },
+            {
+              "name": "y",
+              "description": "…",
+              "optional": false,
+              "type": [
+                "Number"
+              ]
+            }
+          ],
+          "kind": "function",
+          "tags": [
+            {
+              "title": "description",
+              "description": "multX Needs more description."
+            }
+          ],
+          "examples": [],
+          "todo": "More description.",
+          "codetitle": "b.Matrix2D.multX(x, y)"
+        },
+        {
+          "name": "Matrix2D.multY",
+          "description": "multY Needs more description.",
+          "returns": {
+            "name": null,
+            "description": "A multiplied Y value.",
+            "type": [
+              "Number"
+            ]
+          },
+          "category": "Document",
+          "subcategory": "Transformation",
+          "parameters": [
+            {
+              "name": "x",
+              "description": "…",
+              "optional": false,
+              "type": [
+                "Number"
+              ]
+            },
+            {
+              "name": "y",
+              "description": "…",
+              "optional": false,
+              "type": [
+                "Number"
+              ]
+            }
+          ],
+          "kind": "function",
+          "tags": [
+            {
+              "title": "description",
+              "description": "multY Needs more description."
+            }
+          ],
+          "examples": [],
+          "todo": "More description.",
+          "codetitle": "b.Matrix2D.multY(x, y)"
+        },
+        {
+          "name": "Matrix2D.determinant",
+          "description": "determinant Needs more description.",
+          "returns": {
+            "name": null,
+            "description": "A determinant …",
+            "type": [
+              "Number"
+            ]
+          },
+          "category": "Document",
+          "subcategory": "Transformation",
+          "parameters": [],
+          "kind": "function",
+          "tags": [
+            {
+              "title": "description",
+              "description": "determinant Needs more description."
+            }
+          ],
+          "examples": [],
+          "todo": "More description.",
+          "codetitle": "b.Matrix2D.determinant()"
+        },
+        {
+          "name": "Matrix2D.invert",
+          "description": "invert Needs more description.",
+          "returns": {
+            "name": null,
+            "description": "…",
+            "type": [
+              "Boolean"
+            ]
+          },
+          "category": "Document",
+          "subcategory": "Transformation",
+          "parameters": [],
+          "kind": "function",
+          "tags": [
+            {
+              "title": "description",
+              "description": "invert Needs more description."
+            }
+          ],
+          "examples": [],
+          "todo": "More description.",
+          "codetitle": "b.Matrix2D.invert()"
+        },
+        {
+          "name": "Matrix2D.scale",
+          "description": "scale Needs more description.",
+          "returns": null,
+          "category": "Document",
+          "subcategory": "Transformation",
+          "parameters": [
+            {
+              "name": "sx",
+              "description": "…",
+              "optional": false,
+              "type": [
+                "Number"
+              ]
+            },
+            {
+              "name": "sy",
+              "description": "…",
+              "optional": false,
+              "type": [
+                "Number"
+              ]
+            }
+          ],
+          "kind": "function",
+          "tags": [
+            {
+              "title": "description",
+              "description": "scale Needs more description."
+            }
+          ],
+          "examples": [],
+          "todo": "More description.",
+          "codetitle": "b.Matrix2D.scale(sx, sy)"
+        },
+        {
+          "name": "Matrix2D.invScale",
+          "description": "invScale Needs more description.",
+          "returns": null,
+          "category": "Document",
+          "subcategory": "Transformation",
+          "parameters": [
+            {
+              "name": "sx",
+              "description": "…",
+              "optional": false,
+              "type": [
+                "Number"
+              ]
+            },
+            {
+              "name": "sy",
+              "description": "…",
+              "optional": false,
+              "type": [
+                "Number"
+              ]
+            }
+          ],
+          "kind": "function",
+          "tags": [
+            {
+              "title": "description",
+              "description": "invScale Needs more description."
+            }
+          ],
+          "examples": [],
+          "todo": "More description.",
+          "codetitle": "b.Matrix2D.invScale(sx, sy)"
+        },
+        {
+          "name": "Matrix2D.apply",
+          "description": "apply Needs more description.",
+          "returns": null,
+          "category": "Document",
+          "subcategory": "Transformation",
+          "parameters": [],
+          "kind": "function",
+          "tags": [
+            {
+              "title": "description",
+              "description": "apply Needs more description."
+            }
+          ],
+          "examples": [],
+          "todo": "More description.",
+          "codetitle": "b.Matrix2D.apply()"
+        },
+        {
+          "name": "Matrix2D.preApply",
+          "description": "preApply Needs more description.",
+          "returns": null,
+          "category": "Document",
+          "subcategory": "Transformation",
+          "parameters": [],
+          "kind": "function",
+          "tags": [
+            {
+              "title": "description",
+              "description": "preApply Needs more description."
+            }
+          ],
+          "examples": [],
+          "todo": "More description.",
+          "codetitle": "b.Matrix2D.preApply()"
+        },
+        {
+          "name": "Matrix2D.rotate",
+          "description": "rotate Needs more description.",
+          "returns": null,
+          "category": "Document",
+          "subcategory": "Transformation",
+          "parameters": [
+            {
+              "name": "angle",
+              "description": "…",
+              "optional": false,
+              "type": [
+                "Number"
+              ]
+            }
+          ],
+          "kind": "function",
+          "tags": [
+            {
+              "title": "description",
+              "description": "rotate Needs more description."
+            }
+          ],
+          "examples": [],
+          "todo": "More description.",
+          "codetitle": "b.Matrix2D.rotate(angle)"
+        },
+        {
+          "name": "Matrix2D.rotateZ",
+          "description": "rotateZ Needs more description.",
+          "returns": null,
+          "category": "Document",
+          "subcategory": "Transformation",
+          "parameters": [
+            {
+              "name": "angle",
+              "description": "…",
+              "optional": false,
+              "type": [
+                "Number"
+              ]
+            }
+          ],
+          "kind": "function",
+          "tags": [
+            {
+              "title": "description",
+              "description": "rotateZ Needs more description."
+            }
+          ],
+          "examples": [],
+          "todo": "More description.",
+          "codetitle": "b.Matrix2D.rotateZ(angle)"
+        },
+        {
+          "name": "Matrix2D.invRotateZ",
+          "description": "invRotateZ Needs more description.",
+          "returns": null,
+          "category": "Document",
+          "subcategory": "Transformation",
+          "parameters": [
+            {
+              "name": "angle",
+              "description": "…",
+              "optional": false,
+              "type": [
+                "Number"
+              ]
+            }
+          ],
+          "kind": "function",
+          "tags": [
+            {
+              "title": "description",
+              "description": "invRotateZ Needs more description."
+            }
+          ],
+          "examples": [],
+          "todo": "More description.",
+          "codetitle": "b.Matrix2D.invRotateZ(angle)"
+        },
+        {
+          "name": "Matrix2D.print",
+          "description": "print Needs more description.",
+          "returns": null,
+          "category": "Document",
+          "subcategory": "Transformation",
+          "parameters": [],
+          "kind": "function",
+          "tags": [
+            {
+              "title": "description",
+              "description": "print Needs more description."
+            }
+          ],
+          "examples": [],
+          "todo": "More description.",
+          "codetitle": "b.Matrix2D.print()"
+        },
+        {
+          "name": "prototype",
+          "description": "A Matrix object.",
+          "returns": null,
+          "category": "Document",
+          "subcategory": "Transformation",
+          "parameters": [],
+          "kind": "Object",
+          "tags": [
+            {
+              "title": "description",
+              "description": "A Matrix object."
+            }
+          ],
+          "examples": [],
+          "todo": null,
+          "codetitle": null
         }
       ],
       "subcat": "Transformation",
@@ -2697,6 +3642,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.isText(obj)"
         }
       ],
@@ -2714,6 +3661,8 @@
           "parameters": [],
           "kind": "property",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.PT"
         },
         {
@@ -2725,6 +3674,8 @@
           "parameters": [],
           "kind": "property",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.PX"
         },
         {
@@ -2736,6 +3687,8 @@
           "parameters": [],
           "kind": "property",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.CM"
         },
         {
@@ -2747,6 +3700,8 @@
           "parameters": [],
           "kind": "property",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.MM"
         },
         {
@@ -2758,6 +3713,8 @@
           "parameters": [],
           "kind": "property",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.IN"
         }
       ],
@@ -2777,6 +3734,8 @@
           "parameters": [],
           "kind": "property",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.RGB"
         },
         {
@@ -2788,6 +3747,8 @@
           "parameters": [],
           "kind": "property",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.CMYK"
         },
         {
@@ -2799,6 +3760,8 @@
           "parameters": [],
           "kind": "property",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.LINEAR"
         },
         {
@@ -2810,6 +3773,8 @@
           "parameters": [],
           "kind": "property",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.RADIAL"
         },
         {
@@ -2833,6 +3798,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.fill(fillColor)"
         },
         {
@@ -2844,6 +3811,8 @@
           "parameters": [],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.noFill()"
         },
         {
@@ -2867,6 +3836,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.stroke(strokeColor)"
         },
         {
@@ -2878,6 +3849,8 @@
           "parameters": [],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.noStroke()"
         },
         {
@@ -2898,6 +3871,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.fillTint(tint)"
         },
         {
@@ -2918,6 +3893,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.strokeTint(tint)"
         },
         {
@@ -2938,6 +3915,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.colorMode(colorMode)"
         },
         {
@@ -2958,6 +3937,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.gradientMode(gradientMode)"
         },
         {
@@ -2985,6 +3966,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.color(Get)"
         },
         {
@@ -3031,6 +4014,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.gradient(c1, c2, [name])"
         },
         {
@@ -3059,6 +4044,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.opacity(obj, opacity)"
         },
         {
@@ -3087,6 +4074,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.blendMode(obj, blendMode)"
         },
         {
@@ -3129,6 +4118,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.lerpColor(c1, c2, amt)"
         }
       ],
@@ -3163,6 +4154,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.abs(val)"
         },
         {
@@ -3189,6 +4182,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.ceil(val)"
         },
         {
@@ -3231,6 +4226,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.constrain(aNumber, aMin, aMax)"
         },
         {
@@ -3281,6 +4278,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.dist(x1, y1, x2, y2)"
         },
         {
@@ -3307,6 +4306,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.exp(x)"
         },
         {
@@ -3333,6 +4334,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.floor(a)"
         },
         {
@@ -3375,6 +4378,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.lerp(value1, value2, amt)"
         },
         {
@@ -3401,6 +4406,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.log(x)"
         },
         {
@@ -3443,6 +4450,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.mag(x, y, [z])"
         },
         {
@@ -3501,6 +4510,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.map(value, istart, istop, ostart, ostop)"
         },
         {
@@ -3544,6 +4555,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.max(a, [b], [c])"
         },
         {
@@ -3587,6 +4600,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.min(a, [b], [c])"
         },
         {
@@ -3629,6 +4644,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.norm(aNumber, low, high)"
         },
         {
@@ -3663,6 +4680,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.pow(num, exponent)"
         },
         {
@@ -3689,6 +4708,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.round(value)"
         },
         {
@@ -3715,6 +4736,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.sq(aNumber)"
         }
       ],
@@ -3732,6 +4755,8 @@
           "parameters": [],
           "kind": "property",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.TWO_PI"
         },
         {
@@ -3743,6 +4768,8 @@
           "parameters": [],
           "kind": "property",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.PI"
         },
         {
@@ -3754,6 +4781,8 @@
           "parameters": [],
           "kind": "property",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.HALF_PI"
         },
         {
@@ -3765,6 +4794,8 @@
           "parameters": [],
           "kind": "property",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.QUARTER_PI"
         },
         {
@@ -3776,6 +4807,8 @@
           "parameters": [],
           "kind": "property",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.SINCOS_LENGTH"
         },
         {
@@ -3787,6 +4820,8 @@
           "parameters": [],
           "kind": "property",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.EPSILON"
         },
         {
@@ -3798,6 +4833,8 @@
           "parameters": [],
           "kind": "property",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.KAPPA"
         }
       ],
@@ -3838,6 +4875,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.random([low], [high])"
         },
         {
@@ -3858,6 +4897,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.randomSeed(seed)"
         },
         {
@@ -3878,6 +4919,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.Random(seed)"
         },
         {
@@ -3920,6 +4963,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.noise(x, [y], [z])"
         },
         {
@@ -3948,6 +4993,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.noiseDetail(octaves, fallout)"
         },
         {
@@ -3968,6 +5015,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.noiseSeed(seed)"
         }
       ],
@@ -4000,6 +5049,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.sqrt(val)"
         },
         {
@@ -4026,6 +5077,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.acos(value)"
         },
         {
@@ -4052,6 +5105,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.asin(value)"
         },
         {
@@ -4078,6 +5133,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.atan(value)"
         },
         {
@@ -4112,6 +5169,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.atan2(y, x)"
         },
         {
@@ -4138,6 +5197,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.cos(rad)"
         },
         {
@@ -4164,6 +5225,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.degrees(aAngle)"
         },
         {
@@ -4190,6 +5253,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.radians(aAngle)"
         },
         {
@@ -4216,6 +5281,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.sin(rad)"
         },
         {
@@ -4242,6 +5309,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.tan(rad)"
         }
       ],
@@ -4284,6 +5353,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.Vector(x, y, [z])"
         },
         {
@@ -4322,6 +5393,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.Vector.set(v, [y], [z])"
         },
         {
@@ -4339,6 +5412,8 @@
           "parameters": [],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.Vector.get()"
         },
         {
@@ -4356,6 +5431,8 @@
           "parameters": [],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.Vector.mag()"
         },
         {
@@ -4393,6 +5470,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.Vector.add(v, [y], [z])"
         },
         {
@@ -4430,6 +5509,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.Vector.sub(v, [y], [z])"
         },
         {
@@ -4467,6 +5548,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.Vector.mult(v, [y], [z])"
         },
         {
@@ -4504,6 +5587,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.Vector.div(v, [y], [z])"
         },
         {
@@ -4547,6 +5632,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.Vector.dist(v, [y], [z])"
         },
         {
@@ -4590,6 +5677,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.Vector.dot(v, [y], [z])"
         },
         {
@@ -4633,6 +5722,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.Vector.cross(v, [y], [z])"
         },
         {
@@ -4644,6 +5735,8 @@
           "parameters": [],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.Vector.normalize()"
         },
         {
@@ -4664,6 +5757,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.Vector.limit(high)"
         },
         {
@@ -4681,6 +5776,8 @@
           "parameters": [],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.Vector.heading()"
         },
         {
@@ -4698,6 +5795,8 @@
           "parameters": [],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.Vector.toString()"
         },
         {
@@ -4715,6 +5814,8 @@
           "parameters": [],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.Vector.array()"
         },
         {
@@ -4754,6 +5855,8 @@
               "description": null
             }
           ],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.Vector.dist(v1, v2)"
         },
         {
@@ -4793,6 +5896,8 @@
               "description": null
             }
           ],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.Vector.dot(v1, v2)"
         },
         {
@@ -4832,6 +5937,8 @@
               "description": null
             }
           ],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.Vector.cross(v1, v2)"
         },
         {
@@ -4871,6 +5978,8 @@
               "description": null
             }
           ],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.Vector.angleBetween(v1, v2)"
         }
       ],
@@ -4890,6 +5999,8 @@
           "parameters": [],
           "kind": "property",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.LOREM"
         },
         {
@@ -4925,6 +6036,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.objectStyle(pageItemOrName, [props])"
         },
         {
@@ -4960,6 +6073,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.applyObjectStyle(item, style)"
         },
         {
@@ -5018,6 +6133,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.text(txt, x, y, w, h)"
         },
         {
@@ -5069,6 +6186,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.typo(item, property, [value])"
         },
         {
@@ -5103,6 +6222,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.textFont(fontName, [fontStyle])"
         },
         {
@@ -5129,6 +6250,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.textSize([pointSize])"
         },
         {
@@ -5157,6 +6280,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.textAlign(align, [yAlign])"
         },
         {
@@ -5184,6 +6309,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.textLeading([leading])"
         },
         {
@@ -5210,6 +6337,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.textKerning([kerning])"
         },
         {
@@ -5236,6 +6365,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.textTracking([tracking])"
         },
         {
@@ -5271,6 +6402,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.characterStyle(textOrName, [props])"
         },
         {
@@ -5308,6 +6441,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.applyCharacterStyle(text, style)"
         },
         {
@@ -5343,6 +6478,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.paragraphStyle(textOrName, [props])"
         },
         {
@@ -5380,6 +6517,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.applyParagraphStyle(text, style)"
         }
       ],
@@ -5416,6 +6555,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.inspect(obj, maxlevel)"
         },
         {
@@ -5436,6 +6577,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.print(msg)"
         },
         {
@@ -5447,6 +6590,8 @@
           "parameters": [],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.printInfo()"
         },
         {
@@ -5474,6 +6619,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.saveStrings(file, strings)"
         },
         {
@@ -5503,6 +6650,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.saveString(file, string)"
         },
         {
@@ -5532,6 +6681,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.savePDF(file, [showOptions])"
         },
         {
@@ -5561,6 +6712,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.savePNG(file, [showOptions])"
         },
         {
@@ -5589,6 +6742,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.download(url, [file])"
         },
         {
@@ -5609,6 +6764,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.println(msg)"
         }
       ],
@@ -5648,6 +6805,8 @@
               "description": "The <a href=\"https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/filter\">filter()</a> method creates a new array with all elements that pass the test implemented by the provided function."
             }
           ],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.Array.filter(callback)"
         },
         {
@@ -5679,6 +6838,8 @@
               "description": "The <a href=\"https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Array/map\">map()</a> method creates a new array with the results of calling a provided function on every element in this array."
             }
           ],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.Array.map(callback)"
         },
         {
@@ -5707,6 +6868,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.Array.forEach(collection, cb)"
         }
       ],
@@ -5747,6 +6910,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.binary(num, [numBits])"
         },
         {
@@ -5773,6 +6938,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.unbinary(binaryString)"
         },
         {
@@ -5807,6 +6974,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.hex(value, [len])"
         },
         {
@@ -5833,6 +7002,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.unhex(hex)"
         }
       ],
@@ -5865,6 +7036,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.CSV.delimiter([delimiter])"
         },
         {
@@ -5891,6 +7064,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.CSV.decode(String)"
         },
         {
@@ -5917,6 +7092,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.CSV.encode(Array)"
         }
       ],
@@ -5934,6 +7111,8 @@
           "parameters": [],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.HashList()"
         },
         {
@@ -5960,6 +7139,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.HashList.remove(key)"
         },
         {
@@ -5986,6 +7167,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.HashList.get(key)"
         },
         {
@@ -6023,6 +7206,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.HashList.set(key, value)"
         },
         {
@@ -6049,6 +7234,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.HashList.hasKey(key)"
         },
         {
@@ -6078,6 +7265,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.HashList.hasValue(value)"
         },
         {
@@ -6095,6 +7284,8 @@
           "parameters": [],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.HashList.getKeysByValues()"
         },
         {
@@ -6112,6 +7303,8 @@
           "parameters": [],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.HashList.getSortedKeys()"
         },
         {
@@ -6129,6 +7322,8 @@
           "parameters": [],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.HashList.getKeys()"
         },
         {
@@ -6146,6 +7341,8 @@
           "parameters": [],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.HashList.getValues()"
         },
         {
@@ -6157,6 +7354,8 @@
           "parameters": [],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.HashList.clear()"
         }
       ],
@@ -6189,6 +7388,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.shellExecute(cmd)"
         },
         {
@@ -6216,6 +7417,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.loadString(fileOrString)"
         },
         {
@@ -6241,6 +7444,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.loadStrings(file)"
         }
       ],
@@ -6273,6 +7478,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.JSON.decode(String)"
         },
         {
@@ -6299,6 +7506,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.JSON.encode(Object)"
         }
       ],
@@ -6331,6 +7540,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.trimWord(s)"
         },
         {
@@ -6365,6 +7576,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.join(array, separator)"
         },
         {
@@ -6399,6 +7612,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.split(str, [delim])"
         },
         {
@@ -6433,6 +7648,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.splitTokens(str, [tokens])"
         },
         {
@@ -6475,6 +7692,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.nf(value, leftDigits, rightDigits)"
         },
         {
@@ -6517,6 +7736,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.nfs(value, leftDigits, rightDigits)"
         },
         {
@@ -6559,6 +7780,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.nfp(value, leftDigits, rightDigits)"
         },
         {
@@ -6601,6 +7824,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.nfc(value, leftDigits, rightDigits)"
         },
         {
@@ -6629,6 +7854,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.trim(str)"
         },
         {
@@ -6655,6 +7882,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.isURL(url)"
         },
         {
@@ -6689,6 +7918,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.endsWith(str, suffix)"
         },
         {
@@ -6723,6 +7954,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.startsWith(str, prefix)"
         }
       ],
@@ -6758,6 +7991,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.isArray(obj)"
         },
         {
@@ -6787,6 +8022,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.isNumber(num)"
         },
         {
@@ -6816,6 +8053,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.isString(str)"
         }
       ],
@@ -6852,6 +8091,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.linkTextFrames(textFrameA, textFrameB)"
         },
         {
@@ -6878,6 +8119,8 @@
           ],
           "kind": "function",
           "tags": [],
+          "examples": [],
+          "todo": null,
           "codetitle": "b.placeholder(textFrame)"
         }
       ],

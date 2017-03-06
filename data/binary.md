@@ -13,5 +13,7 @@ parameters:
     - {name: num, description: 'value to convert', optional: false, type: [Number]}
     - {name: numBits, description: 'number of digits to return', optional: true, type: [Number]}
 kind: function
+todo: null
+examples: []
 
 ---

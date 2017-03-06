@@ -12,5 +12,7 @@ returns:
 parameters:
     - {name: hex, description: 'The hex representation', optional: false, type: [String]}
 kind: function
+todo: null
+examples: []
 
 ---

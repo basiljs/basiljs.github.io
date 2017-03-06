@@ -14,5 +14,7 @@ parameters:
     - {name: c2, description: 'Input color 2', optional: false, type: [Color]}
     - {name: amt, description: 'The Amount to interpolate between the two colors', optional: false, type: [Number]}
 kind: function
+todo: null
+examples: []
 
 ---

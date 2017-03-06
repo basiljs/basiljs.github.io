@@ -13,5 +13,7 @@ parameters:
     - {name: y, description: 'The y coordinate.', optional: false, type: [Number]}
     - {name: x, description: 'The x coordinate.', optional: false, type: [Number]}
 kind: function
+todo: null
+examples: []
 
 ---

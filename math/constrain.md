@@ -14,5 +14,7 @@ parameters:
     - {name: aMin, description: 'Minimum limit.', optional: false, type: [Number]}
     - {name: aMax, description: 'Maximum limit.', optional: false, type: [Number]}
 kind: function
+todo: null
+examples: []
 
 ---

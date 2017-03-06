@@ -12,5 +12,7 @@ returns:
 parameters:
     - {name: location, description: 'The location placement mode.', optional: true, type: [String]}
 kind: function
+todo: null
+examples: []
 
 ---

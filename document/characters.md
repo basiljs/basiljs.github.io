@@ -7,11 +7,13 @@ category: Document
 subcategory: Multi-Getters
 returns:
     name: null
-    description: 'You can use it like an array.'
+    description: 'A collection of Character objects.'
     type: [Characters]
 parameters:
-    - {name: container, description: "The document, page, story, textFrame, paragraph, line or word instance to\n                                                   iterate the characters in", optional: false, type: [Document, Page, Story, TextFrame, Paragraph, Line, Word]}
+    - {name: container, description: 'The document, page, story, textFrame, paragraph, line or word instance to  iterate the characters in.', optional: false, type: [Document, Page, Story, TextFrame, Paragraph, Line, Word]}
     - {name: cb, description: 'Optional: The callback function to call with each character. When this function returns false the loop stops. Passed arguments: character, loopCount', optional: true, type: [Function]}
 kind: function
+todo: null
+examples: []
 
 ---

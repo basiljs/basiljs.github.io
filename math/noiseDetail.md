@@ -10,5 +10,7 @@ parameters:
     - {name: octaves, description: 'Number of octaves to be used by the noise() function.', optional: false, type: [Number]}
     - {name: fallout, description: 'Falloff factor for each octave.', optional: false, type: [Number]}
 kind: function
+todo: null
+examples: []
 
 ---

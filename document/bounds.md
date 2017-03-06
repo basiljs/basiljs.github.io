@@ -12,5 +12,7 @@ returns:
 parameters:
     - {name: obj, description: 'The object to calculate the geometric bounds.', optional: false, type: [Text, Object]}
 kind: function
+todo: null
+examples: []
 
 ---

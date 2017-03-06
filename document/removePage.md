@@ -9,5 +9,7 @@ returns: null
 parameters:
     - {name: page, description: 'Optional, the page to be removed as Page object or page number.', optional: true, type: [null]}
 kind: function
+todo: null
+examples: []
 
 ---

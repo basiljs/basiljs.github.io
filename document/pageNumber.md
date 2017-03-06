@@ -12,5 +12,7 @@ returns:
 parameters:
     - {name: pageObj, description: 'Optional, the page you want to know the number of.', optional: true, type: [Page]}
 kind: function
+todo: null
+examples: []
 
 ---

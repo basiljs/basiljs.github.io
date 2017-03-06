@@ -12,5 +12,7 @@ returns:
 parameters:
     - {name: x, description: 'A number, must be greater then 0.0.', optional: false, type: [Number]}
 kind: function
+todo: null
+examples: []
 
 ---

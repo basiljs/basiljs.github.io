@@ -15,5 +15,7 @@ parameters:
     - {name: w, description: Width, optional: false, type: [Number]}
     - {name: h, description: Height, optional: false, type: [Number]}
 kind: function
+todo: null
+examples: []
 
 ---

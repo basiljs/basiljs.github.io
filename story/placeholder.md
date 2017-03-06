@@ -12,5 +12,7 @@ returns:
 parameters:
     - {name: textFrame, description: null, optional: false, type: [TextFrame]}
 kind: function
+todo: null
+examples: []
 
 ---

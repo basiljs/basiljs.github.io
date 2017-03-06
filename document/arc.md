@@ -18,5 +18,7 @@ parameters:
     - {name: endAngle, description: 'ending angle of the arc (radians)', optional: false, type: [Number]}
     - {name: mode, description: 'optional property defines rendering technique of arc, b.OPEN (default), b.CHORD, or b.PIE', optional: false, type: [String]}
 kind: function
+todo: null
+examples: []
 
 ---

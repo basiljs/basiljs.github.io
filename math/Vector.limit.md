@@ -9,5 +9,7 @@ returns: null
 parameters:
     - {name: high, description: 'The value to scale to.', optional: false, type: [Number]}
 kind: function
+todo: null
+examples: []
 
 ---

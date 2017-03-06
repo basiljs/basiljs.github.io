@@ -12,5 +12,7 @@ returns:
 parameters:
     - {name: value, description: 'The value to be rounded.', optional: false, type: [Number]}
 kind: function
+todo: null
+examples: []
 
 ---
