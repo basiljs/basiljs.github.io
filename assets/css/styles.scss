@@ -109,6 +109,8 @@ li:before {
 @import "syntax";
 pre {
   background: #eee !important;
+  overflow: auto;
+  border-radius: 3px;
 }
 
 code {
