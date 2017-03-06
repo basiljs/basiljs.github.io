@@ -17,3 +17,17 @@
 function foo(baz, bah) {
   return true;
 }
+
+/**
+ * @description The description of the function.
+ * This should be multiline! With <b>HTML</b>
+ *
+ * @param  {String} baz  Makes the beat go baz.
+ * @param  {String} [boom] Say boom and bang. Can this also be <b>mulitline?</b>.
+ * I hope so.
+ * @param  {String} [bang] These aren't the droids you are looking for.
+ * @return {String} Nothing to see here move along.
+ */
+function bahbaz(baz, boom, bang) {
+  return 'FOO';
+}

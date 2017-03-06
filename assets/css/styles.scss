@@ -104,7 +104,22 @@ li:before {
   background-image: url("/assets/images/stripe_c40ccfac0db9e43c48e95a530d787366.png");
 }
 
+// ------------ code
+//
 @import "syntax";
+pre {
+  background: #eee !important;
+}
+
+code {
+  padding: 2px 4px;
+  vertical-align: text-bottom;
+}
+
+pre {
+  padding: 1.2em;
+}
+
 //-------media queries
 
 @media only screen
