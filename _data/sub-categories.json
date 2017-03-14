@@ -733,7 +733,7 @@
         "subcategory": null,
         "parameters": [
           {
-            "name": "pageItemOrName",
+            "name": "itemOrName",
             "description": "A page item whose style to return or the name of the object style to return.",
             "optional": false,
             "type": [
@@ -743,7 +743,7 @@
           },
           {
             "name": "props",
-            "description": "Optional: An object of property name/value pairs to set the style's properties.",
+            "description": "An object of property name/value pairs to set the style's properties.",
             "optional": true,
             "type": [
               "Object"
@@ -754,7 +754,7 @@
         "tags": [],
         "examples": [],
         "todo": null,
-        "codetitle": "b.objectStyle(pageItemOrName, [props])"
+        "codetitle": "b.objectStyle(itemOrName, [props])"
       },
       {
         "name": "applyObjectStyle",
@@ -1890,10 +1890,10 @@
       },
       {
         "name": "ellipse",
-        "description": "Draws an ellipse (oval) in the display window. An ellipse with an equal ",
+        "description": "Draws an ellipse (oval) in the display window. An ellipse with an equal width and height is a circle.\nThe first two parameters set the location, the third sets the width, and the fourth sets the height.",
         "returns": {
           "name": null,
-          "description": "New oval (n.b. in Adobe Scripting the corresponding type is Oval, not Ellipse)",
+          "description": "New Oval (in InDesign Scripting terms the corresponding type is Oval, not Ellipse).",
           "type": [
             "Oval"
           ]
@@ -1903,7 +1903,7 @@
         "parameters": [
           {
             "name": "x",
-            "description": "Location X",
+            "description": "X-coordinate of the ellipse.",
             "optional": false,
             "type": [
               "Number"
@@ -1911,7 +1911,7 @@
           },
           {
             "name": "y",
-            "description": "Location Y",
+            "description": "Y-coordinate of the ellipse.",
             "optional": false,
             "type": [
               "Number"
@@ -1919,7 +1919,7 @@
           },
           {
             "name": "w",
-            "description": "Width",
+            "description": "Width of the ellipse.",
             "optional": false,
             "type": [
               "Number"
@@ -1927,7 +1927,7 @@
           },
           {
             "name": "h",
-            "description": "Height",
+            "description": "Height of the ellipse.",
             "optional": false,
             "type": [
               "Number"
@@ -1945,7 +1945,7 @@
         "description": "Draws a line (a direct path between two points) to the page.",
         "returns": {
           "name": null,
-          "description": "New GraphicLine",
+          "description": "New GraphicLine.",
           "type": [
             "GraphicLine"
           ]
@@ -1955,7 +1955,7 @@
         "parameters": [
           {
             "name": "x1",
-            "description": "Point A x-value",
+            "description": "X-coordinate of Point 1.",
             "optional": false,
             "type": [
               "Number"
@@ -1963,7 +1963,7 @@
           },
           {
             "name": "y1",
-            "description": "Point A y-value",
+            "description": "Y-coordinate of Point 1.",
             "optional": false,
             "type": [
               "Number"
@@ -1971,7 +1971,7 @@
           },
           {
             "name": "x2",
-            "description": "Point B x-value",
+            "description": "X-coordinate of Point 2.",
             "optional": false,
             "type": [
               "Number"
@@ -1979,7 +1979,7 @@
           },
           {
             "name": "y2",
-            "description": "Point B y-value",
+            "description": "Y-coordinate of Point 2.",
             "optional": false,
             "type": [
               "Number"
@@ -1994,16 +1994,18 @@
       },
       {
         "name": "beginShape",
-        "description": "Using the beginShape() and endShape() functions allow creating more complex forms.\nbeginShape() begins recording vertices for a shape and endShape() stops recording.\nAfter calling the beginShape() function, a series of vertex() commands must follow.\nTo stop drawing the shape, call endShape(). The value of the parameter tells whether the paths to\ncreate from the provided vertices have to be closed or not (to connect the beginning and the end).",
+        "description": "Using the beginShape() and endShape() functions allows to create more complex forms.\nbeginShape() begins recording vertices for a shape and endShape() stops recording.\nAfter calling the beginShape() function, a series of vertex() commands must follow.\nTo stop drawing the shape, call endShape(). The shapeMode parameter allows to close the shape\n(to connect the beginning and the end).",
         "returns": null,
         "category": "Document",
         "subcategory": "Primitives",
         "parameters": [
           {
             "name": "shapeMode",
-            "description": "Set b.CLOSE if the new Path should be auto-closed.",
+            "description": "Set to b.CLOSE if the new Path should be auto-closed.",
             "optional": false,
-            "type": []
+            "type": [
+              "String"
+            ]
           }
         ],
         "kind": "function",
@@ -2014,14 +2016,14 @@
       },
       {
         "name": "vertex",
-        "description": "Shapes are constructed by connecting a series of vertices. vertex() is used to\nspecify the vertex coordinates lines and polygons. It is used exclusively within\nthe beginShape() and endShape() functions.",
+        "description": "Shapes are constructed by connecting a series of vertices. vertex() is used to\nspecify the vertex coordinates of lines and polygons. It is used exclusively between\nthe beginShape() and endShape() functions.",
         "returns": null,
         "category": "Document",
         "subcategory": "Primitives",
         "parameters": [
           {
             "name": "x",
-            "description": "position x-value",
+            "description": "X-coordinate of the vertex.",
             "optional": false,
             "type": [
               "Number"
@@ -2029,7 +2031,7 @@
           },
           {
             "name": "y",
-            "description": "position y-value",
+            "description": "Y-coordinate of the vertex.",
             "optional": false,
             "type": [
               "Number"
@@ -2037,7 +2039,7 @@
           },
           {
             "name": "xAnchorLeft",
-            "description": "position xAnchorLeft-value",
+            "description": "X-coordinate of the left-direction point.",
             "optional": true,
             "type": [
               "Number"
@@ -2045,7 +2047,7 @@
           },
           {
             "name": "yAnchorLeft",
-            "description": "position yAnchorLeft-value",
+            "description": "Y-coordinate of the left-direction point.",
             "optional": true,
             "type": [
               "Number"
@@ -2053,7 +2055,7 @@
           },
           {
             "name": "xAnchorRight",
-            "description": "position xAnchorRight-value",
+            "description": "X-coordinate of the right-direction point.",
             "optional": true,
             "type": [
               "Number"
@@ -2061,7 +2063,7 @@
           },
           {
             "name": "yAnchorRight",
-            "description": "position yAnchorRight-value",
+            "description": "Y-coordinate of the right-direction point.",
             "optional": true,
             "type": [
               "Number"
@@ -2076,10 +2078,10 @@
       },
       {
         "name": "arc",
-        "description": "The arc() function draws an arc in the display window.\nArcs are drawn along the outer edge of an ellipse defined by the\n",
+        "description": "The arc() function draws an arc. Arcs are drawn along the outer edge of an ellipse\ndefined by the x, y, width and height parameters.\nThe origin or the arc's ellipse may be changed with the ellipseMode() function.\nThe start and stop parameters specify the angles at which to draw the arc.",
         "returns": {
           "name": null,
-          "description": "newShape (n.b. in Adobe Scripting the corresponding type is a Path Item)\n\nTODO(S)\n- fix overlapping points bug",
+          "description": "The resulting GraphicLine or Polygon object (in InDesign Scripting terms the corresponding type is GraphicLine or Polygon, not Arc).\n\nTODO(S)\n- fix overlapping points bug",
           "type": [
             "GraphicLine",
             "Polygon"
@@ -2090,7 +2092,7 @@
         "parameters": [
           {
             "name": "cx",
-            "description": "x-coordinate of the arc's center",
+            "description": "X-coordinate of the arc's center.",
             "optional": false,
             "type": [
               "Number"
@@ -2098,7 +2100,7 @@
           },
           {
             "name": "cy",
-            "description": "y-coordinate of the arc's center",
+            "description": "Y-coordinate of the arc's center.",
             "optional": false,
             "type": [
               "Number"
@@ -2106,7 +2108,7 @@
           },
           {
             "name": "w",
-            "description": "width of the arc's ellipse",
+            "description": "Width of the arc's ellipse.",
             "optional": false,
             "type": [
               "Number"
@@ -2114,7 +2116,7 @@
           },
           {
             "name": "h",
-            "description": "height of the arc's ellipse",
+            "description": "Height of the arc's ellipse.",
             "optional": false,
             "type": [
               "Number"
@@ -2122,7 +2124,7 @@
           },
           {
             "name": "startAngle",
-            "description": "starting angle of the arc (radians)",
+            "description": "Starting angle of the arc in radians.",
             "optional": false,
             "type": [
               "Number"
@@ -2130,7 +2132,7 @@
           },
           {
             "name": "endAngle",
-            "description": "ending angle of the arc (radians)",
+            "description": "Ending angle of the arc in radians.",
             "optional": false,
             "type": [
               "Number"
@@ -2138,8 +2140,8 @@
           },
           {
             "name": "mode",
-            "description": "optional property defines rendering technique of arc, b.OPEN (default), b.CHORD, or b.PIE",
-            "optional": false,
+            "description": "Mode to define the rendering technique of the arc: b.OPEN (default), b.CHORD, or b.PIE.",
+            "optional": true,
             "type": [
               "String"
             ]
@@ -2149,11 +2151,11 @@
         "tags": [],
         "examples": [],
         "todo": null,
-        "codetitle": "b.arc(cx, cy, w, h, startAngle, endAngle, mode)"
+        "codetitle": "b.arc(cx, cy, w, h, startAngle, endAngle, [mode])"
       },
       {
         "name": "addPath",
-        "description": "addPath() is used to create multi component paths. Call addPath() to add the so far drawn vertices to a single path.\nNew vertices will then end up in a new path. endShape() will then return a multi path object. All component paths will account for\nthe setting (see b.CLOSE) given in beginShape(shapeMode).",
+        "description": "addPath() is used to create multi component paths. Call addPath() to add\nthe vertices drawn so far to a single path. New vertices will then end up in a new path and\nendShape() will return a multi path object. All component paths will account for\nthe setting (see b.CLOSE) given in beginShape(shapeMode).",
         "returns": null,
         "category": "Document",
         "subcategory": "Primitives",
@@ -2169,7 +2171,7 @@
         "description": "The endShape() function is the companion to beginShape() and may only be called\nafter beginShape().",
         "returns": {
           "name": null,
-          "description": "newShape",
+          "description": "The GraphicLine or Polygon object that was created.",
           "type": [
             "GraphicLine",
             "Polygon"
@@ -2189,7 +2191,7 @@
         "description": "Draws a rectangle on the page.",
         "returns": {
           "name": null,
-          "description": "New rectangle",
+          "description": "The rectangle that was created.",
           "type": [
             "Rectangle"
           ]
@@ -2199,7 +2201,7 @@
         "parameters": [
           {
             "name": "x",
-            "description": "Position X",
+            "description": "X-coordinate of the rectangle.",
             "optional": false,
             "type": [
               "Number"
@@ -2207,7 +2209,7 @@
           },
           {
             "name": "y",
-            "description": "Position Y",
+            "description": "Y-coordinate of the rectangle.",
             "optional": false,
             "type": [
               "Number"
@@ -2215,7 +2217,7 @@
           },
           {
             "name": "w",
-            "description": "Width",
+            "description": "Width of the rectangle.",
             "optional": false,
             "type": [
               "Number"
@@ -2223,7 +2225,7 @@
           },
           {
             "name": "h",
-            "description": "Height",
+            "description": "Height of the rectangle.",
             "optional": false,
             "type": [
               "Number"
@@ -4288,7 +4290,7 @@
         "parameters": [
           {
             "name": "mode",
-            "description": "Either b.CORNER, b.CORNERS, b.CENTER, or b.RADIUS",
+            "description": "The rectMode to switch to: either b.CORNER, b.CORNERS, b.CENTER, or b.RADIUS.",
             "optional": false,
             "type": [
               "String"
@@ -4303,14 +4305,14 @@
       },
       {
         "name": "ellipseMode",
-        "description": "The origin of the ellipse is modified by the ellipseMode() function.\nThe default configuration is ellipseMode(CENTER), which specifies the\nlocation of the ellipse as the center of the shape. The RADIUS mode is\nthe same, but the width and height parameters to ellipse() specify the\nradius of the ellipse, rather than the diameter. The CORNER mode draws\nthe shape from the upper-left corner of its bounding box. The CORNERS\nmode uses the four parameters to ellipse() to set two opposing corners\nof the ellipse's bounding box. The parameter must be written in \"ALL CAPS\".",
+        "description": "The origin of new ellipses is modified by the ellipseMode() function.\nThe default configuration is ellipseMode(CENTER), which specifies the\nlocation of the ellipse as the center of the shape. The RADIUS mode is\nthe same, but the width and height parameters to ellipse() specify the\nradius of the ellipse, rather than the diameter. The CORNER mode draws\nthe shape from the upper-left corner of its bounding box. The CORNERS\nmode uses the four parameters to ellipse() to set two opposing corners\nof the ellipse's bounding box. The parameter must be written in \"ALL CAPS\".",
         "returns": null,
         "category": "Document",
         "subcategory": "Attributes",
         "parameters": [
           {
             "name": "mode",
-            "description": "Either b.CENTER, b.RADIUS, b.CORNER, or b.CORNERS",
+            "description": "The ellipse mode to switch to: either b.CENTER, b.RADIUS, b.CORNER, or b.CORNERS.",
             "optional": false,
             "type": [
               "String"
@@ -4325,14 +4327,14 @@
       },
       {
         "name": "strokeWeight",
-        "description": "Sets the width of the stroke used for lines and the border\naround shapes.",
+        "description": "Sets the width of the stroke used for lines and the border around shapes.",
         "returns": null,
         "category": "Document",
         "subcategory": "Attributes",
         "parameters": [
           {
             "name": "weight",
-            "description": "The width of the stroke",
+            "description": "The width of the stroke in points.",
             "optional": false,
             "type": [
               "Number"
@@ -4352,10 +4354,10 @@
     "entries": [
       {
         "name": "duplicate",
-        "description": "Duplicates the given page after the current page or the given pageitem to the current page and layer. Use b.rectMode() to set center point.",
+        "description": "Duplicates the given page after the current page or the given page item to the current page and layer. Use b.rectMode() to set center point.",
         "returns": {
           "name": null,
-          "description": "Returns the new item",
+          "description": "The new page item or page.",
           "type": [
             "Object"
           ]
@@ -4365,7 +4367,7 @@
         "parameters": [
           {
             "name": "item",
-            "description": "The item to duplicate",
+            "description": "The page item or page to duplicate.",
             "optional": false,
             "type": [
               "PageItem",
@@ -4939,7 +4941,7 @@
         "category": "Document",
         "subcategory": "Transformation",
         "parameters": [],
-        "kind": "property",
+        "kind": "function",
         "tags": [
           {
             "title": "description",
@@ -4948,7 +4950,7 @@
         ],
         "examples": [],
         "todo": "More description.",
-        "codetitle": "b.Matrix2D.set"
+        "codetitle": "b.Matrix2D.set()"
       },
       {
         "name": "Matrix2D.get",
@@ -4963,7 +4965,7 @@
         "category": "Document",
         "subcategory": "Transformation",
         "parameters": [],
-        "kind": "property",
+        "kind": "function",
         "tags": [
           {
             "title": "description",
@@ -4972,7 +4974,7 @@
         ],
         "examples": [],
         "todo": "More description.",
-        "codetitle": "b.Matrix2D.get"
+        "codetitle": "b.Matrix2D.get()"
       },
       {
         "name": "Matrix2D.reset",
@@ -4981,7 +4983,7 @@
         "category": "Document",
         "subcategory": "Transformation",
         "parameters": [],
-        "kind": "property",
+        "kind": "function",
         "tags": [
           {
             "title": "description",
@@ -4990,7 +4992,7 @@
         ],
         "examples": [],
         "todo": null,
-        "codetitle": "b.Matrix2D.reset"
+        "codetitle": "b.Matrix2D.reset()"
       },
       {
         "name": "Matrix2D.array",
@@ -5013,7 +5015,7 @@
           }
         ],
         "examples": [],
-        "todo": "More description.\n[array description]",
+        "todo": "More description.",
         "codetitle": "b.Matrix2D.array()"
       },
       {
