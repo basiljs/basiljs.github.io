@@ -7,7 +7,7 @@ category: Document
 subcategory: Primitives
 returns:
     name: null
-    description: newShape
+    description: 'The GraphicLine or Polygon object that was created.'
     type: [GraphicLine, Polygon]
 parameters: []
 kind: function

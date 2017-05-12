@@ -4759,7 +4759,7 @@
       },
       {
         "name": "popMatrix",
-        "description": "Pops the current transformation matrix off the matrix stack. Understanding pushing and popping requires understanding the concept of a matrix stack. The ",
+        "description": "Pops the current transformation matrix off the matrix stack. Understanding pushing and popping requires understanding the concept of a matrix stack. The <code>pushMatrix()</code> function saves the current coordinate system to the stack and <code>popMatrix()</code> restores the prior coordinate system. <code>pushMatrix()</code> and <code>popMatrix()</code> are used in conjuction with the other transformation methods and may be embedded to control the scope of the transformations.",
         "returns": null,
         "category": "Document",
         "subcategory": "Transformation",
@@ -4790,7 +4790,7 @@
       },
       {
         "name": "pushMatrix",
-        "description": "Pushes the current transformation matrix onto the matrix stack. Understanding ",
+        "description": "Pushes the current transformation matrix onto the matrix stack. Understanding <code>pushMatrix()</code> and <code>popMatrix()</code> requires understanding the concept of a matrix stack. The <code>pushMatrix()</code> function saves the current coordinate system to the stack and <code>popMatrix()</code> restores the prior coordinate system. <code>pushMatrix()</code> and <code>popMatrix()</code> are used in conjuction with the other transformation methods and may be embedded to control the scope of the transformations.",
         "returns": null,
         "category": "Document",
         "subcategory": "Transformation",
@@ -4821,7 +4821,7 @@
       },
       {
         "name": "rotate",
-        "description": "Rotates an object the amount specified by the angle parameter. Angles should be specified in radians (values from 0 to ",
+        "description": "Rotates an object the amount specified by the angle parameter. Angles should be specified in radians (values from 0 to <code>PI</code>*2) or converted to radians with the <code>radians()</code> function. Objects are always rotated around their relative position to the origin and positive numbers rotate objects in a clockwise direction with 0 radians or degrees being up and <code>HALF_PI</code> being to the right etc. Transformations apply to everything that happens after and subsequent calls to the function accumulates the effect. For example, calling <code>rotate(PI/2)</code> and then <code>rotate(PI/2)</code> is the same as <code>rotate(PI)</code>. If <code>rotate()</code> is called within the <code>draw()</code>, the transformation is reset when the loop begins again. Technically, <code>rotate()</code> multiplies the current transformation matrix by a rotation matrix. This function can be further controlled by the <code>pushMatrix()</code> and <code>popMatrix()</code>.",
         "returns": null,
         "category": "Document",
         "subcategory": "Transformation",
@@ -4848,7 +4848,7 @@
       },
       {
         "name": "scale",
-        "description": "Increasing and decreasing the size of an object by expanding and contracting vertices. Scale values are specified as decimal percentages. The function call ",
+        "description": "Increasing and decreasing the size of an object by expanding and contracting vertices. Scale values are specified as decimal percentages. The function call <code>scale(2.0)</code> increases the dimension of a shape by 200%. Objects always scale from their relative origin to the coordinate system. Transformations apply to everything that happens after and subsequent calls to the function multiply the effect. For example, calling <code>scale(2.0)</code> and then <code>scale(1.5)</code> is the same as <code>scale(3.0)</code>. If <code>scale()</code> is called within <code>draw()</code>, the transformation is reset when the loop begins again. This function can be further controlled by <code>pushMatrix()</code> and <code>popMatrix()</code>.\nIf only one parameter is given, it is applied on X and Y axis.",
         "returns": null,
         "category": "Document",
         "subcategory": "Transformation",
@@ -4883,7 +4883,7 @@
       },
       {
         "name": "translate",
-        "description": "Specifies an amount to displace objects within the page. The x parameter specifies left/right translation, the y parameter specifies up/down translation. Transformations apply to everything that happens after and subsequent calls to the function accumulates the effect. For example, calling ",
+        "description": "Specifies an amount to displace objects within the page. The x parameter specifies left/right translation, the y parameter specifies up/down translation. Transformations apply to everything that happens after and subsequent calls to the function accumulates the effect. For example, calling <code>translate(50, 0)</code> and then <code>translate(20, 0)</code> is the same as <code>translate(70, 0)</code>. This function can be further controlled by the <code>pushMatrix()</code> and <code>popMatrix()</code>.",
         "returns": null,
         "category": "Document",
         "subcategory": "Transformation",
@@ -6774,7 +6774,7 @@
     "entries": [
       {
         "name": "Array.filter",
-        "description": "The ",
+        "description": "The <a href=\"https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/filter\">filter()</a> method creates a new array with all elements that pass the test implemented by the provided function.",
         "returns": {
           "name": null,
           "description": "The new array with the elements that pass the test.",
@@ -6807,7 +6807,7 @@
       },
       {
         "name": "Array.map",
-        "description": "The ",
+        "description": "The <a href=\"https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Array/map\">map()</a> method creates a new array with the results of calling a provided function on every element in this array.",
         "returns": {
           "name": null,
           "description": "The new array with each element being the result of the callback function.",

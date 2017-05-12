@@ -7,7 +7,7 @@ category: Document
 subcategory: Attributes
 returns: null
 parameters:
-    - {name: mode, description: 'Either b.CORNER, b.CORNERS, b.CENTER, or b.RADIUS', optional: false, type: [String]}
+    - {name: mode, description: 'The rectMode to switch to: either b.CORNER, b.CORNERS, b.CENTER, or b.RADIUS.', optional: false, type: [String]}
 kind: function
 todo: null
 examples: []

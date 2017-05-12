@@ -7,13 +7,13 @@ category: Document
 subcategory: Primitives
 returns:
     name: null
-    description: 'New GraphicLine'
+    description: 'New GraphicLine.'
     type: [GraphicLine]
 parameters:
-    - {name: x1, description: 'Point A x-value', optional: false, type: [Number]}
-    - {name: y1, description: 'Point A y-value', optional: false, type: [Number]}
-    - {name: x2, description: 'Point B x-value', optional: false, type: [Number]}
-    - {name: y2, description: 'Point B y-value', optional: false, type: [Number]}
+    - {name: x1, description: 'X-coordinate of Point 1.', optional: false, type: [Number]}
+    - {name: y1, description: 'Y-coordinate of Point 1.', optional: false, type: [Number]}
+    - {name: x2, description: 'X-coordinate of Point 2.', optional: false, type: [Number]}
+    - {name: y2, description: 'Y-coordinate of Point 2.', optional: false, type: [Number]}
 kind: function
 todo: null
 examples: []

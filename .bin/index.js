@@ -41,7 +41,9 @@ function buildEntry(e) {
   }
   if(Array.isArray(e.tags)) {
     e.tags.forEach((ele, ndx, array)=>{
-
+      if(ele.title === 'description') {
+        entry.description = ele.description;
+      }
       if(ele.title === 'cat') { // get the categories
         entry.category = ele.description;
 

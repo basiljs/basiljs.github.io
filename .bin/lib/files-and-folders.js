@@ -41,9 +41,9 @@ function process(ele, folder, ow) {
     let frontmatter = `---\n${yamlstr}\n---\n`;
     if(ow === true) {
       if(pathExists.sync(file) === true) {
-        console.log(`Overwriting file "${file}"`);
+        // console.log(`Overwriting file "${file}"`);
       }else{
-        console.log(`Creating file "${file}"`);
+        // console.log(`Creating file "${file}"`);
       }
       write(file, frontmatter);
     } else if(ow === false || pathExists.sync(file) === false) {

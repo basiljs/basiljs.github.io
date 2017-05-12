@@ -7,13 +7,13 @@ category: Document
 subcategory: Primitives
 returns:
     name: null
-    description: 'New rectangle'
+    description: 'The rectangle that was created.'
     type: [Rectangle]
 parameters:
-    - {name: x, description: 'Position X', optional: false, type: [Number]}
-    - {name: y, description: 'Position Y', optional: false, type: [Number]}
-    - {name: w, description: Width, optional: false, type: [Number]}
-    - {name: h, description: Height, optional: false, type: [Number]}
+    - {name: x, description: 'X-coordinate of the rectangle.', optional: false, type: [Number]}
+    - {name: y, description: 'Y-coordinate of the rectangle.', optional: false, type: [Number]}
+    - {name: w, description: 'Width of the rectangle.', optional: false, type: [Number]}
+    - {name: h, description: 'Height of the rectangle.', optional: false, type: [Number]}
 kind: function
 todo: null
 examples: []

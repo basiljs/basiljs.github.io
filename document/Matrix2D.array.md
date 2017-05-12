@@ -11,7 +11,7 @@ returns:
     type: [Array]
 parameters: []
 kind: function
-todo: "More description.\n[array description]"
+todo: 'More description.'
 examples: []
 
 ---

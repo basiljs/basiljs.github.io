@@ -2,7 +2,7 @@
 layout: entry
 title: Array.map
 codetitle: b.Array.map(callback)
-description: 'The '
+description: 'The <a href="https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Array/map">map()</a> method creates a new array with the results of calling a provided function on every element in this array.'
 category: Data
 subcategory: Array
 returns:
