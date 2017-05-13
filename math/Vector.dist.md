@@ -17,8 +17,7 @@ todo: null
 examples: []
 
 ---
-Number]}
-kind: function
+ion
 todo: null
 examples: []
 

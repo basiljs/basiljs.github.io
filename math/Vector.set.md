@@ -8,8 +8,8 @@ subcategory: Vector
 returns: null
 parameters:
     - {name: v, description: 'Either a vector, array or x component.', optional: false, type: [Number, Array, Vector]}
-    - {name: y, description: 'Optional, the y component.', optional: true, type: [Number]}
-    - {name: z, description: 'Optional, the z component.', optional: true, type: [Number]}
+    - {name: y, description: 'The y component.', optional: true, type: [Number]}
+    - {name: z, description: 'The z component.', optional: true, type: [Number]}
 kind: function
 todo: null
 examples: []

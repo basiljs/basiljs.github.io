@@ -10,7 +10,7 @@ returns:
     description: 'The page number within the document.'
     type: [Number]
 parameters:
-    - {name: pageObj, description: 'Optional, the page you want to know the number of.', optional: true, type: [Page]}
+    - {name: pageObj, description: 'The page you want to know the number of.', optional: true, type: [Page]}
 kind: function
 todo: null
 examples: []

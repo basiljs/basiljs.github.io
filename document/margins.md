@@ -10,11 +10,11 @@ returns:
     description: 'Current page margins with the properties: top, right, bottom, left.'
     type: [Object]
 parameters:
-    - {name: top, description: 'Optional, top margin or all if only one.', optional: true, type: [Number]}
-    - {name: right, description: 'Optional, right margin.', optional: true, type: [Number]}
-    - {name: bottom, description: 'Optional, bottom margin.', optional: true, type: [Number]}
-    - {name: left, description: 'Optional, left margin.', optional: true, type: [Number]}
-    - {name: pageNumber, description: 'Optional, sets margins to selected page, currentPage() if left blank.', optional: true, type: [Number]}
+    - {name: top, description: 'Top margin or all if only one.', optional: true, type: [Number]}
+    - {name: right, description: 'Right margin.', optional: true, type: [Number]}
+    - {name: bottom, description: 'Bottom margin.', optional: true, type: [Number]}
+    - {name: left, description: 'Left margin.', optional: true, type: [Number]}
+    - {name: pageNumber, description: 'Sets margins to selected page, currentPage() if left blank.', optional: true, type: [Number]}
 kind: function
 todo: null
 examples: []

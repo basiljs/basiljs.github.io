@@ -6649,7 +6649,7 @@
             }
           ],
           "todo": null,
-          "codetitle": "b.inspect(obj, [settings], [settings.showProps], [settings.showValues], [settings.showMethods], [settings.maxLevel], [settings.propList])"
+          "codetitle": "b.inspect(obj, [settings])"
         },
         {
           "name": "print",

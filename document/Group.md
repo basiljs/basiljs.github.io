@@ -17,7 +17,4 @@ todo: null
 examples: []
 
 ---
- null
-examples: []
-
 ---

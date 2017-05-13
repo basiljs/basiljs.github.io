@@ -5,18 +5,23 @@
 var exports = module.exports = {};
 function generator(data) {
   data.forEach((element)=>{
-    console.log(element);
+//    console.log(element);
     element.codetitle = null;
     if(element.kind === null) {
       element.kind = 'function';
     }
     if(element.kind.toString() === 'function' || element.kind.toString() === 'constructor') {
-      let params = '';
+      let paramsList = [];
       element.parameters.forEach((ele, ndx, arr)=>{
-        let name = (ele.optional === true) ? `[${ele.name}]` : ele.name;
-        let sep = (ndx + 1 !== arr.length) ? ', ' : '';
-        params += name + sep;
+        // check if we have object params
+        if(ele.name.indexOf('.') === -1) {
+          let name = (ele.optional === true) ? `[${ele.name}]` : ele.name;
+          // let sep = (ndx + 1 !== arr.length) ? ', ' : '';
+          paramsList.push(name);
+        }
       });
+      // make it a string
+      let params = paramsList.join(', ');
       element.codetitle = `b.${element.name}(${params})`;
     }else if (element.kind.toString() === 'constant' || element.kind.toString() === 'property') {
       element.codetitle = `b.${element.name}`;

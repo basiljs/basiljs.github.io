@@ -2,7 +2,7 @@
 layout: entry
 title: noStroke
 codetitle: b.noStroke()
-description: "Disables drawing the stroke (outline). If both noStroke() and noFill()\nare called, nothing will be drawn to the screen."
+description: "Disables drawing the stroke. If both noStroke() and noFill() are called,\nnewly drawn shapes will be invisible."
 category: Color
 subcategory: null
 returns: null

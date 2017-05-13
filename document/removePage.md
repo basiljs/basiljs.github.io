@@ -7,7 +7,7 @@ category: Document
 subcategory: Page
 returns: null
 parameters:
-    - {name: page, description: 'Optional, the page to be removed as Page object or page number.', optional: true, type: [null]}
+    - {name: page, description: 'The page to be removed as Page object or page number.', optional: true, type: [null]}
 kind: function
 todo: null
 examples: []

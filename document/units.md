@@ -10,7 +10,7 @@ returns:
     description: 'Current unit setting.'
     type: [String]
 parameters:
-    - {name: units, description: 'Optional, supported units: PT, PX, CM, MM or IN.', optional: true, type: [String]}
+    - {name: units, description: 'Supported units: PT, PX, CM, MM or IN.', optional: true, type: [String]}
 kind: function
 todo: null
 examples: []

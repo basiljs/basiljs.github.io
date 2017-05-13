@@ -17,7 +17,7 @@ todo: null
 examples: []
 
 ---
-n: 'Optional, the z component.', optional: true, type: [Number]}
+component.', optional: true, type: [Number]}
 kind: function
 todo: null
 examples: []

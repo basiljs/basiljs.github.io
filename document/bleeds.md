@@ -10,10 +10,10 @@ returns:
     description: 'Current document bleeds settings.'
     type: [Object]
 parameters:
-    - {name: top, description: 'Optional, top bleed or all if only one.', optional: true, type: [Number]}
-    - {name: right, description: 'Optional, right bleed.', optional: true, type: [Number]}
-    - {name: bottom, description: 'Optional, bottom bleed.', optional: true, type: [Number]}
-    - {name: left, description: 'Optional, left bleed.', optional: true, type: [Number]}
+    - {name: top, description: 'Top bleed or all if only one.', optional: true, type: [Number]}
+    - {name: right, description: 'Right bleed.', optional: true, type: [Number]}
+    - {name: bottom, description: 'Bottom bleed.', optional: true, type: [Number]}
+    - {name: left, description: 'Left bleed.', optional: true, type: [Number]}
 kind: function
 todo: null
 examples: []

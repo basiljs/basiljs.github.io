@@ -1,13 +1,14 @@
 ---
 layout: entry
 title: fill
-codetitle: b.fill(fillColor)
+codetitle: 'b.fill(fillColor, [name])'
 description: 'Sets the color or gradient used to fill shapes.'
 category: Color
 subcategory: null
 returns: null
 parameters:
-    - {name: fillColor, description: 'Accepts a color/gradient/swatch or a string with the name of a color. Or values: C,M,Y,K / R,G,B / Grey', optional: false, type: [Color, Gradient, Swatch, Numbers]}
+    - {name: fillColor, description: 'Accepts a color/gradient/swatch as string name or variable. Or values: GRAY / R,G,B / C,M,Y,K.', optional: false, type: [Color, Gradient, Swatch, Numbers, String]}
+    - {name: name, description: 'If created with numbers, a custom swatch name can be given.', optional: true, type: [String]}
 kind: function
 todo: null
 examples: []

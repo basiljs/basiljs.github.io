@@ -10,7 +10,7 @@ returns:
     description: 'The current layer instance.'
     type: [Layer]
 parameters:
-    - {name: layer, description: 'Optional, the layer or layer name to set the current layer to.', optional: true, type: [null]}
+    - {name: layer, description: 'The layer or layer name to set the current layer to.', optional: true, type: [null]}
 kind: function
 todo: null
 examples: []

@@ -47,10 +47,10 @@ function process(ele, folder, ow) {
       }
       write(file, frontmatter);
     } else if(ow === false || pathExists.sync(file) === false) {
-      console.log(`Creating file "${file}"`);
+      // console.log(`Creating file "${file}"`);
       write(file, frontmatter);
     }else if(ow === false || pathExists.sync(file) === true) {
-      console.log(`The file "${file}" already exists`);
+      // console.log(`The file "${file}" already exists`);
     }
   });
 }

@@ -9,7 +9,7 @@ returns: null
 parameters:
     - {name: x, description: 'The first vector.', optional: false, type: [Number]}
     - {name: y, description: 'The second vector.', optional: false, type: [Number]}
-    - {name: z, description: 'Optional, the third vector.', optional: true, type: [Number]}
+    - {name: z, description: 'The third vector.', optional: true, type: [Number]}
 kind: function
 todo: null
 examples: []

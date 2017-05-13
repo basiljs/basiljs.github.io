@@ -11,7 +11,7 @@ returns:
     type: [Object]
 parameters:
     - {name: width, description: 'The desired width of the current document.', optional: false, type: [Number]}
-    - {name: height, description: 'Optional the desired height of the current document. If not provided the width will be used as the height.', optional: true, type: [Number]}
+    - {name: height, description: 'The desired height of the current document. If not provided the width will be used as the height.', optional: true, type: [Number]}
 kind: function
 todo: null
 examples: []
