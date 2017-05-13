@@ -1,7 +1,33 @@
 Basil.js
 ========
 
-This repo will hold the [site/docs for Basil.js](https://basiljs.github.io/)  
+This repo holds the [site/docs for Basil.js](https://basiljs.github.io/)  
+
+## Deploy  
+
+If there are some changed to the API of Basil.js you can update the data on this repo as follows.  
+
+    npm run build
+
+This will:  
+
+- Pull the branch develop with npm from GitHub.
+- Generate the file `./.bin/api/data.json` from `./node_modules/basiljs/basil.js` using [documentation.js](http://documentation.js.org/).
+- Generate the following files for the index.
+    + `./_data/categories.json`
+    + `./_data/cats-and-subcats.json`
+- Also generate all the files for the subpages.  
+
+After that you can just commit all the changes and push it the repo again. GitHub pages will take care of the jekyll build.  
+
+
+## Development ##
+
+To build these docs we are using [Node.js](https://nodejs.org/en/) and [Jekyll](https://jekyllrb.com/). You need both of them installed to develop on this.  
+
+In the `.bin/` folder you have the scripts to generate the files for jekyll. The entry point is `index.js`.  
+
+Most of the jekyll [liquid magic](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers) happens in `./index.html`, `_includes/entry-card.html`.  
 
 ## License ##
 
