@@ -533,7 +533,7 @@
             },
             {
               "name": "height",
-              "description": "Optional the desired height of the current document. If not provided the width will be used as the height.",
+              "description": "The desired height of the current document. If not provided the width will be used as the height.",
               "optional": true,
               "type": [
                 "Number"
@@ -555,7 +555,7 @@
           "parameters": [
             {
               "name": "saveOptions",
-              "description": "Optional, the Indesign SaveOptions constant or either true for triggering saving before closing or false for closing without saving.",
+              "description": "The Indesign SaveOptions constant or either true for triggering saving before closing or false for closing without saving.",
               "optional": true,
               "type": [
                 null
@@ -563,7 +563,7 @@
             },
             {
               "name": "file",
-              "description": "Optional, the indesign file instance to save the document to.",
+              "description": "The indesign file instance to save the document to.",
               "optional": true,
               "type": [
                 "File"
@@ -591,7 +591,7 @@
           "parameters": [
             {
               "name": "pItem",
-              "description": "Optional, the PageItems array (must be at least 2) or name of Group name instance.",
+              "description": "The PageItems array (must be at least 2) or name of Group name instance.",
               "optional": true,
               "type": [
                 "Array"
@@ -599,7 +599,7 @@
             },
             {
               "name": "name",
-              "description": "Optional, the name of the Group, only when creating a Group from Page Item(s).",
+              "description": "The name of the Group, only when creating a Group from Page Item(s).",
               "optional": false,
               "type": [
                 "String"
@@ -729,7 +729,7 @@
           "parameters": [
             {
               "name": "units",
-              "description": "Optional, supported units: PT, PX, CM, MM or IN.",
+              "description": "Supported units: PT, PX, CM, MM or IN.",
               "optional": true,
               "type": [
                 "String"
@@ -1294,7 +1294,7 @@
             },
             {
               "name": "cb",
-              "description": "Optional, the callback function to call with each item in the search result. When this function returns false the loop stops. Passed arguments: item, loopCount.",
+              "description": "The callback function to call with each item in the search result. When this function returns false the loop stops. Passed arguments: item, loopCount.",
               "optional": true,
               "type": [
                 "Function"
@@ -1369,7 +1369,7 @@
           "parameters": [
             {
               "name": "cb",
-              "description": "Optional, the callback function to call with each item in the selection. When this function returns false the loop stops. Passed arguments: item, loopCount.",
+              "description": "The callback function to call with each item in the selection. When this function returns false the loop stops. Passed arguments: item, loopCount.",
               "optional": true,
               "type": [
                 "Function"
@@ -1666,7 +1666,7 @@
           "parameters": [
             {
               "name": "page",
-              "description": "Optional, the page to be removed as Page object or page number.",
+              "description": "The page to be removed as Page object or page number.",
               "optional": true,
               "type": [
                 null
@@ -1694,7 +1694,7 @@
           "parameters": [
             {
               "name": "pageObj",
-              "description": "Optional, the page you want to know the number of.",
+              "description": "The page you want to know the number of.",
               "optional": true,
               "type": [
                 "Page"
@@ -1779,7 +1779,7 @@
           "parameters": [
             {
               "name": "layer",
-              "description": "Optional, the layer or layer name to set the current layer to.",
+              "description": "The layer or layer name to set the current layer to.",
               "optional": true,
               "type": [
                 null
@@ -1807,7 +1807,7 @@
           "parameters": [
             {
               "name": "top",
-              "description": "Optional, top margin or all if only one.",
+              "description": "Top margin or all if only one.",
               "optional": true,
               "type": [
                 "Number"
@@ -1815,7 +1815,7 @@
             },
             {
               "name": "right",
-              "description": "Optional, right margin.",
+              "description": "Right margin.",
               "optional": true,
               "type": [
                 "Number"
@@ -1823,7 +1823,7 @@
             },
             {
               "name": "bottom",
-              "description": "Optional, bottom margin.",
+              "description": "Bottom margin.",
               "optional": true,
               "type": [
                 "Number"
@@ -1831,7 +1831,7 @@
             },
             {
               "name": "left",
-              "description": "Optional, left margin.",
+              "description": "Left margin.",
               "optional": true,
               "type": [
                 "Number"
@@ -1839,7 +1839,7 @@
             },
             {
               "name": "pageNumber",
-              "description": "Optional, sets margins to selected page, currentPage() if left blank.",
+              "description": "Sets margins to selected page, currentPage() if left blank.",
               "optional": true,
               "type": [
                 "Number"
@@ -1867,7 +1867,7 @@
           "parameters": [
             {
               "name": "top",
-              "description": "Optional, top bleed or all if only one.",
+              "description": "Top bleed or all if only one.",
               "optional": true,
               "type": [
                 "Number"
@@ -1875,7 +1875,7 @@
             },
             {
               "name": "right",
-              "description": "Optional, right bleed.",
+              "description": "Right bleed.",
               "optional": true,
               "type": [
                 "Number"
@@ -1883,7 +1883,7 @@
             },
             {
               "name": "bottom",
-              "description": "Optional, bottom bleed.",
+              "description": "Bottom bleed.",
               "optional": true,
               "type": [
                 "Number"
@@ -1891,7 +1891,7 @@
             },
             {
               "name": "left",
-              "description": "Optional, left bleed.",
+              "description": "Left bleed.",
               "optional": true,
               "type": [
                 "Number"
@@ -3788,13 +3788,22 @@
           "parameters": [
             {
               "name": "fillColor",
-              "description": "Accepts a color/gradient/swatch or a string with the name of a color. Or values: C,M,Y,K / R,G,B / Grey",
+              "description": "Accepts a color/gradient/swatch as string name or variable. Or values: GRAY / R,G,B / C,M,Y,K.",
               "optional": false,
               "type": [
                 "Color",
                 "Gradient",
                 "Swatch",
-                "Numbers"
+                "Numbers",
+                "String"
+              ]
+            },
+            {
+              "name": "name",
+              "description": "If created with numbers, a custom swatch name can be given.",
+              "optional": true,
+              "type": [
+                "String"
               ]
             }
           ],
@@ -3802,7 +3811,7 @@
           "tags": [],
           "examples": [],
           "todo": null,
-          "codetitle": "b.fill(fillColor)"
+          "codetitle": "b.fill(fillColor, [name])"
         },
         {
           "name": "noFill",
@@ -3826,13 +3835,14 @@
           "parameters": [
             {
               "name": "strokeColor",
-              "description": "Accepts a color/gradient/swatch or a string with the name of a color. Or values: C,M,Y,K / R,G,B / Grey",
+              "description": "Accepts a color/gradient/swatch as string name or variable. Or values: GRAY / R,G,B / C,M,Y,K.",
               "optional": false,
               "type": [
                 "Color",
                 "Gradient",
                 "Swatch",
-                "Numbers"
+                "Numbers",
+                "String"
               ]
             }
           ],
@@ -3844,7 +3854,7 @@
         },
         {
           "name": "noStroke",
-          "description": "Disables drawing the stroke (outline). If both noStroke() and noFill()\nare called, nothing will be drawn to the screen.",
+          "description": "Disables drawing the stroke. If both noStroke() and noFill() are called,\nnewly drawn shapes will be invisible.",
           "returns": null,
           "category": "Color",
           "subcategory": null,
@@ -3886,7 +3896,7 @@
           "parameters": [
             {
               "name": "tint",
-              "description": "Number from 0 to 100",
+              "description": "Number from 0 to 100.",
               "optional": false,
               "type": [
                 "Number"
@@ -3901,14 +3911,14 @@
         },
         {
           "name": "colorMode",
-          "description": "Sets the colormode for creating new colors with b.color() to RGB or CMYK. The default color mode is RBG.",
+          "description": "Sets the colormode for creating new colors with b.color() to RGB or CMYK. The default color mode is RGB.",
           "returns": null,
           "category": "Color",
           "subcategory": null,
           "parameters": [
             {
               "name": "colorMode",
-              "description": "Either b.RGB or b.CMYK",
+              "description": "b.RGB or b.CMYK.",
               "optional": false,
               "type": [
                 "Number"
@@ -3923,14 +3933,14 @@
         },
         {
           "name": "gradientMode",
-          "description": "Sets the gradient mode for creating new gradients with b.gradient() to LINEAR or RADIAL. The default gradient mode is LINEAR.",
+          "description": "Sets the gradient mode for b.gradient() to LINEAR or RADIAL. The default gradient mode is LINEAR.",
           "returns": null,
           "category": "Color",
           "subcategory": null,
           "parameters": [
             {
               "name": "gradientMode",
-              "description": "Either b.LINEAR or b.RADIAL",
+              "description": "b.LINEAR or b.RADIAL.",
               "optional": false,
               "type": [
                 "String"
@@ -3944,11 +3954,33 @@
           "codetitle": "b.gradientMode(gradientMode)"
         },
         {
+          "name": "swatch",
+          "description": "Gets a swatch by name.",
+          "returns": null,
+          "category": "Color",
+          "subcategory": null,
+          "parameters": [
+            {
+              "name": "swatchName",
+              "description": "Returns the swatch color/gradient for a given name by string.",
+              "optional": false,
+              "type": [
+                "String"
+              ]
+            }
+          ],
+          "kind": "function",
+          "tags": [],
+          "examples": [],
+          "todo": null,
+          "codetitle": "b.swatch(swatchName)"
+        },
+        {
           "name": "color",
-          "description": "Creates a new RGB or CMYK color and adds the new color to the document, or gets a color by name from the document. The default color mode is RGB.",
+          "description": "Creates a new RGB / CMYK color and adds it to the document, or gets a color by name from the document. The default color mode is RGB.",
           "returns": {
             "name": null,
-            "description": "found or new color",
+            "description": "Found or new color",
             "type": [
               "Color"
             ]
@@ -3958,7 +3990,7 @@
           "parameters": [
             {
               "name": "Get",
-              "description": "color: the color name. Create new color: R,G,B,[name] or C,M,Y,K,[name] or Grey,name. Name is always optional",
+              "description": "color: the color name. Create new color: GRAY,[name] / R,G,B,[name] / C,M,Y,K,[name]. Name is always optional.",
               "optional": false,
               "type": [
                 "String",
@@ -4029,7 +4061,7 @@
           "parameters": [
             {
               "name": "obj",
-              "description": "The object to set opacity property",
+              "description": "The object to set opacity of.",
               "optional": false,
               "type": [
                 "Object"
@@ -4037,7 +4069,7 @@
             },
             {
               "name": "opacity",
-              "description": "The opacity value form 0 to 100",
+              "description": "The opacity value from 0 to 100.",
               "optional": false,
               "type": [
                 "Number"
@@ -4059,7 +4091,7 @@
           "parameters": [
             {
               "name": "obj",
-              "description": "The object to set blendMode property",
+              "description": "The object to set blendMode of.",
               "optional": false,
               "type": [
                 "Object"
@@ -4082,7 +4114,7 @@
         },
         {
           "name": "lerpColor",
-          "description": "Calculates a color or colors between two color at a specific increment.\nThe amt parameter is the amount to interpolate between the two values where 0.0 equal to the first point, 0.1 is very near the first point, 0.5 is half-way in between, etc.\nN.B.: Both color must be either CMYK or RGB.",
+          "description": "Calculates a color or colors between two colors at a specific increment.\nThe amt parameter is the amount to interpolate between the two values where 0.0 equals the first color, 0.5 is half-way in between and 1.0 equals the second color.\nN.B.: Both colors must be either CMYK or RGB.",
           "returns": {
             "name": null,
             "description": "Interpolated color",
@@ -4095,7 +4127,7 @@
           "parameters": [
             {
               "name": "c1",
-              "description": "Input color 1",
+              "description": "Input color 1.",
               "optional": false,
               "type": [
                 "Color"
@@ -4103,7 +4135,7 @@
             },
             {
               "name": "c2",
-              "description": "Input color 2",
+              "description": "Input color 2.",
               "optional": false,
               "type": [
                 "Color"
@@ -4111,7 +4143,7 @@
             },
             {
               "name": "amt",
-              "description": "The Amount to interpolate between the two colors",
+              "description": "The amount to interpolate between the two colors.",
               "optional": false,
               "type": [
                 "Number"
@@ -5346,7 +5378,7 @@
             },
             {
               "name": "z",
-              "description": "Optional, the third vector.",
+              "description": "The third vector.",
               "optional": true,
               "type": [
                 "Number"
@@ -5378,7 +5410,7 @@
             },
             {
               "name": "y",
-              "description": "Optional, the y component.",
+              "description": "The y component.",
               "optional": true,
               "type": [
                 "Number"
@@ -5386,7 +5418,7 @@
             },
             {
               "name": "z",
-              "description": "Optional, the z component.",
+              "description": "The z component.",
               "optional": true,
               "type": [
                 "Number"
@@ -5455,7 +5487,7 @@
             },
             {
               "name": "y",
-              "description": "Optional, the y component.",
+              "description": "The y component.",
               "optional": true,
               "type": [
                 "Number"
@@ -5463,7 +5495,7 @@
             },
             {
               "name": "z",
-              "description": "Optional, the z component.",
+              "description": "The z component.",
               "optional": true,
               "type": [
                 "Number"
@@ -5494,7 +5526,7 @@
             },
             {
               "name": "y",
-              "description": "Optional, the y component.",
+              "description": "The y component.",
               "optional": true,
               "type": [
                 "Number"
@@ -5502,7 +5534,7 @@
             },
             {
               "name": "z",
-              "description": "Optional, the z component.",
+              "description": "The z component.",
               "optional": true,
               "type": [
                 "Number"
@@ -5533,7 +5565,7 @@
             },
             {
               "name": "y",
-              "description": "Optional, the y component.",
+              "description": "The y component.",
               "optional": true,
               "type": [
                 "Number"
@@ -5541,7 +5573,7 @@
             },
             {
               "name": "z",
-              "description": "Optional, the z component.",
+              "description": "The z component.",
               "optional": true,
               "type": [
                 "Number"
@@ -5572,7 +5604,7 @@
             },
             {
               "name": "y",
-              "description": "Optional, the y component.",
+              "description": "The y component.",
               "optional": true,
               "type": [
                 "Number"
@@ -5580,7 +5612,7 @@
             },
             {
               "name": "z",
-              "description": "Optional, the z component.",
+              "description": "The z component.",
               "optional": true,
               "type": [
                 "Number"
@@ -5617,7 +5649,7 @@
             },
             {
               "name": "y",
-              "description": "Optional, the y component.",
+              "description": "The y component.",
               "optional": true,
               "type": [
                 "Number"
@@ -5625,7 +5657,7 @@
             },
             {
               "name": "z",
-              "description": "Optional, the z component.",
+              "description": "The z component.",
               "optional": true,
               "type": [
                 "Number"
@@ -5662,7 +5694,7 @@
             },
             {
               "name": "y",
-              "description": "Optional, the y component.",
+              "description": "The y component.",
               "optional": true,
               "type": [
                 "Number"
@@ -5670,7 +5702,7 @@
             },
             {
               "name": "z",
-              "description": "Optional, the z component.",
+              "description": "The z component.",
               "optional": true,
               "type": [
                 "Number"
@@ -5707,7 +5739,7 @@
             },
             {
               "name": "y",
-              "description": "Optional, the y component.",
+              "description": "The y component.",
               "optional": true,
               "type": [
                 "Number"
@@ -5715,7 +5747,7 @@
             },
             {
               "name": "z",
-              "description": "Optional, the z component.",
+              "description": "The z component.",
               "optional": true,
               "type": [
                 "Number"
@@ -6533,33 +6565,91 @@
       "entries": [
         {
           "name": "inspect",
-          "description": "Prints out all properties and values off an object in a recursive manner to the console. Useful for inspecting (or debugging) nested variable. the default value for the recursion is maxlevel = 2.",
+          "description": "Inspects a given object or any other data item and prints the result to the console. This is useful for inspecting or debugging any kind of variable or data item. The optional settings object allows to control the function's output. The following parameters can be set in the settings object:\n<code>showProps</code>: Show or hide properties. Default: <code>true</code>\n<code>showValues</code>: Show or hide values. Default: <code>true</code>\n<code>showMethods</code>: Show or hide methods. Default: <code>false</code>\n<code>maxLevel</code>: Chooses how many levels of properties should be inspected recursively. Default: <code>1</code>\n<code>propList</code>: Allows to pass an array of property names to show. If propList is not set all properties will be shown. Default: <code>[]</code> (no propList)\nIf no settings object is set, the default values will be used.",
           "returns": null,
           "category": "Output",
           "subcategory": null,
           "parameters": [
             {
               "name": "obj",
-              "description": "The Object to be inspected.",
+              "description": "An object or any other data item to be inspected.",
               "optional": false,
               "type": [
                 "Object"
               ]
             },
             {
-              "name": "maxlevel",
-              "description": "Optional, recursion limit, default maxlevel = 2.",
-              "optional": false,
+              "name": "settings",
+              "description": "A settings object to control the function's behavior.",
+              "optional": true,
+              "type": [
+                "Object"
+              ]
+            },
+            {
+              "name": "settings.showProps",
+              "description": "Show or hide properties. Default: <code>true</code>",
+              "optional": true,
+              "type": [
+                "Boolean"
+              ]
+            },
+            {
+              "name": "settings.showValues",
+              "description": "Show or hide values. Default: <code>true</code>",
+              "optional": true,
+              "type": [
+                "Boolean"
+              ]
+            },
+            {
+              "name": "settings.showMethods",
+              "description": "Show or hide methods. Default: <code>false</code>",
+              "optional": true,
+              "type": [
+                "Boolean"
+              ]
+            },
+            {
+              "name": "settings.maxLevel",
+              "description": "How many levels of properties should be inspected recursively. Default: <code>1</code>",
+              "optional": true,
               "type": [
                 "Number"
+              ]
+            },
+            {
+              "name": "settings.propList",
+              "description": "Array of properties to show. Default: <code>[]</code> (no propList)",
+              "optional": true,
+              "type": [
+                "Array"
               ]
             }
           ],
           "kind": "function",
-          "tags": [],
-          "examples": [],
+          "tags": [
+            {
+              "title": "description",
+              "description": "Inspects a given object or any other data item and prints the result to the console. This is useful for inspecting or debugging any kind of variable or data item. The optional settings object allows to control the function's output. The following parameters can be set in the settings object:\n<code>showProps</code>: Show or hide properties. Default: <code>true</code>\n<code>showValues</code>: Show or hide values. Default: <code>true</code>\n<code>showMethods</code>: Show or hide methods. Default: <code>false</code>\n<code>maxLevel</code>: Chooses how many levels of properties should be inspected recursively. Default: <code>1</code>\n<code>propList</code>: Allows to pass an array of property names to show. If propList is not set all properties will be shown. Default: <code>[]</code> (no propList)\nIf no settings object is set, the default values will be used."
+            }
+          ],
+          "examples": [
+            {
+              "description": "Inspecting a string",
+              "code": "b.inspect(\"foo\");"
+            },
+            {
+              "description": "Inspecting the current page, its methods and an additional level of properties",
+              "code": "b.inspect(b.page(), {showMethods: true, maxLevel: 2})"
+            },
+            {
+              "description": "Inspecting an ellipse, listing only the properties \"geometricBounds\" and \"strokeWeight\"",
+              "code": "var myEllipse = b.ellipse(0, 0, 10, 10);\nb.inspect(myEllipse, {maxLevel: 2, propList: [\"geometricBounds, strokeWeight\"]});"
+            }
+          ],
           "todo": null,
-          "codetitle": "b.inspect(obj, maxlevel)"
+          "codetitle": "b.inspect(obj, [settings], [settings.showProps], [settings.showValues], [settings.showMethods], [settings.maxLevel], [settings.propList])"
         },
         {
           "name": "print",

@@ -33,10 +33,13 @@ function buildEntry(e) {
   //     entry.parameters.push(param);
   //   });
   // }
+
   if(Array.isArray(e.returns)) {
-    if(e.returns[0].description.children.length > 0) {
-      let ret = e.returns[0].description.children[0].children[0].value;
-      entry.returns = ret;
+    if(e.returns.length > 0) {
+      if(e.returns[0].description.children.length > 0) {
+        let ret = e.returns[0].description.children[0].children[0].value;
+        entry.returns = ret;
+      }
     }
   }
   if(Array.isArray(e.tags)) {
