@@ -1,5 +1,5 @@
 const fs = require('fs');
-const api = require('../node_modules/basiljs/doc/api.json');
+const api = require('./api/data.json');
 const Entry = require('./lib/entry');
 const Parameter = require('./lib/parameter');
 const Return = require('./lib/returns');
