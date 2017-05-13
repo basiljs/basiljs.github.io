@@ -1,4 +1,6 @@
 const fs = require('fs');
+const _ = require('lodash');
+
 const api = require('./api/data.json');
 const Entry = require('./lib/entry');
 const Parameter = require('./lib/parameter');
@@ -6,7 +8,6 @@ const Return = require('./lib/returns');
 const Tag = require('./lib/tag');
 const Category = require('./lib/category');
 const Example = require('./lib/example');
-const _ = require('lodash');
 const generateData = require('./lib/data-generator');
 const Filters = require('./lib/filters');
 const generateFiles = require('./lib/files-and-folders');
@@ -171,14 +172,14 @@ let sortedByCategory = _.chain(data)
    };
  }).value();
 
-let sortedBySubCategory = _.chain(data)
- .groupBy('subcategory')
- .map((key, val)=>{
-   return {
-     entries: key,
-     subcat: val
-   };
- }).value();
+// let sortedBySubCategory = _.chain(data)
+//  .groupBy('subcategory')
+//  .map((key, val)=>{
+//    return {
+//      entries: key,
+//      subcat: val
+//    };
+//  }).value();
 
 let catsAndSubcats = [];
 sortedByCategory.forEach((ele)=>{
@@ -225,11 +226,12 @@ fs.writeFile('./_data/categories.json', JSON.stringify(sortedByCategory, null, 2
   }
 });
 
-fs.writeFile('./_data/sub-categories.json', JSON.stringify(sortedBySubCategory, null, 2), (err)=>{
-  if(err) {
-    throw err;
-  }
-});
+// we actually don't need this anymore.
+// fs.writeFile('./_data/sub-categories.json', JSON.stringify(sortedBySubCategory, null, 2), (err)=>{
+//   if(err) {
+//     throw err;
+//   }
+// });
 
 fs.writeFile('./_data/cats-and-subcats.json', JSON.stringify(catsAndSubcats, null, 2), (err)=>{
   if(err) {
