@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "the docs for Basil.js",
   "scripts": {
-    "build":"npm run update ; npm run generator",
+    "build": "npm run update ; npm run generator",
     "update": "npm run pull-latest-basil ; npm run generate-json",
     "generator": "node .bin/index",
     "pull-latest-basil": "npm install basiljs/basil.js#develop -D",
