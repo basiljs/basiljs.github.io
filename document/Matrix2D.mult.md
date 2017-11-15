@@ -13,7 +13,7 @@ parameters:
     - {name: source, description: …, optional: false, type: [Vector, Array]}
     - {name: target, description: …, optional: true, type: [null]}
 kind: function
-todo: 'More description.'
+todo: null
 examples: []
 
 ---

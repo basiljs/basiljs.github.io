@@ -7,7 +7,7 @@ category: Document
 subcategory: Primitives
 returns:
     name: null
-    description: "The resulting GraphicLine or Polygon object (in InDesign Scripting terms the corresponding type is GraphicLine or Polygon, not Arc).\n\nTODO(S)\n- fix overlapping points bug"
+    description: 'The resulting GraphicLine or Polygon object (in InDesign Scripting terms the corresponding type is GraphicLine or Polygon, not Arc).'
     type: [GraphicLine, Polygon]
 parameters:
     - {name: cx, description: 'X-coordinate of the arc''s center.', optional: false, type: [Number]}

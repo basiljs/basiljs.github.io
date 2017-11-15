@@ -11,7 +11,7 @@ returns:
     type: [Boolean]
 parameters: []
 kind: function
-todo: 'More description.'
+todo: null
 examples: []
 
 ---

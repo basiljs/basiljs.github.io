@@ -16,6 +16,7 @@ parameters:
     - {name: y2, description: 'Y-coordinate of Point 2.', optional: false, type: [Number]}
 kind: function
 todo: null
-examples: []
+examples:
+    - {description: null, code: "var vec1 = new b.Vector( x1, y1 );\n var vec2 = new b.Vector( x2, y2 );\n b.line( vec1, vec2 );"}
 
 ---

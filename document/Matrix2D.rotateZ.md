@@ -7,9 +7,9 @@ category: Document
 subcategory: Transformation
 returns: null
 parameters:
-    - {name: angle, description: …, optional: false, type: [Number]}
+    - {name: angle, description: null, optional: false, type: [Number]}
 kind: function
-todo: 'More description.'
+todo: null
 examples: []
 
 ---

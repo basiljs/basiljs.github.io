@@ -10,7 +10,7 @@ parameters:
     - {name: sx, description: …, optional: false, type: [Number]}
     - {name: sy, description: …, optional: false, type: [Number]}
 kind: function
-todo: 'More description.'
+todo: null
 examples: []
 
 ---

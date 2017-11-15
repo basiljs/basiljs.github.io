@@ -631,11 +631,11 @@
           "codetitle": "b.revert()"
         },
         {
-          "name": "Group",
-          "description": "Returns the Group instance and sets it if argument Group is given.",
+          "name": "group",
+          "description": "Groups items to a new group. Returns the resulting group instance. If a string is given as the only\n argument, the group by the given name will be returned.",
           "returns": {
             "name": null,
-            "description": "The current Group instance.",
+            "description": "The group instance.",
             "type": [
               "Group"
             ]
@@ -644,17 +644,17 @@
           "subcategory": null,
           "parameters": [
             {
-              "name": "pItem",
-              "description": "The PageItems array (must be at least 2) or name of Group name instance.",
-              "optional": true,
+              "name": "pItems",
+              "description": "An array of page items (must contain at least two items) or name of group instance.",
+              "optional": false,
               "type": [
                 "Array"
               ]
             },
             {
               "name": "name",
-              "description": "The name of the Group, only when creating a Group from Page Item(s).",
-              "optional": false,
+              "description": "The name of the group, only when creating a group from page items.",
+              "optional": true,
               "type": [
                 "String"
               ]
@@ -669,34 +669,27 @@
           ],
           "examples": [],
           "todo": null,
-          "codetitle": "b.Group([pItem], name)"
+          "codetitle": "b.group(pItems, [name])"
         },
         {
-          "name": "Group",
-          "description": "Returns an array of the items that were within the Group before b.ungroup() was called",
+          "name": "group",
+          "description": "Ungroups an existing group. Returns an array of the items that were within the group before\n b.ungroup() was called.",
           "returns": {
             "name": null,
-            "description": "The Page Item(s) that were grouped.",
+            "description": "An array of the ungrouped page items.",
             "type": [
-              "Group"
+              "Array"
             ]
           },
           "category": "Document",
           "subcategory": null,
           "parameters": [
             {
-              "name": "pItem",
-              "description": "The Group or name of Group name instance.",
-              "optional": true,
-              "type": [
-                null
-              ]
-            },
-            {
-              "name": "name",
-              "description": "The name of the Group, only when creating a Group from Page Item(s).",
+              "name": "group",
+              "description": "The group instance or name of the group to ungroup.",
               "optional": false,
               "type": [
+                "Group",
                 "String"
               ]
             }
@@ -710,7 +703,7 @@
           ],
           "examples": [],
           "todo": null,
-          "codetitle": "b.Group([pItem], name)"
+          "codetitle": "b.group(group)"
         },
         {
           "name": "guideX",
@@ -1827,7 +1820,7 @@
         },
         {
           "name": "pageCount",
-          "description": "The number of all pages in the current document.",
+          "description": "Returns the number of all pages in the current document. If a number is given as an argument,\nit will set the document's page count to the given number by either adding pages or removing\npages until the number is reached. If pages are added, the master page of the document's last\npage will be applied to the new pages.",
           "returns": {
             "name": null,
             "description": "The amount of pages.",
@@ -1837,12 +1830,21 @@
           },
           "category": "Document",
           "subcategory": "Page",
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "pageCount",
+              "description": "New page count of the document (integer between 1 and 9999).",
+              "optional": true,
+              "type": [
+                "Number"
+              ]
+            }
+          ],
           "kind": "function",
           "tags": [],
           "examples": [],
           "todo": null,
-          "codetitle": "b.pageCount()"
+          "codetitle": "b.pageCount([pageCount])"
         },
         {
           "name": "layer",
@@ -2399,7 +2401,7 @@
         },
         {
           "name": "rect",
-          "description": "Draws a rectangle on the page.",
+          "description": "Draws a rectangle on the page.\nBy default, the first two parameters set the location of the upper-left corner, the third sets the width, and the fourth sets the height. The way these parameters are interpreted, however, may be changed with the b.rectMode() function.\nThe fifth, sixth, seventh and eighth parameters, if specified, determine corner radius for the top-right, top-left, lower-right and lower-left corners, respectively. If only a fifth parameter is provided, all corners will be set to this radius.",
           "returns": {
             "name": null,
             "description": "The rectangle that was created.",
@@ -2441,13 +2443,45 @@
               "type": [
                 "Number"
               ]
+            },
+            {
+              "name": "tl",
+              "description": "Radius of top left corner or radius of all 4 corners (optional).",
+              "optional": true,
+              "type": [
+                "Number"
+              ]
+            },
+            {
+              "name": "tr",
+              "description": "Radius of top right corner (optional).",
+              "optional": true,
+              "type": [
+                "Number"
+              ]
+            },
+            {
+              "name": "br",
+              "description": "Radius of bottom right corner (optional).",
+              "optional": true,
+              "type": [
+                "Number"
+              ]
+            },
+            {
+              "name": "bl",
+              "description": "Radius of bottom left corner (optional).",
+              "optional": true,
+              "type": [
+                "Number"
+              ]
             }
           ],
           "kind": "function",
           "tags": [],
           "examples": [],
           "todo": null,
-          "codetitle": "b.rect(x, y, w, h)"
+          "codetitle": "b.rect(x, y, w, h, [tl], [tr], [br], [bl])"
         }
       ],
       "subcat": "Primitives",
@@ -8202,6 +8236,37 @@
           "examples": [],
           "todo": null,
           "codetitle": "b.isNumber(num)"
+        },
+        {
+          "name": "isInteger",
+          "description": "Checks whether a var is an integer, returns true if this is the case.",
+          "returns": {
+            "name": null,
+            "description": "Returns true if the given argument is an integer.",
+            "type": [
+              "Boolean"
+            ]
+          },
+          "category": "Data",
+          "subcategory": "Type-Check",
+          "parameters": [
+            {
+              "name": "num",
+              "description": "The number to check.",
+              "optional": false,
+              "type": [
+                "Object",
+                "String",
+                "Number",
+                "Boolean"
+              ]
+            }
+          ],
+          "kind": "function",
+          "tags": [],
+          "examples": [],
+          "todo": null,
+          "codetitle": "b.isInteger(num)"
         },
         {
           "name": "isString",

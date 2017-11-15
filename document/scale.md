@@ -10,7 +10,7 @@ parameters:
     - {name: scaleX, description: 'The amount to scale the X axis.', optional: false, type: [Number]}
     - {name: scaleY, description: 'The amount to scale the Y axis.', optional: false, type: [Number]}
 kind: function
-todo: 'Can we make the argument comparison typesafe? != vs !=='
+todo: null
 examples: []
 
 ---
