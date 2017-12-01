@@ -719,6 +719,58 @@
         "codetitle": "b.AFTER"
       },
       {
+        "name": "FRONT",
+        "description": "Used with b.arrange() to bring a page item to the front or to bring it in front of a given reference object.",
+        "returns": null,
+        "category": "Document",
+        "subcategory": "Page",
+        "parameters": [],
+        "kind": "property",
+        "tags": [],
+        "examples": [],
+        "todo": null,
+        "codetitle": "b.FRONT"
+      },
+      {
+        "name": "BACK",
+        "description": "Used with b.arrange() to send a page item to the back or to send it behind a given reference object.",
+        "returns": null,
+        "category": "Document",
+        "subcategory": "Page",
+        "parameters": [],
+        "kind": "property",
+        "tags": [],
+        "examples": [],
+        "todo": null,
+        "codetitle": "b.BACK"
+      },
+      {
+        "name": "FORWARD",
+        "description": "Used with b.arrange() to bring a page item one level forward in its layer.",
+        "returns": null,
+        "category": "Document",
+        "subcategory": "Page",
+        "parameters": [],
+        "kind": "property",
+        "tags": [],
+        "examples": [],
+        "todo": null,
+        "codetitle": "b.FORWARD"
+      },
+      {
+        "name": "BACKWARD",
+        "description": "Used with b.arrange() to send a page item one level backward in its layer.",
+        "returns": null,
+        "category": "Document",
+        "subcategory": "Page",
+        "parameters": [],
+        "kind": "property",
+        "tags": [],
+        "examples": [],
+        "todo": null,
+        "codetitle": "b.BACKWARD"
+      },
+      {
         "name": "PORTRAIT",
         "description": "Used with b.size() to set the orientation of a given page size to portrait.",
         "returns": null,
@@ -1532,8 +1584,54 @@
         "codetitle": "b.layer([layer])"
       },
       {
+        "name": "arrange",
+        "description": "Arranges a page item or a layer before or behind other page items or layers. If using the constants ",
+        "returns": {
+          "name": null,
+          "description": "The newly arranged page item or layer.",
+          "type": [
+            "PageItem",
+            "Layer"
+          ]
+        },
+        "category": "Document",
+        "subcategory": "Page",
+        "parameters": [
+          {
+            "name": "pItemOrLayer",
+            "description": "The page item or layer to be moved to a new position.",
+            "optional": false,
+            "type": [
+              "PageItem",
+              "Layer"
+            ]
+          },
+          {
+            "name": "positionOrDirection",
+            "description": "The position or direction to move the page item or layer. Can be <code>b.FRONT</code>, <code>b.BACK</code>, <code>b.FORWARD</code> or <code>b.BACKWARD</code>.",
+            "optional": false,
+            "type": [
+              "String"
+            ]
+          },
+          {
+            "name": "reference",
+            "description": "A reference object to move the page item or layer behind or in front of.",
+            "optional": true,
+            "type": [
+              null
+            ]
+          }
+        ],
+        "kind": "function",
+        "tags": [],
+        "examples": [],
+        "todo": null,
+        "codetitle": "b.arrange(pItemOrLayer, positionOrDirection, [reference])"
+      },
+      {
         "name": "group",
-        "description": "Groups items to a new group. Returns the resulting group instance. If a string is given as the only\n argument, the group by the given name will be returned.",
+        "description": "Returns the Group instance and sets it if argument Group is given.\n Groups items to a new group. Returns the resulting group instance. If a string is given as the only\n argument, the group by the given name will be returned.",
         "returns": {
           "name": null,
           "description": "The group instance.",
@@ -2293,7 +2391,7 @@
       },
       {
         "name": "rectMode",
-        "description": "Modifies the location from which rectangles draw. The default mode is\nrectMode(CORNER), which specifies the location to be the upper left\ncorner of the shape and uses the third and fourth parameters of rect()\nto specify the width and height. The syntax rectMode(CORNERS) uses the\nfirst and second parameters of rect() to set the location of one corner\nand uses the third and fourth parameters to set the opposite corner.\nThe syntax rectMode(CENTER) draws the image from its center point and\nuses the third and forth parameters of rect() to specify the image's\nwidth and height. The syntax rectMode(RADIUS) draws the image from its\ncenter point and uses the third and forth parameters of rect() to specify\nhalf of the image's width and height. The parameter must be written in\n\"ALL CAPS\".",
+        "description": "Modifies the location from which rectangles or text frames draw. The default\nmode is b.rectMode(b.CORNER), which specifies the location to be the upper left\ncorner of the shape and uses the ",
         "returns": null,
         "category": "Document",
         "subcategory": "Attributes",
@@ -2315,7 +2413,7 @@
       },
       {
         "name": "ellipseMode",
-        "description": "The origin of new ellipses is modified by the ellipseMode() function.\nThe default configuration is ellipseMode(CENTER), which specifies the\nlocation of the ellipse as the center of the shape. The RADIUS mode is\nthe same, but the width and height parameters to ellipse() specify the\nradius of the ellipse, rather than the diameter. The CORNER mode draws\nthe shape from the upper-left corner of its bounding box. The CORNERS\nmode uses the four parameters to ellipse() to set two opposing corners\nof the ellipse's bounding box. The parameter must be written in \"ALL CAPS\".",
+        "description": "The origin of new ellipses is modified by the b.ellipseMode() function.\nThe default configuration is b.ellipseMode(b.CENTER), which specifies the\nlocation of the ellipse as the center of the shape. The b.RADIUS mode is\nthe same, but the ",
         "returns": null,
         "category": "Document",
         "subcategory": "Attributes",

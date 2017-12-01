@@ -1,20 +1,25 @@
 ---
 layout: entry
-title: Group
-codetitle: 'b.Group([pItem], name)'
-description: 'Returns an array of the items that were within the Group before b.ungroup() was called'
+title: group
+codetitle: b.group(group)
+description: "Ungroups an existing group. Returns an array of the items that were within the group before\n b.ungroup() was called."
 category: Document
 subcategory: null
 returns:
     name: null
-    description: 'The Page Item(s) that were grouped.'
-    type: [Group]
+    description: 'An array of the ungrouped page items.'
+    type: [Array]
 parameters:
-    - {name: pItem, description: 'The Group or name of Group name instance.', optional: true, type: [null]}
-    - {name: name, description: 'The name of the Group, only when creating a Group from Page Item(s).', optional: false, type: [String]}
+    - {name: group, description: 'The group instance or name of the group to ungroup.', optional: false, type: [Group, String]}
 kind: function
 todo: null
 examples: []
 
 ---
+ype: [Array]}
+    - {name: name, description: 'The name of the group, only when creating a group from page items.', optional: true, type: [String]}
+kind: function
+todo: null
+examples: []
+
 ---
