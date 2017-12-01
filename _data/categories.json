@@ -1671,7 +1671,7 @@
         "codetitle": "b.group(pItems, [name])"
       },
       {
-        "name": "group",
+        "name": "ungroup",
         "description": "Ungroups an existing group. Returns an array of the items that were within the group before\n b.ungroup() was called.",
         "returns": {
           "name": null,
@@ -1702,7 +1702,7 @@
         ],
         "examples": [],
         "todo": null,
-        "codetitle": "b.group(group)"
+        "codetitle": "b.ungroup(group)"
       },
       {
         "name": "labels",

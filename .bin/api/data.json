@@ -16011,7 +16011,7 @@
         "title": "method",
         "description": null,
         "lineNumber": 6,
-        "name": "group"
+        "name": "ungroup"
       },
       {
         "title": "param",
@@ -16205,7 +16205,7 @@
     "throws": [],
     "todos": [],
     "kind": "function",
-    "name": "group",
+    "name": "ungroup",
     "memberof": "pub",
     "scope": "static",
     "members": {
@@ -16217,12 +16217,12 @@
     },
     "path": [
       {
-        "name": "group",
+        "name": "ungroup",
         "kind": "function",
         "scope": "static"
       }
     ],
-    "namespace": ".group"
+    "namespace": ".ungroup"
   },
   {
     "description": {
