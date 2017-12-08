@@ -6882,10 +6882,10 @@
           "parameters": [
             {
               "name": "msg",
-              "description": "The message to print",
+              "description": "Any combination of Number, String, Object, Boolean, Array to print.",
               "optional": false,
               "type": [
-                "String"
+                "Any"
               ]
             }
           ],
@@ -7069,10 +7069,10 @@
           "parameters": [
             {
               "name": "msg",
-              "description": "The message to print",
+              "description": "Any combination of Number, String, Object, Boolean, Array to print.",
               "optional": false,
               "type": [
-                "String"
+                "Any"
               ]
             }
           ],

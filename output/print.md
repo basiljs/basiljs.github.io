@@ -7,7 +7,7 @@ category: Output
 subcategory: null
 returns: null
 parameters:
-    - {name: msg, description: 'The message to print', optional: false, type: [String]}
+    - {name: msg, description: 'Any combination of Number, String, Object, Boolean, Array to print.', optional: false, type: [Any]}
 kind: function
 todo: null
 examples: []
