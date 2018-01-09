@@ -406,7 +406,7 @@
         },
         {
           "name": "MODEHIDDEN",
-          "description": "Used with b.go() to set Performance Mode. Processes Document in background mode. Document will not be visible until the script is done. If you are firing on a open document you'll need to save it before calling b.go(). The document will be removed from the display list and added again after the script is done. In this mode you will likely look at indesign with no open document for quite some time - do not work in indesign during this time. You may want to use b.println(\"yourMessage\") in your script and look at the Console in estk to get information about the process.",
+          "description": "Used with b.go() to set Performance Mode. Processes Document in background mode. Document will not be visible until the script is done. If you are firing on a open document you'll need to save it before calling b.go(). The document will be removed from the display list and added again after the script is done. In this mode you will likely look at InDesign with no open document for quite some time - do not work in InDesign during this time. You may want to use b.println(\"yourMessage\") in your script and look at the Console in estk to get information about the process.",
           "returns": null,
           "category": "Environment",
           "subcategory": "modes",
@@ -593,7 +593,7 @@
             },
             {
               "name": "file",
-              "description": "The indesign file instance to save the document to.",
+              "description": "The InDesign file instance to save the document to.",
               "optional": true,
               "type": [
                 "File"
@@ -3838,7 +3838,7 @@
       "entries": [
         {
           "name": "isText",
-          "description": "Checks whether a var is an indesign text object, returns true if this is the case\nNB: a indesign TextFrame will return false as it is just a container holding text.\nSo you could say that isText() refers to all the things inside a TextFrame.",
+          "description": "Checks whether a var is an InDesign text object, returns true if this is the case\nNB: a InDesign TextFrame will return false as it is just a container holding text.\nSo you could say that isText() refers to all the things inside a TextFrame.",
           "returns": {
             "name": null,
             "description": "returns true if this is the case",
@@ -6556,7 +6556,7 @@
           "parameters": [
             {
               "name": "leading",
-              "description": "The spacing between lines of text in units of points or the default Indesign enum\n                                  value Leading.AUTO.",
+              "description": "The spacing between lines of text in units of points or the default InDesign enum\n                                  value Leading.AUTO.",
               "optional": true,
               "type": [
                 null
@@ -6911,7 +6911,13 @@
         {
           "name": "saveStrings",
           "description": "Writes an array of strings to a file, one line per string.\nIf the given file exists it gets overridden.",
-          "returns": null,
+          "returns": {
+            "name": null,
+            "description": "The file the strings were written to.",
+            "type": [
+              "File"
+            ]
+          },
           "category": "Output",
           "subcategory": null,
           "parameters": [
@@ -6928,7 +6934,9 @@
               "name": "strings",
               "description": "The string array to be written",
               "optional": false,
-              "type": []
+              "type": [
+                "Array"
+              ]
             }
           ],
           "kind": "function",
@@ -6940,13 +6948,19 @@
         {
           "name": "saveString",
           "description": "Writes a string to a file.\nIf the given file exists it gets overridden.",
-          "returns": null,
+          "returns": {
+            "name": null,
+            "description": "The file the string was written to.",
+            "type": [
+              "File"
+            ]
+          },
           "category": "Output",
           "subcategory": null,
           "parameters": [
             {
               "name": "file",
-              "description": "The file name or a File instance",
+              "description": "The file name or a File instance.",
               "optional": false,
               "type": [
                 "String",
@@ -6955,7 +6969,7 @@
             },
             {
               "name": "string",
-              "description": "The string to be written",
+              "description": "The string to be written.",
               "optional": false,
               "type": [
                 "String"
@@ -6971,13 +6985,19 @@
         {
           "name": "savePDF",
           "description": "Exports the current document as PDF to the documents folder. Please note, that export options default to the last used export settings.",
-          "returns": null,
+          "returns": {
+            "name": null,
+            "description": "The exported PDF file.",
+            "type": [
+              "File"
+            ]
+          },
           "category": "Output",
           "subcategory": null,
           "parameters": [
             {
               "name": "file",
-              "description": "The file name or a File instance",
+              "description": "The file name or a File instance.",
               "optional": false,
               "type": [
                 "String",
@@ -6986,7 +7006,7 @@
             },
             {
               "name": "showOptions",
-              "description": "Whether to show the export dialog",
+              "description": "Whether to show the export dialog.",
               "optional": true,
               "type": [
                 "Boolean"
@@ -7002,7 +7022,13 @@
         {
           "name": "savePNG",
           "description": "Exports the current document as PNG (or sequence of PNG files) to the documents folder. Please note, that export options default to the last used export settings.",
-          "returns": null,
+          "returns": {
+            "name": null,
+            "description": "The exported PNG file.",
+            "type": [
+              "File"
+            ]
+          },
           "category": "Output",
           "subcategory": null,
           "parameters": [
@@ -7085,6 +7111,334 @@
       ],
       "subcat": "null",
       "cat": "Output"
+    }
+  ],
+  [
+    {
+      "entries": [
+        {
+          "name": "file",
+          "description": "Returns a file object.\nNote that the resulting file object can either refer to an already existing file or if the file does not exist, it can create a preliminary \"virtual\" file that refers to a file that could be created later (i.e. by an export command).",
+          "returns": {
+            "name": null,
+            "description": "File at the given path.",
+            "type": [
+              "File"
+            ]
+          },
+          "category": "Files",
+          "subcategory": null,
+          "parameters": [
+            {
+              "name": "filePath",
+              "description": "The file path.",
+              "optional": false,
+              "type": [
+                "String"
+              ]
+            }
+          ],
+          "kind": "function",
+          "tags": [],
+          "examples": [
+            {
+              "description": "Get an image file from the desktop and place it in the document",
+              "code": "var myImage = b.file(\"~/Desktop/myImage.jpg\");\nb.image(myImage, 0, 0);"
+            },
+            {
+              "description": "Create a file and export it to the desktop",
+              "code": "var myExportFile = b.file(\"~/Desktop/myNewExportFile.pdf\");\nb.savePDF(myExportFile);"
+            }
+          ],
+          "todo": null,
+          "codetitle": "b.file(filePath)"
+        },
+        {
+          "name": "folder",
+          "description": "Returns a folder object.\nNote that the resulting folder object can either refer to an already existing folder or if the folder does not exist, it can create a preliminary \"virtual\" folder that refers to a folder that could be created later.",
+          "returns": {
+            "name": null,
+            "description": "Folder at the given path. If no path is given, but the document is already saved, the document's data folder will be returned.",
+            "type": [
+              "Folder"
+            ]
+          },
+          "category": "Files",
+          "subcategory": null,
+          "parameters": [
+            {
+              "name": "folderPath",
+              "description": "The path of the folder.",
+              "optional": true,
+              "type": [
+                "String"
+              ]
+            }
+          ],
+          "kind": "function",
+          "tags": [],
+          "examples": [
+            {
+              "description": "Get a folder from the desktop and load its files",
+              "code": "var myImageFolder = b.folder(\"~/Desktop/myImages/\");\nvar myImageFiles = b.files(myImageFolder);"
+            },
+            {
+              "description": "Get the data folder, if the document is already saved",
+              "code": "var myDataFolder = b.folder();"
+            }
+          ],
+          "todo": null,
+          "codetitle": "b.folder([folderPath])"
+        },
+        {
+          "name": "files",
+          "description": "Gets all files of a folder and returns them in an array of file objects.\nThe settings object can be used to restrict the search to certain file types only, to include hidden files and to include files in subfolders.",
+          "returns": {
+            "name": null,
+            "description": "Array of the resulting file(s). If no files are found, an empty array will be returned.",
+            "type": [
+              "Array"
+            ]
+          },
+          "category": "Files",
+          "subcategory": null,
+          "parameters": [
+            {
+              "name": "folder",
+              "description": "The folder that holds the files or a string describing the path to that folder.",
+              "optional": true,
+              "type": [
+                null
+              ]
+            },
+            {
+              "name": "settings",
+              "description": "A settings object to control the function's behavior.",
+              "optional": true,
+              "type": [
+                "Object"
+              ]
+            },
+            {
+              "name": "settings.filter",
+              "description": "Suffix(es) of file types to include. Default: <code>\"*\"</code> (include all file types)",
+              "optional": true,
+              "type": [
+                null
+              ]
+            },
+            {
+              "name": "settings.hidden",
+              "description": "Hidden files will be included. Default: <code>false</code>",
+              "optional": true,
+              "type": [
+                "Boolean"
+              ]
+            },
+            {
+              "name": "settings.recursive",
+              "description": "Searches subfolders recursively for matching files. Default: <code>false</code>",
+              "optional": true,
+              "type": [
+                "Boolean"
+              ]
+            }
+          ],
+          "kind": "function",
+          "tags": [],
+          "examples": [
+            {
+              "description": "Get a folder from the desktop and load all its JPEG files",
+              "code": "var myImageFolder = b.folder(\"~/Desktop/myImages/\");\nvar myImageFiles = b.files(myImageFolder, {filter: [\"jpeg\", \"jpg\"]});"
+            },
+            {
+              "description": "If the document is saved, load all files from its data folder, including from its subfolders",
+              "code": "var myDataFolder = b.folder();\nvar allMyDataFiles = b.files(myDataFolder, {recursive: true});"
+            }
+          ],
+          "todo": null,
+          "codetitle": "b.files([folder], [settings])"
+        },
+        {
+          "name": "selectFile",
+          "description": "Opens a selection dialog that allows to select one file. The settings object can be used to add a prompt text at the top of the dialog, to restrict the selection to certain file types and to set the dialog's starting folder.",
+          "returns": {
+            "name": null,
+            "description": "The selected file. If the user cancels, <code>null</code> will be returned.",
+            "type": [
+              "File",
+              "Null"
+            ]
+          },
+          "category": "Files",
+          "subcategory": null,
+          "parameters": [
+            {
+              "name": "settings",
+              "description": "A settings object to control the function's behavior.",
+              "optional": true,
+              "type": [
+                "Object"
+              ]
+            },
+            {
+              "name": "settings.prompt",
+              "description": "The prompt text at the top of the file selection dialog. Default: <code>\"\"</code> (no prompt)",
+              "optional": true,
+              "type": [
+                "String"
+              ]
+            },
+            {
+              "name": "settings.filter",
+              "description": "String or an array containing strings of file endings to include in the dialog. Default: <code>\"\"</code> (include all)",
+              "optional": true,
+              "type": [
+                null
+              ]
+            },
+            {
+              "name": "settings.folder",
+              "description": "Folder or a folder path string defining the start location of the dialog. Default: most recent dialog folder or main user folder.",
+              "optional": true,
+              "type": [
+                null
+              ]
+            }
+          ],
+          "kind": "function",
+          "tags": [],
+          "examples": [
+            {
+              "description": "Open file selection dialog with a prompt text",
+              "code": "b.selectFile({prompt: \"Please select a file.\"});"
+            },
+            {
+              "description": "Open selection dialog starting at the user's desktop, allowing to only select PNG or JPEG files",
+              "code": "b.selectFile({folder: \"~/Desktop/\", filter: [\"jpeg\", \"jpg\", \"png\"]});"
+            }
+          ],
+          "todo": null,
+          "codetitle": "b.selectFile([settings])"
+        },
+        {
+          "name": "selectFiles",
+          "description": "Opens a selection dialog that allows to select one or multiple files. The settings object can be used to add a prompt text at the top of the dialog, to restrict the selection to certain file types and to set the dialog's starting folder.",
+          "returns": {
+            "name": null,
+            "description": "Array of the selected file(s). If the user cancels, an empty array will be returned.",
+            "type": [
+              "Array"
+            ]
+          },
+          "category": "Files",
+          "subcategory": null,
+          "parameters": [
+            {
+              "name": "settings",
+              "description": "A settings object to control the function's behavior.",
+              "optional": true,
+              "type": [
+                "Object"
+              ]
+            },
+            {
+              "name": "settings.prompt",
+              "description": "The prompt text at the top of the file selection dialog. Default: <code>\"\"</code> (no prompt)",
+              "optional": true,
+              "type": [
+                "String"
+              ]
+            },
+            {
+              "name": "settings.filter",
+              "description": "String or an array containing strings of file endings to include in the dialog. Default: <code>\"\"</code> (include all)",
+              "optional": true,
+              "type": [
+                null
+              ]
+            },
+            {
+              "name": "settings.folder",
+              "description": "Folder or a folder path string defining the start location of the dialog. Default: most recent dialog folder or main user folder.",
+              "optional": true,
+              "type": [
+                null
+              ]
+            }
+          ],
+          "kind": "function",
+          "tags": [],
+          "examples": [
+            {
+              "description": "Open file selection dialog with a prompt text",
+              "code": "b.selectFiles({prompt: \"Please select your files.\"});"
+            },
+            {
+              "description": "Open selection dialog starting at the user's desktop, allowing to only select PNG or JPEG files",
+              "code": "b.selectFiles({folder: \"~/Desktop/\", filter: [\"jpeg\", \"jpg\", \"png\"]});"
+            }
+          ],
+          "todo": null,
+          "codetitle": "b.selectFiles([settings])"
+        },
+        {
+          "name": "selectFolder",
+          "description": "Opens a selection dialog that allows to select a folder. The settings object can be used to add a prompt text at the top of the dialog and to set the dialog's starting folder.",
+          "returns": {
+            "name": null,
+            "description": "The selected folder. If the user cancels, <code>null</code> will be returned.",
+            "type": [
+              "Folder",
+              "Null"
+            ]
+          },
+          "category": "Files",
+          "subcategory": null,
+          "parameters": [
+            {
+              "name": "settings",
+              "description": "A settings object to control the function's behavior.",
+              "optional": true,
+              "type": [
+                "Object"
+              ]
+            },
+            {
+              "name": "settings.prompt",
+              "description": "The prompt text at the top of the folder selection dialog. Default: <code>\"\"</code> (no prompt)",
+              "optional": true,
+              "type": [
+                "String"
+              ]
+            },
+            {
+              "name": "settings.folder",
+              "description": "Folder or a folder path string defining the start location of the dialog. Default: most recent dialog folder or main user folder.",
+              "optional": true,
+              "type": [
+                null
+              ]
+            }
+          ],
+          "kind": "function",
+          "tags": [],
+          "examples": [
+            {
+              "description": "Open folder selection dialog with a prompt text",
+              "code": "b.selectFolder({prompt: \"Please select a folder.\"});"
+            },
+            {
+              "description": "Open folder selection dialog starting at the user's desktop",
+              "code": "b.selectFolder({folder: \"~/Desktop/\"});"
+            }
+          ],
+          "todo": null,
+          "codetitle": "b.selectFolder([settings])"
+        }
+      ],
+      "subcat": "null",
+      "cat": "Files"
     }
   ],
   [
@@ -7720,7 +8074,7 @@
           "subcategory": "Input",
           "parameters": [
             {
-              "name": "fileOrString",
+              "name": "file",
               "description": "The text file name in the document's data directory or a File instance or an URL",
               "optional": false,
               "type": [
@@ -7733,7 +8087,7 @@
           "tags": [],
           "examples": [],
           "todo": null,
-          "codetitle": "b.loadString(fileOrString)"
+          "codetitle": "b.loadString(file)"
         },
         {
           "name": "loadStrings",
@@ -7741,7 +8095,9 @@
           "returns": {
             "name": null,
             "description": "Array of the individual lines in the given File or URL",
-            "type": []
+            "type": [
+              "Array"
+            ]
           },
           "category": "Data",
           "subcategory": "Input",
