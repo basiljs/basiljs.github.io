@@ -4,7 +4,11 @@
 css: true
 ---
 
-@import 'typescale', 'highlight';
+* {
+  box-sizing: border-box;
+}
+
+@import 'normalize', 'typescale', 'highlight';
 
 $textColor: #000;
 $headLineColor: #333;
@@ -12,22 +16,22 @@ $guideOneColor: #9636FC;
 $guideTwoColor: #FF4EFF;
 body {
   margin: 0 auto;
-  max-width: 50em;
   // font-size: 1.1em;
   // line-height: 1.5;
   padding: 1em 1em;
   background-image: url("/assets/images/stripe_c40ccfac0db9e43c48e95a530d787366.png");
 }
 .main {
+  max-width: 55em;
   border: 1px solid #eaeaea;
   border-right: 1px solid $guideOneColor;
   border-bottom: 1px solid $guideTwoColor;
   background: #fff;
   margin: 0.2em auto 1em auto;
   padding-top: 0.2em;
-  padding-right: 1em;
+  padding-right: 2em;
   padding-bottom: 1em;
-  padding-left: 1em;
+  padding-left: 4em;
 }
 h1, h2, strong {
   color: $headLineColor;

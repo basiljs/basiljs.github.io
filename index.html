@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Basil.js Reference
+title: Basil.js
 ---
 
 <ul>
@@ -13,35 +13,3 @@ title: Basil.js Reference
 
   {% endfor %}
 </ul>
-
-{%comment%}
-<div class="index">
-<h2 id="cat-ndx">Categories</h2>
-{% for element in site.data.cats-and-subcats %}{% for ele in element %}
-  <h3>{{ele.cat}} {%unless ele.subcat == 'null' %}<span class="h3-subcat">{{ele.subcat}}</span class="h3-subcat">{% endunless %}</h3>
-  <ul>
-    {% for entry in ele.entries %}
-    {% assign eid = entry.name |downcase %}
-    <li id="{{eid}}-ndx"><a href="#{{eid}}">{{entry.codetitle}}</a></li>
-    {% endfor %}
-  </ul>{% endfor %}{% endfor %}
-</div>
-<!-- start item in cat loop -->
-
-<div class="entries">
-{% for item in site.data.categories %}{% assign id = item.cat | downcase %}
-<h3 id="{{id}}">{{item.cat}}</h3>
-<!-- start entries in cat loop -->
-{% for entry in item.entries %}{% include entry-card.html entry=entry ispage=false %}{% endfor %}
-<!-- end entries in cat loop -->
-{% endfor %}
-<!-- end item in cat loop --></div>
-
-<div class="totop"><a href="#">☝︎ back to index</a></div>
-<div class="totop-shadow"><a href="#">☝︎ back to index</a>
-</div>
-<script type="text/javascript">
-var searchindex = {{site.data.categories | jsonify}};
-</script>
-
-{%endcomment%}

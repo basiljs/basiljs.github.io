@@ -37,7 +37,8 @@
   "dependencies": {
     "jquery": "^3.2.1",
     "jquery-columnizer": "^1.6.3",
-    "jquery-highlight": "^3.4.0"
+    "jquery-highlight": "^3.4.0",
+    "normalize.css": "^7.0.0"
   },
   "config": {
     "commitizen": {
