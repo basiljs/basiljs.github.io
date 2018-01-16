@@ -58,9 +58,9 @@ function process(ele, folder, ow) {
 function generate(overwrite) {
   data.forEach((element, index, array)=>{
     if(element.cat !== 'null') {
-      process(element, `./${element.cat.toLowerCase()}/`, overwrite);
+      process(element, `./reference/${element.cat.toLowerCase()}/`, overwrite);
     }else{
-      process(element, './global/', overwrite);
+      process(element, './reference/global/', overwrite);
     }
   });
 }

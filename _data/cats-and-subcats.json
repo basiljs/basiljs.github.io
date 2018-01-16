@@ -175,6 +175,19 @@
           "examples": [],
           "todo": null,
           "codetitle": "b.delay(milliseconds)"
+        },
+        {
+          "name": "stackArray",
+          "description": "The name of the current script.",
+          "returns": null,
+          "category": "Environment",
+          "subcategory": null,
+          "parameters": [],
+          "kind": "property",
+          "tags": [],
+          "examples": [],
+          "todo": null,
+          "codetitle": "b.stackArray"
         }
       ],
       "subcat": "null",
@@ -393,7 +406,7 @@
         },
         {
           "name": "MODEHIDDEN",
-          "description": "Used with b.go() to set Performance Mode. Processes Document in background mode. Document will not be visible until the script is done. If you are firing on a open document you'll need to save it before calling b.go(). The document will be removed from the display list and added again after the script is done. In this mode you will likely look at indesign with no open document for quite some time - do not work in indesign during this time. You may want to use b.println(\"yourMessage\") in your script and look at the Console in estk to get information about the process.",
+          "description": "Used with b.go() to set Performance Mode. Processes Document in background mode. Document will not be visible until the script is done. If you are firing on a open document you'll need to save it before calling b.go(). The document will be removed from the display list and added again after the script is done. In this mode you will likely look at InDesign with no open document for quite some time - do not work in InDesign during this time. You may want to use b.println(\"yourMessage\") in your script and look at the Console in estk to get information about the process.",
           "returns": null,
           "category": "Environment",
           "subcategory": "modes",
@@ -512,10 +525,10 @@
         },
         {
           "name": "size",
-          "description": "Sets the size of the current document, if arguments are given.\nIf only one argument is given, both the width and the height are set to this value.\nIf no argument is given, an object containing the current document's width and height is returned.",
+          "description": "Sets the size of the current document, if arguments are given.\nIf only one argument is given, both the width and the height are set to this value.\nAlternatively, a string can be given as the first argument to apply an existing page size preset (\"A4\", \"Letter\" etc.).\nIn this case, either b.PORTRAIT or b.LANDSCAPE can be used as a second argument to determine the orientation of the page.\nIf no argument is given, an object containing the current document's width and height is returned.",
           "returns": {
             "name": null,
-            "description": "if no argument is given it returns an object containing the current width and height of the document.",
+            "description": "Object containing the current <code>width</code> and <code>height</code> of the document.",
             "type": [
               "Object"
             ]
@@ -524,27 +537,44 @@
           "subcategory": null,
           "parameters": [
             {
-              "name": "width",
-              "description": "The desired width of the current document.",
-              "optional": false,
+              "name": "widthOrPageSize",
+              "description": "The desired width of the current document or the name of a page size preset.",
+              "optional": true,
               "type": [
-                "Number"
+                null
               ]
             },
             {
-              "name": "height",
-              "description": "The desired height of the current document. If not provided the width will be used as the height.",
+              "name": "heightOrOrientation",
+              "description": "The desired height of the current document. If not provided the width will be used as the height. If the first argument is a page size preset, the second argument can be used to set the orientation.",
               "optional": true,
               "type": [
-                "Number"
+                null
               ]
             }
           ],
           "kind": "function",
           "tags": [],
-          "examples": [],
+          "examples": [
+            {
+              "description": "Sets the document size to 70 x 100 units",
+              "code": "b.size(70, 100);"
+            },
+            {
+              "description": "Sets the document size to 70 x 70",
+              "code": "b.size(70);"
+            },
+            {
+              "description": "Sets the document size to A4, keeps the current orientation in place",
+              "code": "b.size(\"A4\");"
+            },
+            {
+              "description": "Sets the document size to A4, set the orientation to landscape",
+              "code": "b.size(\"A4\", b.LANDSCAPE);"
+            }
+          ],
           "todo": null,
-          "codetitle": "b.size(width, [height])"
+          "codetitle": "b.size([widthOrPageSize], [heightOrOrientation])"
         },
         {
           "name": "close",
@@ -563,7 +593,7 @@
             },
             {
               "name": "file",
-              "description": "The indesign file instance to save the document to.",
+              "description": "The InDesign file instance to save the document to.",
               "optional": true,
               "type": [
                 "File"
@@ -577,11 +607,35 @@
           "codetitle": "b.close([saveOptions], [file])"
         },
         {
-          "name": "Group",
-          "description": "Returns the Group instance and sets it if argument Group is given.",
+          "name": "revert",
+          "description": "Reverts the document to its last saved state. If the current document is not saved yet, this function will close the document without saving it and reopen a fresh document so as to \"revert\" the unsaved document. This function is helpful during development stage to start from a new or default document each time the script is run.",
           "returns": {
             "name": null,
-            "description": "The current Group instance.",
+            "description": "The reverted document.",
+            "type": [
+              "Document"
+            ]
+          },
+          "category": "Document",
+          "subcategory": null,
+          "parameters": [],
+          "kind": "function",
+          "tags": [
+            {
+              "title": "description",
+              "description": "Reverts the document to its last saved state. If the current document is not saved yet, this function will close the document without saving it and reopen a fresh document so as to \"revert\" the unsaved document. This function is helpful during development stage to start from a new or default document each time the script is run."
+            }
+          ],
+          "examples": [],
+          "todo": null,
+          "codetitle": "b.revert()"
+        },
+        {
+          "name": "group",
+          "description": "Returns the Group instance and sets it if argument Group is given.\n Groups items to a new group. Returns the resulting group instance. If a string is given as the only\n argument, the group by the given name will be returned.",
+          "returns": {
+            "name": null,
+            "description": "The group instance.",
             "type": [
               "Group"
             ]
@@ -590,17 +644,17 @@
           "subcategory": null,
           "parameters": [
             {
-              "name": "pItem",
-              "description": "The PageItems array (must be at least 2) or name of Group name instance.",
-              "optional": true,
+              "name": "pItems",
+              "description": "An array of page items (must contain at least two items) or name of group instance.",
+              "optional": false,
               "type": [
                 "Array"
               ]
             },
             {
               "name": "name",
-              "description": "The name of the Group, only when creating a Group from Page Item(s).",
-              "optional": false,
+              "description": "The name of the group, only when creating a group from page items.",
+              "optional": true,
               "type": [
                 "String"
               ]
@@ -615,34 +669,27 @@
           ],
           "examples": [],
           "todo": null,
-          "codetitle": "b.Group([pItem], name)"
+          "codetitle": "b.group(pItems, [name])"
         },
         {
-          "name": "Group",
-          "description": "Returns an array of the items that were within the Group before b.ungroup() was called",
+          "name": "ungroup",
+          "description": "Ungroups an existing group. Returns an array of the items that were within the group before\n b.ungroup() was called.",
           "returns": {
             "name": null,
-            "description": "The Page Item(s) that were grouped.",
+            "description": "An array of the ungrouped page items.",
             "type": [
-              "Group"
+              "Array"
             ]
           },
           "category": "Document",
           "subcategory": null,
           "parameters": [
             {
-              "name": "pItem",
-              "description": "The Group or name of Group name instance.",
-              "optional": true,
-              "type": [
-                null
-              ]
-            },
-            {
-              "name": "name",
-              "description": "The name of the Group, only when creating a Group from Page Item(s).",
+              "name": "group",
+              "description": "The group instance or name of the group to ungroup.",
               "optional": false,
               "type": [
+                "Group",
                 "String"
               ]
             }
@@ -656,7 +703,7 @@
           ],
           "examples": [],
           "todo": null,
-          "codetitle": "b.Group([pItem], name)"
+          "codetitle": "b.ungroup(group)"
         },
         {
           "name": "guideX",
@@ -750,7 +797,7 @@
       "entries": [
         {
           "name": "rectMode",
-          "description": "Modifies the location from which rectangles draw. The default mode is\nrectMode(CORNER), which specifies the location to be the upper left\ncorner of the shape and uses the third and fourth parameters of rect()\nto specify the width and height. The syntax rectMode(CORNERS) uses the\nfirst and second parameters of rect() to set the location of one corner\nand uses the third and fourth parameters to set the opposite corner.\nThe syntax rectMode(CENTER) draws the image from its center point and\nuses the third and forth parameters of rect() to specify the image's\nwidth and height. The syntax rectMode(RADIUS) draws the image from its\ncenter point and uses the third and forth parameters of rect() to specify\nhalf of the image's width and height. The parameter must be written in\n\"ALL CAPS\".",
+          "description": "Modifies the location from which rectangles or text frames draw. The default\nmode is b.rectMode(b.CORNER), which specifies the location to be the upper left\ncorner of the shape and uses the ",
           "returns": null,
           "category": "Document",
           "subcategory": "Attributes",
@@ -772,7 +819,7 @@
         },
         {
           "name": "ellipseMode",
-          "description": "The origin of new ellipses is modified by the ellipseMode() function.\nThe default configuration is ellipseMode(CENTER), which specifies the\nlocation of the ellipse as the center of the shape. The RADIUS mode is\nthe same, but the width and height parameters to ellipse() specify the\nradius of the ellipse, rather than the diameter. The CORNER mode draws\nthe shape from the upper-left corner of its bounding box. The CORNERS\nmode uses the four parameters to ellipse() to set two opposing corners\nof the ellipse's bounding box. The parameter must be written in \"ALL CAPS\".",
+          "description": "The origin of new ellipses is modified by the b.ellipseMode() function.\nThe default configuration is b.ellipseMode(b.CENTER), which specifies the\nlocation of the ellipse as the center of the shape. The b.RADIUS mode is\nthe same, but the ",
           "returns": null,
           "category": "Document",
           "subcategory": "Attributes",
@@ -1538,6 +1585,84 @@
           "codetitle": "b.AFTER"
         },
         {
+          "name": "FRONT",
+          "description": "Used with b.arrange() to bring a page item to the front or to bring it in front of a given reference object.",
+          "returns": null,
+          "category": "Document",
+          "subcategory": "Page",
+          "parameters": [],
+          "kind": "property",
+          "tags": [],
+          "examples": [],
+          "todo": null,
+          "codetitle": "b.FRONT"
+        },
+        {
+          "name": "BACK",
+          "description": "Used with b.arrange() to send a page item to the back or to send it behind a given reference object.",
+          "returns": null,
+          "category": "Document",
+          "subcategory": "Page",
+          "parameters": [],
+          "kind": "property",
+          "tags": [],
+          "examples": [],
+          "todo": null,
+          "codetitle": "b.BACK"
+        },
+        {
+          "name": "FORWARD",
+          "description": "Used with b.arrange() to bring a page item one level forward in its layer.",
+          "returns": null,
+          "category": "Document",
+          "subcategory": "Page",
+          "parameters": [],
+          "kind": "property",
+          "tags": [],
+          "examples": [],
+          "todo": null,
+          "codetitle": "b.FORWARD"
+        },
+        {
+          "name": "BACKWARD",
+          "description": "Used with b.arrange() to send a page item one level backward in its layer.",
+          "returns": null,
+          "category": "Document",
+          "subcategory": "Page",
+          "parameters": [],
+          "kind": "property",
+          "tags": [],
+          "examples": [],
+          "todo": null,
+          "codetitle": "b.BACKWARD"
+        },
+        {
+          "name": "PORTRAIT",
+          "description": "Used with b.size() to set the orientation of a given page size to portrait.",
+          "returns": null,
+          "category": "Document",
+          "subcategory": "Page",
+          "parameters": [],
+          "kind": "property",
+          "tags": [],
+          "examples": [],
+          "todo": null,
+          "codetitle": "b.PORTRAIT"
+        },
+        {
+          "name": "LANDSCAPE",
+          "description": "Used with b.size() to set the orientation of a given page size to landscape.",
+          "returns": null,
+          "category": "Document",
+          "subcategory": "Page",
+          "parameters": [],
+          "kind": "property",
+          "tags": [],
+          "examples": [],
+          "todo": null,
+          "codetitle": "b.LANDSCAPE"
+        },
+        {
           "name": "canvasMode",
           "description": "Use this to set the dimensions of the canvas. Choose between b.PAGE (default), b.MARGIN, b.BLEED resp. b.FACING_PAGES, b.FACING_MARGINS and b.FACING_BLEEDS for book setups with facing page. Please note: Setups with more than two facing pages are not yet supported.\nPlease note that you will loose your current MatrixTransformation. You should set the canvasMode before you attempt to use b.translate(), b.rotate() and b.scale();",
           "returns": {
@@ -1747,7 +1872,7 @@
         },
         {
           "name": "pageCount",
-          "description": "The number of all pages in the current document.",
+          "description": "Returns the number of all pages in the current document. If a number is given as an argument,\nit will set the document's page count to the given number by either adding pages or removing\npages until the number is reached. If pages are added, the master page of the document's last\npage will be applied to the new pages.",
           "returns": {
             "name": null,
             "description": "The amount of pages.",
@@ -1757,12 +1882,21 @@
           },
           "category": "Document",
           "subcategory": "Page",
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "pageCount",
+              "description": "New page count of the document (integer between 1 and 9999).",
+              "optional": true,
+              "type": [
+                "Number"
+              ]
+            }
+          ],
           "kind": "function",
           "tags": [],
           "examples": [],
           "todo": null,
-          "codetitle": "b.pageCount()"
+          "codetitle": "b.pageCount([pageCount])"
         },
         {
           "name": "layer",
@@ -1791,6 +1925,57 @@
           "examples": [],
           "todo": null,
           "codetitle": "b.layer([layer])"
+        },
+        {
+          "name": "arrange",
+          "description": "Arranges a page item or a layer before or behind other page items or layers. If using the constants <code>b.FORWARD</code> or <code>b.BACKWARD</code> the object is sent forward or back one step. The constants <code>b.FRONT</code> or <code>b.BACK</code> send the object to the very front or very back. Using <code>b.FRONT</code> or <code>b.BACK</code> together with the optional reference object, sends the object in front or behind this reference object.",
+          "returns": {
+            "name": null,
+            "description": "The newly arranged page item or layer.",
+            "type": [
+              "PageItem",
+              "Layer"
+            ]
+          },
+          "category": "Document",
+          "subcategory": "Page",
+          "parameters": [
+            {
+              "name": "pItemOrLayer",
+              "description": "The page item or layer to be moved to a new position.",
+              "optional": false,
+              "type": [
+                "PageItem",
+                "Layer"
+              ]
+            },
+            {
+              "name": "positionOrDirection",
+              "description": "The position or direction to move the page item or layer. Can be <code>b.FRONT</code>, <code>b.BACK</code>, <code>b.FORWARD</code> or <code>b.BACKWARD</code>.",
+              "optional": false,
+              "type": [
+                "String"
+              ]
+            },
+            {
+              "name": "reference",
+              "description": "A reference object to move the page item or layer behind or in front of.",
+              "optional": true,
+              "type": [
+                null
+              ]
+            }
+          ],
+          "kind": "function",
+          "tags": [
+            {
+              "title": "description",
+              "description": "Arranges a page item or a layer before or behind other page items or layers. If using the constants <code>b.FORWARD</code> or <code>b.BACKWARD</code> the object is sent forward or back one step. The constants <code>b.FRONT</code> or <code>b.BACK</code> send the object to the very front or very back. Using <code>b.FRONT</code> or <code>b.BACK</code> together with the optional reference object, sends the object in front or behind this reference object."
+            }
+          ],
+          "examples": [],
+          "todo": null,
+          "codetitle": "b.arrange(pItemOrLayer, positionOrDirection, [reference])"
         },
         {
           "name": "margins",
@@ -2114,7 +2299,12 @@
           ],
           "kind": "function",
           "tags": [],
-          "examples": [],
+          "examples": [
+            {
+              "description": null,
+              "code": "var vec1 = new b.Vector( x1, y1 );\n var vec2 = new b.Vector( x2, y2 );\n b.line( vec1, vec2 );"
+            }
+          ],
           "todo": null,
           "codetitle": "b.line(x1, y1, x2, y2)"
         },
@@ -2164,7 +2354,7 @@
               ]
             },
             {
-              "name": "xAnchorLeft",
+              "name": "xLeftHandle",
               "description": "X-coordinate of the left-direction point.",
               "optional": true,
               "type": [
@@ -2172,7 +2362,7 @@
               ]
             },
             {
-              "name": "yAnchorLeft",
+              "name": "yLeftHandle",
               "description": "Y-coordinate of the left-direction point.",
               "optional": true,
               "type": [
@@ -2180,7 +2370,7 @@
               ]
             },
             {
-              "name": "xAnchorRight",
+              "name": "xRightHandle",
               "description": "X-coordinate of the right-direction point.",
               "optional": true,
               "type": [
@@ -2188,7 +2378,7 @@
               ]
             },
             {
-              "name": "yAnchorRight",
+              "name": "yRightHandle",
               "description": "Y-coordinate of the right-direction point.",
               "optional": true,
               "type": [
@@ -2200,14 +2390,14 @@
           "tags": [],
           "examples": [],
           "todo": null,
-          "codetitle": "b.vertex(x, y, [xAnchorLeft], [yAnchorLeft], [xAnchorRight], [yAnchorRight])"
+          "codetitle": "b.vertex(x, y, [xLeftHandle], [yLeftHandle], [xRightHandle], [yRightHandle])"
         },
         {
           "name": "arc",
           "description": "The arc() function draws an arc. Arcs are drawn along the outer edge of an ellipse\ndefined by the x, y, width and height parameters.\nThe origin or the arc's ellipse may be changed with the ellipseMode() function.\nThe start and stop parameters specify the angles at which to draw the arc.",
           "returns": {
             "name": null,
-            "description": "The resulting GraphicLine or Polygon object (in InDesign Scripting terms the corresponding type is GraphicLine or Polygon, not Arc).\n\nTODO(S)\n- fix overlapping points bug",
+            "description": "The resulting GraphicLine or Polygon object (in InDesign Scripting terms the corresponding type is GraphicLine or Polygon, not Arc).",
             "type": [
               "GraphicLine",
               "Polygon"
@@ -2314,7 +2504,7 @@
         },
         {
           "name": "rect",
-          "description": "Draws a rectangle on the page.",
+          "description": "Draws a rectangle on the page.\nBy default, the first two parameters set the location of the upper-left corner, the third sets the width, and the fourth sets the height. The way these parameters are interpreted, however, may be changed with the b.rectMode() function.\nThe fifth, sixth, seventh and eighth parameters, if specified, determine corner radius for the top-right, top-left, lower-right and lower-left corners, respectively. If only a fifth parameter is provided, all corners will be set to this radius.",
           "returns": {
             "name": null,
             "description": "The rectangle that was created.",
@@ -2356,13 +2546,45 @@
               "type": [
                 "Number"
               ]
+            },
+            {
+              "name": "tl",
+              "description": "Radius of top left corner or radius of all 4 corners (optional).",
+              "optional": true,
+              "type": [
+                "Number"
+              ]
+            },
+            {
+              "name": "tr",
+              "description": "Radius of top right corner (optional).",
+              "optional": true,
+              "type": [
+                "Number"
+              ]
+            },
+            {
+              "name": "br",
+              "description": "Radius of bottom right corner (optional).",
+              "optional": true,
+              "type": [
+                "Number"
+              ]
+            },
+            {
+              "name": "bl",
+              "description": "Radius of bottom left corner (optional).",
+              "optional": true,
+              "type": [
+                "Number"
+              ]
             }
           ],
           "kind": "function",
           "tags": [],
           "examples": [],
           "todo": null,
-          "codetitle": "b.rect(x, y, w, h)"
+          "codetitle": "b.rect(x, y, w, h, [tl], [tr], [br], [bl])"
         }
       ],
       "subcat": "Primitives",
@@ -2961,7 +3183,7 @@
             }
           ],
           "examples": [],
-          "todo": "Can we make the argument comparison typesafe? != vs !==",
+          "todo": null,
           "codetitle": "b.scale(scaleX, scaleY)"
         },
         {
@@ -3014,7 +3236,7 @@
             }
           ],
           "examples": [],
-          "todo": "Add more description.",
+          "todo": null,
           "codetitle": "b.Matrix2D()"
         },
         {
@@ -3032,7 +3254,7 @@
             }
           ],
           "examples": [],
-          "todo": "More description.",
+          "todo": null,
           "codetitle": "b.Matrix2D.set()"
         },
         {
@@ -3056,7 +3278,7 @@
             }
           ],
           "examples": [],
-          "todo": "More description.",
+          "todo": null,
           "codetitle": "b.Matrix2D.get()"
         },
         {
@@ -3098,7 +3320,7 @@
             }
           ],
           "examples": [],
-          "todo": "More description.",
+          "todo": null,
           "codetitle": "b.Matrix2D.array()"
         },
         {
@@ -3122,7 +3344,7 @@
             }
           ],
           "examples": [],
-          "todo": "More description.",
+          "todo": null,
           "codetitle": "b.Matrix2D.adobeMatrix()"
         },
         {
@@ -3157,7 +3379,7 @@
             }
           ],
           "examples": [],
-          "todo": "More description.",
+          "todo": null,
           "codetitle": "b.Matrix2D.translate(tx, ty)"
         },
         {
@@ -3192,7 +3414,7 @@
             }
           ],
           "examples": [],
-          "todo": "More description.",
+          "todo": null,
           "codetitle": "b.Matrix2D.invTranslate(tx, ty)"
         },
         {
@@ -3210,7 +3432,7 @@
             }
           ],
           "examples": [],
-          "todo": "More description.",
+          "todo": null,
           "codetitle": "b.Matrix2D.transpose()"
         },
         {
@@ -3252,7 +3474,7 @@
             }
           ],
           "examples": [],
-          "todo": "More description.",
+          "todo": null,
           "codetitle": "b.Matrix2D.mult(source, [target])"
         },
         {
@@ -3293,7 +3515,7 @@
             }
           ],
           "examples": [],
-          "todo": "More description.",
+          "todo": null,
           "codetitle": "b.Matrix2D.multX(x, y)"
         },
         {
@@ -3334,7 +3556,7 @@
             }
           ],
           "examples": [],
-          "todo": "More description.",
+          "todo": null,
           "codetitle": "b.Matrix2D.multY(x, y)"
         },
         {
@@ -3358,7 +3580,7 @@
             }
           ],
           "examples": [],
-          "todo": "More description.",
+          "todo": null,
           "codetitle": "b.Matrix2D.determinant()"
         },
         {
@@ -3382,7 +3604,7 @@
             }
           ],
           "examples": [],
-          "todo": "More description.",
+          "todo": null,
           "codetitle": "b.Matrix2D.invert()"
         },
         {
@@ -3417,7 +3639,7 @@
             }
           ],
           "examples": [],
-          "todo": "More description.",
+          "todo": null,
           "codetitle": "b.Matrix2D.scale(sx, sy)"
         },
         {
@@ -3452,7 +3674,7 @@
             }
           ],
           "examples": [],
-          "todo": "More description.",
+          "todo": null,
           "codetitle": "b.Matrix2D.invScale(sx, sy)"
         },
         {
@@ -3470,7 +3692,7 @@
             }
           ],
           "examples": [],
-          "todo": "More description.",
+          "todo": null,
           "codetitle": "b.Matrix2D.apply()"
         },
         {
@@ -3488,7 +3710,7 @@
             }
           ],
           "examples": [],
-          "todo": "More description.",
+          "todo": null,
           "codetitle": "b.Matrix2D.preApply()"
         },
         {
@@ -3500,7 +3722,7 @@
           "parameters": [
             {
               "name": "angle",
-              "description": "…",
+              "description": null,
               "optional": false,
               "type": [
                 "Number"
@@ -3515,7 +3737,7 @@
             }
           ],
           "examples": [],
-          "todo": "More description.",
+          "todo": null,
           "codetitle": "b.Matrix2D.rotate(angle)"
         },
         {
@@ -3527,7 +3749,7 @@
           "parameters": [
             {
               "name": "angle",
-              "description": "…",
+              "description": null,
               "optional": false,
               "type": [
                 "Number"
@@ -3542,7 +3764,7 @@
             }
           ],
           "examples": [],
-          "todo": "More description.",
+          "todo": null,
           "codetitle": "b.Matrix2D.rotateZ(angle)"
         },
         {
@@ -3554,7 +3776,7 @@
           "parameters": [
             {
               "name": "angle",
-              "description": "…",
+              "description": null,
               "optional": false,
               "type": [
                 "Number"
@@ -3569,7 +3791,7 @@
             }
           ],
           "examples": [],
-          "todo": "More description.",
+          "todo": null,
           "codetitle": "b.Matrix2D.invRotateZ(angle)"
         },
         {
@@ -3587,7 +3809,7 @@
             }
           ],
           "examples": [],
-          "todo": "More description.",
+          "todo": null,
           "codetitle": "b.Matrix2D.print()"
         },
         {
@@ -3616,7 +3838,7 @@
       "entries": [
         {
           "name": "isText",
-          "description": "Checks whether a var is an indesign text object, returns true if this is the case\nNB: a indesign TextFrame will return false as it is just a container holding text.\nSo you could say that isText() refers to all the things inside a TextFrame.",
+          "description": "Checks whether a var is an InDesign text object, returns true if this is the case\nNB: a InDesign TextFrame will return false as it is just a container holding text.\nSo you could say that isText() refers to all the things inside a TextFrame.",
           "returns": {
             "name": null,
             "description": "returns true if this is the case",
@@ -6229,9 +6451,9 @@
           "description": "Returns the current font and sets it if argument fontName is given.",
           "returns": {
             "name": null,
-            "description": "currFont The name of the current font",
+            "description": "The current font object",
             "type": [
-              "String"
+              "Font"
             ]
           },
           "category": "Typography",
@@ -6240,14 +6462,14 @@
             {
               "name": "fontName",
               "description": "The name of the font to set e.g. Helvetica",
-              "optional": false,
+              "optional": true,
               "type": [
                 "String"
               ]
             },
             {
               "name": "fontStyle",
-              "description": "The Font style e.g. Bold",
+              "description": "The font style e.g. Bold",
               "optional": true,
               "type": [
                 "String"
@@ -6258,7 +6480,7 @@
           "tags": [],
           "examples": [],
           "todo": null,
-          "codetitle": "b.textFont(fontName, [fontStyle])"
+          "codetitle": "b.textFont([fontName], [fontStyle])"
         },
         {
           "name": "textSize",
@@ -6334,7 +6556,7 @@
           "parameters": [
             {
               "name": "leading",
-              "description": "The spacing between lines of text in units of points or the default Indesign enum\n                                  value Leading.AUTO.",
+              "description": "The spacing between lines of text in units of points or the default InDesign enum\n                                  value Leading.AUTO.",
               "optional": true,
               "type": [
                 null
@@ -6660,10 +6882,10 @@
           "parameters": [
             {
               "name": "msg",
-              "description": "The message to print",
+              "description": "Any combination of Number, String, Object, Boolean, Array to print.",
               "optional": false,
               "type": [
-                "String"
+                "Any"
               ]
             }
           ],
@@ -6689,7 +6911,13 @@
         {
           "name": "saveStrings",
           "description": "Writes an array of strings to a file, one line per string.\nIf the given file exists it gets overridden.",
-          "returns": null,
+          "returns": {
+            "name": null,
+            "description": "The file the strings were written to.",
+            "type": [
+              "File"
+            ]
+          },
           "category": "Output",
           "subcategory": null,
           "parameters": [
@@ -6706,7 +6934,9 @@
               "name": "strings",
               "description": "The string array to be written",
               "optional": false,
-              "type": []
+              "type": [
+                "Array"
+              ]
             }
           ],
           "kind": "function",
@@ -6718,13 +6948,19 @@
         {
           "name": "saveString",
           "description": "Writes a string to a file.\nIf the given file exists it gets overridden.",
-          "returns": null,
+          "returns": {
+            "name": null,
+            "description": "The file the string was written to.",
+            "type": [
+              "File"
+            ]
+          },
           "category": "Output",
           "subcategory": null,
           "parameters": [
             {
               "name": "file",
-              "description": "The file name or a File instance",
+              "description": "The file name or a File instance.",
               "optional": false,
               "type": [
                 "String",
@@ -6733,7 +6969,7 @@
             },
             {
               "name": "string",
-              "description": "The string to be written",
+              "description": "The string to be written.",
               "optional": false,
               "type": [
                 "String"
@@ -6749,13 +6985,19 @@
         {
           "name": "savePDF",
           "description": "Exports the current document as PDF to the documents folder. Please note, that export options default to the last used export settings.",
-          "returns": null,
+          "returns": {
+            "name": null,
+            "description": "The exported PDF file.",
+            "type": [
+              "File"
+            ]
+          },
           "category": "Output",
           "subcategory": null,
           "parameters": [
             {
               "name": "file",
-              "description": "The file name or a File instance",
+              "description": "The file name or a File instance.",
               "optional": false,
               "type": [
                 "String",
@@ -6764,7 +7006,7 @@
             },
             {
               "name": "showOptions",
-              "description": "Whether to show the export dialog",
+              "description": "Whether to show the export dialog.",
               "optional": true,
               "type": [
                 "Boolean"
@@ -6780,7 +7022,13 @@
         {
           "name": "savePNG",
           "description": "Exports the current document as PNG (or sequence of PNG files) to the documents folder. Please note, that export options default to the last used export settings.",
-          "returns": null,
+          "returns": {
+            "name": null,
+            "description": "The exported PNG file.",
+            "type": [
+              "File"
+            ]
+          },
           "category": "Output",
           "subcategory": null,
           "parameters": [
@@ -6847,10 +7095,10 @@
           "parameters": [
             {
               "name": "msg",
-              "description": "The message to print",
+              "description": "Any combination of Number, String, Object, Boolean, Array to print.",
               "optional": false,
               "type": [
-                "String"
+                "Any"
               ]
             }
           ],
@@ -6863,6 +7111,334 @@
       ],
       "subcat": "null",
       "cat": "Output"
+    }
+  ],
+  [
+    {
+      "entries": [
+        {
+          "name": "file",
+          "description": "Returns a file object.\nNote that the resulting file object can either refer to an already existing file or if the file does not exist, it can create a preliminary \"virtual\" file that refers to a file that could be created later (i.e. by an export command).",
+          "returns": {
+            "name": null,
+            "description": "File at the given path.",
+            "type": [
+              "File"
+            ]
+          },
+          "category": "Files",
+          "subcategory": null,
+          "parameters": [
+            {
+              "name": "filePath",
+              "description": "The file path.",
+              "optional": false,
+              "type": [
+                "String"
+              ]
+            }
+          ],
+          "kind": "function",
+          "tags": [],
+          "examples": [
+            {
+              "description": "Get an image file from the desktop and place it in the document",
+              "code": "var myImage = b.file(\"~/Desktop/myImage.jpg\");\nb.image(myImage, 0, 0);"
+            },
+            {
+              "description": "Create a file and export it to the desktop",
+              "code": "var myExportFile = b.file(\"~/Desktop/myNewExportFile.pdf\");\nb.savePDF(myExportFile);"
+            }
+          ],
+          "todo": null,
+          "codetitle": "b.file(filePath)"
+        },
+        {
+          "name": "folder",
+          "description": "Returns a folder object.\nNote that the resulting folder object can either refer to an already existing folder or if the folder does not exist, it can create a preliminary \"virtual\" folder that refers to a folder that could be created later.",
+          "returns": {
+            "name": null,
+            "description": "Folder at the given path. If no path is given, but the document is already saved, the document's data folder will be returned.",
+            "type": [
+              "Folder"
+            ]
+          },
+          "category": "Files",
+          "subcategory": null,
+          "parameters": [
+            {
+              "name": "folderPath",
+              "description": "The path of the folder.",
+              "optional": true,
+              "type": [
+                "String"
+              ]
+            }
+          ],
+          "kind": "function",
+          "tags": [],
+          "examples": [
+            {
+              "description": "Get a folder from the desktop and load its files",
+              "code": "var myImageFolder = b.folder(\"~/Desktop/myImages/\");\nvar myImageFiles = b.files(myImageFolder);"
+            },
+            {
+              "description": "Get the data folder, if the document is already saved",
+              "code": "var myDataFolder = b.folder();"
+            }
+          ],
+          "todo": null,
+          "codetitle": "b.folder([folderPath])"
+        },
+        {
+          "name": "files",
+          "description": "Gets all files of a folder and returns them in an array of file objects.\nThe settings object can be used to restrict the search to certain file types only, to include hidden files and to include files in subfolders.",
+          "returns": {
+            "name": null,
+            "description": "Array of the resulting file(s). If no files are found, an empty array will be returned.",
+            "type": [
+              "Array"
+            ]
+          },
+          "category": "Files",
+          "subcategory": null,
+          "parameters": [
+            {
+              "name": "folder",
+              "description": "The folder that holds the files or a string describing the path to that folder.",
+              "optional": true,
+              "type": [
+                null
+              ]
+            },
+            {
+              "name": "settings",
+              "description": "A settings object to control the function's behavior.",
+              "optional": true,
+              "type": [
+                "Object"
+              ]
+            },
+            {
+              "name": "settings.filter",
+              "description": "Suffix(es) of file types to include. Default: <code>\"*\"</code> (include all file types)",
+              "optional": true,
+              "type": [
+                null
+              ]
+            },
+            {
+              "name": "settings.hidden",
+              "description": "Hidden files will be included. Default: <code>false</code>",
+              "optional": true,
+              "type": [
+                "Boolean"
+              ]
+            },
+            {
+              "name": "settings.recursive",
+              "description": "Searches subfolders recursively for matching files. Default: <code>false</code>",
+              "optional": true,
+              "type": [
+                "Boolean"
+              ]
+            }
+          ],
+          "kind": "function",
+          "tags": [],
+          "examples": [
+            {
+              "description": "Get a folder from the desktop and load all its JPEG files",
+              "code": "var myImageFolder = b.folder(\"~/Desktop/myImages/\");\nvar myImageFiles = b.files(myImageFolder, {filter: [\"jpeg\", \"jpg\"]});"
+            },
+            {
+              "description": "If the document is saved, load all files from its data folder, including from its subfolders",
+              "code": "var myDataFolder = b.folder();\nvar allMyDataFiles = b.files(myDataFolder, {recursive: true});"
+            }
+          ],
+          "todo": null,
+          "codetitle": "b.files([folder], [settings])"
+        },
+        {
+          "name": "selectFile",
+          "description": "Opens a selection dialog that allows to select one file. The settings object can be used to add a prompt text at the top of the dialog, to restrict the selection to certain file types and to set the dialog's starting folder.",
+          "returns": {
+            "name": null,
+            "description": "The selected file. If the user cancels, <code>null</code> will be returned.",
+            "type": [
+              "File",
+              "Null"
+            ]
+          },
+          "category": "Files",
+          "subcategory": null,
+          "parameters": [
+            {
+              "name": "settings",
+              "description": "A settings object to control the function's behavior.",
+              "optional": true,
+              "type": [
+                "Object"
+              ]
+            },
+            {
+              "name": "settings.prompt",
+              "description": "The prompt text at the top of the file selection dialog. Default: <code>\"\"</code> (no prompt)",
+              "optional": true,
+              "type": [
+                "String"
+              ]
+            },
+            {
+              "name": "settings.filter",
+              "description": "String or an array containing strings of file endings to include in the dialog. Default: <code>\"\"</code> (include all)",
+              "optional": true,
+              "type": [
+                null
+              ]
+            },
+            {
+              "name": "settings.folder",
+              "description": "Folder or a folder path string defining the start location of the dialog. Default: most recent dialog folder or main user folder.",
+              "optional": true,
+              "type": [
+                null
+              ]
+            }
+          ],
+          "kind": "function",
+          "tags": [],
+          "examples": [
+            {
+              "description": "Open file selection dialog with a prompt text",
+              "code": "b.selectFile({prompt: \"Please select a file.\"});"
+            },
+            {
+              "description": "Open selection dialog starting at the user's desktop, allowing to only select PNG or JPEG files",
+              "code": "b.selectFile({folder: \"~/Desktop/\", filter: [\"jpeg\", \"jpg\", \"png\"]});"
+            }
+          ],
+          "todo": null,
+          "codetitle": "b.selectFile([settings])"
+        },
+        {
+          "name": "selectFiles",
+          "description": "Opens a selection dialog that allows to select one or multiple files. The settings object can be used to add a prompt text at the top of the dialog, to restrict the selection to certain file types and to set the dialog's starting folder.",
+          "returns": {
+            "name": null,
+            "description": "Array of the selected file(s). If the user cancels, an empty array will be returned.",
+            "type": [
+              "Array"
+            ]
+          },
+          "category": "Files",
+          "subcategory": null,
+          "parameters": [
+            {
+              "name": "settings",
+              "description": "A settings object to control the function's behavior.",
+              "optional": true,
+              "type": [
+                "Object"
+              ]
+            },
+            {
+              "name": "settings.prompt",
+              "description": "The prompt text at the top of the file selection dialog. Default: <code>\"\"</code> (no prompt)",
+              "optional": true,
+              "type": [
+                "String"
+              ]
+            },
+            {
+              "name": "settings.filter",
+              "description": "String or an array containing strings of file endings to include in the dialog. Default: <code>\"\"</code> (include all)",
+              "optional": true,
+              "type": [
+                null
+              ]
+            },
+            {
+              "name": "settings.folder",
+              "description": "Folder or a folder path string defining the start location of the dialog. Default: most recent dialog folder or main user folder.",
+              "optional": true,
+              "type": [
+                null
+              ]
+            }
+          ],
+          "kind": "function",
+          "tags": [],
+          "examples": [
+            {
+              "description": "Open file selection dialog with a prompt text",
+              "code": "b.selectFiles({prompt: \"Please select your files.\"});"
+            },
+            {
+              "description": "Open selection dialog starting at the user's desktop, allowing to only select PNG or JPEG files",
+              "code": "b.selectFiles({folder: \"~/Desktop/\", filter: [\"jpeg\", \"jpg\", \"png\"]});"
+            }
+          ],
+          "todo": null,
+          "codetitle": "b.selectFiles([settings])"
+        },
+        {
+          "name": "selectFolder",
+          "description": "Opens a selection dialog that allows to select a folder. The settings object can be used to add a prompt text at the top of the dialog and to set the dialog's starting folder.",
+          "returns": {
+            "name": null,
+            "description": "The selected folder. If the user cancels, <code>null</code> will be returned.",
+            "type": [
+              "Folder",
+              "Null"
+            ]
+          },
+          "category": "Files",
+          "subcategory": null,
+          "parameters": [
+            {
+              "name": "settings",
+              "description": "A settings object to control the function's behavior.",
+              "optional": true,
+              "type": [
+                "Object"
+              ]
+            },
+            {
+              "name": "settings.prompt",
+              "description": "The prompt text at the top of the folder selection dialog. Default: <code>\"\"</code> (no prompt)",
+              "optional": true,
+              "type": [
+                "String"
+              ]
+            },
+            {
+              "name": "settings.folder",
+              "description": "Folder or a folder path string defining the start location of the dialog. Default: most recent dialog folder or main user folder.",
+              "optional": true,
+              "type": [
+                null
+              ]
+            }
+          ],
+          "kind": "function",
+          "tags": [],
+          "examples": [
+            {
+              "description": "Open folder selection dialog with a prompt text",
+              "code": "b.selectFolder({prompt: \"Please select a folder.\"});"
+            },
+            {
+              "description": "Open folder selection dialog starting at the user's desktop",
+              "code": "b.selectFolder({folder: \"~/Desktop/\"});"
+            }
+          ],
+          "todo": null,
+          "codetitle": "b.selectFolder([settings])"
+        }
+      ],
+      "subcat": "null",
+      "cat": "Files"
     }
   ],
   [
@@ -7498,7 +8074,7 @@
           "subcategory": "Input",
           "parameters": [
             {
-              "name": "fileOrString",
+              "name": "file",
               "description": "The text file name in the document's data directory or a File instance or an URL",
               "optional": false,
               "type": [
@@ -7511,7 +8087,7 @@
           "tags": [],
           "examples": [],
           "todo": null,
-          "codetitle": "b.loadString(fileOrString)"
+          "codetitle": "b.loadString(file)"
         },
         {
           "name": "loadStrings",
@@ -7519,7 +8095,9 @@
           "returns": {
             "name": null,
             "description": "Array of the individual lines in the given File or URL",
-            "type": []
+            "type": [
+              "Array"
+            ]
           },
           "category": "Data",
           "subcategory": "Input",
@@ -8117,6 +8695,37 @@
           "examples": [],
           "todo": null,
           "codetitle": "b.isNumber(num)"
+        },
+        {
+          "name": "isInteger",
+          "description": "Checks whether a var is an integer, returns true if this is the case.",
+          "returns": {
+            "name": null,
+            "description": "Returns true if the given argument is an integer.",
+            "type": [
+              "Boolean"
+            ]
+          },
+          "category": "Data",
+          "subcategory": "Type-Check",
+          "parameters": [
+            {
+              "name": "num",
+              "description": "The number to check.",
+              "optional": false,
+              "type": [
+                "Object",
+                "String",
+                "Number",
+                "Boolean"
+              ]
+            }
+          ],
+          "kind": "function",
+          "tags": [],
+          "examples": [],
+          "todo": null,
+          "codetitle": "b.isInteger(num)"
         },
         {
           "name": "isString",

@@ -4,5 +4,16 @@ layout: default
 <!-- start layout entry -->
 {% include entry-card.html entry=page ispage=true %}
 {{content}}
-<a href="/#">☚ back to index</a>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.yesscript').show();
+});
+</script>
+<div class="yesscript">
+  <a href="#" onClick="history.go(-1);return true;">☚ back to reference</a>
+</div>
+<noscript>
+  <a href="/reference/">☚ back to reference</a>
+</noscript>
 <!-- end layout entry -->

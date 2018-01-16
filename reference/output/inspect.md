@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: inspect
-codetitle: 'b.inspect(obj, [settings], )'
+codetitle: 'b.inspect(obj, [settings])'
 description: "Inspects a given object or any other data item and prints the result to the console. This is useful for inspecting or debugging any kind of variable or data item. The optional settings object allows to control the function's output. The following parameters can be set in the settings object:\n<code>showProps</code>: Show or hide properties. Default: <code>true</code>\n<code>showValues</code>: Show or hide values. Default: <code>true</code>\n<code>showMethods</code>: Show or hide methods. Default: <code>false</code>\n<code>maxLevel</code>: Chooses how many levels of properties should be inspected recursively. Default: <code>1</code>\n<code>propList</code>: Allows to pass an array of property names to show. If propList is not set all properties will be shown. Default: <code>[]</code> (no propList)\nIf no settings object is set, the default values will be used."
 category: Output
 subcategory: null
