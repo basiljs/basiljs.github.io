@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "the docs for Basil.js",
   "scripts": {
-    "build":"npm run update ; npm run generator",
+    "build": "npm run update ; npm run generator",
     "update": "npm run pull-latest-basil ; npm run generate-json",
     "generator": "node .bin/index",
     "pull-latest-basil": "npm install basiljs/basil.js#develop -D",
@@ -34,7 +34,11 @@
     "path-exists": "^3.0.0",
     "yamljs": "^0.2.8"
   },
-  "dependencies": {},
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "jquery-columnizer": "^1.6.3",
+    "jquery-highlight": "^3.4.0"
+  },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"

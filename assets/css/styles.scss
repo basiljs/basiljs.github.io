@@ -1,9 +1,10 @@
 ---
 # this ensures Jekyll reads the file to be transformed into CSS later
 # only Main files contain this front matter, not partials.
+css: true
 ---
 
-@import 'typescale';
+@import 'typescale', 'highlight';
 
 $textColor: #000;
 $headLineColor: #333;
@@ -151,3 +152,7 @@ and (orientation:portrait) {
   padding-right:0em;
 }
 }
+
+// ------------------------
+// old basil css. Overwrite new settings
+@import 'basil';

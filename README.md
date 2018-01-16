@@ -29,6 +29,12 @@ In the `.bin/` folder you have the scripts to generate the files for jekyll. The
 
 Most of the jekyll [liquid magic](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers) happens in `./index.html`, `_includes/entry-card.html`.  
 
+To develop in this run:
+
+    bundle install
+    bundle update
+    bundle exec jekyll serve 
+
 ## License ##
 
 Copyright (c)  2017 Basil.js
