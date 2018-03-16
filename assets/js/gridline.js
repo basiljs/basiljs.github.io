@@ -1,4 +1,4 @@
-// document.addEventListener("DOMContentLoaded", function(event) {
+document.addEventListener("DOMContentLoaded", function(event) {
 
 var maxW = $(window).width();
 
@@ -62,7 +62,7 @@ gridLine("v", "27px", "left", 0);
 gridLine("v", "875px", "left", 0);
 gridLine("h", "25px", "top", 0);
 
-// });
+});
 
 //special margin lines
 for (var i = 0; i < 6; i++) {

@@ -3,57 +3,6 @@
     {
       "entries": [
         {
-          "name": "b",
-          "description": null,
-          "returns": null,
-          "category": "global",
-          "subcategory": null,
-          "parameters": [],
-          "kind": "class",
-          "tags": [
-            {
-              "name": "b",
-              "title": "class",
-              "description": null,
-              "type": null
-            },
-            {
-              "title": "static",
-              "description": null
-            }
-          ],
-          "examples": [],
-          "todo": null,
-          "codetitle": "b"
-        },
-        {
-          "name": "Random.nextGaussian",
-          "description": null,
-          "returns": {
-            "name": null,
-            "description": "The next Gaussian random value.",
-            "type": [
-              "Number"
-            ]
-          },
-          "category": "global",
-          "subcategory": null,
-          "parameters": [],
-          "kind": "function",
-          "tags": [],
-          "examples": [],
-          "todo": null,
-          "codetitle": "b.Random.nextGaussian()"
-        }
-      ],
-      "subcat": "null",
-      "cat": "global"
-    }
-  ],
-  [
-    {
-      "entries": [
-        {
           "name": "VERSION",
           "description": "The basil version",
           "returns": null,
@@ -93,38 +42,22 @@
           "codetitle": "b.height"
         },
         {
-          "name": "go",
-          "description": "Run the sketch! Has to be called in every sketch a the very end of the code.\nYou may add performance setting options when calling b.go():",
-          "returns": null,
+          "name": "frameRate",
+          "description": "Sets the framerate per second to determine how often loop() is called per second. If the processor is not fast enough to maintain the specified rate, the frame rate will not be achieved. Setting the frame rate within setup() is recommended. The default rate is 25 frames per second. Calling frameRate() with no arguments returns the currently set framerate.",
+          "returns": {
+            "name": null,
+            "description": "Currently set frame rate.",
+            "type": [
+              "Number"
+            ]
+          },
           "category": "Environment",
           "subcategory": null,
           "parameters": [
             {
-              "name": "modes",
-              "description": "Optional: Switch performanceMode",
+              "name": "fps",
+              "description": "Frames per second.",
               "optional": true,
-              "type": [
-                null
-              ]
-            }
-          ],
-          "kind": "function",
-          "tags": [],
-          "examples": [],
-          "todo": null,
-          "codetitle": "b.go([modes])"
-        },
-        {
-          "name": "loop",
-          "description": "EXPERIMENTAL!",
-          "returns": null,
-          "category": "Environment",
-          "subcategory": null,
-          "parameters": [
-            {
-              "name": "framerate",
-              "description": "The framerate per second, determines how often draw() is called per second.",
-              "optional": false,
               "type": [
                 "Number"
               ]
@@ -134,11 +67,11 @@
           "tags": [],
           "examples": [],
           "todo": null,
-          "codetitle": "b.loop(framerate)"
+          "codetitle": "b.frameRate([fps])"
         },
         {
           "name": "noLoop",
-          "description": "EXPERIMENTAL!",
+          "description": "Stops basil from continuously executing the code within loop() and quits the script.",
           "returns": null,
           "category": "Environment",
           "subcategory": null,
@@ -148,6 +81,28 @@
           "examples": [],
           "todo": null,
           "codetitle": "b.noLoop()"
+        },
+        {
+          "name": "mode",
+          "description": "Used to set the performance mode. While modes can be switched during script execution, to use a mode for the entire script execution, ",
+          "returns": null,
+          "category": "Environment",
+          "subcategory": null,
+          "parameters": [
+            {
+              "name": "mode",
+              "description": "The performance mode to switch to.",
+              "optional": false,
+              "type": [
+                "String"
+              ]
+            }
+          ],
+          "kind": "function",
+          "tags": [],
+          "examples": [],
+          "todo": null,
+          "codetitle": "b.mode(mode)"
         },
         {
           "name": "delay",
@@ -392,8 +347,8 @@
     {
       "entries": [
         {
-          "name": "MODESILENT",
-          "description": "Used with b.go() to set Performance Mode. Disables ScreenRedraw during processing.",
+          "name": "SILENT",
+          "description": "Used with ",
           "returns": null,
           "category": "Environment",
           "subcategory": "modes",
@@ -402,11 +357,11 @@
           "tags": [],
           "examples": [],
           "todo": null,
-          "codetitle": "b.MODESILENT"
+          "codetitle": "b.SILENT"
         },
         {
-          "name": "MODEHIDDEN",
-          "description": "Used with b.go() to set Performance Mode. Processes Document in background mode. Document will not be visible until the script is done. If you are firing on a open document you'll need to save it before calling b.go(). The document will be removed from the display list and added again after the script is done. In this mode you will likely look at InDesign with no open document for quite some time - do not work in InDesign during this time. You may want to use b.println(\"yourMessage\") in your script and look at the Console in estk to get information about the process.",
+          "name": "HIDDEN",
+          "description": "Used with ",
           "returns": null,
           "category": "Environment",
           "subcategory": "modes",
@@ -415,11 +370,11 @@
           "tags": [],
           "examples": [],
           "todo": null,
-          "codetitle": "b.MODEHIDDEN"
+          "codetitle": "b.HIDDEN"
         },
         {
-          "name": "MODEVISIBLE",
-          "description": "Default mode. Used with b.go() to set Performance Mode. Processes Document with Screen redraw, use this option to see direct results during the process. This will slow down the process in terms of processing time. This mode was also the default in Versions prior to 0.22",
+          "name": "VISIBLE",
+          "description": "Default mode. Used with ",
           "returns": null,
           "category": "Environment",
           "subcategory": "modes",
@@ -428,7 +383,7 @@
           "tags": [],
           "examples": [],
           "todo": null,
-          "codetitle": "b.MODEVISIBLE"
+          "codetitle": "b.VISIBLE"
         }
       ],
       "subcat": "modes",
@@ -525,7 +480,7 @@
         },
         {
           "name": "size",
-          "description": "Sets the size of the current document, if arguments are given.\nIf only one argument is given, both the width and the height are set to this value.\nAlternatively, a string can be given as the first argument to apply an existing page size preset (\"A4\", \"Letter\" etc.).\nIn this case, either b.PORTRAIT or b.LANDSCAPE can be used as a second argument to determine the orientation of the page.\nIf no argument is given, an object containing the current document's width and height is returned.",
+          "description": "Sets the size of the current document, if arguments are given.\nIf only one argument is given, both the width and the height are set to this value.\nAlternatively, a string can be given as the first argument to apply an existing page size preset (\"A4\", \"Letter\" etc.).\nIn this case, either PORTRAIT or LANDSCAPE can be used as a second argument to determine the orientation of the page.\nIf no argument is given, an object containing the current document's width and height is returned.",
           "returns": {
             "name": null,
             "description": "Object containing the current <code>width</code> and <code>height</code> of the document.",
@@ -558,19 +513,19 @@
           "examples": [
             {
               "description": "Sets the document size to 70 x 100 units",
-              "code": "b.size(70, 100);"
+              "code": "size(70, 100);"
             },
             {
               "description": "Sets the document size to 70 x 70",
-              "code": "b.size(70);"
+              "code": "size(70);"
             },
             {
               "description": "Sets the document size to A4, keeps the current orientation in place",
-              "code": "b.size(\"A4\");"
+              "code": "size(\"A4\");"
             },
             {
               "description": "Sets the document size to A4, set the orientation to landscape",
-              "code": "b.size(\"A4\", b.LANDSCAPE);"
+              "code": "size(\"A4\", LANDSCAPE);"
             }
           ],
           "todo": null,
@@ -578,14 +533,14 @@
         },
         {
           "name": "close",
-          "description": "Closes the current document.",
+          "description": "Closes the current document. If no saveOptions argument is used, the user will be asked if they want to save or not.",
           "returns": null,
           "category": "Document",
           "subcategory": null,
           "parameters": [
             {
               "name": "saveOptions",
-              "description": "The Indesign SaveOptions constant or either true for triggering saving before closing or false for closing without saving.",
+              "description": "The InDesign SaveOptions constant or either true for triggering saving before closing or false for closing without saving.",
               "optional": true,
               "type": [
                 null
@@ -673,7 +628,7 @@
         },
         {
           "name": "ungroup",
-          "description": "Ungroups an existing group. Returns an array of the items that were within the group before\n b.ungroup() was called.",
+          "description": "Ungroups an existing group. Returns an array of the items that were within the group before ungroup() was called.",
           "returns": {
             "name": null,
             "description": "An array of the ungrouped page items.",
@@ -763,7 +718,7 @@
         },
         {
           "name": "units",
-          "description": "Sets the units of the document (like right clicking the rulers). The default units of basil.js are PT.",
+          "description": "Sets the units of the document (like right clicking the rulers). By default basil uses the units of the user's document or the user's default units.",
           "returns": {
             "name": null,
             "description": "Current unit setting.",
@@ -797,14 +752,14 @@
       "entries": [
         {
           "name": "rectMode",
-          "description": "Modifies the location from which rectangles or text frames draw. The default\nmode is b.rectMode(b.CORNER), which specifies the location to be the upper left\ncorner of the shape and uses the ",
+          "description": "Modifies the location from which rectangles or text frames draw. The default\nmode is rectMode(CORNER), which specifies the location to be the upper left\ncorner of the shape and uses the ",
           "returns": null,
           "category": "Document",
           "subcategory": "Attributes",
           "parameters": [
             {
               "name": "mode",
-              "description": "The rectMode to switch to: either b.CORNER, b.CORNERS, b.CENTER, or b.RADIUS.",
+              "description": "The rectMode to switch to: either CORNER, CORNERS, CENTER, or RADIUS.",
               "optional": false,
               "type": [
                 "String"
@@ -819,14 +774,14 @@
         },
         {
           "name": "ellipseMode",
-          "description": "The origin of new ellipses is modified by the b.ellipseMode() function.\nThe default configuration is b.ellipseMode(b.CENTER), which specifies the\nlocation of the ellipse as the center of the shape. The b.RADIUS mode is\nthe same, but the ",
+          "description": "The origin of new ellipses is modified by the ",
           "returns": null,
           "category": "Document",
           "subcategory": "Attributes",
           "parameters": [
             {
               "name": "mode",
-              "description": "The ellipse mode to switch to: either b.CENTER, b.RADIUS, b.CORNER, or b.CORNERS.",
+              "description": "The ellipse mode to switch to: either CENTER, RADIUS, CORNER, or CORNERS.",
               "optional": false,
               "type": [
                 "String"
@@ -934,60 +889,6 @@
           "codetitle": "b.image(img, x, [y], [w], [h])"
         },
         {
-          "name": "transformImage",
-          "description": "Transforms position and size of an image.\nThe image fit options are always \"contentToFrame\".",
-          "returns": null,
-          "category": "Document",
-          "subcategory": "Image",
-          "parameters": [
-            {
-              "name": "img",
-              "description": "The image to transform.",
-              "optional": false,
-              "type": [
-                "Graphic"
-              ]
-            },
-            {
-              "name": "x",
-              "description": "The new x.",
-              "optional": false,
-              "type": [
-                "Number"
-              ]
-            },
-            {
-              "name": "y",
-              "description": "The new y.",
-              "optional": false,
-              "type": [
-                "Number"
-              ]
-            },
-            {
-              "name": "width",
-              "description": "The new width.",
-              "optional": false,
-              "type": [
-                "Number"
-              ]
-            },
-            {
-              "name": "height",
-              "description": "The new height.",
-              "optional": false,
-              "type": [
-                "Number"
-              ]
-            }
-          ],
-          "kind": "function",
-          "tags": [],
-          "examples": [],
-          "todo": null,
-          "codetitle": "b.transformImage(img, x, y, width, height)"
-        },
-        {
           "name": "imageMode",
           "description": "Modifies the location from which images draw. The default mode is imageMode(CORNER), which specifies the location to be the upper left corner and uses the fourth and fifth parameters of image() to set the image's width and height. The syntax imageMode(CORNERS) uses the second and third parameters of image() to set the location of one corner of the image and uses the fourth and fifth parameters to set the opposite corner. Use imageMode(CENTER) to draw images centered at the given x and y position.\nIf no parameter is passed the currently set mode is returned as String.",
           "returns": {
@@ -1002,7 +903,7 @@
           "parameters": [
             {
               "name": "mode",
-              "description": "Either b.CORNER, b.CORNERS, or b.CENTER.",
+              "description": "Either CORNER, CORNERS, or CENTER.",
               "optional": true,
               "type": [
                 "String"
@@ -1086,7 +987,7 @@
           "examples": [
             {
               "description": null,
-              "code": "b.stories(b.doc(), function(story, loopCount){\n  b.println(\"Number of words in each Story:\");\n  b.println(story.words.length);\n});"
+              "code": "stories(doc(), function(story, loopCount){\n  println(\"Number of words in each Story:\");\n  println(story.words.length);\n});"
             }
           ],
           "todo": null,
@@ -1356,7 +1257,7 @@
         },
         {
           "name": "label",
-          "description": "Returns the first item that is tagged with the given label in the InDesign Script Label pane (Window -> Utilities -> Script Label). Use this instead of b.labels, when you know you just have one thing with that label and don't want to deal with a single-element array.",
+          "description": "Returns the first item that is tagged with the given label in the InDesign Script Label pane (Window -> Utilities -> Script Label). Use this instead of ",
           "returns": {
             "name": null,
             "description": "The first PageItem with the given label.",
@@ -1456,7 +1357,7 @@
       "entries": [
         {
           "name": "PAGE",
-          "description": "Used with b.canvasMode() to set the canvas to the full current page.",
+          "description": "Used with canvasMode() to set the canvas to the full current page.",
           "returns": null,
           "category": "Document",
           "subcategory": "Page",
@@ -1469,7 +1370,7 @@
         },
         {
           "name": "MARGIN",
-          "description": "Used with b.canvasMode() to set the canvas to the full current page minus the margins.",
+          "description": "Used with canvasMode() to set the canvas to the full current page minus the margins.",
           "returns": null,
           "category": "Document",
           "subcategory": "Page",
@@ -1482,7 +1383,7 @@
         },
         {
           "name": "BLEED",
-          "description": "Used with b.canvasMode() to set the canvas to the full current page plus the bleed.",
+          "description": "Used with canvasMode() to set the canvas to the full current page plus the bleed.",
           "returns": null,
           "category": "Document",
           "subcategory": "Page",
@@ -1495,7 +1396,7 @@
         },
         {
           "name": "FACING_PAGES",
-          "description": "Used with b.canvasMode() to set the canvas to use the current facing pages.",
+          "description": "Used with canvasMode() to set the canvas to use the current facing pages.",
           "returns": null,
           "category": "Document",
           "subcategory": "Page",
@@ -1508,7 +1409,7 @@
         },
         {
           "name": "FACING_BLEEDS",
-          "description": "Used with b.canvasMode() to set the canvas to use the current facing pages plus bleeds.",
+          "description": "Used with canvasMode() to set the canvas to use the current facing pages plus bleeds.",
           "returns": null,
           "category": "Document",
           "subcategory": "Page",
@@ -1521,7 +1422,7 @@
         },
         {
           "name": "FACING_MARGINS",
-          "description": "Used with b.canvasMode() to set the canvas to use the current facing pages minus margins.",
+          "description": "Used with canvasMode() to set the canvas to use the current facing pages minus margins.",
           "returns": null,
           "category": "Document",
           "subcategory": "Page",
@@ -1534,7 +1435,7 @@
         },
         {
           "name": "AT_BEGINNING",
-          "description": "Used with b.addPage() to set the position of the new page in the book.",
+          "description": "Used with addPage() to set the position of the new page in the book.",
           "returns": null,
           "category": "Document",
           "subcategory": "Page",
@@ -1547,7 +1448,7 @@
         },
         {
           "name": "AT_END",
-          "description": "Used with b.addPage() to set the position of the new page in the book.",
+          "description": "Used with addPage() to set the position of the new page in the book.",
           "returns": null,
           "category": "Document",
           "subcategory": "Page",
@@ -1560,7 +1461,7 @@
         },
         {
           "name": "BEFORE",
-          "description": "Used with b.addPage() to set the position of the new page in the book.",
+          "description": "Used with addPage() to set the position of the new page in the book.",
           "returns": null,
           "category": "Document",
           "subcategory": "Page",
@@ -1573,7 +1474,7 @@
         },
         {
           "name": "AFTER",
-          "description": "Used with b.addPage() to set the position of the new page in the book.",
+          "description": "Used with addPage() to set the position of the new page in the book.",
           "returns": null,
           "category": "Document",
           "subcategory": "Page",
@@ -1586,7 +1487,7 @@
         },
         {
           "name": "FRONT",
-          "description": "Used with b.arrange() to bring a page item to the front or to bring it in front of a given reference object.",
+          "description": "Used with arrange() to bring a page item to the front or to bring it in front of a given reference object.",
           "returns": null,
           "category": "Document",
           "subcategory": "Page",
@@ -1599,7 +1500,7 @@
         },
         {
           "name": "BACK",
-          "description": "Used with b.arrange() to send a page item to the back or to send it behind a given reference object.",
+          "description": "Used with arrange() to send a page item to the back or to send it behind a given reference object.",
           "returns": null,
           "category": "Document",
           "subcategory": "Page",
@@ -1612,7 +1513,7 @@
         },
         {
           "name": "FORWARD",
-          "description": "Used with b.arrange() to bring a page item one level forward in its layer.",
+          "description": "Used with arrange() to bring a page item one level forward in its layer.",
           "returns": null,
           "category": "Document",
           "subcategory": "Page",
@@ -1625,7 +1526,7 @@
         },
         {
           "name": "BACKWARD",
-          "description": "Used with b.arrange() to send a page item one level backward in its layer.",
+          "description": "Used with arrange() to send a page item one level backward in its layer.",
           "returns": null,
           "category": "Document",
           "subcategory": "Page",
@@ -1638,7 +1539,7 @@
         },
         {
           "name": "PORTRAIT",
-          "description": "Used with b.size() to set the orientation of a given page size to portrait.",
+          "description": "Used with size() to set the orientation of a given page size to portrait.",
           "returns": null,
           "category": "Document",
           "subcategory": "Page",
@@ -1651,7 +1552,7 @@
         },
         {
           "name": "LANDSCAPE",
-          "description": "Used with b.size() to set the orientation of a given page size to landscape.",
+          "description": "Used with size() to set the orientation of a given page size to landscape.",
           "returns": null,
           "category": "Document",
           "subcategory": "Page",
@@ -1664,7 +1565,7 @@
         },
         {
           "name": "canvasMode",
-          "description": "Use this to set the dimensions of the canvas. Choose between b.PAGE (default), b.MARGIN, b.BLEED resp. b.FACING_PAGES, b.FACING_MARGINS and b.FACING_BLEEDS for book setups with facing page. Please note: Setups with more than two facing pages are not yet supported.\nPlease note that you will loose your current MatrixTransformation. You should set the canvasMode before you attempt to use b.translate(), b.rotate() and b.scale();",
+          "description": "Use this to set the dimensions of the canvas. Choose between PAGE (default), MARGIN, BLEED resp. FACING_PAGES, FACING_MARGINS and FACING_BLEEDS for book setups with facing page. Please note: Setups with more than two facing pages are not yet supported.\nPlease note that you will loose your current MatrixTransformation. You should set the canvasMode before you attempt to use translate(), rotate() and scale();",
           "returns": {
             "name": null,
             "description": "The current canvas mode.",
@@ -1756,7 +1657,7 @@
         },
         {
           "name": "addPage",
-          "description": "Adds a new page to the document. Set the optional location parameter to either b.AT_END (default), b.AT_BEGINNING, b.AFTER or b.BEFORE. b.AFTER and b.BEFORE will use the current page as insertion point.",
+          "description": "Adds a new page to the document. Set the optional location parameter to either AT_END (default), AT_BEGINNING, AFTER or BEFORE. AFTER and BEFORE will use the current page as insertion point.",
           "returns": {
             "name": null,
             "description": "The new page.",
@@ -1928,7 +1829,7 @@
         },
         {
           "name": "arrange",
-          "description": "Arranges a page item or a layer before or behind other page items or layers. If using the constants <code>b.FORWARD</code> or <code>b.BACKWARD</code> the object is sent forward or back one step. The constants <code>b.FRONT</code> or <code>b.BACK</code> send the object to the very front or very back. Using <code>b.FRONT</code> or <code>b.BACK</code> together with the optional reference object, sends the object in front or behind this reference object.",
+          "description": "Arranges a page item or a layer before or behind other page items or layers. If using the constants <code>FORWARD</code> or <code>BACKWARD</code> the object is sent forward or back one step. The constants <code>FRONT</code> or <code>BACK</code> send the object to the very front or very back. Using <code>FRONT</code> or <code>BACK</code> together with the optional reference object, sends the object in front or behind this reference object.",
           "returns": {
             "name": null,
             "description": "The newly arranged page item or layer.",
@@ -1951,7 +1852,7 @@
             },
             {
               "name": "positionOrDirection",
-              "description": "The position or direction to move the page item or layer. Can be <code>b.FRONT</code>, <code>b.BACK</code>, <code>b.FORWARD</code> or <code>b.BACKWARD</code>.",
+              "description": "The position or direction to move the page item or layer. Can be <code>FRONT</code>, <code>BACK</code>, <code>FORWARD</code> or <code>BACKWARD</code>.",
               "optional": false,
               "type": [
                 "String"
@@ -1970,7 +1871,7 @@
           "tags": [
             {
               "title": "description",
-              "description": "Arranges a page item or a layer before or behind other page items or layers. If using the constants <code>b.FORWARD</code> or <code>b.BACKWARD</code> the object is sent forward or back one step. The constants <code>b.FRONT</code> or <code>b.BACK</code> send the object to the very front or very back. Using <code>b.FRONT</code> or <code>b.BACK</code> together with the optional reference object, sends the object in front or behind this reference object."
+              "description": "Arranges a page item or a layer before or behind other page items or layers. If using the constants <code>FORWARD</code> or <code>BACKWARD</code> the object is sent forward or back one step. The constants <code>FRONT</code> or <code>BACK</code> send the object to the very front or very back. Using <code>FRONT</code> or <code>BACK</code> together with the optional reference object, sends the object in front or behind this reference object."
             }
           ],
           "examples": [],
@@ -2123,7 +2024,7 @@
         },
         {
           "name": "CENTER",
-          "description": "Center, used for drawing modes.",
+          "description": "Center, used for drawing modes or used with referencePoint() to set the reference point of transformations to the center of the page item.",
           "returns": null,
           "category": "Document",
           "subcategory": "Primitives",
@@ -2302,7 +2203,7 @@
           "examples": [
             {
               "description": null,
-              "code": "var vec1 = new b.Vector( x1, y1 );\n var vec2 = new b.Vector( x2, y2 );\n b.line( vec1, vec2 );"
+              "code": "var vec1 = new Vector( x1, y1 );\n var vec2 = new Vector( x2, y2 );\n line( vec1, vec2 );"
             }
           ],
           "todo": null,
@@ -2317,7 +2218,7 @@
           "parameters": [
             {
               "name": "shapeMode",
-              "description": "Set to b.CLOSE if the new Path should be auto-closed.",
+              "description": "Set to CLOSE if the new Path should be auto-closed.",
               "optional": false,
               "type": [
                 "String"
@@ -2456,7 +2357,7 @@
             },
             {
               "name": "mode",
-              "description": "Mode to define the rendering technique of the arc: b.OPEN (default), b.CHORD, or b.PIE.",
+              "description": "Mode to define the rendering technique of the arc: OPEN (default), CHORD, or PIE.",
               "optional": true,
               "type": [
                 "String"
@@ -2471,7 +2372,7 @@
         },
         {
           "name": "addPath",
-          "description": "addPath() is used to create multi component paths. Call addPath() to add\nthe vertices drawn so far to a single path. New vertices will then end up in a new path and\nendShape() will return a multi path object. All component paths will account for\nthe setting (see b.CLOSE) given in beginShape(shapeMode).",
+          "description": "addPath() is used to create multi component paths. Call addPath() to add\nthe vertices drawn so far to a single path. New vertices will then end up in a new path and\nendShape() will return a multi path object. All component paths will account for\nthe setting (see CLOSE) given in beginShape(shapeMode).",
           "returns": null,
           "category": "Document",
           "subcategory": "Primitives",
@@ -2504,7 +2405,7 @@
         },
         {
           "name": "rect",
-          "description": "Draws a rectangle on the page.\nBy default, the first two parameters set the location of the upper-left corner, the third sets the width, and the fourth sets the height. The way these parameters are interpreted, however, may be changed with the b.rectMode() function.\nThe fifth, sixth, seventh and eighth parameters, if specified, determine corner radius for the top-right, top-left, lower-right and lower-left corners, respectively. If only a fifth parameter is provided, all corners will be set to this radius.",
+          "description": "Draws a rectangle on the page.\nBy default, the first two parameters set the location of the upper-left corner, the third sets the width, and the fourth sets the height. The way these parameters are interpreted, however, may be changed with the rectMode() function.\nThe fifth, sixth, seventh and eighth parameters, if specified, determine corner radius for the top-right, top-left, lower-right and lower-left corners, respectively. If only a fifth parameter is provided, all corners will be set to this radius.",
           "returns": {
             "name": null,
             "description": "The rectangle that was created.",
@@ -2613,7 +2514,7 @@
         },
         {
           "name": "addToStory",
-          "description": "Adds a page item or a string to an existing story. You can control the position of the insert via the last parameter. It accepts either an InsertionPoint or one the following constants: b.AT_BEGINNING and b.AT_END.",
+          "description": "Adds a page item or a string to an existing story. You can control the position of the insert via the last parameter. It accepts either an InsertionPoint or one the following constants: AT_BEGINNING and AT_END.",
           "returns": null,
           "category": "Document",
           "subcategory": "Story",
@@ -2628,7 +2529,7 @@
             },
             {
               "name": "itemOrString",
-              "description": "The itemOrString either a PageItem, a String or one the following constants: b.AT_BEGINNING and b.AT_END.",
+              "description": "The itemOrString either a PageItem, a String or one the following constants: AT_BEGINNING and AT_END.",
               "optional": false,
               "type": [
                 "PageItem",
@@ -2637,7 +2538,7 @@
             },
             {
               "name": "insertionPointOrMode",
-              "description": "InsertionPoint or one the following constants: b.AT_BEGINNING and b.AT_END.",
+              "description": "InsertionPoint or one the following constants: AT_BEGINNING and AT_END.",
               "optional": false,
               "type": [
                 "InsertionPoint",
@@ -2658,8 +2559,112 @@
     {
       "entries": [
         {
+          "name": "TOP_LEFT",
+          "description": "Used with referencePoint() to set the reference point of transformations to the top left of the page item.",
+          "returns": null,
+          "category": "Document",
+          "subcategory": "Transformation",
+          "parameters": [],
+          "kind": "property",
+          "tags": [],
+          "examples": [],
+          "todo": null,
+          "codetitle": "b.TOP_LEFT"
+        },
+        {
+          "name": "TOP_CENTER",
+          "description": "Used with referencePoint() to set the reference point of transformations to the top center of the page item.",
+          "returns": null,
+          "category": "Document",
+          "subcategory": "Transformation",
+          "parameters": [],
+          "kind": "property",
+          "tags": [],
+          "examples": [],
+          "todo": null,
+          "codetitle": "b.TOP_CENTER"
+        },
+        {
+          "name": "TOP_RIGHT",
+          "description": "Used with referencePoint() to set the reference point of transformations to the top right of the page item.",
+          "returns": null,
+          "category": "Document",
+          "subcategory": "Transformation",
+          "parameters": [],
+          "kind": "property",
+          "tags": [],
+          "examples": [],
+          "todo": null,
+          "codetitle": "b.TOP_RIGHT"
+        },
+        {
+          "name": "CENTER_LEFT",
+          "description": "Used with referencePoint() to set the reference point of transformations to the center left of the page item.",
+          "returns": null,
+          "category": "Document",
+          "subcategory": "Transformation",
+          "parameters": [],
+          "kind": "property",
+          "tags": [],
+          "examples": [],
+          "todo": null,
+          "codetitle": "b.CENTER_LEFT"
+        },
+        {
+          "name": "CENTER_RIGHT",
+          "description": "Used with referencePoint() to set the reference point of transformations to the center right of the page item.",
+          "returns": null,
+          "category": "Document",
+          "subcategory": "Transformation",
+          "parameters": [],
+          "kind": "property",
+          "tags": [],
+          "examples": [],
+          "todo": null,
+          "codetitle": "b.CENTER_RIGHT"
+        },
+        {
+          "name": "BOTTOM_LEFT",
+          "description": "Used with referencePoint() to set the reference point of transformations to the bottom left of the page item.",
+          "returns": null,
+          "category": "Document",
+          "subcategory": "Transformation",
+          "parameters": [],
+          "kind": "property",
+          "tags": [],
+          "examples": [],
+          "todo": null,
+          "codetitle": "b.BOTTOM_LEFT"
+        },
+        {
+          "name": "BOTTOM_CENTER",
+          "description": "Used with referencePoint() to set the reference point of transformations to the bottom center of the page item.",
+          "returns": null,
+          "category": "Document",
+          "subcategory": "Transformation",
+          "parameters": [],
+          "kind": "property",
+          "tags": [],
+          "examples": [],
+          "todo": null,
+          "codetitle": "b.BOTTOM_CENTER"
+        },
+        {
+          "name": "BOTTOM_RIGHT",
+          "description": "Used with referencePoint() to set the reference point of transformations to the bottom right of the page item.",
+          "returns": null,
+          "category": "Document",
+          "subcategory": "Transformation",
+          "parameters": [],
+          "kind": "property",
+          "tags": [],
+          "examples": [],
+          "todo": null,
+          "codetitle": "b.BOTTOM_RIGHT"
+        },
+        {
           "name": "duplicate",
-          "description": "Duplicates the given page after the current page or the given page item to the current page and layer. Use b.rectMode() to set center point.",
+          "description": "Duplicates the given page after the current page or the given page item to the current page and layer. Use ",
           "returns": {
             "name": null,
             "description": "The new page item or page.",
@@ -2688,7 +2693,7 @@
         },
         {
           "name": "bounds",
-          "description": "The function calculates the geometric bounds of any given object. Use b.itemX(), b.itemY(), b.itemPosition(), b.itemWidth(), b.itemHeight() and b.itemSize() to modify PageItems.\nIn case the object is any kind of text, then additional typographic information baseline and xHeight are calculated",
+          "description": "The function calculates the geometric bounds of any given page item or text. Use the ",
           "returns": {
             "name": null,
             "description": "Geometric bounds object with these properties: width, height, left, right, top, bottom and for text: baseline, xHeight.",
@@ -2701,11 +2706,11 @@
           "parameters": [
             {
               "name": "obj",
-              "description": "The object to calculate the geometric bounds.",
+              "description": "The page item or text to calculate the geometric bounds.",
               "optional": false,
               "type": [
-                "Text",
-                "Object"
+                "PageItem",
+                "Text"
               ]
             }
           ],
@@ -2716,104 +2721,24 @@
           "codetitle": "b.bounds(obj)"
         },
         {
-          "name": "itemX",
-          "description": "Positions a PageItem at the designated spot on the x axis. If no x argument is given the current x position is returned.",
+          "name": "referencePoint",
+          "description": "Sets the reference point for transformations using the <code>transform()</code> function. The reference point will be used for all following transformations, until it is changed again. By default, the reference point is set to the top left.\nArguments can be the basil constants <code>TOP_LEFT</code>, <code>TOP_CENTER</code>, <code>TOP_RIGHT</code>, <code>CENTER_LEFT</code>, <code>CENTER</code>, <code>CENTER_RIGHT</code>, <code>BOTTOM_LEFT</code>, <code>BOTTOM_CENTER</code> or <code>BOTTOM_RIGHT</code>. Alternatively the digits 1 through 9 (as they are arranged on a num pad) can be used to set the anchor point. Lastly the function can also use an InDesign anchor point enumerator to set the reference point.\nIf the function is used without any arguments the currently set reference point will be returned.",
           "returns": {
             "name": null,
-            "description": "The current x position.",
+            "description": "Current reference point setting.",
             "type": [
-              "Number"
+              "String"
             ]
           },
           "category": "Document",
           "subcategory": "Transformation",
           "parameters": [
             {
-              "name": "pItem",
-              "description": "The PageItem to alter.",
-              "optional": false,
-              "type": [
-                "PageItem"
-              ]
-            },
-            {
-              "name": "x",
-              "description": "The new x position, optional.",
+              "name": "referencePoint",
+              "description": "The reference point to set.",
               "optional": true,
               "type": [
-                "Number"
-              ]
-            }
-          ],
-          "kind": "function",
-          "tags": [],
-          "examples": [],
-          "todo": null,
-          "codetitle": "b.itemX(pItem, [x])"
-        },
-        {
-          "name": "itemY",
-          "description": "Positions a PageItem at the designated spot on the y axis. If no y argument is given the current y position is returned.",
-          "returns": {
-            "name": null,
-            "description": "The current y position.",
-            "type": [
-              "Number"
-            ]
-          },
-          "category": "Document",
-          "subcategory": "Transformation",
-          "parameters": [
-            {
-              "name": "pItem",
-              "description": "The PageItem to alter.",
-              "optional": false,
-              "type": [
-                "PageItem"
-              ]
-            },
-            {
-              "name": "y",
-              "description": "The new y position, optional.",
-              "optional": true,
-              "type": [
-                "Number"
-              ]
-            }
-          ],
-          "kind": "function",
-          "tags": [],
-          "examples": [],
-          "todo": null,
-          "codetitle": "b.itemY(pItem, [y])"
-        },
-        {
-          "name": "itemWidth",
-          "description": "Scales the given PageItem to the given width. If width is not given as argument the current width is returned.",
-          "returns": {
-            "name": null,
-            "description": "The current width.",
-            "type": [
-              "Number"
-            ]
-          },
-          "category": "Document",
-          "subcategory": "Transformation",
-          "parameters": [
-            {
-              "name": "pItem",
-              "description": "The PageItem to alter.",
-              "optional": false,
-              "type": [
-                "PageItem"
-              ]
-            },
-            {
-              "name": "width",
-              "description": "The new width.",
-              "optional": true,
-              "type": [
-                "Number"
+                "String"
               ]
             }
           ],
@@ -2821,21 +2746,22 @@
           "tags": [
             {
               "title": "description",
-              "description": "Scales the given PageItem to the given width. If width is not given as argument the current width is returned."
+              "description": "Sets the reference point for transformations using the <code>transform()</code> function. The reference point will be used for all following transformations, until it is changed again. By default, the reference point is set to the top left.\nArguments can be the basil constants <code>TOP_LEFT</code>, <code>TOP_CENTER</code>, <code>TOP_RIGHT</code>, <code>CENTER_LEFT</code>, <code>CENTER</code>, <code>CENTER_RIGHT</code>, <code>BOTTOM_LEFT</code>, <code>BOTTOM_CENTER</code> or <code>BOTTOM_RIGHT</code>. Alternatively the digits 1 through 9 (as they are arranged on a num pad) can be used to set the anchor point. Lastly the function can also use an InDesign anchor point enumerator to set the reference point.\nIf the function is used without any arguments the currently set reference point will be returned."
             }
           ],
           "examples": [],
           "todo": null,
-          "codetitle": "b.itemWidth(pItem, [width])"
+          "codetitle": "b.referencePoint([referencePoint])"
         },
         {
-          "name": "itemHeight",
-          "description": "Scales the given PageItem to the given height. If height is not given as argument the current height is returned.",
+          "name": "transform",
+          "description": "Transforms a given page item. The type of transformation is determinded with the second parameter. The third parameter is the transformation value, either a number or an array of x and y values. The transformation's reference point (top left, bottom center etc.) can be set beforehand by using the <code>referencePoint()</code> function. If the third parameter is ommited, the function can be used to measure the value of the page item.\nThere are 10 different transformation types:\n<ul>\n<li> <code>\"translate\"</code>: Translates the page item by the given <code>[x, y]</code> values. Returns the coordinates of the page item's anchor point as an array.</li>\n<li> <code>\"rotate\"</code>: Rotates the page item to the given degree value. Returns the page item's rotation value in degrees.</li>\n<li> <code>\"scale\"</code>: Scales the page item to the given <code>[x, y]</code> scale factor values. Alternatively, a single scale factor value can be used to scale the page item uniformely. Returns the scale factor values of the page item's current scale as an array.</li>\n<li> <code>\"shear\"</code>: Shears the page item to the given degree value. Returns the page item's shear value in degrees.</li>\n<li> <code>\"size\"</code>: Sets the page item's size to the given <code>[x, y]</code> dimensions. Returns the size of the page item as an array.</li>\n<li> <code>\"width\"</code>: Sets the page item's width to the given value. Returns the width of the page item.</li>\n<li> <code>\"height\"</code>: Sets the page item's height to the given value. Returns the height of the page item.</li>\n- <code>\"position\"</code>: Sets the position of the page item's anchor point to the given <code>[x, y]</code> coordinates. Returns the coordinates of the page item's anchor point as an array.</li>\n<li> <code>\"x\"</code>: Sets the x-position of the page item's anchor point to the given value. Returns the x-coordinate of the page item's anchor point.</li>\n<li> <code>\"y\"</code>: Sets the y-position of the page item's anchor point to the given value. Returns the y-coordinate of the page item's anchor point.</li>\n</ul>",
           "returns": {
             "name": null,
-            "description": "The current height.",
+            "description": "The current value(s) of the specified transformation.",
             "type": [
-              "Number"
+              "Number",
+              "Array"
             ]
           },
           "category": "Document",
@@ -2843,67 +2769,26 @@
           "parameters": [
             {
               "name": "pItem",
-              "description": "The PageItem to alter.",
+              "description": "The page item to transform.",
               "optional": false,
               "type": [
                 "PageItem"
               ]
             },
             {
-              "name": "height",
-              "description": "The new height.",
-              "optional": true,
-              "type": [
-                "Number"
-              ]
-            }
-          ],
-          "kind": "function",
-          "tags": [
-            {
-              "title": "description",
-              "description": "Scales the given PageItem to the given height. If height is not given as argument the current height is returned."
-            }
-          ],
-          "examples": [],
-          "todo": null,
-          "codetitle": "b.itemHeight(pItem, [height])"
-        },
-        {
-          "name": "itemPosition",
-          "description": "Moves the given PageItem to the given position. If x or y is not given as argument the current position is returned.",
-          "returns": {
-            "name": null,
-            "description": "Returns an object with the fields x and y.",
-            "type": [
-              "Object"
-            ]
-          },
-          "category": "Document",
-          "subcategory": "Transformation",
-          "parameters": [
-            {
-              "name": "pItem",
-              "description": "The PageItem to alter.",
+              "name": "type",
+              "description": "The type of transformation.",
               "optional": false,
               "type": [
-                "PageItem"
+                "String"
               ]
             },
             {
-              "name": "x",
-              "description": "The new x coordinate.",
+              "name": "value",
+              "description": "The value(s) of the transformation.",
               "optional": true,
               "type": [
-                "Number"
-              ]
-            },
-            {
-              "name": "y",
-              "description": "The new y coordinate.",
-              "optional": true,
-              "type": [
-                "Number"
+                null
               ]
             }
           ],
@@ -2911,94 +2796,25 @@
           "tags": [
             {
               "title": "description",
-              "description": "Moves the given PageItem to the given position. If x or y is not given as argument the current position is returned."
+              "description": "Transforms a given page item. The type of transformation is determinded with the second parameter. The third parameter is the transformation value, either a number or an array of x and y values. The transformation's reference point (top left, bottom center etc.) can be set beforehand by using the <code>referencePoint()</code> function. If the third parameter is ommited, the function can be used to measure the value of the page item.\nThere are 10 different transformation types:\n<ul>\n<li> <code>\"translate\"</code>: Translates the page item by the given <code>[x, y]</code> values. Returns the coordinates of the page item's anchor point as an array.</li>\n<li> <code>\"rotate\"</code>: Rotates the page item to the given degree value. Returns the page item's rotation value in degrees.</li>\n<li> <code>\"scale\"</code>: Scales the page item to the given <code>[x, y]</code> scale factor values. Alternatively, a single scale factor value can be used to scale the page item uniformely. Returns the scale factor values of the page item's current scale as an array.</li>\n<li> <code>\"shear\"</code>: Shears the page item to the given degree value. Returns the page item's shear value in degrees.</li>\n<li> <code>\"size\"</code>: Sets the page item's size to the given <code>[x, y]</code> dimensions. Returns the size of the page item as an array.</li>\n<li> <code>\"width\"</code>: Sets the page item's width to the given value. Returns the width of the page item.</li>\n<li> <code>\"height\"</code>: Sets the page item's height to the given value. Returns the height of the page item.</li>\n- <code>\"position\"</code>: Sets the position of the page item's anchor point to the given <code>[x, y]</code> coordinates. Returns the coordinates of the page item's anchor point as an array.</li>\n<li> <code>\"x\"</code>: Sets the x-position of the page item's anchor point to the given value. Returns the x-coordinate of the page item's anchor point.</li>\n<li> <code>\"y\"</code>: Sets the y-position of the page item's anchor point to the given value. Returns the y-coordinate of the page item's anchor point.</li>\n</ul>"
             }
           ],
-          "examples": [],
-          "todo": null,
-          "codetitle": "b.itemPosition(pItem, [x], [y])"
-        },
-        {
-          "name": "itemSize",
-          "description": "Scales the given PageItem to the given size. If width or height is not given as argument the current size is returned.",
-          "returns": {
-            "name": null,
-            "description": "Returns an object with the fields width and height.",
-            "type": [
-              "Object"
-            ]
-          },
-          "category": "Document",
-          "subcategory": "Transformation",
-          "parameters": [
+          "examples": [
             {
-              "name": "pItem",
-              "description": "The PageItem to alter.",
-              "optional": false,
-              "type": [
-                "PageItem"
-              ]
+              "description": "Rotating a rectangle to a 25 degrees angle",
+              "code": "var r = rect(20, 40, 200, 100);\ntransform(r, \"rotate\", 25);"
             },
             {
-              "name": "width",
-              "description": "The new width.",
-              "optional": true,
-              "type": [
-                "Number"
-              ]
+              "description": "Measure the width of a rectangle",
+              "code": "var r = rect(20, 40, random(100, 300), 100);\nvar w = transform(r, \"width\");\nprintln(w); // prints the rectangle's random width between 100 and 300"
             },
             {
-              "name": "height",
-              "description": "The new height.",
-              "optional": true,
-              "type": [
-                "Number"
-              ]
+              "description": "Position a rectangle's lower right corner at a certain position",
+              "code": "var r = rect(20, 40, random(100, 300), random(50, 150));\nreferencePoint(BOTTOM_RIGHT);\ntransform(r, \"position\", [40, 40]);"
             }
           ],
-          "kind": "function",
-          "tags": [
-            {
-              "title": "description",
-              "description": "Scales the given PageItem to the given size. If width or height is not given as argument the current size is returned."
-            }
-          ],
-          "examples": [],
           "todo": null,
-          "codetitle": "b.itemSize(pItem, [width], [height])"
-        },
-        {
-          "name": "matrix",
-          "description": "Returns the current matrix as a Matrix2D object for altering existing PageItems with b.transform(). If a Matrix2D object is provided to the function it will overwrite the current matrix.",
-          "returns": {
-            "name": null,
-            "description": "Returns the current matrix.",
-            "type": [
-              "Matrix2D"
-            ]
-          },
-          "category": "Document",
-          "subcategory": "Transformation",
-          "parameters": [
-            {
-              "name": "matrix",
-              "description": "The matrix to be set as new current matrix.",
-              "optional": true,
-              "type": [
-                "Matrix2D"
-              ]
-            }
-          ],
-          "kind": "function",
-          "tags": [
-            {
-              "title": "description",
-              "description": "Returns the current matrix as a Matrix2D object for altering existing PageItems with b.transform(). If a Matrix2D object is provided to the function it will overwrite the current matrix."
-            }
-          ],
-          "examples": [],
-          "todo": null,
-          "codetitle": "b.matrix([matrix])"
+          "codetitle": "b.transform(pItem, type, [value])"
         },
         {
           "name": "transform",
@@ -3034,6 +2850,39 @@
           "examples": [],
           "todo": null,
           "codetitle": "b.transform(obj, matrix)"
+        },
+        {
+          "name": "matrix",
+          "description": "Returns the current matrix as a Matrix2D object for altering existing PageItems with transform(). If a Matrix2D object is provided to the function it will overwrite the current matrix.",
+          "returns": {
+            "name": null,
+            "description": "Returns the current matrix.",
+            "type": [
+              "Matrix2D"
+            ]
+          },
+          "category": "Document",
+          "subcategory": "Transformation",
+          "parameters": [
+            {
+              "name": "matrix",
+              "description": "The matrix to be set as new current matrix.",
+              "optional": true,
+              "type": [
+                "Matrix2D"
+              ]
+            }
+          ],
+          "kind": "function",
+          "tags": [
+            {
+              "title": "description",
+              "description": "Returns the current matrix as a Matrix2D object for altering existing PageItems with transform(). If a Matrix2D object is provided to the function it will overwrite the current matrix."
+            }
+          ],
+          "examples": [],
+          "todo": null,
+          "codetitle": "b.matrix([matrix])"
         },
         {
           "name": "applyMatrix",
@@ -3878,7 +3727,7 @@
       "entries": [
         {
           "name": "PT",
-          "description": "Used with b.units() to set the coordinate system to points.",
+          "description": "Used with units() to set the coordinate system to points.",
           "returns": null,
           "category": "Document",
           "subcategory": "Units",
@@ -3891,7 +3740,7 @@
         },
         {
           "name": "PX",
-          "description": "Used with b.units() to set the coordinate system to pixels.",
+          "description": "Used with units() to set the coordinate system to pixels.",
           "returns": null,
           "category": "Document",
           "subcategory": "Units",
@@ -3904,7 +3753,7 @@
         },
         {
           "name": "CM",
-          "description": "Used with b.units() to set the coordinate system to centimeters.",
+          "description": "Used with units() to set the coordinate system to centimeters.",
           "returns": null,
           "category": "Document",
           "subcategory": "Units",
@@ -3917,7 +3766,7 @@
         },
         {
           "name": "MM",
-          "description": "Used with b.units() to set the coordinate system to millimeters.",
+          "description": "Used with units() to set the coordinate system to millimeters.",
           "returns": null,
           "category": "Document",
           "subcategory": "Units",
@@ -3930,7 +3779,7 @@
         },
         {
           "name": "IN",
-          "description": "Used with b.units() to set the coordinate system to inches.",
+          "description": "Used with units() to set the coordinate system to inches.",
           "returns": null,
           "category": "Document",
           "subcategory": "Units",
@@ -3951,7 +3800,7 @@
       "entries": [
         {
           "name": "RGB",
-          "description": "Used with b.colorMode() to set the color space.",
+          "description": "Used with colorMode() to set the color space.",
           "returns": null,
           "category": "Color",
           "subcategory": null,
@@ -3964,7 +3813,7 @@
         },
         {
           "name": "CMYK",
-          "description": "Used with b.colorMode() to set the color space.",
+          "description": "Used with colorMode() to set the color space.",
           "returns": null,
           "category": "Color",
           "subcategory": null,
@@ -3977,7 +3826,7 @@
         },
         {
           "name": "LINEAR",
-          "description": "Used with b.gradientMode() to set the gradient mode.",
+          "description": "Used with gradientMode() to set the gradient mode.",
           "returns": null,
           "category": "Color",
           "subcategory": null,
@@ -3990,7 +3839,7 @@
         },
         {
           "name": "RADIAL",
-          "description": "Used with b.gradientMode() to set the gradient mode.",
+          "description": "Used with gradientMode() to set the gradient mode.",
           "returns": null,
           "category": "Color",
           "subcategory": null,
@@ -4133,14 +3982,14 @@
         },
         {
           "name": "colorMode",
-          "description": "Sets the colormode for creating new colors with b.color() to RGB or CMYK. The default color mode is RGB.",
+          "description": "Sets the colormode for creating new colors with color() to RGB or CMYK. The default color mode is RGB.",
           "returns": null,
           "category": "Color",
           "subcategory": null,
           "parameters": [
             {
               "name": "colorMode",
-              "description": "b.RGB or b.CMYK.",
+              "description": "RGB or CMYK.",
               "optional": false,
               "type": [
                 "Number"
@@ -4155,14 +4004,14 @@
         },
         {
           "name": "gradientMode",
-          "description": "Sets the gradient mode for b.gradient() to LINEAR or RADIAL. The default gradient mode is LINEAR.",
+          "description": "Sets the gradient mode for gradient() to LINEAR or RADIAL. The default gradient mode is LINEAR.",
           "returns": null,
           "category": "Color",
           "subcategory": null,
           "parameters": [
             {
               "name": "gradientMode",
-              "description": "b.LINEAR or b.RADIAL.",
+              "description": "LINEAR or RADIAL.",
               "optional": false,
               "type": [
                 "String"
@@ -6859,15 +6708,15 @@
           "examples": [
             {
               "description": "Inspecting a string",
-              "code": "b.inspect(\"foo\");"
+              "code": "inspect(\"foo\");"
             },
             {
               "description": "Inspecting the current page, its methods and an additional level of properties",
-              "code": "b.inspect(b.page(), {showMethods: true, maxLevel: 2})"
+              "code": "inspect(page(), {showMethods: true, maxLevel: 2})"
             },
             {
               "description": "Inspecting an ellipse, listing only the properties \"geometricBounds\" and \"strokeWeight\"",
-              "code": "var myEllipse = b.ellipse(0, 0, 10, 10);\nb.inspect(myEllipse, {maxLevel: 2, propList: [\"geometricBounds, strokeWeight\"]});"
+              "code": "var myEllipse = ellipse(0, 0, 10, 10);\ninspect(myEllipse, {maxLevel: 2, propList: [\"geometricBounds, strokeWeight\"]});"
             }
           ],
           "todo": null,
@@ -6875,7 +6724,7 @@
         },
         {
           "name": "print",
-          "description": "Prints a message to the console output in the ExtendScript editor, but unlike b.println() it doesn't return the carriage to a new line at the end.",
+          "description": "Prints a message to the console output in the ExtendScript editor, but unlike println() it doesn't return the carriage to a new line at the end.",
           "returns": null,
           "category": "Output",
           "subcategory": null,
@@ -7143,11 +6992,11 @@
           "examples": [
             {
               "description": "Get an image file from the desktop and place it in the document",
-              "code": "var myImage = b.file(\"~/Desktop/myImage.jpg\");\nb.image(myImage, 0, 0);"
+              "code": "var myImage = file(\"~/Desktop/myImage.jpg\");\nimage(myImage, 0, 0);"
             },
             {
               "description": "Create a file and export it to the desktop",
-              "code": "var myExportFile = b.file(\"~/Desktop/myNewExportFile.pdf\");\nb.savePDF(myExportFile);"
+              "code": "var myExportFile = file(\"~/Desktop/myNewExportFile.pdf\");\nsavePDF(myExportFile);"
             }
           ],
           "todo": null,
@@ -7180,11 +7029,11 @@
           "examples": [
             {
               "description": "Get a folder from the desktop and load its files",
-              "code": "var myImageFolder = b.folder(\"~/Desktop/myImages/\");\nvar myImageFiles = b.files(myImageFolder);"
+              "code": "var myImageFolder = folder(\"~/Desktop/myImages/\");\nvar myImageFiles = files(myImageFolder);"
             },
             {
               "description": "Get the data folder, if the document is already saved",
-              "code": "var myDataFolder = b.folder();"
+              "code": "var myDataFolder = folder();"
             }
           ],
           "todo": null,
@@ -7249,11 +7098,11 @@
           "examples": [
             {
               "description": "Get a folder from the desktop and load all its JPEG files",
-              "code": "var myImageFolder = b.folder(\"~/Desktop/myImages/\");\nvar myImageFiles = b.files(myImageFolder, {filter: [\"jpeg\", \"jpg\"]});"
+              "code": "var myImageFolder = folder(\"~/Desktop/myImages/\");\nvar myImageFiles = files(myImageFolder, {filter: [\"jpeg\", \"jpg\"]});"
             },
             {
               "description": "If the document is saved, load all files from its data folder, including from its subfolders",
-              "code": "var myDataFolder = b.folder();\nvar allMyDataFiles = b.files(myDataFolder, {recursive: true});"
+              "code": "var myDataFolder = folder();\nvar allMyDataFiles = files(myDataFolder, {recursive: true});"
             }
           ],
           "todo": null,
@@ -7311,11 +7160,11 @@
           "examples": [
             {
               "description": "Open file selection dialog with a prompt text",
-              "code": "b.selectFile({prompt: \"Please select a file.\"});"
+              "code": "selectFile({prompt: \"Please select a file.\"});"
             },
             {
               "description": "Open selection dialog starting at the user's desktop, allowing to only select PNG or JPEG files",
-              "code": "b.selectFile({folder: \"~/Desktop/\", filter: [\"jpeg\", \"jpg\", \"png\"]});"
+              "code": "selectFile({folder: \"~/Desktop/\", filter: [\"jpeg\", \"jpg\", \"png\"]});"
             }
           ],
           "todo": null,
@@ -7372,11 +7221,11 @@
           "examples": [
             {
               "description": "Open file selection dialog with a prompt text",
-              "code": "b.selectFiles({prompt: \"Please select your files.\"});"
+              "code": "selectFiles({prompt: \"Please select your files.\"});"
             },
             {
               "description": "Open selection dialog starting at the user's desktop, allowing to only select PNG or JPEG files",
-              "code": "b.selectFiles({folder: \"~/Desktop/\", filter: [\"jpeg\", \"jpg\", \"png\"]});"
+              "code": "selectFiles({folder: \"~/Desktop/\", filter: [\"jpeg\", \"jpg\", \"png\"]});"
             }
           ],
           "todo": null,
@@ -7426,11 +7275,11 @@
           "examples": [
             {
               "description": "Open folder selection dialog with a prompt text",
-              "code": "b.selectFolder({prompt: \"Please select a folder.\"});"
+              "code": "selectFolder({prompt: \"Please select a folder.\"});"
             },
             {
               "description": "Open folder selection dialog starting at the user's desktop",
-              "code": "b.selectFolder({folder: \"~/Desktop/\"});"
+              "code": "selectFolder({folder: \"~/Desktop/\"});"
             }
           ],
           "todo": null,
@@ -7512,7 +7361,7 @@
         },
         {
           "name": "Array.forEach",
-          "description": "Used to run a function on all elements of an array. Please note the existance of the convenience methods b.stories(), b.paragraphs(), b.lines(), b.words() and b.characters() that are used to iterate through all instances of the given type in the given document.",
+          "description": "Used to run a function on all elements of an array. Please note the existance of the convenience methods ",
           "returns": null,
           "category": "Data",
           "subcategory": "Array",
@@ -7710,7 +7559,7 @@
         },
         {
           "name": "CSV.decode",
-          "description": "Function parses a string as CSV-object Array. Usage:\nvar arr = b.CSV.decode(str);\nvar str = b.CSV.encode(arr);",
+          "description": "Function parses a string as CSV-object Array. Usage:\nvar arr = CSV.decode(str);\nvar str = CSV.encode(arr);",
           "returns": {
             "name": null,
             "description": "Returns CSV-object Array",
@@ -7738,7 +7587,7 @@
         },
         {
           "name": "CSV.encode",
-          "description": "Function convert an javascript array of objects to a CSV-string. Usage:\nvar str = b.CSV.encode(arr);\nvar arr = b.CSV.decode(str);",
+          "description": "Function convert an javascript array of objects to a CSV-string. Usage:\nvar str = CSV.encode(arr);\nvar arr = CSV.decode(str);",
           "returns": {
             "name": null,
             "description": "Returns CSV-string",
@@ -8126,7 +7975,7 @@
       "entries": [
         {
           "name": "JSON.decode",
-          "description": "Function parses and validates a string as JSON-object. Usage:\nvar obj = b.JSON.decode(str);\nvar str = b.JSON.encode(obj);",
+          "description": "Function parses and validates a string as JSON-object. Usage:\nvar obj = JSON.decode(str);\nvar str = JSON.encode(obj);",
           "returns": {
             "name": null,
             "description": "Returns JSON-object or throws an error if invalid JSON has been provided.",
@@ -8154,7 +8003,7 @@
         },
         {
           "name": "JSON.encode",
-          "description": "Function convert an javascript object to a JSON-string. Usage:\nvar str = b.JSON.encode(obj);\nvar obj = b.JSON.decode(str);",
+          "description": "Function convert an javascript object to a JSON-string. Usage:\nvar str = JSON.encode(obj);\nvar obj = JSON.decode(str);",
           "returns": {
             "name": null,
             "description": "Returns JSON-string",
@@ -8188,7 +8037,7 @@
       "entries": [
         {
           "name": "trimWord",
-          "description": "Removes multiple, leading or trailing spaces and punctuation from \"words\". E.g. converts \"word!\" to \"word\". Especially useful together with b.words();",
+          "description": "Removes multiple, leading or trailing spaces and punctuation from \"words\". E.g. converts \"word!\" to \"word\". Especially useful together with words();",
           "returns": {
             "name": null,
             "description": "The trimmed string",
@@ -8827,6 +8676,33 @@
       ],
       "subcat": "null",
       "cat": "Story"
+    }
+  ],
+  [
+    {
+      "entries": [
+        {
+          "name": "Random.nextGaussian",
+          "description": null,
+          "returns": {
+            "name": null,
+            "description": "The next Gaussian random value.",
+            "type": [
+              "Number"
+            ]
+          },
+          "category": "global",
+          "subcategory": null,
+          "parameters": [],
+          "kind": "function",
+          "tags": [],
+          "examples": [],
+          "todo": null,
+          "codetitle": "b.Random.nextGaussian()"
+        }
+      ],
+      "subcat": "null",
+      "cat": "global"
     }
   ]
 ]

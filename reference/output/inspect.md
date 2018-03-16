@@ -17,8 +17,8 @@ parameters:
 kind: function
 todo: null
 examples:
-    - {description: 'Inspecting a string', code: 'b.inspect("foo");'}
-    - {description: 'Inspecting the current page, its methods and an additional level of properties', code: 'b.inspect(b.page(), {showMethods: true, maxLevel: 2})'}
-    - {description: 'Inspecting an ellipse, listing only the properties "geometricBounds" and "strokeWeight"', code: "var myEllipse = b.ellipse(0, 0, 10, 10);\nb.inspect(myEllipse, {maxLevel: 2, propList: [\"geometricBounds, strokeWeight\"]});"}
+    - {description: 'Inspecting a string', code: 'inspect("foo");'}
+    - {description: 'Inspecting the current page, its methods and an additional level of properties', code: 'inspect(page(), {showMethods: true, maxLevel: 2})'}
+    - {description: 'Inspecting an ellipse, listing only the properties "geometricBounds" and "strokeWeight"', code: "var myEllipse = ellipse(0, 0, 10, 10);\ninspect(myEllipse, {maxLevel: 2, propList: [\"geometricBounds, strokeWeight\"]});"}
 
 ---

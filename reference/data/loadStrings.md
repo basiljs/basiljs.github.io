@@ -8,7 +8,7 @@ subcategory: Input
 returns:
     name: null
     description: 'Array of the individual lines in the given File or URL'
-    type: []
+    type: [Array]
 parameters:
     - {name: file, description: 'The text file name in the document''s data directory or a File instance or an URL', optional: false, type: [String, File]}
 kind: function

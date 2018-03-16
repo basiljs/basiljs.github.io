@@ -2,7 +2,7 @@
 layout: entry
 title: noLoop
 codetitle: b.noLoop()
-description: EXPERIMENTAL!
+description: 'Stops basil from continuously executing the code within loop() and quits the script.'
 category: Environment
 subcategory: null
 returns: null

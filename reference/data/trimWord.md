@@ -2,7 +2,7 @@
 layout: entry
 title: trimWord
 codetitle: b.trimWord(s)
-description: 'Removes multiple, leading or trailing spaces and punctuation from "words". E.g. converts "word!" to "word". Especially useful together with b.words();'
+description: 'Removes multiple, leading or trailing spaces and punctuation from "words". E.g. converts "word!" to "word". Especially useful together with words();'
 category: Data
 subcategory: 'String Functions'
 returns:

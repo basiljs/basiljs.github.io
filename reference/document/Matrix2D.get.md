@@ -11,7 +11,7 @@ returns:
     type: [Matrix2D]
 parameters: []
 kind: function
-todo: 'More description.'
+todo: null
 examples: []
 
 ---

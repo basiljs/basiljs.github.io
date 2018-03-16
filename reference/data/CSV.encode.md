@@ -2,7 +2,7 @@
 layout: entry
 title: CSV.encode
 codetitle: b.CSV.encode(Array)
-description: "Function convert an javascript array of objects to a CSV-string. Usage:\nvar str = b.CSV.encode(arr);\nvar arr = b.CSV.decode(str);"
+description: "Function convert an javascript array of objects to a CSV-string. Usage:\nvar str = CSV.encode(arr);\nvar arr = CSV.decode(str);"
 category: Data
 subcategory: CSV
 returns:

@@ -15,6 +15,6 @@ parameters:
 kind: function
 todo: null
 examples:
-    - {description: null, code: "b.stories(b.doc(), function(story, loopCount){\n  b.println(\"Number of words in each Story:\");\n  b.println(story.words.length);\n});"}
+    - {description: null, code: "stories(doc(), function(story, loopCount){\n  println(\"Number of words in each Story:\");\n  println(story.words.length);\n});"}
 
 ---

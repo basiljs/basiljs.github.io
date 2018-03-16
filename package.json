@@ -6,7 +6,7 @@
     "build": "npm run update ; npm run generator",
     "update": "npm run pull-latest-basil ; npm run generate-json",
     "generator": "node .bin/index",
-    "pull-latest-basil": "npm install basiljs/basil.js#develop -D",
+    "pull-latest-basil": "npm install basiljs/basil.js#b-less-transform -D",
     "generate-json": "documentation build ./node_modules/basiljs/basil.js -o ./.bin/api/data.json",
     "docs-json-test": "./node_modules/.bin/documentation build .bin/test/index.js -o .bin/test/api.json"
   },
@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/basiljs/basiljs.github.io#readme",
   "devDependencies": {
-    "basiljs": "github:basiljs/basil.js#develop",
+    "basiljs": "github:basiljs/basil.js#b-less-transform",
     "cz-conventional-changelog": "^1.2.0",
     "documentation": "^4.0.0-beta.18",
     "fs-extra": "^2.0.0",

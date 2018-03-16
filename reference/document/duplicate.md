@@ -2,7 +2,7 @@
 layout: entry
 title: duplicate
 codetitle: b.duplicate(item)
-description: 'Duplicates the given page after the current page or the given page item to the current page and layer. Use b.rectMode() to set center point.'
+description: 'Duplicates the given page after the current page or the given page item to the current page and layer. Use '
 category: Document
 subcategory: Transformation
 returns:

@@ -8,7 +8,7 @@ css: true
   box-sizing: border-box;
 }
 
-@import 'normalize', 'typescale', 'highlight';
+@import 'normalize', 'highlight';
 
 $textColor: #000;
 $headLineColor: #333;
@@ -59,20 +59,22 @@ a:hover {
 li {
   line-height: 1.5em;
   height: auto;
+  padding-left: 1em;
+  text-indent: -1em;
+  code{
+    display: inline;
+  }
+}
+li:before {
+  content: "+";
+  padding-right: 5px;
 }
 ul {
   list-style: none;
   margin-left: 0;
   padding-left: 0;
 }
-li {
-  padding-left: 1em;
-  text-indent: -1em;
-}
-li:before {
-  content: "+";
-  padding-right: 5px;
-}
+
 .index {
   padding-bottom:2em;
   border-bottom: 1px solid $guideTwoColor;
@@ -108,10 +110,15 @@ li:before {
   color: white;
   background-image: url("/assets/images/stripe_c40ccfac0db9e43c48e95a530d787366.png");
 }
-
+.descriptions{
+  code{
+    display: inline;
+  }
+}
 // ------------ code
 //
 @import "syntax";
+
 pre {
   background: #eee !important;
   overflow: auto;
@@ -161,4 +168,4 @@ and (orientation:portrait) {
 
 // ------------------------
 // old basil css. Overwrite new settings
-@import 'basil';
+@import 'basil', 'gridlines';

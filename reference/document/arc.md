@@ -7,7 +7,7 @@ category: Document
 subcategory: Primitives
 returns:
     name: null
-    description: "The resulting GraphicLine or Polygon object (in InDesign Scripting terms the corresponding type is GraphicLine or Polygon, not Arc).\n\nTODO(S)\n- fix overlapping points bug"
+    description: 'The resulting GraphicLine or Polygon object (in InDesign Scripting terms the corresponding type is GraphicLine or Polygon, not Arc).'
     type: [GraphicLine, Polygon]
 parameters:
     - {name: cx, description: 'X-coordinate of the arc''s center.', optional: false, type: [Number]}
@@ -16,7 +16,7 @@ parameters:
     - {name: h, description: 'Height of the arc''s ellipse.', optional: false, type: [Number]}
     - {name: startAngle, description: 'Starting angle of the arc in radians.', optional: false, type: [Number]}
     - {name: endAngle, description: 'Ending angle of the arc in radians.', optional: false, type: [Number]}
-    - {name: mode, description: 'Mode to define the rendering technique of the arc: b.OPEN (default), b.CHORD, or b.PIE.', optional: true, type: [String]}
+    - {name: mode, description: 'Mode to define the rendering technique of the arc: OPEN (default), CHORD, or PIE.', optional: true, type: [String]}
 kind: function
 todo: null
 examples: []

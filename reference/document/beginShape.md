@@ -7,7 +7,7 @@ category: Document
 subcategory: Primitives
 returns: null
 parameters:
-    - {name: shapeMode, description: 'Set to b.CLOSE if the new Path should be auto-closed.', optional: false, type: [String]}
+    - {name: shapeMode, description: 'Set to CLOSE if the new Path should be auto-closed.', optional: false, type: [String]}
 kind: function
 todo: null
 examples: []

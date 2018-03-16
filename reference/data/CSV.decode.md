@@ -2,7 +2,7 @@
 layout: entry
 title: CSV.decode
 codetitle: b.CSV.decode(String)
-description: "Function parses a string as CSV-object Array. Usage:\nvar arr = b.CSV.decode(str);\nvar str = b.CSV.encode(arr);"
+description: "Function parses a string as CSV-object Array. Usage:\nvar arr = CSV.decode(str);\nvar str = CSV.encode(arr);"
 category: Data
 subcategory: CSV
 returns:

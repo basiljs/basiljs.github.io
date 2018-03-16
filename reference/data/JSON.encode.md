@@ -2,7 +2,7 @@
 layout: entry
 title: JSON.encode
 codetitle: b.JSON.encode(Object)
-description: "Function convert an javascript object to a JSON-string. Usage:\nvar str = b.JSON.encode(obj);\nvar obj = b.JSON.decode(str);"
+description: "Function convert an javascript object to a JSON-string. Usage:\nvar str = JSON.encode(obj);\nvar obj = JSON.decode(str);"
 category: Data
 subcategory: JSON
 returns:

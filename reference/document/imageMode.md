@@ -10,7 +10,7 @@ returns:
     description: 'The current mode.'
     type: [String]
 parameters:
-    - {name: mode, description: 'Either b.CORNER, b.CORNERS, or b.CENTER.', optional: true, type: [String]}
+    - {name: mode, description: 'Either CORNER, CORNERS, or CENTER.', optional: true, type: [String]}
 kind: function
 todo: null
 examples: []
