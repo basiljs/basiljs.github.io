@@ -25,7 +25,7 @@ After that you can just commit all the changes and push it the repo again. GitHu
 
 To build these docs we are using [Node.js](https://nodejs.org/en/) and [Jekyll](https://jekyllrb.com/). You need both of them installed to develop on this.  
 
-In the `.bin/` folder you have the scripts to generate the files for jekyll. The entry point is `index.js`.  
+In the `.bin/` folder you have the scripts to generate the files for the reference. The entry point is `index.js`.  
 
 Most of the jekyll [liquid magic](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers) happens in `./index.html`, `_includes/entry-card.html`.  
 

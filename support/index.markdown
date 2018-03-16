@@ -1,12 +1,8 @@
 ---
 author: admin
-comments: false
-date: 2013-06-12 11:36:37+00:00
 layout: default
-link: http://basiljs.ch/support/
-slug: support
+originallink: http://basiljs.ch/support/
 title: Support
-wordpress_id: 652
 ---
 
 ## Check the reference and provided material

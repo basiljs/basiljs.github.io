@@ -1,12 +1,12 @@
 ---
 author: admin
-comments: false
-date: 2013-02-15 15:28:45+00:00
 layout: default
-link: http://basiljs.ch/gallery/
-slug: gallery
+originallink: http://basiljs.ch/gallery/
 title: Gallery
-wordpress_id: 475
 ---
 
-No Content Found
+{% for page in site.pages %}
+  {% if page.type == 'project' %}
+    - {{page.title}}
+  {% endif %}
+{% endfor %}

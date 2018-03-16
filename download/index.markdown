@@ -3,10 +3,8 @@ author: admin
 comments: false
 date: 2012-11-13 23:35:22+00:00
 layout: default
-link: http://basiljs.ch/download/
-slug: download
+originallink: http://basiljs.ch/download/
 title: Download
-wordpress_id: 322
 ---
 
 ## Download basil.js

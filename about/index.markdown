@@ -1,12 +1,8 @@
 ---
 author: admin
-comments: false
-date: 2013-01-25 14:00:23+00:00
 layout: default
-link: http://basiljs.ch/about/
-slug: about
+originallink: http://basiljs.ch/about/
 title: About
-wordpress_id: 425
 ---
 
 ![](http://basiljs.ch/wp-content/uploads/2013/01/aboutpage.jpg)
