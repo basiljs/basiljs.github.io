@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: min
-codetitle: 'b.min(a, [b], [c])'
+codetitle: 'min(a, [b], [c])'
 description: 'Determines the smallest value in a sequence of numbers.'
 category: Math
 subcategory: Calculation

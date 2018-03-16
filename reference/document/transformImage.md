@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: transformImage
-codetitle: 'b.transformImage(img, x, y, width, height)'
+codetitle: 'transformImage(img, x, y, width, height)'
 description: "Transforms position and size of an image.\nThe image fit options are always \"contentToFrame\"."
 category: Document
 subcategory: Image

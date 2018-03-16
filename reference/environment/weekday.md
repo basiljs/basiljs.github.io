@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: weekday
-codetitle: b.weekday()
+codetitle: weekday()
 description: 'The weekday() function returns the current weekday as a string from Sunday, Monday, Tuesday...'
 category: Environment
 subcategory: Date

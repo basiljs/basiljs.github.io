@@ -9,7 +9,7 @@ var exports = module.exports = {};
 // or a overwrite flag is set
 const fs = require('fs-extra');
 const YAML = require('yamljs');
-const data = require('../../_data/categories.json'); // load the cats
+let data = null;
 const pathExists = require('path-exists');
 
 // console.log(process.cwd());
@@ -55,7 +55,8 @@ function process(ele, folder, ow) {
   });
 }
 
-function generate(overwrite) {
+function generate(data ,overwrite) {
+
   data.forEach((element, index, array)=>{
     if(element.cat !== 'null') {
       process(element, `./reference/${element.cat.toLowerCase()}/`, overwrite);

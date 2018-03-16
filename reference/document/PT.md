@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: PT
-codetitle: b.PT
+codetitle: PT
 description: 'Used with units() to set the coordinate system to points.'
 category: Document
 subcategory: Units

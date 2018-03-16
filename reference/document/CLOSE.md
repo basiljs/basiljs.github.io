@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: close
-codetitle: 'b.close([saveOptions], [file])'
+codetitle: 'close([saveOptions], [file])'
 description: 'Closes the current document. If no saveOptions argument is used, the user will be asked if they want to save or not.'
 category: Document
 subcategory: null

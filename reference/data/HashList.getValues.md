@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: HashList.getValues
-codetitle: b.HashList.getValues()
+codetitle: HashList.getValues()
 description: 'Returns an array with all values.'
 category: Data
 subcategory: HashList

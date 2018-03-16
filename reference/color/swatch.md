@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: swatch
-codetitle: b.swatch(swatchName)
+codetitle: swatch(swatchName)
 description: 'Gets a swatch by name.'
 category: Color
 subcategory: null

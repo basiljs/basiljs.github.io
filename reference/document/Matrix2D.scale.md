@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: Matrix2D.scale
-codetitle: 'b.Matrix2D.scale(sx, sy)'
+codetitle: 'Matrix2D.scale(sx, sy)'
 description: 'scale Needs more description.'
 category: Document
 subcategory: Transformation

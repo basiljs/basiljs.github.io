@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: Matrix2D.invScale
-codetitle: 'b.Matrix2D.invScale(sx, sy)'
+codetitle: 'Matrix2D.invScale(sx, sy)'
 description: 'invScale Needs more description.'
 category: Document
 subcategory: Transformation

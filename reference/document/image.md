@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: image
-codetitle: 'b.image(img, x, [y], [w], [h])'
+codetitle: 'image(img, x, [y], [w], [h])'
 description: "Adds an image to the document. If the image argument is given as a string the image file must be in the document's\ndata directory which is in the same directory where the document is saved in. The image argument can also be a File\ninstance which can be placed even before the document was saved.\nThe second argument can either be the x position of the frame to create or an instance of a rectangle,\noval or polygon to place the image in. If an x position is given, a y position must be given, too.\nIf x and y positions are given and width and height are not given, the frame's size gets set to the original image size."
 category: Document
 subcategory: Image

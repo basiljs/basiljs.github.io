@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: floor
-codetitle: b.floor(a)
+codetitle: floor(a)
 description: 'Calculates the closest int value that is less than or equal to the value of the parameter.'
 category: Math
 subcategory: Calculation

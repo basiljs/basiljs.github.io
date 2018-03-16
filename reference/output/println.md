@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: println
-codetitle: b.println(msg)
+codetitle: println(msg)
 description: 'Prints a message line to the console output in the ExtendScript editor.'
 category: Output
 subcategory: null

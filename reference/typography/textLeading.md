@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: textLeading
-codetitle: 'b.textLeading([leading])'
+codetitle: 'textLeading([leading])'
 description: 'Returns the spacing between lines of text in units of points and sets it if argument leading is given.'
 category: Typography
 subcategory: null

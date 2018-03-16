@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: itemHeight
-codetitle: 'b.itemHeight(pItem, [height])'
+codetitle: 'itemHeight(pItem, [height])'
 description: 'Scales the given PageItem to the given height. If height is not given as argument the current height is returned.'
 category: Document
 subcategory: Transformation

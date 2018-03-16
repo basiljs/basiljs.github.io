@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: blendMode
-codetitle: 'b.blendMode(obj, blendMode)'
+codetitle: 'blendMode(obj, blendMode)'
 description: 'Sets the Effects blendMode property of an object.'
 category: Color
 subcategory: null

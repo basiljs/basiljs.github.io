@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: CENTER
-codetitle: b.CENTER
+codetitle: CENTER
 description: 'Center, used for drawing modes.'
 category: Document
 subcategory: Primitives

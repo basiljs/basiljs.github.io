@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: CSV.delimiter
-codetitle: 'b.CSV.delimiter([delimiter])'
+codetitle: 'CSV.delimiter([delimiter])'
 description: 'Sets the delimiter of the CSV decode and encode function.'
 category: Data
 subcategory: CSV

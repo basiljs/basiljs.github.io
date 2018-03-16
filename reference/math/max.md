@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: max
-codetitle: 'b.max(a, [b], [c])'
+codetitle: 'max(a, [b], [c])'
 description: 'Determines the largest value in a sequence of numbers.'
 category: Math
 subcategory: Calculation

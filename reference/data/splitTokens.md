@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: splitTokens
-codetitle: 'b.splitTokens(str, [tokens])'
+codetitle: 'splitTokens(str, [tokens])'
 description: "The splitTokens() function splits a String at one or many character\n\"tokens.\" The tokens parameter specifies the character or characters\nto be used as a boundary."
 category: Data
 subcategory: 'String Functions'

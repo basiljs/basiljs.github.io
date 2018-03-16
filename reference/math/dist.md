@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: dist
-codetitle: 'b.dist(x1, y1, x2, y2)'
+codetitle: 'dist(x1, y1, x2, y2)'
 description: 'Calculates the distance between two points.'
 category: Math
 subcategory: Calculation

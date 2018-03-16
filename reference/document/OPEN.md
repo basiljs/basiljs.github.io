@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: OPEN
-codetitle: b.OPEN
+codetitle: OPEN
 description: 'Open, used for arc() modes.'
 category: Document
 subcategory: Primitives

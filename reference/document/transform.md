@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: transform
-codetitle: 'b.transform(obj, matrix)'
+codetitle: 'transform(obj, matrix)'
 description: 'Transforms the given PageItem with the given Matrix2D object.'
 category: Document
 subcategory: Transformation

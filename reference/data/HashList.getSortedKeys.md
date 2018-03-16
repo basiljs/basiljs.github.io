@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: HashList.getSortedKeys
-codetitle: b.HashList.getSortedKeys()
+codetitle: HashList.getSortedKeys()
 description: 'Returns an array with all keys in a sorted order from higher to lower magnitude.'
 category: Data
 subcategory: HashList

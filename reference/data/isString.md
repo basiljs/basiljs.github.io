@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: isString
-codetitle: b.isString(str)
+codetitle: isString(str)
 description: 'Checks whether a var is a string, returns true if this is the case'
 category: Data
 subcategory: Type-Check

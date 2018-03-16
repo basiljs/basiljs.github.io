@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: noStroke
-codetitle: b.noStroke()
+codetitle: noStroke()
 description: "Disables drawing the stroke. If both noStroke() and noFill() are called,\nnewly drawn shapes will be invisible."
 category: Color
 subcategory: null

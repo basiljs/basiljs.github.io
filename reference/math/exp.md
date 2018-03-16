@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: exp
-codetitle: b.exp(x)
+codetitle: exp(x)
 description: 'The Math.exp() function returns ex, where x is the argument, and e is Euler''s number (also known as Napier''s constant), the base of the natural logarithms.'
 category: Math
 subcategory: Calculation

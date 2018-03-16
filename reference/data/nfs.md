@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: nfs
-codetitle: 'b.nfs(value, leftDigits, rightDigits)'
+codetitle: 'nfs(value, leftDigits, rightDigits)'
 description: "Utility function for formatting numbers into strings. Similar to nf()\nbut leaves a blank space in front of positive numbers so they align\nwith negative numbers in spite of the minus symbol. There are two\nversions, one for formatting floats and one for formatting ints. The\nvalues for the digits, left, and right parameters should always be\npositive integers."
 category: Data
 subcategory: 'String Functions'

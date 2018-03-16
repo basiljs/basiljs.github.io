@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: textSize
-codetitle: 'b.textSize([pointSize])'
+codetitle: 'textSize([pointSize])'
 description: 'Returns the current font size in points and sets it if argument pointSize is given.'
 category: Typography
 subcategory: null

@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: stroke
-codetitle: b.stroke(strokeColor)
+codetitle: stroke(strokeColor)
 description: 'Sets the color or gradient used to draw lines and borders around shapes.'
 category: Color
 subcategory: null

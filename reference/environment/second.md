@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: second
-codetitle: b.second()
+codetitle: second()
 description: 'The second() function returns the current second as a value from 0 - 59.'
 category: Environment
 subcategory: Date

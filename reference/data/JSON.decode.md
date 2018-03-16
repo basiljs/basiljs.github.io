@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: JSON.decode
-codetitle: b.JSON.decode(String)
+codetitle: JSON.decode(String)
 description: "Function parses and validates a string as JSON-object. Usage:\nvar obj = JSON.decode(str);\nvar str = JSON.encode(obj);"
 category: Data
 subcategory: JSON

@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: Array.forEach
-codetitle: 'b.Array.forEach(collection, cb)'
+codetitle: 'Array.forEach(collection, cb)'
 description: 'Used to run a function on all elements of an array. Please note the existance of the convenience methods '
 category: Data
 subcategory: Array

@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: atan
-codetitle: b.atan(value)
+codetitle: atan(value)
 description: 'The inverse of tan(), returns the arc tangent of a value. This function expects the values in the range of -1 to 1 and values are returned in the range 0 to PI (3.1415927).'
 category: Math
 subcategory: Trigonometry

@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: noLoop
-codetitle: b.noLoop()
+codetitle: noLoop()
 description: 'Stops basil from continuously executing the code within loop() and quits the script.'
 category: Environment
 subcategory: null

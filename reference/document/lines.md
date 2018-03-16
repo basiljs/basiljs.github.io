@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: lines
-codetitle: 'b.lines(container, [cb])'
+codetitle: 'lines(container, [cb])'
 description: 'If no callback function is given it returns a Collection of lines in the container otherwise calls the given callback function with each line of the given document, page, story, textFrame or paragraph.'
 category: Document
 subcategory: Multi-Getters

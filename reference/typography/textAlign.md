@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: textAlign
-codetitle: 'b.textAlign(align, [yAlign])'
+codetitle: 'textAlign(align, [yAlign])'
 description: 'Sets the current horizontal and vertical text alignment.'
 category: Typography
 subcategory: null

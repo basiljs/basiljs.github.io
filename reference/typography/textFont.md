@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: textFont
-codetitle: 'b.textFont([fontName], [fontStyle])'
+codetitle: 'textFont([fontName], [fontStyle])'
 description: 'Returns the current font and sets it if argument fontName is given.'
 category: Typography
 subcategory: null

@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: paragraphs
-codetitle: 'b.paragraphs(container, [cb])'
+codetitle: 'paragraphs(container, [cb])'
 description: 'If no callback function is given it returns a Collection of paragraphs in the container otherwise calls the given callback function with each paragraph of the given document, page, story or textFrame.'
 category: Document
 subcategory: Multi-Getters

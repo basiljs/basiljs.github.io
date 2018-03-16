@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: gradientMode
-codetitle: b.gradientMode(gradientMode)
+codetitle: gradientMode(gradientMode)
 description: 'Sets the gradient mode for gradient() to LINEAR or RADIAL. The default gradient mode is LINEAR.'
 category: Color
 subcategory: null

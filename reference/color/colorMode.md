@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: colorMode
-codetitle: b.colorMode(colorMode)
+codetitle: colorMode(colorMode)
 description: 'Sets the colormode for creating new colors with color() to RGB or CMYK. The default color mode is RGB.'
 category: Color
 subcategory: null

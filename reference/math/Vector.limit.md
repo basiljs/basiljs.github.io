@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: Vector.limit
-codetitle: b.Vector.limit(high)
+codetitle: Vector.limit(high)
 description: 'Normalizes the length of this vector to the given parameter.'
 category: Math
 subcategory: Vector

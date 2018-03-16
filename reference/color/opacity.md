@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: opacity
-codetitle: 'b.opacity(obj, opacity)'
+codetitle: 'opacity(obj, opacity)'
 description: 'Sets the opacity property of an object.'
 category: Color
 subcategory: null

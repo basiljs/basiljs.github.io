@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: Matrix2D.translate
-codetitle: 'b.Matrix2D.translate(tx, ty)'
+codetitle: 'Matrix2D.translate(tx, ty)'
 description: 'translate Needs more description.'
 category: Document
 subcategory: Transformation

@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: LANDSCAPE
-codetitle: b.LANDSCAPE
+codetitle: LANDSCAPE
 description: 'Used with size() to set the orientation of a given page size to landscape.'
 category: Document
 subcategory: Page

@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: millis
-codetitle: b.millis()
+codetitle: millis()
 description: 'Returns the number of milliseconds (thousandths of a second) since starting an applet.'
 category: Environment
 subcategory: Date

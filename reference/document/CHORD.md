@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: CHORD
-codetitle: b.CHORD
+codetitle: CHORD
 description: 'Chord, used for arc() modes.'
 category: Document
 subcategory: Primitives

@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: Matrix2D.array
-codetitle: b.Matrix2D.array()
+codetitle: Matrix2D.array()
 description: 'Slice the Matrix into an array.'
 category: Document
 subcategory: Transformation

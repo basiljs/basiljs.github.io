@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: Vector.add
-codetitle: 'b.Vector.add(v, [y], [z])'
+codetitle: 'Vector.add(v, [y], [z])'
 description: 'Adds x, y, and z components to a vector, adds one vector to another.'
 category: Math
 subcategory: Vector

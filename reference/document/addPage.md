@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: addPage
-codetitle: 'b.addPage([location])'
+codetitle: 'addPage([location])'
 description: 'Adds a new page to the document. Set the optional location parameter to either AT_END (default), AT_BEGINNING, AFTER or BEFORE. AFTER and BEFORE will use the current page as insertion point.'
 category: Document
 subcategory: Page

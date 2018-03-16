@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: height
-codetitle: b.height
+codetitle: height
 description: 'System variable which stores the height of the current page.'
 category: Environment
 subcategory: null

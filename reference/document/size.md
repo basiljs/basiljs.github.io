@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: size
-codetitle: 'b.size([widthOrPageSize], [heightOrOrientation])'
+codetitle: 'size([widthOrPageSize], [heightOrOrientation])'
 description: "Sets the size of the current document, if arguments are given.\nIf only one argument is given, both the width and the height are set to this value.\nAlternatively, a string can be given as the first argument to apply an existing page size preset (\"A4\", \"Letter\" etc.).\nIn this case, either PORTRAIT or LANDSCAPE can be used as a second argument to determine the orientation of the page.\nIf no argument is given, an object containing the current document's width and height is returned."
 category: Document
 subcategory: null

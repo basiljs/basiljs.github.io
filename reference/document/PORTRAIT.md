@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: PORTRAIT
-codetitle: b.PORTRAIT
+codetitle: PORTRAIT
 description: 'Used with size() to set the orientation of a given page size to portrait.'
 category: Document
 subcategory: Page

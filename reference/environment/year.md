@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: year
-codetitle: b.year()
+codetitle: year()
 description: 'The year() function returns the current year as an integer (2012, 2013 etc).'
 category: Environment
 subcategory: Date

@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: folder
-codetitle: 'b.folder([folderPath])'
+codetitle: 'folder([folderPath])'
 description: "Returns a folder object.\nNote that the resulting folder object can either refer to an already existing folder or if the folder does not exist, it can create a preliminary \"virtual\" folder that refers to a folder that could be created later."
 category: Files
 subcategory: null

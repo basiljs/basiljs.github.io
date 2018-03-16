@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: pow
-codetitle: 'b.pow(num, exponent)'
+codetitle: 'pow(num, exponent)'
 description: 'Facilitates exponential expressions. The pow() function is an efficient way of multiplying numbers by themselves (or their reciprocal) in large quantities. For example, pow(3, 5) is equivalent to the expression 3'
 category: Math
 subcategory: Calculation

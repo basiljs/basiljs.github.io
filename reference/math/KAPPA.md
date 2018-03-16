@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: KAPPA
-codetitle: b.KAPPA
+codetitle: KAPPA
 description: Kappa
 category: Math
 subcategory: Constants

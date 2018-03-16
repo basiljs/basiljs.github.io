@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: removePage
-codetitle: 'b.removePage([page])'
+codetitle: 'removePage([page])'
 description: 'Removes a page from the current document. This will either be the current Page if the parameter page is left empty, or the given Page object or page number.'
 category: Document
 subcategory: Page

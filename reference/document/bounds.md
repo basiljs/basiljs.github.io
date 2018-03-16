@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: bounds
-codetitle: b.bounds(obj)
+codetitle: bounds(obj)
 description: 'The function calculates the geometric bounds of any given object. Use '
 category: Document
 subcategory: Transformation

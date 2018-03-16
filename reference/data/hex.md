@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: hex
-codetitle: 'b.hex(value, [len])'
+codetitle: 'hex(value, [len])'
 description: 'Convert a number to a hex representation.'
 category: Data
 subcategory: Conversion

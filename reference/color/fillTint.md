@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: fillTint
-codetitle: b.fillTint(tint)
+codetitle: fillTint(tint)
 description: 'Sets the tint of the color used to fill shapes.'
 category: Color
 subcategory: null

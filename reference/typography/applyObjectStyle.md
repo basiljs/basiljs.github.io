@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: applyObjectStyle
-codetitle: 'b.applyObjectStyle(item, style)'
+codetitle: 'applyObjectStyle(item, style)'
 description: "Applies an object style to the given page item. The object style can be given as\nname or as an object style instance."
 category: Typography
 subcategory: null

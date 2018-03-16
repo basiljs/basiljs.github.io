@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: remove
-codetitle: b.remove(obj)
+codetitle: remove(obj)
 description: 'Removes the provided Page, Layer, PageItem, Swatch, etc.'
 category: Document
 subcategory: null

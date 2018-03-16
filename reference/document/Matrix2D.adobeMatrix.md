@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: Matrix2D.adobeMatrix
-codetitle: b.Matrix2D.adobeMatrix()
+codetitle: Matrix2D.adobeMatrix()
 description: 'Slice the Matrix into an array.'
 category: Document
 subcategory: Transformation

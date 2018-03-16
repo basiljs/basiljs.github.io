@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: itemWidth
-codetitle: 'b.itemWidth(pItem, [width])'
+codetitle: 'itemWidth(pItem, [width])'
 description: 'Scales the given PageItem to the given width. If width is not given as argument the current width is returned.'
 category: Document
 subcategory: Transformation

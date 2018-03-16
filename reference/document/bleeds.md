@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: bleeds
-codetitle: 'b.bleeds([top], [right], [bottom], [left])'
+codetitle: 'bleeds([top], [right], [bottom], [left])'
 description: 'Sets the document bleeds. If one value is given, all 4 are set equally. If 4 values are given, the top/right/bottom/left document bleeds will be adjusted. Calling the function without any values, will return the document bleed settings.'
 category: Document
 subcategory: Page

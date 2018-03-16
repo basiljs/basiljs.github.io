@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: labels
-codetitle: 'b.labels(label, [cb])'
+codetitle: 'labels(label, [cb])'
 description: 'Returns items tagged with the given label in the InDesign Script Label pane (Window -> Utilities -> Script Label).'
 category: Document
 subcategory: Multi-Getters

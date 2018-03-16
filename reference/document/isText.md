@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: isText
-codetitle: b.isText(obj)
+codetitle: isText(obj)
 description: "Checks whether a var is an InDesign text object, returns true if this is the case\nNB: a InDesign TextFrame will return false as it is just a container holding text.\nSo you could say that isText() refers to all the things inside a TextFrame."
 category: Document
 subcategory: Type-Check

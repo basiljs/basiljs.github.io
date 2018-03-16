@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: selectFolder
-codetitle: 'b.selectFolder([settings])'
+codetitle: 'selectFolder([settings])'
 description: 'Opens a selection dialog that allows to select a folder. The settings object can be used to add a prompt text at the top of the dialog and to set the dialog''s starting folder.'
 category: Files
 subcategory: null

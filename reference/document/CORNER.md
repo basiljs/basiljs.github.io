@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: CORNER
-codetitle: b.CORNER
+codetitle: CORNER
 description: 'Corner, used for drawing modes.'
 category: Document
 subcategory: Primitives

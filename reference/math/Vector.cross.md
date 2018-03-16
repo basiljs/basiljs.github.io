@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: Vector.cross
-codetitle: 'b.Vector.cross(v1, v2)'
+codetitle: 'Vector.cross(v1, v2)'
 description: "Static function. Calculates the cross product of two vectors.\nIs meant to be called \"static\" i.e. Vector.cross(v1, v2);"
 category: Math
 subcategory: Vector

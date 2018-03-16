@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: Vector.mult
-codetitle: 'b.Vector.mult(v, [y], [z])'
+codetitle: 'Vector.mult(v, [y], [z])'
 description: 'Multiplies this vector with x, y, and z components or another vector.'
 category: Math
 subcategory: Vector

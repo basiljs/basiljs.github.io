@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: Matrix2D.mult
-codetitle: 'b.Matrix2D.mult(source, [target])'
+codetitle: 'Matrix2D.mult(source, [target])'
 description: 'mult Needs more description.'
 category: Document
 subcategory: Transformation

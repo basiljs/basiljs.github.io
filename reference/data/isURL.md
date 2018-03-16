@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: isURL
-codetitle: b.isURL(url)
+codetitle: isURL(url)
 description: 'Checks whether an URL string is valid.'
 category: Data
 subcategory: 'String Functions'

@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: TWO_PI
-codetitle: b.TWO_PI
+codetitle: TWO_PI
 description: 'Two Pi'
 category: Math
 subcategory: Constants

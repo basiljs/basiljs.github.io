@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: BACKWARD
-codetitle: b.BACKWARD
+codetitle: BACKWARD
 description: 'Used with arrange() to send a page item one level backward in its layer.'
 category: Document
 subcategory: Page

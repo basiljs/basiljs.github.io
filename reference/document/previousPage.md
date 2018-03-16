@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: previousPage
-codetitle: b.previousPage()
+codetitle: previousPage()
 description: 'Set the previous page of the document to be the active one. Returns new active page.'
 category: Document
 subcategory: Page

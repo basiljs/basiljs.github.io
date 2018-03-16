@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: VISIBLE
-codetitle: b.VISIBLE
+codetitle: VISIBLE
 description: 'Default mode. Used with '
 category: Environment
 subcategory: modes

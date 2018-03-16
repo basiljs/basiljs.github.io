@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: applyCharacterStyle
-codetitle: 'b.applyCharacterStyle(text, style)'
+codetitle: 'applyCharacterStyle(text, style)'
 description: "Applies a character style to the given text object, text frame or story. The character style\ncan be given as name or as character style instance."
 category: Typography
 subcategory: null

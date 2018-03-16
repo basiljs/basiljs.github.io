@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: guideY
-codetitle: b.guideY(y)
+codetitle: guideY(y)
 description: 'Creates a horizontal guide line at the current spread and current layer.'
 category: Document
 subcategory: null

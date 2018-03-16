@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: shellExecute
-codetitle: b.shellExecute(cmd)
+codetitle: shellExecute(cmd)
 description: 'Executes a shell command and returns the result, currently Mac only.'
 category: Data
 subcategory: Input

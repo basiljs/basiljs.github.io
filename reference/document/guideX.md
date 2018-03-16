@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: guideX
-codetitle: b.guideX(x)
+codetitle: guideX(x)
 description: 'Creates a vertical guide line at the current spread and current layer.'
 category: Document
 subcategory: null

@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: BLEED
-codetitle: b.BLEED
+codetitle: BLEED
 description: 'Used with canvasMode() to set the canvas to the full current page plus the bleed.'
 category: Document
 subcategory: Page

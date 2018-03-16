@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: label
-codetitle: b.label(label)
+codetitle: label(label)
 description: 'Returns the first item that is tagged with the given label in the InDesign Script Label pane (Window -> Utilities -> Script Label). Use this instead of '
 category: Document
 subcategory: Multi-Getters

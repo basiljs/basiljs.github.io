@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: itemPosition
-codetitle: 'b.itemPosition(pItem, [x], [y])'
+codetitle: 'itemPosition(pItem, [x], [y])'
 description: 'Moves the given PageItem to the given position. If x or y is not given as argument the current position is returned.'
 category: Document
 subcategory: Transformation

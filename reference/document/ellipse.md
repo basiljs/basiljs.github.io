@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: ellipse
-codetitle: 'b.ellipse(x, y, w, h)'
+codetitle: 'ellipse(x, y, w, h)'
 description: "Draws an ellipse (oval) in the display window. An ellipse with an equal width and height is a circle.\nThe first two parameters set the location, the third sets the width, and the fourth sets the height."
 category: Document
 subcategory: Primitives

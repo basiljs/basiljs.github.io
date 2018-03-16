@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: SILENT
-codetitle: b.SILENT
+codetitle: SILENT
 description: 'Used with '
 category: Environment
 subcategory: modes

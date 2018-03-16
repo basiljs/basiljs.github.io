@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: nextPage
-codetitle: b.nextPage()
+codetitle: nextPage()
 description: 'Set the next page of the document to be the active one. Returns new active page.'
 category: Document
 subcategory: Page

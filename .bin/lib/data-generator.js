@@ -22,9 +22,9 @@ function generator(data) {
       });
       // make it a string
       let params = paramsList.join(', ');
-      element.codetitle = `b.${element.name}(${params})`;
+      element.codetitle = `${element.name}(${params})`;
     }else if (element.kind.toString() === 'constant' || element.kind.toString() === 'property') {
-      element.codetitle = `b.${element.name}`;
+      element.codetitle = `${element.name}`;
     } else if(element.kind.toString() === 'class') {
       element.codetitle = `${element.name}`;
     }

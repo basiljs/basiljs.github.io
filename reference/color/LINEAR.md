@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: LINEAR
-codetitle: b.LINEAR
+codetitle: LINEAR
 description: 'Used with gradientMode() to set the gradient mode.'
 category: Color
 subcategory: null

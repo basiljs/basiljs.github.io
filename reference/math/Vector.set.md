@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: Vector.set
-codetitle: 'b.Vector.set(v, [y], [z])'
+codetitle: 'Vector.set(v, [y], [z])'
 description: 'Sets the x, y, and z component of the vector using three separate variables, the data from a Vector, or the values from a float array.'
 category: Math
 subcategory: Vector

@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: constrain
-codetitle: 'b.constrain(aNumber, aMin, aMax)'
+codetitle: 'constrain(aNumber, aMin, aMax)'
 description: 'Constrains a value to not exceed a maximum and minimum value.'
 category: Math
 subcategory: Calculation

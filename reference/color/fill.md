@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: fill
-codetitle: 'b.fill(fillColor, [name])'
+codetitle: 'fill(fillColor, [name])'
 description: 'Sets the color or gradient used to fill shapes.'
 category: Color
 subcategory: null

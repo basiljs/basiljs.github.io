@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: loadStrings
-codetitle: b.loadStrings(file)
+codetitle: loadStrings(file)
 description: "Reads the contents of a file or loads an URL and creates a String array of its individual lines.\nIf the file is specified by name as String, it must be located in the document's data directory."
 category: Data
 subcategory: Input

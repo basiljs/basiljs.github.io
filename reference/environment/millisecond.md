@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: millisecond
-codetitle: b.millisecond()
+codetitle: millisecond()
 description: 'The millisecond() function differs from millis(), in that it returns the exact millisecond (thousandths of a second) of the current time.'
 category: Environment
 subcategory: Date

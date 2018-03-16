@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: Vector.toString
-codetitle: b.Vector.toString()
+codetitle: Vector.toString()
 description: 'Returns data about this vector as a string.'
 category: Math
 subcategory: Vector

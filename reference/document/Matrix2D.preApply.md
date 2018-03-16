@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: Matrix2D.preApply
-codetitle: b.Matrix2D.preApply()
+codetitle: Matrix2D.preApply()
 description: 'preApply Needs more description.'
 category: Document
 subcategory: Transformation

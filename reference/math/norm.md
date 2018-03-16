@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: norm
-codetitle: 'b.norm(aNumber, low, high)'
+codetitle: 'norm(aNumber, low, high)'
 description: 'Normalizes a number from another range into a value between 0 and 1.'
 category: Math
 subcategory: Calculation

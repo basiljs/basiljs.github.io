@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: linkTextFrames
-codetitle: 'b.linkTextFrames(textFrameA, textFrameB)'
+codetitle: 'linkTextFrames(textFrameA, textFrameB)'
 description: 'Links the stories of two textframes to one story. Text of first textframe overflows to second one.'
 category: Story
 subcategory: null

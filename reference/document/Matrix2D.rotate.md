@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: Matrix2D.rotate
-codetitle: b.Matrix2D.rotate(angle)
+codetitle: Matrix2D.rotate(angle)
 description: 'rotate Needs more description.'
 category: Document
 subcategory: Transformation

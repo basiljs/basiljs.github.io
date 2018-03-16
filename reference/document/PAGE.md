@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: page
-codetitle: 'b.page([page])'
+codetitle: 'page([page])'
 description: 'Returns the current page and sets it if argument page is given. Numbering starts with 1.'
 category: Document
 subcategory: Page

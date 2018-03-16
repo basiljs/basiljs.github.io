@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: textTracking
-codetitle: 'b.textTracking([tracking])'
+codetitle: 'textTracking([tracking])'
 description: 'Returns the current tracking and sets it if argument tracking is given.'
 category: Typography
 subcategory: null

@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: pasteboard
-codetitle: 'b.pasteboard(h, v)'
+codetitle: 'pasteboard(h, v)'
 description: 'Returns the current horizontal and vertical pasteboard margins and sets them if both arguements are given.'
 category: Document
 subcategory: Page

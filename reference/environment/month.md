@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: month
-codetitle: b.month()
+codetitle: month()
 description: 'The month() function returns the current month as a value from 1 - 12.'
 category: Environment
 subcategory: Date

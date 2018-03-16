@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: PI
-codetitle: b.PI
+codetitle: PI
 description: Pi
 category: Math
 subcategory: Constants

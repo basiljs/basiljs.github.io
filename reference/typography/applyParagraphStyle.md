@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: applyParagraphStyle
-codetitle: 'b.applyParagraphStyle(text, style)'
+codetitle: 'applyParagraphStyle(text, style)'
 description: "Applies a paragraph style to the given text object, text frame or story. The paragraph style\ncan be given as name or as paragraph style instance."
 category: Typography
 subcategory: null

@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: files
-codetitle: 'b.files([folder], [settings])'
+codetitle: 'files([folder], [settings])'
 description: "Gets all files of a folder and returns them in an array of file objects.\nThe settings object can be used to restrict the search to certain file types only, to include hidden files and to include files in subfolders."
 category: Files
 subcategory: null

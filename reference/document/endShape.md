@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: endShape
-codetitle: b.endShape()
+codetitle: endShape()
 description: "The endShape() function is the companion to beginShape() and may only be called\nafter beginShape()."
 category: Document
 subcategory: Primitives

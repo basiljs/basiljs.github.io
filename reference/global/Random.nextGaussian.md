@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: Random.nextGaussian
-codetitle: b.Random.nextGaussian()
+codetitle: Random.nextGaussian()
 description: null
 category: global
 subcategory: null

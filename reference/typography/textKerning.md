@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: textKerning
-codetitle: 'b.textKerning([kerning])'
+codetitle: 'textKerning([kerning])'
 description: 'Returns the current kerning and sets it if argument kerning is given.'
 category: Typography
 subcategory: null

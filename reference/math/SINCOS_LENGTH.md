@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: SINCOS_LENGTH
-codetitle: b.SINCOS_LENGTH
+codetitle: SINCOS_LENGTH
 description: 'Sin Cos Length'
 category: Math
 subcategory: Constants

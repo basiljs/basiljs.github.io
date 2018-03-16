@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: Matrix2D.multX
-codetitle: 'b.Matrix2D.multX(x, y)'
+codetitle: 'Matrix2D.multX(x, y)'
 description: 'multX Needs more description.'
 category: Document
 subcategory: Transformation

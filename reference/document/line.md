@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: line
-codetitle: 'b.line(x1, y1, x2, y2)'
+codetitle: 'line(x1, y1, x2, y2)'
 description: 'Draws a line (a direct path between two points) to the page.'
 category: Document
 subcategory: Primitives

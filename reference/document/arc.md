@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: arc
-codetitle: 'b.arc(cx, cy, w, h, startAngle, endAngle, [mode])'
+codetitle: 'arc(cx, cy, w, h, startAngle, endAngle, [mode])'
 description: "The arc() function draws an arc. Arcs are drawn along the outer edge of an ellipse\ndefined by the x, y, width and height parameters.\nThe origin or the arc's ellipse may be changed with the ellipseMode() function.\nThe start and stop parameters specify the angles at which to draw the arc."
 category: Document
 subcategory: Primitives

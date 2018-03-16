@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: download
-codetitle: 'b.download(url, [file])'
+codetitle: 'download(url, [file])'
 description: 'Downloads an URL to a file, currently Mac only.'
 category: Output
 subcategory: null

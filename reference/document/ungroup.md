@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: ungroup
-codetitle: b.ungroup(group)
+codetitle: ungroup(group)
 description: 'Ungroups an existing group. Returns an array of the items that were within the group before ungroup() was called.'
 category: Document
 subcategory: null

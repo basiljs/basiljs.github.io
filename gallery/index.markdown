@@ -6,7 +6,7 @@ title: Gallery
 ---
 
 {% for page in site.pages %}
-  {% if page.type == 'project' %}
-    - {{page.title}}
+  {% if page.layout == 'gallery' %}
+- [{{page.title}}]({{page.url}})
   {% endif %}
 {% endfor %}

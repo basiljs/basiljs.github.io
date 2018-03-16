@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: clear
-codetitle: b.clear(container)
+codetitle: clear(container)
 description: 'Removes all PageItems (including locked ones) in the given Document, Page, Layer or Group. If the selected container is a Group, the Group itself will be removed as well.'
 category: Document
 subcategory: null

@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: Matrix2D.invRotateZ
-codetitle: b.Matrix2D.invRotateZ(angle)
+codetitle: Matrix2D.invRotateZ(angle)
 description: 'invRotateZ Needs more description.'
 category: Document
 subcategory: Transformation

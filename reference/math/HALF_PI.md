@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: HALF_PI
-codetitle: b.HALF_PI
+codetitle: HALF_PI
 description: 'Half Pi'
 category: Math
 subcategory: Constants

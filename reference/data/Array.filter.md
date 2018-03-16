@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: Array.filter
-codetitle: b.Array.filter(callback)
+codetitle: Array.filter(callback)
 description: 'The <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/filter">filter()</a> method creates a new array with all elements that pass the test implemented by the provided function.'
 category: Data
 subcategory: Array

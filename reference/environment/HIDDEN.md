@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: HIDDEN
-codetitle: b.HIDDEN
+codetitle: HIDDEN
 description: 'Used with '
 category: Environment
 subcategory: modes

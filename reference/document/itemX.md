@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: itemX
-codetitle: 'b.itemX(pItem, [x])'
+codetitle: 'itemX(pItem, [x])'
 description: 'Positions a PageItem at the designated spot on the x axis. If no x argument is given the current x position is returned.'
 category: Document
 subcategory: Transformation

@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: startsWith
-codetitle: 'b.startsWith(str, prefix)'
+codetitle: 'startsWith(str, prefix)'
 description: 'Checks whether a string starts with a specific character or string.'
 category: Data
 subcategory: 'String Functions'

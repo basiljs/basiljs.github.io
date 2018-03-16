@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: items
-codetitle: 'b.items(container, [cb])'
+codetitle: 'items(container, [cb])'
 description: 'If no callback function is given it returns a Collection of items otherwise calls the given callback function for each of the PageItems in the given Document, Page, Layer or Group.'
 category: Document
 subcategory: Multi-Getters

@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: projectFolder
-codetitle: b.projectFolder()
+codetitle: projectFolder()
 description: 'Get the folder of the active document as a Folder object. Use .absoluteURI to access a string representation of the folder path.'
 category: Document
 subcategory: Misc

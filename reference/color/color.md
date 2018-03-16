@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: color
-codetitle: b.color(Get)
+codetitle: color(Get)
 description: 'Creates a new RGB / CMYK color and adds it to the document, or gets a color by name from the document. The default color mode is RGB.'
 category: Color
 subcategory: null

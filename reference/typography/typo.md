@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: typo
-codetitle: 'b.typo(item, property, [value])'
+codetitle: 'typo(item, property, [value])'
 description: "Sets text properties to the given item. If the item is not an instance the text property can be set to,\nthe property gets set to the direct descendants of the given item, e.g. all stories of a given document."
 category: Typography
 subcategory: null

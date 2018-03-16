@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: stackArray
-codetitle: b.stackArray
+codetitle: stackArray
 description: 'The name of the current script.'
 category: Environment
 subcategory: null

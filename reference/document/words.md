@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: words
-codetitle: 'b.words(container, [cb])'
+codetitle: 'words(container, [cb])'
 description: 'If no callback function is given it returns a Collection of words in the container otherwise calls the given callback function with each word of the given document, page, story, textFrame, paragraph or line.'
 category: Document
 subcategory: Multi-Getters

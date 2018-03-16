@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: addToStory
-codetitle: 'b.addToStory(story, itemOrString, insertionPointOrMode)'
+codetitle: 'addToStory(story, itemOrString, insertionPointOrMode)'
 description: 'Adds a page item or a string to an existing story. You can control the position of the insert via the last parameter. It accepts either an InsertionPoint or one the following constants: AT_BEGINNING and AT_END.'
 category: Document
 subcategory: Story

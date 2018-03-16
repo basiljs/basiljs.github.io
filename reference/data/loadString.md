@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: loadString
-codetitle: b.loadString(file)
+codetitle: loadString(file)
 description: "Reads the contents of a file or loads an URL into a String.\nIf the file is specified by name as String, it must be located in the document's data directory."
 category: Data
 subcategory: Input

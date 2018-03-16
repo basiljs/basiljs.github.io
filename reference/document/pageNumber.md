@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: pageNumber
-codetitle: 'b.pageNumber([pageObj])'
+codetitle: 'pageNumber([pageObj])'
 description: 'Returns the current page number of either the current page or the given Page object.'
 category: Document
 subcategory: Page

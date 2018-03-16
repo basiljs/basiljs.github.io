@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: Random
-codetitle: b.Random(seed)
+codetitle: Random(seed)
 description: 'Random Generator with Gaussian distribution.'
 category: Math
 subcategory: Random

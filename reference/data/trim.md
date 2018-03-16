@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: trim
-codetitle: b.trim(str)
+codetitle: trim(str)
 description: "Removes whitespace characters from the beginning and end of a String.\nIn addition to standard whitespace characters such as space, carriage\nreturn, and tab, this function also removes the Unicode \"nbsp\" character."
 category: Data
 subcategory: 'String Functions'

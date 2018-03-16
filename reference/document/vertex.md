@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: vertex
-codetitle: 'b.vertex(x, y, [xLeftHandle], [yLeftHandle], [xRightHandle], [yRightHandle])'
+codetitle: 'vertex(x, y, [xLeftHandle], [yLeftHandle], [xRightHandle], [yRightHandle])'
 description: "Shapes are constructed by connecting a series of vertices. vertex() is used to\nspecify the vertex coordinates of lines and polygons. It is used exclusively between\nthe beginShape() and endShape() functions."
 category: Document
 subcategory: Primitives

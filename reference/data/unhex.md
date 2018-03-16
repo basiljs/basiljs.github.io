@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: unhex
-codetitle: b.unhex(hex)
+codetitle: unhex(hex)
 description: 'Convert a hex representation to a number.'
 category: Data
 subcategory: Conversion

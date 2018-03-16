@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: Vector.array
-codetitle: b.Vector.array()
+codetitle: Vector.array()
 description: 'Returns this vector as an array '
 category: Math
 subcategory: Vector

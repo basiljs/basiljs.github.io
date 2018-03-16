@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: CMYK
-codetitle: b.CMYK
+codetitle: CMYK
 description: 'Used with colorMode() to set the color space.'
 category: Color
 subcategory: null

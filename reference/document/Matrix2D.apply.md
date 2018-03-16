@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: Matrix2D.apply
-codetitle: b.Matrix2D.apply()
+codetitle: Matrix2D.apply()
 description: 'apply Needs more description.'
 category: Document
 subcategory: Transformation

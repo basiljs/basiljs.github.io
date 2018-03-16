@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: randomSeed
-codetitle: b.randomSeed(seed)
+codetitle: randomSeed(seed)
 description: 'Sets the seed value for random().'
 category: Math
 subcategory: Random

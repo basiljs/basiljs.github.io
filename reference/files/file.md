@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: file
-codetitle: b.file(filePath)
+codetitle: file(filePath)
 description: "Returns a file object.\nNote that the resulting file object can either refer to an already existing file or if the file does not exist, it can create a preliminary \"virtual\" file that refers to a file that could be created later (i.e. by an export command)."
 category: Files
 subcategory: null

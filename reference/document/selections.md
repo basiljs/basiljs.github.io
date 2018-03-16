@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: selections
-codetitle: 'b.selections([cb])'
+codetitle: 'selections([cb])'
 description: 'Returns the currently selected object(s)'
 category: Document
 subcategory: Multi-Getters

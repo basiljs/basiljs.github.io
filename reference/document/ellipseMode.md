@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: ellipseMode
-codetitle: b.ellipseMode(mode)
+codetitle: ellipseMode(mode)
 description: 'The origin of new ellipses is modified by the '
 category: Document
 subcategory: Attributes

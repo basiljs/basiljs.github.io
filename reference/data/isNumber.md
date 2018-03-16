@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: isNumber
-codetitle: b.isNumber(num)
+codetitle: isNumber(num)
 description: 'Checks whether a var is a number, returns true if this is the case'
 category: Data
 subcategory: Type-Check

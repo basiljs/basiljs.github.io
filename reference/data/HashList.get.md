@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: HashList.get
-codetitle: b.HashList.get(key)
+codetitle: HashList.get(key)
 description: 'This gets a value by its key.'
 category: Data
 subcategory: HashList

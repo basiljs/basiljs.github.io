@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: PIE
-codetitle: b.PIE
+codetitle: PIE
 description: 'Pie, used for arc() modes.'
 category: Document
 subcategory: Primitives

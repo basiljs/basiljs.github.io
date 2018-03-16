@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: strokeTint
-codetitle: b.strokeTint(tint)
+codetitle: strokeTint(tint)
 description: 'Sets the tint of the color used to draw lines and borders around shapes.'
 category: Color
 subcategory: null

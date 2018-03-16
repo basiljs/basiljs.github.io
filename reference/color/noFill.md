@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: noFill
-codetitle: b.noFill()
+codetitle: noFill()
 description: "Disables filling geometry. If both noStroke() and noFill() are called,\nnewly drawn shapes will be invisible."
 category: Color
 subcategory: null

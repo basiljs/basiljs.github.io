@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: map
-codetitle: 'b.map(value, istart, istop, ostart, ostop)'
+codetitle: 'map(value, istart, istop, ostart, ostop)'
 description: 'Re-maps a number from one range to another.'
 category: Math
 subcategory: Calculation

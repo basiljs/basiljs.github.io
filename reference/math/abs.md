@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: abs
-codetitle: b.abs(val)
+codetitle: abs(val)
 description: 'Calculates the absolute value (magnitude) of a number. The absolute value of a number is always positive.'
 category: Math
 subcategory: Calculation

@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: Matrix2D.invert
-codetitle: b.Matrix2D.invert()
+codetitle: Matrix2D.invert()
 description: 'invert Needs more description.'
 category: Document
 subcategory: Transformation

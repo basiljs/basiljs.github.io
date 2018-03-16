@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: applyMatrix
-codetitle: b.applyMatrix(matrix)
+codetitle: applyMatrix(matrix)
 description: 'Multiplies the current matrix by the one specified through the parameters.'
 category: Document
 subcategory: Transformation

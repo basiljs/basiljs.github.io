@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: endsWith
-codetitle: 'b.endsWith(str, suffix)'
+codetitle: 'endsWith(str, suffix)'
 description: 'Checks whether a string ends with a specific character or string.'
 category: Data
 subcategory: 'String Functions'

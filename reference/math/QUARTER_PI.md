@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: QUARTER_PI
-codetitle: b.QUARTER_PI
+codetitle: QUARTER_PI
 description: 'Quarter Pi'
 category: Math
 subcategory: Constants

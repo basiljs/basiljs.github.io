@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: Vector.mag
-codetitle: b.Vector.mag()
+codetitle: Vector.mag()
 description: 'Calculates the magnitude (length) of the vector and returns the result as a float'
 category: Math
 subcategory: Vector

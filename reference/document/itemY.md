@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: itemY
-codetitle: 'b.itemY(pItem, [y])'
+codetitle: 'itemY(pItem, [y])'
 description: 'Positions a PageItem at the designated spot on the y axis. If no y argument is given the current y position is returned.'
 category: Document
 subcategory: Transformation

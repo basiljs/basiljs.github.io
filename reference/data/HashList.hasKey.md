@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: HashList.hasKey
-codetitle: b.HashList.hasKey(key)
+codetitle: HashList.hasKey(key)
 description: 'Checks for the existence of a given key.'
 category: Data
 subcategory: HashList

@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: stories
-codetitle: 'b.stories(doc, [cb])'
+codetitle: 'stories(doc, [cb])'
 description: 'If no callback function is given it returns a Collection of items otherwise calls the given callback function with each story of the given document.'
 category: Document
 subcategory: Multi-Getters

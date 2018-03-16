@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: RADIUS
-codetitle: b.RADIUS
+codetitle: RADIUS
 description: 'Radius, used for drawing modes.'
 category: Document
 subcategory: Primitives

@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: selectFile
-codetitle: 'b.selectFile([settings])'
+codetitle: 'selectFile([settings])'
 description: 'Opens a selection dialog that allows to select one file. The settings object can be used to add a prompt text at the top of the dialog, to restrict the selection to certain file types and to set the dialog''s starting folder.'
 category: Files
 subcategory: null

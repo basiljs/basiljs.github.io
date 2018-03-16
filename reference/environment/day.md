@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: day
-codetitle: b.day()
+codetitle: day()
 description: 'The day() function returns the current day as a value from 1 - 31.'
 category: Environment
 subcategory: Date

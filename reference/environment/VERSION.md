@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: VERSION
-codetitle: b.VERSION
+codetitle: VERSION
 description: 'The basil version'
 category: Environment
 subcategory: null

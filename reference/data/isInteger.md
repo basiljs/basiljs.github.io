@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: isInteger
-codetitle: b.isInteger(num)
+codetitle: isInteger(num)
 description: 'Checks whether a var is an integer, returns true if this is the case.'
 category: Data
 subcategory: Type-Check

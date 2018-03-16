@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: saveString
-codetitle: 'b.saveString(file, string)'
+codetitle: 'saveString(file, string)'
 description: "Writes a string to a file.\nIf the given file exists it gets overridden."
 category: Output
 subcategory: null

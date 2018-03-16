@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: log
-codetitle: b.log(x)
+codetitle: log(x)
 description: 'Calculates the natural logarithm (the base-e logarithm) of a number. This function expects the values greater than 0.0.'
 category: Math
 subcategory: Calculation

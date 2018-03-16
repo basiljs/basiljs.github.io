@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: EPSILON
-codetitle: b.EPSILON
+codetitle: EPSILON
 description: Epsilon
 category: Math
 subcategory: Constants

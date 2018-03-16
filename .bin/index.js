@@ -172,14 +172,6 @@ let sortedByCategory = _.chain(data)
    };
  }).value();
 
-// let sortedBySubCategory = _.chain(data)
-//  .groupBy('subcategory')
-//  .map((key, val)=>{
-//    return {
-//      entries: key,
-//      subcat: val
-//    };
-//  }).value();
 
 let catsAndSubcats = [];
 sortedByCategory.forEach((ele)=>{
@@ -218,20 +210,36 @@ catsAndSubcats.forEach((element)=>{
 });
 
 
-// console.log(JSON.stringify(catsAndSubcats, null, 2));
+// console.log(JSON.stringify(data, null, 2));
 
-fs.writeFile('./_data/categories.json', JSON.stringify(sortedByCategory, null, 2), (err)=>{
+var buildGlobalsObject = function(){
+  let obj = {};
+  data.forEach((ele)=>{
+    obj[ele.name.includes('.') ? ele.name.split('.')[0] : ele.name] = true;
+  });
+  console.log(JSON.stringify(obj));
+  return JSON.stringify(obj);
+
+}
+fs.writeFile('./_data/function-list.json',buildGlobalsObject(), (err, data)=>{
   if(err) {
     throw err;
+  }else{
+
   }
 });
 
-// we actually don't need this anymore.
-// fs.writeFile('./_data/sub-categories.json', JSON.stringify(sortedBySubCategory, null, 2), (err)=>{
-//   if(err) {
-//     throw err;
-//   }
-// });
+
+let categoriesData = null;
+fs.writeFile('./_data/categories.json', JSON.stringify(sortedByCategory, null, 2), (err, data)=>{
+  if(err) {
+    throw err;
+  }else{
+
+  }
+});
+
+generateFiles(sortedByCategory, true);
 
 fs.writeFile('./_data/cats-and-subcats.json', JSON.stringify(catsAndSubcats, null, 2), (err)=>{
   if(err) {
@@ -239,4 +247,3 @@ fs.writeFile('./_data/cats-and-subcats.json', JSON.stringify(catsAndSubcats, nul
   }
 });
 
-generateFiles(true);
