@@ -14,12 +14,17 @@ $textColor: #000;
 $headLineColor: #333;
 $guideOneColor: #9636FC;
 $guideTwoColor: #FF4EFF;
+
 body {
   margin: 0 auto;
   // font-size: 1.1em;
   // line-height: 1.5;
   padding: 1em 1em;
   background-image: url("/assets/images/stripe_c40ccfac0db9e43c48e95a530d787366.png");
+}
+
+img{
+  max-width: 100%;
 }
 .main {
   max-width: 55em;
