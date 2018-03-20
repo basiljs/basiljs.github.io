@@ -1,0 +1,16 @@
+---
+author: admin
+layout: default
+originallink: http://basiljs.ch/tutorials/
+title: Tutorials
+---
+
+<ul>
+{% for page in site.pages %}
+{% if page.layout == 'tutorial' %}
+{% if page.title != 'example tutorial page'%}
+  <li><a href="{{page.url}}">{{page.title}}</a></li>
+{% endif %}
+{% endif %}
+{% endfor %}
+</ul>

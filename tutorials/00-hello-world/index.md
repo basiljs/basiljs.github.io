@@ -1,6 +1,6 @@
 ---
 author: admin
-layout: hello_world
+layout: tutorial
 title: "Hello World"
 ---
 

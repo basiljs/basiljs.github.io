@@ -1,6 +1,6 @@
 ---
 author: admin
-layout: getting_started
+layout: tutorial
 title: "Getting Started"
 ---
 

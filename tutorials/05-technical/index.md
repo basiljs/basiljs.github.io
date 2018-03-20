@@ -1,7 +1,7 @@
 ---
 author: admin
-layout: technical
-title: "Technical details about basil.js"
+layout: tutorial
+title: "Technical Details About basil.js"
 ---
 
 ## The tech facts:

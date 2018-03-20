@@ -1,6 +1,6 @@
 ---
 author: admin
-layout: drawing_color
+layout: tutorial
 title: "Drawing and colors"
 ---
 

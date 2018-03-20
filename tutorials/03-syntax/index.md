@@ -1,6 +1,6 @@
 ---
 author: admin
-layout: syntax
+layout: tutorial
 title: "Syntax check basil.js vs. Processing"
 ---
 
