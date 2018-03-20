@@ -1,7 +1,7 @@
 ---
 author: admin
 layout: tutorial
-title: "Syntax check basil.js vs. Processing"
+title: "Syntax Check basil.js vs. Processing"
 ---
 
 ## Similarities between basil.js and Processing

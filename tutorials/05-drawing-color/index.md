@@ -1,7 +1,7 @@
 ---
 author: admin
 layout: tutorial
-title: "Drawing and colors"
+title: "Drawing and Colors"
 ---
 
 ## General information
