@@ -1,8 +1,8 @@
 ---
 layout: entry
 title: Vector.cross
-codetitle: 'Vector.cross(v1, v2)'
-description: "Static function. Calculates the cross product of two vectors.\nIs meant to be called \"static\" i.e. Vector.cross(v1, v2);"
+codetitle: 'Vector.cross(v, [y], [z])'
+description: 'Calculates the cross product from this vector to another as x, y, and z components or full vector.'
 category: Math
 subcategory: Vector
 returns:
@@ -10,14 +10,9 @@ returns:
     description: 'The cross product.'
     type: [Number]
 parameters:
-    - {name: v1, description: 'The first vector.', optional: false, type: [Vector]}
-    - {name: v2, description: 'The second vector.', optional: false, type: [Vector]}
-kind: function
-todo: null
-examples: []
-
----
-mponent.', optional: true, type: [Number]}
+    - {name: v, description: 'Either a full vector or an x component.', optional: false, type: [Vector, Number]}
+    - {name: y, description: 'The y component.', optional: true, type: [Number]}
+    - {name: z, description: 'The z component.', optional: true, type: [Number]}
 kind: function
 todo: null
 examples: []
