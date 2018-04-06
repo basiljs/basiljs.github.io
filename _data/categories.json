@@ -470,7 +470,7 @@
       },
       {
         "name": "CENTER",
-        "description": "Center, used for drawing modes.",
+        "description": "Center, used for drawing modes or used with referencePoint() to set the reference point of transformations to the center of the page item.",
         "returns": null,
         "category": "Document",
         "subcategory": "Primitives",
@@ -493,6 +493,110 @@
         "examples": [],
         "todo": null,
         "codetitle": "RADIUS"
+      },
+      {
+        "name": "TOP_LEFT",
+        "description": "Used with referencePoint() to set the reference point of transformations to the top left of the page item.",
+        "returns": null,
+        "category": "Document",
+        "subcategory": "Transformation",
+        "parameters": [],
+        "kind": "property",
+        "tags": [],
+        "examples": [],
+        "todo": null,
+        "codetitle": "TOP_LEFT"
+      },
+      {
+        "name": "TOP_CENTER",
+        "description": "Used with referencePoint() to set the reference point of transformations to the top center of the page item.",
+        "returns": null,
+        "category": "Document",
+        "subcategory": "Transformation",
+        "parameters": [],
+        "kind": "property",
+        "tags": [],
+        "examples": [],
+        "todo": null,
+        "codetitle": "TOP_CENTER"
+      },
+      {
+        "name": "TOP_RIGHT",
+        "description": "Used with referencePoint() to set the reference point of transformations to the top right of the page item.",
+        "returns": null,
+        "category": "Document",
+        "subcategory": "Transformation",
+        "parameters": [],
+        "kind": "property",
+        "tags": [],
+        "examples": [],
+        "todo": null,
+        "codetitle": "TOP_RIGHT"
+      },
+      {
+        "name": "CENTER_LEFT",
+        "description": "Used with referencePoint() to set the reference point of transformations to the center left of the page item.",
+        "returns": null,
+        "category": "Document",
+        "subcategory": "Transformation",
+        "parameters": [],
+        "kind": "property",
+        "tags": [],
+        "examples": [],
+        "todo": null,
+        "codetitle": "CENTER_LEFT"
+      },
+      {
+        "name": "CENTER_RIGHT",
+        "description": "Used with referencePoint() to set the reference point of transformations to the center right of the page item.",
+        "returns": null,
+        "category": "Document",
+        "subcategory": "Transformation",
+        "parameters": [],
+        "kind": "property",
+        "tags": [],
+        "examples": [],
+        "todo": null,
+        "codetitle": "CENTER_RIGHT"
+      },
+      {
+        "name": "BOTTOM_LEFT",
+        "description": "Used with referencePoint() to set the reference point of transformations to the bottom left of the page item.",
+        "returns": null,
+        "category": "Document",
+        "subcategory": "Transformation",
+        "parameters": [],
+        "kind": "property",
+        "tags": [],
+        "examples": [],
+        "todo": null,
+        "codetitle": "BOTTOM_LEFT"
+      },
+      {
+        "name": "BOTTOM_CENTER",
+        "description": "Used with referencePoint() to set the reference point of transformations to the bottom center of the page item.",
+        "returns": null,
+        "category": "Document",
+        "subcategory": "Transformation",
+        "parameters": [],
+        "kind": "property",
+        "tags": [],
+        "examples": [],
+        "todo": null,
+        "codetitle": "BOTTOM_CENTER"
+      },
+      {
+        "name": "BOTTOM_RIGHT",
+        "description": "Used with referencePoint() to set the reference point of transformations to the bottom right of the page item.",
+        "returns": null,
+        "category": "Document",
+        "subcategory": "Transformation",
+        "parameters": [],
+        "kind": "property",
+        "tags": [],
+        "examples": [],
+        "todo": null,
+        "codetitle": "BOTTOM_RIGHT"
       },
       {
         "name": "CLOSE",
@@ -2595,60 +2699,6 @@
         "codetitle": "image(img, x, [y], [w], [h])"
       },
       {
-        "name": "transformImage",
-        "description": "Transforms position and size of an image.\nThe image fit options are always \"contentToFrame\".",
-        "returns": null,
-        "category": "Document",
-        "subcategory": "Image",
-        "parameters": [
-          {
-            "name": "img",
-            "description": "The image to transform.",
-            "optional": false,
-            "type": [
-              "Graphic"
-            ]
-          },
-          {
-            "name": "x",
-            "description": "The new x.",
-            "optional": false,
-            "type": [
-              "Number"
-            ]
-          },
-          {
-            "name": "y",
-            "description": "The new y.",
-            "optional": false,
-            "type": [
-              "Number"
-            ]
-          },
-          {
-            "name": "width",
-            "description": "The new width.",
-            "optional": false,
-            "type": [
-              "Number"
-            ]
-          },
-          {
-            "name": "height",
-            "description": "The new height.",
-            "optional": false,
-            "type": [
-              "Number"
-            ]
-          }
-        ],
-        "kind": "function",
-        "tags": [],
-        "examples": [],
-        "todo": null,
-        "codetitle": "transformImage(img, x, y, width, height)"
-      },
-      {
         "name": "imageMode",
         "description": "Modifies the location from which images draw. The default mode is imageMode(CORNER), which specifies the location to be the upper left corner and uses the fourth and fifth parameters of image() to set the image's width and height. The syntax imageMode(CORNERS) uses the second and third parameters of image() to set the location of one corner of the image and uses the fourth and fifth parameters to set the opposite corner. Use imageMode(CENTER) to draw images centered at the given x and y position.\nIf no parameter is passed the currently set mode is returned as String.",
         "returns": {
@@ -2678,7 +2728,7 @@
       },
       {
         "name": "bounds",
-        "description": "The function calculates the geometric bounds of any given object. Use ",
+        "description": "The function calculates the geometric bounds of any given page item or text. Use the ",
         "returns": {
           "name": null,
           "description": "Geometric bounds object with these properties: width, height, left, right, top, bottom and for text: baseline, xHeight.",
@@ -2691,11 +2741,11 @@
         "parameters": [
           {
             "name": "obj",
-            "description": "The object to calculate the geometric bounds.",
+            "description": "The page item or text to calculate the geometric bounds.",
             "optional": false,
             "type": [
-              "Text",
-              "Object"
+              "PageItem",
+              "Text"
             ]
           }
         ],
@@ -2706,514 +2756,71 @@
         "codetitle": "bounds(obj)"
       },
       {
-        "name": "itemX",
-        "description": "Positions a PageItem at the designated spot on the x axis. If no x argument is given the current x position is returned.",
+        "name": "referencePoint",
+        "description": "Sets the reference point for transformations using the <code>transform()</code> function. The reference point will be used for all following transformations, until it is changed again. By default, the reference point is set to the top left.\nArguments can be the basil constants <code>TOP_LEFT</code>, <code>TOP_CENTER</code>, <code>TOP_RIGHT</code>, <code>CENTER_LEFT</code>, <code>CENTER</code>, <code>CENTER_RIGHT</code>, <code>BOTTOM_LEFT</code>, <code>BOTTOM_CENTER</code> or <code>BOTTOM_RIGHT</code>. Alternatively the digits 1 through 9 (as they are arranged on a num pad) can be used to set the anchor point. Lastly the function can also use an InDesign anchor point enumerator to set the reference point.\nIf the function is used without any arguments the currently set reference point will be returned.",
         "returns": {
           "name": null,
-          "description": "The current x position.",
+          "description": "Current reference point setting.",
           "type": [
-            "Number"
+            "String"
           ]
         },
         "category": "Document",
         "subcategory": "Transformation",
         "parameters": [
           {
-            "name": "pItem",
-            "description": "The PageItem to alter.",
-            "optional": false,
-            "type": [
-              "PageItem"
-            ]
-          },
-          {
-            "name": "x",
-            "description": "The new x position, optional.",
+            "name": "referencePoint",
+            "description": "The reference point to set.",
             "optional": true,
             "type": [
-              "Number"
+              "String"
             ]
           }
         ],
         "kind": "function",
-        "tags": [],
+        "tags": [
+          {
+            "title": "description",
+            "description": "Sets the reference point for transformations using the <code>transform()</code> function. The reference point will be used for all following transformations, until it is changed again. By default, the reference point is set to the top left.\nArguments can be the basil constants <code>TOP_LEFT</code>, <code>TOP_CENTER</code>, <code>TOP_RIGHT</code>, <code>CENTER_LEFT</code>, <code>CENTER</code>, <code>CENTER_RIGHT</code>, <code>BOTTOM_LEFT</code>, <code>BOTTOM_CENTER</code> or <code>BOTTOM_RIGHT</code>. Alternatively the digits 1 through 9 (as they are arranged on a num pad) can be used to set the anchor point. Lastly the function can also use an InDesign anchor point enumerator to set the reference point.\nIf the function is used without any arguments the currently set reference point will be returned."
+          }
+        ],
         "examples": [],
         "todo": null,
-        "codetitle": "itemX(pItem, [x])"
+        "codetitle": "referencePoint([referencePoint])"
       },
       {
-        "name": "itemY",
-        "description": "Positions a PageItem at the designated spot on the y axis. If no y argument is given the current y position is returned.",
+        "name": "transform",
+        "description": "Transforms a given page item. The type of transformation is determinded with the second parameter. The third parameter is the transformation value, either a number or an array of x and y values. The transformation's reference point (top left, bottom center etc.) can be set beforehand by using the <code>referencePoint()</code> function. If the third parameter is ommited, the function can be used to measure the value of the page item.\nThere are 10 different transformation types:\n<ul>\n<li> <code>\"translate\"</code>: Translates the page item by the given <code>[x, y]</code> values. Returns the coordinates of the page item's anchor point as an array.</li>\n<li> <code>\"rotate\"</code>: Rotates the page item to the given degree value. Returns the page item's rotation value in degrees.</li>\n<li> <code>\"scale\"</code>: Scales the page item to the given <code>[x, y]</code> scale factor values. Alternatively, a single scale factor value can be used to scale the page item uniformely. Returns the scale factor values of the page item's current scale as an array.</li>\n<li> <code>\"shear\"</code>: Shears the page item to the given degree value. Returns the page item's shear value in degrees.</li>\n<li> <code>\"size\"</code>: Sets the page item's size to the given <code>[x, y]</code> dimensions. Returns the size of the page item as an array.</li>\n<li> <code>\"width\"</code>: Sets the page item's width to the given value. Returns the width of the page item.</li>\n<li> <code>\"height\"</code>: Sets the page item's height to the given value. Returns the height of the page item.</li>\n<li> <code>\"position\"</code>: Sets the position of the page item's anchor point to the given <code>[x, y]</code> coordinates. Returns the coordinates of the page item's anchor point as an array.</li>\n<li> <code>\"x\"</code>: Sets the x-position of the page item's anchor point to the given value. Returns the x-coordinate of the page item's anchor point.</li>\n<li> <code>\"y\"</code>: Sets the y-position of the page item's anchor point to the given value. Returns the y-coordinate of the page item's anchor point.</li>\n</ul>",
         "returns": {
           "name": null,
-          "description": "The current y position.",
+          "description": "The current value(s) of the specified transformation.",
           "type": [
-            "Number"
-          ]
-        },
-        "category": "Document",
-        "subcategory": "Transformation",
-        "parameters": [
-          {
-            "name": "pItem",
-            "description": "The PageItem to alter.",
-            "optional": false,
-            "type": [
-              "PageItem"
-            ]
-          },
-          {
-            "name": "y",
-            "description": "The new y position, optional.",
-            "optional": true,
-            "type": [
-              "Number"
-            ]
-          }
-        ],
-        "kind": "function",
-        "tags": [],
-        "examples": [],
-        "todo": null,
-        "codetitle": "itemY(pItem, [y])"
-      },
-      {
-        "name": "itemWidth",
-        "description": "Scales the given PageItem to the given width. If width is not given as argument the current width is returned.",
-        "returns": {
-          "name": null,
-          "description": "The current width.",
-          "type": [
-            "Number"
-          ]
-        },
-        "category": "Document",
-        "subcategory": "Transformation",
-        "parameters": [
-          {
-            "name": "pItem",
-            "description": "The PageItem to alter.",
-            "optional": false,
-            "type": [
-              "PageItem"
-            ]
-          },
-          {
-            "name": "width",
-            "description": "The new width.",
-            "optional": true,
-            "type": [
-              "Number"
-            ]
-          }
-        ],
-        "kind": "function",
-        "tags": [
-          {
-            "title": "description",
-            "description": "Scales the given PageItem to the given width. If width is not given as argument the current width is returned."
-          }
-        ],
-        "examples": [],
-        "todo": null,
-        "codetitle": "itemWidth(pItem, [width])"
-      },
-      {
-        "name": "itemHeight",
-        "description": "Scales the given PageItem to the given height. If height is not given as argument the current height is returned.",
-        "returns": {
-          "name": null,
-          "description": "The current height.",
-          "type": [
-            "Number"
-          ]
-        },
-        "category": "Document",
-        "subcategory": "Transformation",
-        "parameters": [
-          {
-            "name": "pItem",
-            "description": "The PageItem to alter.",
-            "optional": false,
-            "type": [
-              "PageItem"
-            ]
-          },
-          {
-            "name": "height",
-            "description": "The new height.",
-            "optional": true,
-            "type": [
-              "Number"
-            ]
-          }
-        ],
-        "kind": "function",
-        "tags": [
-          {
-            "title": "description",
-            "description": "Scales the given PageItem to the given height. If height is not given as argument the current height is returned."
-          }
-        ],
-        "examples": [],
-        "todo": null,
-        "codetitle": "itemHeight(pItem, [height])"
-      },
-      {
-        "name": "itemPosition",
-        "description": "Moves the given PageItem to the given position. If x or y is not given as argument the current position is returned.",
-        "returns": {
-          "name": null,
-          "description": "Returns an object with the fields x and y.",
-          "type": [
-            "Object"
-          ]
-        },
-        "category": "Document",
-        "subcategory": "Transformation",
-        "parameters": [
-          {
-            "name": "pItem",
-            "description": "The PageItem to alter.",
-            "optional": false,
-            "type": [
-              "PageItem"
-            ]
-          },
-          {
-            "name": "x",
-            "description": "The new x coordinate.",
-            "optional": true,
-            "type": [
-              "Number"
-            ]
-          },
-          {
-            "name": "y",
-            "description": "The new y coordinate.",
-            "optional": true,
-            "type": [
-              "Number"
-            ]
-          }
-        ],
-        "kind": "function",
-        "tags": [
-          {
-            "title": "description",
-            "description": "Moves the given PageItem to the given position. If x or y is not given as argument the current position is returned."
-          }
-        ],
-        "examples": [],
-        "todo": null,
-        "codetitle": "itemPosition(pItem, [x], [y])"
-      },
-      {
-        "name": "itemSize",
-        "description": "Scales the given PageItem to the given size. If width or height is not given as argument the current size is returned.",
-        "returns": {
-          "name": null,
-          "description": "Returns an object with the fields width and height.",
-          "type": [
-            "Object"
-          ]
-        },
-        "category": "Document",
-        "subcategory": "Transformation",
-        "parameters": [
-          {
-            "name": "pItem",
-            "description": "The PageItem to alter.",
-            "optional": false,
-            "type": [
-              "PageItem"
-            ]
-          },
-          {
-            "name": "width",
-            "description": "The new width.",
-            "optional": true,
-            "type": [
-              "Number"
-            ]
-          },
-          {
-            "name": "height",
-            "description": "The new height.",
-            "optional": true,
-            "type": [
-              "Number"
-            ]
-          }
-        ],
-        "kind": "function",
-        "tags": [
-          {
-            "title": "description",
-            "description": "Scales the given PageItem to the given size. If width or height is not given as argument the current size is returned."
-          }
-        ],
-        "examples": [],
-        "todo": null,
-        "codetitle": "itemSize(pItem, [width], [height])"
-      },
-      {
-        "name": "Matrix2D",
-        "description": "A matrix.",
-        "returns": null,
-        "category": "Document",
-        "subcategory": "Transformation",
-        "parameters": [],
-        "kind": "function",
-        "tags": [
-          {
-            "title": "description",
-            "description": "A matrix."
-          }
-        ],
-        "examples": [],
-        "todo": null,
-        "codetitle": "Matrix2D()"
-      },
-      {
-        "name": "prototype",
-        "description": "A Matrix object.",
-        "returns": null,
-        "category": "Document",
-        "subcategory": "Transformation",
-        "parameters": [],
-        "kind": "Object",
-        "tags": [
-          {
-            "title": "description",
-            "description": "A Matrix object."
-          }
-        ],
-        "examples": [],
-        "todo": null,
-        "codetitle": null
-      },
-      {
-        "name": "Matrix2D.set",
-        "description": "Set a Matrix.",
-        "returns": null,
-        "category": "Document",
-        "subcategory": "Transformation",
-        "parameters": [],
-        "kind": "function",
-        "tags": [
-          {
-            "title": "description",
-            "description": "Set a Matrix."
-          }
-        ],
-        "examples": [],
-        "todo": null,
-        "codetitle": "Matrix2D.set()"
-      },
-      {
-        "name": "Matrix2D.get",
-        "description": "Get a Matrix.",
-        "returns": {
-          "name": null,
-          "description": "The current Matrix.",
-          "type": [
-            "Matrix2D"
-          ]
-        },
-        "category": "Document",
-        "subcategory": "Transformation",
-        "parameters": [],
-        "kind": "function",
-        "tags": [
-          {
-            "title": "description",
-            "description": "Get a Matrix."
-          }
-        ],
-        "examples": [],
-        "todo": null,
-        "codetitle": "Matrix2D.get()"
-      },
-      {
-        "name": "Matrix2D.reset",
-        "description": "Reset the Matrix.",
-        "returns": null,
-        "category": "Document",
-        "subcategory": "Transformation",
-        "parameters": [],
-        "kind": "function",
-        "tags": [
-          {
-            "title": "description",
-            "description": "Reset the Matrix."
-          }
-        ],
-        "examples": [],
-        "todo": null,
-        "codetitle": "Matrix2D.reset()"
-      },
-      {
-        "name": "Matrix2D.array",
-        "description": "Slice the Matrix into an array.",
-        "returns": {
-          "name": null,
-          "description": "Returns an sliced array.",
-          "type": [
+            "Number",
             "Array"
           ]
         },
         "category": "Document",
         "subcategory": "Transformation",
-        "parameters": [],
-        "kind": "function",
-        "tags": [
-          {
-            "title": "description",
-            "description": "Slice the Matrix into an array."
-          }
-        ],
-        "examples": [],
-        "todo": null,
-        "codetitle": "Matrix2D.array()"
-      },
-      {
-        "name": "Matrix2D.adobeMatrix",
-        "description": "Slice the Matrix into an array.",
-        "returns": {
-          "name": null,
-          "description": "Returns an Adobe Matrix.",
-          "type": [
-            "Array"
-          ]
-        },
-        "category": "Document",
-        "subcategory": "Transformation",
-        "parameters": [],
-        "kind": "function",
-        "tags": [
-          {
-            "title": "description",
-            "description": "Slice the Matrix into an array."
-          }
-        ],
-        "examples": [],
-        "todo": null,
-        "codetitle": "Matrix2D.adobeMatrix()"
-      },
-      {
-        "name": "Matrix2D.translate",
-        "description": "translate Needs more description.",
-        "returns": null,
-        "category": "Document",
-        "subcategory": "Transformation",
         "parameters": [
           {
-            "name": "tx",
-            "description": "…",
+            "name": "pItem",
+            "description": "The page item to transform.",
             "optional": false,
             "type": [
-              "Number"
+              "PageItem"
             ]
           },
           {
-            "name": "ty",
-            "description": "…",
+            "name": "type",
+            "description": "The type of transformation.",
             "optional": false,
             "type": [
-              "Number"
-            ]
-          }
-        ],
-        "kind": "function",
-        "tags": [
-          {
-            "title": "description",
-            "description": "translate Needs more description."
-          }
-        ],
-        "examples": [],
-        "todo": null,
-        "codetitle": "Matrix2D.translate(tx, ty)"
-      },
-      {
-        "name": "Matrix2D.invTranslate",
-        "description": "invTranslate Needs more description.",
-        "returns": null,
-        "category": "Document",
-        "subcategory": "Transformation",
-        "parameters": [
-          {
-            "name": "tx",
-            "description": "…",
-            "optional": false,
-            "type": [
-              "Number"
+              "String"
             ]
           },
           {
-            "name": "ty",
-            "description": "…",
-            "optional": false,
-            "type": [
-              "Number"
-            ]
-          }
-        ],
-        "kind": "function",
-        "tags": [
-          {
-            "title": "description",
-            "description": "invTranslate Needs more description."
-          }
-        ],
-        "examples": [],
-        "todo": null,
-        "codetitle": "Matrix2D.invTranslate(tx, ty)"
-      },
-      {
-        "name": "Matrix2D.transpose",
-        "description": "transpose Needs more description.",
-        "returns": null,
-        "category": "Document",
-        "subcategory": "Transformation",
-        "parameters": [],
-        "kind": "function",
-        "tags": [
-          {
-            "title": "description",
-            "description": "transpose Needs more description."
-          }
-        ],
-        "examples": [],
-        "todo": null,
-        "codetitle": "Matrix2D.transpose()"
-      },
-      {
-        "name": "Matrix2D.mult",
-        "description": "mult Needs more description.",
-        "returns": {
-          "name": null,
-          "description": "A multiplied Vector.",
-          "type": [
-            "Vector"
-          ]
-        },
-        "category": "Document",
-        "subcategory": "Transformation",
-        "parameters": [
-          {
-            "name": "source",
-            "description": "…",
-            "optional": false,
-            "type": [
-              "Vector",
-              "Array"
-            ]
-          },
-          {
-            "name": "target",
-            "description": "…",
+            "name": "value",
+            "description": "The value(s) of the transformation.",
             "optional": true,
             "type": [
               null
@@ -3224,415 +2831,25 @@
         "tags": [
           {
             "title": "description",
-            "description": "mult Needs more description."
+            "description": "Transforms a given page item. The type of transformation is determinded with the second parameter. The third parameter is the transformation value, either a number or an array of x and y values. The transformation's reference point (top left, bottom center etc.) can be set beforehand by using the <code>referencePoint()</code> function. If the third parameter is ommited, the function can be used to measure the value of the page item.\nThere are 10 different transformation types:\n<ul>\n<li> <code>\"translate\"</code>: Translates the page item by the given <code>[x, y]</code> values. Returns the coordinates of the page item's anchor point as an array.</li>\n<li> <code>\"rotate\"</code>: Rotates the page item to the given degree value. Returns the page item's rotation value in degrees.</li>\n<li> <code>\"scale\"</code>: Scales the page item to the given <code>[x, y]</code> scale factor values. Alternatively, a single scale factor value can be used to scale the page item uniformely. Returns the scale factor values of the page item's current scale as an array.</li>\n<li> <code>\"shear\"</code>: Shears the page item to the given degree value. Returns the page item's shear value in degrees.</li>\n<li> <code>\"size\"</code>: Sets the page item's size to the given <code>[x, y]</code> dimensions. Returns the size of the page item as an array.</li>\n<li> <code>\"width\"</code>: Sets the page item's width to the given value. Returns the width of the page item.</li>\n<li> <code>\"height\"</code>: Sets the page item's height to the given value. Returns the height of the page item.</li>\n<li> <code>\"position\"</code>: Sets the position of the page item's anchor point to the given <code>[x, y]</code> coordinates. Returns the coordinates of the page item's anchor point as an array.</li>\n<li> <code>\"x\"</code>: Sets the x-position of the page item's anchor point to the given value. Returns the x-coordinate of the page item's anchor point.</li>\n<li> <code>\"y\"</code>: Sets the y-position of the page item's anchor point to the given value. Returns the y-coordinate of the page item's anchor point.</li>\n</ul>"
           }
         ],
-        "examples": [],
-        "todo": null,
-        "codetitle": "Matrix2D.mult(source, [target])"
-      },
-      {
-        "name": "Matrix2D.multX",
-        "description": "multX Needs more description.",
-        "returns": {
-          "name": null,
-          "description": "A mulitplied X value.",
-          "type": [
-            "Number"
-          ]
-        },
-        "category": "Document",
-        "subcategory": "Transformation",
-        "parameters": [
+        "examples": [
           {
-            "name": "x",
-            "description": "…",
-            "optional": false,
-            "type": [
-              "Number"
-            ]
+            "description": "Rotating a rectangle to a 25 degrees angle",
+            "code": "var r = rect(20, 40, 200, 100);\ntransform(r, \"rotate\", 25);"
           },
           {
-            "name": "y",
-            "description": "…",
-            "optional": false,
-            "type": [
-              "Number"
-            ]
-          }
-        ],
-        "kind": "function",
-        "tags": [
-          {
-            "title": "description",
-            "description": "multX Needs more description."
-          }
-        ],
-        "examples": [],
-        "todo": null,
-        "codetitle": "Matrix2D.multX(x, y)"
-      },
-      {
-        "name": "Matrix2D.multY",
-        "description": "multY Needs more description.",
-        "returns": {
-          "name": null,
-          "description": "A multiplied Y value.",
-          "type": [
-            "Number"
-          ]
-        },
-        "category": "Document",
-        "subcategory": "Transformation",
-        "parameters": [
-          {
-            "name": "x",
-            "description": "…",
-            "optional": false,
-            "type": [
-              "Number"
-            ]
+            "description": "Measure the width of a rectangle",
+            "code": "var r = rect(20, 40, random(100, 300), 100);\nvar w = transform(r, \"width\");\nprintln(w); // prints the rectangle's random width between 100 and 300"
           },
           {
-            "name": "y",
-            "description": "…",
-            "optional": false,
-            "type": [
-              "Number"
-            ]
+            "description": "Position a rectangle's lower right corner at a certain position",
+            "code": "var r = rect(20, 40, random(100, 300), random(50, 150));\nreferencePoint(BOTTOM_RIGHT);\ntransform(r, \"position\", [40, 40]);"
           }
         ],
-        "kind": "function",
-        "tags": [
-          {
-            "title": "description",
-            "description": "multY Needs more description."
-          }
-        ],
-        "examples": [],
         "todo": null,
-        "codetitle": "Matrix2D.multY(x, y)"
-      },
-      {
-        "name": "Matrix2D.determinant",
-        "description": "determinant Needs more description.",
-        "returns": {
-          "name": null,
-          "description": "A determinant …",
-          "type": [
-            "Number"
-          ]
-        },
-        "category": "Document",
-        "subcategory": "Transformation",
-        "parameters": [],
-        "kind": "function",
-        "tags": [
-          {
-            "title": "description",
-            "description": "determinant Needs more description."
-          }
-        ],
-        "examples": [],
-        "todo": null,
-        "codetitle": "Matrix2D.determinant()"
-      },
-      {
-        "name": "Matrix2D.invert",
-        "description": "invert Needs more description.",
-        "returns": {
-          "name": null,
-          "description": "…",
-          "type": [
-            "Boolean"
-          ]
-        },
-        "category": "Document",
-        "subcategory": "Transformation",
-        "parameters": [],
-        "kind": "function",
-        "tags": [
-          {
-            "title": "description",
-            "description": "invert Needs more description."
-          }
-        ],
-        "examples": [],
-        "todo": null,
-        "codetitle": "Matrix2D.invert()"
-      },
-      {
-        "name": "Matrix2D.scale",
-        "description": "scale Needs more description.",
-        "returns": null,
-        "category": "Document",
-        "subcategory": "Transformation",
-        "parameters": [
-          {
-            "name": "sx",
-            "description": "…",
-            "optional": false,
-            "type": [
-              "Number"
-            ]
-          },
-          {
-            "name": "sy",
-            "description": "…",
-            "optional": false,
-            "type": [
-              "Number"
-            ]
-          }
-        ],
-        "kind": "function",
-        "tags": [
-          {
-            "title": "description",
-            "description": "scale Needs more description."
-          }
-        ],
-        "examples": [],
-        "todo": null,
-        "codetitle": "Matrix2D.scale(sx, sy)"
-      },
-      {
-        "name": "Matrix2D.invScale",
-        "description": "invScale Needs more description.",
-        "returns": null,
-        "category": "Document",
-        "subcategory": "Transformation",
-        "parameters": [
-          {
-            "name": "sx",
-            "description": "…",
-            "optional": false,
-            "type": [
-              "Number"
-            ]
-          },
-          {
-            "name": "sy",
-            "description": "…",
-            "optional": false,
-            "type": [
-              "Number"
-            ]
-          }
-        ],
-        "kind": "function",
-        "tags": [
-          {
-            "title": "description",
-            "description": "invScale Needs more description."
-          }
-        ],
-        "examples": [],
-        "todo": null,
-        "codetitle": "Matrix2D.invScale(sx, sy)"
-      },
-      {
-        "name": "Matrix2D.apply",
-        "description": "apply Needs more description.",
-        "returns": null,
-        "category": "Document",
-        "subcategory": "Transformation",
-        "parameters": [],
-        "kind": "function",
-        "tags": [
-          {
-            "title": "description",
-            "description": "apply Needs more description."
-          }
-        ],
-        "examples": [],
-        "todo": null,
-        "codetitle": "Matrix2D.apply()"
-      },
-      {
-        "name": "Matrix2D.preApply",
-        "description": "preApply Needs more description.",
-        "returns": null,
-        "category": "Document",
-        "subcategory": "Transformation",
-        "parameters": [],
-        "kind": "function",
-        "tags": [
-          {
-            "title": "description",
-            "description": "preApply Needs more description."
-          }
-        ],
-        "examples": [],
-        "todo": null,
-        "codetitle": "Matrix2D.preApply()"
-      },
-      {
-        "name": "Matrix2D.rotate",
-        "description": "rotate Needs more description.",
-        "returns": null,
-        "category": "Document",
-        "subcategory": "Transformation",
-        "parameters": [
-          {
-            "name": "angle",
-            "description": null,
-            "optional": false,
-            "type": [
-              "Number"
-            ]
-          }
-        ],
-        "kind": "function",
-        "tags": [
-          {
-            "title": "description",
-            "description": "rotate Needs more description."
-          }
-        ],
-        "examples": [],
-        "todo": null,
-        "codetitle": "Matrix2D.rotate(angle)"
-      },
-      {
-        "name": "Matrix2D.rotateZ",
-        "description": "rotateZ Needs more description.",
-        "returns": null,
-        "category": "Document",
-        "subcategory": "Transformation",
-        "parameters": [
-          {
-            "name": "angle",
-            "description": null,
-            "optional": false,
-            "type": [
-              "Number"
-            ]
-          }
-        ],
-        "kind": "function",
-        "tags": [
-          {
-            "title": "description",
-            "description": "rotateZ Needs more description."
-          }
-        ],
-        "examples": [],
-        "todo": null,
-        "codetitle": "Matrix2D.rotateZ(angle)"
-      },
-      {
-        "name": "Matrix2D.invRotateZ",
-        "description": "invRotateZ Needs more description.",
-        "returns": null,
-        "category": "Document",
-        "subcategory": "Transformation",
-        "parameters": [
-          {
-            "name": "angle",
-            "description": null,
-            "optional": false,
-            "type": [
-              "Number"
-            ]
-          }
-        ],
-        "kind": "function",
-        "tags": [
-          {
-            "title": "description",
-            "description": "invRotateZ Needs more description."
-          }
-        ],
-        "examples": [],
-        "todo": null,
-        "codetitle": "Matrix2D.invRotateZ(angle)"
-      },
-      {
-        "name": "Matrix2D.print",
-        "description": "print Needs more description.",
-        "returns": null,
-        "category": "Document",
-        "subcategory": "Transformation",
-        "parameters": [],
-        "kind": "function",
-        "tags": [
-          {
-            "title": "description",
-            "description": "print Needs more description."
-          }
-        ],
-        "examples": [],
-        "todo": null,
-        "codetitle": "Matrix2D.print()"
-      },
-      {
-        "name": "matrix",
-        "description": "Returns the current matrix as a Matrix2D object for altering existing PageItems with transform(). If a Matrix2D object is provided to the function it will overwrite the current matrix.",
-        "returns": {
-          "name": null,
-          "description": "Returns the current matrix.",
-          "type": [
-            "Matrix2D"
-          ]
-        },
-        "category": "Document",
-        "subcategory": "Transformation",
-        "parameters": [
-          {
-            "name": "matrix",
-            "description": "The matrix to be set as new current matrix.",
-            "optional": true,
-            "type": [
-              "Matrix2D"
-            ]
-          }
-        ],
-        "kind": "function",
-        "tags": [
-          {
-            "title": "description",
-            "description": "Returns the current matrix as a Matrix2D object for altering existing PageItems with transform(). If a Matrix2D object is provided to the function it will overwrite the current matrix."
-          }
-        ],
-        "examples": [],
-        "todo": null,
-        "codetitle": "matrix([matrix])"
-      },
-      {
-        "name": "transform",
-        "description": "Transforms the given PageItem with the given Matrix2D object.",
-        "returns": null,
-        "category": "Document",
-        "subcategory": "Transformation",
-        "parameters": [
-          {
-            "name": "obj",
-            "description": "The item to be transformed.",
-            "optional": false,
-            "type": [
-              "PageItem"
-            ]
-          },
-          {
-            "name": "matrix",
-            "description": "The matrix to be applied.",
-            "optional": false,
-            "type": [
-              "Matrix2D"
-            ]
-          }
-        ],
-        "kind": "function",
-        "tags": [
-          {
-            "title": "description",
-            "description": "Transforms the given PageItem with the given Matrix2D object."
-          }
-        ],
-        "examples": [],
-        "todo": null,
-        "codetitle": "transform(obj, matrix)"
+        "codetitle": "transform(pItem, type, [value])"
       },
       {
         "name": "applyMatrix",
