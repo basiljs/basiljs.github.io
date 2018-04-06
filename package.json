@@ -27,7 +27,7 @@
   "homepage": "https://github.com/basiljs/basiljs.github.io#readme",
   "devDependencies": {
     "basiljs": "github:basiljs/basil.js#develop",
-    "cz-conventional-changelog": "^1.2.0",
+    "cz-conventional-changelog": "^2.1.0",
     "documentation": "^6.1.0",
     "fs-extra": "^2.0.0",
     "lodash": "^4.17.4",

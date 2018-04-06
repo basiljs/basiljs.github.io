@@ -33,7 +33,7 @@ To develop in this run:
 
     bundle install
     bundle update
-    bundle exec jekyll serve 
+    bundle exec jekyll serve --livereload
 
 ## License ##
 
