@@ -9,15 +9,9 @@
         include  all default and the reference
         exclude the root path
         -->
-      {% for item in site.pages %}
-        {% if item.layout != 'entry' %}
-          {%if item.layout == 'default' or item.layout == 'reference' %}
-          {% if item.url != '/' %}
-            <li class="menu-item {% if item.title == page.title %}active{% endif %}"><a href="{{item.url}}">{{item.title}}</a></li>
-            {% endif %}
-          {% endif %}
-          {% endif %}
-      {% endfor %}
+      {% for item in site.pages %}{% if item.layout != 'entry' %}{%if item.layout == 'default' or item.layout == 'reference' %}{% if item.url != '/' %}
+        <li class="menu-item {% if item.title == page.title %}active{% endif %}"><a href="{{item.url}}">{{item.title}}</a></li>
+            {% endif %}{% endif %}{% endif %}{% endfor %}
       </ul>
   </nav>
   <div class="tweet">
