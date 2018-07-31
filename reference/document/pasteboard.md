@@ -4,7 +4,7 @@ title: pasteboard
 codetitle: 'pasteboard(h, v)'
 description: 'Returns the current horizontal and vertical pasteboard margins and sets them if both arguements are given.'
 category: Document
-subcategory: Page
+subcategory: Canvas
 returns:
     name: null
     description: 'The current horizontal, vertical pasteboard margins.'

@@ -2,9 +2,9 @@
 layout: entry
 title: textTracking
 codetitle: 'textTracking([tracking])'
-description: 'Returns the current tracking and sets it if argument tracking is given.'
+description: 'Returns the current tracking and sets it if argument `tracking` is given.'
 category: Typography
-subcategory: null
+subcategory: Attributes
 returns:
     name: null
     description: 'The current tracking.'

@@ -2,7 +2,7 @@
 layout: entry
 title: Vector.angleBetween
 codetitle: 'Vector.angleBetween(v1, v2)'
-description: "Static function. Calculates the angle between two vectors.\nIs meant to be called \"static\" i.e. Vector.angleBetween(v1, v2);"
+description: 'Static function. Calculates the angle between two vectors. Is meant to be called "static" i.e. `Vector.angleBetween(v1, v2);`'
 category: Math
 subcategory: Vector
 returns:

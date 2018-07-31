@@ -2,9 +2,9 @@
 layout: entry
 title: saveString
 codetitle: 'saveString(file, string)'
-description: "Writes a string to a file.\nIf the given file exists it gets overridden."
+description: 'Writes a string to a file. If the given file exists it gets overridden.'
 category: Output
-subcategory: null
+subcategory: Files
 returns:
     name: null
     description: 'The file the string was written to.'

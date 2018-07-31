@@ -4,7 +4,7 @@ title: stackArray
 codetitle: stackArray
 description: 'The name of the current script.'
 category: Environment
-subcategory: null
+subcategory: Constants
 returns: null
 parameters: []
 kind: property

@@ -2,9 +2,9 @@
 layout: entry
 title: paragraphStyle
 codetitle: 'paragraphStyle(textOrName, [props])'
-description: "Returns the paragraph style of a given text object or the paragraph style with the given name. If a\nparagraph style of the given name does not exist, it gets created. Optionally a props object of\nproperty name/value pairs can be used to set the paragraph style's properties."
+description: 'Returns the paragraph style of a given text object or the paragraph style with the given name. If a paragraph style of the given name does not exist, it gets created. Optionally a props object of property name/value pairs can be used to set the paragraph style''s properties.'
 category: Typography
-subcategory: null
+subcategory: Styles
 returns:
     name: null
     description: 'The paragraph style instance.'

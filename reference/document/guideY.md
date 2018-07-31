@@ -4,7 +4,7 @@ title: guideY
 codetitle: guideY(y)
 description: 'Creates a horizontal guide line at the current spread and current layer.'
 category: Document
-subcategory: null
+subcategory: Canvas
 returns:
     name: null
     description: 'New guide line.'

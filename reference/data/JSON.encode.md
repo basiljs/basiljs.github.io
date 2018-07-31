@@ -2,7 +2,7 @@
 layout: entry
 title: JSON.encode
 codetitle: JSON.encode(Object)
-description: "Function convert an javascript object to a JSON-string. Usage:\nvar str = JSON.encode(obj);\nvar obj = JSON.decode(str);"
+description: 'Function convert an javascript object to a JSON-string.'
 category: Data
 subcategory: JSON
 returns:
@@ -13,6 +13,7 @@ parameters:
     - {name: Object, description: 'to be converted to a JSON-string', optional: false, type: [Object]}
 kind: function
 todo: null
-examples: []
+examples:
+    - {description: null, code: "var str = JSON.encode(obj);\nvar obj = JSON.decode(str);"}
 
 ---

@@ -2,9 +2,9 @@
 layout: entry
 title: characterStyle
 codetitle: 'characterStyle(textOrName, [props])'
-description: "Returns the character style of a given text object or the character style with the given name. If a\ncharacter style of the given name does not exist, it gets created. Optionally a props object of\nproperty name/value pairs can be used to set the character style's properties."
+description: 'Returns the character style of a given text object or the character style with the given name. If a character style of the given name does not exist, it gets created. Optionally a props object of property name/value pairs can be used to set the character style''s properties.'
 category: Typography
-subcategory: null
+subcategory: Styles
 returns:
     name: null
     description: 'The character style instance.'

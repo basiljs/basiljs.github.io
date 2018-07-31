@@ -2,9 +2,9 @@
 layout: entry
 title: saveStrings
 codetitle: 'saveStrings(file, strings)'
-description: "Writes an array of strings to a file, one line per string.\nIf the given file exists it gets overridden."
+description: 'Writes an array of strings to a file, one line per string. If the given file exists it gets overridden.'
 category: Output
-subcategory: null
+subcategory: Files
 returns:
     name: null
     description: 'The file the strings were written to.'

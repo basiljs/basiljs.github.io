@@ -2,7 +2,7 @@
 layout: entry
 title: doc
 codetitle: 'doc([doc])'
-description: "Sets or possibly creates the current document and returns it.\nIf the param doc is not given the current document gets set to the active document\nin the application. If no document at all is open, a new document gets created."
+description: 'Sets or possibly creates the current document and returns it. If the `doc` parameter is not given, the current document gets set to the active document in the application. If no document at all is open, a new document gets created.'
 category: Document
 subcategory: null
 returns:

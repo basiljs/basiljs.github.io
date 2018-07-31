@@ -4,14 +4,14 @@ title: paragraphs
 codetitle: 'paragraphs(container, [cb])'
 description: 'If no callback function is given it returns a Collection of paragraphs in the container otherwise calls the given callback function with each paragraph of the given document, page, story or textFrame.'
 category: Document
-subcategory: Multi-Getters
+subcategory: Text
 returns:
     name: null
     description: 'A collection of Paragraph objects.'
     type: [Paragraphs]
 parameters:
     - {name: container, description: 'The document, story, page or textFrame instance to iterate the paragraphs in.', optional: false, type: [Document, Page, Story, TextFrame]}
-    - {name: cb, description: 'Optional: The callback function to call with each paragraph. When this function returns false the loop stops. Passed arguments: para, loopCount.', optional: true, type: [Function]}
+    - {name: cb, description: 'Optional: The callback function to call with each paragraph. When this function returns false the loop stops. Passed arguments: `para`, `loopCount`.', optional: true, type: [Function]}
 kind: function
 todo: null
 examples: []

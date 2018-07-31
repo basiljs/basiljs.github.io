@@ -2,7 +2,7 @@
 layout: entry
 title: JSON.decode
 codetitle: JSON.decode(String)
-description: "Function parses and validates a string as JSON-object. Usage:\nvar obj = JSON.decode(str);\nvar str = JSON.encode(obj);"
+description: 'Function parses and validates a string as JSON-object.'
 category: Data
 subcategory: JSON
 returns:
@@ -13,6 +13,7 @@ parameters:
     - {name: String, description: 'to be parsed as JSON-object.', optional: false, type: [String]}
 kind: function
 todo: null
-examples: []
+examples:
+    - {description: null, code: "var obj = JSON.decode(str);\nvar str = JSON.encode(obj);"}
 
 ---

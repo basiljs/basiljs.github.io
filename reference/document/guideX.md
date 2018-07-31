@@ -4,7 +4,7 @@ title: guideX
 codetitle: guideX(x)
 description: 'Creates a vertical guide line at the current spread and current layer.'
 category: Document
-subcategory: null
+subcategory: Canvas
 returns:
     name: null
     description: 'New guide line.'

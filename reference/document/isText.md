@@ -2,7 +2,7 @@
 layout: entry
 title: isText
 codetitle: isText(obj)
-description: "Checks whether a var is an InDesign text object, returns true if this is the case\nNB: a InDesign TextFrame will return false as it is just a container holding text.\nSo you could say that isText() refers to all the things inside a TextFrame."
+description: "Checks whether a var is an InDesign text object, returns `true` if this is the case.\nNB: a InDesign text frame will return `false` as it is just a container holding text. So you could say that `isText()` refers to all the things inside a text frame."
 category: Document
 subcategory: Type-Check
 returns:

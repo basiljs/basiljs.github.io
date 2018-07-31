@@ -2,9 +2,9 @@
 layout: entry
 title: applyParagraphStyle
 codetitle: 'applyParagraphStyle(text, style)'
-description: "Applies a paragraph style to the given text object, text frame or story. The paragraph style\ncan be given as name or as paragraph style instance."
+description: 'Applies a paragraph style to the given text object, text frame or story. The paragraph style can be given as name or as paragraph style instance.'
 category: Typography
-subcategory: null
+subcategory: Styles
 returns:
     name: null
     description: 'The text that the style was applied to.'

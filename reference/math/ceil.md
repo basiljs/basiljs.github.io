@@ -2,7 +2,7 @@
 layout: entry
 title: ceil
 codetitle: ceil(val)
-description: 'Calculates the closest int value that is greater than or equal to the value of the parameter. For example, ceil(9.03) returns the value 10.'
+description: 'Calculates the closest integer value that is greater than or equal to the value of the parameter. For example, `ceil(9.03)` returns the value `10`.'
 category: Math
 subcategory: Calculation
 returns:

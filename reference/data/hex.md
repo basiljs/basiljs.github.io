@@ -11,7 +11,7 @@ returns:
     type: [String]
 parameters:
     - {name: value, description: 'The number to convert', optional: false, type: [Number]}
-    - {name: len, description: 'The length of the hex number to be created, default: 8', optional: true, type: [Number]}
+    - {name: len, description: 'The length of the hex number to be created, default: `8`', optional: true, type: [Number]}
 kind: function
 todo: null
 examples: []

@@ -2,7 +2,7 @@
 layout: entry
 title: join
 codetitle: 'join(array, separator)'
-description: "Combines an array of Strings into one String, each separated by\nthe character(s) used for the separator parameter. To join arrays\nof ints or floats, it's necessary to first convert them to strings\nusing nf() or nfs()."
+description: 'Combines an array of Strings into one String, each separated by the character(s) used for the separator parameter. To join arrays of ints or floats, it''s necessary to first convert them to strings using `nf()` or `nfs()`.'
 category: Data
 subcategory: 'String Functions'
 returns:

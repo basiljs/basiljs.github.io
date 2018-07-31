@@ -2,9 +2,9 @@
 layout: entry
 title: textFont
 codetitle: 'textFont([fontName], [fontStyle])'
-description: 'Returns the current font and sets it if argument fontName is given.'
+description: 'Returns the current font and sets it if argument `fontName` is given.'
 category: Typography
-subcategory: null
+subcategory: Attributes
 returns:
     name: null
     description: 'The current font object'

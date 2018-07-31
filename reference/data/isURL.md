@@ -4,7 +4,7 @@ title: isURL
 codetitle: isURL(url)
 description: 'Checks whether an URL string is valid.'
 category: Data
-subcategory: 'String Functions'
+subcategory: Type-Check
 returns:
     name: null
     description: 'Returns either true or false'

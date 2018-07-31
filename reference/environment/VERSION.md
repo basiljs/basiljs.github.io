@@ -4,7 +4,7 @@ title: VERSION
 codetitle: VERSION
 description: 'The basil version'
 category: Environment
-subcategory: null
+subcategory: Constants
 returns: null
 parameters: []
 kind: property

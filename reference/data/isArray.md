@@ -2,7 +2,7 @@
 layout: entry
 title: isArray
 codetitle: isArray(obj)
-description: 'Checks whether a var is an Array, returns true if this is the case'
+description: 'Checks whether a var is an array, returns `true` if this is the case.'
 category: Data
 subcategory: Type-Check
 returns:

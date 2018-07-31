@@ -2,9 +2,9 @@
 layout: entry
 title: applyCharacterStyle
 codetitle: 'applyCharacterStyle(text, style)'
-description: "Applies a character style to the given text object, text frame or story. The character style\ncan be given as name or as character style instance."
+description: 'Applies a character style to the given text object, text frame or story. The character style can be given as name or as character style instance.'
 category: Typography
-subcategory: null
+subcategory: Styles
 returns:
     name: null
     description: 'The text that the style was applied to.'

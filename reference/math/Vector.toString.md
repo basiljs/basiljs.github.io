@@ -7,7 +7,7 @@ category: Math
 subcategory: Vector
 returns:
     name: null
-    description: 'The x, y and z components as a string.'
+    description: 'The `x`, `y` and `z` components as a string.'
     type: [String]
 parameters: []
 kind: function

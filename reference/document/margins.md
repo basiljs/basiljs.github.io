@@ -4,10 +4,10 @@ title: margins
 codetitle: 'margins([top], [right], [bottom], [left], [pageNumber])'
 description: 'Sets the margins of a given page. If 1 value is given, all 4 sides are set equally. If 4 values are given, the current page will be adjusted. Adding a 5th value will set the margin of a given page. Calling the function without any values, will return the margins for the current page.'
 category: Document
-subcategory: Page
+subcategory: Canvas
 returns:
     name: null
-    description: 'Current page margins with the properties: top, right, bottom, left.'
+    description: 'Current page margins with the properties: `top`, `right`, `bottom`, `left`.'
     type: [Object]
 parameters:
     - {name: top, description: 'Top margin or all if only one.', optional: true, type: [Number]}

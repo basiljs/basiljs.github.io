@@ -2,7 +2,7 @@
 layout: entry
 title: isString
 codetitle: isString(str)
-description: 'Checks whether a var is a string, returns true if this is the case'
+description: 'Checks whether a var is a string, returns `true` if this is the case'
 category: Data
 subcategory: Type-Check
 returns:

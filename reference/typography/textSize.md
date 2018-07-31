@@ -2,9 +2,9 @@
 layout: entry
 title: textSize
 codetitle: 'textSize([pointSize])'
-description: 'Returns the current font size in points and sets it if argument pointSize is given.'
+description: 'Returns the current font size in points and sets it if argument `pointSize` is given.'
 category: Typography
-subcategory: null
+subcategory: Attributes
 returns:
     name: null
     description: 'The current point size.'

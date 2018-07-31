@@ -2,7 +2,7 @@
 layout: entry
 title: gradient
 codetitle: 'gradient(c1, c2, [name])'
-description: "Creates a new gradient and adds it to the document, or gets a gradient by name from the document.\nIf two colors are given as the first two parameters, a gradient is created that blends between these two colors. If an array of colors is used\nas the first parameter, a gradient with the contained colors will be created. The colors will be distributed evenly. If additionally to this array\na second array of gradient stop positions is given, the colors will be positioned at the given gradient stops. Possible gradient stop positions\nrange from 0 to 100. All parameter options allow for an additional name parameter at the end to name the new gradient.\nIf a string is used as the only parameter, the gradient with that name will be returned, if it exists in the document."
+description: "Creates a new gradient and adds it to the document, or gets a gradient by name from the document.\nIf two colors are given as the first two parameters, a gradient is created that blends between these two colors. If an array of colors is used as the first parameter, a gradient with the contained colors will be created. The colors will be distributed evenly. If additionally to this array a second array of gradient stop positions is given, the colors will be positioned at the given gradient stops. Possible gradient stop positions range from 0 to 100. All parameter options allow for an additional name parameter at the end to name the new gradient. If a string is used as the only parameter, the gradient with that name will be returned, if it exists in the document."
 category: Color
 subcategory: null
 returns:

@@ -2,7 +2,7 @@
 layout: entry
 title: round
 codetitle: round(value)
-description: 'Calculates the integer closest to the value parameter. For example, round(9.2) returns the value 9.'
+description: 'Calculates the integer closest to the value parameter. For example, `round(9.2)` returns the value `9`.'
 category: Math
 subcategory: Calculation
 returns:

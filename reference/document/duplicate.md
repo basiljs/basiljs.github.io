@@ -2,9 +2,9 @@
 layout: entry
 title: duplicate
 codetitle: duplicate(item)
-description: 'Duplicates the given page after the current page or the given page item to the current page and layer. Use '
+description: 'Duplicates the given page after the current page or the given page item to the current page and layer. Use `rectMode()` to set center point.'
 category: Document
-subcategory: Transformation
+subcategory: 'Page Items'
 returns:
     name: null
     description: 'The new page item or page.'

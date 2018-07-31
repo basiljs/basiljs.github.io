@@ -4,7 +4,7 @@ title: savePNG
 codetitle: 'savePNG(file, [showOptions])'
 description: 'Exports the current document as PNG (or sequence of PNG files) to the documents folder. Please note, that export options default to the last used export settings.'
 category: Output
-subcategory: null
+subcategory: Files
 returns:
     name: null
     description: 'The exported PNG file.'

@@ -4,7 +4,7 @@ title: selections
 codetitle: 'selections([cb])'
 description: 'Returns the currently selected object(s)'
 category: Document
-subcategory: Multi-Getters
+subcategory: 'Page Items'
 returns:
     name: null
     description: 'Array of selected object(s).'
