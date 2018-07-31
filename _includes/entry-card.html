@@ -2,7 +2,7 @@
 {% assign eid = include.entry.name | downcase %}
 <h4 id="{{eid}}" class="entries-title">{% if include.ispage == false %}<a href="/reference/{{id}}/{{include.entry.name}}.html">{% endif %}{{include.entry.codetitle}}{% if include.ispage == false %}</a>{% endif %}</h4>
 {% if include.entry.description != null %}
-<p class="descriptions">{{include.entry.description}}</p>
+<p class="descriptions">{{include.entry.description | markdownify }}</p>
 {% endif %}
 <!-- we test if the include.entry has a parameters -->
 <div class="type">
@@ -13,7 +13,7 @@
 <p><strong>Parameter(s):</strong></p>
 <ul>
 {% for param in include.entry.parameters %}
-<li><strong>{{param.name}}</strong> {% raw %}{{% endraw %}{% for type in param.type %}{{type}}{% unless forloop.last %} | {% endunless %}{% endfor %}{% raw %}}{% endraw %}{% if param.optional %} <em>Optional:</em>{%else%}:{% endif %}<br>{{param.description}}</li>{% endfor %}
+<li><strong>{{param.name}}</strong> {% raw %}{{% endraw %}{% for type in param.type %}{{type}}{% unless forloop.last %} | {% endunless %}{% endfor %}{% raw %}}{% endraw %}{% if param.optional %} <em>Optional:</em>{%else%}:{% endif %}<br>{{param.description | markdownify }}</li>{% endfor %}
 </ul>
 </div> <!-- end parameters div -->
 {% endif %}
@@ -23,7 +23,7 @@
   <ul>
     <li>
     {% raw %}{{% endraw %}{% for type in include.entry.returns.type %}{{type}}{% unless forloop.last %} | {% endunless %}{% endfor %}{% raw %}}{% endraw %}:<br>
-    {{include.entry.returns.description}}
+    {{include.entry.returns.description | markdownify }}
     </li>
   </ul>
 </div>
