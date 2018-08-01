@@ -2,7 +2,8 @@
 author: admin
 layout: default
 originallink: http://basiljs.ch/support/
-title: Support
+title: support
+order: 5
 ---
 
 ## Check the reference and provided material

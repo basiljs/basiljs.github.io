@@ -2,7 +2,8 @@
 author: admin
 layout: default
 originallink: http://basiljs.ch/about/
-title: About
+title: about
+order: 0
 ---
 
 ![](http://basiljs.ch/wp-content/uploads/2013/01/aboutpage.jpg)

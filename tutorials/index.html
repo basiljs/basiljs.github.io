@@ -2,11 +2,13 @@
 author: admin
 layout: default
 originallink: http://basiljs.ch/tutorials/
-title: Tutorials
+title: tutorials
+order: 4
 ---
 
 <ul>
-{% for page in site.pages %}
+{% assign tutos = site.pages | sort : 'url' %}
+{% for page in tutos %}
 {% if page.layout == 'tutorial' %}
 {% if page.title != 'example tutorial page'%}
   <li><a href="{{page.url}}">{{page.title}}</a></li>
