@@ -12,9 +12,12 @@
       {% for item in site.pages %}{% if item.layout != 'entry' %}{%if item.layout == 'default' or item.layout == 'reference' %}{% if item.url != '/' %}
         <li class="menu-item {% if item.title == page.title %}active{% endif %}"><a href="{{item.url}}">{{item.title}}</a></li>
             {% endif %}{% endif %}{% endif %}{% endfor %}
+      
       </ul>
+      <div class="tweet">
+      </div>
+      <div class="fhnw-logo">
+        <a href="http://www.fhnw.ch/hgk/ivk"><img src="assets/images/fhnwlogo.png" alt="FHNW logo and link"></a>
+      </div>
   </nav>
-  <div class="tweet">
-  </div>
-  <div class="links"></div>
 </aside>
