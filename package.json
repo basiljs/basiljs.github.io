@@ -29,6 +29,8 @@
     "basiljs": "github:basiljs/basil.js#develop",
     "cz-conventional-changelog": "^2.1.0",
     "documentation": "^6.1.0",
+    "eslint": "^5.6.0",
+    "eslint-config-unobtrusive": "^1.2.2",
     "fs-extra": "^2.0.0",
     "lodash": "^4.17.10",
     "path-exists": "^3.0.0",
