@@ -14,23 +14,24 @@ var typoOff = 75;
 var canvas;
 
 function setup() {
-  canvas = createCanvas(180, 130); 
+  canvas = createCanvas(180, 130);
+  canvas.parent('#logo');
   background(255);
   frameRate(15);
   smooth();
-  
+
   for (var n=2; n < numLines; n++) {
     myNoise.push(n);
-    myNoiseLetter.push(n)
-  
+    myNoiseLetter.push(n);
+
     var mapN = floor(map(n, 0, numLines-numLines/3, 0, pX.length));
     mapN = constrain(mapN, 0, pX.length);
     myNoiseLetter[n] = mapN;
- 
-    if(n > numLines-numLines/3){
-    mapN = floor(map(n, numLines-numLines/3, numLines, pX.length-pX.length/3, pX.length/6));
-    mapN = constrain(mapN, 0, pX.length);
-    myNoiseLetter[n] = mapN;  
+
+    if (n > numLines-numLines/3){
+      mapN = floor(map(n, numLines-numLines/3, numLines, pX.length-pX.length/3, pX.length/6));
+      mapN = constrain(mapN, 0, pX.length);
+      myNoiseLetter[n] = mapN;
     }
   }
 }
@@ -50,8 +51,7 @@ function draw() {
 
     if (myNoiseLetter[n] < letterFill) {
       myNoiseLetter[n] = letterFill;
-    }
-    else if (myNoiseLetter[n] > pX.length-letterFill) {
+    } else if (myNoiseLetter[n] > pX.length-letterFill) {
       myNoiseLetter[n] = pX.length-letterFill;
     }
 
@@ -60,8 +60,8 @@ function draw() {
     //var randDrop = random(100);
 
     //if (randDrop>99)continue;
-    if(n > 4 && n < myNoise.length-2){
-        line(pX[myNoiseLetter[n]]-typoOff, pY[myNoiseLetter[n]]-typoOff, myX[myNoise[n]]*leafGrow, myY[myNoise[n]]*leafGrow);
+    if (n > 4 && n < myNoise.length-2){
+      line(pX[myNoiseLetter[n]]-typoOff, pY[myNoiseLetter[n]]-typoOff, myX[myNoise[n]]*leafGrow, myY[myNoise[n]]*leafGrow);
     }
     stroke(0);
     fill(255);
@@ -70,11 +70,10 @@ function draw() {
       beginShape();
       stroke(0);
       for (var j= int(-letterFill/2); j < int(letterFill/2)-1; j++) {
-    
+
         if (abs((pX[myNoiseLetter[n]+j-1]-typoOff)-(pX[myNoiseLetter[n]+j]-typoOff)) < 3 && abs((pY[myNoiseLetter[n]+j-1]-typoOff)-(pY[myNoiseLetter[n]+j]-typoOff)) < 3) {
           vertex(pX[myNoiseLetter[n]+j-1]-typoOff, pY[myNoiseLetter[n]+j-1]-typoOff);
-        }
-        else {
+        } else {
           endShape();
           beginShape();
         }
@@ -85,6 +84,6 @@ function draw() {
     strokeWeight(.75);
 
     //if (randDrop>90)continue;
-      line(myX[myNoise[n]]*leafGrow, myY[myNoise[n]]*leafGrow, myX[myNoise[n+1]]*leafGrow, myY[myNoise[n+1]]*leafGrow);    
-    }
+    line(myX[myNoise[n]]*leafGrow, myY[myNoise[n]]*leafGrow, myX[myNoise[n+1]]*leafGrow, myY[myNoise[n+1]]*leafGrow);
+  }
 }
