@@ -2,6 +2,7 @@
 author: admin
 layout: tutorial
 title: "Transform PageItems"
+description: "Moving things around (i.e. PageItem) that you have created in code or by mouse."
 ---
 
 ```

@@ -2,6 +2,7 @@
 author: admin
 layout: tutorial
 title: "Syntax Check basil.js vs. Processing"
+description: "JavaScript basics and differences between writing in basil.js and Processing."
 ---
 
 ## Similarities between basil.js and Processing

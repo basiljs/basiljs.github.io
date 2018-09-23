@@ -2,6 +2,7 @@
 author: admin
 layout: tutorial
 title: "Export PDF"
+description: "Create hundreds of variation in a single InDesign project."
 ---
 
 ```

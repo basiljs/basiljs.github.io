@@ -2,6 +2,7 @@
 author: admin
 layout: tutorial
 title: "Drawing and Colors"
+description: "Adding new shapes and color swatches."
 ---
 
 ## General information
