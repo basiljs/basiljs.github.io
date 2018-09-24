@@ -2,6 +2,7 @@
 author: admin
 layout: tutorial
 title: "Technical Details About basil.js"
+description: "Where basil.js sits in comparison to Processing."
 ---
 
 ## The tech facts:

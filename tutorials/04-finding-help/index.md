@@ -2,6 +2,7 @@
 author: admin
 layout: tutorial
 title: "Finding Help"
+description: "Standing on the shoulders of giants... as usual."
 ---
 
 ## InDesign scripting inspirations

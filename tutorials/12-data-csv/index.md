@@ -2,6 +2,7 @@
 author: admin
 layout: tutorial
 title: "Data - CSV"
+description: "Reading data from external files in CSV format."
 ---
 
 ## CSV - Data to a circles

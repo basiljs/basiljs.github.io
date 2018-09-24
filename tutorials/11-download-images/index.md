@@ -2,6 +2,7 @@
 author: admin
 layout: tutorial
 title: "Download Images"
+description: "Download images from the web and add them to your document."
 ---
 
 Obviously you have to download a resources first, before you can you can make use of it in an indesign document.

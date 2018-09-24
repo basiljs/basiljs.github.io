@@ -2,6 +2,7 @@
 author: admin
 layout: tutorial
 title: "Adding Images"
+description: "Add pictures to your project."
 ---
 
 When adding images to your document, one of the most important factors is where does the image sit relative to your document. Here are a few techniques for importing and manipulating images.

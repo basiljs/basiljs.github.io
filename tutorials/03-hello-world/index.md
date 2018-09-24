@@ -2,6 +2,7 @@
 author: admin
 layout: tutorial
 title: "Hello World"
+description: "The unavoidable hello world example."
 ---
 
 Open up the Adobe ExtendScript Editor, which is the script editor that comes with the Adobe Creative Suite. We will use this editor for our tutorials, but basically you could use any JavaScript editor.
