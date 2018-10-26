@@ -2,6 +2,7 @@
 author: admin
 layout: tutorial
 title: "Page Management"
+description: "How to add, remove, count and manage the pages of your document."
 ---
 
 ## Adding pages 

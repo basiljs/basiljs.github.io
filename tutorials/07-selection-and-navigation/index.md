@@ -2,6 +2,7 @@
 author: admin
 layout: tutorial
 title: "Selection and Navigation"
+description: "How to stroll around in the InDesign object model."
 ---
 
 ## Get the mouse selection

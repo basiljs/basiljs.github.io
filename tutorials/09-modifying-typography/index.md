@@ -2,6 +2,7 @@
 author: admin
 layout: tutorial
 title: "Modifying Typography"
+description: "Changing InDesign text programatically."
 ---
 
 ## 1. Getting started with type

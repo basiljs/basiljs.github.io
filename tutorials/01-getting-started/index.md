@@ -2,6 +2,7 @@
 author: admin
 layout: tutorial
 title: "Getting Started"
+description: "Installing basil.js."
 ---
 
 ## Installation
