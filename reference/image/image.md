@@ -11,7 +11,7 @@ returns:
     type: [Rectangle, Oval, Polygon]
 parameters:
     - {name: img, description: 'The image file name in the document''s data directory or a File instance.', optional: false, type: [String, File]}
-    - {name: x, description: 'The `x` position on the current page or the item instance to place the image in.', optional: false, type: [Number, Rectangle, Oval, Polygon]}
+    - {name: x, description: 'The `x` position on the current page or the item instance to place the image in.', optional: false, type: [Number, Rectangle, Oval, Polygon, TextFrame]}
     - {name: y, description: 'The `y` position on the current page. Ignored if `x` is not a number.', optional: true, type: [Number]}
     - {name: w, description: 'The width of the rectangle to add the image to. Ignored if `x` is not a number.', optional: true, type: [Number]}
     - {name: h, description: 'The height of the rectangle to add the image to. Ignored if `x` is not a number.', optional: true, type: [Number]}

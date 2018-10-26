@@ -2,7 +2,7 @@
 layout: entry
 title: pageNumber
 codetitle: 'pageNumber([page])'
-description: 'Returns the current page number of either the current page or the given page name or page object. Numbering of pages starts at 1.'
+description: 'Returns the current page number of either the current page or the given page name or page object. Numbering of pages starts at 1. Master pages have no real numbering and will return -1 instead.'
 category: Document
 subcategory: Page
 returns:

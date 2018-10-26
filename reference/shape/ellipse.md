@@ -2,7 +2,7 @@
 layout: entry
 title: ellipse
 codetitle: 'ellipse(x, y, w, h)'
-description: 'Draws an ellipse (oval) in the display window. An ellipse with an equal width and height is a circle. The first two parameters set the location, the third sets the width, and the fourth sets the height.'
+description: 'Draws an ellipse (oval) in the display window. An ellipse with an equal width and height is a circle. The first two parameters set the location, the third sets the width, and the fourth sets the height. If no height is specified, the value of width is used for both the width and height. If a negative height or width is specified, the absolute value is taken. The origin may be changed with the ellipseMode() function.'
 category: Shape
 subcategory: Primitives
 returns:

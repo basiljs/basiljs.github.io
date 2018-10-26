@@ -3119,12 +3119,13 @@
       "entries": [
         {
           "name": "text",
-          "description": "Creates a text frame on the current layer on the current page in the current document. The text frame gets created in the position specified by the `x` and `y` parameters. The default document font will be used unless a font is set with the `textFont()` function. The default document font size will be used unless a font size is set with the `textSize()` function. Change the color of the text with the `fill()` function. The text displays in relation to the `textAlign()` and `textYAlign()` functions. The `width` and `height` parameters define a rectangular area.",
+          "description": "Creates a text frame on the current layer on the current page in the current document. The text frame gets created in the position specified by the `x` and `y` parameters. The default document font will be used unless a font is set with the `textFont()` function. The default document font size will be used unless a font size is set with the `textSize()` function. Change the color of the text with the `fill()` function. The text displays in relation to the `textAlign()` and `textYAlign()` functions. The `w` and `h` parameters define a rectangular area. If a rectangle, an oval, a polygon or a graphic line are used instead of an x position, the given text will be placed in/on this shape.",
           "returns": {
             "name": null,
-            "description": "The created text frame instance",
+            "description": "The created text frame instance or the text path",
             "type": [
-              "TextFrame"
+              "TextFrame",
+              "TextPath"
             ]
           },
           "category": "Typography",
@@ -3140,10 +3141,15 @@
             },
             {
               "name": "x",
-              "description": "x-coordinate of text frame",
+              "description": "x-coordinate of text frame or item to place the text in or graphic line to place the text onto as a text path.",
               "optional": false,
               "type": [
-                "Number"
+                "Number",
+                "Rectangle",
+                "Oval",
+                "Polygon",
+                "GraphicLine",
+                "TextFrame"
               ]
             },
             {
@@ -3175,10 +3181,23 @@
           "tags": [
             {
               "title": "description",
-              "description": "Creates a text frame on the current layer on the current page in the current document. The text frame gets created in the position specified by the `x` and `y` parameters. The default document font will be used unless a font is set with the `textFont()` function. The default document font size will be used unless a font size is set with the `textSize()` function. Change the color of the text with the `fill()` function. The text displays in relation to the `textAlign()` and `textYAlign()` functions. The `width` and `height` parameters define a rectangular area."
+              "description": "Creates a text frame on the current layer on the current page in the current document. The text frame gets created in the position specified by the `x` and `y` parameters. The default document font will be used unless a font is set with the `textFont()` function. The default document font size will be used unless a font size is set with the `textSize()` function. Change the color of the text with the `fill()` function. The text displays in relation to the `textAlign()` and `textYAlign()` functions. The `w` and `h` parameters define a rectangular area. If a rectangle, an oval, a polygon or a graphic line are used instead of an x position, the given text will be placed in/on this shape."
             }
           ],
-          "examples": [],
+          "examples": [
+            {
+              "description": "Create a text frame with a Lorem ipsum text.",
+              "code": "text(LOREM, 50, 50, 100, 200);"
+            },
+            {
+              "description": "Place a Lorem ipsum text inside an oval shape.",
+              "code": "var ell = ellipse(50, 50, 100, 100);\ntext(LOREM, ell);"
+            },
+            {
+              "description": "Place a Lorem ipsum text as a text path onto a line.",
+              "code": "var l = line(50, 50, 200, 80);\ntext(LOREM, l);"
+            }
+          ],
           "todo": null,
           "codetitle": "text(txt, x, y, w, h)"
         }
@@ -4122,8 +4141,14 @@
       "entries": [
         {
           "name": "forEach",
-          "description": "Used to run a function on all elements of an array. Please note the existence of the convenience methods `stories()`, `paragraphs()`, `lines()`, `words()` and `characters()` that are used to iterate through all instances of the given type in the given document.",
-          "returns": null,
+          "description": "Used to run a function on all elements of an array. `forEach()` calls this callback function on each element of the given array. When the callback function returns false, the loop stops and an array of all elements up to this point is returned.\nPlease note the existence of the convenience methods `stories()`, `paragraphs()`, `lines()`, `words()` and `characters()` that are used to iterate through all instances of the given type in the given document.",
+          "returns": {
+            "name": null,
+            "description": "An array of the input array elements.",
+            "type": [
+              "Array"
+            ]
+          },
           "category": "Data",
           "subcategory": "Collections",
           "parameters": [
@@ -4137,7 +4162,7 @@
             },
             {
               "name": "cb",
-              "description": "The function that will be called on each element. The call will be like function(item,i) where i is the current index of the item within the array.",
+              "description": "The function that will be called on each element. The call will be like `function(item, i)` where `i` is the current index of the item within the array.",
               "optional": false,
               "type": [
                 "Function"
@@ -4148,7 +4173,7 @@
           "tags": [
             {
               "title": "description",
-              "description": "Used to run a function on all elements of an array. Please note the existence of the convenience methods `stories()`, `paragraphs()`, `lines()`, `words()` and `characters()` that are used to iterate through all instances of the given type in the given document."
+              "description": "Used to run a function on all elements of an array. `forEach()` calls this callback function on each element of the given array. When the callback function returns false, the loop stops and an array of all elements up to this point is returned.\nPlease note the existence of the convenience methods `stories()`, `paragraphs()`, `lines()`, `words()` and `characters()` that are used to iterate through all instances of the given type in the given document."
             }
           ],
           "examples": [],
@@ -6185,8 +6210,63 @@
           "codetitle": "applyMasterPage(page, master)"
         },
         {
+          "name": "masterPage",
+          "description": "Sets a master page to be the active page. This can be used to set up and arrange page items on master pages, so they appear throughout the entire document.\n\nThe `master` parameter describes the master spread that contains the master page. It can be given as a master spread object or as a string. If a string is used, it can either hold the master page prefix (e.g \"A\", \"B\") or the full name *including* the prefix (e.g \"A-Master\", \"B-Master\"). The latter is useful, if there are several masters using the same prefix.\n\nAs master pages cannot directly be targeted by number, the optional `pageIndex` parameter can be used to specify which master page of the given master spread should be set as the active page, in case there are several pages on the master spread. Counting starts from 0, beginning from the leftmost page. If the `pageIndex` parameter is not given, the first page of the master spread is returned.",
+          "returns": {
+            "name": null,
+            "description": "The active master page.",
+            "type": [
+              "Page"
+            ]
+          },
+          "category": "Document",
+          "subcategory": "Page",
+          "parameters": [
+            {
+              "name": "master",
+              "description": "The master spread that contains the master page.",
+              "optional": false,
+              "type": [
+                "String",
+                "MasterSpread"
+              ]
+            },
+            {
+              "name": "pageIndex",
+              "description": "The index of the page on the master spread, counting from 0.",
+              "optional": true,
+              "type": [
+                "Number"
+              ]
+            }
+          ],
+          "kind": "function",
+          "tags": [
+            {
+              "title": "description",
+              "description": "Sets a master page to be the active page. This can be used to set up and arrange page items on master pages, so they appear throughout the entire document.\n\nThe `master` parameter describes the master spread that contains the master page. It can be given as a master spread object or as a string. If a string is used, it can either hold the master page prefix (e.g \"A\", \"B\") or the full name *including* the prefix (e.g \"A-Master\", \"B-Master\"). The latter is useful, if there are several masters using the same prefix.\n\nAs master pages cannot directly be targeted by number, the optional `pageIndex` parameter can be used to specify which master page of the given master spread should be set as the active page, in case there are several pages on the master spread. Counting starts from 0, beginning from the leftmost page. If the `pageIndex` parameter is not given, the first page of the master spread is returned."
+            }
+          ],
+          "examples": [
+            {
+              "description": "Set master page to be the first page of master \"A\".",
+              "code": "masterPage(\"A\");"
+            },
+            {
+              "description": "Set master page to be the second page of master \"B\".",
+              "code": "masterPage(\"B\", 1);"
+            },
+            {
+              "description": "Alternate way to set master page ot the second page of master \"B\".",
+              "code": "masterPage(\"B\");\nnextPage();"
+            }
+          ],
+          "todo": null,
+          "codetitle": "masterPage(master, [pageIndex])"
+        },
+        {
           "name": "nextPage",
-          "description": "Set the next page of the document to be the active one. Returns new active page. If the current page is the last page, the last page will be returned.",
+          "description": "Set the next page of the document to be the active one and returns the new active page. If the current page is the last page or the last master page, this page will be returned.",
           "returns": {
             "name": null,
             "description": "The active page.",
@@ -6201,7 +6281,7 @@
           "tags": [
             {
               "title": "description",
-              "description": "Set the next page of the document to be the active one. Returns new active page. If the current page is the last page, the last page will be returned."
+              "description": "Set the next page of the document to be the active one and returns the new active page. If the current page is the last page or the last master page, this page will be returned."
             }
           ],
           "examples": [],
@@ -6289,7 +6369,7 @@
         },
         {
           "name": "pageNumber",
-          "description": "Returns the current page number of either the current page or the given page name or page object. Numbering of pages starts at 1.",
+          "description": "Returns the current page number of either the current page or the given page name or page object. Numbering of pages starts at 1. Master pages have no real numbering and will return -1 instead.",
           "returns": {
             "name": null,
             "description": "The page number within the document.",
@@ -6313,7 +6393,7 @@
           "tags": [
             {
               "title": "description",
-              "description": "Returns the current page number of either the current page or the given page name or page object. Numbering of pages starts at 1."
+              "description": "Returns the current page number of either the current page or the given page name or page object. Numbering of pages starts at 1. Master pages have no real numbering and will return -1 instead."
             }
           ],
           "examples": [],
@@ -6322,7 +6402,7 @@
         },
         {
           "name": "previousPage",
-          "description": "Set the previous page of the document to be the active one. Returns new active page. If the current page is the first page, the first page will be returned.",
+          "description": "Set the previous page of the document to be the active one and returns the new active page. If the current page is the first page or the first master page, this page will be returned.",
           "returns": {
             "name": null,
             "description": "The active page.",
@@ -6337,7 +6417,7 @@
           "tags": [
             {
               "title": "description",
-              "description": "Set the previous page of the document to be the active one. Returns new active page. If the current page is the first page, the first page will be returned."
+              "description": "Set the previous page of the document to be the active one and returns the new active page. If the current page is the first page or the first master page, this page will be returned."
             }
           ],
           "examples": [],
@@ -6539,13 +6619,13 @@
           "codetitle": "duplicate(item)"
         },
         {
-          "name": "items",
-          "description": "If no callback function is given it returns a Collection of items otherwise calls the given callback function for each of the PageItems in the given Document, Page, Layer or Group.",
+          "name": "graphics",
+          "description": "Returns a collection of all graphics in the given container. The container object can be a Document, Page, Layer, Group, Story, Page Item or Text Object. This function can be used to get the graphic within a graphic frame and move it independently of its parent frame.\nIf a callback function is given, `graphics()` calls this callback function on each graphic of the given container. When the callback function returns false, the loop stops and the `graphics()` function returns an array of all graphics up to this point.",
           "returns": {
             "name": null,
-            "description": "A collection of PageItem objects.",
+            "description": "An array of Graphics.",
             "type": [
-              "PageItems"
+              "Array"
             ]
           },
           "category": "Document",
@@ -6553,21 +6633,24 @@
           "parameters": [
             {
               "name": "container",
-              "description": "The container where the PageItems sit in",
+              "description": "The document, page, layer, group, story, page item or text object to iterate the graphics in.",
               "optional": false,
               "type": [
                 "Document",
                 "Page",
                 "Layer",
-                "Group"
+                "Group",
+                "Story",
+                "PageItem",
+                "TextObject"
               ]
             },
             {
               "name": "cb",
-              "description": "Optional: The callback function to call for each PageItem. When this function returns false the loop stops. Passed arguments: `item`, `loopCount`.",
+              "description": "The callback function to call with each graphic. When this function returns false the loop stops. Passed arguments: `graphic`, `loopCount`.",
               "optional": true,
               "type": [
-                null
+                "Function"
               ]
             }
           ],
@@ -6575,7 +6658,55 @@
           "tags": [
             {
               "title": "description",
-              "description": "If no callback function is given it returns a Collection of items otherwise calls the given callback function for each of the PageItems in the given Document, Page, Layer or Group."
+              "description": "Returns a collection of all graphics in the given container. The container object can be a Document, Page, Layer, Group, Story, Page Item or Text Object. This function can be used to get the graphic within a graphic frame and move it independently of its parent frame.\nIf a callback function is given, `graphics()` calls this callback function on each graphic of the given container. When the callback function returns false, the loop stops and the `graphics()` function returns an array of all graphics up to this point."
+            }
+          ],
+          "examples": [],
+          "todo": null,
+          "codetitle": "graphics(container, [cb])"
+        },
+        {
+          "name": "items",
+          "description": "Returns a collection of all page items in the given container. The container object can be a Document, Page, Layer, Group, Story, Page Item or Text Object.\nIf a callback function is given, `items()` calls this callback function on each page item of the given container. When the callback function returns false, the loop stops and the `items()` function returns an array of all page items up to this point.",
+          "returns": {
+            "name": null,
+            "description": "A collection or an array of page items.",
+            "type": [
+              "PageItems",
+              "Array"
+            ]
+          },
+          "category": "Document",
+          "subcategory": "Page Items",
+          "parameters": [
+            {
+              "name": "container",
+              "description": "The document, page, layer, group, story, page item or text object instance to iterate the page items in.",
+              "optional": false,
+              "type": [
+                "Document",
+                "Page",
+                "Layer",
+                "Group",
+                "Story",
+                "PageItem",
+                "TextObject"
+              ]
+            },
+            {
+              "name": "cb",
+              "description": "Optional: The callback function to call with each page item. When this function returns false the loop stops. Passed arguments: `item`, `loopCount`",
+              "optional": true,
+              "type": [
+                "Function"
+              ]
+            }
+          ],
+          "kind": "function",
+          "tags": [
+            {
+              "title": "description",
+              "description": "Returns a collection of all page items in the given container. The container object can be a Document, Page, Layer, Group, Story, Page Item or Text Object.\nIf a callback function is given, `items()` calls this callback function on each page item of the given container. When the callback function returns false, the loop stops and the `items()` function returns an array of all page items up to this point."
             }
           ],
           "examples": [],
@@ -6832,12 +6963,13 @@
         },
         {
           "name": "characters",
-          "description": "If no callback function is given it returns a Collection of characters in the container otherwise calls the given callback function with each character of the given document, page, story, textFrame, paragraph, line or word.",
+          "description": "Returns a collection of all character objects in the given container. The container object can be a Document, Page, Layer, Group, Story, Text Frame, Paragraph, Line or Word.\nIf a callback function is given, `characters()` calls this callback function on each character object of the given container. When the callback function returns false, the loop stops and the `characters()` function returns an array of all characters up to this point.",
           "returns": {
             "name": null,
-            "description": "A collection of Character objects.",
+            "description": "A collection or an array of Character objects.",
             "type": [
-              "Characters"
+              "Characters",
+              "Array"
             ]
           },
           "category": "Document",
@@ -6845,11 +6977,13 @@
           "parameters": [
             {
               "name": "container",
-              "description": "The document, page, story, textFrame, paragraph, line or word instance to  iterate the characters in.",
+              "description": "The document, page, layer, group, story, textFrame, paragraph, line or word instance to  iterate the characters in.",
               "optional": false,
               "type": [
                 "Document",
                 "Page",
+                "Layer",
+                "Group",
                 "Story",
                 "TextFrame",
                 "Paragraph",
@@ -6870,7 +7004,7 @@
           "tags": [
             {
               "title": "description",
-              "description": "If no callback function is given it returns a Collection of characters in the container otherwise calls the given callback function with each character of the given document, page, story, textFrame, paragraph, line or word."
+              "description": "Returns a collection of all character objects in the given container. The container object can be a Document, Page, Layer, Group, Story, Text Frame, Paragraph, Line or Word.\nIf a callback function is given, `characters()` calls this callback function on each character object of the given container. When the callback function returns false, the loop stops and the `characters()` function returns an array of all characters up to this point."
             }
           ],
           "examples": [],
@@ -6879,12 +7013,13 @@
         },
         {
           "name": "lines",
-          "description": "If no callback function is given it returns a Collection of lines in the container otherwise calls the given callback function with each line of the given document, page, story, textFrame or paragraph.",
+          "description": "Returns a collection of all line objects in the given container. The container object can be a Document, Page, Layer, Group, Story, Text Frame or Paragraph. Please note that `lines()` refers to lines of text in a text frame. If you need to construct a geometric line on a page, use `line()` instead.\nIf a callback function is given, `lines()` calls this callback function on each line object of the given container. When the callback function returns false, the loop stops and the `lines()` function returns an array of all lines up to this point.",
           "returns": {
             "name": null,
-            "description": "A collection of Line objects.",
+            "description": "A collection or an array of Line objects.",
             "type": [
-              "Lines"
+              "Lines",
+              "Array"
             ]
           },
           "category": "Document",
@@ -6892,19 +7027,22 @@
           "parameters": [
             {
               "name": "container",
-              "description": "The document, page, story, textFrame or paragraph instance to iterate the lines in.",
+              "description": "The document, page, layer, group, story, textFrame or paragraph instance to  iterate the lines in.",
               "optional": false,
               "type": [
                 "Document",
                 "Page",
+                "Layer",
+                "Group",
                 "Story",
                 "TextFrame",
-                "Paragraph"
+                "Paragraph",
+                "Line"
               ]
             },
             {
               "name": "cb",
-              "description": "Optional: The callback function to call with each line. When this function returns false the loop stops. Passed arguments: `line`, `loopCount`.",
+              "description": "Optional: The callback function to call with each line. When this function returns false the loop stops. Passed arguments: `line`, `loopCount`",
               "optional": true,
               "type": [
                 "Function"
@@ -6915,7 +7053,7 @@
           "tags": [
             {
               "title": "description",
-              "description": "If no callback function is given it returns a Collection of lines in the container otherwise calls the given callback function with each line of the given document, page, story, textFrame or paragraph."
+              "description": "Returns a collection of all line objects in the given container. The container object can be a Document, Page, Layer, Group, Story, Text Frame or Paragraph. Please note that `lines()` refers to lines of text in a text frame. If you need to construct a geometric line on a page, use `line()` instead.\nIf a callback function is given, `lines()` calls this callback function on each line object of the given container. When the callback function returns false, the loop stops and the `lines()` function returns an array of all lines up to this point."
             }
           ],
           "examples": [],
@@ -6959,12 +7097,13 @@
         },
         {
           "name": "paragraphs",
-          "description": "If no callback function is given it returns a Collection of paragraphs in the container otherwise calls the given callback function with each paragraph of the given document, page, story or textFrame.",
+          "description": "Returns a collection of all paragraph objects in the given container. The container object can be a Document, Page, Layer, Group, Story or Text Frame.\nIf a callback function is given, `paragraphs()` calls this callback function on each paragraph object of the given container. When the callback function returns false, the loop stops and the `paragraphs()` function returns an array of all paragraphs up to this point.",
           "returns": {
             "name": null,
-            "description": "A collection of Paragraph objects.",
+            "description": "A collection or an array of Paragraph objects.",
             "type": [
-              "Paragraphs"
+              "Paragraphs",
+              "Array"
             ]
           },
           "category": "Document",
@@ -6972,18 +7111,20 @@
           "parameters": [
             {
               "name": "container",
-              "description": "The document, story, page or textFrame instance to iterate the paragraphs in.",
+              "description": "The document, page, layer, group, story or textFrame instance to  iterate the paragraphs in.",
               "optional": false,
               "type": [
                 "Document",
                 "Page",
+                "Layer",
+                "Group",
                 "Story",
                 "TextFrame"
               ]
             },
             {
               "name": "cb",
-              "description": "Optional: The callback function to call with each paragraph. When this function returns false the loop stops. Passed arguments: `para`, `loopCount`.",
+              "description": "Optional: The callback function to call with each paragraph. When this function returns false the loop stops. Passed arguments: `paragraph`, `loopCount`",
               "optional": true,
               "type": [
                 "Function"
@@ -6994,7 +7135,7 @@
           "tags": [
             {
               "title": "description",
-              "description": "If no callback function is given it returns a Collection of paragraphs in the container otherwise calls the given callback function with each paragraph of the given document, page, story or textFrame."
+              "description": "Returns a collection of all paragraph objects in the given container. The container object can be a Document, Page, Layer, Group, Story or Text Frame.\nIf a callback function is given, `paragraphs()` calls this callback function on each paragraph object of the given container. When the callback function returns false, the loop stops and the `paragraphs()` function returns an array of all paragraphs up to this point."
             }
           ],
           "examples": [],
@@ -7036,20 +7177,21 @@
         },
         {
           "name": "stories",
-          "description": "If no callback function is given it returns a Collection of items otherwise calls the given callback function with each story of the given document.",
+          "description": "Returns a collection of all story objects in the given document or returns the parent story of a certain element. These elements can be text frames or text objects.\nIf a callback function is given, `stories()` calls this callback function on each story object of the given document or on the parent story of the given element. When the callback function returns false, the loop stops and the `stories()` function returns an array of all stories up to this point.",
           "returns": {
             "name": null,
-            "description": "A collection of Story objects.",
+            "description": "A collection or an array of Story objects.",
             "type": [
-              "Stories"
+              "Stories",
+              "Array"
             ]
           },
           "category": "Document",
           "subcategory": "Text",
           "parameters": [
             {
-              "name": "doc",
-              "description": "The document instance to iterate the stories in",
+              "name": "container",
+              "description": "The document instance to iterate the stories in or the element whose parent story to get.",
               "optional": false,
               "type": [
                 "Document"
@@ -7057,7 +7199,7 @@
             },
             {
               "name": "cb",
-              "description": "The callback function to call with each story. When this function returns `false` the loop stops. Passed arguments: `story`, `loopCount`.",
+              "description": "Optional: The callback function to call with each story. When this function returns false the loop stops. Passed arguments: `story`, `loopCount`",
               "optional": true,
               "type": [
                 "Function"
@@ -7068,26 +7210,27 @@
           "tags": [
             {
               "title": "description",
-              "description": "If no callback function is given it returns a Collection of items otherwise calls the given callback function with each story of the given document."
+              "description": "Returns a collection of all story objects in the given document or returns the parent story of a certain element. These elements can be text frames or text objects.\nIf a callback function is given, `stories()` calls this callback function on each story object of the given document or on the parent story of the given element. When the callback function returns false, the loop stops and the `stories()` function returns an array of all stories up to this point."
             }
           ],
           "examples": [
             {
               "description": null,
-              "code": "stories(doc(), function(story, loopCount){\n  println(\"Number of words in each Story:\");\n  println(story.words.length);\n});"
+              "code": "stories(container(), function(story, loopCount){\n  println(\"Number of words in each Story:\");\n  println(story.words.length);\n});"
             }
           ],
           "todo": null,
-          "codetitle": "stories(doc, [cb])"
+          "codetitle": "stories(container, [cb])"
         },
         {
-          "name": "words",
-          "description": "If no callback function is given it returns a Collection of words in the container otherwise calls the given callback function with each word of the given document, page, story, textFrame, paragraph or line.",
+          "name": "textStyleRanges",
+          "description": "Returns a collection of all text style range objects in the given container. A text style range is a continuous range of identically formatted text (i.e., three consecutive red words in an otherwise black text of the same style would form a text style range). The container object can be a Document, Page, Layer, Group, Story, Text Frame, Paragraph, Line or Word.\nIf a callback function is given, `textStyleRanges()` calls this callback function on each text style range object of the given container. When the callback function returns false, the loop stops and the `textStyleRanges()` function returns an array of all text style ranges up to this point.",
           "returns": {
             "name": null,
-            "description": "A collection of Word objects.",
+            "description": "A collection or an array of TextStyleRange objects.",
             "type": [
-              "Words"
+              "TextStyleRanges",
+              "Array"
             ]
           },
           "category": "Document",
@@ -7095,11 +7238,63 @@
           "parameters": [
             {
               "name": "container",
-              "description": "The document, page, story, textFrame, paragraph or line instance to iterate the words in.",
+              "description": "The document, page, layer, group, story, textFrame, paragraph, line or word instance to iterate the text style ranges in.",
               "optional": false,
               "type": [
                 "Document",
                 "Page",
+                "Layer",
+                "Group",
+                "Story",
+                "TextFrame",
+                "Paragraph",
+                "Line",
+                "Word"
+              ]
+            },
+            {
+              "name": "cb",
+              "description": "Optional: The callback function to call with each text style range. When this function returns false the loop stops. Passed arguments: `textStyleRange`, `loopCount`",
+              "optional": true,
+              "type": [
+                "Function"
+              ]
+            }
+          ],
+          "kind": "function",
+          "tags": [
+            {
+              "title": "description",
+              "description": "Returns a collection of all text style range objects in the given container. A text style range is a continuous range of identically formatted text (i.e., three consecutive red words in an otherwise black text of the same style would form a text style range). The container object can be a Document, Page, Layer, Group, Story, Text Frame, Paragraph, Line or Word.\nIf a callback function is given, `textStyleRanges()` calls this callback function on each text style range object of the given container. When the callback function returns false, the loop stops and the `textStyleRanges()` function returns an array of all text style ranges up to this point."
+            }
+          ],
+          "examples": [],
+          "todo": null,
+          "codetitle": "textStyleRanges(container, [cb])"
+        },
+        {
+          "name": "words",
+          "description": "Returns a collection of all word objects in the given container. The container object can be a Document, Page, Layer, Group, Story, Text Frame, Paragraph or Line.\nIf a callback function is given, `words()` calls this callback function on each word object of the given container. When the callback function returns false, the loop stops and the `words()` function returns an array of all words up to this point.",
+          "returns": {
+            "name": null,
+            "description": "A collection or an array of Word objects.",
+            "type": [
+              "Words",
+              "Array"
+            ]
+          },
+          "category": "Document",
+          "subcategory": "Text",
+          "parameters": [
+            {
+              "name": "container",
+              "description": "The document, page, layer, group, story, textFrame, paragraph or line instance to iterate the words in.",
+              "optional": false,
+              "type": [
+                "Document",
+                "Page",
+                "Layer",
+                "Group",
                 "Story",
                 "TextFrame",
                 "Paragraph",
@@ -7108,7 +7303,7 @@
             },
             {
               "name": "cb",
-              "description": "The callback function to call with each word. When this function returns false the loop stops. Passed arguments: `word`, `loopCount`.",
+              "description": "Optional: The callback function to call with each word. When this function returns false the loop stops. Passed arguments: `word`, `loopCount`",
               "optional": true,
               "type": [
                 "Function"
@@ -7119,7 +7314,7 @@
           "tags": [
             {
               "title": "description",
-              "description": "If no callback function is given it returns a Collection of words in the container otherwise calls the given callback function with each word of the given document, page, story, textFrame, paragraph or line."
+              "description": "Returns a collection of all word objects in the given container. The container object can be a Document, Page, Layer, Group, Story, Text Frame, Paragraph or Line.\nIf a callback function is given, `words()` calls this callback function on each word object of the given container. When the callback function returns false, the loop stops and the `words()` function returns an array of all words up to this point."
             }
           ],
           "examples": [],
@@ -7211,7 +7406,8 @@
                 "Number",
                 "Rectangle",
                 "Oval",
-                "Polygon"
+                "Polygon",
+                "TextFrame"
               ]
             },
             {
@@ -8444,7 +8640,7 @@
         },
         {
           "name": "ellipse",
-          "description": "Draws an ellipse (oval) in the display window. An ellipse with an equal width and height is a circle. The first two parameters set the location, the third sets the width, and the fourth sets the height.",
+          "description": "Draws an ellipse (oval) in the display window. An ellipse with an equal width and height is a circle. The first two parameters set the location, the third sets the width, and the fourth sets the height. If no height is specified, the value of width is used for both the width and height. If a negative height or width is specified, the absolute value is taken. The origin may be changed with the ellipseMode() function.",
           "returns": {
             "name": null,
             "description": "New Oval (in InDesign Scripting terms the corresponding type is Oval, not Ellipse).",
@@ -8492,7 +8688,7 @@
           "tags": [
             {
               "title": "description",
-              "description": "Draws an ellipse (oval) in the display window. An ellipse with an equal width and height is a circle. The first two parameters set the location, the third sets the width, and the fourth sets the height."
+              "description": "Draws an ellipse (oval) in the display window. An ellipse with an equal width and height is a circle. The first two parameters set the location, the third sets the width, and the fourth sets the height. If no height is specified, the value of width is used for both the width and height. If a negative height or width is specified, the absolute value is taken. The origin may be changed with the ellipseMode() function."
             }
           ],
           "examples": [],
@@ -8560,6 +8756,136 @@
           ],
           "todo": null,
           "codetitle": "line(x1, y1, x2, y2)"
+        },
+        {
+          "name": "point",
+          "description": "Draws a point, a coordinate in space at the dimension of the current stroke weight. The first parameter is the horizontal value for the point, the second value is the vertical value for the point. The color of the point is determined by the current stroke.",
+          "returns": {
+            "name": null,
+            "description": "The point as an Oval object.",
+            "type": [
+              "Oval"
+            ]
+          },
+          "category": "Shape",
+          "subcategory": "Primitives",
+          "parameters": [
+            {
+              "name": "x",
+              "description": "X-coordinate of the point.",
+              "optional": false,
+              "type": [
+                "Number"
+              ]
+            },
+            {
+              "name": "y",
+              "description": "Y-coordinate of the point.",
+              "optional": false,
+              "type": [
+                "Number"
+              ]
+            }
+          ],
+          "kind": "function",
+          "tags": [
+            {
+              "title": "description",
+              "description": "Draws a point, a coordinate in space at the dimension of the current stroke weight. The first parameter is the horizontal value for the point, the second value is the vertical value for the point. The color of the point is determined by the current stroke."
+            }
+          ],
+          "examples": [],
+          "todo": null,
+          "codetitle": "point(x, y)"
+        },
+        {
+          "name": "quad",
+          "description": "Draws a quad to the page. A quad is a quadrilateral, a four sided polygon. It is similar to a rectangle, but the angles between its edges are not constrained to ninety degrees. The first pair of parameters (`x1`, `y1`) sets the first vertex, the subsequent pairs proceed around the defined shape.",
+          "returns": {
+            "name": null,
+            "description": "The new quad as a Polygon object.",
+            "type": [
+              "Polygon"
+            ]
+          },
+          "category": "Shape",
+          "subcategory": "Primitives",
+          "parameters": [
+            {
+              "name": "x1",
+              "description": "X-coordinate of Point 1.",
+              "optional": false,
+              "type": [
+                "Number"
+              ]
+            },
+            {
+              "name": "y1",
+              "description": "Y-coordinate of Point 1.",
+              "optional": false,
+              "type": [
+                "Number"
+              ]
+            },
+            {
+              "name": "x2",
+              "description": "X-coordinate of Point 2.",
+              "optional": false,
+              "type": [
+                "Number"
+              ]
+            },
+            {
+              "name": "y2",
+              "description": "Y-coordinate of Point 2.",
+              "optional": false,
+              "type": [
+                "Number"
+              ]
+            },
+            {
+              "name": "x3",
+              "description": "X-coordinate of Point 3.",
+              "optional": false,
+              "type": [
+                "Number"
+              ]
+            },
+            {
+              "name": "y3",
+              "description": "Y-coordinate of Point 3.",
+              "optional": false,
+              "type": [
+                "Number"
+              ]
+            },
+            {
+              "name": "x3",
+              "description": "X-coordinate of Point 4.",
+              "optional": false,
+              "type": [
+                "Number"
+              ]
+            },
+            {
+              "name": "y3",
+              "description": "Y-coordinate of Point 4.",
+              "optional": false,
+              "type": [
+                "Number"
+              ]
+            }
+          ],
+          "kind": "function",
+          "tags": [
+            {
+              "title": "description",
+              "description": "Draws a quad to the page. A quad is a quadrilateral, a four sided polygon. It is similar to a rectangle, but the angles between its edges are not constrained to ninety degrees. The first pair of parameters (`x1`, `y1`) sets the first vertex, the subsequent pairs proceed around the defined shape."
+            }
+          ],
+          "examples": [],
+          "todo": null,
+          "codetitle": "quad(x1, y1, x2, y2, x3, y3, x3, y3)"
         },
         {
           "name": "rect",
@@ -8649,6 +8975,79 @@
           "examples": [],
           "todo": null,
           "codetitle": "rect(x, y, w, h, [tl], [tr], [br], [bl])"
+        },
+        {
+          "name": "triangle",
+          "description": "Draws a triangle to the page. The first two arguments specify the first point, the middle two arguments specify the second point, and the last two arguments specify the third point.",
+          "returns": {
+            "name": null,
+            "description": "The new triangle as a Polygon object.",
+            "type": [
+              "Polygon"
+            ]
+          },
+          "category": "Shape",
+          "subcategory": "Primitives",
+          "parameters": [
+            {
+              "name": "x1",
+              "description": "X-coordinate of Point 1.",
+              "optional": false,
+              "type": [
+                "Number"
+              ]
+            },
+            {
+              "name": "y1",
+              "description": "Y-coordinate of Point 1.",
+              "optional": false,
+              "type": [
+                "Number"
+              ]
+            },
+            {
+              "name": "x2",
+              "description": "X-coordinate of Point 2.",
+              "optional": false,
+              "type": [
+                "Number"
+              ]
+            },
+            {
+              "name": "y2",
+              "description": "Y-coordinate of Point 2.",
+              "optional": false,
+              "type": [
+                "Number"
+              ]
+            },
+            {
+              "name": "x3",
+              "description": "X-coordinate of Point 3.",
+              "optional": false,
+              "type": [
+                "Number"
+              ]
+            },
+            {
+              "name": "y3",
+              "description": "Y-coordinate of Point 3.",
+              "optional": false,
+              "type": [
+                "Number"
+              ]
+            }
+          ],
+          "kind": "function",
+          "tags": [
+            {
+              "title": "description",
+              "description": "Draws a triangle to the page. The first two arguments specify the first point, the middle two arguments specify the second point, and the last two arguments specify the third point."
+            }
+          ],
+          "examples": [],
+          "todo": null,
+          "codetitle": "triangle(x1, y1, x2, y2, x3, y3)"
         }
       ],
       "subcat": "Primitives",
@@ -8676,8 +9075,33 @@
         },
         {
           "name": "beginShape",
-          "description": "Using the `beginShape()` and `endShape()` functions allows to create more complex forms. `beginShape()` begins recording vertices for a shape and `endShape()` stops recording. After calling the `beginShape()` function, a series of `vertex()` commands must follow. To stop drawing the shape, call `endShape()`. The shapeMode parameter allows to close the shape (to connect the beginning and the end).",
+          "description": "Using the `beginShape()` and `endShape()` functions allows to create more complex forms. `beginShape()` begins recording vertices for a shape and `endShape()` stops recording. After calling the `beginShape()` function, a series of `vertex()` commands must follow. To stop drawing the shape, call `endShape()`.",
           "returns": null,
+          "category": "Shape",
+          "subcategory": "Vertex",
+          "parameters": [],
+          "kind": "function",
+          "tags": [
+            {
+              "title": "description",
+              "description": "Using the `beginShape()` and `endShape()` functions allows to create more complex forms. `beginShape()` begins recording vertices for a shape and `endShape()` stops recording. After calling the `beginShape()` function, a series of `vertex()` commands must follow. To stop drawing the shape, call `endShape()`."
+            }
+          ],
+          "examples": [],
+          "todo": null,
+          "codetitle": "beginShape()"
+        },
+        {
+          "name": "endShape",
+          "description": "The `endShape()` function is the companion to `beginShape()` and may only be called after `beginShape()`. It creates and returns a path of the previously called `vertex()` points. The `shapeMode` parameter allows to close the shape (to connect the beginning and the end).",
+          "returns": {
+            "name": null,
+            "description": "The GraphicLine or Polygon object that was created.",
+            "type": [
+              "GraphicLine",
+              "Polygon"
+            ]
+          },
           "category": "Shape",
           "subcategory": "Vertex",
           "parameters": [
@@ -8694,37 +9118,12 @@
           "tags": [
             {
               "title": "description",
-              "description": "Using the `beginShape()` and `endShape()` functions allows to create more complex forms. `beginShape()` begins recording vertices for a shape and `endShape()` stops recording. After calling the `beginShape()` function, a series of `vertex()` commands must follow. To stop drawing the shape, call `endShape()`. The shapeMode parameter allows to close the shape (to connect the beginning and the end)."
+              "description": "The `endShape()` function is the companion to `beginShape()` and may only be called after `beginShape()`. It creates and returns a path of the previously called `vertex()` points. The `shapeMode` parameter allows to close the shape (to connect the beginning and the end)."
             }
           ],
           "examples": [],
           "todo": null,
-          "codetitle": "beginShape(shapeMode)"
-        },
-        {
-          "name": "endShape",
-          "description": "The `endShape()` function is the companion to `beginShape()` and may only be called after `beginShape()`.",
-          "returns": {
-            "name": null,
-            "description": "The GraphicLine or Polygon object that was created.",
-            "type": [
-              "GraphicLine",
-              "Polygon"
-            ]
-          },
-          "category": "Shape",
-          "subcategory": "Vertex",
-          "parameters": [],
-          "kind": "function",
-          "tags": [
-            {
-              "title": "description",
-              "description": "The `endShape()` function is the companion to `beginShape()` and may only be called after `beginShape()`."
-            }
-          ],
-          "examples": [],
-          "todo": null,
-          "codetitle": "endShape()"
+          "codetitle": "endShape(shapeMode)"
         },
         {
           "name": "vertex",

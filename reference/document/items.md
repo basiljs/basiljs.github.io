@@ -2,16 +2,16 @@
 layout: entry
 title: items
 codetitle: 'items(container, [cb])'
-description: 'If no callback function is given it returns a Collection of items otherwise calls the given callback function for each of the PageItems in the given Document, Page, Layer or Group.'
+description: "Returns a collection of all page items in the given container. The container object can be a Document, Page, Layer, Group, Story, Page Item or Text Object.\nIf a callback function is given, `items()` calls this callback function on each page item of the given container. When the callback function returns false, the loop stops and the `items()` function returns an array of all page items up to this point."
 category: Document
 subcategory: 'Page Items'
 returns:
     name: null
-    description: 'A collection of PageItem objects.'
-    type: [PageItems]
+    description: 'A collection or an array of page items.'
+    type: [PageItems, Array]
 parameters:
-    - {name: container, description: 'The container where the PageItems sit in', optional: false, type: [Document, Page, Layer, Group]}
-    - {name: cb, description: 'Optional: The callback function to call for each PageItem. When this function returns false the loop stops. Passed arguments: `item`, `loopCount`.', optional: true, type: [null]}
+    - {name: container, description: 'The document, page, layer, group, story, page item or text object instance to iterate the page items in.', optional: false, type: [Document, Page, Layer, Group, Story, PageItem, TextObject]}
+    - {name: cb, description: 'Optional: The callback function to call with each page item. When this function returns false the loop stops. Passed arguments: `item`, `loopCount`', optional: true, type: [Function]}
 kind: function
 todo: null
 examples: []
