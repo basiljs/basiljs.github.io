@@ -1,9 +1,6 @@
 ---
-author: admin
-comments: false
 date: 2012-11-13 23:35:22+00:00
 layout: default
-originallink: http://basiljs.ch/download/
 title: download
 order: 1
 ---
@@ -11,21 +8,21 @@ order: 1
 ## Download basil.js
 
 The basil.js bundle:
-[basil.js-1.0.10-bundle](http://basiljs.ch/wp-content/uploads/2012/11/basil.js-1.0.10.zip)
+[basil.js-1.0.10-bundle](/assets/releases/basil.js-1.0.10.zip)
 
 Download the bundle above and follow
-the steps in our [installation guide](../tutorials/installation-and-getting-started/) at our tutorials section.
+the steps in our [installation guide](/tutorials/01-getting-started) at our tutorials section.
 
 ## Cheatsheets and References
 
 The basil.js cheatsheet:
-[basiljs-cheatsheet-0.3](http://basiljs.ch/wp-content/uploads/2012/11/basiljs-cheatsheet.pdf)
+[basiljs-cheatsheet-0.3](/assets/files/basiljs-cheatsheet.pdf)
 
 The basil.js InDesign Object Model:
-[basiljs-IOM-0.2](http://basiljs.ch/wp-content/uploads/2012/11/basiljs-IOM-0.2.pdf)
+[basiljs-IOM-0.2](/assets/files/basiljs-IOM-0.2.pdf)
 
 The basil.js b.typo cheatsheet:
-[basiljs_b_typo_cheatsheet_v0_2.pdf](http://basiljs.ch/wp-content/uploads/2013/03/basiljs_b_typo_cheatsheet_v0_2.pdf)
+[basiljs_b_typo_cheatsheet_v0_2.pdf](/assets/files/basiljs_b_typo_cheatsheet_v0_2.pdf)
 
 ## Source code
 

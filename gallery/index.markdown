@@ -1,7 +1,6 @@
 ---
 author: admin
 layout: default
-originallink: http://basiljs.ch/gallery/
 title: gallery
 order: 6
 ---

@@ -8,7 +8,8 @@
     "generator": "node .bin/index",
     "pull-latest-basil": "npm install basiljs/basil.js#develop -D",
     "generate-json": "documentation build ./node_modules/basiljs/basil.js -o ./.bin/api/data.json",
-    "docs-json-test": "./node_modules/.bin/documentation build .bin/test/index.js -o .bin/test/api.json"
+    "docs-json-test": "documentation build .bin/test/index.js -o .bin/test/api.json",
+    "broken-link-check":"blc  --filter-level 2 -r --input http://localhost:4000 > test/report.txt && cat test/report.txt | grep 'BROKEN'"
   },
   "repository": {
     "type": "git",
@@ -37,6 +38,7 @@
     "yamljs": "^0.2.8"
   },
   "dependencies": {
+    "broken-link-checker": "^0.7.8",
     "jquery": "^3.2.1",
     "jquery-columnizer": "^1.6.3",
     "jquery-highlight": "^3.4.0",

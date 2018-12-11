@@ -1,12 +1,10 @@
 ---
-author: admin
 layout: default
-originallink: http://basiljs.ch/about/
 title: about
 order: 0
 ---
 
-![](http://basiljs.ch/wp-content/uploads/2013/01/aboutpage.jpg)
+![](/../assets/images/aboutpage.jpg)  
 
 Academy of Art and Design Basel
 Visual Communication Institute / The Basel School of Design,
@@ -17,7 +15,7 @@ A project of the [Interaction Seminar](http://web.fhnw.ch/hgk/projekte/interakti
 ludwig.zeller -a-t- fhnw.ch
 
 Founders of the basil.js team are: [Ted Davis](http://teddavis.org), [Benedikt Groß](http://benedikt-gross.de) and [Ludwig Zeller](http://ludwigzeller.de)
-Fantastic contributors to the project: [Philipp Adrian](http://www.philippadrian.com/), [be:screen GmbH](be:screen,), [Ken Frederick](http://kennethfrederick.de),  [Stefan Landsbek](http://47nord.de), [Timo Rychert](http://timorychert.de) and [Fabian Morón Zirfas](http://fabianmoronzirfas.me)
+Fantastic contributors to the project: [Philipp Adrian](http://www.philippadrian.com/), [be:screen GmbH](http://bescreen.de/), [Ken Frederick](http://kennethfrederick.de),  [Stefan Landsbek](http://47nord.de), [Timo Rychert](http://timorychert.de) and [Fabian Morón Zirfas](http://fabianmoronzirfas.me)
 
 It is one of our main goals to expand the methodologies of design and to educate our students in developing a set of individual, unique styles and aesthetics.
 While Adobe InDesign on the one hand is offering a valuable set of pre-defined, common solutions for layout and design problems, a programming language on the other hand allows for questioning the set of available methods and for extending it by creating new tools.

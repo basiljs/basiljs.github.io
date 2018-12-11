@@ -21,9 +21,10 @@ Beverly Hills,2481
 ```
 
 ### Preparations
+
 - Create somewhere a folder for the tutorial and save a blank indesign file into that folder e.g. LA_Pools/circles.indd
 - Create a data folder within the project folder to hold the data: LA_Pools/data/
-- Get the [dataset](https://githucom/basiljs/basil.js/blob/master/examples/demos/B08_bar_chart_from_csv_data/data/LA_Pools-Pools_per_Hood.csv) and copy it to the data folder: LA_Pools/data/LA_Pools-Pools_per_Hood.csv
+- Get the [dataset](https://github.com/basiljs/basil.js/blob/master/examples/demos/B08_bar_chart_from_csv_data/data/LA_Pools-Pools_per_Hood.csv) and copy it to the data folder: LA_Pools/data/LA_Pools-Pools_per_Hood.csv
 
 ### Load the data
 Loading the CSV data is basically just one line of code: 
@@ -115,8 +116,8 @@ function calcRadiusByArea(A){
 Your results should look similar to this one :)
 
 The circle gird
-  ![The circle gird](http://basiljs.ch/wp-content/uploads/2013/09/CSV_tutorial_01.png)
+  ![The circle gird](./images/CSV_tutorial_01.png)
 
 Cirlce layout detail
-  ![Cirlce layout detail](http://basiljs.ch/wp-content/uploads/2013/09/CSV_tutorial_02.png)
+  ![Cirlce layout detail](./images/CSV_tutorial_02.png)
 

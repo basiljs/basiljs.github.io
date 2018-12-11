@@ -45,12 +45,12 @@ You probably got a nice error warning that said 'undefined' – that is because 
 ***
 
 ## 3. Importing images from the internet
-Take a journey to our tutorial on this subject: [Getting Images from URLs](http://basiljs.ch/tutorials/getting-images-from-urls/)
+Take a journey to our tutorial on this subject: [Getting Images from URLs](/tutorials/getting-images-from-urls/)
 
 ***
 
 ## 4. Reposition and resizing images
-While the first example showed that the image() function can be used to set a size when first creating the image, we can easily change these attributes after the fact using the [`transform()`](http://basiljs.ch/dev/reference/#transform) function:
+While the first example showed that the image() function can be used to set a size when first creating the image, we can easily change these attributes after the fact using the [`transform()`](/reference/#transform) function:
 
 ```
 // @includepath "~/Documents/;%USERPROFILE%Documents";
@@ -67,7 +67,7 @@ function draw() {
 }
 ```
 
-Note that we are now using a variable before generating our second image, thus allowing us to refer to it later. Using the [`bounds()`](http://basiljs.ch/dev/reference/#bounds) function, which outputs both the x, y position and w, h of an object, we can scale the object proportionally by modifying it's existing value. In this case, increasing it by 500%.
+Note that we are now using a variable before generating our second image, thus allowing us to refer to it later. Using the [`bounds()`](/reference/#bounds) function, which outputs both the x, y position and w, h of an object, we can scale the object proportionally by modifying it's existing value. In this case, increasing it by 500%.
 
 ***
 

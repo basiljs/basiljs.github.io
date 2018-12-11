@@ -37,3 +37,4 @@ exclude:
   - .bin/
   - lib/
   - node_modules/
+  - test/
