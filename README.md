@@ -1,7 +1,7 @@
 Basil.js
 ========
 
-This repo holds the [site/docs for Basil.js](https://basiljs.github.io/)  
+This repo holds the [site/docs for Basil.js](https://basiljs.github.io/). The current state of development (develop branch) can be found here [basiljs2.netlify.com](https://basiljs2.netlify.com/)
 
 ## Deploy  
 
