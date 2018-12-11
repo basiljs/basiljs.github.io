@@ -6,6 +6,7 @@ description: "Standing on the shoulders of giants... as usual."
 ---
 
 ## InDesign scripting inspirations
+
 - [The "Jongware" reference](http://jongware.mit.edu/idcs6js/)
 - [InDesign Secrets](http://indesignsecrets.com/)
 - [Typography and Automation at FH Potsdam](http://fabianmoronzirfas.github.com/Typography-And-Automation/)
@@ -17,5 +18,5 @@ description: "Standing on the shoulders of giants... as usual."
 - [Creative Coding](http://www.creativecoding.org/)
 - [Processing](http://processing.org/)
 
-Please note the cheatsheets available on our [Downloads](../download/) page
+Please note the cheatsheets available on our [Downloads](/download/) page
 

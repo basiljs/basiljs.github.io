@@ -20,7 +20,7 @@ function draw() {
 }
 ```
 
-Visit our reference section on [`text()`](http://basiljs.ch/reference/#text) for additional typographic functions.
+Visit our reference section on [`text()`](/reference/#text) for additional typographic functions.
 
 ### Change type attributes
 Add these one at a time *before* your text frame, as they only effect proceeding `text()`.
@@ -58,7 +58,7 @@ typo(myFrame, 'characterRotation', -45); // add strike through
 ```
 
 ### Exercise 1
-Download our [typo cheat sheet](../assets/files/basiljs_b_typo_cheatsheet_v0_2.pdf)
+Download our [typo cheat sheet](/assets/files/basiljs_b_typo_cheatsheet_v0_2.pdf)
 
 Go through the list and pick additional properties to manipulate. <br>
 Suggestion: Add a longer text to your initial text frame to have more material to work with.
@@ -134,7 +134,7 @@ Refer to the following list for setting various justifications:
   - VerticalJustification.JUSTIFY_ALIGN
   - VerticalJustification.TOP_ALIGN
 
-Note: vertical justification of a text frame should be done before generating it, also using the [`textAlign()`](http://basiljs.ch/reference/#textAlign) function.
+Note: vertical justification of a text frame should be done before generating it, also using the [`textAlign()`](/reference/#textAlign) function.
 
 ```
 textAlign(Justification.FULLY_JUSTIFIED, VerticalJustification.CENTER_ALIGN);

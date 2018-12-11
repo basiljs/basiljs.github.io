@@ -9,7 +9,7 @@ description: "Installing basil.js."
 
 Although basil.js scripts can simply be opened and run from ExtendScript Toolkit through the Finder / Explorer, you may wish to have access to our examples and your scripts within the Scripts window of InDesign.  
 
-1. Get the latest copy of basil.js from our [Downloads](http://basiljs.ch/downloads) section. 
+1. Get the latest copy of basil.js from our [Downloads](/download) section. 
 
 2. Use Finder (resp. Explorer) and create a folder called "basiljs" in the Documents folder of your home directory. This will be the central place where you store all basil related files. Please make sure that this folder matches *USER_FOLDER*/Documents/basiljs exactly. Note that the Documents folder might have a different name depending on your language setting and operating system, but that's ok.
 
@@ -31,7 +31,7 @@ This can also be done by first entering `ln -s ` add a space, drag + drop your b
 
 8. Check if InDesign has detected your basiljs folder:
 
-  ![Picture of basil.js with open bundle folders in Script panel](images/install3.png)
+  ![Picture of basil.js with open bundle folders in Script panel](./images/install3.png)
 
 9. Run one of the scripts in example/color to check if basil.js is installed correctly. Congratulations!
 

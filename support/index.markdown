@@ -1,7 +1,5 @@
 ---
-author: admin
 layout: default
-originallink: http://basiljs.ch/support/
 title: support
 order: 5
 ---
@@ -10,14 +8,14 @@ order: 5
 
 The two most important sources of reference are
 
-1. The basil.js function reference ([http://basiljs.ch/reference/](http://basiljs.ch/reference/))
+1. The basil.js function [reference](/reference/)
 2. The "Jongware" InDesign CS6 reference ([http://jongware.mit.edu/idcs6js/](http://jongware.mit.edu/idcs6js/))
 
 If you are stuck with your basil.js project you should first try to find an answer or inspiration
 
-1. In our tutorials section ([http://basiljs.ch/tutorials/](http://basiljs.ch/tutorials/))
-2. In the provided example and demo scripts that come with basil.js ([https://github.com/basiljs/basil.js/tree/master/examples](https://github.com/basiljs/basil.js/tree/master/examples))
-3. In our provided list of helpful resources ([http://basiljs.ch/tutorials/finding-help/](http://basiljs.ch/tutorials/finding-help/))
+1. In our [tutorials section](/tutorials)
+2. In the provided example and demo scripts that come with basil.js ([https://github.com/basiljs/examples/](https://github.com/basiljs/examples/))
+3. In our provided list of [helpful resources](/tutorials/04-finding-help/)
 
 ## Analyze your problem
 
