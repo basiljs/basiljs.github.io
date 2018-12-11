@@ -11,7 +11,7 @@ Since Java and JavaScript are quite similar programming languages you do not hav
 
 ### Comments
 
-```
+```js
 // This is an inline comment
 /* This is a block comment,
 that can go over several lines */
@@ -19,7 +19,7 @@ that can go over several lines */
 
 ### if / else conditions
 
-```
+```js
 if ( a > 3 ) { 
   // execute if a is bigger than 3
 } else {
@@ -29,7 +29,7 @@ if ( a > 3 ) {
 
 ### Logical comparisons
 
-```
+```js
 a == b // equal
 a === b // Little difference to Java: You can check for same data type as well in... to be VERY sure
 a != b // not equal
@@ -38,14 +38,14 @@ a < b // smaller than
 a >= b // bigger or equal
 a <= b // smaller or equal
 
-// You can combine statements with logical AND ”&&” resp. the logical OR ”||”
+// You can combine statements with logical AND "&&" resp. the logical OR "||"
 if (  a == b && b == c ) { ... } // AND
 if (  a == b || b == c ) { ... } // OR
 ```
 
 ### Operators and assignments
 
-```
+```js
 // +, -, *, / // addition, substraction, multiplication and division at your fingertips...
 foo = foo + 5; // increases the variable foo by 5
 foo += 5; // a short version of foo = foo + 5;
@@ -58,7 +58,7 @@ Writing JavaScript for Adobe InDesign is quite a different context than Java. In
 
 ### Basic program structure
 
-```
+```js
 // In basil.js
 
 // @includepath "~/Documents/;%USERPROFILE%Documents";
@@ -69,8 +69,9 @@ function setup() {
 
 function draw() {
 }
+```
 
-
+```java
 // vs. Processing
 
 void setup() {
@@ -86,13 +87,15 @@ void draw() {
 
 ### Variables and data types
 
-```
+```js
 // In basil.js
 var myNumber = 5; // Integers...
 var myNumber = 3.0; // Floats...
-var myString = ”Hello Basil”; / Strings...
-var myLove = true; // and Booleans are all stored to the ”var” type
+var myString = "Hello Basil"; // Strings...
+var myLove = true; // and Booleans are all stored to the "var" type
+```
 
+```java
 // vs. Processing
 int myNumber = 5;
 float myNumber = 3.0;
@@ -104,32 +107,35 @@ boolean myLove = true;
 
 ### Defining and using functions
 
-```
+```js
 // In basil.js
 function myFunction (param1, param2){
   // code within the brackets has access to param1 and param2 and will be executed...
 }
-myFunction(234, ”Some String”);
+myFunction(234, "Some String");
+```
 
+```java
 // vs. Processing
-
 void myFunction( int param1, String param2 ){
   // code within the brackets has access to param1 and param2 and will be executed...
 }
-myFunction(234, ”Some String”); 
+myFunction(234, "Some String");
 ```
 
 - Functions work quite similar besides the fact that they you do not have to declare any argument or return data types.
 
 ### for-loops
 
-```
+```js
 // In basil.js
 for( var i = 0; i < 100; i++  )
 {
   println( i ); // prints 100 numbers counting upwards
 }
+```
 
+```java
 // vs. Processing
 for( int i = 0; i < 100; i++  )
 {

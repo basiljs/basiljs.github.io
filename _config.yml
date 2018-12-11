@@ -27,6 +27,8 @@ sass:
     sass_dir: _sass
 # Build settings
 markdown: kramdown
+# kramdown:
+#     smart_quotes: ["apos", "apos", "quot", "quot"]
 highlighter: rouge
 plugins:
   - jekyll-feed
