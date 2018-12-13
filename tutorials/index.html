@@ -1,16 +1,18 @@
 ---
 author: admin
 layout: default
-title: tutorials
+title: Tutorials
 order: 4
 ---
 
-<ul>
+<h1>{{title}}</h1>
+
+<ul class="tutorial-list">
 {% assign tutos = site.pages | sort : 'url' %}
 {% for page in tutos %}
 {% if page.layout == 'tutorial' %}
 {% if page.title != 'example tutorial page'%}
-  <li><a href="{{page.url}}">{{page.title}}</a></li>
+  <li class="tutorial"><a href="{{page.url}}" class="tutorial-title">{{page.title}}</a>{% if page.description %}<p class="tutorial-description">{{page.description}}</p>{% endif %}</li>
 {% endif %}
 {% endif %}
 {% endfor %}
