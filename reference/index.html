@@ -6,9 +6,9 @@ order: 3
 ---
 
 <div class="index">
-    <h3 id="cat-ndx" class="referencestrip">Categories</h2>
+    <h2 id="cat-ndx" class="referencestrip">Categories</h2>
     {% for element in site.data.cats-and-subcats %}{% for ele in element %}
-    <h4 class="referencestrip">{{ele.cat}} {%unless ele.subcat == 'null' %}<span class="h3-subcat">{{ele.subcat}}</span class="h3-subcat">{% endunless %}</h3>
+    <h3 class="referencestrip">{{ele.cat}} {%unless ele.subcat == 'null' %}<span class="h3-subcat">{{ele.subcat}}</span class="h3-subcat">{% endunless %}</h3>
   <ul>
     {% for entry in ele.entries %}
     {% assign eid = entry.name |downcase %}
@@ -18,18 +18,14 @@ order: 3
 </div>
 
 <script>
-  //	$('.colz').addClass("dontsplit");
-  $('.index').columnize({
-      width: 300
-  });
+    $( document ).ready(function() {
+    console.log( 'ready!' );
+    $('.index').columnize({
+        width: 300
+    });
 
-  // var offsetTop = $('#refreturn').offset().top;
-  // $(document).bind("scroll", function(e) {
-  //     if (offsetTop < $(this).scrollTop())
-  //         $('#refreturn').addClass("fixed");
-  //     else
-  //         $('#refreturn').removeClass("fixed");
-  // });
+});
+
 </script>
 <!-- start item in cat loop -->
 
