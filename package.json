@@ -6,10 +6,12 @@
     "build": "npm run update ; npm run generator",
     "update": "npm run pull-latest-basil ; npm run generate-json",
     "generator": "node .bin/index",
+    "webpack": "webpack",
     "pull-latest-basil": "npm install basiljs/basil.js#develop -D",
     "generate-json": "documentation build ./node_modules/basiljs/basil.js -o ./.bin/api/data.json",
     "docs-json-test": "documentation build .bin/test/index.js -o .bin/test/api.json",
-    "broken-link-check":"blc  --filter-level 2 -r --input http://localhost:4000 > test/report.txt && cat test/report.txt | grep 'BROKEN'"
+    "broken-link-check": "blc  --filter-level 2 -r --input http://localhost:4000 > test/report.txt && cat test/report.txt | grep 'BROKEN'",
+    "parcel:watch": "parcel watch -d assets/js/ reference.js"
   },
   "repository": {
     "type": "git",
@@ -33,13 +35,15 @@
     "eslint": "^5.6.0",
     "eslint-config-unobtrusive": "^1.2.2",
     "fs-extra": "^2.0.0",
+    "jquery": "^3.3.1",
     "lodash": "^4.17.10",
     "path-exists": "^3.0.0",
+    "webpack": "^4.28.0",
+    "webpack-cli": "^3.1.2",
     "yamljs": "^0.2.8"
   },
   "dependencies": {
     "broken-link-checker": "^0.7.8",
-    "jquery": "^3.2.1",
     "jquery-columnizer": "^1.6.3",
     "jquery-highlight": "^3.4.0",
     "normalize.css": "^7.0.0"

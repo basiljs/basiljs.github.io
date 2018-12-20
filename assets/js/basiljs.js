@@ -15,7 +15,7 @@ $(document).ready(function() {
 });
 
 function specialChars() {
-  $('a.stepped-link').each(function() {
+  $('a.textgrow').each(function() {
     const chars = $(this).text().split('');
     const that = $(this);
     that.empty();
