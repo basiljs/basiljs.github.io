@@ -11,7 +11,7 @@
         -->
       {% assign pages = site.pages | sort: 'order'  %}
       {% for item in pages %}{% if item.layout != 'entry' %}{%if item.layout == 'default' or item.layout == 'reference' %}{% if item.url != '/' %}
-        <li class="menu-item {% if item.title == page.title %}active{% endif %}"><a href="{{item.url}}" class="stepped-link">{{item.title}}</a></li>
+        <li class="menu-item {% if item.title == page.title %}active{% endif %}"><a href="{{item.url}}" class="textgrow">{{item.title}}</a></li>
             {% endif %}{% endif %}{% endif %}{% endfor %}
 
       </ul>
@@ -19,7 +19,7 @@
         <div class="tweet">
           <div class="message"></div>
           <div class="tweettime"></div>
-          <div class="twitter-link"><a href="https://twitter.com/basil_js" class="stepped-link">@basil_js</a></div>
+          <div class="twitter-link"><a href="https://twitter.com/basil_js" class="textgrow">@basil_js</a></div>
         </div>
         <div class="fhnw-logo">
           <a href="http://www.fhnw.ch/hgk/ivk"><img src="/assets/images/fhnwlogo.png" alt="FHNW logo and link"></a>
