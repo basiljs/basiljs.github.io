@@ -6,10 +6,10 @@ const webpack = require('webpack');
 
 module.exports = {
   watch: true,
-  mode: 'production',
+  mode: 'development',
   devtool: 'source-map',
   target:'web',
-  context: path.resolve(__dirname, './'),
+  context: path.resolve(__dirname, '../'),
   entry: {
     reference: './assets/js/src/reference.js',
     main:'./assets/js/src/main.js'
@@ -18,8 +18,15 @@ module.exports = {
     jquery: 'jQuery'
   },
   output: {
-    path: path.resolve(__dirname, './assets/js'),
+    path: path.resolve(__dirname, '../', './assets/js'),
     filename: '[name].bundle.js'
+  },
+  module: {
+    rules: [
+      { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader', options: {
+        presets: ['@babel/preset-env']
+      }}
+    ]
   },
   // if we want to refernce our css within the js this is the way to go
   // but it seems a bit odd to require('style.css') in a css file.

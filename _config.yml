@@ -42,3 +42,4 @@ exclude:
   - test/
   - assets/js/src/
   - .cache
+  - webpack.config
