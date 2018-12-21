@@ -63,7 +63,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": "npm run webpack:prod && npm run jekyll:prod"
+      "pre-commit": "npm run webpack:prod"
     }
   }
 }
