@@ -10,7 +10,7 @@ returns:
     description: 'The property value(s) if the function acts as getter or the items the property was assigned to.'
     type: [null, null, null]
 parameters:
-    - {name: item, description: 'The object to apply the property to.', optional: false, type: [Document, Spread, Page, Layer, Story, TextFrame, Text]}
+    - {name: item, description: 'The object to apply the property to.', optional: false, type: [Document, Spread, Page, Layer, Story, TextFrame, TextPath, Text]}
     - {name: property, description: 'The text property name or an object of key/value property/value pairs. If property is a string and no value is given, the function acts as getter.', optional: false, type: [String, Object]}
     - {name: value, description: 'The value to apply to the property.', optional: true, type: [null]}
 kind: function
