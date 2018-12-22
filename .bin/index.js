@@ -48,6 +48,9 @@ function buildEntry(e) {
       if(ele.title === 'description') {
         entry.description = ele.description;
       }
+      if(ele.title === 'summary') {
+        entry.summary = ele.description;
+      }
       if(ele.title === 'cat') { // get the categories
         entry.category = ele.description;
 

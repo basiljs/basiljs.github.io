@@ -12,6 +12,7 @@
         "tags": [],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "PT()"
       },
       {
@@ -25,6 +26,7 @@
         "tags": [],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "PX()"
       },
       {
@@ -38,6 +40,7 @@
         "tags": [],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "CM()"
       },
       {
@@ -51,6 +54,7 @@
         "tags": [],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "MM()"
       },
       {
@@ -64,6 +68,7 @@
         "tags": [],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "IN()"
       },
       {
@@ -77,6 +82,7 @@
         "tags": [],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "RGB()"
       },
       {
@@ -90,6 +96,7 @@
         "tags": [],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "CMYK()"
       },
       {
@@ -103,6 +110,7 @@
         "tags": [],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "LINEAR()"
       },
       {
@@ -116,6 +124,7 @@
         "tags": [],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "RADIAL()"
       },
       {
@@ -129,6 +138,7 @@
         "tags": [],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "CORNER()"
       },
       {
@@ -142,6 +152,7 @@
         "tags": [],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "CORNERS()"
       },
       {
@@ -155,6 +166,7 @@
         "tags": [],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "CENTER()"
       },
       {
@@ -168,6 +180,7 @@
         "tags": [],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "RADIUS()"
       },
       {
@@ -181,6 +194,7 @@
         "tags": [],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "TOP_LEFT()"
       },
       {
@@ -194,6 +208,7 @@
         "tags": [],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "TOP_CENTER()"
       },
       {
@@ -207,6 +222,7 @@
         "tags": [],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "TOP_RIGHT()"
       },
       {
@@ -220,6 +236,7 @@
         "tags": [],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "CENTER_LEFT()"
       },
       {
@@ -233,6 +250,7 @@
         "tags": [],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "CENTER_RIGHT()"
       },
       {
@@ -246,6 +264,7 @@
         "tags": [],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "BOTTOM_LEFT()"
       },
       {
@@ -259,6 +278,7 @@
         "tags": [],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "BOTTOM_CENTER()"
       },
       {
@@ -272,6 +292,7 @@
         "tags": [],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "BOTTOM_RIGHT()"
       },
       {
@@ -285,6 +306,7 @@
         "tags": [],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "CLOSE()"
       },
       {
@@ -298,6 +320,7 @@
         "tags": [],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "OPEN()"
       },
       {
@@ -311,6 +334,7 @@
         "tags": [],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "CHORD()"
       },
       {
@@ -324,6 +348,7 @@
         "tags": [],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "PIE()"
       },
       {
@@ -337,6 +362,7 @@
         "tags": [],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "PAGE()"
       },
       {
@@ -350,6 +376,7 @@
         "tags": [],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "MARGIN()"
       },
       {
@@ -363,6 +390,7 @@
         "tags": [],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "BLEED()"
       },
       {
@@ -376,6 +404,7 @@
         "tags": [],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "FACING_PAGES()"
       },
       {
@@ -389,6 +418,7 @@
         "tags": [],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "FACING_BLEEDS()"
       },
       {
@@ -402,6 +432,7 @@
         "tags": [],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "FACING_MARGINS()"
       },
       {
@@ -415,6 +446,7 @@
         "tags": [],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "AT_BEGINNING()"
       },
       {
@@ -428,6 +460,7 @@
         "tags": [],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "AT_END()"
       },
       {
@@ -441,6 +474,7 @@
         "tags": [],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "BEFORE()"
       },
       {
@@ -454,6 +488,7 @@
         "tags": [],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "AFTER()"
       },
       {
@@ -467,6 +502,7 @@
         "tags": [],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "NONE()"
       },
       {
@@ -480,6 +516,7 @@
         "tags": [],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "FRONT()"
       },
       {
@@ -493,6 +530,7 @@
         "tags": [],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "BACK()"
       },
       {
@@ -506,6 +544,7 @@
         "tags": [],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "FORWARD()"
       },
       {
@@ -519,6 +558,7 @@
         "tags": [],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "BACKWARD()"
       },
       {
@@ -532,6 +572,7 @@
         "tags": [],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "PORTRAIT()"
       },
       {
@@ -545,6 +586,7 @@
         "tags": [],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "LANDSCAPE()"
       },
       {
@@ -558,6 +600,7 @@
         "tags": [],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "SILENT()"
       },
       {
@@ -571,6 +614,7 @@
         "tags": [],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "HIDDEN()"
       },
       {
@@ -584,6 +628,7 @@
         "tags": [],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "VISIBLE()"
       }
     ],
@@ -607,6 +652,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "height"
       },
       {
@@ -625,6 +671,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "width"
       },
       {
@@ -643,6 +690,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "VERSION"
       },
       {
@@ -670,6 +718,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "delay(milliseconds)"
       },
       {
@@ -703,6 +752,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "frameRate([fps])"
       },
       {
@@ -791,6 +841,7 @@
           }
         ],
         "todo": null,
+        "summary": null,
         "codetitle": "inspect(obj, [settings])"
       },
       {
@@ -809,6 +860,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "printInfo()"
       },
       {
@@ -833,6 +885,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "projectFolder()"
       },
       {
@@ -892,6 +945,7 @@
           }
         ],
         "todo": null,
+        "summary": null,
         "codetitle": "property(obj, prop, [value])"
       },
       {
@@ -950,6 +1004,7 @@
           }
         ],
         "todo": null,
+        "summary": null,
         "codetitle": "size([widthOrPageSize], [heightOrOrientation])"
       },
       {
@@ -968,6 +1023,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "stackArray"
       }
     ],
@@ -991,6 +1047,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "EPSILON"
       },
       {
@@ -1009,6 +1066,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "HALF_PI"
       },
       {
@@ -1027,6 +1085,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "KAPPA"
       },
       {
@@ -1045,6 +1104,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "PI"
       },
       {
@@ -1063,6 +1123,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "QUARTER_PI"
       },
       {
@@ -1081,6 +1142,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "SINCOS_LENGTH"
       },
       {
@@ -1099,6 +1161,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "TWO_PI"
       },
       {
@@ -1132,6 +1195,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "abs(val)"
       },
       {
@@ -1165,6 +1229,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "ceil(val)"
       },
       {
@@ -1214,6 +1279,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "constrain(aNumber, aMin, aMax)"
       },
       {
@@ -1271,6 +1337,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "dist(x1, y1, x2, y2)"
       },
       {
@@ -1304,6 +1371,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "exp(x)"
       },
       {
@@ -1337,6 +1405,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "floor(a)"
       },
       {
@@ -1386,6 +1455,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "lerp(value1, value2, amt)"
       },
       {
@@ -1419,6 +1489,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "log(x)"
       },
       {
@@ -1468,6 +1539,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "mag(x, y, [z])"
       },
       {
@@ -1533,6 +1605,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "map(value, istart, istop, ostart, ostop)"
       },
       {
@@ -1583,6 +1656,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "max(a, [b], [c])"
       },
       {
@@ -1633,6 +1707,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "min(a, [b], [c])"
       },
       {
@@ -1682,6 +1757,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "norm(aNumber, low, high)"
       },
       {
@@ -1723,6 +1799,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "pow(num, exponent)"
       },
       {
@@ -1756,6 +1833,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "round(value)"
       },
       {
@@ -1789,6 +1867,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "sq(aNumber)"
       },
       {
@@ -1822,6 +1901,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "sqrt(val)"
       },
       {
@@ -1871,6 +1951,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "noise(x, [y], [z])"
       },
       {
@@ -1906,6 +1987,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "noiseDetail(octaves, fallout)"
       },
       {
@@ -1933,6 +2015,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "noiseSeed(seed)"
       },
       {
@@ -1974,6 +2057,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "random([low], [high])"
       },
       {
@@ -2001,6 +2085,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "randomSeed(seed)"
       },
       {
@@ -2034,6 +2119,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "acos(value)"
       },
       {
@@ -2067,6 +2153,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "asin(value)"
       },
       {
@@ -2100,6 +2187,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "atan(value)"
       },
       {
@@ -2141,6 +2229,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "atan2(y, x)"
       },
       {
@@ -2174,6 +2263,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "cos(rad)"
       },
       {
@@ -2207,6 +2297,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "degrees(aAngle)"
       },
       {
@@ -2240,6 +2331,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "radians(aAngle)"
       },
       {
@@ -2273,6 +2365,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "sin(rad)"
       },
       {
@@ -2306,6 +2399,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "tan(rad)"
       },
       {
@@ -2354,6 +2448,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "Vector(x, y, [z])"
       },
       {
@@ -2399,6 +2494,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "Vector.angleBetween(v1, v2)"
       },
       {
@@ -2444,6 +2540,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "Vector.cross(v1, v2)"
       },
       {
@@ -2494,6 +2591,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "Vector.cross(v, [y], [z])"
       },
       {
@@ -2539,6 +2637,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "Vector.dist(v1, v2)"
       },
       {
@@ -2589,6 +2688,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "Vector.dist(v, [y], [z])"
       },
       {
@@ -2634,6 +2734,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "Vector.dot(v1, v2)"
       },
       {
@@ -2684,6 +2785,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "Vector.dot(v, [y], [z])"
       },
       {
@@ -2728,6 +2830,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "Vector.add(v, [y], [z])"
       },
       {
@@ -2752,6 +2855,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "Vector.array()"
       },
       {
@@ -2796,6 +2900,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "Vector.div(v, [y], [z])"
       },
       {
@@ -2820,6 +2925,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "Vector.get()"
       },
       {
@@ -2844,6 +2950,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "Vector.heading()"
       },
       {
@@ -2871,6 +2978,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "Vector.limit(high)"
       },
       {
@@ -2895,6 +3003,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "Vector.mag()"
       },
       {
@@ -2939,6 +3048,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "Vector.mult(v, [y], [z])"
       },
       {
@@ -2957,6 +3067,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "Vector.normalize()"
       },
       {
@@ -3002,6 +3113,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "Vector.set(v, [y], [z])"
       },
       {
@@ -3046,6 +3158,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "Vector.sub(v, [y], [z])"
       },
       {
@@ -3070,6 +3183,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "Vector.toString()"
       }
     ],
@@ -3093,6 +3207,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "LOREM"
       },
       {
@@ -3177,6 +3292,7 @@
           }
         ],
         "todo": null,
+        "summary": null,
         "codetitle": "text(txt, x, y, w, h)"
       },
       {
@@ -3212,6 +3328,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "textAlign(align, [yAlign])"
       },
       {
@@ -3253,6 +3370,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "textFont([fontName], [fontStyle])"
       },
       {
@@ -3286,6 +3404,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "textKerning([kerning])"
       },
       {
@@ -3320,6 +3439,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "textLeading([leading])"
       },
       {
@@ -3353,6 +3473,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "textSize([pointSize])"
       },
       {
@@ -3386,6 +3507,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "textTracking([tracking])"
       },
       {
@@ -3414,6 +3536,7 @@
               "Layer",
               "Story",
               "TextFrame",
+              "TextPath",
               "Text"
             ]
           },
@@ -3444,6 +3567,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "typo(item, property, [value])"
       },
       {
@@ -3488,6 +3612,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "applyCharacterStyle(text, style)"
       },
       {
@@ -3532,6 +3657,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "applyParagraphStyle(text, style)"
       },
       {
@@ -3574,6 +3700,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "characterStyle(textOrName, [props])"
       },
       {
@@ -3616,6 +3743,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "paragraphStyle(textOrName, [props])"
       }
     ],
@@ -3656,6 +3784,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "blendMode(obj, blendMode)"
       },
       {
@@ -3690,6 +3819,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "color(Get)"
       },
       {
@@ -3717,6 +3847,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "colorMode(colorMode)"
       },
       {
@@ -3756,6 +3887,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "fill(fillColor, [name])"
       },
       {
@@ -3783,6 +3915,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "fillTint(tint)"
       },
       {
@@ -3836,6 +3969,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "gradient(c1, c2, [name])"
       },
       {
@@ -3863,6 +3997,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "gradientMode(gradientMode)"
       },
       {
@@ -3912,6 +4047,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "lerpColor(c1, c2, amt)"
       },
       {
@@ -3930,6 +4066,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "noFill()"
       },
       {
@@ -3948,6 +4085,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "noStroke()"
       },
       {
@@ -3983,6 +4121,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "opacity(obj, opacity)"
       },
       {
@@ -4014,6 +4153,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "stroke(strokeColor)"
       },
       {
@@ -4041,6 +4181,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "strokeTint(tint)"
       },
       {
@@ -4068,6 +4209,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "swatch(swatchName)"
       }
     ],
@@ -4114,6 +4256,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "forEach(collection, cb)"
       },
       {
@@ -4155,6 +4298,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "binary(num, [numBits])"
       },
       {
@@ -4196,6 +4340,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "hex(value, [len])"
       },
       {
@@ -4229,6 +4374,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "unbinary(binaryString)"
       },
       {
@@ -4262,6 +4408,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "unhex(hex)"
       },
       {
@@ -4300,6 +4447,7 @@
           }
         ],
         "todo": null,
+        "summary": null,
         "codetitle": "CSV.decode(String)"
       },
       {
@@ -4333,6 +4481,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "CSV.delimiter([delimiter])"
       },
       {
@@ -4371,6 +4520,7 @@
           }
         ],
         "todo": null,
+        "summary": null,
         "codetitle": "CSV.encode(Array)"
       },
       {
@@ -4394,6 +4544,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "HashList()"
       },
       {
@@ -4412,6 +4563,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "HashList.clear()"
       },
       {
@@ -4445,6 +4597,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "HashList.get(key)"
       },
       {
@@ -4469,6 +4622,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "HashList.getKeys()"
       },
       {
@@ -4493,6 +4647,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "HashList.getKeysByValues()"
       },
       {
@@ -4517,6 +4672,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "HashList.getSortedKeys()"
       },
       {
@@ -4541,6 +4697,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "HashList.getValues()"
       },
       {
@@ -4574,6 +4731,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "HashList.hasKey(key)"
       },
       {
@@ -4610,6 +4768,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "HashList.hasValue(value)"
       },
       {
@@ -4643,6 +4802,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "HashList.remove(key)"
       },
       {
@@ -4687,6 +4847,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "HashList.set(key, value)"
       },
       {
@@ -4725,6 +4886,7 @@
           }
         ],
         "todo": null,
+        "summary": null,
         "codetitle": "JSON.decode(String)"
       },
       {
@@ -4758,6 +4920,7 @@
           }
         ],
         "todo": null,
+        "summary": null,
         "codetitle": "JSON.encode(Object)"
       },
       {
@@ -4799,6 +4962,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "endsWith(str, suffix)"
       },
       {
@@ -4840,6 +5004,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "join(array, separator)"
       },
       {
@@ -4889,6 +5054,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "nf(value, leftDigits, rightDigits)"
       },
       {
@@ -4938,6 +5104,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "nfc(value, leftDigits, rightDigits)"
       },
       {
@@ -4987,6 +5154,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "nfp(value, leftDigits, rightDigits)"
       },
       {
@@ -5036,6 +5204,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "nfs(value, leftDigits, rightDigits)"
       },
       {
@@ -5077,6 +5246,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "split(str, [delim])"
       },
       {
@@ -5118,6 +5288,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "splitTokens(str, [tokens])"
       },
       {
@@ -5159,6 +5330,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "startsWith(str, prefix)"
       },
       {
@@ -5194,6 +5366,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "trim(str)"
       },
       {
@@ -5227,6 +5400,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "trimWord(s)"
       },
       {
@@ -5263,6 +5437,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "isArray(obj)"
       },
       {
@@ -5299,6 +5474,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "isInteger(num)"
       },
       {
@@ -5335,6 +5511,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "isNumber(num)"
       },
       {
@@ -5371,6 +5548,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "isString(str)"
       },
       {
@@ -5404,6 +5582,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "isURL(url)"
       }
     ],
@@ -5448,6 +5627,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "isText(obj)"
       },
       {
@@ -5472,12 +5652,17 @@
         "kind": "function",
         "tags": [
           {
+            "title": "summary",
+            "description": "Removes all page items (including locked ones) in the given Document, Page, Layer or Group."
+          },
+          {
             "title": "description",
             "description": "Removes all page items (including locked ones) in the given Document, Page, Layer or Group. If the selected container is a group, the group itself will be removed as well."
           }
         ],
         "examples": [],
         "todo": null,
+        "summary": "Removes all page items (including locked ones) in the given Document, Page, Layer or Group.",
         "codetitle": "clear(container)"
       },
       {
@@ -5513,6 +5698,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "close([saveOptions], [file])"
       },
       {
@@ -5546,6 +5732,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "doc([doc])"
       },
       {
@@ -5579,6 +5766,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "layer([layer])"
       },
       {
@@ -5612,6 +5800,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "referencePoint([referencePoint])"
       },
       {
@@ -5639,6 +5828,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "remove(obj)"
       },
       {
@@ -5663,6 +5853,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "revert()"
       },
       {
@@ -5696,6 +5887,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "units([units])"
       },
       {
@@ -5753,6 +5945,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "bleeds([top], [right], [bottom], [left])"
       },
       {
@@ -5786,6 +5979,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "canvasMode(mode)"
       },
       {
@@ -5819,6 +6013,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "guideX(x)"
       },
       {
@@ -5852,6 +6047,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "guideY(y)"
       },
       {
@@ -5917,6 +6113,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "margins([top], [right], [bottom], [left], [pageNumber])"
       },
       {
@@ -5958,6 +6155,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "pasteboard(h, v)"
       },
       {
@@ -5991,6 +6189,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "addPage([location])"
       },
       {
@@ -6048,6 +6247,7 @@
           }
         ],
         "todo": null,
+        "summary": null,
         "codetitle": "applyMasterPage(page, master)"
       },
       {
@@ -6103,6 +6303,7 @@
           }
         ],
         "todo": null,
+        "summary": null,
         "codetitle": "masterPage(master, [pageIndex])"
       },
       {
@@ -6127,6 +6328,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "nextPage()"
       },
       {
@@ -6173,6 +6375,7 @@
           }
         ],
         "todo": null,
+        "summary": null,
         "codetitle": "page([page])"
       },
       {
@@ -6206,6 +6409,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "pageCount([pageCount])"
       },
       {
@@ -6239,6 +6443,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "pageNumber([page])"
       },
       {
@@ -6263,6 +6468,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "previousPage()"
       },
       {
@@ -6290,6 +6496,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "removePage([page])"
       },
       {
@@ -6332,6 +6539,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "applyObjectStyle(item, style)"
       },
       {
@@ -6383,6 +6591,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "arrange(pItemOrLayer, positionOrDirection, [reference])"
       },
       {
@@ -6417,6 +6626,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "bounds(obj)"
       },
       {
@@ -6451,6 +6661,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "duplicate(item)"
       },
       {
@@ -6498,6 +6709,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "graphics(container, [cb])"
       },
       {
@@ -6543,6 +6755,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "group(pItems, [name])"
       },
       {
@@ -6591,14 +6804,15 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "items(container, [cb])"
       },
       {
         "name": "label",
-        "description": "Returns the first item that is tagged with the given label in the InDesign Script Label pane (`Window -> Utilities -> Script Label`). Use this instead of `labels()`, when you know you just have one thing with that label and don't want to deal with a single-element array.",
+        "description": "Tags a page item with a given script label in the InDesign Script Label panel (`Window -> Utilities -> Script Label`). If only one argument is given, `label()` returns the first item that is tagged with the given label. Use this instead of `labels()`, when you know you just have one thing with that label and don't want to deal with a single-element array.",
         "returns": {
           "name": null,
-          "description": "The first page item with the given label.",
+          "description": "The tagged page item or the first page item with the given label.",
           "type": [
             "PageItem"
           ]
@@ -6607,8 +6821,17 @@
         "subcategory": "Page Items",
         "parameters": [
           {
+            "name": "itemOrLabel",
+            "description": "The page item to tag or the label identifier to search for.",
+            "optional": false,
+            "type": [
+              "String",
+              "PageItem"
+            ]
+          },
+          {
             "name": "label",
-            "description": "The label identifier.",
+            "description": "The label identifier to tag the page item with.",
             "optional": false,
             "type": [
               "String"
@@ -6619,12 +6842,13 @@
         "tags": [
           {
             "title": "description",
-            "description": "Returns the first item that is tagged with the given label in the InDesign Script Label pane (`Window -> Utilities -> Script Label`). Use this instead of `labels()`, when you know you just have one thing with that label and don't want to deal with a single-element array."
+            "description": "Tags a page item with a given script label in the InDesign Script Label panel (`Window -> Utilities -> Script Label`). If only one argument is given, `label()` returns the first item that is tagged with the given label. Use this instead of `labels()`, when you know you just have one thing with that label and don't want to deal with a single-element array."
           }
         ],
         "examples": [],
         "todo": null,
-        "codetitle": "label(label)"
+        "summary": null,
+        "codetitle": "label(itemOrLabel, label)"
       },
       {
         "name": "labels",
@@ -6665,6 +6889,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "labels(label, [cb])"
       },
       {
@@ -6689,6 +6914,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "nameOnPage()"
       },
       {
@@ -6731,11 +6957,12 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "objectStyle(itemOrName, [props])"
       },
       {
         "name": "selection",
-        "description": "Returns the first currently selected object. Use this if you know you only have one selected item and don't want to deal with an array.",
+        "description": "If no argument is given, returns the first currently selected object. If a page item is given as argument, the page item will be selected.",
         "returns": {
           "name": null,
           "description": "The first selected object.",
@@ -6745,17 +6972,27 @@
         },
         "category": "Document",
         "subcategory": "Page Items",
-        "parameters": [],
+        "parameters": [
+          {
+            "name": "item",
+            "description": "The page item to select.",
+            "optional": true,
+            "type": [
+              "PageItem"
+            ]
+          }
+        ],
         "kind": "function",
         "tags": [
           {
             "title": "description",
-            "description": "Returns the first currently selected object. Use this if you know you only have one selected item and don't want to deal with an array."
+            "description": "If no argument is given, returns the first currently selected object. If a page item is given as argument, the page item will be selected."
           }
         ],
         "examples": [],
         "todo": null,
-        "codetitle": "selection()"
+        "summary": null,
+        "codetitle": "selection([item])"
       },
       {
         "name": "selections",
@@ -6788,6 +7025,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "selections([cb])"
       },
       {
@@ -6826,6 +7064,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "ungroup(group)"
       },
       {
@@ -6871,6 +7110,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "addToStory(story, itemOrString, insertionPointOrMode)"
       },
       {
@@ -6921,6 +7161,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "characters(container, [cb])"
       },
       {
@@ -6970,6 +7211,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "lines(container, [cb])"
       },
       {
@@ -7005,6 +7247,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "linkTextFrames(textFrameA, textFrameB)"
       },
       {
@@ -7052,6 +7295,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "paragraphs(container, [cb])"
       },
       {
@@ -7085,6 +7329,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "placeholder(textFrame)"
       },
       {
@@ -7132,6 +7377,7 @@
           }
         ],
         "todo": null,
+        "summary": null,
         "codetitle": "stories(container, [cb])"
       },
       {
@@ -7182,6 +7428,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "textStyleRanges(container, [cb])"
       },
       {
@@ -7231,6 +7478,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "words(container, [cb])"
       }
     ],
@@ -7308,6 +7556,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "image(img, x, [y], [w], [h])"
       },
       {
@@ -7341,6 +7590,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "imageMode([mode])"
       }
     ],
@@ -7379,6 +7629,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "shellExecute(cmd)"
       },
       {
@@ -7414,6 +7665,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "download(url, [file])"
       },
       {
@@ -7456,6 +7708,7 @@
           }
         ],
         "todo": null,
+        "summary": null,
         "codetitle": "file(filePath)"
       },
       {
@@ -7530,6 +7783,7 @@
           }
         ],
         "todo": null,
+        "summary": null,
         "codetitle": "files([folder], [settings])"
       },
       {
@@ -7572,6 +7826,7 @@
           }
         ],
         "todo": null,
+        "summary": null,
         "codetitle": "folder([folderPath])"
       },
       {
@@ -7606,6 +7861,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "loadString(file)"
       },
       {
@@ -7640,6 +7896,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "loadStrings(file)"
       },
       {
@@ -7707,6 +7964,7 @@
           }
         ],
         "todo": null,
+        "summary": null,
         "codetitle": "selectFile([settings])"
       },
       {
@@ -7773,6 +8031,7 @@
           }
         ],
         "todo": null,
+        "summary": null,
         "codetitle": "selectFiles([settings])"
       },
       {
@@ -7832,6 +8091,7 @@
           }
         ],
         "todo": null,
+        "summary": null,
         "codetitle": "selectFolder([settings])"
       },
       {
@@ -7856,6 +8116,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "day()"
       },
       {
@@ -7880,6 +8141,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "hour()"
       },
       {
@@ -7904,6 +8166,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "millis()"
       },
       {
@@ -7928,6 +8191,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "millisecond()"
       },
       {
@@ -7952,6 +8216,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "minute()"
       },
       {
@@ -7976,6 +8241,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "month()"
       },
       {
@@ -8000,6 +8266,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "second()"
       },
       {
@@ -8024,6 +8291,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "timestamp()"
       },
       {
@@ -8048,6 +8316,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "weekday()"
       },
       {
@@ -8072,6 +8341,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "year()"
       }
     ],
@@ -8104,6 +8374,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "print(msg)"
       },
       {
@@ -8131,6 +8402,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "println(msg)"
       },
       {
@@ -8173,6 +8445,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "savePDF(file, [showOptions])"
       },
       {
@@ -8215,6 +8488,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "savePNG(file, [showOptions])"
       },
       {
@@ -8257,6 +8531,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "saveString(file, string)"
       },
       {
@@ -8299,6 +8574,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "saveStrings(file, strings)"
       }
     ],
@@ -8331,6 +8607,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "ellipseMode(mode)"
       },
       {
@@ -8358,6 +8635,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "rectMode(mode)"
       },
       {
@@ -8385,6 +8663,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "strokeWeight(weight)"
       },
       {
@@ -8467,6 +8746,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "arc(cx, cy, w, h, startAngle, endAngle, [mode])"
       },
       {
@@ -8524,6 +8804,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "ellipse(x, y, w, h)"
       },
       {
@@ -8586,6 +8867,7 @@
           }
         ],
         "todo": null,
+        "summary": null,
         "codetitle": "line(x1, y1, x2, y2)"
       },
       {
@@ -8627,6 +8909,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "point(x, y)"
       },
       {
@@ -8716,6 +8999,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "quad(x1, y1, x2, y2, x3, y3, x3, y3)"
       },
       {
@@ -8805,6 +9089,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "rect(x, y, w, h, [tl], [tr], [br], [bl])"
       },
       {
@@ -8878,6 +9163,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "triangle(x1, y1, x2, y2, x3, y3)"
       },
       {
@@ -8896,6 +9182,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "addPath()"
       },
       {
@@ -8914,6 +9201,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "beginShape()"
       },
       {
@@ -8948,6 +9236,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "endShape(shapeMode)"
       },
       {
@@ -9015,6 +9304,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "vertex(x, y, [xLeftHandle], [yLeftHandle], [xRightHandle], [yRightHandle])"
       }
     ],
@@ -9047,6 +9337,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "mode(mode)"
       },
       {
@@ -9065,6 +9356,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "noLoop()"
       }
     ],
@@ -9097,6 +9389,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "applyMatrix(matrix)"
       },
       {
@@ -9115,6 +9408,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "popMatrix()"
       },
       {
@@ -9133,6 +9427,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "printMatrix()"
       },
       {
@@ -9151,6 +9446,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "pushMatrix()"
       },
       {
@@ -9169,6 +9465,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "resetMatrix()"
       },
       {
@@ -9196,6 +9493,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "rotate(angle)"
       },
       {
@@ -9231,6 +9529,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "scale(scaleX, scaleY)"
       },
       {
@@ -9294,6 +9593,7 @@
           }
         ],
         "todo": null,
+        "summary": null,
         "codetitle": "transform(pItem, type, [value])"
       },
       {
@@ -9329,6 +9629,7 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": null,
         "codetitle": "translate(tx, ty)"
       }
     ],

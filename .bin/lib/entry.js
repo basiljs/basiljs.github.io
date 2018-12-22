@@ -11,6 +11,7 @@ function Entry() {
   this.tags = [];
   this.examples = [];
   this.todo = null;
+  this.summary = null;
 }
 
 module.exports = Entry;
