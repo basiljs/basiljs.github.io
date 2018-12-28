@@ -1,13 +1,13 @@
 ---
 layout: entry
 title: BACKWARD
-codetitle: BACKWARD()
+codetitle: BACKWARD
 description: 'Used with arrange() to send a page item one level backward in its layer.'
 category: global
-subcategory: null
+subcategory: Constants
 returns: null
 parameters: []
-kind: function
+kind: ""
 todo: null
 examples: []
 

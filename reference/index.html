@@ -4,43 +4,159 @@ title: Reference
 order: 3
 ---
 
+<style>
+  h1#new-cat-index{
+padding-top: 0.37em;
+  }
+.sub-category{
+  column-width: 250px;
+  /* border-bottom: 1px dotted #9636FC; */
+}
+#toc-categories{
+  column-width: 250px;
+  padding-bottom: 3em;
+  /* border-bottom: 1px dotted #9636FC; */
 
-<h2 id="cat-ndx">Categories</h2>
-<div class="index">
-    {% for element in site.data.cats-and-subcats %}
-    <section class="category">
-    {% assign newcat = true %}
-    {% for ele in element %}
-    {% if newcat == true %}
-    <h3 class="reference-category">{{ele.cat}}</h3>
-    {% assign newcat = false %}
-    {%- endif -%}
-        {%unless ele.subcat == 'null' %}<h4 class="reference-subcategory">{{ele.subcat}}</h4>{% endunless %}
-        <ul class="reference-lists">
-            <!-- this is the list -->
-            {% for entry in ele.entries %}
-            {% assign eid = entry.name |downcase %}
-            <li id="{{eid}}-ndx"><a href="#{{eid}}">{{entry.codetitle}}</a></li>
-            {% endfor %}
-        </ul>{% endfor %}
-    </section>
-        {% endfor %}
+}
+.heading-category{
+  border-top: 1px dotted #9636FC;
+
+}
+.cat{
+padding-top: 0.5em;
+}
+.cat-subcat{
+  padding-bottom: 0.1em;
+}
+      .subcat{
+        padding-left: 0.5em;
+  /* padding-bottom: 0em; */
+
+      }
+.cat-group{
+  break-inside: avoid;
+}
+.box-drawings{
+  font-weight: bold;
+  color: #9636FC;
+}
+
+/* .entry-heading{
+ margin-top: 0;
+} */
+.summary, .new-entry{
+  break-inside: avoid;
+}
+.summary{
+  min-height: 6em;
+  margin-top: 0.5em;
+}
+</style>
+<h1 id="new-cat-index">{{page.title}}</h1>
+
+<h2>Table Of Contents</h2>
+<section id="toc-categories">
+  {%- for element in site.data.cats-and-subcats %}
+  <section class="cat-group">
+  {%- assign newcat = true -%}
+  {%- for ele in element -%}
+  {%- if newcat == true -%}
+  <div class="cat cat-subcat"><a href="#{{ele.cat}}">{{ele.cat}}</a></div>
+  {%- assign newcat = false -%}
+  {%- endif -%}
+  {%- unless ele.subcat == 'null' -%}<div class="subcat cat-subcat"><span class="box-drawings">{% if forloop.last != true %}┣ {% else %}┗ {% endif %}</span><a href="#{{ele.subcat}}">{{ele.subcat}}</a></div>{%- endunless -%}
+  {%- endfor -%}
+  </section>
+  {%- endfor -%}
+
+</section>
+  <!-- End of TOC loops -->
+  <input class="search" placeholder="Search" />
+<!-- class="sort" automagically makes an element a sort buttons. The date-sort value decides what to sort by. -->
+  <button class="sort" data-sort="name">
+    Sort
+  </button>
+<div class="reference">
+  <!-- class="search" automagically makes an input a search field. -->
+    {%- for element in site.data.cats-and-subcats %}
+    <!-- <section class="category"> -->
+        {%- assign newcat = true -%}
+        {%- for ele in element -%}
+        {%- if newcat == true -%}
+        <h2 class="heading-category" id="{{ele.cat}}">{{ele.cat}}</h2>
+        {%- assign newcat = false -%}
+        {%- endif -%}
+        {%- unless ele.subcat == 'null' -%}<h3 id="{{ele.subcat}}">{{ele.cat}}#{{ele.subcat}}</h3>{%- endunless -%}
+        <section class="sub-category">
+            {%- for entry in ele.entries -%}
+            {%- assign eid = entry.name |downcase -%}
+            <div class="new-entry" id="{{eid}}-ndx">
+              <div class="entry-heading"><a href="/reference/{{ele.cat}}/{{entry.name}}.html">{{entry.codetitle}}</a></div>
+
+                {%- if entry.summary != null -%}
+                <p class="summary">{{entry.summary}}</p>
+                {%- else -%}
+                <p class="summary">
+                    {%- if entry.description != null -%}
+                    {{entry.description | truncate: 150, '...' | markdownify | strip_html  }}
+                    {%- else -%}
+                    {% assign min = 30 %}
+                    {% assign max = 150 %}
+                    {% assign diff = max | minus: min %}
+                    {% assign randomNumber = "now" | date: "%N" | modulo: diff | plus: min %}{{"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." |  truncate: randomNumber, '...' }}
+                  {%- endif -%}
+                  </p>
+              {%- endif -%}
+            </div>
+            {%- endfor -%} <!-- End of sub category loop-->
+          </section>
+          <!-- <hr> -->
+
+        {%- endfor -%} <!-- End of category loop-->
+    <!-- </section> -->
+    {%- endfor -%} <!-- End of elements loop-->
+</div>
+
+
+
+ {%- comment -%}
+ <h2 id="cat-ndx">Categories</h2>
+ <div class="index">
+ {%- for element in site.data.cats-and-subcats %}
+ <section class="category">
+   {%- assign newcat = true -%}
+   {%- for ele in element -%}
+   {%- if newcat == true -%}
+   <h3 class="reference-category">{{ele.cat}}</h3>
+   {%- assign newcat = false -%}
+   {%- endif -%}
+   {%- unless ele.subcat == 'null' -%}<h4 class="reference-subcategory">{{ele.subcat}}</h4>{%- endunless -%}
+   <ul class="reference-lists">
+     <!-- this is the list -->
+     {%- for entry in ele.entries -%}
+     {%- assign eid = entry.name |downcase -%}
+     <li id="{{eid}}-ndx"><a href="#{{eid}}">{{entry.codetitle}}</a></li>
+     {%- endfor -%}
+    </ul>{%- endfor -%}
+  </section>
+  {%- endfor -%}
 </div>
 
 <!-- start item in cat loop -->
 
 <div class="entries">
-{% for item in site.data.categories %}{% assign id = item.cat | downcase %}
-<h3 id="{{id}}">{{item.cat}}</h3>
-<!-- start entries in cat loop -->
-{% for entry in item.entries %}{% include entry-card.html entry=entry ispage=false %}{% endfor %}
-<!-- end entries in cat loop -->
-{% endfor %}
-<!-- end item in cat loop --></div>
+  {%- for item in site.data.categories -%}{%- assign id = item.cat | downcase -%}
+  <h3 id="{{id}}">{{item.cat}}</h3>
+  <!-- start entries in cat loop -->
+  {%- for entry in item.entries -%}{%- include entry-card.html entry=entry ispage=false -%}{%- endfor -%}
+  <!-- end entries in cat loop -->
+  {%- endfor -%}
+  <!-- end item in cat loop --></div>
 
-<div class="totop"><a href="#">☝︎ back to index</a></div>
-<div class="totop-shadow"><a href="#">☝︎ back to index</a>
-</div>
-<script type="text/javascript">
-var searchindex = {{ site.data.categories | jsonify }};
+{%- endcomment -%}
+  <div class="totop"><a href="#">☝︎ back to top</a></div>
+  <div class="totop-shadow"><a href="#">☝︎ back to top</a>
+  </div>
+  <script type="text/javascript">
+// var searchindex = {{ site.data.categories | jsonify }};
 </script>

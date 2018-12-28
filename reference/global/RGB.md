@@ -1,13 +1,13 @@
 ---
 layout: entry
 title: RGB
-codetitle: RGB()
+codetitle: RGB
 description: 'Used with colorMode() to set the color space.'
 category: global
-subcategory: null
+subcategory: Constants
 returns: null
 parameters: []
-kind: function
+kind: ""
 todo: null
 examples: []
 

@@ -1,13 +1,13 @@
 ---
 layout: entry
 title: CLOSE
-codetitle: CLOSE()
+codetitle: CLOSE
 description: 'Close, used for endShape() modes.'
 category: global
-subcategory: null
+subcategory: Constants
 returns: null
 parameters: []
-kind: function
+kind: ""
 todo: null
 examples: []
 

@@ -1,13 +1,13 @@
 ---
 layout: entry
 title: CORNERS
-codetitle: CORNERS()
+codetitle: CORNERS
 description: 'Corners, used for drawing modes.'
 category: global
-subcategory: null
+subcategory: Constants
 returns: null
 parameters: []
-kind: function
+kind: ""
 todo: null
 examples: []
 

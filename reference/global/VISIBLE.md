@@ -1,13 +1,13 @@
 ---
 layout: entry
 title: VISIBLE
-codetitle: VISIBLE()
+codetitle: VISIBLE
 description: 'Default mode. Used with '
 category: global
-subcategory: null
+subcategory: Constants
 returns: null
 parameters: []
-kind: function
+kind: ""
 todo: null
 examples: []
 

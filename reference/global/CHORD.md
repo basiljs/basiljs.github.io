@@ -1,13 +1,13 @@
 ---
 layout: entry
 title: CHORD
-codetitle: CHORD()
+codetitle: CHORD
 description: 'Chord, used for arc() modes.'
 category: global
-subcategory: null
+subcategory: Constants
 returns: null
 parameters: []
-kind: function
+kind: ""
 todo: null
 examples: []
 

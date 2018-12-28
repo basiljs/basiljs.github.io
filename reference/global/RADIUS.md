@@ -1,13 +1,13 @@
 ---
 layout: entry
 title: RADIUS
-codetitle: RADIUS()
+codetitle: RADIUS
 description: 'Radius, used for drawing modes.'
 category: global
-subcategory: null
+subcategory: Constants
 returns: null
 parameters: []
-kind: function
+kind: ""
 todo: null
 examples: []
 

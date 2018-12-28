@@ -1,13 +1,13 @@
 ---
 layout: entry
 title: LANDSCAPE
-codetitle: LANDSCAPE()
+codetitle: LANDSCAPE
 description: 'Used with size() to set the orientation of a given page size to landscape.'
 category: global
-subcategory: null
+subcategory: Constants
 returns: null
 parameters: []
-kind: function
+kind: ""
 todo: null
 examples: []
 
