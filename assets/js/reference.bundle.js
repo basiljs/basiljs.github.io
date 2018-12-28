@@ -99,21 +99,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var list_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(list_js__WEBPACK_IMPORTED_MODULE_0__);
 
 document.addEventListener('DOMContentLoaded', function () {
-  var searchfield = document.querySelector('input.search');
-  console.log(list_js__WEBPACK_IMPORTED_MODULE_0___default.a);
+  // const searchfield = document.querySelector('input.search');
+  // console.log(List);
   console.log('Vanilla doc ready');
   var options = {
-    valueNames: ['heading-category']
+    valueNames: ['entry-heading-link'],
+    // needs some tweaking
+    location: 0,
+    distance: 100,
+    threshold: 0.4,
+    multiSearch: true
   };
-  var listObj = new list_js__WEBPACK_IMPORTED_MODULE_0___default.a('reference', options);
-  console.log(listObj);
-
-  if (searchfield !== null) {
-    searchfield.addEventListener('keyup', function (event) {
-      var txt = searchfield.value;
-      listObj.search(txt);
-    });
-  }
+  var listObj = new list_js__WEBPACK_IMPORTED_MODULE_0___default.a('ref', options); // console.log(listObj);
+  // if (searchfield !== null) {
+  //   searchfield.addEventListener('keyup', (event)=>{
+  //     let txt = searchfield.value;
+  //     listObj.search(txt);
+  //   });
+  // }
 });
 
 /***/ }),

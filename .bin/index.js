@@ -256,12 +256,8 @@ json.forEach(ele => {
 });
 
 // sort categories by name
-// console.log(json[0][0].cat);
 json.sort((a,b)=> a[0].cat.localeCompare(b[0].cat));
-// json.forEach((ele, i) => {
-//   // console.log(ele[i].cat);
-//   ele.sort((a,b) => a.cat.localeCompare(b.cat));
-// })
+
 
 fs.writeFile('./_data/cats-and-subcats.json', JSON.stringify(json, null, 2), (err)=>{
   if(err) {

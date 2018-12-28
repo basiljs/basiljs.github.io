@@ -51,6 +51,14 @@ padding-top: 0.5em;
   min-height: 6em;
   margin-top: 0.5em;
 }
+.fuzzy-search, input.fuzzy-search::placeholder {
+  width: 100%;
+  /* height: 2em; */
+  /* font-weight: bold; */
+  font-size: 1.2em;
+  /* color: #9636FC; */
+  font-family:'Times New Roman', Times, serif;
+}
 </style>
 <h1 id="new-cat-index">{{page.title}}</h1>
 
@@ -71,15 +79,11 @@ padding-top: 0.5em;
 
 </section>
   <!-- End of TOC loops -->
-  <input class="search" placeholder="Search" />
-<!-- class="sort" automagically makes an element a sort buttons. The date-sort value decides what to sort by. -->
-  <button class="sort" data-sort="name">
-    Sort
-  </button>
-<div class="reference">
-  <!-- class="search" automagically makes an input a search field. -->
+  <div class="ref" id="ref">
+    <!-- class="fuzzy-search" automagically makes an input a search field. -->
+      <input class="fuzzy-search" placeholder="Fuzzy Search List.js" />
+        <section class="list">
     {%- for element in site.data.cats-and-subcats %}
-    <!-- <section class="category"> -->
         {%- assign newcat = true -%}
         {%- for ele in element -%}
         {%- if newcat == true -%}
@@ -89,10 +93,9 @@ padding-top: 0.5em;
         {%- unless ele.subcat == 'null' -%}<h3 id="{{ele.subcat}}">{{ele.cat}}#{{ele.subcat}}</h3>{%- endunless -%}
         <section class="sub-category">
             {%- for entry in ele.entries -%}
-            {%- assign eid = entry.name |downcase -%}
+            {%- assign eid = entry.name | downcase -%}
             <div class="new-entry" id="{{eid}}-ndx">
-              <div class="entry-heading"><a href="/reference/{{ele.cat}}/{{entry.name}}.html">{{entry.codetitle}}</a></div>
-
+              <div class="entry-heading"><a class="entry-heading-link" href="/reference/{{ele.cat}}/{{entry.name}}.html">{{entry.codetitle}}</a></div>
                 {%- if entry.summary != null -%}
                 <p class="summary">{{entry.summary}}</p>
                 {%- else -%}
@@ -108,17 +111,18 @@ padding-top: 0.5em;
                   </p>
               {%- endif -%}
             </div>
-            {%- endfor -%} <!-- End of sub category loop-->
+            {%- endfor -%} <!-- End of sub entries loop-->
           </section>
           <!-- <hr> -->
-
         {%- endfor -%} <!-- End of category loop-->
-    <!-- </section> -->
-    {%- endfor -%} <!-- End of elements loop-->
+        {%- endfor -%} <!-- End of elements loop-->
+      </section>
 </div>
 
-
-
+<script>
+// const searchstring = 'foo';
+// window.lunrjssearchdata = JSON.parse(searchstring);
+</script>
  {%- comment -%}
  <h2 id="cat-ndx">Categories</h2>
  <div class="index">
