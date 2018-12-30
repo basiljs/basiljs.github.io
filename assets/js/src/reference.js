@@ -60,6 +60,8 @@ document.addEventListener('DOMContentLoaded',function() {
       this.ref('id');
       this.field('summary');
       this.field('codetitle');
+      this.field('name');
+      this.field('description');
       json.forEach(function(doc){
         this.add(doc);
       }, this);
