@@ -2,7 +2,7 @@
 layout: entry
 title: Vector.sub
 codetitle: 'Vector.sub(v, [y], [z])'
-description: 'Substract `x`, `y`, and `z` components or a full vector from this vector.'
+description: 'Substracts `x`, `y`, and `z` components or a full vector from this vector.'
 category: Math
 subcategory: Vector
 returns: null

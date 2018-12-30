@@ -2,7 +2,7 @@
 layout: entry
 title: isURL
 codetitle: isURL(url)
-description: 'Checks whether an URL string is valid.'
+description: 'Checks wether an URL string is valid.'
 category: Data
 subcategory: Type-Check
 returns:

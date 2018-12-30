@@ -31,7 +31,7 @@
     "@babel/preset-env": "^7.2.3",
     "acorn": "^6.0.4",
     "babel-loader": "^8.0.4",
-    "basiljs": "github:basiljs/basil.js#fix/constants-subcats",
+    "basiljs": "github:basiljs/basil.js#develop",
     "broken-link-checker": "^0.7.8",
     "cz-conventional-changelog": "^2.1.0",
     "documentation": "^9.1.1",
