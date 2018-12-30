@@ -2,6 +2,15 @@
 layout: default
 ---
 <!-- start layout entry -->
+<style>
+#distance{
+  padding-top: 2em;
+}
+</style>
+<div id="distance">
+
+  {%- include search-bar.html -%}
+</div>
 {% include entry-card.html entry=page ispage=true %}
 {{content}}
 

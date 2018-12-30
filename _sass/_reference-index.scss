@@ -1,17 +1,129 @@
-.index{
-  column-width: 250px;
- }
- .category{
-     break-inside: avoid;
- }
- .reference-category{
-     font-size: 1.3em !important;
- }
- .reference-subcategory{
-     font-size: 1.1em !important;
-     margin-left: 0.6em;
+.index {
+    column-width: 250px;
+}
 
- }
- .reference-lists {
- margin-left: 1.2em;
- }
+.category {
+    break-inside: avoid;
+}
+
+.reference-category {
+    font-size: 1.3em !important;
+}
+
+.reference-subcategory {
+    font-size: 1.1em !important;
+    margin-left: 0.6em;
+}
+
+.reference-lists {
+    margin-left: 1.2em;
+}
+
+h1#new-cat-index {
+    padding-top: 0.37em;
+}
+
+.sub-category {
+    column-width: 250px;
+    /* border-bottom: 1px dotted #9636FC; */
+}
+
+#toc-categories {
+    column-width: 250px;
+    padding-bottom: 3em;
+    /* border-bottom: 1px dotted #9636FC; */
+}
+
+.heading-category {
+    border-top: 1px dotted #9636FC;
+}
+
+.cat {
+    padding-top: 0.5em;
+}
+
+.cat-subcat {
+    padding-bottom: 0.1em;
+}
+
+.subcat {
+    padding-left: 0.5em;
+    /* padding-bottom: 0em; */
+}
+
+.cat-group {
+    break-inside: avoid;
+}
+
+.box-drawings {
+    font-weight: bold;
+    color: #9636FC;
+}
+
+
+/* .entry-heading{
+     margin-top: 0;
+    } */
+
+.summary,
+.ref-entry {
+    break-inside: avoid;
+}
+
+.summary {
+    min-height: 6em;
+    margin-top: 0.5em;
+}
+
+#flex-search {
+    display: flex;
+}
+
+#flex-search>* {
+    margin-right: 0.5em;
+}
+
+#flex-search>button {
+    margin-right: 0 !important;
+    background-color: white;
+    background: white;
+    background-image: none;
+    border: 1px solid #9636FC;
+}
+
+.flex-search-item,
+.flex-search-item::placeholder {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+}
+
+input.flex-search-item {
+    flex-grow: 2;
+    border: 1px solid #9636FC;
+}
+
+button.flex-search-item {
+    flex-grow: 1;
+}
+
+button.flex-search-item:hover {
+    background: #9636FC !important;
+    color: white;
+}
+
+button.flex-search-item:active {
+    background: black !important;
+}
+
+#flex-search-results>.search-result-container>.ref-entry {
+    padding-top: 0.5em;
+    border-top: 1px dotted #9636FC;
+}
+
+#flex-search-results>.search-result-container>.ref-entry>p.summary {
+    min-height: 0;
+}
+
+.search-result-container {
+    padding-top: 1em;
+}

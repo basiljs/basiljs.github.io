@@ -5,63 +5,11 @@ order: 3
 ---
 
 <style>
-  h1#new-cat-index{
-padding-top: 0.37em;
-  }
-.sub-category{
-  column-width: 250px;
-  /* border-bottom: 1px dotted #9636FC; */
-}
-#toc-categories{
-  column-width: 250px;
-  padding-bottom: 3em;
-  /* border-bottom: 1px dotted #9636FC; */
 
-}
-.heading-category{
-  border-top: 1px dotted #9636FC;
 
-}
-.cat{
-padding-top: 0.5em;
-}
-.cat-subcat{
-  padding-bottom: 0.1em;
-}
-      .subcat{
-        padding-left: 0.5em;
-  /* padding-bottom: 0em; */
-
-      }
-.cat-group{
-  break-inside: avoid;
-}
-.box-drawings{
-  font-weight: bold;
-  color: #9636FC;
-}
-
-/* .entry-heading{
- margin-top: 0;
-} */
-.summary, .new-entry{
-  break-inside: avoid;
-}
-.summary{
-  min-height: 6em;
-  margin-top: 0.5em;
-}
-.fuzzy-search, input.fuzzy-search::placeholder {
-  width: 100%;
-  /* height: 2em; */
-  /* font-weight: bold; */
-  font-size: 1.2em;
-  /* color: #9636FC; */
-  font-family:'Times New Roman', Times, serif;
-}
 </style>
 <h1 id="new-cat-index">{{page.title}}</h1>
-
+{%- include search-bar.html -%}
 <h2>Table Of Contents</h2>
 <section id="toc-categories">
   {%- for element in site.data.cats-and-subcats %}
@@ -81,7 +29,8 @@ padding-top: 0.5em;
   <!-- End of TOC loops -->
   <div class="ref" id="ref">
     <!-- class="fuzzy-search" automagically makes an input a search field. -->
-      <input class="fuzzy-search" placeholder="Fuzzy Search List.js" />
+      <!-- <input class="fuzzy-search searchfield" placeholder="Fuzzy Search List.js" /> -->
+
         <section class="list">
     {%- for element in site.data.cats-and-subcats %}
         {%- assign newcat = true -%}
@@ -94,7 +43,7 @@ padding-top: 0.5em;
         <section class="sub-category">
             {%- for entry in ele.entries -%}
             {%- assign eid = entry.name | downcase -%}
-            <div class="new-entry" id="{{eid}}-ndx">
+            <div class="ref-entry" id="{{eid}}">
               <div class="entry-heading"><a class="entry-heading-link" href="/reference/{{ele.cat}}/{{entry.name}}.html">{{entry.codetitle}}</a></div>
                 {%- if entry.summary != null -%}
                 <p class="summary">{{entry.summary}}</p>

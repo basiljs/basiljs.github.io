@@ -1,4 +1,4 @@
 ---
 ---
-[{%- for element in site.data.cats-and-subcats -%}{%- for ele in element -%}{%- for entry in ele.entries -%}{%- assign eid = entry.name | downcase -%} { "id":"{{eid}}","codetitle": "{{ entry.codetitle }}","summary":"{%- if entry.summary != null -%}{{ entry.summary | strip_newlines | escape }}{%- else -%}{{ entry.description | truncate: 150, '...' | markdownify | strip_html | strip_newlines | escape }}
+[{%- for element in site.data.cats-and-subcats -%}{%- for ele in element -%}{%- for entry in ele.entries -%}{%- assign eid = entry.name | downcase -%} { "id":"{{eid}}","name":"{{entry.name  }}","codetitle":"{{ entry.codetitle }}","href":"/reference/{{ele.cat}}/{{entry.name}}.html","summary":"{%- if entry.summary != null -%}{{ entry.summary | strip_newlines | escape }}{%- else -%}{{ entry.description | truncate: 150, '...' | markdownify | strip_html | strip_newlines | escape }}
 {%- endif -%}" } {%- if forloop.last != true -%},{%-endif-%}{%- endfor -%}{%- if forloop.last != true -%},{%-endif-%}{%- endfor -%}{%- if forloop.last != true -%},{%-endif-%}{%- endfor -%}]
