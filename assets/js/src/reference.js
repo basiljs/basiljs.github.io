@@ -1,4 +1,3 @@
-// import List from 'list.js';
 import lunr from 'lunr';
 
 function clearElement(ele) {
@@ -23,37 +22,25 @@ function entryTemplate(opt) {
 
 
 document.addEventListener('DOMContentLoaded', function() {
-  // console.log('Vanilla doc ready');
 
   const searchfield = document.querySelector('input#lunr-search');
   const clearbutton = document.querySelector('button#lunr-clear');
   const searchresults = document.querySelector('#flex-search-results');
   const params = new URLSearchParams(window.location.search);
-  // console.log(params.has('query'));
-  // console.log(params.get('query'));
+
   (async function() {
     const search = txt => {
-      // console.log(searchfield.value);
       const results = idx.search(txt);
-      // console.log(results);
-      // [...entries].forEach(ele => {
-      // console.log(event.key);
-      // console.log(txt.length , txt);
-      // console.log(event.key);
+
       if (txt.length === 0) {
         clearElement(searchresults);
-        // searchresults.appendChild(searchdocs);
       }
       if (results.length > 0) {
         const container = document.createElement('div');
         container.classList.add('search-result-container');
-        // console.log(results);
         results.forEach(res => {
-          // if (res.score === 0){
-          //   return;
-          // }
+
           let e = document.querySelector(`#${res.ref}`);
-          // console.log(e);
           if (e !== null) {
             container.appendChild(e.cloneNode(true));
           } else {
@@ -69,7 +56,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
       } else {
         clearElement(searchresults);
-        // searchresults.appendChild(searchdocs);
       }
     };
 
@@ -93,17 +79,12 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     if (clearbutton !== null) {
-      // console.log('button');
       clearbutton.addEventListener('click', event => {
-        // console.log('click');
-        // console.log(event);
+
         if (searchresults !== null) {
           clearElement(searchresults);
-          // searchresults.appendChild(searchdocs);
         }
-        // if (entries !== null){
-        //   [...entries].forEach(ele => ele.classList.remove('hide-entries'));
-        // }
+
       });
     }
     if (searchfield !== null) {
@@ -115,7 +96,6 @@ document.addEventListener('DOMContentLoaded', function() {
         let txt = searchfield.value;
         if (event.key === 'Backspace' && txt.length === 0) {
           clearElement(searchresults);
-          // searchresults.appendChild(searchdocs);
           return;
         }
         search(txt);
@@ -123,19 +103,5 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     }
   })();
-  // const response =  fetch('./lunrjs.data.json');
-  // response.then(resp => {
-  //   resp.json().then(json => {
-  //     console.log(json);
-  //   });
-  // }).catch(err => console.error(err));
-  // // console.log(response);
 
-  // console.log(listObj);
-  // if (searchfield !== null) {
-  //   searchfield.addEventListener('keyup', (event)=>{
-  //     let txt = searchfield.value;
-  //     listObj.search(txt);
-  //   });
-  // }
 });
