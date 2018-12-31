@@ -20,7 +20,7 @@ order: 3
   <div class="cat cat-subcat"><a href="#{{ele.cat}}">{{ele.cat}}</a></div>
   {%- assign newcat = false -%}
   {%- endif -%}
-  {%- unless ele.subcat == 'null' -%}<div class="subcat cat-subcat"><span class="box-drawings">{% if forloop.last != true %}┣ {% else %}┗ {% endif %}</span><a href="#{{ele.subcat}}">{{ele.subcat}}</a></div>{%- endunless -%}
+  {%- unless ele.subcat == 'null' -%}<div class="subcat cat-subcat"><span class="box-drawings">{% if forloop.last != true %}┣ {% else %}┗ {% endif %}</span><a href="#{{ele.subcat | downcase | replace: ' ','-'}}">{{ele.subcat}}</a></div>{%- endunless -%}
   {%- endfor -%}
   </section>
   {%- endfor -%}
@@ -39,14 +39,14 @@ order: 3
         <h2 class="heading-category" id="{{ele.cat}}">{{ele.cat}}</h2>
         {%- assign newcat = false -%}
         {%- endif -%}
-        {%- unless ele.subcat == 'null' -%}<h3 id="{{ele.subcat}}">{{ele.cat}}#{{ele.subcat}}</h3>{%- endunless -%}
+        {%- unless ele.subcat == 'null' -%}<h3 id="{{ele.subcat | downcase | replace: ' ','-'}}" class="heading-sub-category">{{ele.cat}}#{{ele.subcat}}</h3>{%- endunless -%}
         <section class="sub-category">
             {%- for entry in ele.entries -%}
             {%- assign eid = entry.name | downcase -%}
             <div class="ref-entry" id="{{eid}}">
               <div class="entry-heading"><a class="entry-heading-link" href="/reference/{{ele.cat}}/{{entry.name}}.html">{{entry.codetitle}}</a></div>
                 {%- if entry.summary != null -%}
-                <p class="summary">{{entry.summary}}</p>
+                <p class="summary">{{entry.summary | markdownify | replace: '<p>', ''| replace: '</p>', '' }}</p>
                 {%- else -%}
                 <p class="summary">
                     {%- if entry.description != null -%}

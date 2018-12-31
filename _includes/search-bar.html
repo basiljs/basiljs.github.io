@@ -1,5 +1,20 @@
 <div id="flex-search">
-  <input class="searchfield flex-search-item" id="lunr-search" placeholder="Search" /> <button id="lunr-clear" class="flex-search-item">Clear</button>
+    <input class="searchfield flex-search-item" id="lunr-search" placeholder="Search" /> <button id="lunr-clear" class="flex-search-item">Clear</button>
+</div>
+<div class="flex-search-advanced-hints">
+    <div id="advanced-search-hint">
+        <label for="advanced-search-toggle">Advanced search:</label>
+        <input type="checkbox" name="toggle" id="advanced-search-toggle" checked>
+        <div id="advanced-search-text" >
+            <p>
+                <em>If your terms don't match, try to use some special search terms.<br>
+            You can use wildcards: like <code>lerp*</code> or <code>co*lor*</code>. <br>
+            Or try using boosts: <code>fill^10 color</code>. This means the weight of fill is 10 times higher then color<br>
+            Read more about the search engine <a href="https://lunrjs.com/guides/searching.html">here</a>
+          </em>
+            </p>
+        </div>
+    </div>
 </div>
 <div id="flex-search-results">
 </div>

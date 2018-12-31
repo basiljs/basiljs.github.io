@@ -26,13 +26,13 @@ document.addEventListener('DOMContentLoaded',function() {
   const searchfield = document.querySelector('input#lunr-search');
   const clearbutton = document.querySelector('button#lunr-clear');
   const searchresults = document.querySelector('#flex-search-results');
-  const searchdocsstring = `<p><em>Advanced search: If your terms don't match, try to use some special search terms.<br>
-  You can use wildcards: like <code>lerp*</code> or <code>co*lor*</code>. <br>
-  Or try using boosts: <code>fill^10 color</code>. This means the weight of fill is 10 times higher then color<br>
-  Read more about the search engine <a href="https://lunrjs.com/guides/searching.html">here</a>
-</em></p>`;
-  const searchdocs = createElementFromHTML(searchdocsstring);
-  searchresults.appendChild(searchdocs);
+  //   const searchdocsstring = `<p><em>Advanced search: If your terms don't match, try to use some special search terms.<br>
+  //   You can use wildcards: like <code>lerp*</code> or <code>co*lor*</code>. <br>
+  //   Or try using boosts: <code>fill^10 color</code>. This means the weight of fill is 10 times higher then color<br>
+  //   Read more about the search engine <a href="https://lunrjs.com/guides/searching.html">here</a>
+  // </em></p>`;
+  // const searchdocs = createElementFromHTML(searchdocsstring);
+  // searchresults.appendChild(searchdocs);
   /**
    * This is the init of the list.js lib
    *
@@ -58,9 +58,9 @@ document.addEventListener('DOMContentLoaded',function() {
     // console.log(json);
     const idx = lunr(function(){
       this.ref('id');
-      this.field('summary');
-      this.field('codetitle');
-      this.field('name');
+      this.field('summary', {boost: 5});
+      this.field('codetitle', {boost: 10});
+      this.field('name', {boost: 10});
       this.field('description');
       json.forEach(function(doc){
         this.add(doc);
@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded',function() {
         // console.log(event);
         if (searchresults !== null) {
           clearElement(searchresults);
-          searchresults.appendChild(searchdocs);
+          // searchresults.appendChild(searchdocs);
         }
         // if (entries !== null){
         //   [...entries].forEach(ele => ele.classList.remove('hide-entries'));
@@ -96,14 +96,14 @@ document.addEventListener('DOMContentLoaded',function() {
         // console.log(event.key);
         if (event.key ==='Backspace' && txt.length === 0){
           clearElement(searchresults);
-          searchresults.appendChild(searchdocs);
+          // searchresults.appendChild(searchdocs);
           return;
         }
         // console.log(txt.length , txt);
         // console.log(event.key);
         if (txt.length === 0){
           clearElement(searchresults);
-          searchresults.appendChild(searchdocs);
+          // searchresults.appendChild(searchdocs);
         }
         if (results.length > 0) {
           const container = document.createElement('div');
@@ -130,7 +130,7 @@ document.addEventListener('DOMContentLoaded',function() {
           }
         } else {
           clearElement(searchresults);
-          searchresults.appendChild(searchdocs);
+          // searchresults.appendChild(searchdocs);
         }
 
       });
