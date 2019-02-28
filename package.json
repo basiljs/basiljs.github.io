@@ -59,7 +59,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": "npm run webpack:prod && git add assets/js/* && git commit -m '🐶 [husky] pre push hook building the production js'$(date)"
+      "pre-push": "export NOW=$(date) npm run webpack:prod && git add assets/js/* && git commit -m \"🐶 [husky] pre push hook building the production js ${NOW}\""
     }
   }
 }
