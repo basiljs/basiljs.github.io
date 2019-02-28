@@ -38,7 +38,7 @@ exclude:
   - package.json
   - .bin/
   - lib/
-  - node_modules/
+  - node_modules
   - test/
   - assets/js/src/
   - .cache/

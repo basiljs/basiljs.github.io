@@ -51,8 +51,7 @@
     "lunr": "^2.3.5",
     "yamljs": "^0.2.10"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
@@ -60,6 +59,7 @@
   },
   "husky": {
     "hooks": {
+      "pre-commit":"npm run webpack:prod",
       "pre-push": "npm run webpack:prod"
     }
   }
