@@ -1,13 +1,13 @@
 ---
 layout: entry
 title: NONE
-codetitle: NONE()
+codetitle: NONE
 description: 'Used with addPage() to set the position of the new page in the book.'
 category: global
-subcategory: null
+subcategory: Constants
 returns: null
 parameters: []
-kind: function
+kind: ""
 todo: null
 examples: []
 

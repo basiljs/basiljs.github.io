@@ -1,13 +1,13 @@
 ---
 layout: entry
 title: PIE
-codetitle: PIE()
+codetitle: PIE
 description: 'Pie, used for arc() modes.'
 category: global
-subcategory: null
+subcategory: Constants
 returns: null
 parameters: []
-kind: function
+kind: ""
 todo: null
 examples: []
 

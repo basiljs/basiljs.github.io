@@ -1,13 +1,13 @@
 ---
 layout: entry
 title: MM
-codetitle: MM()
+codetitle: MM
 description: 'Used with units() to set the coordinate system to millimeters.'
 category: global
-subcategory: null
+subcategory: Constants
 returns: null
 parameters: []
-kind: function
+kind: ""
 todo: null
 examples: []
 

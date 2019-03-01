@@ -1,4 +1,5 @@
 const fs = require('fs');
+const util = require('util');
 const _ = require('lodash');
 
 const api = require('./api/data.json');
@@ -47,6 +48,9 @@ function buildEntry(e) {
     e.tags.forEach((ele, ndx, array)=>{
       if(ele.title === 'description') {
         entry.description = ele.description;
+      }
+      if(ele.title === 'summary') {
+        entry.summary = ele.description;
       }
       if(ele.title === 'cat') { // get the categories
         entry.category = ele.description;
@@ -217,7 +221,7 @@ var buildGlobalsObject = function(){
   data.forEach((ele)=>{
     obj[ele.name.includes('.') ? ele.name.split('.')[0] : ele.name] = true;
   });
-  console.log(JSON.stringify(obj));
+  // console.log(JSON.stringify(obj));
   return JSON.stringify(obj);
 
 }
@@ -241,7 +245,21 @@ fs.writeFile('./_data/categories.json', JSON.stringify(sortedByCategory, null, 2
 
 generateFiles(sortedByCategory, true);
 
-fs.writeFile('./_data/cats-and-subcats.json', JSON.stringify(catsAndSubcats, null, 2), (err)=>{
+// console.table()
+// console.log(util.inspect(catsAndSubcats));
+let json = JSON.parse(JSON.stringify(catsAndSubcats));
+// console.log(json[0][0].entries);
+
+// sort within categories by name
+json.forEach(ele => {
+  ele.forEach( e => e.entries.sort((a,b) => a.name.localeCompare(b.name)))
+});
+
+// sort categories by name
+json.sort((a,b)=> a[0].cat.localeCompare(b[0].cat));
+
+
+fs.writeFile('./_data/cats-and-subcats.json', JSON.stringify(json, null, 2), (err)=>{
   if(err) {
     throw err;
   }

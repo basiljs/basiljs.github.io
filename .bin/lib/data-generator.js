@@ -5,7 +5,7 @@
 var exports = module.exports = {};
 function generator(data) {
   data.forEach((element)=>{
-//    console.log(element);
+  //  console.log(element);
     element.codetitle = null;
     if(element.kind === null) {
       element.kind = 'function';

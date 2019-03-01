@@ -2,18 +2,26 @@
 layout: default
 ---
 <!-- start layout entry -->
+<style>
+#distance{
+  padding-top: 2em;
+}
+</style>
+<div id="distance">
+{%- include search-bar.html -%}
+</div>
 {% include entry-card.html entry=page ispage=true %}
 {{content}}
 
-<script type="text/javascript">
-  $(document).ready(function(){
-    $('.yesscript').show();
-});
-</script>
 <div class="yesscript">
   <a href="#" onClick="history.go(-1);return true;">☚ back to reference</a>
 </div>
 <noscript>
   <a href="/reference/">☚ back to reference</a>
 </noscript>
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded',function() {
+    document.querySelector('.yesscript').style.display = '';
+  });
+</script>
 <!-- end layout entry -->

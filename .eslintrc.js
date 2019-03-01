@@ -3,7 +3,7 @@ module.exports = {
       'unobtrusive',
       'eslint:recommended'
         ],
-    plugins: [],
+    plugins: ['babel'],
     env: {
       browser: true,
       node: true,
@@ -25,4 +25,3 @@ module.exports = {
       'no-console': ['off','always']
     }
   };
-  

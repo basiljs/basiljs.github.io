@@ -1,13 +1,13 @@
 ---
 layout: entry
 title: HIDDEN
-codetitle: HIDDEN()
+codetitle: HIDDEN
 description: 'Used with '
 category: global
-subcategory: null
+subcategory: Constants
 returns: null
 parameters: []
-kind: function
+kind: ""
 todo: null
 examples: []
 

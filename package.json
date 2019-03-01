@@ -3,13 +3,12 @@
   "version": "0.1.0",
   "description": "the docs for Basil.js",
   "scripts": {
-    "build": "npm run update ; npm run generator",
-    "update": "npm run pull-latest-basil ; npm run generate-json",
-    "generator": "node .bin/index",
-    "pull-latest-basil": "npm install basiljs/basil.js#develop -D",
-    "generate-json": "documentation build ./node_modules/basiljs/basil.js -o ./.bin/api/data.json",
-    "docs-json-test": "documentation build .bin/test/index.js -o .bin/test/api.json",
-    "broken-link-check":"blc  --filter-level 2 -r --input http://localhost:4000 > test/report.txt && cat test/report.txt | grep 'BROKEN'"
+    "webpack:dev": "webpack --config webpack-config/index.js --env dev --colors --progress --watch",
+    "webpack:prod": "webpack --config webpack-config/index.js --env prod --colors --progress",
+    "jekyll:dev": "bundle exec jekyll serve --livereload --incremental --limit_posts 5",
+    "jekyll:prod": "JEKYLL_ENV=production bundle exec jekyll build",
+    "documentationjs": "documentation",
+    "update-and-generate": "sh ./bootstrap-scripts/update-and-generate.sh"
   },
   "repository": {
     "type": "git",
@@ -27,26 +26,40 @@
   },
   "homepage": "https://github.com/basiljs/basiljs.github.io#readme",
   "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-transform-runtime": "^7.2.0",
+    "@babel/preset-env": "^7.2.3",
+    "acorn": "^6.0.4",
+    "babel-loader": "^8.0.4",
     "basiljs": "github:basiljs/basil.js#develop",
-    "cz-conventional-changelog": "^2.1.0",
-    "documentation": "^6.1.0",
-    "eslint": "^5.6.0",
-    "eslint-config-unobtrusive": "^1.2.2",
-    "fs-extra": "^2.0.0",
-    "lodash": "^4.17.10",
-    "path-exists": "^3.0.0",
-    "yamljs": "^0.2.8"
-  },
-  "dependencies": {
     "broken-link-checker": "^0.7.8",
-    "jquery": "^3.2.1",
-    "jquery-columnizer": "^1.6.3",
-    "jquery-highlight": "^3.4.0",
-    "normalize.css": "^7.0.0"
+    "cz-conventional-changelog": "^2.1.0",
+    "documentation": "^9.1.1",
+    "eslint": "^5.10.0",
+    "eslint-config-unobtrusive": "^1.2.2",
+    "eslint-plugin-babel": "^5.3.0",
+    "fs-extra": "^2.1.2",
+    "husky": "^1.3.1",
+    "jquery": "^3.3.1",
+    "lodash": "^4.17.11",
+    "normalize.css": "^7.0.0",
+    "p5": "^0.7.2",
+    "path-exists": "^3.0.0",
+    "webpack": "^4.28.1",
+    "webpack-cli": "^3.1.2",
+    "@babel/runtime": "^7.2.0",
+    "lunr": "^2.3.5",
+    "yamljs": "^0.2.10"
   },
+  "dependencies": {},
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "#export NOW=$(date) && npm run webpack:prod && git add ./assets/js && git commit -m \"🐶 [husky] pre push hook building the production js ${NOW}\""
     }
   }
 }

@@ -1,13 +1,13 @@
 ---
 layout: entry
 title: OPEN
-codetitle: OPEN()
+codetitle: OPEN
 description: 'Open, used for arc() modes.'
 category: global
-subcategory: null
+subcategory: Constants
 returns: null
 parameters: []
-kind: function
+kind: ""
 todo: null
 examples: []
 

@@ -1,13 +1,13 @@
 ---
 layout: entry
 title: PAGE
-codetitle: PAGE()
+codetitle: PAGE
 description: 'Used with canvasMode() to set the canvas to the full current page.'
 category: global
-subcategory: null
+subcategory: Constants
 returns: null
 parameters: []
-kind: function
+kind: ""
 todo: null
 examples: []
 

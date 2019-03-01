@@ -1,13 +1,13 @@
 ---
 layout: entry
 title: LINEAR
-codetitle: LINEAR()
+codetitle: LINEAR
 description: 'Used with gradientMode() to set the gradient mode.'
 category: global
-subcategory: null
+subcategory: Constants
 returns: null
 parameters: []
-kind: function
+kind: ""
 todo: null
 examples: []
 

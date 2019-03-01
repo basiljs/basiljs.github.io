@@ -2,7 +2,7 @@
 layout: entry
 title: Vector.div
 codetitle: 'Vector.div(v, [y], [z])'
-description: 'Divides this vector through `x`, `y`, and `z` components or another vector.`'
+description: 'Divides this vector through `x`, `y`, and `z` components or another vector.'
 category: Math
 subcategory: Vector
 returns: null
