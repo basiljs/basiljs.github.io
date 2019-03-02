@@ -59,7 +59,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run webpack:prod"
+      "pre-commit": "npm run webpack:prod && git add assets/js/*"
     }
   }
 }
