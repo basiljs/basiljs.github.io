@@ -59,7 +59,7 @@
   },
   "husky": {
     "hooks": {
-      "post-commit": "export NOW=$(date) && npm run webpack:prod  && git commit --allow-empty --no-verify assets/js/* -m \"[husky] pre push hook - building the production js ${NOW}\""
+      "pre-commit": "npm run webpack:prod"
     }
   }
 }
