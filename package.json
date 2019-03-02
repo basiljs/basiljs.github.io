@@ -59,7 +59,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": "export NOW=$(date) && npm run webpack:prod && git add --no-verify ./assets/js && git commit --no-verify -m \"🐶 [husky] pre push hook building the production js ${NOW}\" && git push --no-verify -u origin HEAD"
+      "pre-push": "export NOW=$(date) && npm run webpack:prod  && git commit --no-verify ./assets/js -m \"🐶 [husky] pre push hook building the production js ${NOW}\" && git push --no-verify -u origin HEAD"
     }
   }
 }
