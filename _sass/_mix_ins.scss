@@ -1,0 +1,107 @@
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin divider($type, $color: $color-divider) {
+  @if $type == "headline" {
+    display: block;
+    position: relative;
+    margin: 0 auto 50px auto;
+    text-align: center;
+    padding: 0px 20px;
+
+    &::before {
+      border-bottom: 1px solid $color;
+      content: "";
+      width: 47%;
+      margin-left: -50%;
+      top: 50%;
+      height: 1px;
+      position: absolute;
+    }
+
+    &::after {
+      border-bottom: 1px solid $color;
+      content: "";
+      width: 47%;
+      margin-left: 3%;
+      top: 50%;
+      height: 1px;
+      position: absolute;
+    }
+  }
+  @else if $type == "single" {
+    height: 1px;
+    width: 100%;
+    clear: both;
+    background-color: $color-divider;
+  }
+}
+
+@mixin placeholder($color) {
+  &::-webkit-input-placeholder {
+    color: $color;
+    opacity: 1;
+  }
+
+  &:-moz-placeholder {
+    color: $color;
+    opacity: 1;
+  }
+
+  &::-moz-placeholder {
+    color: $color;
+    opacity: 1;
+  }
+
+  &:-ms-input-placeholder {
+    color: $color;
+    opacity: 1;
+  }
+}
+
+@mixin media($width) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}
+
+@mixin animation($animate...) {
+  $max: length($animate);
+  $animations: "";
+
+  @for $i from 1 through $max {
+    $animations: #{$animations + nth($animate, $i)};
+
+    @if $i < $max {
+      $animations: #{$animations + ", "};
+    }
+  }
+
+  -webkit-animation: $animations;
+  -moz-animation: $animations;
+  -o-animation: $animations;
+  animation: $animations;
+}
+
+@mixin keyframes($animationName) {
+  @-webkit-keyframes #{$animationName} {
+    @content;
+  }
+
+  @-moz-keyframes #{$animationName} {
+    @content;
+  }
+
+  @-o-keyframes #{$animationName} {
+    @content;
+  }
+
+  @keyframes #{$animationName} {
+    @content;
+  }
+}

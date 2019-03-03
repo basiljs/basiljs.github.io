@@ -1,0 +1,373 @@
+*
+    box-sizing: border-box
+
+@import 'mixins','typescale', 'highlight'
+
+$textColor: #000
+$bgColor: #fff
+$headLineColor: #333
+$guideOneColor: #9636FC
+$guideTwoColor: #FF4EFF
+
+// Responsive Sizes
+$phone: 750px
+
+body
+    font-size: 14px
+    margin: 0 auto
+    // font-size: 1.1em
+    // line-height: 1.5
+    //rv padding: 1em 1em
+    background-image: url("/assets/images/stripe_c40ccfac0db9e43c48e95a530d787366.png")
+.wrapper
+    position: relative
+    box-sizing: border-box
+    max-width: 1200px
+    width: 100%
+    margin: 25px auto 0px
+    background: $bgColor
+    border: 1px solid #eaeaea
+    border-right: 1px solid $guideOneColor
+    border-bottom: 1px solid $guideTwoColor
+    margin-bottom: 100px
+    @include media($phone)
+        margin-top: 0px
+    @include clearfix
+    .logo
+        background-color: white
+        height: 130px
+        width: 200px
+        margin-bottom: 30px
+        @include media($phone)
+            margin: 25px
+    aside
+        width: 25%
+        float: left
+        .main-menu
+            li
+                margin-bottom: 10px
+                height: 40px
+                &.active
+                    a
+                        background-image: url("/assets/images/stripe_c40ccfac0db9e43c48e95a530d787366.png")
+            @include media($phone)
+                display: none
+                top: 0px
+                position: fixed
+                height: 100%
+                width: 100%
+                background: #fff
+                padding-top: 150px
+            a
+                padding-left: 25px
+                border: none
+                height: auto
+                display: inline-block
+                span
+                    position: relative
+                    padding: 0px 4px
+                    font-size: 30px
+                    border-bottom: 1px solid $textColor
+        @include media($phone)
+            float: none
+            width: 90%
+    .main
+        width: 75%
+        float: left
+        //max-width: 55em
+        //max-width: 55em
+        //border: 1px solid #eaeaea
+        background: #fff
+        // margin: 0.2em auto 1em auto
+        // padding-top: 0.2em
+        // padding-right: 2em
+        // padding-bottom: 1em
+        // padding-left: 4em
+        padding-right: 115px
+        margin-bottom: 100px
+        @include media(850px)
+            padding-right: 25px
+        @include media($phone)
+            float: none
+            width: 90%
+            margin: 0 auto 50px
+        h1
+
+            // &:first-child
+            //     display: none
+        h3
+            font-size: 1em
+            font-weight: bold
+            text-decoration: underline
+        h4
+            font-size: 1em
+            font-weight: bold
+            text-decoration: underline
+        .column
+            ul
+                a
+                    padding: 0px 0px 0 20px
+                    text-decoration: none
+                    border: none
+                    font-weight: bold
+
+
+// //////////////// edits fabian moron zirfas
+
+p
+    code
+        padding: 0
+        // vertical-align: bottom
+        font-size: 0.9em
+
+.fhnw-logo
+
+    a
+        img
+            width: 125px
+// //////////////////////////////////////////
+
+
+
+////////////////// M O B I L E    N A V I G A T I O N ////////////////////////////
+.nav-o-meter
+    position: fixed
+    top: 30px
+    right: 40px
+    z-index: 9999999999
+    display: none
+    cursor: pointer
+    width: 46px
+    height: 37px
+    border: 2px solid #2AFFFF
+    background-color:  #fff
+    border-radius: 2px
+    ul.bars li
+        left: 8px
+        margin: 0px
+        padding: 0px
+        list-style-type: none
+        width: 30px
+        height: 2px
+        background-color: #2AFFFF
+        position: absolute
+        margin-top: -1px
+        top: 50%
+        opacity: 1
+        transition: all 300ms ease-in-out
+        &:first-child
+            transform: translateY(-10px) rotate(0deg)
+        &:last-child
+            transform: translateY(10px) rotate(0deg)
+    &.opened ul li
+        &:first-child
+            transform: translate(0) rotate(45deg)
+        &:nth-child(2)
+            opacity: 0
+        &:last-child
+            transform: translate(0) rotate(-45deg)
+    @include media($phone)
+        display: block
+
+img
+    max-width: 100%
+    width: 100%
+
+
+
+h1, h2, strong
+    color: $headLineColor
+
+a
+    cursor: pointer
+    text-decoration: none
+    color: #000
+    border-bottom: 1px solid #9636FC
+    &:hover
+        background-image: url("/assets/images/stripe_c40ccfac0db9e43c48e95a530d787366.png")
+
+h1, h2, h3, h4, h5, h6
+    text-decoration: underline
+    color: $headLineColor
+
+h4.entries-title
+    text-decoration: none !important
+
+.h3-subcat
+    color: lighten($headLineColor, 20%)
+
+li
+    line-height: 1.5em
+    height: auto
+    //padding-left: 1em
+    //text-indent: -1em
+    code
+        display: inline
+    // &::before
+    //     content: "+"
+    //     padding-right: 5px
+ul
+    list-style: none
+    margin-left: 0
+    padding-left: 0
+
+.index
+    padding-bottom: 2em
+    border-bottom: 1px solid $guideTwoColor
+
+.entry
+    border-bottom: 1px dashed #000
+    padding-right: 2em
+
+.todo
+    border-top: 1px dashed $guideTwoColor
+    width : 100%
+    color: $headLineColor
+    font-style: italic
+    padding: 0.5em
+    padding-bottom: 0.5em
+    //@extend .font_small
+
+.totop
+    position: fixed
+    right: 2em
+    bottom: 2em
+    z-index: 10
+    background-color: white
+    padding: 0.5em
+
+.totop-shadow
+    position: fixed
+    right: 1.8em
+    bottom: 1.8em
+    z-index: 9
+    background-color: white
+    padding: 0.5em
+    color: white
+    background-image: url("/assets/images/stripe_c40ccfac0db9e43c48e95a530d787366.png")
+
+.descriptions
+    code
+        display: inline
+// ------------ code
+//
+@import "syntax"
+
+pre
+    background: #eee !important
+    overflow: auto
+    border-radius: 3px
+
+code
+    padding: 2px 4px
+    vertical-align: text-bottom
+
+pre
+    padding: 1.2em
+
+$bottom-lines: 5
+$right-lines: 3
+.guidelines
+    .bottom_lines
+        @for $i from 1 through $bottom-lines
+            .line_#{$i}
+                width: 100% - ($i * 10)
+                position: absolute
+                left: $i *5px
+                height: 1px
+                background-color: #FC2FFF
+                bottom: $i *3px
+    .right_lines
+        @for $i from 1 through $right-lines
+            .line_#{$i}
+                height: 100% - ($i * 10)
+                position: absolute
+                right: $i *5px
+                width: 1px
+                background-color: #8100FB
+                top: $i *3px
+    .page_lines
+        @include media($phone)
+            display: none
+        .line
+            background-color: #21FFFF
+            position: absolute
+            &.line_1
+                height: 1px
+                top: 25px
+                left: 0px
+                width: 100%
+            &.line_2
+                right: 115px
+                top: 0px
+                width: 1px
+                height: 100%
+            &.line_3
+                height: 1px
+                bottom: 25px
+                left: 0px
+                width: 100%
+            &.line_4
+                height: 100%
+                top: 0px
+                left: 25px
+                width: 1px
+
+//-------media queries
+
+
+// @media only screen
+// and (max-device-width:450px)
+// and (orientation:portrait)
+//     body
+//         padding: 0.2em
+//     h1
+//         margin-top: 0
+//         font-size: 2.074em
+//     h2
+//         font-size: 1.728em
+//     h3
+//         font-size: 1.44em
+//     h4
+//         font-size: 1.2em
+//     small, .font_small
+//         font-size: 0.833em
+//     .entry
+//         border-bottom: 1px dashed #000
+//         padding-right: 0em
+
+.yesscript
+    display: none
+
+
+// Edits fabianmoronzirfas twitterlink
+// @Son Please merge this so we don't have
+// double definitions
+.tweet
+a.textgrow
+    padding-left: 25px
+    border: none
+    height: auto
+    display: inline-block
+    span
+        position: relative
+        padding: 0px 4px
+        font-size: 30px
+        border-bottom: 1px solid $textColor
+
+@import 'reference'
+
+// ------------------------
+// old basil css. Overwrite new settings
+//@import 'basil', 'gridlines'
+
+
+@mixin clearfix
+    &::after
+        content: ""
+        display: table
+        clear: both
+
+@mixin media($width)
+    @media screen AND (max-width: $width)
+        @content
