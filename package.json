@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "the docs for Basil.js",
   "scripts": {
+    "test": "echo \"no test specified\" && exit 0",
     "webpack:dev": "webpack --config webpack-config/index.js --env dev --colors --progress --watch",
     "webpack:prod": "webpack --config webpack-config/index.js --env prod --colors --progress",
     "jekyll:dev": "bundle exec jekyll serve --livereload --incremental --limit_posts 5",
