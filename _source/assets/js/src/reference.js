@@ -1,4 +1,4 @@
-import lunr from 'lunr';
+import FlexSearch from 'flexsearch';
 
 function clearElement(ele) {
   while (ele.hasChildNodes()) {
@@ -13,6 +13,10 @@ function createElementFromHTML(htmlString) {
   return div.firstChild;
 }
 
+/**
+ * TODO: This should not be a string template. Construct nodes.
+ * @param {oobject} opt containes the ID the codetitle, the summary and the href
+ */
 function entryTemplate(opt) {
   return `<div class="ref-entry" id="${opt.id}">
     <div class="entry-heading"><a class="entry-heading-link" href="${opt.href}">${opt.codetitle}</a></div>
@@ -31,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
   (async function() {
     const search = txt => {
       const results = idx.search(txt);
-
+      console.log(results);
       if (txt.length === 0) {
         clearElement(searchresults);
       }
@@ -40,11 +44,11 @@ document.addEventListener('DOMContentLoaded', function() {
         container.classList.add('search-result-container');
         results.forEach(res => {
 
-          let e = document.querySelector(`#${res.ref}`);
+          let e = document.querySelector(`#${res.id}`);
           if (e !== null) {
             container.appendChild(e.cloneNode(true));
           } else {
-            const matches = json.filter(ele => ele.id === res.ref);
+            const matches = json.filter(ele => ele.id === res.id);
             const template = entryTemplate(matches[0]);
             e = createElementFromHTML(template);
             container.appendChild(e);
@@ -63,16 +67,23 @@ document.addEventListener('DOMContentLoaded', function() {
     // console.log(response);
     const json = await response.json().catch(err => console.log(err));
     // console.log(json);
-    const idx = lunr(function() {
-      this.ref('id');
-      this.field('summary', { boost: 5 });
-      this.field('codetitle', { boost: 10 });
-      this.field('name', { boost: 10 });
-      this.field('description');
-      json.forEach(function(doc) {
-        this.add(doc);
-      }, this);
+    const idx = new FlexSearch({
+      tokenize: 'reverse',
+      depth: 4,
+      cache: true,
+      encode: 'simple',
+      threshold: 8,
+      doc: {
+        id: 'id',
+        field: [
+          'summary',
+          'codetitle',
+          'name',
+          'description',
+        ]
+      }
     });
+    idx.add(json);
 
     if (params.has('query')) {
       search(decodeURI(params.get('query')));
