@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (clearbutton !== null) {
       clearbutton.addEventListener('click', event => {
-
+        searchfield.value = '';
         if (searchresults !== null) {
           clearElement(searchresults);
         }
