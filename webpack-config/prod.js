@@ -11,13 +11,13 @@ module.exports = {
   target:'web',
   context: path.resolve(__dirname, '../'),
   entry: {
-    reference: './assets/js/src/reference.js',
-    main:'./assets/js/src/main.js'
+    reference: './_source/assets/js/src/reference.js',
+    main:'./_source/assets/js/src/main.js'
   },
   externals: {
   },
   output: {
-    path: path.resolve(__dirname, '../', './assets/js'),
+    path: path.resolve(__dirname, '../', './_source/assets/js'),
     filename: '[name].bundle.js'
   },
   module: {

@@ -34,7 +34,6 @@
     "acorn": "^6.0.4",
     "babel-loader": "^8.0.4",
     "basiljs": "github:basiljs/basil.js#develop",
-    "broken-link-checker": "^0.7.8",
     "cz-conventional-changelog": "^2.1.0",
     "documentation": "^9.1.1",
     "eslint": "^5.10.0",
@@ -60,7 +59,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run webpack:prod && git add assets/js/*"
+      "pre-commit": "npm run webpack:prod && git add _source/assets/js"
     }
   }
 }

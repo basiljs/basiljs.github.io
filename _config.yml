@@ -8,13 +8,16 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
+# this is the folder that contains all the source files for the site
+# to keep things tidy we separate this from the rest of the config dfiles
+source: _source
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Basil.js reference
-email: fabian.moron.zirfas@gmail.com
+email: fabianmoronzirfas@protonmail.ch
 description: > # this means to ignore newlines until "baseurl:"
   This is the genereated reference for basil.js
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -44,3 +47,7 @@ exclude:
   - .cache/
   - webpack.config/
   - bootstrap-scripts/
+
+webrick:
+  headers:
+    Access-Control-Allow-Origin: "*"
