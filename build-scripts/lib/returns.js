@@ -1,4 +1,3 @@
-var exports = module.exports = {};
 
 function Return() {
   this.name = null;

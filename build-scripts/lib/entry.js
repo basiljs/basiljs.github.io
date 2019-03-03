@@ -1,5 +1,3 @@
-var exports = module.exports = {};
-
 function Entry() {
   this.name = null;
   this.description = null;
