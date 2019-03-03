@@ -1,0 +1,31 @@
+{
+  "name": "build-scripts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest",
+    "build": "tsc -p ."
+  },
+  "author": "Fabian Morón Zirfas",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/fs-extra": "^5.0.5",
+    "@types/lodash": "^4.14.121",
+    "@types/node": "^11.10.4",
+    "@types/path-exists": "^3.0.0",
+    "@types/yamljs": "^0.2.30",
+    "ts-node": "^8.0.2",
+    "tslint": "^5.13.1",
+    "typescript": "^3.3.3333"
+  },
+  "dependencies": {
+    "fs-extra": "^7.0.1",
+    "lodash": "^4.17.11",
+    "path-exists": "^3.0.0",
+    "yamljs": "^0.3.0"
+  }
+}
