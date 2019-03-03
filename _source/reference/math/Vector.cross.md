@@ -1,13 +1,13 @@
 ---
 layout: entry
-title: Vector.dist
-codetitle: 'Vector.dist(v, [y], [z])'
-description: 'Calculates the distance from this vector to another as `x`, `y`, and `z` components or full vector.'
+title: Vector.cross
+codetitle: 'Vector.cross(v, [y], [z])'
+description: 'Calculates the cross product from this vector to another as `x`, `y`, and `z` components or full vector.'
 category: Math
 subcategory: Vector
 returns:
     name: null
-    description: 'The distance.'
+    description: 'The cross product.'
     type: [Number]
 parameters:
     - {name: v, description: 'Either a full vector or an `x` component.', optional: false, type: [Vector, Number]}

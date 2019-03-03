@@ -7574,7 +7574,7 @@
     "entries": [
       {
         "name": "image",
-        "description": "Adds an image to the document. If the image argument is given as a string the image file must be in the document's data directory which is in the same directory where the document is saved in. The image argument can also be a File instance which can be placed even before the document was saved. The second argument can either be the `x` position of the frame to create or an instance of a rectangle, oval or polygon to place the image in. If an `x` position is given, a `y` position must be given, too. If `x` and `y` positions are given and width and height are not given, the frame's size gets set to the original image size.",
+        "description": "Adds an image to the document. If the image argument is given as a string, the path can point either directly at an image in the document's data directory or be specified as an absolute path to the image file. The image argument can also be a File instance. The second argument can either be the `x` position of the frame to create or an instance of a rectangle, oval or polygon to place the image in. If an `x` position is given, a `y` position must be given, too. If `x` and `y` positions are given and width and height are not given, the frame's size gets set to the original image size.",
         "returns": {
           "name": null,
           "description": "The item instance the image was placed in.",
@@ -7641,7 +7641,7 @@
           },
           {
             "title": "description",
-            "description": "Adds an image to the document. If the image argument is given as a string the image file must be in the document's data directory which is in the same directory where the document is saved in. The image argument can also be a File instance which can be placed even before the document was saved. The second argument can either be the `x` position of the frame to create or an instance of a rectangle, oval or polygon to place the image in. If an `x` position is given, a `y` position must be given, too. If `x` and `y` positions are given and width and height are not given, the frame's size gets set to the original image size."
+            "description": "Adds an image to the document. If the image argument is given as a string, the path can point either directly at an image in the document's data directory or be specified as an absolute path to the image file. The image argument can also be a File instance. The second argument can either be the `x` position of the frame to create or an instance of a rectangle, oval or polygon to place the image in. If an `x` position is given, a `y` position must be given, too. If `x` and `y` positions are given and width and height are not given, the frame's size gets set to the original image size."
           }
         ],
         "examples": [],
@@ -7945,7 +7945,7 @@
       },
       {
         "name": "loadString",
-        "description": "Reads the contents of a file or loads an URL into a String. If the file is specified by name as String, it must be located in the document's data directory.",
+        "description": "Reads the contents of a file or loads an URL into a String. If the file is specified by name as string, the path can point either directly at a file in the document's data directory or be specified as an absolute path.",
         "returns": {
           "name": null,
           "description": "String file or URL content.",
@@ -7974,7 +7974,7 @@
           },
           {
             "title": "description",
-            "description": "Reads the contents of a file or loads an URL into a String. If the file is specified by name as String, it must be located in the document's data directory."
+            "description": "Reads the contents of a file or loads an URL into a String. If the file is specified by name as string, the path can point either directly at a file in the document's data directory or be specified as an absolute path."
           }
         ],
         "examples": [],
@@ -7984,7 +7984,7 @@
       },
       {
         "name": "loadStrings",
-        "description": "Reads the contents of a file or loads an URL and creates a string array of its individual lines. If the file is specified by name as string, it must be located in the document's data directory.",
+        "description": "Reads the contents of a file or loads an URL and creates a string array of its individual lines. If the file is specified by name as string, the path can point either directly at a file in the document's data directory or be specified as an absolute path.",
         "returns": {
           "name": null,
           "description": "Array of the individual lines in the given file or URL",
@@ -8013,7 +8013,7 @@
           },
           {
             "title": "description",
-            "description": "Reads the contents of a file or loads an URL and creates a string array of its individual lines. If the file is specified by name as string, it must be located in the document's data directory."
+            "description": "Reads the contents of a file or loads an URL and creates a string array of its individual lines. If the file is specified by name as string, the path can point either directly at a file in the document's data directory or be specified as an absolute path."
           }
         ],
         "examples": [],
