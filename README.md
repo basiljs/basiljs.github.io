@@ -1,5 +1,6 @@
-Basil.js
-========
+# Basil.js
+
+[![Build Status](https://travis-ci.org/basiljs/basiljs.github.io.svg?branch=master)](https://travis-ci.org/basiljs/basiljs.github.io)
 
 This repo holds the [site/docs for Basil.js](https://basiljs.github.io/). The current state of development (develop branch) can be found here [basiljs2.netlify.com](https://basiljs2.netlify.com/)
 
@@ -21,17 +22,23 @@ This will:
 After that you can just commit all the changes and push it the repo again. GitHub pages will take care of the jekyll build.  
 
 
-## Development ##
+## Development
 
 To build these docs we are using [Node.js](https://nodejs.org/en/) and [Jekyll](https://jekyllrb.com/). You need both of them installed to develop on this.  
 
-In the `.bin/` folder you have the scripts to generate the files for jekyll. The entry point is `index.js`.  
+In the `.bin/` folder you have the scripts to generate the files for the reference. The entry point is `index.js`.  
 
 Most of the jekyll [liquid magic](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers) happens in `./index.html`, `_includes/entry-card.html`.  
 
-## License ##
+To develop in this run:
 
-Copyright (c)  2017 Basil.js
+    bundle install
+    bundle update
+    bundle exec jekyll serve --livereload
+
+## License
+
+Copyright (c)  2013-2019 Basil.js
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software  without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to  permit persons to whom the Software is furnished to do so, subject to the following conditions:  
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.  
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A  PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF  CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.  

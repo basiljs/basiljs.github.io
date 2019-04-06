@@ -1,0 +1,27 @@
+<aside>
+  <a href="/"><div class="logo" id="logo"></div></a>
+  <div class="nav-o-meter"><ul class="bars"><li></li><li></li><li></li></ul></div>
+  <nav class="main-menu">
+      <ul>
+        <!--
+        loop all pages
+        exclude all entry layouts
+        include  all default and the reference
+        exclude the root path
+        -->
+      {% assign pages = site.pages | sort: 'order'  %}
+      {% for item in pages %}{% if item.layout != 'entry' %}{%if item.layout == 'default' or item.layout == 'reference' %}{% if item.url != '/' %}
+        <li class="menu-item {% if item.title == page.title %}active{% endif %}"><a href="{{item.url}}" class="textgrow menu-link">{{item.title}}</a></li>
+            {% endif %}{% endif %}{% endif %}{% endfor %}
+
+      </ul>
+      <div class="tweet">
+        <div class="message"></div>
+        <div class="tweettime"></div>
+        <div class="twitter-link"><a href="https://twitter.com/basil_js" class="textgrow menu-link">@basil_js</a></div>
+      </div>
+    </nav>
+        <div class="fhnw-logo">
+          <a href="http://www.fhnw.ch/hgk/ivk"><img src="/assets/images/fhnwlogo.png" alt="FHNW logo and link"></a>
+        </div>
+</aside>

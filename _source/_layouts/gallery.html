@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+{% for img in page.images %}
+{%if img == "index.png" %}
+<img src="./images/{{img}}" alt="" style="max-width:100%">
+{% endif %}
+{% endfor %}
+
+{{content}}
+
+{% capture mdcode %}
+```js
+{% include_relative index.js %}
+```
+{% endcapture %}
+{{ mdcode | markdownify }}
+
+{% for img in page.images %}
+{%if img != "index.png" %}
+<img src="./images/{{img}}" alt="" style="max-width:100%">
+{% endif%}
+{% endfor %}

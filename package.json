@@ -3,12 +3,13 @@
   "version": "0.1.0",
   "description": "the docs for Basil.js",
   "scripts": {
-    "build": "npm run update ; npm run generator",
-    "update": "npm run pull-latest-basil ; npm run generate-json",
-    "generator": "node .bin/index",
-    "pull-latest-basil": "npm install basiljs/basil.js#develop -D",
-    "generate-json": "documentation build ./node_modules/basiljs/basil.js -o ./.bin/api/data.json",
-    "docs-json-test": "./node_modules/.bin/documentation build .bin/test/index.js -o .bin/test/api.json"
+    "test": "echo \"no test specified\" && exit 0",
+    "webpack:dev": "webpack --config webpack-config/index.js --env dev --colors --progress --watch",
+    "webpack:prod": "webpack --config webpack-config/index.js --env prod --colors --progress",
+    "jekyll:dev": "bundle exec jekyll serve --livereload --incremental --limit_posts 5",
+    "jekyll:prod": "JEKYLL_ENV=production bundle exec jekyll build",
+    "documentationjs": "documentation",
+    "update-and-generate": "sh ./bootstrap-scripts/update-and-generate.sh"
   },
   "repository": {
     "type": "git",
@@ -26,18 +27,39 @@
   },
   "homepage": "https://github.com/basiljs/basiljs.github.io#readme",
   "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-transform-runtime": "^7.2.0",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/runtime": "^7.2.0",
+    "acorn": "^6.0.4",
+    "babel-loader": "^8.0.4",
     "basiljs": "github:basiljs/basil.js#develop",
-    "cz-conventional-changelog": "^1.2.0",
-    "documentation": "^4.0.0-beta.18",
-    "fs-extra": "^2.0.0",
-    "lodash": "^4.17.4",
+    "cz-conventional-changelog": "^2.1.0",
+    "documentation": "^9.1.1",
+    "eslint": "^5.10.0",
+    "eslint-config-unobtrusive": "^1.2.2",
+    "eslint-plugin-babel": "^5.3.0",
+    "flexsearch": "^0.6.2",
+    "fs-extra": "^2.1.2",
+    "husky": "^1.3.1",
+    "jquery": "^3.3.1",
+    "lodash": "^4.17.11",
+    "normalize.css": "^7.0.0",
+    "p5": "^0.7.2",
     "path-exists": "^3.0.0",
-    "yamljs": "^0.2.8"
+    "webpack": "^4.28.1",
+    "webpack-cli": "^3.1.2",
+    "yamljs": "^0.2.10"
   },
   "dependencies": {},
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run webpack:prod && git add _source/assets/js"
     }
   }
 }

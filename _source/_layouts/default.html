@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>basil.js // {{page.title}}</title>
+    <meta name="description" content="basil.js website">
+    <meta name="author" content="Fabian Morón Zirfas">
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<!--
+    the filtering of the titles for a body class is a little cumbersome.
+    If we have some special characters in the title we will have to filter it here
+   -->
+<body class="{{
+    page.title | replace: '.', '' | replace: ' ', '' | downcase
+  }}">
+    <div class="wrapper">
+        {% include aside-left.html %}
+        <div class="main">
+            <div id="content" class="wrapppper">
+                {{content}}
+            </div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="guidelines"></div>
+        {% include footer.html %}
+    </div>
+    {% if jekyll.environment == "production" %}
+    <script src="/assets/js/vendors~main.bundle.js" type="text/javascript" defer></script>
+    {% endif %}
+    <script src="/assets/js/main.bundle.js" type="text/javascript"></script>
+    {% if page.layout == 'reference' or page.layout == 'entry' %}
+        {% if jekyll.environment == "production" %}
+    <script src="/assets/js/vendors~reference.bundle.js" type="text/javascript" defer></script>
+        {% endif %}
+    <script src="/assets/js/reference.bundle.js" type="text/javascript"></script>
+    {% endif %}
+</body>
+
+</html>
