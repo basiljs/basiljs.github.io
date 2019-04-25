@@ -23,7 +23,7 @@ $guideTwoColor: #FF4EFF;
 $phone: 750px;
 
 body {
-  font-size: 14px;
+  // font-size: 14px;
   margin: 0 auto;
 
   // font-size: 1.1em
@@ -31,6 +31,7 @@ body {
   //rv padding: 1em 1em
   background-image: url("/assets/images/stripe_c40ccfac0db9e43c48e95a530d787366.png");
 }
+
 
 .wrapper {
   position: relative;
@@ -69,7 +70,7 @@ body {
 
     .main-menu {
       li {
-        margin-bottom: 10px;
+        margin-bottom: 0.75em;
         height: 40px;
 
         &.active {
@@ -112,6 +113,7 @@ body {
   }
 
   .main {
+    padding-top: 25px;
     width: 75%;
     float: left;
 
@@ -139,11 +141,22 @@ body {
       margin: 0 auto 50px;
     }
 
+    #gallery-overview{
+      display: flex;
+      flex-wrap: wrap;
+      align-content: flex-start;
+    }
+    .gallery-overview-item{
+      max-width: 350px;
+      margin-right: 1em;
+      // flex-basis: 100px;
+      flex-shrink: 0;
 
-    h1 {
-      // &:first-child
-      //     display: none
-
+    }
+    @include media($phone) {
+      .gallery-overview-item{
+        max-width: 100%;
+      }
     }
 
     h3 {
@@ -183,6 +196,7 @@ p {
 }
 
 .fhnw-logo {
+  padding-left: 25px;
   a {
     img {
       width: 125px;
@@ -473,13 +487,24 @@ $right-lines: 3;
 // Edits fabianmoronzirfas twitterlink
 // @Son Please merge this so we don't have
 // double definitions
-.tweet {}
+.tweet {
+  .message, .tweettime{
+    font-size: 14px;
+    padding-left: 25px;
+
+  }
+  .message, .tweettime, .twitter-link{
+    margin-bottom: 0.75em;
+  }
+
+}
 
 a.textgrow {
   padding-left: 25px;
   border: none;
   height: auto;
   display: inline-block;
+  font-weight: 700;
 
   span {
     position: relative;
@@ -489,7 +514,20 @@ a.textgrow {
   }
 }
 
-@import "reference";
+.textshrink {
+  text-decoration: none;
+  border: none;
+  height: auto;
+  display: inline-block;
+  font-weight: 700;
+  span{
+    // position: relative;
+    // padding: 0px 4px;
+    border-bottom: 1px solid $textColor;
+  }
+}
+
+@import "reference", "changelog";
 
 // ------------------------
 // old basil css. Overwrite new settings
