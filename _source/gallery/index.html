@@ -1,0 +1,21 @@
+---
+author: admin
+layout: default
+title: gallery
+order: 6
+---
+
+<h1>Gallery</h1>
+<section id="gallery-overview">
+{% for page in site.pages %}
+  {% if page.layout == 'gallery-item' %}
+  <a href="{{page.url}}">
+  <div class="gallery-overview-item">
+  <h2>{{page.title}}</h2>
+  <img src="{{page.url}}/thumbnail.jpg" alt="{{page.title}} Thumbnail">
+  <p>{{page.description}}</p>
+  </div>
+  </a>
+  {% endif %}
+{% endfor %}
+</section>
