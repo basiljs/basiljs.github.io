@@ -3,8 +3,9 @@ layout: default
 title: Basil.js
 ---
 
+# Basil.js  
 
-## Have you ever wanted to ...
+## Have you ever wanted to...
 
 * export 10,000 mass-customized copies of your InDesign document?  
 * use spatial-tiling algorithms to create your layouts?  
@@ -13,7 +14,7 @@ title: Basil.js
 * or simply reconsider what print can be?   
 
 
-## basil.js is ...  
+## basil.js is...  
 
 
 * making scripting in InDesign available to designers and artists.
