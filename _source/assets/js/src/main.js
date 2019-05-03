@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded',() =>{
 });
 
 
+
 window.onblur = function() {
   p5sketch.noLoop();
 };

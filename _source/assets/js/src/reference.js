@@ -32,6 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const searchresults = document.querySelector('#flex-search-results');
   const params = new URLSearchParams(window.location.search);
 
+
   (async function() {
     const search = txt => {
       const results = idx.search(txt);
