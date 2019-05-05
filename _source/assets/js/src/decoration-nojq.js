@@ -26,11 +26,13 @@ export function specialChars() {
     [...elementsShrink].forEach(element => {
       const chars = element.innerText.split('');
       const style = window.getComputedStyle(element, null).getPropertyValue('font-size');
-      const fs = parseFloat(style);
+      let fs = parseFloat(style);
       element.innerHTML = null;
+      const minfs = 16;
+      const decr = (fs - minfs) / chars.length;
       chars.forEach((char, i) => {
-        const fontSize = fs - i / 2;
-        const style = `border-bottom-width: ${(2 / i)}px; font-size: ${fontSize}px; top: -${i}px;`;
+        fs -=decr;
+        const style = `border-bottom-width: ${(2 / i)}px; font-size: ${fs}px; top: -${i}px;`;
         const node = document.createElement('span');
         node.className = 'textshrink-item';
         node.style.cssText = style;
