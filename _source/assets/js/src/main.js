@@ -3,12 +3,14 @@ import sketch from './p5sketch.js';
 import mobileNav from './mobile-nav-nojq.js';
 import tweets from './tweets.js';
 import {specialChars, createGuideLines} from './decoration-nojq.js';
+import {shuffleGalleryItems} from './shuffle-gallery-items';
 let p5sketch;
 document.addEventListener('DOMContentLoaded',() =>{
+  tweets();
+  shuffleGalleryItems();
   specialChars();
   createGuideLines();
   mobileNav();
-  tweets();
   p5sketch = new p5(sketch);
 });
 

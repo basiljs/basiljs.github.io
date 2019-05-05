@@ -5,12 +5,8 @@ authors:
 layout: gallery-item
 title: Computed Curation
 description: Curating photography with neural networks.
+featured: true
 ---
-
-# Computed Curation
-
-
-## Curating photography with neural networks
 
 ![Computed Curation is a computer-generated accordeon photobook](./images/computed-curation-9.jpg)
 

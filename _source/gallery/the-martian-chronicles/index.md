@@ -5,6 +5,8 @@ authors:
 layout: gallery-item
 title: The  Martian  Chronicles
 description: Reedition of the science fiction classic book “The Martian Chronicles”, written by Ray Bradbury in 1950.
+featured: true
+
 ---
 
 

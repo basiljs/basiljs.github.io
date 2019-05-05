@@ -36,6 +36,14 @@ To develop in this run:
     bundle update
     bundle exec jekyll serve --livereload
 
+## Recipes
+
+Resize and crop multiple images using [`mogrify`](https://www.imagemagick.org/script/mogrify.php)  
+
+```
+mogrify -resize 320x180^ -gravity Center -extent 320x180 -quality 100 -format png ./*/thumbnail.jpg
+
+```
 ## License
 
 Copyright (c)  2013-2019 Basil.js

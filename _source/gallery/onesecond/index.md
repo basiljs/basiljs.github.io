@@ -5,6 +5,7 @@ authors:
 layout: gallery-item
 title: oneSecond
 description: A connection between 5522 people all across the world that have been active on Twitter within the timeframe of one second.
+featured: true
 ---
 
 

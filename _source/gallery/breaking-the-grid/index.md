@@ -14,15 +14,15 @@ description: Our goal was to relate our experiments to the given text (Program o
 
 
 
-![](http://basiljs.ch/wp-content/uploads/2013/03/Sudoku_MainImage.jpg)
+![](./images/Sudoku_MainImage.jpg)
 
 After analyzing the text “Program or Be Programmed”—by Douglas Rushkoff—we developed a series of experiments using a grid as our basis. With the use of Javascript, we divided the area within the margins of the page into 750 equally sized and distributed rectangles. Then, we highlighted a portion of the text and placed the individual letters in the boxes. Each time the characters exceeded the number of boxes in the page, a new rule would apply. The rules varied from position on the page, size, baseline and addition of elements such as bars.
 
-![](http://basiljs.ch/wp-content/uploads/2013/03/Explorations-246x350.jpg)
+![](./images/Explorations-246x350.jpg)
 
-![](http://basiljs.ch/wp-content/uploads/2013/03/Explorations-copy-21-246x350.jpg)
+![](./images/Explorations-copy-21-246x350.jpg)
 
-![](http://basiljs.ch/wp-content/uploads/2013/03/Explorations-copy-3-246x350.jpg)
+![](./images/Explorations-copy-3-246x350.jpg)
 
 ### Source
 
@@ -30,7 +30,7 @@ After analyzing the text “Program or Be Programmed”—by Douglas Rushkoff—
     #includepath "~/Documents/;%USERPROFILE%Documents";
 #include "basiljs/bundle/basil.js";
 
-var myBoxes = new Array();    
+var myBoxes = new Array();
 var myCounter = 0;
 
 function draw() {

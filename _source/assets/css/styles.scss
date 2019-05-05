@@ -69,6 +69,14 @@ body {
     float: left;
 
     .main-menu {
+
+      padding-bottom: 1em;
+
+      ul{
+        list-style: none;
+        margin-left: 0;
+        padding-left: 0;
+      }
       li {
         margin-bottom: 0.75em;
         height: 40px;
@@ -184,7 +192,29 @@ body {
   }
 }
 
-// //////////////// edits fabian moron zirfas
+// ////////////////////// gallery
+
+.gallery-overview-item-wrapper {
+  width: 50%;
+
+  .gallery-overview-item{
+    .heading-container{
+      height: 4em;
+    }
+
+    img.gallery-thumbnail{
+      width: 256px;
+      height: 144px;
+    }
+
+  }
+
+}
+
+p.project-authors, p.project-description{
+  font-size: 1.2em;
+  font-style: italic;
+}
 
 p {
   code {
@@ -196,10 +226,10 @@ p {
 }
 
 .fhnw-logo {
-  padding-left: 25px;
+  // padding-left: 25px;
   a {
     img {
-      width: 125px;
+      width: 150px;
     }
   }
 }
@@ -216,7 +246,7 @@ p {
   cursor: pointer;
   width: 46px;
   height: 37px;
-  border: 2px solid #2AFFFF;
+  // border: 2px solid #2AFFFF;
   background-color: #fff;
   border-radius: 2px;
 
@@ -226,7 +256,7 @@ p {
     padding: 0px;
     list-style-type: none;
     width: 30px;
-    height: 2px;
+    height: 1px;
     background-color: #2AFFFF;
     position: absolute;
     margin-top: -1px;
@@ -316,9 +346,9 @@ li {
 }
 
 ul {
-  list-style: none;
-  margin-left: 0;
-  padding-left: 0;
+  // list-style: none;
+  // margin-left: 0;
+  // padding-left: 0;
 }
 
 .index {
@@ -387,76 +417,7 @@ pre {
   padding: 1.2em;
 }
 
-$bottom-lines: 5;
-$right-lines: 3;
 
-.guidelines {
-  .bottom_lines {
-    @for $i from 1 through $bottom-lines {
-      .line_#{$i} {
-        width: 100% - $i * 10;
-        position: absolute;
-        left: $i * 5px;
-        height: 1px;
-        background-color: #FC2FFF;
-        bottom: $i * 3px;
-      }
-    }
-  }
-
-  .right_lines {
-    @for $i from 1 through $right-lines {
-      .line_#{$i} {
-        height: 100% - $i * 10;
-        position: absolute;
-        right: $i * 5px;
-        width: 1px;
-        background-color: #8100FB;
-        top: $i * 3px;
-      }
-    }
-  }
-
-  .page_lines {
-    @include media($phone) {
-      display: none;
-    }
-
-
-    .line {
-      background-color: #21FFFF;
-      position: absolute;
-
-      &.line_1 {
-        height: 1px;
-        top: 25px;
-        left: 0px;
-        width: 100%;
-      }
-
-      &.line_2 {
-        right: 115px;
-        top: 0px;
-        width: 1px;
-        height: 100%;
-      }
-
-      &.line_3 {
-        height: 1px;
-        bottom: 25px;
-        left: 0px;
-        width: 100%;
-      }
-
-      &.line_4 {
-        height: 100%;
-        top: 0px;
-        left: 25px;
-        width: 1px;
-      }
-    }
-  }
-}
 
 //-------media queries
 
@@ -527,7 +488,7 @@ a.textgrow {
   }
 }
 
-@import "reference", "changelog";
+@import "guidelines", "reference", "changelog";
 
 // ------------------------
 // old basil css. Overwrite new settings

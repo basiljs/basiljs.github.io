@@ -5,10 +5,9 @@ authors:
 layout: gallery-item
 title: Flow of Goods / Data Stream
 description: Twelve per cent of all imported goods in Switzerland are coming through the seaport of Basel. The piece «flow of goods / data stream» gives an overview over all goods and streams in the year of 2012.
+featured: true
+
 ---
-
-
-[Simon Ziffermeyer](http://simon-ziffermayer.ch)
 
 Twelve per cent of all imported goods in Switzerland are coming through the seaport of Basel. The piece «flow of goods / data stream» gives an overview over all goods and streams in the year of 2012.
 

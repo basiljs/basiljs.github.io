@@ -7,9 +7,9 @@ authors:
 layout: gallery-item
 title: Romeo and Juliet
 description: Text visualizations that highlight the narrative intensity for Shakespeare’s Romeo and Juliet by simple algorithmic rules.
----
+featured: true
 
-Text visualizations that highlight the narrative intensity for Shakespeare’s Romeo and Juliet by simple algorithmic rules.
+---
 
 ![](./images/DSC_0086-e1395762279150.jpg)
 
