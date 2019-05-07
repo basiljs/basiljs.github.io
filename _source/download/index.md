@@ -29,7 +29,7 @@ The basil.js b.typo cheatsheet:
 
 ## Source code
 
-Please note that basil.js is provided as open-source under the [MIT License](http://opensource.org/licenses/MIT).
+Please note that basil.js is provided as open-source under the [MIT License](https://opensource.org/licenses/MIT).
 
 Designers and developers who are interested in the "bleeding edge"
 are welcome to use our Git repository at [https://github.com/basiljs/basil.js](https://github.com/basiljs/basil.js) (develop branch)
