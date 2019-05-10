@@ -86,10 +86,10 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./_source/assets/js/src/decoration-nojq.js":
-/*!**************************************************!*\
-  !*** ./_source/assets/js/src/decoration-nojq.js ***!
-  \**************************************************/
+/***/ "./_source/assets/js/src/decoration.js":
+/*!*********************************************!*\
+  !*** ./_source/assets/js/src/decoration.js ***!
+  \*********************************************/
 /*! exports provided: specialChars, createGuideLines */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -101,20 +101,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__);
 
 function specialChars() {
-  var elements = document.querySelectorAll('a.textgrow');
+  var elements = document.querySelectorAll('a.textgrow, .textgrow');
 
   _babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_0___default()(elements).forEach(function (element) {
-    var chars = element.innerText.split('');
-    element.innerHTML = null;
-    chars.forEach(function (char, i) {
-      var fontSize = 30 - 2 * i;
-      var style = "border-bottom-width: ".concat(i + 1, "px; font-size: ").concat(fontSize, "px; top: -").concat(i + 2 * i, "px;");
-      var node = document.createElement('span');
-      node.style.cssText = style;
-      var content = document.createTextNode(char);
-      node.appendChild(content);
-      element.appendChild(node);
-    });
+    if (element.classList.contains('dont-decorate') !== true) {
+      var chars = element.innerText.split('');
+      element.innerHTML = null;
+      chars.forEach(function (char, i) {
+        var fontSize = 30 - 2 * i;
+        var style = "border-bottom-width: ".concat(i + 1, "px; font-size: ").concat(fontSize, "px; top: -").concat(i + 2 * i, "px;");
+        var node = document.createElement('span');
+        node.style.cssText = style;
+        var content = document.createTextNode(char);
+        node.appendChild(content);
+        element.appendChild(node);
+      });
+    }
   });
   /**
    * not in the reference
@@ -125,22 +127,24 @@ function specialChars() {
     var elementsShrink = document.querySelectorAll('.textshrink, h1, h2, h3, h4, h5, h6');
 
     _babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_0___default()(elementsShrink).forEach(function (element) {
-      var chars = element.innerText.split('');
-      var style = window.getComputedStyle(element, null).getPropertyValue('font-size');
-      var fs = parseFloat(style);
-      element.innerHTML = null;
-      var minfs = 16;
-      var decr = (fs - minfs) / chars.length;
-      chars.forEach(function (char, i) {
-        fs -= decr;
-        var style = "border-bottom-width: ".concat(2 / i, "px; font-size: ").concat(fs, "px; top: -").concat(i, "px;");
-        var node = document.createElement('span');
-        node.className = 'textshrink-item';
-        node.style.cssText = style;
-        var content = document.createTextNode(char);
-        node.appendChild(content);
-        element.appendChild(node);
-      });
+      if (element.classList.contains('dont-decorate') !== true) {
+        var chars = element.innerText.split('');
+        var style = window.getComputedStyle(element, null).getPropertyValue('font-size');
+        var fs = parseFloat(style);
+        element.innerHTML = null;
+        var minfs = 16;
+        var decr = (fs - minfs) / chars.length;
+        chars.forEach(function (char, i) {
+          fs -= decr;
+          var style = "border-bottom-width: ".concat(2 / i, "px; font-size: ").concat(fs, "px; top: -").concat(i, "px;");
+          var node = document.createElement('span');
+          node.className = 'textshrink-item';
+          node.style.cssText = style;
+          var content = document.createTextNode(char);
+          node.appendChild(content);
+          element.appendChild(node);
+        });
+      }
     });
   }
 }
@@ -194,9 +198,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var p5_lib_p5_min__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! p5/lib/p5.min */ "./node_modules/p5/lib/p5.min.js");
 /* harmony import */ var p5_lib_p5_min__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(p5_lib_p5_min__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _p5sketch_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./p5sketch.js */ "./_source/assets/js/src/p5sketch.js");
-/* harmony import */ var _mobile_nav_nojq_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./mobile-nav-nojq.js */ "./_source/assets/js/src/mobile-nav-nojq.js");
+/* harmony import */ var _mobile_nav_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./mobile-nav.js */ "./_source/assets/js/src/mobile-nav.js");
 /* harmony import */ var _tweets_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./tweets.js */ "./_source/assets/js/src/tweets.js");
-/* harmony import */ var _decoration_nojq_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./decoration-nojq.js */ "./_source/assets/js/src/decoration-nojq.js");
+/* harmony import */ var _decoration_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./decoration.js */ "./_source/assets/js/src/decoration.js");
 /* harmony import */ var _shuffle_gallery_items__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./shuffle-gallery-items */ "./_source/assets/js/src/shuffle-gallery-items.js");
 
 
@@ -208,9 +212,9 @@ var p5sketch;
 document.addEventListener('DOMContentLoaded', function () {
   Object(_tweets_js__WEBPACK_IMPORTED_MODULE_3__["default"])();
   Object(_shuffle_gallery_items__WEBPACK_IMPORTED_MODULE_5__["shuffleGalleryItems"])();
-  Object(_decoration_nojq_js__WEBPACK_IMPORTED_MODULE_4__["specialChars"])();
-  Object(_decoration_nojq_js__WEBPACK_IMPORTED_MODULE_4__["createGuideLines"])();
-  Object(_mobile_nav_nojq_js__WEBPACK_IMPORTED_MODULE_2__["default"])();
+  Object(_decoration_js__WEBPACK_IMPORTED_MODULE_4__["specialChars"])();
+  Object(_decoration_js__WEBPACK_IMPORTED_MODULE_4__["createGuideLines"])();
+  Object(_mobile_nav_js__WEBPACK_IMPORTED_MODULE_2__["default"])();
   p5sketch = new p5_lib_p5_min__WEBPACK_IMPORTED_MODULE_0___default.a(_p5sketch_js__WEBPACK_IMPORTED_MODULE_1__["default"]);
 });
 
@@ -224,10 +228,10 @@ window.onfocus = function () {
 
 /***/ }),
 
-/***/ "./_source/assets/js/src/mobile-nav-nojq.js":
-/*!**************************************************!*\
-  !*** ./_source/assets/js/src/mobile-nav-nojq.js ***!
-  \**************************************************/
+/***/ "./_source/assets/js/src/mobile-nav.js":
+/*!*********************************************!*\
+  !*** ./_source/assets/js/src/mobile-nav.js ***!
+  \*********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 

@@ -1,8 +1,8 @@
 import p5 from 'p5/lib/p5.min';
 import sketch from './p5sketch.js';
-import mobileNav from './mobile-nav-nojq.js';
+import mobileNav from './mobile-nav.js';
 import tweets from './tweets.js';
-import {specialChars, createGuideLines} from './decoration-nojq.js';
+import {specialChars, createGuideLines} from './decoration.js';
 import {shuffleGalleryItems} from './shuffle-gallery-items';
 let p5sketch;
 document.addEventListener('DOMContentLoaded',() =>{

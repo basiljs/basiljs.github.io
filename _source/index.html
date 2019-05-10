@@ -3,20 +3,23 @@ layout: default
 title: Basil.js
 ---
 
+<h1 class="dont-decorate">{{page.title}}</h1>
 {%- assign featuredProjects = site.pages | where: "layout" , "gallery-item" | where_exp: "item", "item.featured == true" -%}
 <!--
   featured projects:
 -->
 <style>
   .featured-projects {
-    height: 10em;
+    height: 25em;
   }
 
   ul.featured-projects-list {}
 
   .featured-project-thumb {
-    width: 256px;
-    height: 144px;
+    max-width: 100%;
+    height: auto;
+    /* width: 1280px; */
+    /* height: 720px; */
   }
 
   li.featured-project {
@@ -25,17 +28,17 @@ title: Basil.js
     display: none;
   }
 
-
   .featured-project-title {
     margin: 0;
     position: absolute;
     float: left;
     left: 0px;
-    top: -1.2em;
+    top: -3.2em;
     z-index: 1000;
     background-color: white;
     padding-right: 1em;
     padding-left: 0.5em;
+    width:100%;
   }
 
   img.featured-project-thumb {
@@ -47,11 +50,12 @@ title: Basil.js
     {%- for project in featuredProjects -%}
     <li class="featured-project">
       <div class="featured-project-title">
-        {{ project.title }}
+        <span class="textshrink">{{ project.title }}</span><br>
+        <span>by {Author Names}</span>
       </div>
       <a href="{{project.url}}" class="featured-project-link">
-        <img src="{{project.url}}/thumbnail.png" class="featured-project-thumb"
-          alt="a thumbnail for project {{project.title}}">
+        <img src="{{project.url}}/splash.png" class="featured-project-thumb"
+          alt="a splash image for project {{project.title}}">
 
         </a>
     </li>
@@ -67,21 +71,21 @@ title: Basil.js
         let idx = 0;
         elements[0].style.display = 'inline';
 
-        // const interval = setInterval(()=>{
-        //   elements[idx%elements.length].style.display = 'inline';
-        //   elements.forEach((ele, i)=>{
-        //     if(i !== idx%elements.length){
-        //       ele.style.display = 'none';
-        //     }
-        //   });
-        //   idx++;
-        // },2000);
+        const interval = setInterval(()=>{
+          elements[idx%elements.length].style.display = 'inline';
+          elements.forEach((ele, i)=>{
+            if(i !== idx%elements.length){
+              ele.style.display = 'none';
+            }
+          });
+          idx++;
+        },2000);
       }
     }
   });
 </script>
+
 {%- capture md -%}
-# Basil.js
 
 ## Have you ever wanted to...
 
