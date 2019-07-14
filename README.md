@@ -1,6 +1,10 @@
 # Basil.js
 
-[![Build Status](https://travis-ci.org/basiljs/basiljs.github.io.svg?branch=master)](https://travis-ci.org/basiljs/basiljs.github.io)
+[![Build Status](https://travis-ci.org/basiljs/basiljs.github.io.svg?branch=master)](https://travis-ci.org/basiljs/basiljs.github.io)  
+
+Hosted on:  
+
+[![Netlify Badge](https://www.netlify.com/img/global/badges/netlify-color-accent.svg)](https://basiljs2.netlify.com/)
 
 This repo holds the [site/docs for Basil.js](https://basiljs.github.io/)  
 
