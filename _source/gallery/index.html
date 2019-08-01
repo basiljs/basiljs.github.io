@@ -1,0 +1,44 @@
+---
+author: admin
+layout: default
+title: gallery
+order: 6
+---
+
+<!--{%- comment -%}
+filter pages based in layout
+{%- endcomment -%}-->
+
+{%- assign filteredPages = site.pages | where: "layout" , "gallery-item" | sort: 'title' -%}
+
+<h1>Gallery</h1>
+<section id="gallery-overview">
+  {% for page in filteredPages %}
+  {% if page.layout == 'gallery-item' %}
+  <a class="gallery-overview-item-wrapper" href="{{page.url}}">
+  <div class="gallery-overview-item">
+      <div class="heading-container">
+        <h2>{{page.title}}</h2>
+      </div>
+        <img src="{{page.url}}/thumbnail.png" alt="{{page.title}} Thumbnail" class="gallery-thumbnail">
+        <p>{{page.description}}</p>
+    </div>
+  </a>
+  {% endif %}
+  {% endfor %}
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    if ([...document.body.classList].includes('gallery')) {
+
+      const elements = document.querySelectorAll('.gallery-overview-item-wrapper');
+      if (elements.length >= 0) {
+        Array.from(elements).forEach(element => {
+          element.style.order = Math.floor(Math.random() * elements.length);
+        });
+
+      }
+    }
+  });
+</script>
