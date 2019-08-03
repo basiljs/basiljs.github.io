@@ -9,7 +9,8 @@
     "jekyll:dev": "bundle exec jekyll serve --livereload --incremental --limit_posts 5",
     "jekyll:prod": "JEKYLL_ENV=production bundle exec jekyll build",
     "documentationjs": "documentation",
-    "update-and-generate": "sh ./bootstrap-scripts/update-and-generate.sh"
+    "update-and-generate": "sh ./bootstrap-scripts/update-and-generate.sh",
+    "build:api-markup":"npm run update-and-generate"
   },
   "repository": {
     "type": "git",
