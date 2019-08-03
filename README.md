@@ -1,6 +1,6 @@
 # Basil.js
 
-[![Build Status](https://travis-ci.org/basiljs/basiljs.github.io.svg?branch=master)](https://travis-ci.org/basiljs/basiljs.github.io)  
+[![Build Status](https://travis-ci.org/basiljs/basiljs.github.io.svg?branch=master)](https://travis-ci.org/basiljs/basiljs.github.io) [![Netlify Status](https://api.netlify.com/api/v1/badges/c081644c-312b-486e-8594-8bb5c3a869ca/deploy-status)](https://app.netlify.com/sites/basiljs2/deploys)
 
 Hosted on:  
 
