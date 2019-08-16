@@ -11,4 +11,5 @@ install:
 
 script:
   - npm t
+  - npm run webpack:prod
   - bundle exec jekyll build
