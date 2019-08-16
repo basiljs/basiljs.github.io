@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-set -Eeuo pipefail
+set -Eeu pipefail
 pwd
 
 echo "Installing latest develop version of Basil.js"
