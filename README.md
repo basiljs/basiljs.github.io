@@ -1,40 +1,98 @@
 # Basil.js
 
-[![Build Status](https://travis-ci.org/basiljs/basiljs.github.io.svg?branch=master)](https://travis-ci.org/basiljs/basiljs.github.io)
+[![Build Status](https://travis-ci.org/basiljs/basiljs.github.io.svg?branch=master)](https://travis-ci.org/basiljs/basiljs.github.io) [![Netlify Status](https://api.netlify.com/api/v1/badges/c081644c-312b-486e-8594-8bb5c3a869ca/deploy-status)](https://app.netlify.com/sites/basiljs2/deploys)
+
+Hosted on:  
+
+[![Netlify Badge](https://www.netlify.com/img/global/badges/netlify-color-accent.svg)](https://basiljs2.netlify.com/)
+
+This repo holds the [site/docs for Basil.js](https://basiljs.github.io/). The current state of development (develop branch) can be found here [basiljs2.netlify.com](https://basiljs2.netlify.com/)
+## Update Basil API  
+
+If there are changes to the API of Basil.js you can update the data on this repo as follows.  
+
+```bash
+
+git pull git@github.com:basiljs/basiljs.github.io.git
+cd basiljs.github.io
+# get all branches
+git fetch -a
+# get into the develop branch
+git checkout -b develop origin/develop
+# now make your new branch based on develop
+git checkout -b chore/update-docs
+# build the new data source for the site
+# This will:  
+
+# - Pull the Basil.js' branch `develop` with npm from GitHub (eventually this should be the master, not the develop branch).
+# - Generate the file `./build-scripts/api/data.json` from `./node_modules/basiljs/basil.js` using [documentation.js](http://documentation.js.org/).
+# - Generate the following files for the index.
+#    + `./_data/categories.json`
+#    + `./_data/cats-and-subcats.json`
+# - Also generate all the files for the subpages of `_source/reference`.  
+npm run build:api-markup
+# After that you can just commit all the changes and push it the repo again. Netlify will take care of the Jekyll build.  
+# Only add the files you really want to.
+# Adding all with `git add .` is acutally not the right way
+# use gits interactive mode or some more specific paths then `.`
+git add -i
+git commit -m "chore: Update Basil.js api to latest state [Add your favorite emoji here]"
+# push current HEAD to remote
+git push -u origin HEAD
+# Now go to the GitHub UI and create your PR
+```
 
 This repo holds the [site/docs for Basil.js](https://basiljs.github.io/). The current state of development (develop branch) can be found here [basiljs2.netlify.com](https://basiljs2.netlify.com/)
 
-## Deploy  
-
-If there are some changed to the API of Basil.js you can update the data on this repo as follows.  
-
-    npm run build
-
-This will:  
-
-- Pull the branch develop with npm from GitHub.
-- Generate the file `./.bin/api/data.json` from `./node_modules/basiljs/basil.js` using [documentation.js](http://documentation.js.org/).
-- Generate the following files for the index.
-    + `./_data/categories.json`
-    + `./_data/cats-and-subcats.json`
-- Also generate all the files for the subpages.  
-
-After that you can just commit all the changes and push it the repo again. GitHub pages will take care of the jekyll build.  
-
-
 ## Development
 
-To build these docs we are using [Node.js](https://nodejs.org/en/) and [Jekyll](https://jekyllrb.com/). You need both of them installed to develop on this.  
+To build these docs we are using [Webpack](https://webpack.js.org/) and [Jekyll](https://jekyllrb.com/). You need both of these to develop on this.  
 
-In the `.bin/` folder you have the scripts to generate the files for the reference. The entry point is `index.js`.  
+- Create a new branch based on branch `develop` (see the code above for a how to 👆).
+- Do your thing
+- Create a pull request against develop
 
-Most of the jekyll [liquid magic](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers) happens in `./index.html`, `_includes/entry-card.html`.  
+Netlify will create a branch and deploy preview for you and you can see your changes online. Every push to your branch will trigger a new build and will be linked on the PR page.
+
+To develop locally take a look at the steps below. 👇
+
+### Markup + SCSS
+
+Most of the Jekyll [liquid magic](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers) happens in `./_source`.  
 
 To develop in this run:
 
-    bundle install
-    bundle update
-    bundle exec jekyll serve --livereload
+```bash
+# once
+bundle install
+bundle update
+# whenever you want to work on the markup/content
+# (the --limit_posts 1 --incremental flags are needed
+# because we have lots of pages and need to speedup the build)
+bundle exec jekyll serve --livereload --limit_posts 1 --incremental
+```
+
+### Javascript
+
+To work on the Javasscript of the site you need to run
+
+```bash
+# once
+# needs npm v5.7 or higer
+npm ci
+# when you develop on it
+# (starts the webpack dev watch build toolchain)
+npm run webpack:dev
+```
+
+## Recipes
+
+Resize and crop multiple images using [`mogrify`](https://www.imagemagick.org/script/mogrify.php)  
+
+```bash
+mogrify -resize 320x180^ -gravity Center -extent 320x180 -quality 100 -format png ./*/thumbnail.jpg
+
+```
 
 ## License
 

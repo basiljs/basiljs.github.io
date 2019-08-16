@@ -4,6 +4,8 @@ title: support
 order: 5
 ---
 
+# {{page.title}}
+
 ## Check the reference and provided material
 
 The two most important sources of reference are

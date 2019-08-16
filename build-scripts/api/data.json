@@ -120,6 +120,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -1166,6 +1167,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -1364,6 +1366,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -1663,6 +1666,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -1843,6 +1847,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -1911,6 +1916,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -2125,6 +2131,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -2278,6 +2285,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -2458,6 +2466,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -2526,6 +2535,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -2768,6 +2778,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -3047,6 +3058,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -3329,6 +3341,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -3448,6 +3461,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -3695,6 +3709,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -3945,6 +3960,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -4183,12 +4199,14 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [],
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -4359,12 +4377,14 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [],
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -4555,6 +4575,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -4684,6 +4705,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -4885,6 +4907,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -4974,6 +4997,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -5154,6 +5178,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -5222,6 +5247,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -5402,6 +5428,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -5470,6 +5497,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -5882,6 +5910,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -6139,6 +6168,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -6414,6 +6444,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -6606,6 +6637,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -6813,6 +6845,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -7022,6 +7055,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -7284,6 +7318,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -7412,6 +7447,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -7606,6 +7642,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -7734,6 +7771,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -7937,6 +7975,7 @@
         "description": "var arr = CSV.decode(str);\nvar str = CSV.encode(arr);"
       }
     ],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -8065,6 +8104,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -8262,6 +8302,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -8393,6 +8434,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -8596,6 +8638,7 @@
         "description": "var str = CSV.encode(arr);\nvar arr = CSV.decode(str);"
       }
     ],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -8724,6 +8767,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -8905,12 +8949,14 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [],
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -9086,12 +9132,14 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [],
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -9286,6 +9334,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -9414,6 +9463,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -9598,6 +9648,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [
@@ -9664,6 +9715,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -9848,6 +9900,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [
@@ -9914,6 +9967,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -10098,6 +10152,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [
@@ -10164,6 +10219,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -10348,6 +10404,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [
@@ -10414,6 +10471,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -10608,6 +10666,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -10736,6 +10795,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -10947,6 +11007,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -11092,6 +11153,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -11286,6 +11348,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -11414,6 +11477,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -11635,6 +11699,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -11841,6 +11906,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -12097,6 +12163,7 @@
         "description": "var str = JSON.stringify(obj);"
       }
     ],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -12414,6 +12481,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -12630,6 +12698,7 @@
         "description": "var obj = JSON.parse(str);"
       }
     ],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -12822,6 +12891,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -13026,6 +13096,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -13215,6 +13286,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -13419,6 +13491,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -13608,6 +13681,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -13880,6 +13954,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -14069,6 +14144,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -14437,6 +14513,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -14583,6 +14660,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -14797,6 +14875,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -14943,6 +15022,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -15259,6 +15339,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -15405,6 +15486,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -15653,6 +15735,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -15799,6 +15882,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -16143,6 +16227,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -16335,6 +16420,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -16747,6 +16833,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -16939,6 +17026,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -17143,6 +17231,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -17332,6 +17421,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -17544,6 +17634,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -17690,6 +17781,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -17986,6 +18078,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -18114,6 +18207,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -18359,6 +18453,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -18504,6 +18599,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -18749,6 +18845,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -18894,6 +18991,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -19105,6 +19203,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -19250,6 +19349,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -19495,6 +19595,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -19640,6 +19741,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -19969,6 +20071,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -20126,6 +20229,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -20320,6 +20424,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -20448,6 +20553,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -20645,6 +20751,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -20730,6 +20837,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -20969,6 +21077,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -21113,6 +21222,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -21339,6 +21449,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -21470,6 +21581,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -21671,6 +21783,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -21811,6 +21924,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -22418,6 +22532,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -22549,6 +22664,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -22763,6 +22879,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -22831,6 +22948,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -23010,6 +23128,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [
@@ -23076,6 +23195,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -23268,6 +23388,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -23399,6 +23520,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -23635,6 +23757,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -23958,6 +24081,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -24462,6 +24586,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -24590,6 +24715,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -24776,7 +24902,7 @@
           "column": 0
         },
         "end": {
-          "line": 3119,
+          "line": 3121,
           "column": 2
         }
       },
@@ -24784,6 +24910,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -24912,6 +25039,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -25083,22 +25211,22 @@
     ],
     "loc": {
       "start": {
-        "line": 3121,
+        "line": 3123,
         "column": 0
       },
       "end": {
-        "line": 3131,
+        "line": 3133,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 3132,
+          "line": 3134,
           "column": 0
         },
         "end": {
-          "line": 3140,
+          "line": 3144,
           "column": 2
         }
       },
@@ -25106,6 +25234,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -25234,6 +25363,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -25460,22 +25590,22 @@
     ],
     "loc": {
       "start": {
-        "line": 3142,
+        "line": 3146,
         "column": 0
       },
       "end": {
-        "line": 3156,
+        "line": 3160,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 3157,
+          "line": 3161,
           "column": 0
         },
         "end": {
-          "line": 3178,
+          "line": 3182,
           "column": 2
         }
       },
@@ -25483,6 +25613,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -26006,6 +26137,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -26187,22 +26319,22 @@
     ],
     "loc": {
       "start": {
-        "line": 3180,
+        "line": 3184,
         "column": 0
       },
       "end": {
-        "line": 3191,
+        "line": 3195,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 3192,
+          "line": 3196,
           "column": 0
         },
         "end": {
-          "line": 3203,
+          "line": 3207,
           "column": 2
         }
       },
@@ -26210,6 +26342,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -26399,6 +26532,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -26777,22 +26911,22 @@
     ],
     "loc": {
       "start": {
-        "line": 3209,
+        "line": 3213,
         "column": 0
       },
       "end": {
-        "line": 3219,
+        "line": 3223,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 3220,
+          "line": 3224,
           "column": 0
         },
         "end": {
-          "line": 3234,
+          "line": 3238,
           "column": 2
         }
       },
@@ -26800,6 +26934,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -26931,6 +27066,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -27410,22 +27546,22 @@
     ],
     "loc": {
       "start": {
-        "line": 3236,
+        "line": 3240,
         "column": 0
       },
       "end": {
-        "line": 3260,
+        "line": 3264,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 3261,
+          "line": 3265,
           "column": 0
         },
         "end": {
-          "line": 3278,
+          "line": 3282,
           "column": 2
         }
       },
@@ -27599,6 +27735,7 @@
         }
       }
     ],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -27810,6 +27947,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -28245,22 +28383,22 @@
     ],
     "loc": {
       "start": {
-        "line": 3280,
+        "line": 3284,
         "column": 0
       },
       "end": {
-        "line": 3305,
+        "line": 3309,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 3306,
+          "line": 3310,
           "column": 0
         },
         "end": {
-          "line": 3329,
+          "line": 3333,
           "column": 2
         }
       },
@@ -28434,6 +28572,7 @@
         }
       }
     ],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -28635,6 +28774,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -28796,22 +28936,22 @@
     ],
     "loc": {
       "start": {
-        "line": 3331,
+        "line": 3335,
         "column": 0
       },
       "end": {
-        "line": 3340,
+        "line": 3344,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 3341,
+          "line": 3345,
           "column": 0
         },
         "end": {
-          "line": 3364,
+          "line": 3368,
           "column": 2
         }
       },
@@ -28819,6 +28959,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [
@@ -28885,6 +29026,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -29094,22 +29236,22 @@
     ],
     "loc": {
       "start": {
-        "line": 3366,
+        "line": 3370,
         "column": 0
       },
       "end": {
-        "line": 3386,
+        "line": 3390,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 3387,
+          "line": 3391,
           "column": 0
         },
         "end": {
-          "line": 3394,
+          "line": 3398,
           "column": 2
         }
       },
@@ -29283,6 +29425,7 @@
         }
       }
     ],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -29431,6 +29574,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -29605,22 +29749,22 @@
     ],
     "loc": {
       "start": {
-        "line": 3396,
+        "line": 3400,
         "column": 0
       },
       "end": {
-        "line": 3406,
+        "line": 3410,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 3407,
+          "line": 3411,
           "column": 0
         },
         "end": {
-          "line": 3420,
+          "line": 3424,
           "column": 2
         }
       },
@@ -29628,6 +29772,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -29759,6 +29904,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -29942,22 +30088,22 @@
     ],
     "loc": {
       "start": {
-        "line": 3422,
+        "line": 3426,
         "column": 0
       },
       "end": {
-        "line": 3432,
+        "line": 3436,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 3433,
+          "line": 3437,
           "column": 0
         },
         "end": {
-          "line": 3452,
+          "line": 3456,
           "column": 2
         }
       },
@@ -29965,6 +30111,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -30105,6 +30252,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -30266,22 +30414,22 @@
     ],
     "loc": {
       "start": {
-        "line": 3454,
+        "line": 3458,
         "column": 0
       },
       "end": {
-        "line": 3463,
+        "line": 3467,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 3464,
+          "line": 3468,
           "column": 0
         },
         "end": {
-          "line": 3487,
+          "line": 3491,
           "column": 2
         }
       },
@@ -30289,6 +30437,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [
@@ -30355,6 +30504,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -30533,22 +30683,22 @@
     ],
     "loc": {
       "start": {
-        "line": 3489,
+        "line": 3493,
         "column": 0
       },
       "end": {
-        "line": 3498,
+        "line": 3502,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 3499,
+          "line": 3503,
           "column": 0
         },
         "end": {
-          "line": 3520,
+          "line": 3524,
           "column": 2
         }
       },
@@ -30556,6 +30706,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -30640,6 +30791,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -30830,22 +30982,22 @@
     ],
     "loc": {
       "start": {
-        "line": 3526,
+        "line": 3530,
         "column": 0
       },
       "end": {
-        "line": 3537,
+        "line": 3541,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 3539,
+          "line": 3543,
           "column": 0
         },
         "end": {
-          "line": 3556,
+          "line": 3560,
           "column": 2
         }
       },
@@ -30853,6 +31005,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -31051,6 +31204,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -31476,22 +31630,22 @@
     ],
     "loc": {
       "start": {
-        "line": 3558,
+        "line": 3562,
         "column": 0
       },
       "end": {
-        "line": 3570,
+        "line": 3574,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 3571,
+          "line": 3575,
           "column": 0
         },
         "end": {
-          "line": 3613,
+          "line": 3617,
           "column": 2
         }
       },
@@ -31499,6 +31653,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -31915,6 +32070,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -32197,22 +32353,22 @@
     ],
     "loc": {
       "start": {
-        "line": 3615,
+        "line": 3619,
         "column": 0
       },
       "end": {
-        "line": 3625,
+        "line": 3629,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 3626,
+          "line": 3630,
           "column": 0
         },
         "end": {
-          "line": 3686,
+          "line": 3690,
           "column": 2
         }
       },
@@ -32220,6 +32376,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -32629,6 +32786,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -32843,22 +33001,22 @@
     ],
     "loc": {
       "start": {
-        "line": 3688,
+        "line": 3692,
         "column": 0
       },
       "end": {
-        "line": 3698,
+        "line": 3702,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 3699,
+          "line": 3703,
           "column": 0
         },
         "end": {
-          "line": 3717,
+          "line": 3721,
           "column": 2
         }
       },
@@ -32866,6 +33024,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -33003,6 +33162,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -33288,22 +33448,22 @@
     ],
     "loc": {
       "start": {
-        "line": 3719,
+        "line": 3723,
         "column": 0
       },
       "end": {
-        "line": 3731,
+        "line": 3735,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 3732,
+          "line": 3736,
           "column": 0
         },
         "end": {
-          "line": 3744,
+          "line": 3748,
           "column": 2
         }
       },
@@ -33311,6 +33471,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -33600,6 +33761,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -33784,22 +33946,22 @@
     ],
     "loc": {
       "start": {
-        "line": 3746,
+        "line": 3750,
         "column": 0
       },
       "end": {
-        "line": 3757,
+        "line": 3761,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 3758,
+          "line": 3762,
           "column": 0
         },
         "end": {
-          "line": 3781,
+          "line": 3785,
           "column": 2
         }
       },
@@ -33807,6 +33969,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -33999,6 +34162,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -34293,22 +34457,22 @@
     ],
     "loc": {
       "start": {
-        "line": 3783,
+        "line": 3787,
         "column": 0
       },
       "end": {
-        "line": 3795,
+        "line": 3799,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 3796,
+          "line": 3800,
           "column": 0
         },
         "end": {
-          "line": 3807,
+          "line": 3811,
           "column": 2
         }
       },
@@ -34316,6 +34480,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -34597,6 +34762,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -34889,22 +35055,22 @@
     ],
     "loc": {
       "start": {
-        "line": 3809,
+        "line": 3813,
         "column": 0
       },
       "end": {
-        "line": 3820,
+        "line": 3824,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 3821,
+          "line": 3825,
           "column": 0
         },
         "end": {
-          "line": 3836,
+          "line": 3840,
           "column": 2
         }
       },
@@ -34912,6 +35078,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -35110,6 +35277,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -35328,22 +35496,22 @@
     ],
     "loc": {
       "start": {
-        "line": 3838,
+        "line": 3842,
         "column": 0
       },
       "end": {
-        "line": 3849,
+        "line": 3853,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 3850,
+          "line": 3854,
           "column": 0
         },
         "end": {
-          "line": 3868,
+          "line": 3872,
           "column": 2
         }
       },
@@ -35351,6 +35519,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -35645,6 +35814,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -35840,22 +36010,22 @@
     ],
     "loc": {
       "start": {
-        "line": 3870,
+        "line": 3874,
         "column": 0
       },
       "end": {
-        "line": 3879,
+        "line": 3883,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 3880,
+          "line": 3884,
           "column": 0
         },
         "end": {
-          "line": 3895,
+          "line": 3899,
           "column": 2
         }
       },
@@ -35863,6 +36033,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [
@@ -35929,6 +36100,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -36122,22 +36294,22 @@
     ],
     "loc": {
       "start": {
-        "line": 3897,
+        "line": 3901,
         "column": 0
       },
       "end": {
-        "line": 3908,
+        "line": 3912,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 3909,
+          "line": 3913,
           "column": 0
         },
         "end": {
-          "line": 3939,
+          "line": 3943,
           "column": 2
         }
       },
@@ -36145,6 +36317,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -36346,6 +36519,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -36520,22 +36694,22 @@
     ],
     "loc": {
       "start": {
-        "line": 3941,
+        "line": 3945,
         "column": 0
       },
       "end": {
-        "line": 3951,
+        "line": 3955,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 3952,
+          "line": 3956,
           "column": 0
         },
         "end": {
-          "line": 3962,
+          "line": 3966,
           "column": 2
         }
       },
@@ -36543,6 +36717,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -36674,6 +36849,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -36848,22 +37024,22 @@
     ],
     "loc": {
       "start": {
-        "line": 3964,
+        "line": 3968,
         "column": 0
       },
       "end": {
-        "line": 3974,
+        "line": 3978,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 3975,
+          "line": 3979,
           "column": 0
         },
         "end": {
-          "line": 3983,
+          "line": 3987,
           "column": 2
         }
       },
@@ -36871,6 +37047,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -37002,6 +37179,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -37182,22 +37360,22 @@
     ],
     "loc": {
       "start": {
-        "line": 3985,
+        "line": 3989,
         "column": 0
       },
       "end": {
-        "line": 3995,
+        "line": 3999,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 3996,
+          "line": 4000,
           "column": 0
         },
         "end": {
-          "line": 4014,
+          "line": 4018,
           "column": 2
         }
       },
@@ -37205,6 +37383,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -37342,6 +37521,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -37610,22 +37790,22 @@
     ],
     "loc": {
       "start": {
-        "line": 4020,
+        "line": 4024,
         "column": 0
       },
       "end": {
-        "line": 4031,
+        "line": 4035,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 4032,
+          "line": 4036,
           "column": 0
         },
         "end": {
-          "line": 4081,
+          "line": 4085,
           "column": 2
         }
       },
@@ -37633,6 +37813,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -37909,6 +38090,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -38211,22 +38393,22 @@
     ],
     "loc": {
       "start": {
-        "line": 4083,
+        "line": 4087,
         "column": 0
       },
       "end": {
-        "line": 4095,
+        "line": 4099,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 4096,
+          "line": 4100,
           "column": 0
         },
         "end": {
-          "line": 4101,
+          "line": 4105,
           "column": 2
         }
       },
@@ -38234,6 +38416,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -38523,6 +38706,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -38889,22 +39073,22 @@
     ],
     "loc": {
       "start": {
-        "line": 4103,
+        "line": 4107,
         "column": 0
       },
       "end": {
-        "line": 4115,
+        "line": 4119,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 4117,
+          "line": 4121,
           "column": 0
         },
         "end": {
-          "line": 4122,
+          "line": 4126,
           "column": 2
         }
       },
@@ -38912,6 +39096,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -39197,6 +39382,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -39369,22 +39555,22 @@
     ],
     "loc": {
       "start": {
-        "line": 4124,
+        "line": 4128,
         "column": 0
       },
       "end": {
-        "line": 4134,
+        "line": 4138,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 4135,
+          "line": 4139,
           "column": 0
         },
         "end": {
-          "line": 4141,
+          "line": 4145,
           "column": 2
         }
       },
@@ -39392,6 +39578,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -39417,6 +39604,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -39707,22 +39895,22 @@
     ],
     "loc": {
       "start": {
-        "line": 4143,
+        "line": 4147,
         "column": 0
       },
       "end": {
-        "line": 4155,
+        "line": 4159,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 4156,
+          "line": 4160,
           "column": 0
         },
         "end": {
-          "line": 4161,
+          "line": 4165,
           "column": 2
         }
       },
@@ -39730,6 +39918,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -40007,6 +40196,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -40178,22 +40368,22 @@
     ],
     "loc": {
       "start": {
-        "line": 4163,
+        "line": 4167,
         "column": 0
       },
       "end": {
-        "line": 4173,
+        "line": 4177,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 4174,
+          "line": 4178,
           "column": 0
         },
         "end": {
-          "line": 4183,
+          "line": 4187,
           "column": 2
         }
       },
@@ -40201,6 +40391,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -40329,6 +40520,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -40599,22 +40791,22 @@
     ],
     "loc": {
       "start": {
-        "line": 4185,
+        "line": 4189,
         "column": 0
       },
       "end": {
-        "line": 4203,
+        "line": 4207,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 4204,
+          "line": 4208,
           "column": 0
         },
         "end": {
-          "line": 4220,
+          "line": 4224,
           "column": 2
         }
       },
@@ -40626,6 +40818,7 @@
         "description": "stories(container(), function(story, loopCount){\n  println(\"Number of words in each Story:\");\n  println(story.words.length);\n});"
       }
     ],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -40878,6 +41071,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -41180,22 +41374,22 @@
     ],
     "loc": {
       "start": {
-        "line": 4222,
+        "line": 4226,
         "column": 0
       },
       "end": {
-        "line": 4234,
+        "line": 4238,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 4235,
+          "line": 4239,
           "column": 0
         },
         "end": {
-          "line": 4240,
+          "line": 4244,
           "column": 2
         }
       },
@@ -41203,6 +41397,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -41492,6 +41687,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -41790,22 +41986,22 @@
     ],
     "loc": {
       "start": {
-        "line": 4242,
+        "line": 4246,
         "column": 0
       },
       "end": {
-        "line": 4254,
+        "line": 4258,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 4255,
+          "line": 4259,
           "column": 0
         },
         "end": {
-          "line": 4260,
+          "line": 4264,
           "column": 2
         }
       },
@@ -41813,6 +42009,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -42098,6 +42295,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -42259,22 +42457,22 @@
     ],
     "loc": {
       "start": {
-        "line": 4400,
+        "line": 4404,
         "column": 0
       },
       "end": {
-        "line": 4409,
+        "line": 4413,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 4410,
+          "line": 4414,
           "column": 0
         },
         "end": {
-          "line": 4412,
+          "line": 4416,
           "column": 2
         }
       },
@@ -42282,6 +42480,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -42350,6 +42549,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -42621,22 +42821,22 @@
     ],
     "loc": {
       "start": {
-        "line": 4414,
+        "line": 4418,
         "column": 0
       },
       "end": {
-        "line": 4423,
+        "line": 4427,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 4424,
+          "line": 4428,
           "column": 0
         },
         "end": {
-          "line": 4436,
+          "line": 4440,
           "column": 2
         }
       },
@@ -42644,6 +42844,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -42775,6 +42976,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -42926,22 +43128,22 @@
     ],
     "loc": {
       "start": {
-        "line": 4438,
+        "line": 4442,
         "column": 0
       },
       "end": {
-        "line": 4444,
+        "line": 4448,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 4445,
+          "line": 4449,
           "column": 0
         },
         "end": {
-          "line": 4445,
+          "line": 4449,
           "column": 18
         }
       },
@@ -42949,6 +43151,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [
       {
@@ -43017,6 +43220,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -43169,22 +43373,22 @@
     ],
     "loc": {
       "start": {
-        "line": 4804,
+        "line": 4808,
         "column": 0
       },
       "end": {
-        "line": 4810,
+        "line": 4814,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 4811,
+          "line": 4815,
           "column": 0
         },
         "end": {
-          "line": 4811,
+          "line": 4815,
           "column": 17
         }
       },
@@ -43192,6 +43396,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [
       {
@@ -43260,6 +43465,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -43417,22 +43623,22 @@
     ],
     "loc": {
       "start": {
-        "line": 4838,
+        "line": 4842,
         "column": 0
       },
       "end": {
-        "line": 4845,
+        "line": 4849,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 4846,
+          "line": 4850,
           "column": 0
         },
         "end": {
-          "line": 4846,
+          "line": 4850,
           "column": 22
         }
       },
@@ -43440,12 +43646,14 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [],
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -43603,22 +43811,22 @@
     ],
     "loc": {
       "start": {
-        "line": 6575,
+        "line": 6579,
         "column": 0
       },
       "end": {
-        "line": 6582,
+        "line": 6586,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 6583,
+          "line": 6587,
           "column": 0
         },
         "end": {
-          "line": 6583,
+          "line": 6587,
           "column": 21
         }
       },
@@ -43626,12 +43834,14 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [],
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -43789,22 +43999,22 @@
     ],
     "loc": {
       "start": {
-        "line": 6585,
+        "line": 6589,
         "column": 0
       },
       "end": {
-        "line": 6592,
+        "line": 6596,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 6593,
+          "line": 6597,
           "column": 0
         },
         "end": {
-          "line": 6593,
+          "line": 6597,
           "column": 26
         }
       },
@@ -43812,12 +44022,14 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [],
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -43975,22 +44187,22 @@
     ],
     "loc": {
       "start": {
-        "line": 6595,
+        "line": 6599,
         "column": 0
       },
       "end": {
-        "line": 6602,
+        "line": 6606,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 6604,
+          "line": 6608,
           "column": 0
         },
         "end": {
-          "line": 6604,
+          "line": 6608,
           "column": 49
         }
       },
@@ -43998,12 +44210,14 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [],
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -44161,22 +44375,22 @@
     ],
     "loc": {
       "start": {
-        "line": 6606,
+        "line": 6610,
         "column": 0
       },
       "end": {
-        "line": 6613,
+        "line": 6617,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 6614,
+          "line": 6618,
           "column": 0
         },
         "end": {
-          "line": 6614,
+          "line": 6618,
           "column": 17
         }
       },
@@ -44184,12 +44398,14 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [],
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -44347,22 +44563,22 @@
     ],
     "loc": {
       "start": {
-        "line": 6616,
+        "line": 6620,
         "column": 0
       },
       "end": {
-        "line": 6623,
+        "line": 6627,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 6624,
+          "line": 6628,
           "column": 0
         },
         "end": {
-          "line": 6624,
+          "line": 6628,
           "column": 29
         }
       },
@@ -44370,12 +44586,14 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [],
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -44533,22 +44751,22 @@
     ],
     "loc": {
       "start": {
-        "line": 6626,
+        "line": 6630,
         "column": 0
       },
       "end": {
-        "line": 6633,
+        "line": 6637,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 6634,
+          "line": 6638,
           "column": 0
         },
         "end": {
-          "line": 6634,
+          "line": 6638,
           "column": 24
         }
       },
@@ -44556,12 +44774,14 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [],
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -44719,22 +44939,22 @@
     ],
     "loc": {
       "start": {
-        "line": 6636,
+        "line": 6640,
         "column": 0
       },
       "end": {
-        "line": 6643,
+        "line": 6647,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 6644,
+          "line": 6648,
           "column": 0
         },
         "end": {
-          "line": 6644,
+          "line": 6648,
           "column": 25
         }
       },
@@ -44742,12 +44962,14 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [],
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -44905,22 +45127,22 @@
     ],
     "loc": {
       "start": {
-        "line": 8704,
+        "line": 8708,
         "column": 0
       },
       "end": {
-        "line": 8711,
+        "line": 8715,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 8712,
+          "line": 8716,
           "column": 0
         },
         "end": {
-          "line": 8712,
+          "line": 8716,
           "column": 353
         }
       },
@@ -44928,12 +45150,14 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [],
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -45717,22 +45941,22 @@
     ],
     "loc": {
       "start": {
-        "line": 4447,
+        "line": 4451,
         "column": 0
       },
       "end": {
-        "line": 4477,
+        "line": 4481,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 4478,
+          "line": 4482,
           "column": 0
         },
         "end": {
-          "line": 4636,
+          "line": 4640,
           "column": 2
         }
       },
@@ -45906,6 +46130,7 @@
         }
       }
     ],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -46462,6 +46687,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -46609,22 +46835,22 @@
     ],
     "loc": {
       "start": {
-        "line": 4638,
+        "line": 4642,
         "column": 0
       },
       "end": {
-        "line": 4644,
+        "line": 4648,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 4645,
+          "line": 4649,
           "column": 0
         },
         "end": {
-          "line": 4655,
+          "line": 4659,
           "column": 2
         }
       },
@@ -46632,12 +46858,14 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [],
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -46794,22 +47022,22 @@
     ],
     "loc": {
       "start": {
-        "line": 4657,
+        "line": 4661,
         "column": 0
       },
       "end": {
-        "line": 4665,
+        "line": 4669,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 4666,
+          "line": 4670,
           "column": 0
         },
         "end": {
-          "line": 4671,
+          "line": 4675,
           "column": 2
         }
       },
@@ -46817,6 +47045,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [
@@ -46883,6 +47112,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -47093,22 +47323,22 @@
     ],
     "loc": {
       "start": {
-        "line": 4673,
+        "line": 4677,
         "column": 0
       },
       "end": {
-        "line": 4698,
+        "line": 4702,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 4699,
+          "line": 4703,
           "column": 0
         },
         "end": {
-          "line": 4734,
+          "line": 4738,
           "column": 2
         }
       },
@@ -47227,6 +47457,7 @@
         }
       }
     ],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -47489,6 +47720,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -47849,22 +48081,22 @@
     ],
     "loc": {
       "start": {
-        "line": 4736,
+        "line": 4740,
         "column": 0
       },
       "end": {
-        "line": 4758,
+        "line": 4762,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 4759,
+          "line": 4763,
           "column": 0
         },
         "end": {
-          "line": 4802,
+          "line": 4806,
           "column": 2
         }
       },
@@ -48093,6 +48325,7 @@
         }
       }
     ],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -48374,6 +48607,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -48530,22 +48764,22 @@
     ],
     "loc": {
       "start": {
-        "line": 4817,
+        "line": 4821,
         "column": 0
       },
       "end": {
-        "line": 4824,
+        "line": 4828,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 4825,
+          "line": 4829,
           "column": 0
         },
         "end": {
-          "line": 4828,
+          "line": 4832,
           "column": 26
         }
       },
@@ -48553,12 +48787,14 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [],
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -48985,22 +49221,22 @@
     ],
     "loc": {
       "start": {
-        "line": 4856,
+        "line": 4860,
         "column": 0
       },
       "end": {
-        "line": 4869,
+        "line": 4873,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 4870,
+          "line": 4874,
           "column": 0
         },
         "end": {
-          "line": 4952,
+          "line": 4956,
           "column": 2
         }
       },
@@ -49008,6 +49244,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -49602,6 +49839,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -50009,22 +50247,22 @@
     ],
     "loc": {
       "start": {
-        "line": 4954,
+        "line": 4958,
         "column": 0
       },
       "end": {
-        "line": 4963,
+        "line": 4967,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 4964,
+          "line": 4968,
           "column": 0
         },
         "end": {
-          "line": 4973,
+          "line": 4977,
           "column": 2
         }
       },
@@ -50032,6 +50270,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -50265,6 +50504,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -50466,22 +50706,22 @@
     ],
     "loc": {
       "start": {
-        "line": 4983,
+        "line": 4987,
         "column": 0
       },
       "end": {
-        "line": 4994,
+        "line": 4998,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 4995,
+          "line": 4999,
           "column": 0
         },
         "end": {
-          "line": 5005,
+          "line": 5009,
           "column": 2
         }
       },
@@ -50489,6 +50729,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -50617,6 +50858,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -50801,22 +51043,22 @@
     ],
     "loc": {
       "start": {
-        "line": 5011,
+        "line": 5015,
         "column": 0
       },
       "end": {
-        "line": 5021,
+        "line": 5025,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 5022,
+          "line": 5026,
           "column": 0
         },
         "end": {
-          "line": 5109,
+          "line": 5113,
           "column": 2
         }
       },
@@ -50824,6 +51066,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -50965,6 +51208,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -51152,22 +51396,22 @@
     ],
     "loc": {
       "start": {
-        "line": 5111,
+        "line": 5115,
         "column": 0
       },
       "end": {
-        "line": 5130,
+        "line": 5134,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 5131,
+          "line": 5135,
           "column": 0
         },
         "end": {
-          "line": 5150,
+          "line": 5154,
           "column": 2
         }
       },
@@ -51286,6 +51530,7 @@
         }
       }
     ],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -51414,6 +51659,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -51670,22 +51916,22 @@
     ],
     "loc": {
       "start": {
-        "line": 5152,
+        "line": 5156,
         "column": 0
       },
       "end": {
-        "line": 5174,
+        "line": 5178,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 5175,
+          "line": 5179,
           "column": 0
         },
         "end": {
-          "line": 5232,
+          "line": 5236,
           "column": 2
         }
       },
@@ -51804,6 +52050,7 @@
         }
       }
     ],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -52279,6 +52526,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -52469,22 +52717,22 @@
     ],
     "loc": {
       "start": {
-        "line": 5234,
+        "line": 5238,
         "column": 0
       },
       "end": {
-        "line": 5252,
+        "line": 5256,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 5253,
+          "line": 5257,
           "column": 0
         },
         "end": {
-          "line": 5279,
+          "line": 5283,
           "column": 2
         }
       },
@@ -52603,6 +52851,7 @@
         }
       }
     ],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -52734,6 +52983,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -52914,22 +53164,22 @@
     ],
     "loc": {
       "start": {
-        "line": 5281,
+        "line": 5285,
         "column": 0
       },
       "end": {
-        "line": 5291,
+        "line": 5295,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 5292,
+          "line": 5296,
           "column": 0
         },
         "end": {
-          "line": 5307,
+          "line": 5311,
           "column": 2
         }
       },
@@ -52937,6 +53187,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -53074,6 +53325,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -53254,22 +53506,22 @@
     ],
     "loc": {
       "start": {
-        "line": 5309,
+        "line": 5313,
         "column": 0
       },
       "end": {
-        "line": 5319,
+        "line": 5323,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 5320,
+          "line": 5324,
           "column": 0
         },
         "end": {
-          "line": 5331,
+          "line": 5335,
           "column": 2
         }
       },
@@ -53277,6 +53529,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -53414,6 +53667,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -53594,22 +53848,22 @@
     ],
     "loc": {
       "start": {
-        "line": 5333,
+        "line": 5337,
         "column": 0
       },
       "end": {
-        "line": 5343,
+        "line": 5347,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 5344,
+          "line": 5348,
           "column": 0
         },
         "end": {
-          "line": 5358,
+          "line": 5362,
           "column": 2
         }
       },
@@ -53617,6 +53871,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -53754,6 +54009,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -54006,22 +54262,22 @@
     ],
     "loc": {
       "start": {
-        "line": 5360,
+        "line": 5364,
         "column": 0
       },
       "end": {
-        "line": 5379,
+        "line": 5383,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 5380,
+          "line": 5384,
           "column": 0
         },
         "end": {
-          "line": 5382,
+          "line": 5386,
           "column": 2
         }
       },
@@ -54140,6 +54396,7 @@
         }
       }
     ],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -54594,6 +54851,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -54837,22 +55095,22 @@
     ],
     "loc": {
       "start": {
-        "line": 5384,
+        "line": 5388,
         "column": 0
       },
       "end": {
-        "line": 5403,
+        "line": 5407,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 5404,
+          "line": 5408,
           "column": 0
         },
         "end": {
-          "line": 5411,
+          "line": 5415,
           "column": 2
         }
       },
@@ -54971,6 +55229,7 @@
         }
       }
     ],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -55382,6 +55641,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -55612,22 +55872,22 @@
     ],
     "loc": {
       "start": {
-        "line": 5413,
+        "line": 5417,
         "column": 0
       },
       "end": {
-        "line": 5431,
+        "line": 5435,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 5432,
+          "line": 5436,
           "column": 0
         },
         "end": {
-          "line": 5439,
+          "line": 5443,
           "column": 2
         }
       },
@@ -55746,6 +56006,7 @@
         }
       }
     ],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -56093,6 +56354,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -56356,22 +56618,22 @@
     ],
     "loc": {
       "start": {
-        "line": 5445,
+        "line": 5449,
         "column": 0
       },
       "end": {
-        "line": 5454,
+        "line": 5458,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 5455,
+          "line": 5459,
           "column": 0
         },
         "end": {
-          "line": 5457,
+          "line": 5461,
           "column": 2
         }
       },
@@ -56379,6 +56641,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [
@@ -56445,6 +56708,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -56708,22 +56972,22 @@
     ],
     "loc": {
       "start": {
-        "line": 5459,
+        "line": 5463,
         "column": 0
       },
       "end": {
-        "line": 5468,
+        "line": 5472,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 5469,
+          "line": 5473,
           "column": 0
         },
         "end": {
-          "line": 5471,
+          "line": 5475,
           "column": 2
         }
       },
@@ -56731,6 +56995,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [
@@ -56797,6 +57062,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -56958,22 +57224,22 @@
     ],
     "loc": {
       "start": {
-        "line": 5473,
+        "line": 5477,
         "column": 0
       },
       "end": {
-        "line": 5482,
+        "line": 5486,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 5483,
+          "line": 5487,
           "column": 0
         },
         "end": {
-          "line": 5485,
+          "line": 5489,
           "column": 2
         }
       },
@@ -56981,6 +57247,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [
@@ -57047,6 +57314,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -57276,22 +57544,22 @@
     ],
     "loc": {
       "start": {
-        "line": 5487,
+        "line": 5491,
         "column": 0
       },
       "end": {
-        "line": 5496,
+        "line": 5500,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 5497,
+          "line": 5501,
           "column": 0
         },
         "end": {
-          "line": 5499,
+          "line": 5503,
           "column": 2
         }
       },
@@ -57299,6 +57567,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [
@@ -57365,6 +57634,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -57628,22 +57898,22 @@
     ],
     "loc": {
       "start": {
-        "line": 5501,
+        "line": 5505,
         "column": 0
       },
       "end": {
-        "line": 5510,
+        "line": 5514,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 5511,
+          "line": 5515,
           "column": 0
         },
         "end": {
-          "line": 5513,
+          "line": 5517,
           "column": 2
         }
       },
@@ -57651,6 +57921,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [
@@ -57717,6 +57988,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -57980,22 +58252,22 @@
     ],
     "loc": {
       "start": {
-        "line": 5515,
+        "line": 5519,
         "column": 0
       },
       "end": {
-        "line": 5524,
+        "line": 5528,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 5525,
+          "line": 5529,
           "column": 0
         },
         "end": {
-          "line": 5527,
+          "line": 5531,
           "column": 2
         }
       },
@@ -58003,6 +58275,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [
@@ -58069,6 +58342,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -58332,22 +58606,22 @@
     ],
     "loc": {
       "start": {
-        "line": 5529,
+        "line": 5533,
         "column": 0
       },
       "end": {
-        "line": 5538,
+        "line": 5542,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 5539,
+          "line": 5543,
           "column": 0
         },
         "end": {
-          "line": 5541,
+          "line": 5545,
           "column": 2
         }
       },
@@ -58355,6 +58629,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [
@@ -58421,6 +58696,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -58650,22 +58926,22 @@
     ],
     "loc": {
       "start": {
-        "line": 5543,
+        "line": 5547,
         "column": 0
       },
       "end": {
-        "line": 5552,
+        "line": 5556,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 5553,
+          "line": 5557,
           "column": 0
         },
         "end": {
-          "line": 5563,
+          "line": 5567,
           "column": 2
         }
       },
@@ -58673,6 +58949,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [
@@ -58773,6 +59050,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -59070,22 +59348,22 @@
     ],
     "loc": {
       "start": {
-        "line": 5565,
+        "line": 5569,
         "column": 0
       },
       "end": {
-        "line": 5574,
+        "line": 5578,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 5575,
+          "line": 5579,
           "column": 0
         },
         "end": {
-          "line": 5578,
+          "line": 5582,
           "column": 2
         }
       },
@@ -59093,6 +59371,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [
@@ -59159,6 +59438,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -59422,22 +59702,22 @@
     ],
     "loc": {
       "start": {
-        "line": 5580,
+        "line": 5584,
         "column": 0
       },
       "end": {
-        "line": 5589,
+        "line": 5593,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 5590,
+          "line": 5594,
           "column": 0
         },
         "end": {
-          "line": 5592,
+          "line": 5596,
           "column": 2
         }
       },
@@ -59445,6 +59725,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [
@@ -59511,6 +59792,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -59682,22 +59964,22 @@
     ],
     "loc": {
       "start": {
-        "line": 5652,
+        "line": 5656,
         "column": 0
       },
       "end": {
-        "line": 5662,
+        "line": 5666,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 5663,
+          "line": 5667,
           "column": 0
         },
         "end": {
-          "line": 5663,
+          "line": 5667,
           "column": 19
         }
       },
@@ -59705,6 +59987,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -59833,6 +60116,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -60072,22 +60356,22 @@
     ],
     "loc": {
       "start": {
-        "line": 5665,
+        "line": 5669,
         "column": 0
       },
       "end": {
-        "line": 5675,
+        "line": 5679,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 5676,
+          "line": 5680,
           "column": 0
         },
         "end": {
-          "line": 5676,
+          "line": 5680,
           "column": 21
         }
       },
@@ -60095,6 +60379,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -60223,6 +60508,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -60414,22 +60700,22 @@
     ],
     "loc": {
       "start": {
-        "line": 5678,
+        "line": 5682,
         "column": 0
       },
       "end": {
-        "line": 5690,
+        "line": 5694,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 5691,
+          "line": 5695,
           "column": 0
         },
         "end": {
-          "line": 5696,
+          "line": 5700,
           "column": 2
         }
       },
@@ -60437,6 +60723,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -60687,6 +60974,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -60888,22 +61176,22 @@
     ],
     "loc": {
       "start": {
-        "line": 5698,
+        "line": 5702,
         "column": 0
       },
       "end": {
-        "line": 5711,
+        "line": 5715,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 5712,
+          "line": 5716,
           "column": 0
         },
         "end": {
-          "line": 5721,
+          "line": 5725,
           "column": 2
         }
       },
@@ -60911,6 +61199,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -61222,6 +61511,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -61529,22 +61819,22 @@
     ],
     "loc": {
       "start": {
-        "line": 5723,
+        "line": 5727,
         "column": 0
       },
       "end": {
-        "line": 5733,
+        "line": 5737,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 5734,
+          "line": 5738,
           "column": 0
         },
         "end": {
-          "line": 5734,
+          "line": 5738,
           "column": 19
         }
       },
@@ -61552,6 +61842,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -61714,6 +62005,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -62021,22 +62313,22 @@
     ],
     "loc": {
       "start": {
-        "line": 5736,
+        "line": 5740,
         "column": 0
       },
       "end": {
-        "line": 5746,
+        "line": 5750,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 5747,
+          "line": 5751,
           "column": 0
         },
         "end": {
-          "line": 5747,
+          "line": 5751,
           "column": 23
         }
       },
@@ -62044,6 +62336,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -62172,6 +62465,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -62499,22 +62793,22 @@
     ],
     "loc": {
       "start": {
-        "line": 5749,
+        "line": 5753,
         "column": 0
       },
       "end": {
-        "line": 5761,
+        "line": 5765,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 5762,
+          "line": 5766,
           "column": 0
         },
         "end": {
-          "line": 5765,
+          "line": 5769,
           "column": 2
         }
       },
@@ -62522,6 +62816,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -62772,6 +63067,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -62977,22 +63273,22 @@
     ],
     "loc": {
       "start": {
-        "line": 5767,
+        "line": 5771,
         "column": 0
       },
       "end": {
-        "line": 5777,
+        "line": 5781,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 5778,
+          "line": 5782,
           "column": 0
         },
         "end": {
-          "line": 5778,
+          "line": 5782,
           "column": 19
         }
       },
@@ -63000,6 +63296,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -63162,6 +63459,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -63492,22 +63790,22 @@
     ],
     "loc": {
       "start": {
-        "line": 5780,
+        "line": 5784,
         "column": 0
       },
       "end": {
-        "line": 5792,
+        "line": 5796,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 5793,
+          "line": 5797,
           "column": 0
         },
         "end": {
-          "line": 5797,
+          "line": 5801,
           "column": 2
         }
       },
@@ -63515,6 +63813,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -63768,6 +64067,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -64051,22 +64351,22 @@
     ],
     "loc": {
       "start": {
-        "line": 5799,
+        "line": 5803,
         "column": 0
       },
       "end": {
-        "line": 5814,
+        "line": 5818,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 5815,
+          "line": 5819,
           "column": 0
         },
         "end": {
-          "line": 5818,
+          "line": 5822,
           "column": 2
         }
       },
@@ -64074,6 +64374,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -64446,6 +64747,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -64652,22 +64954,22 @@
     ],
     "loc": {
       "start": {
-        "line": 5820,
+        "line": 5824,
         "column": 0
       },
       "end": {
-        "line": 5832,
+        "line": 5836,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 5833,
+          "line": 5837,
           "column": 0
         },
         "end": {
-          "line": 5841,
+          "line": 5845,
           "column": 2
         }
       },
@@ -64675,6 +64977,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -64940,6 +65243,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -65146,22 +65450,22 @@
     ],
     "loc": {
       "start": {
-        "line": 5843,
+        "line": 5847,
         "column": 0
       },
       "end": {
-        "line": 5855,
+        "line": 5859,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 5856,
+          "line": 5860,
           "column": 0
         },
         "end": {
-          "line": 5864,
+          "line": 5868,
           "column": 2
         }
       },
@@ -65169,6 +65473,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -65434,6 +65739,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -65802,22 +66108,22 @@
     ],
     "loc": {
       "start": {
-        "line": 5866,
+        "line": 5870,
         "column": 0
       },
       "end": {
-        "line": 5880,
+        "line": 5884,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 5881,
+          "line": 5885,
           "column": 0
         },
         "end": {
-          "line": 5884,
+          "line": 5888,
           "column": 2
         }
       },
@@ -65825,6 +66131,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -66075,6 +66382,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -66494,22 +66802,22 @@
     ],
     "loc": {
       "start": {
-        "line": 5886,
+        "line": 5890,
         "column": 0
       },
       "end": {
-        "line": 5897,
+        "line": 5901,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 5898,
+          "line": 5902,
           "column": 0
         },
         "end": {
-          "line": 5898,
+          "line": 5902,
           "column": 19
         }
       },
@@ -66517,6 +66825,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -66706,6 +67015,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -66945,22 +67255,22 @@
     ],
     "loc": {
       "start": {
-        "line": 5900,
+        "line": 5904,
         "column": 0
       },
       "end": {
-        "line": 5910,
+        "line": 5914,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 5911,
+          "line": 5915,
           "column": 0
         },
         "end": {
-          "line": 5911,
+          "line": 5915,
           "column": 23
         }
       },
@@ -66968,6 +67278,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -67096,6 +67407,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -67301,22 +67613,22 @@
     ],
     "loc": {
       "start": {
-        "line": 5913,
+        "line": 5917,
         "column": 0
       },
       "end": {
-        "line": 5923,
+        "line": 5927,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 5924,
+          "line": 5928,
           "column": 0
         },
         "end": {
-          "line": 5927,
+          "line": 5931,
           "column": 2
         }
       },
@@ -67324,6 +67636,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -67452,6 +67765,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -67657,22 +67971,22 @@
     ],
     "loc": {
       "start": {
-        "line": 5929,
+        "line": 5933,
         "column": 0
       },
       "end": {
-        "line": 5939,
+        "line": 5943,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 5940,
+          "line": 5944,
           "column": 0
         },
         "end": {
-          "line": 5940,
+          "line": 5944,
           "column": 21
         }
       },
@@ -67680,6 +67994,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -67808,6 +68123,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -68348,22 +68664,22 @@
     ],
     "loc": {
       "start": {
-        "line": 5946,
+        "line": 5950,
         "column": 0
       },
       "end": {
-        "line": 5964,
+        "line": 5968,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 5965,
+          "line": 5969,
           "column": 0
         },
         "end": {
-          "line": 5987,
+          "line": 5991,
           "column": 2
         }
       },
@@ -68371,6 +68687,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -68627,6 +68944,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -69072,22 +69390,22 @@
     ],
     "loc": {
       "start": {
-        "line": 5989,
+        "line": 5993,
         "column": 0
       },
       "end": {
-        "line": 6001,
+        "line": 6005,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 6002,
+          "line": 6006,
           "column": 0
         },
         "end": {
-          "line": 6005,
+          "line": 6009,
           "column": 2
         }
       },
@@ -69095,6 +69413,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -69224,6 +69543,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -69488,22 +69808,22 @@
     ],
     "loc": {
       "start": {
-        "line": 6007,
+        "line": 6011,
         "column": 0
       },
       "end": {
-        "line": 6016,
+        "line": 6020,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 6017,
+          "line": 6021,
           "column": 0
         },
         "end": {
-          "line": 6020,
+          "line": 6024,
           "column": 2
         }
       },
@@ -69511,6 +69831,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -69579,6 +69900,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -70144,22 +70466,22 @@
     ],
     "loc": {
       "start": {
-        "line": 6022,
+        "line": 6026,
         "column": 0
       },
       "end": {
-        "line": 6034,
+        "line": 6038,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 6035,
+          "line": 6039,
           "column": 0
         },
         "end": {
-          "line": 6041,
+          "line": 6045,
           "column": 2
         }
       },
@@ -70167,6 +70489,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -70362,6 +70685,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -70596,22 +70920,22 @@
     ],
     "loc": {
       "start": {
-        "line": 6043,
+        "line": 6047,
         "column": 0
       },
       "end": {
-        "line": 6053,
+        "line": 6057,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 6054,
+          "line": 6058,
           "column": 0
         },
         "end": {
-          "line": 6056,
+          "line": 6060,
           "column": 2
         }
       },
@@ -70619,6 +70943,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -70687,6 +71012,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -71096,22 +71422,22 @@
     ],
     "loc": {
       "start": {
-        "line": 6062,
+        "line": 6066,
         "column": 0
       },
       "end": {
-        "line": 6072,
+        "line": 6076,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 6073,
+          "line": 6077,
           "column": 0
         },
         "end": {
-          "line": 6073,
+          "line": 6077,
           "column": 21
         }
       },
@@ -71119,6 +71445,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -71247,6 +71574,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -71622,22 +71950,22 @@
     ],
     "loc": {
       "start": {
-        "line": 6075,
+        "line": 6079,
         "column": 0
       },
       "end": {
-        "line": 6085,
+        "line": 6089,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 6086,
+          "line": 6090,
           "column": 0
         },
         "end": {
-          "line": 6086,
+          "line": 6090,
           "column": 21
         }
       },
@@ -71645,6 +71973,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -71773,6 +72102,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -72148,22 +72478,22 @@
     ],
     "loc": {
       "start": {
-        "line": 6088,
+        "line": 6092,
         "column": 0
       },
       "end": {
-        "line": 6098,
+        "line": 6102,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 6099,
+          "line": 6103,
           "column": 0
         },
         "end": {
-          "line": 6099,
+          "line": 6103,
           "column": 21
         }
       },
@@ -72171,6 +72501,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -72299,6 +72630,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -72582,22 +72914,22 @@
     ],
     "loc": {
       "start": {
-        "line": 6101,
+        "line": 6105,
         "column": 0
       },
       "end": {
-        "line": 6112,
+        "line": 6116,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 6113,
+          "line": 6117,
           "column": 0
         },
         "end": {
-          "line": 6113,
+          "line": 6117,
           "column": 23
         }
       },
@@ -72605,6 +72937,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -72794,6 +73127,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -73101,22 +73435,22 @@
     ],
     "loc": {
       "start": {
-        "line": 6115,
+        "line": 6119,
         "column": 0
       },
       "end": {
-        "line": 6125,
+        "line": 6129,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 6126,
+          "line": 6130,
           "column": 0
         },
         "end": {
-          "line": 6126,
+          "line": 6130,
           "column": 19
         }
       },
@@ -73124,6 +73458,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -73252,6 +73587,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -73491,22 +73827,22 @@
     ],
     "loc": {
       "start": {
-        "line": 6128,
+        "line": 6132,
         "column": 0
       },
       "end": {
-        "line": 6138,
+        "line": 6142,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 6139,
+          "line": 6143,
           "column": 0
         },
         "end": {
-          "line": 6141,
+          "line": 6145,
           "column": 2
         }
       },
@@ -73514,6 +73850,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -73642,6 +73979,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -73881,22 +74219,22 @@
     ],
     "loc": {
       "start": {
-        "line": 6143,
+        "line": 6147,
         "column": 0
       },
       "end": {
-        "line": 6153,
+        "line": 6157,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 6154,
+          "line": 6158,
           "column": 0
         },
         "end": {
-          "line": 6156,
+          "line": 6160,
           "column": 2
         }
       },
@@ -73904,6 +74242,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -74032,6 +74371,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -74339,22 +74679,22 @@
     ],
     "loc": {
       "start": {
-        "line": 6158,
+        "line": 6162,
         "column": 0
       },
       "end": {
-        "line": 6168,
+        "line": 6172,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 6169,
+          "line": 6173,
           "column": 0
         },
         "end": {
-          "line": 6169,
+          "line": 6173,
           "column": 19
         }
       },
@@ -74362,6 +74702,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -74490,6 +74831,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -74797,22 +75139,22 @@
     ],
     "loc": {
       "start": {
-        "line": 6171,
+        "line": 6175,
         "column": 0
       },
       "end": {
-        "line": 6181,
+        "line": 6185,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 6182,
+          "line": 6186,
           "column": 0
         },
         "end": {
-          "line": 6182,
+          "line": 6186,
           "column": 19
         }
       },
@@ -74820,6 +75162,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -74948,6 +75291,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -75174,22 +75518,22 @@
     ],
     "loc": {
       "start": {
-        "line": 6190,
+        "line": 6194,
         "column": 2
       },
       "end": {
-        "line": 6204,
+        "line": 6208,
         "column": 5
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 6205,
+          "line": 6209,
           "column": 2
         },
         "end": {
-          "line": 6209,
+          "line": 6213,
           "column": 3
         }
       },
@@ -75197,6 +75541,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -75390,6 +75735,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -75593,22 +75939,22 @@
     ],
     "loc": {
       "start": {
-        "line": 6211,
+        "line": 6215,
         "column": 2
       },
       "end": {
-        "line": 6223,
+        "line": 6227,
         "column": 5
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 6224,
+          "line": 6228,
           "column": 2
         },
         "end": {
-          "line": 6226,
+          "line": 6230,
           "column": 4
         }
       },
@@ -75616,6 +75962,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -75805,6 +76152,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -76010,22 +76358,22 @@
     ],
     "loc": {
       "start": {
-        "line": 6228,
+        "line": 6232,
         "column": 2
       },
       "end": {
-        "line": 6240,
+        "line": 6244,
         "column": 5
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 6241,
+          "line": 6245,
           "column": 2
         },
         "end": {
-          "line": 6243,
+          "line": 6247,
           "column": 4
         }
       },
@@ -76033,6 +76381,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -76222,6 +76571,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -76532,22 +76882,22 @@
     ],
     "loc": {
       "start": {
-        "line": 6319,
+        "line": 6323,
         "column": 4
       },
       "end": {
-        "line": 6331,
+        "line": 6335,
         "column": 7
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 6332,
+          "line": 6336,
           "column": 4
         },
         "end": {
-          "line": 6337,
+          "line": 6341,
           "column": 5
         }
       },
@@ -76555,6 +76905,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -76922,6 +77273,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -77125,22 +77477,22 @@
     ],
     "loc": {
       "start": {
-        "line": 6245,
+        "line": 6249,
         "column": 2
       },
       "end": {
-        "line": 6257,
+        "line": 6261,
         "column": 5
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 6258,
+          "line": 6262,
           "column": 2
         },
         "end": {
-          "line": 6260,
+          "line": 6264,
           "column": 4
         }
       },
@@ -77148,6 +77500,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -77337,6 +77690,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -77647,22 +78001,22 @@
     ],
     "loc": {
       "start": {
-        "line": 6339,
+        "line": 6343,
         "column": 4
       },
       "end": {
-        "line": 6351,
+        "line": 6355,
         "column": 7
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 6352,
+          "line": 6356,
           "column": 4
         },
         "end": {
-          "line": 6357,
+          "line": 6361,
           "column": 5
         }
       },
@@ -77670,6 +78024,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -78037,6 +78392,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -78240,22 +78596,22 @@
     ],
     "loc": {
       "start": {
-        "line": 6262,
+        "line": 6266,
         "column": 2
       },
       "end": {
-        "line": 6274,
+        "line": 6278,
         "column": 5
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 6275,
+          "line": 6279,
           "column": 2
         },
         "end": {
-          "line": 6277,
+          "line": 6281,
           "column": 4
         }
       },
@@ -78263,6 +78619,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -78452,6 +78809,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -78762,22 +79120,22 @@
     ],
     "loc": {
       "start": {
-        "line": 6383,
+        "line": 6387,
         "column": 4
       },
       "end": {
-        "line": 6395,
+        "line": 6399,
         "column": 7
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 6396,
+          "line": 6400,
           "column": 4
         },
         "end": {
-          "line": 6399,
+          "line": 6403,
           "column": 5
         }
       },
@@ -78785,6 +79143,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -79152,6 +79511,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -79451,22 +79811,22 @@
     ],
     "loc": {
       "start": {
-        "line": 6281,
+        "line": 6285,
         "column": 4
       },
       "end": {
-        "line": 6292,
+        "line": 6296,
         "column": 7
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 6293,
+          "line": 6297,
           "column": 4
         },
         "end": {
-          "line": 6303,
+          "line": 6307,
           "column": 5
         }
       },
@@ -79474,6 +79834,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -79781,6 +80142,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -80078,22 +80440,22 @@
     ],
     "loc": {
       "start": {
-        "line": 6305,
+        "line": 6309,
         "column": 4
       },
       "end": {
-        "line": 6314,
+        "line": 6318,
         "column": 7
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 6315,
+          "line": 6319,
           "column": 4
         },
         "end": {
-          "line": 6317,
+          "line": 6321,
           "column": 5
         }
       },
@@ -80101,6 +80463,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [
@@ -80303,6 +80666,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -80602,22 +80966,22 @@
     ],
     "loc": {
       "start": {
-        "line": 6359,
+        "line": 6363,
         "column": 4
       },
       "end": {
-        "line": 6370,
+        "line": 6374,
         "column": 7
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 6371,
+          "line": 6375,
           "column": 4
         },
         "end": {
-          "line": 6381,
+          "line": 6385,
           "column": 5
         }
       },
@@ -80625,6 +80989,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -80932,6 +81297,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -81093,22 +81459,22 @@
     ],
     "loc": {
       "start": {
-        "line": 6401,
+        "line": 6405,
         "column": 4
       },
       "end": {
-        "line": 6410,
+        "line": 6414,
         "column": 7
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 6411,
+          "line": 6415,
           "column": 4
         },
         "end": {
-          "line": 6413,
+          "line": 6417,
           "column": 5
         }
       },
@@ -81116,6 +81482,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [
@@ -81182,6 +81549,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -81343,22 +81711,22 @@
     ],
     "loc": {
       "start": {
-        "line": 6415,
+        "line": 6419,
         "column": 4
       },
       "end": {
-        "line": 6424,
+        "line": 6428,
         "column": 7
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 6425,
+          "line": 6429,
           "column": 4
         },
         "end": {
-          "line": 6427,
+          "line": 6431,
           "column": 5
         }
       },
@@ -81366,6 +81734,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [
@@ -81432,6 +81801,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -81594,22 +81964,22 @@
     ],
     "loc": {
       "start": {
-        "line": 6429,
+        "line": 6433,
         "column": 4
       },
       "end": {
-        "line": 6438,
+        "line": 6442,
         "column": 7
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 6439,
+          "line": 6443,
           "column": 4
         },
         "end": {
-          "line": 6444,
+          "line": 6448,
           "column": 5
         }
       },
@@ -81617,6 +81987,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -81685,6 +82056,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -81846,22 +82218,22 @@
     ],
     "loc": {
       "start": {
-        "line": 6446,
+        "line": 6450,
         "column": 4
       },
       "end": {
-        "line": 6455,
+        "line": 6459,
         "column": 7
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 6456,
+          "line": 6460,
           "column": 4
         },
         "end": {
-          "line": 6461,
+          "line": 6465,
           "column": 5
         }
       },
@@ -81869,6 +82241,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [
@@ -81935,6 +82308,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -82234,22 +82608,22 @@
     ],
     "loc": {
       "start": {
-        "line": 6463,
+        "line": 6467,
         "column": 4
       },
       "end": {
-        "line": 6474,
+        "line": 6478,
         "column": 7
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 6475,
+          "line": 6479,
           "column": 4
         },
         "end": {
-          "line": 6485,
+          "line": 6489,
           "column": 5
         }
       },
@@ -82257,6 +82631,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -82564,6 +82939,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -82716,22 +83092,22 @@
     ],
     "loc": {
       "start": {
-        "line": 6487,
+        "line": 6491,
         "column": 4
       },
       "end": {
-        "line": 6494,
+        "line": 6498,
         "column": 7
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 6495,
+          "line": 6499,
           "column": 4
         },
         "end": {
-          "line": 6498,
+          "line": 6502,
           "column": 5
         }
       },
@@ -82739,12 +83115,14 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [],
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -83048,22 +83426,22 @@
     ],
     "loc": {
       "start": {
-        "line": 6500,
+        "line": 6504,
         "column": 4
       },
       "end": {
-        "line": 6511,
+        "line": 6515,
         "column": 7
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 6512,
+          "line": 6516,
           "column": 4
         },
         "end": {
-          "line": 6519,
+          "line": 6523,
           "column": 5
         }
       },
@@ -83071,6 +83449,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -83382,6 +83761,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -83783,22 +84163,22 @@
     ],
     "loc": {
       "start": {
-        "line": 6521,
+        "line": 6525,
         "column": 4
       },
       "end": {
-        "line": 6532,
+        "line": 6536,
         "column": 7
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 6533,
+          "line": 6537,
           "column": 4
         },
         "end": {
-          "line": 6543,
+          "line": 6547,
           "column": 5
         }
       },
@@ -83806,6 +84186,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -84113,6 +84494,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -84376,22 +84758,22 @@
     ],
     "loc": {
       "start": {
-        "line": 6545,
+        "line": 6549,
         "column": 4
       },
       "end": {
-        "line": 6554,
+        "line": 6558,
         "column": 7
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 6555,
+          "line": 6559,
           "column": 4
         },
         "end": {
-          "line": 6557,
+          "line": 6561,
           "column": 5
         }
       },
@@ -84399,6 +84781,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [
@@ -84567,6 +84950,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -84763,22 +85147,22 @@
     ],
     "loc": {
       "start": {
-        "line": 6760,
+        "line": 6764,
         "column": 0
       },
       "end": {
-        "line": 6769,
+        "line": 6773,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 6770,
+          "line": 6774,
           "column": 0
         },
         "end": {
-          "line": 6775,
+          "line": 6779,
           "column": 2
         }
       },
@@ -84786,6 +85170,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -84854,6 +85239,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -85016,22 +85402,22 @@
     ],
     "loc": {
       "start": {
-        "line": 6777,
+        "line": 6781,
         "column": 0
       },
       "end": {
-        "line": 6786,
+        "line": 6790,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 6787,
+          "line": 6791,
           "column": 0
         },
         "end": {
-          "line": 6792,
+          "line": 6796,
           "column": 2
         }
       },
@@ -85039,6 +85425,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -85107,6 +85494,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -85297,22 +85685,22 @@
     ],
     "loc": {
       "start": {
-        "line": 6798,
+        "line": 6802,
         "column": 0
       },
       "end": {
-        "line": 6809,
+        "line": 6813,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 6810,
+          "line": 6814,
           "column": 0
         },
         "end": {
-          "line": 6819,
+          "line": 6823,
           "column": 2
         }
       },
@@ -85320,6 +85708,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -85518,6 +85907,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -85711,22 +86101,22 @@
     ],
     "loc": {
       "start": {
-        "line": 6821,
+        "line": 6825,
         "column": 0
       },
       "end": {
-        "line": 6832,
+        "line": 6836,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 6833,
+          "line": 6837,
           "column": 0
         },
         "end": {
-          "line": 6843,
+          "line": 6847,
           "column": 2
         }
       },
@@ -85734,6 +86124,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -85935,6 +86326,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -86128,22 +86520,22 @@
     ],
     "loc": {
       "start": {
-        "line": 6845,
+        "line": 6849,
         "column": 0
       },
       "end": {
-        "line": 6856,
+        "line": 6860,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 6857,
+          "line": 6861,
           "column": 0
         },
         "end": {
-          "line": 6867,
+          "line": 6871,
           "column": 2
         }
       },
@@ -86151,6 +86543,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -86352,6 +86745,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -86542,22 +86936,22 @@
     ],
     "loc": {
       "start": {
-        "line": 6869,
+        "line": 6873,
         "column": 0
       },
       "end": {
-        "line": 6880,
+        "line": 6884,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 6881,
+          "line": 6885,
           "column": 0
         },
         "end": {
-          "line": 6892,
+          "line": 6896,
           "column": 2
         }
       },
@@ -86565,6 +86959,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -86763,6 +87158,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -86953,22 +87349,22 @@
     ],
     "loc": {
       "start": {
-        "line": 6894,
+        "line": 6898,
         "column": 0
       },
       "end": {
-        "line": 6905,
+        "line": 6909,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 6906,
+          "line": 6910,
           "column": 0
         },
         "end": {
-          "line": 6919,
+          "line": 6923,
           "column": 2
         }
       },
@@ -86976,6 +87372,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -87174,6 +87571,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -87642,22 +88040,22 @@
     ],
     "loc": {
       "start": {
-        "line": 7011,
+        "line": 7015,
         "column": 0
       },
       "end": {
-        "line": 7020,
+        "line": 7024,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 7021,
+          "line": 7025,
           "column": 0
         },
         "end": {
-          "line": 7029,
+          "line": 7033,
           "column": 2
         }
       },
@@ -87665,6 +88063,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -87869,6 +88268,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -88575,22 +88975,22 @@
     ],
     "loc": {
       "start": {
-        "line": 7031,
+        "line": 7035,
         "column": 0
       },
       "end": {
-        "line": 7040,
+        "line": 7044,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 7041,
+          "line": 7045,
           "column": 0
         },
         "end": {
-          "line": 7049,
+          "line": 7053,
           "column": 2
         }
       },
@@ -88598,6 +88998,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -88802,6 +89203,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -88964,22 +89366,22 @@
     ],
     "loc": {
       "start": {
-        "line": 7051,
+        "line": 7055,
         "column": 0
       },
       "end": {
-        "line": 7060,
+        "line": 7064,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 7061,
+          "line": 7065,
           "column": 0
         },
         "end": {
-          "line": 7067,
+          "line": 7071,
           "column": 2
         }
       },
@@ -88987,6 +89389,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -89055,6 +89458,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -89502,22 +89906,22 @@
     ],
     "loc": {
       "start": {
-        "line": 7073,
+        "line": 7077,
         "column": 0
       },
       "end": {
-        "line": 7089,
+        "line": 7093,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 7090,
+          "line": 7094,
           "column": 0
         },
         "end": {
-          "line": 7156,
+          "line": 7160,
           "column": 2
         }
       },
@@ -89525,6 +89929,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -90133,6 +90538,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -90334,22 +90740,22 @@
     ],
     "loc": {
       "start": {
-        "line": 7158,
+        "line": 7162,
         "column": 0
       },
       "end": {
-        "line": 7171,
+        "line": 7175,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 7172,
+          "line": 7176,
           "column": 0
         },
         "end": {
-          "line": 7226,
+          "line": 7230,
           "column": 2
         }
       },
@@ -90357,6 +90763,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -90668,6 +91075,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -90874,22 +91282,22 @@
     ],
     "loc": {
       "start": {
-        "line": 7228,
+        "line": 7232,
         "column": 0
       },
       "end": {
-        "line": 7246,
+        "line": 7250,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 7247,
+          "line": 7251,
           "column": 0
         },
         "end": {
-          "line": 7263,
+          "line": 7267,
           "column": 2
         }
       },
@@ -90901,6 +91309,7 @@
         "description": "var vec1 = new Vector(x1, y1);\nvar vec2 = new Vector(x2, y2);\nline( vec1, vec2 );"
       }
     ],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -91212,6 +91621,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -91393,22 +91803,22 @@
     ],
     "loc": {
       "start": {
-        "line": 7265,
+        "line": 7269,
         "column": 0
       },
       "end": {
-        "line": 7276,
+        "line": 7280,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 7277,
+          "line": 7281,
           "column": 0
         },
         "end": {
-          "line": 7311,
+          "line": 7315,
           "column": 2
         }
       },
@@ -91416,6 +91826,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -91605,6 +92016,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -91914,22 +92326,22 @@
     ],
     "loc": {
       "start": {
-        "line": 7313,
+        "line": 7317,
         "column": 0
       },
       "end": {
-        "line": 7330,
+        "line": 7334,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 7331,
+          "line": 7335,
           "column": 0
         },
         "end": {
-          "line": 7343,
+          "line": 7347,
           "column": 2
         }
       },
@@ -91937,6 +92349,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -92492,6 +92905,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -92786,22 +93200,22 @@
     ],
     "loc": {
       "start": {
-        "line": 7345,
+        "line": 7349,
         "column": 0
       },
       "end": {
-        "line": 7364,
+        "line": 7368,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 7365,
+          "line": 7369,
           "column": 0
         },
         "end": {
-          "line": 7430,
+          "line": 7434,
           "column": 2
         }
       },
@@ -92809,6 +93223,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -93376,6 +93791,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -93597,22 +94013,22 @@
     ],
     "loc": {
       "start": {
-        "line": 7432,
+        "line": 7436,
         "column": 0
       },
       "end": {
-        "line": 7447,
+        "line": 7451,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 7448,
+          "line": 7452,
           "column": 0
         },
         "end": {
-          "line": 7460,
+          "line": 7464,
           "column": 2
         }
       },
@@ -93620,6 +94036,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -94053,6 +94470,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -94358,22 +94776,22 @@
     ],
     "loc": {
       "start": {
-        "line": 7466,
+        "line": 7470,
         "column": 0
       },
       "end": {
-        "line": 7473,
+        "line": 7477,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 7474,
+          "line": 7478,
           "column": 0
         },
         "end": {
-          "line": 7477,
+          "line": 7481,
           "column": 2
         }
       },
@@ -94381,12 +94799,14 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [],
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -94777,22 +95197,22 @@
     ],
     "loc": {
       "start": {
-        "line": 7479,
+        "line": 7483,
         "column": 0
       },
       "end": {
-        "line": 7487,
+        "line": 7491,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 7488,
+          "line": 7492,
           "column": 0
         },
         "end": {
-          "line": 7492,
+          "line": 7496,
           "column": 2
         }
       },
@@ -94800,12 +95220,14 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [],
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -95156,22 +95578,22 @@
     ],
     "loc": {
       "start": {
-        "line": 7494,
+        "line": 7498,
         "column": 0
       },
       "end": {
-        "line": 7504,
+        "line": 7508,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 7505,
+          "line": 7509,
           "column": 0
         },
         "end": {
-          "line": 7516,
+          "line": 7520,
           "column": 2
         }
       },
@@ -95179,6 +95601,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -95350,6 +95773,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -95779,22 +96203,22 @@
     ],
     "loc": {
       "start": {
-        "line": 7518,
+        "line": 7522,
         "column": 0
       },
       "end": {
-        "line": 7534,
+        "line": 7538,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 7535,
+          "line": 7539,
           "column": 0
         },
         "end": {
-          "line": 7550,
+          "line": 7554,
           "column": 2
         }
       },
@@ -95802,6 +96226,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -96187,6 +96612,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -96686,22 +97112,22 @@
     ],
     "loc": {
       "start": {
-        "line": 7653,
+        "line": 7657,
         "column": 0
       },
       "end": {
-        "line": 7665,
+        "line": 7669,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 7666,
+          "line": 7670,
           "column": 0
         },
         "end": {
-          "line": 7720,
+          "line": 7724,
           "column": 2
         }
       },
@@ -96709,6 +97135,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -96777,6 +97204,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -96958,22 +97386,22 @@
     ],
     "loc": {
       "start": {
-        "line": 7722,
+        "line": 7726,
         "column": 0
       },
       "end": {
-        "line": 7728,
+        "line": 7732,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 7729,
+          "line": 7733,
           "column": 0
         },
         "end": {
-          "line": 7739,
+          "line": 7743,
           "column": 2
         }
       },
@@ -96981,12 +97409,14 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [],
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -97144,22 +97574,22 @@
     ],
     "loc": {
       "start": {
-        "line": 7749,
+        "line": 7753,
         "column": 0
       },
       "end": {
-        "line": 7757,
+        "line": 7761,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 7758,
+          "line": 7762,
           "column": 0
         },
         "end": {
-          "line": 7760,
+          "line": 7764,
           "column": 2
         }
       },
@@ -97167,6 +97597,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -97235,6 +97666,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -97518,22 +97950,22 @@
     ],
     "loc": {
       "start": {
-        "line": 7762,
+        "line": 7766,
         "column": 0
       },
       "end": {
-        "line": 7768,
+        "line": 7772,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 7769,
+          "line": 7773,
           "column": 0
         },
         "end": {
-          "line": 7775,
+          "line": 7779,
           "column": 2
         }
       },
@@ -97541,12 +97973,14 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [],
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -97694,22 +98128,22 @@
     ],
     "loc": {
       "start": {
-        "line": 7777,
+        "line": 7781,
         "column": 0
       },
       "end": {
-        "line": 7783,
+        "line": 7787,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 7784,
+          "line": 7788,
           "column": 0
         },
         "end": {
-          "line": 7786,
+          "line": 7790,
           "column": 2
         }
       },
@@ -97717,12 +98151,14 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [],
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -98074,22 +98510,22 @@
     ],
     "loc": {
       "start": {
-        "line": 7788,
+        "line": 7792,
         "column": 0
       },
       "end": {
-        "line": 7794,
+        "line": 7798,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 7795,
+          "line": 7799,
           "column": 0
         },
         "end": {
-          "line": 7797,
+          "line": 7801,
           "column": 2
         }
       },
@@ -98097,12 +98533,14 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [],
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -98250,22 +98688,22 @@
     ],
     "loc": {
       "start": {
-        "line": 7799,
+        "line": 7803,
         "column": 0
       },
       "end": {
-        "line": 7805,
+        "line": 7809,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 7806,
+          "line": 7810,
           "column": 0
         },
         "end": {
-          "line": 7811,
+          "line": 7815,
           "column": 2
         }
       },
@@ -98273,12 +98711,14 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [],
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -98810,22 +99250,22 @@
     ],
     "loc": {
       "start": {
-        "line": 7813,
+        "line": 7817,
         "column": 0
       },
       "end": {
-        "line": 7821,
+        "line": 7825,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 7822,
+          "line": 7826,
           "column": 0
         },
         "end": {
-          "line": 7827,
+          "line": 7831,
           "column": 2
         }
       },
@@ -98833,6 +99273,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -98901,6 +99342,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -99340,22 +99782,22 @@
     ],
     "loc": {
       "start": {
-        "line": 7829,
+        "line": 7833,
         "column": 0
       },
       "end": {
-        "line": 7838,
+        "line": 7842,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 7839,
+          "line": 7843,
           "column": 0
         },
         "end": {
-          "line": 7844,
+          "line": 7848,
           "column": 2
         }
       },
@@ -99363,6 +99805,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -99492,6 +99935,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -100638,22 +101082,22 @@
     ],
     "loc": {
       "start": {
-        "line": 7846,
+        "line": 7850,
         "column": 0
       },
       "end": {
-        "line": 7881,
+        "line": 7885,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 7882,
+          "line": 7886,
           "column": 0
         },
         "end": {
-          "line": 8039,
+          "line": 8043,
           "column": 1
         }
       },
@@ -100827,6 +101271,7 @@
         }
       }
     ],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -101098,6 +101543,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -101503,22 +101949,22 @@
     ],
     "loc": {
       "start": {
-        "line": 8041,
+        "line": 8045,
         "column": 0
       },
       "end": {
-        "line": 8050,
+        "line": 8054,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 8051,
+          "line": 8055,
           "column": 0
         },
         "end": {
-          "line": 8056,
+          "line": 8060,
           "column": 2
         }
       },
@@ -101526,6 +101972,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -101655,6 +102102,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -102219,22 +102667,22 @@
     ],
     "loc": {
       "start": {
-        "line": 8231,
+        "line": 8235,
         "column": 0
       },
       "end": {
-        "line": 8255,
+        "line": 8259,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 8256,
+          "line": 8260,
           "column": 0
         },
         "end": {
-          "line": 8326,
+          "line": 8330,
           "column": 2
         }
       },
@@ -102408,6 +102856,7 @@
         }
       }
     ],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -102814,6 +103263,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -102989,22 +103439,22 @@
     ],
     "loc": {
       "start": {
-        "line": 8332,
+        "line": 8336,
         "column": 0
       },
       "end": {
-        "line": 8354,
+        "line": 8358,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 8355,
+          "line": 8359,
           "column": 0
         },
         "end": {
-          "line": 8358,
+          "line": 8362,
           "column": 2
         }
       },
@@ -103012,6 +103462,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -103926,6 +104377,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -104147,22 +104599,22 @@
     ],
     "loc": {
       "start": {
-        "line": 8360,
+        "line": 8364,
         "column": 0
       },
       "end": {
-        "line": 8371,
+        "line": 8375,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 8372,
+          "line": 8376,
           "column": 0
         },
         "end": {
-          "line": 8392,
+          "line": 8396,
           "column": 2
         }
       },
@@ -104170,6 +104622,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -104365,6 +104818,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -104573,22 +105027,22 @@
     ],
     "loc": {
       "start": {
-        "line": 8394,
+        "line": 8398,
         "column": 0
       },
       "end": {
-        "line": 8404,
+        "line": 8408,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 8405,
+          "line": 8409,
           "column": 0
         },
         "end": {
-          "line": 8410,
+          "line": 8414,
           "column": 2
         }
       },
@@ -104596,6 +105050,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -104727,6 +105182,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -104953,22 +105409,22 @@
     ],
     "loc": {
       "start": {
-        "line": 8412,
+        "line": 8416,
         "column": 0
       },
       "end": {
-        "line": 8422,
+        "line": 8426,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 8423,
+          "line": 8427,
           "column": 0
         },
         "end": {
-          "line": 8428,
+          "line": 8432,
           "column": 2
         }
       },
@@ -104976,6 +105432,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -105159,6 +105616,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -105367,22 +105825,22 @@
     ],
     "loc": {
       "start": {
-        "line": 8430,
+        "line": 8434,
         "column": 0
       },
       "end": {
-        "line": 8440,
+        "line": 8444,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 8441,
+          "line": 8445,
           "column": 0
         },
         "end": {
-          "line": 8446,
+          "line": 8450,
           "column": 2
         }
       },
@@ -105390,6 +105848,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -105521,6 +105980,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -105729,22 +106189,22 @@
     ],
     "loc": {
       "start": {
-        "line": 8448,
+        "line": 8452,
         "column": 0
       },
       "end": {
-        "line": 8458,
+        "line": 8462,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 8459,
+          "line": 8463,
           "column": 0
         },
         "end": {
-          "line": 8464,
+          "line": 8468,
           "column": 2
         }
       },
@@ -105752,6 +106212,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -105883,6 +106344,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -106207,22 +106669,22 @@
     ],
     "loc": {
       "start": {
-        "line": 8466,
+        "line": 8470,
         "column": 0
       },
       "end": {
-        "line": 8480,
+        "line": 8484,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 8481,
+          "line": 8485,
           "column": 0
         },
         "end": {
-          "line": 8534,
+          "line": 8538,
           "column": 2
         }
       },
@@ -106230,6 +106692,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -106578,6 +107041,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -106781,22 +107245,22 @@
     ],
     "loc": {
       "start": {
-        "line": 8540,
+        "line": 8544,
         "column": 0
       },
       "end": {
-        "line": 8551,
+        "line": 8555,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 8553,
+          "line": 8557,
           "column": 0
         },
         "end": {
-          "line": 8574,
+          "line": 8578,
           "column": 2
         }
       },
@@ -106804,6 +107268,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -107015,6 +107480,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -107218,22 +107684,22 @@
     ],
     "loc": {
       "start": {
-        "line": 8576,
+        "line": 8580,
         "column": 0
       },
       "end": {
-        "line": 8587,
+        "line": 8591,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 8589,
+          "line": 8593,
           "column": 0
         },
         "end": {
-          "line": 8610,
+          "line": 8614,
           "column": 2
         }
       },
@@ -107241,6 +107707,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -107452,6 +107919,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -107645,22 +108113,22 @@
     ],
     "loc": {
       "start": {
-        "line": 8612,
+        "line": 8616,
         "column": 0
       },
       "end": {
-        "line": 8623,
+        "line": 8627,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 8624,
+          "line": 8628,
           "column": 0
         },
         "end": {
-          "line": 8654,
+          "line": 8658,
           "column": 2
         }
       },
@@ -107668,6 +108136,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -107869,6 +108338,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -108062,22 +108532,22 @@
     ],
     "loc": {
       "start": {
-        "line": 8656,
+        "line": 8660,
         "column": 0
       },
       "end": {
-        "line": 8667,
+        "line": 8671,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 8668,
+          "line": 8672,
           "column": 0
         },
         "end": {
-          "line": 8698,
+          "line": 8702,
           "column": 2
         }
       },
@@ -108085,6 +108555,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -108286,6 +108757,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [

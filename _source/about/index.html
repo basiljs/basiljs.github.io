@@ -1,0 +1,34 @@
+---
+layout: default
+title: about
+order: 0
+---
+
+<img src="/assets/images/aboutpage.jpg" alt="some examples what can be done with basil">
+
+
+{%- capture md -%}
+
+
+[Academy of Art and Design Basel](https://www.fhnw.ch/de/die-fhnw/hochschulen/hgk)  
+[Visual Communication Institute / The Basel School of Design](http://thebaselschoolofdesign.ch),  
+Basel, Switzerland
+
+A project initiated in the [Interaction Seminar](https://web.fhnw.ch/hgk/projekte/interaktion/).
+
+Current development: [Benedikt Groß](https://benedikt-gross.de), [Fabian Morón Zirfas](https://fabianmoronzirfas.me), [Ted Davis](https://teddavis.org), [Timo Rychert](http://timorychert.de)  
+Previous contributions: [be:screen GmbH](https://bescreen.de/), [Ken Frederick](https://kennethfrederick.de), [Philipp Adrian](https://www.philippadrian.com/), [Stefan Landsbek](https://47nord.de)  
+Initiated by: [Benedikt Groß](https://benedikt-gross.de), [Ludwig Zeller](https://ludwigzeller.de), [Ted Davis](https://teddavis.org)
+
+The basil.js project began in 2012, with an initiative to bring our visual communication students into generative design using their environment of choice, Adobe InDesign. For years, Adobe's ExtendScript Toolkit enabled scripting every aspect of their software suite, however it was intended for developers with advanced programming knowledge. We invited Benedikt Groß for a workshop after learning about [his own explorations](https://benedikt-gross.de/projects/diploma-generative-systeme-posters), which led to a warning of how much code would be required for students to simply draw a rectangle. Realizing this could be simplified to address designers, he began developing a [Processing](https://processing.org) inspired library that included useful functions from [processing.js](http://processingjs.org). We quickly realized the potential of this work and spent the following nine months developing a library that brings automation and scripting into layout (basil)! Released free as in speech under an MIT License on Feburary 28th 2013, we've been excited to see its reach and usage throughout the design community. Over the past years, basil.js has enabled designers to bridge InDesign's offering of precise typography within multi-page documents with data-driven and generative contents.
+
+While we're continously impressed with publications making use of basil.js, there's always more to develop. Over the past few years we've been fixing small bugs and adding missing features to a develop branch that's had tremendous contributions, particularly from [Timo Rychert](https://github.com/trych) and [Fabian Morón Zirfas](https://github.com/fabianmoronzirfas). Most exciting for version 2.0, released _________ 2019, is the removal of **b.** from all basil.js functions! We had initially used it to avoid running into any ExtendScript namespace issues, but with it now safely removed, sketches can be hot-swapped between [p5.js](https://p5js.org) and basil.js for exploring both real-time and multi-page generative designs.
+
+Used basil.js?  
+We'd love to see it! [Submit projects]() to our [gallery]().
+
+Found a bug or missing feature?  
+Make an issue on our [GitHub]() and/or [contribute code]().
+{%- endcapture -%}
+
+{{ md | markdownify }}

@@ -23,7 +23,7 @@ $guideTwoColor: #FF4EFF;
 $phone: 750px;
 
 body {
-  font-size: 14px;
+  // font-size: 14px;
   margin: 0 auto;
 
   // font-size: 1.1em
@@ -31,6 +31,7 @@ body {
   //rv padding: 1em 1em
   background-image: url("/assets/images/stripe_c40ccfac0db9e43c48e95a530d787366.png");
 }
+
 
 .wrapper {
   position: relative;
@@ -68,8 +69,16 @@ body {
     float: left;
 
     .main-menu {
+
+      padding-bottom: 1em;
+
+      ul{
+        list-style: none;
+        margin-left: 0;
+        padding-left: 0;
+      }
       li {
-        margin-bottom: 10px;
+        margin-bottom: 0.75em;
         height: 40px;
 
         &.active {
@@ -112,6 +121,7 @@ body {
   }
 
   .main {
+    padding-top: 25px;
     width: 75%;
     float: left;
 
@@ -139,11 +149,22 @@ body {
       margin: 0 auto 50px;
     }
 
+    #gallery-overview{
+      display: flex;
+      flex-wrap: wrap;
+      align-content: flex-start;
+    }
+    .gallery-overview-item{
+      max-width: 350px;
+      margin-right: 1em;
+      // flex-basis: 100px;
+      flex-shrink: 0;
 
-    h1 {
-      // &:first-child
-      //     display: none
-
+    }
+    @include media($phone) {
+      .gallery-overview-item{
+        max-width: 100%;
+      }
     }
 
     h3 {
@@ -171,7 +192,29 @@ body {
   }
 }
 
-// //////////////// edits fabian moron zirfas
+// ////////////////////// gallery
+
+.gallery-overview-item-wrapper {
+  width: 50%;
+
+  .gallery-overview-item{
+    .heading-container{
+      height: 4em;
+    }
+
+    img.gallery-thumbnail{
+      width: 256px;
+      height: 144px;
+    }
+
+  }
+
+}
+
+p.project-authors, p.project-description{
+  font-size: 1.2em;
+  font-style: italic;
+}
 
 p {
   code {
@@ -183,9 +226,10 @@ p {
 }
 
 .fhnw-logo {
+  // padding-left: 25px;
   a {
     img {
-      width: 125px;
+      width: 150px;
     }
   }
 }
@@ -202,7 +246,7 @@ p {
   cursor: pointer;
   width: 46px;
   height: 37px;
-  border: 2px solid #2AFFFF;
+  // border: 2px solid #2AFFFF;
   background-color: #fff;
   border-radius: 2px;
 
@@ -212,7 +256,7 @@ p {
     padding: 0px;
     list-style-type: none;
     width: 30px;
-    height: 2px;
+    height: 1px;
     background-color: #2AFFFF;
     position: absolute;
     margin-top: -1px;
@@ -302,9 +346,9 @@ li {
 }
 
 ul {
-  list-style: none;
-  margin-left: 0;
-  padding-left: 0;
+  // list-style: none;
+  // margin-left: 0;
+  // padding-left: 0;
 }
 
 .index {
@@ -373,76 +417,7 @@ pre {
   padding: 1.2em;
 }
 
-$bottom-lines: 5;
-$right-lines: 3;
 
-.guidelines {
-  .bottom_lines {
-    @for $i from 1 through $bottom-lines {
-      .line_#{$i} {
-        width: 100% - $i * 10;
-        position: absolute;
-        left: $i * 5px;
-        height: 1px;
-        background-color: #FC2FFF;
-        bottom: $i * 3px;
-      }
-    }
-  }
-
-  .right_lines {
-    @for $i from 1 through $right-lines {
-      .line_#{$i} {
-        height: 100% - $i * 10;
-        position: absolute;
-        right: $i * 5px;
-        width: 1px;
-        background-color: #8100FB;
-        top: $i * 3px;
-      }
-    }
-  }
-
-  .page_lines {
-    @include media($phone) {
-      display: none;
-    }
-
-
-    .line {
-      background-color: #21FFFF;
-      position: absolute;
-
-      &.line_1 {
-        height: 1px;
-        top: 25px;
-        left: 0px;
-        width: 100%;
-      }
-
-      &.line_2 {
-        right: 115px;
-        top: 0px;
-        width: 1px;
-        height: 100%;
-      }
-
-      &.line_3 {
-        height: 1px;
-        bottom: 25px;
-        left: 0px;
-        width: 100%;
-      }
-
-      &.line_4 {
-        height: 100%;
-        top: 0px;
-        left: 25px;
-        width: 1px;
-      }
-    }
-  }
-}
 
 //-------media queries
 
@@ -473,13 +448,24 @@ $right-lines: 3;
 // Edits fabianmoronzirfas twitterlink
 // @Son Please merge this so we don't have
 // double definitions
-.tweet {}
+.tweet {
+  .message, .tweettime{
+    font-size: 14px;
+    padding-left: 25px;
+
+  }
+  .message, .tweettime, .twitter-link{
+    margin-bottom: 0.75em;
+  }
+
+}
 
 a.textgrow {
   padding-left: 25px;
   border: none;
   height: auto;
   display: inline-block;
+  font-weight: 700;
 
   span {
     position: relative;
@@ -489,7 +475,20 @@ a.textgrow {
   }
 }
 
-@import "reference";
+.textshrink {
+  text-decoration: none;
+  border: none;
+  height: auto;
+  display: inline-block;
+  font-weight: 700;
+  span{
+    // position: relative;
+    // padding: 0px 4px;
+    border-bottom: 1px solid $textColor;
+  }
+}
+
+@import "guidelines", "reference", "changelog";
 
 // ------------------------
 // old basil css. Overwrite new settings

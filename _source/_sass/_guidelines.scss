@@ -1,0 +1,71 @@
+
+$bottom-lines: 5;
+$right-lines: 3;
+
+.guidelines {
+  .bottom_lines {
+    @for $i from 1 through $bottom-lines {
+      .line_#{$i} {
+        width: 100% - $i * 10;
+        position: absolute;
+        left: $i * 5px;
+        height: 1px;
+        background-color: #FC2FFF;
+        bottom: $i * 3px;
+      }
+    }
+  }
+
+  .right_lines {
+    @for $i from 1 through $right-lines {
+      .line_#{$i} {
+        height: 100% - $i * 10;
+        position: absolute;
+        right: $i * 5px;
+        width: 1px;
+        background-color: #8100FB;
+        top: $i * 3px;
+      }
+    }
+  }
+
+  .page_lines {
+    @include media($phone) {
+      display: none;
+    }
+
+
+    .line {
+      background-color: #21FFFF;
+      position: absolute;
+
+      &.line_1 {
+        height: 1px;
+        top: 25px;
+        left: 0px;
+        width: 100%;
+      }
+
+      &.line_2 {
+        right: 115px;
+        top: 0px;
+        width: 1px;
+        height: 100%;
+      }
+
+      &.line_3 {
+        height: 1px;
+        bottom: 25px;
+        left: 0px;
+        width: 100%;
+      }
+
+      &.line_4 {
+        height: 100%;
+        top: 0px;
+        left: 25px;
+        width: 1px;
+      }
+    }
+  }
+}
