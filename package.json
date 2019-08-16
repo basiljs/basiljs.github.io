@@ -10,7 +10,7 @@
     "jekyll:prod": "JEKYLL_ENV=production bundle exec jekyll build",
     "documentationjs": "documentation",
     "update-and-generate": "sh ./bootstrap-scripts/update-and-generate.sh",
-    "build:api-markup":"npm run update-and-generate"
+    "build:api-markup": "npm run update-and-generate"
   },
   "repository": {
     "type": "git",
@@ -43,8 +43,8 @@
     "flexsearch": "^0.6.2",
     "fs-extra": "^2.1.2",
     "husky": "^1.3.1",
-    "jquery": "^3.3.1",
-    "lodash": "^4.17.11",
+    "jquery": "^3.4.1",
+    "lodash": "^4.17.15",
     "normalize.css": "^7.0.0",
     "p5": "^0.7.2",
     "path-exists": "^3.0.0",
