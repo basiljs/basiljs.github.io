@@ -1233,54 +1233,11 @@
         "codetitle": "HashList.set(key, value)"
       },
       {
-        "name": "JSON.decode",
-        "description": "Function parses and validates a string as JSON-object.",
+        "name": "JSON.stringify",
+        "description": "Function converts a JavaScript object or an array to a JSON string.",
         "returns": {
           "name": null,
-          "description": "Returns JSON-object or throws an error if invalid JSON has been provided.",
-          "type": [
-            "Object"
-          ]
-        },
-        "category": "Data",
-        "subcategory": "JSON",
-        "parameters": [
-          {
-            "name": "String",
-            "description": "to be parsed as JSON-object.",
-            "optional": false,
-            "type": [
-              "String"
-            ]
-          }
-        ],
-        "kind": "function",
-        "tags": [
-          {
-            "title": "summary",
-            "description": "Decodes a string to a JSON object."
-          },
-          {
-            "title": "description",
-            "description": "Function parses and validates a string as JSON-object."
-          }
-        ],
-        "examples": [
-          {
-            "description": null,
-            "code": "var obj = JSON.decode(str);\nvar str = JSON.encode(obj);"
-          }
-        ],
-        "todo": null,
-        "summary": "Decodes a string to a JSON object.",
-        "codetitle": "JSON.decode(String)"
-      },
-      {
-        "name": "JSON.encode",
-        "description": "Function convert an javascript object to a JSON-string.",
-        "returns": {
-          "name": null,
-          "description": "Returns JSON-string",
+          "description": "The resulting JSON string",
           "type": [
             "String"
           ]
@@ -1289,11 +1246,28 @@
         "subcategory": "JSON",
         "parameters": [
           {
-            "name": "Object",
-            "description": "to be converted to a JSON-string",
+            "name": "value",
+            "description": "Any JavaScript value, usually an object or array",
             "optional": false,
             "type": [
-              "Object"
+              "Object",
+              "Array"
+            ]
+          },
+          {
+            "name": "replacer",
+            "description": "Optional parameter that determines how object values are stringified for objects. It can be a function or an array of strings.",
+            "optional": true,
+            "type": [
+              null
+            ]
+          },
+          {
+            "name": "space",
+            "description": "Optional parameter that specifies the indentation of nested structures. If it is omitted, the text will be packed without extra whitespace. If it is a number, it will specify the number of spaces to indent at each level. If it is a string (such as `\\t`), it contains the characters used to indent at each level.",
+            "optional": true,
+            "type": [
+              null
             ]
           }
         ],
@@ -1301,26 +1275,77 @@
         "tags": [
           {
             "title": "summary",
-            "description": "Encodes an object to a JSON string."
+            "description": "Stringifies (encodes) an object or an array to a JSON string."
           },
           {
             "title": "description",
-            "description": "Function convert an javascript object to a JSON-string."
+            "description": "Function converts a JavaScript object or an array to a JSON string."
           }
         ],
         "examples": [
           {
             "description": null,
-            "code": "var str = JSON.encode(obj);\nvar obj = JSON.decode(str);"
+            "code": "var str = JSON.stringify(obj);"
           }
         ],
         "todo": null,
-        "summary": "Encodes an object to a JSON string.",
-        "codetitle": "JSON.encode(Object)"
+        "summary": "Stringifies (encodes) an object or an array to a JSON string.",
+        "codetitle": "JSON.stringify(value, [replacer], [space])"
       },
       {
-        "name": "endsWith",
-        "description": "Checks whether a string ends with a specific character or string.",
+        "name": "JSON.parse",
+        "description": "Function parses (decodes) and validates a string as JSON object.",
+        "returns": {
+          "name": null,
+          "description": "The resulting JSON object.",
+          "type": [
+            "Object"
+          ]
+        },
+        "category": "Data",
+        "subcategory": "JSON",
+        "parameters": [
+          {
+            "name": "text",
+            "description": "String to be parsed as JSON object.",
+            "optional": false,
+            "type": [
+              "String"
+            ]
+          },
+          {
+            "name": "reviver",
+            "description": "The optional reviver parameter is a function that can filter and transform the results. It receives each of the keys and values, and its return value is used instead of the original value. If it returns what it received, then the structure is not modified. If it returns undefined then the member is deleted.",
+            "optional": true,
+            "type": [
+              "Function"
+            ]
+          }
+        ],
+        "kind": "function",
+        "tags": [
+          {
+            "title": "summary",
+            "description": "Parses (decodes) a string to a JSON object."
+          },
+          {
+            "title": "description",
+            "description": "Function parses (decodes) and validates a string as JSON object."
+          }
+        ],
+        "examples": [
+          {
+            "description": null,
+            "code": "var obj = JSON.parse(str);"
+          }
+        ],
+        "todo": null,
+        "summary": "Parses (decodes) a string to a JSON object.",
+        "codetitle": "JSON.parse(text, [reviver])"
+      },
+      {
+        "name": "contains",
+        "description": "Checks wether a string contains a specific string or if an array contains a specific element.",
         "returns": {
           "name": null,
           "description": "Returns either true or false",
@@ -1332,16 +1357,16 @@
         "subcategory": "String Functions",
         "parameters": [
           {
-            "name": "str",
-            "description": "A string to be checked",
+            "name": "searchContainer",
+            "description": "A string or an array to be checked",
             "optional": false,
             "type": [
               "String"
             ]
           },
           {
-            "name": "suffix",
-            "description": "The string to look for",
+            "name": "valueToFind",
+            "description": "The value to search for",
             "optional": false,
             "type": [
               "String"
@@ -1352,17 +1377,63 @@
         "tags": [
           {
             "title": "summary",
-            "description": "Checks wether a string ends with a specific character or string."
+            "description": "Checks wether a string contains a specific string or if an array contains a specific element."
           },
           {
             "title": "description",
-            "description": "Checks whether a string ends with a specific character or string."
+            "description": "Checks wether a string contains a specific string or if an array contains a specific element."
           }
         ],
         "examples": [],
         "todo": null,
-        "summary": "Checks wether a string ends with a specific character or string.",
-        "codetitle": "endsWith(str, suffix)"
+        "summary": "Checks wether a string contains a specific string or if an array contains a specific element.",
+        "codetitle": "contains(searchContainer, valueToFind)"
+      },
+      {
+        "name": "endsWith",
+        "description": "Checks whether a string ends with a specific character or string or if an array ends with a specific element.",
+        "returns": {
+          "name": null,
+          "description": "Returns either true or false",
+          "type": [
+            "Boolean"
+          ]
+        },
+        "category": "Data",
+        "subcategory": "String Functions",
+        "parameters": [
+          {
+            "name": "searchContainer",
+            "description": "A string or array to be checked",
+            "optional": false,
+            "type": [
+              "String"
+            ]
+          },
+          {
+            "name": "valueToFind",
+            "description": "The value to search for",
+            "optional": false,
+            "type": [
+              "String"
+            ]
+          }
+        ],
+        "kind": "function",
+        "tags": [
+          {
+            "title": "summary",
+            "description": "Checks wether a string ends with a specific string or if an array ends with a specific element."
+          },
+          {
+            "title": "description",
+            "description": "Checks whether a string ends with a specific character or string or if an array ends with a specific element."
+          }
+        ],
+        "examples": [],
+        "todo": null,
+        "summary": "Checks wether a string ends with a specific string or if an array ends with a specific element.",
+        "codetitle": "endsWith(searchContainer, valueToFind)"
       },
       {
         "name": "join",
@@ -1720,7 +1791,7 @@
       },
       {
         "name": "startsWith",
-        "description": "Checks whether a string starts with a specific character or string.",
+        "description": "Checks whether a string starts with a specific character or string or if an array starts with a specific value.",
         "returns": {
           "name": null,
           "description": "Returns either true or false",
@@ -1732,16 +1803,16 @@
         "subcategory": "String Functions",
         "parameters": [
           {
-            "name": "str",
-            "description": "A string to be checked",
+            "name": "searchContainer",
+            "description": "A string or an array to be checked",
             "optional": false,
             "type": [
               "String"
             ]
           },
           {
-            "name": "prefix",
-            "description": "The string to look for",
+            "name": "valueToFind",
+            "description": "The value to search for",
             "optional": false,
             "type": [
               "String"
@@ -1752,17 +1823,17 @@
         "tags": [
           {
             "title": "summary",
-            "description": "Checks whether a string starts with a specific character or string."
+            "description": "Checks whether a string starts with a specific string or if an array starts with a specific value."
           },
           {
             "title": "description",
-            "description": "Checks whether a string starts with a specific character or string."
+            "description": "Checks whether a string starts with a specific character or string or if an array starts with a specific value."
           }
         ],
         "examples": [],
         "todo": null,
-        "summary": "Checks whether a string starts with a specific character or string.",
-        "codetitle": "startsWith(str, prefix)"
+        "summary": "Checks whether a string starts with a specific string or if an array starts with a specific value.",
+        "codetitle": "startsWith(searchContainer, valueToFind)"
       },
       {
         "name": "trim",
@@ -3480,6 +3551,55 @@
         "codetitle": "labels(label, [cb])"
       },
       {
+        "name": "linkedTextFrames",
+        "description": "Returns an array of all linked text frames or text paths in relation to a given Text Frame, Text Path, Story or Text Object.\nIf a callback function is given, `textFrames()` calls this callback function on each text frame of the given container. When the callback function returns false, the loop stops and the `textFrames()` function returns an array of all text frames up to this point.",
+        "returns": {
+          "name": null,
+          "description": "The array of linked text frames or text paths.",
+          "type": [
+            "Array"
+          ]
+        },
+        "category": "Document",
+        "subcategory": "Page Items",
+        "parameters": [
+          {
+            "name": "item",
+            "description": "The text frame, text path, story or text object of the text frame chain.",
+            "optional": false,
+            "type": [
+              "TextFrame",
+              "TextPath",
+              "Story",
+              "TextObject"
+            ]
+          },
+          {
+            "name": "cb",
+            "description": "The callback function to call with each text frame or text path. When this function returns false the loop stops. Passed arguments: `textFrame`, `loopCount`.",
+            "optional": true,
+            "type": [
+              "Function"
+            ]
+          }
+        ],
+        "kind": "function",
+        "tags": [
+          {
+            "title": "summary",
+            "description": "Runs a function on a chain of linked text frames or returns them."
+          },
+          {
+            "title": "description",
+            "description": "Returns an array of all linked text frames or text paths in relation to a given Text Frame, Text Path, Story or Text Object.\nIf a callback function is given, `textFrames()` calls this callback function on each text frame of the given container. When the callback function returns false, the loop stops and the `textFrames()` function returns an array of all text frames up to this point."
+          }
+        ],
+        "examples": [],
+        "todo": null,
+        "summary": "Runs a function on a chain of linked text frames or returns them.",
+        "codetitle": "linkedTextFrames(item, [cb])"
+      },
+      {
         "name": "nameOnPage",
         "description": "Returns the first item on the active page that is named by the given name in the Layers pane (`Window -> Layer`).",
         "returns": {
@@ -3630,6 +3750,58 @@
         "todo": null,
         "summary": "Runs a function on all selected page items or returns them.",
         "codetitle": "selections([cb])"
+      },
+      {
+        "name": "textFrames",
+        "description": "Returns a collection of all text frames in the given container. The container object can be a Document, Page, Layer, Group, Story, Page Item or Text Object.\nIf a callback function is given, `textFrames()` calls this callback function on each text frame of the given container. When the callback function returns false, the loop stops and the `textFrames()` function returns an array of all text frames up to this point.",
+        "returns": {
+          "name": null,
+          "description": "An array of Text Frames.",
+          "type": [
+            "Array"
+          ]
+        },
+        "category": "Document",
+        "subcategory": "Page Items",
+        "parameters": [
+          {
+            "name": "container",
+            "description": "The document, page, layer, group, story, page item or text object to iterate the text frames in.",
+            "optional": false,
+            "type": [
+              "Document",
+              "Page",
+              "Layer",
+              "Group",
+              "Story",
+              "PageItem",
+              "TextObject"
+            ]
+          },
+          {
+            "name": "cb",
+            "description": "The callback function to call with each text frame. When this function returns false the loop stops. Passed arguments: `textFrame`, `loopCount`.",
+            "optional": true,
+            "type": [
+              "Function"
+            ]
+          }
+        ],
+        "kind": "function",
+        "tags": [
+          {
+            "title": "summary",
+            "description": "Runs a function on a collection of text frames in a container or returns them."
+          },
+          {
+            "title": "description",
+            "description": "Returns a collection of all text frames in the given container. The container object can be a Document, Page, Layer, Group, Story, Page Item or Text Object.\nIf a callback function is given, `textFrames()` calls this callback function on each text frame of the given container. When the callback function returns false, the loop stops and the `textFrames()` function returns an array of all text frames up to this point."
+          }
+        ],
+        "examples": [],
+        "todo": null,
+        "summary": "Runs a function on a collection of text frames in a container or returns them.",
+        "codetitle": "textFrames(container, [cb])"
       },
       {
         "name": "ungroup",
@@ -7944,6 +8116,45 @@
         "codetitle": "folder([folderPath])"
       },
       {
+        "name": "loadJSON",
+        "description": "Reads the contents of a JSON file and returns an object with the data. If the file is specified by name as string, the path can point either directly at a file in the document's data directory or be specified as an absolute path.",
+        "returns": {
+          "name": null,
+          "description": "The resulting data object.",
+          "type": [
+            "Object"
+          ]
+        },
+        "category": "Input",
+        "subcategory": "Files",
+        "parameters": [
+          {
+            "name": "file",
+            "description": "The JSON file name in the document's data directory, an absolute path to a JSON file, a File instance or an URL.",
+            "optional": false,
+            "type": [
+              "String",
+              "File"
+            ]
+          }
+        ],
+        "kind": "function",
+        "tags": [
+          {
+            "title": "summary",
+            "description": "Gets and parses the contents of a JSON file."
+          },
+          {
+            "title": "description",
+            "description": "Reads the contents of a JSON file and returns an object with the data. If the file is specified by name as string, the path can point either directly at a file in the document's data directory or be specified as an absolute path."
+          }
+        ],
+        "examples": [],
+        "todo": null,
+        "summary": "Gets and parses the contents of a JSON file.",
+        "codetitle": "loadJSON(file)"
+      },
+      {
         "name": "loadString",
         "description": "Reads the contents of a file or loads an URL into a String. If the file is specified by name as string, the path can point either directly at a file in the document's data directory or be specified as an absolute path.",
         "returns": {
@@ -8586,6 +8797,53 @@
         "todo": null,
         "summary": "Prints a message line to the console.",
         "codetitle": "println(msg)"
+      },
+      {
+        "name": "saveJSON",
+        "description": "Encodes an object to a JSON string and saves it to a JSON file. If the given file exists it gets overridden.",
+        "returns": {
+          "name": null,
+          "description": "The JSON file the data was written to.",
+          "type": [
+            "File"
+          ]
+        },
+        "category": "Output",
+        "subcategory": "Files",
+        "parameters": [
+          {
+            "name": "file",
+            "description": "The file name or a File instance.",
+            "optional": false,
+            "type": [
+              "String",
+              "File"
+            ]
+          },
+          {
+            "name": "data",
+            "description": "The object to encode and save in the file.",
+            "optional": false,
+            "type": [
+              "Object"
+            ]
+          }
+        ],
+        "kind": "function",
+        "tags": [
+          {
+            "title": "summary",
+            "description": "Encodes an object to a JSON string and saves it to a JSON file."
+          },
+          {
+            "title": "description",
+            "description": "Encodes an object to a JSON string and saves it to a JSON file. If the given file exists it gets overridden."
+          }
+        ],
+        "examples": [],
+        "todo": null,
+        "summary": "Encodes an object to a JSON string and saves it to a JSON file.",
+        "codetitle": "saveJSON(file, data)"
       },
       {
         "name": "savePDF",
