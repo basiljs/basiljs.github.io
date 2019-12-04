@@ -42,6 +42,8 @@ git push -u origin HEAD
 # Now go to the GitHub UI and create your PR
 ```
 
+This repo holds the [site/docs for Basil.js](https://basiljs.github.io/). The current state of development (develop branch) can be found here [basiljs2.netlify.com](https://basiljs2.netlify.com/)
+
 ## Development
 
 To build these docs we are using [Webpack](https://webpack.js.org/) and [Jekyll](https://jekyllrb.com/). You need both of these to develop on this.  

@@ -1,4 +1,6 @@
 {
+<<<<<<< HEAD
+=======
   "workbench.colorCustomizations": {
     "activityBar.background": "#6ca2ee",
     "activityBar.foreground": "#15202b",
@@ -23,4 +25,5 @@
     "latex",
     "plaintext"
   ]
+>>>>>>> develop
 }

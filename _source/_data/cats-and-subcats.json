@@ -7822,56 +7822,6 @@
         },
         {
           "name": "Vector.dot",
-          "description": "Static function. Calculates the dot product of two vectors. Is meant to be called \"static\" i.e. `Vector.dot(v1, v2);`",
-          "returns": {
-            "name": null,
-            "description": "The dot product.",
-            "type": [
-              "Number"
-            ]
-          },
-          "category": "Math",
-          "subcategory": "Vector",
-          "parameters": [
-            {
-              "name": "v1",
-              "description": "The first vector.",
-              "optional": false,
-              "type": [
-                "Vector"
-              ]
-            },
-            {
-              "name": "v2",
-              "description": "The second vector.",
-              "optional": false,
-              "type": [
-                "Vector"
-              ]
-            }
-          ],
-          "kind": "function",
-          "tags": [
-            {
-              "title": "summary",
-              "description": "Calculates the dot product of two vectors."
-            },
-            {
-              "title": "description",
-              "description": "Static function. Calculates the dot product of two vectors. Is meant to be called \"static\" i.e. `Vector.dot(v1, v2);`"
-            },
-            {
-              "title": "static",
-              "description": null
-            }
-          ],
-          "examples": [],
-          "todo": null,
-          "summary": "Calculates the dot product of two vectors.",
-          "codetitle": "Vector.dot(v1, v2)"
-        },
-        {
-          "name": "Vector.dot",
           "description": "Calculates the dot product from this vector to another as `x`, `y`, and `z` components or full vector.",
           "returns": {
             "name": null,
@@ -7924,6 +7874,56 @@
           "todo": null,
           "summary": "Calculates the dot product from this vector to another.",
           "codetitle": "Vector.dot(v, [y], [z])"
+        },
+        {
+          "name": "Vector.dot",
+          "description": "Static function. Calculates the dot product of two vectors. Is meant to be called \"static\" i.e. `Vector.dot(v1, v2);`",
+          "returns": {
+            "name": null,
+            "description": "The dot product.",
+            "type": [
+              "Number"
+            ]
+          },
+          "category": "Math",
+          "subcategory": "Vector",
+          "parameters": [
+            {
+              "name": "v1",
+              "description": "The first vector.",
+              "optional": false,
+              "type": [
+                "Vector"
+              ]
+            },
+            {
+              "name": "v2",
+              "description": "The second vector.",
+              "optional": false,
+              "type": [
+                "Vector"
+              ]
+            }
+          ],
+          "kind": "function",
+          "tags": [
+            {
+              "title": "summary",
+              "description": "Calculates the dot product of two vectors."
+            },
+            {
+              "title": "description",
+              "description": "Static function. Calculates the dot product of two vectors. Is meant to be called \"static\" i.e. `Vector.dot(v1, v2);`"
+            },
+            {
+              "title": "static",
+              "description": null
+            }
+          ],
+          "examples": [],
+          "todo": null,
+          "summary": "Calculates the dot product of two vectors.",
+          "codetitle": "Vector.dot(v1, v2)"
         },
         {
           "name": "Vector.get",

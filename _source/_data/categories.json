@@ -1386,6 +1386,52 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": "Parses (decodes) a string to a JSON object.",
+        "codetitle": "JSON.parse(text, [reviver])"
+      },
+      {
+        "name": "contains",
+        "description": "Checks wether a string contains a specific string or if an array contains a specific element.",
+        "returns": {
+          "name": null,
+          "description": "Returns either true or false",
+          "type": [
+            "Boolean"
+          ]
+        },
+        "category": "Data",
+        "subcategory": "String Functions",
+        "parameters": [
+          {
+            "name": "searchContainer",
+            "description": "A string or an array to be checked",
+            "optional": false,
+            "type": [
+              "String"
+            ]
+          },
+          {
+            "name": "valueToFind",
+            "description": "The value to search for",
+            "optional": false,
+            "type": [
+              "String"
+            ]
+          }
+        ],
+        "kind": "function",
+        "tags": [
+          {
+            "title": "summary",
+            "description": "Checks wether a string contains a specific string or if an array contains a specific element."
+          },
+          {
+            "title": "description",
+            "description": "Checks wether a string contains a specific string or if an array contains a specific element."
+          }
+        ],
+        "examples": [],
+        "todo": null,
         "summary": "Checks wether a string contains a specific string or if an array contains a specific element.",
         "codetitle": "contains(searchContainer, valueToFind)"
       },

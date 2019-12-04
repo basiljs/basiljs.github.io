@@ -120,6 +120,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -1166,6 +1167,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -1364,6 +1366,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -1663,6 +1666,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -1843,6 +1847,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -1911,6 +1916,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -2125,6 +2131,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -2278,6 +2285,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -2458,6 +2466,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -2526,6 +2535,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -2768,6 +2778,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -3047,6 +3058,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -3329,6 +3341,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -3448,6 +3461,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -3695,6 +3709,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -3945,6 +3960,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -4183,12 +4199,14 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [],
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -4359,12 +4377,14 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [],
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -4555,6 +4575,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -4684,6 +4705,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -4885,6 +4907,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -4974,6 +4997,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -5154,6 +5178,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -5222,6 +5247,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -5402,6 +5428,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -5470,6 +5497,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -5882,6 +5910,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -6139,6 +6168,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -6414,6 +6444,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -6606,6 +6637,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -6813,6 +6845,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -7022,6 +7055,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -7284,6 +7318,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -7412,6 +7447,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -7606,6 +7642,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -7734,6 +7771,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -7937,6 +7975,7 @@
         "description": "var arr = CSV.decode(str);\nvar str = CSV.encode(arr);"
       }
     ],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -8065,6 +8104,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -8262,6 +8302,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -8393,6 +8434,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -8596,6 +8638,7 @@
         "description": "var str = CSV.encode(arr);\nvar arr = CSV.decode(str);"
       }
     ],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -8724,6 +8767,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -8905,12 +8949,14 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [],
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -9086,12 +9132,14 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [],
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -9286,6 +9334,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -9414,6 +9463,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -9598,6 +9648,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [
@@ -9664,6 +9715,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -9848,6 +9900,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [
@@ -9914,6 +9967,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -10098,6 +10152,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [
@@ -10164,6 +10219,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -10348,6 +10404,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [
@@ -10414,6 +10471,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -10608,6 +10666,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -10736,6 +10795,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -10947,6 +11007,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -11092,6 +11153,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -11286,6 +11348,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -11414,6 +11477,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -11635,6 +11699,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -11841,6 +11906,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -12097,6 +12163,7 @@
         "description": "var str = JSON.stringify(obj);"
       }
     ],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -12414,6 +12481,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -12630,6 +12698,7 @@
         "description": "var obj = JSON.parse(str);"
       }
     ],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -12822,6 +12891,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -13026,6 +13096,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -13215,6 +13286,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -13419,6 +13491,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -13608,6 +13681,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -13880,6 +13954,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -14069,6 +14144,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -14437,6 +14513,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -14583,6 +14660,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -14797,6 +14875,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -14943,6 +15022,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -15259,6 +15339,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -15405,6 +15486,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -15653,6 +15735,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -15799,6 +15882,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -16143,6 +16227,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -16335,6 +16420,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -16747,6 +16833,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -16939,6 +17026,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -17143,6 +17231,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -17332,6 +17421,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -17544,6 +17634,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -17690,6 +17781,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -17986,6 +18078,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -18114,6 +18207,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -18359,6 +18453,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -18504,6 +18599,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -18749,6 +18845,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -18894,6 +18991,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -19105,6 +19203,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -19250,6 +19349,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -19495,6 +19595,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -19640,6 +19741,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -19969,6 +20071,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -20126,6 +20229,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -20320,6 +20424,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -20448,6 +20553,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -20645,6 +20751,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -20730,6 +20837,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -20969,6 +21077,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -21113,6 +21222,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -21339,6 +21449,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -21470,6 +21581,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -21671,6 +21783,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -21811,6 +21924,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -22418,6 +22532,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -22549,6 +22664,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -22763,6 +22879,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -22831,6 +22948,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -23010,6 +23128,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [
@@ -23076,6 +23195,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -23268,6 +23388,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -23399,6 +23520,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -23635,6 +23757,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -23958,6 +24081,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -24462,6 +24586,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -24590,6 +24715,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -24784,6 +24910,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -24912,6 +25039,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -25106,6 +25234,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -25234,6 +25363,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -25483,6 +25613,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -26006,6 +26137,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -26210,6 +26342,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -26399,6 +26532,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -26800,6 +26934,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -26931,6 +27066,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -27599,6 +27735,7 @@
         }
       }
     ],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -27810,6 +27947,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -28434,6 +28572,7 @@
         }
       }
     ],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -28635,6 +28774,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -28819,6 +28959,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [
@@ -28885,6 +29026,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -29283,6 +29425,7 @@
         }
       }
     ],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -29431,6 +29574,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -29628,6 +29772,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -29759,6 +29904,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -29965,6 +30111,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -30105,6 +30252,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -30289,6 +30437,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [
@@ -30355,6 +30504,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -30556,6 +30706,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -30640,6 +30791,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -30853,6 +31005,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -31051,6 +31204,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -31499,6 +31653,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -31915,6 +32070,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -32220,6 +32376,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -32629,6 +32786,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -32866,6 +33024,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -33003,6 +33162,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -33311,6 +33471,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -33600,6 +33761,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -33807,6 +33969,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -33999,6 +34162,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -34316,6 +34480,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -34597,6 +34762,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -34912,6 +35078,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -35110,6 +35277,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -35351,6 +35519,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -35645,6 +35814,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -35863,6 +36033,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [
@@ -35929,6 +36100,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -36145,6 +36317,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -36346,6 +36519,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -36543,6 +36717,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -36674,6 +36849,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -36871,6 +37047,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -37002,6 +37179,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -37205,6 +37383,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -37342,6 +37521,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -37633,6 +37813,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -37909,6 +38090,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -38234,6 +38416,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -38523,6 +38706,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -38912,6 +39096,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -39197,6 +39382,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -39392,6 +39578,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -39417,6 +39604,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -39730,6 +39918,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -40007,6 +40196,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -40201,6 +40391,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -40329,6 +40520,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -40626,6 +40818,7 @@
         "description": "stories(container(), function(story, loopCount){\n  println(\"Number of words in each Story:\");\n  println(story.words.length);\n});"
       }
     ],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -40878,6 +41071,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -41203,6 +41397,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -41492,6 +41687,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -41813,6 +42009,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -42098,6 +42295,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -42282,6 +42480,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -42350,6 +42549,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -42644,6 +42844,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -42775,6 +42976,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -42949,6 +43151,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [
       {
@@ -43017,6 +43220,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -43192,6 +43396,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [
       {
@@ -43260,6 +43465,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -43440,12 +43646,14 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [],
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -43626,12 +43834,14 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [],
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -43812,12 +44022,14 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [],
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -43998,12 +44210,14 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [],
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -44184,12 +44398,14 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [],
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -44370,12 +44586,14 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [],
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -44556,12 +44774,14 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [],
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -44742,12 +44962,14 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [],
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -44928,12 +45150,14 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [],
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -45906,6 +46130,7 @@
         }
       }
     ],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -46462,6 +46687,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -46632,12 +46858,14 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [],
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -46817,6 +47045,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [
@@ -46883,6 +47112,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -47227,6 +47457,7 @@
         }
       }
     ],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -47489,6 +47720,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -48093,6 +48325,7 @@
         }
       }
     ],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -48374,6 +48607,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -48553,12 +48787,14 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [],
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -49008,6 +49244,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -49602,6 +49839,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -50032,6 +50270,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -50265,6 +50504,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -50489,6 +50729,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -50617,6 +50858,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -50824,6 +51066,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -50965,6 +51208,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -51286,6 +51530,7 @@
         }
       }
     ],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -51414,6 +51659,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -51804,6 +52050,7 @@
         }
       }
     ],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -52279,6 +52526,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -52603,6 +52851,7 @@
         }
       }
     ],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -52734,6 +52983,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -52937,6 +53187,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -53074,6 +53325,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -53277,6 +53529,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -53414,6 +53667,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -53617,6 +53871,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -53754,6 +54009,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -54140,6 +54396,7 @@
         }
       }
     ],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -54594,6 +54851,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -54971,6 +55229,7 @@
         }
       }
     ],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -55382,6 +55641,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -55746,6 +56006,7 @@
         }
       }
     ],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -56093,6 +56354,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -56379,6 +56641,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [
@@ -56445,6 +56708,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -56731,6 +56995,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [
@@ -56797,6 +57062,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -56981,6 +57247,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [
@@ -57047,6 +57314,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -57299,6 +57567,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [
@@ -57365,6 +57634,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -57651,6 +57921,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [
@@ -57717,6 +57988,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -58003,6 +58275,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [
@@ -58069,6 +58342,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -58355,6 +58629,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [
@@ -58421,6 +58696,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -58673,6 +58949,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [
@@ -58773,6 +59050,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -59093,6 +59371,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [
@@ -59159,6 +59438,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -59445,6 +59725,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [
@@ -59511,6 +59792,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -59705,6 +59987,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -59833,6 +60116,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -60095,6 +60379,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -60223,6 +60508,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -60437,6 +60723,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -60687,6 +60974,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -60911,6 +61199,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -61222,6 +61511,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -61552,6 +61842,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -61714,6 +62005,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -62044,6 +62336,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -62172,6 +62465,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -62522,6 +62816,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -62772,6 +63067,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -63000,6 +63296,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -63162,6 +63459,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -63515,6 +63813,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -63768,6 +64067,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -64074,6 +64374,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -64446,6 +64747,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -64675,6 +64977,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -64940,6 +65243,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -65169,6 +65473,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -65434,6 +65739,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -65825,6 +66131,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -66075,6 +66382,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -66517,6 +66825,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -66706,6 +67015,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -66968,6 +67278,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -67096,6 +67407,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -67324,6 +67636,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -67452,6 +67765,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -67680,6 +67994,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -67808,6 +68123,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -68371,6 +68687,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -68627,6 +68944,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -69095,6 +69413,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -69224,6 +69543,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -69511,6 +69831,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -69579,6 +69900,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -70167,6 +70489,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -70362,6 +70685,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -70619,6 +70943,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -70687,6 +71012,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -71119,6 +71445,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -71247,6 +71574,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -71645,6 +71973,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -71773,6 +72102,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -72171,6 +72501,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -72299,6 +72630,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -72605,6 +72937,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -72794,6 +73127,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -73124,6 +73458,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -73252,6 +73587,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -73514,6 +73850,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -73642,6 +73979,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -73904,6 +74242,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -74032,6 +74371,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -74362,6 +74702,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -74490,6 +74831,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -74820,6 +75162,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -74948,6 +75291,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -75197,6 +75541,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -75390,6 +75735,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -75616,6 +75962,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -75805,6 +76152,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -76033,6 +76381,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -76222,6 +76571,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -76555,6 +76905,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -76922,6 +77273,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -77148,6 +77500,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -77337,6 +77690,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -77670,6 +78024,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -78037,6 +78392,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -78263,6 +78619,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -78452,6 +78809,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -78785,6 +79143,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -79152,6 +79511,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -79474,6 +79834,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -79781,6 +80142,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -80101,6 +80463,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [
@@ -80303,6 +80666,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -80625,6 +80989,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -80932,6 +81297,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -81116,6 +81482,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [
@@ -81182,6 +81549,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -81366,6 +81734,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [
@@ -81432,6 +81801,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -81617,6 +81987,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -81685,6 +82056,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -81869,6 +82241,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [
@@ -81935,6 +82308,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -82257,6 +82631,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -82564,6 +82939,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -82739,12 +83115,14 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [],
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -83071,6 +83449,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -83382,6 +83761,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -83806,6 +84186,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -84113,6 +84494,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -84399,6 +84781,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [
@@ -84567,6 +84950,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -84786,6 +85170,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -84854,6 +85239,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -85039,6 +85425,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -85107,6 +85494,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -85320,6 +85708,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -85518,6 +85907,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -85734,6 +86124,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -85935,6 +86326,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -86151,6 +86543,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -86352,6 +86745,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -86565,6 +86959,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -86763,6 +87158,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -86976,6 +87372,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -87174,6 +87571,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -87665,6 +88063,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -87869,6 +88268,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -88598,6 +88998,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -88802,6 +89203,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -88987,6 +89389,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -89055,6 +89458,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -89525,6 +89929,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -90133,6 +90538,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -90357,6 +90763,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -90668,6 +91075,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -90901,6 +91309,7 @@
         "description": "var vec1 = new Vector(x1, y1);\nvar vec2 = new Vector(x2, y2);\nline( vec1, vec2 );"
       }
     ],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -91212,6 +91621,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -91416,6 +91826,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -91605,6 +92016,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -91937,6 +92349,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -92492,6 +92905,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -92809,6 +93223,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -93376,6 +93791,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -93620,6 +94036,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -94053,6 +94470,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -94381,12 +94799,14 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [],
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -94800,12 +95220,14 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [],
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -95179,6 +95601,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -95350,6 +95773,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -95802,6 +96226,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -96187,6 +96612,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -96709,6 +97135,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -96777,6 +97204,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -96981,12 +97409,14 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [],
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -97167,6 +97597,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -97235,6 +97666,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -97541,12 +97973,14 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [],
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -97717,12 +98151,14 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [],
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -98097,12 +98533,14 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [],
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -98273,12 +98711,14 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [],
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -98833,6 +99273,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -98901,6 +99342,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -99363,6 +99805,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -99492,6 +99935,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -100827,6 +101271,7 @@
         }
       }
     ],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -101098,6 +101543,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -101526,6 +101972,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -101655,6 +102102,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -102408,6 +102856,7 @@
         }
       }
     ],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -102814,6 +103263,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -103012,6 +103462,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -103926,6 +104377,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -104170,6 +104622,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -104365,6 +104818,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -104596,6 +105050,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -104727,6 +105182,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -104976,6 +105432,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -105159,6 +105616,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -105390,6 +105848,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -105521,6 +105980,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -105752,6 +106212,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -105883,6 +106344,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -106230,6 +106692,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -106578,6 +107041,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -106804,6 +107268,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -107015,6 +107480,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -107241,6 +107707,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -107452,6 +107919,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -107668,6 +108136,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -107869,6 +108338,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
@@ -108085,6 +108555,7 @@
     },
     "augments": [],
     "examples": [],
+    "implements": [],
     "params": [
       {
         "title": "param",
@@ -108286,6 +108757,7 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
     "summary": {
       "type": "root",
       "children": [
