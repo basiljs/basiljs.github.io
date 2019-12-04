@@ -1386,6 +1386,52 @@
         ],
         "examples": [],
         "todo": null,
+        "summary": "Parses (decodes) a string to a JSON object.",
+        "codetitle": "JSON.parse(text, [reviver])"
+      },
+      {
+        "name": "contains",
+        "description": "Checks wether a string contains a specific string or if an array contains a specific element.",
+        "returns": {
+          "name": null,
+          "description": "Returns either true or false",
+          "type": [
+            "Boolean"
+          ]
+        },
+        "category": "Data",
+        "subcategory": "String Functions",
+        "parameters": [
+          {
+            "name": "searchContainer",
+            "description": "A string or an array to be checked",
+            "optional": false,
+            "type": [
+              "String"
+            ]
+          },
+          {
+            "name": "valueToFind",
+            "description": "The value to search for",
+            "optional": false,
+            "type": [
+              "String"
+            ]
+          }
+        ],
+        "kind": "function",
+        "tags": [
+          {
+            "title": "summary",
+            "description": "Checks wether a string contains a specific string or if an array contains a specific element."
+          },
+          {
+            "title": "description",
+            "description": "Checks wether a string contains a specific string or if an array contains a specific element."
+          }
+        ],
+        "examples": [],
+        "todo": null,
         "summary": "Checks wether a string contains a specific string or if an array contains a specific element.",
         "codetitle": "contains(searchContainer, valueToFind)"
       },
@@ -3551,6 +3597,55 @@
         "codetitle": "labels(label, [cb])"
       },
       {
+        "name": "linkedTextFrames",
+        "description": "Returns an array of all linked text frames or text paths in relation to a given Text Frame, Text Path, Story or Text Object.\nIf a callback function is given, `textFrames()` calls this callback function on each text frame of the given container. When the callback function returns false, the loop stops and the `textFrames()` function returns an array of all text frames up to this point.",
+        "returns": {
+          "name": null,
+          "description": "The array of linked text frames or text paths.",
+          "type": [
+            "Array"
+          ]
+        },
+        "category": "Document",
+        "subcategory": "Page Items",
+        "parameters": [
+          {
+            "name": "item",
+            "description": "The text frame, text path, story or text object of the text frame chain.",
+            "optional": false,
+            "type": [
+              "TextFrame",
+              "TextPath",
+              "Story",
+              "TextObject"
+            ]
+          },
+          {
+            "name": "cb",
+            "description": "The callback function to call with each text frame or text path. When this function returns false the loop stops. Passed arguments: `textFrame`, `loopCount`.",
+            "optional": true,
+            "type": [
+              "Function"
+            ]
+          }
+        ],
+        "kind": "function",
+        "tags": [
+          {
+            "title": "summary",
+            "description": "Runs a function on a chain of linked text frames or returns them."
+          },
+          {
+            "title": "description",
+            "description": "Returns an array of all linked text frames or text paths in relation to a given Text Frame, Text Path, Story or Text Object.\nIf a callback function is given, `textFrames()` calls this callback function on each text frame of the given container. When the callback function returns false, the loop stops and the `textFrames()` function returns an array of all text frames up to this point."
+          }
+        ],
+        "examples": [],
+        "todo": null,
+        "summary": "Runs a function on a chain of linked text frames or returns them.",
+        "codetitle": "linkedTextFrames(item, [cb])"
+      },
+      {
         "name": "nameOnPage",
         "description": "Returns the first item on the active page that is named by the given name in the Layers pane (`Window -> Layer`).",
         "returns": {
@@ -3701,6 +3796,58 @@
         "todo": null,
         "summary": "Runs a function on all selected page items or returns them.",
         "codetitle": "selections([cb])"
+      },
+      {
+        "name": "textFrames",
+        "description": "Returns a collection of all text frames in the given container. The container object can be a Document, Page, Layer, Group, Story, Page Item or Text Object.\nIf a callback function is given, `textFrames()` calls this callback function on each text frame of the given container. When the callback function returns false, the loop stops and the `textFrames()` function returns an array of all text frames up to this point.",
+        "returns": {
+          "name": null,
+          "description": "An array of Text Frames.",
+          "type": [
+            "Array"
+          ]
+        },
+        "category": "Document",
+        "subcategory": "Page Items",
+        "parameters": [
+          {
+            "name": "container",
+            "description": "The document, page, layer, group, story, page item or text object to iterate the text frames in.",
+            "optional": false,
+            "type": [
+              "Document",
+              "Page",
+              "Layer",
+              "Group",
+              "Story",
+              "PageItem",
+              "TextObject"
+            ]
+          },
+          {
+            "name": "cb",
+            "description": "The callback function to call with each text frame. When this function returns false the loop stops. Passed arguments: `textFrame`, `loopCount`.",
+            "optional": true,
+            "type": [
+              "Function"
+            ]
+          }
+        ],
+        "kind": "function",
+        "tags": [
+          {
+            "title": "summary",
+            "description": "Runs a function on a collection of text frames in a container or returns them."
+          },
+          {
+            "title": "description",
+            "description": "Returns a collection of all text frames in the given container. The container object can be a Document, Page, Layer, Group, Story, Page Item or Text Object.\nIf a callback function is given, `textFrames()` calls this callback function on each text frame of the given container. When the callback function returns false, the loop stops and the `textFrames()` function returns an array of all text frames up to this point."
+          }
+        ],
+        "examples": [],
+        "todo": null,
+        "summary": "Runs a function on a collection of text frames in a container or returns them.",
+        "codetitle": "textFrames(container, [cb])"
       },
       {
         "name": "ungroup",
