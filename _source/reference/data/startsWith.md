@@ -1,8 +1,8 @@
 ---
 layout: entry
 title: startsWith
-codetitle: 'startsWith(str, prefix)'
-description: 'Checks whether a string starts with a specific character or string.'
+codetitle: 'startsWith(searchContainer, valueToFind)'
+description: 'Checks whether a string starts with a specific character or string or if an array starts with a specific value.'
 category: Data
 subcategory: 'String Functions'
 returns:
@@ -10,8 +10,8 @@ returns:
     description: 'Returns either true or false'
     type: [Boolean]
 parameters:
-    - {name: str, description: 'A string to be checked', optional: false, type: [String]}
-    - {name: prefix, description: 'The string to look for', optional: false, type: [String]}
+    - {name: searchContainer, description: 'A string or an array to be checked', optional: false, type: [String]}
+    - {name: valueToFind, description: 'The value to search for', optional: false, type: [String]}
 kind: function
 todo: null
 examples: []
