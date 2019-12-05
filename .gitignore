@@ -1,5 +1,6 @@
 .DS_Store
 test/report.txt
+.vscode
 
 # File created using '.gitignore Generator' for Visual Studio Code: https://bit.ly/vscode-gig
 
