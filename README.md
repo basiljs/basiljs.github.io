@@ -18,6 +18,8 @@ cd basiljs.github.io
 # get all branches
 git fetch -a
 # get into the develop branch
+# this is currently the one that serves the page
+# your pull request should also be against develop not master (at the moment)
 git checkout -b develop origin/develop
 # now make your new branch based on develop
 git checkout -b chore/update-docs
@@ -40,6 +42,7 @@ git commit -m "chore: Update Basil.js api to latest state [Add your favorite emo
 # push current HEAD to remote
 git push -u origin HEAD
 # Now go to the GitHub UI and create your PR
+# Against the develop branch (not master).
 ```
 
 ## Development
