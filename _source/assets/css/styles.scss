@@ -4,7 +4,7 @@ css: true
 
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 @import "mixins";
@@ -16,8 +16,8 @@ css: true
 $textColor: #000;
 $bgColor: #fff;
 $headLineColor: #333;
-$guideOneColor: #9636FC;
-$guideTwoColor: #FF4EFF;
+$guideOneColor: #9636fc;
+$guideTwoColor: #ff4eff;
 
 // Responsive Sizes
 $phone: 750px;
@@ -32,11 +32,10 @@ body {
   background-image: url("/assets/images/stripe_c40ccfac0db9e43c48e95a530d787366.png");
 }
 
-
 .wrapper {
   position: relative;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   max-width: 1200px;
   width: 100%;
   margin: 25px auto 0px;
@@ -50,12 +49,11 @@ body {
     margin-top: 0px;
   }
 
-
   @include clearfix;
 
   .logo {
     background-color: white;
-    height: 130px;
+    height: auto;
     width: 200px;
     margin-bottom: 30px;
 
@@ -69,10 +67,9 @@ body {
     float: left;
 
     .main-menu {
-
       padding-bottom: 1em;
 
-      ul{
+      ul {
         list-style: none;
         margin-left: 0;
         padding-left: 0;
@@ -97,7 +94,6 @@ body {
         background: #fff;
         padding-top: 150px;
       }
-
 
       a {
         padding-left: 25px;
@@ -142,27 +138,25 @@ body {
       padding-right: 25px;
     }
 
-
     @include media($phone) {
       float: none;
       width: 90%;
       margin: 0 auto 50px;
     }
 
-    #gallery-overview{
+    #gallery-overview {
       display: flex;
       flex-wrap: wrap;
       align-content: flex-start;
     }
-    .gallery-overview-item{
+    .gallery-overview-item {
       max-width: 350px;
       margin-right: 1em;
       // flex-basis: 100px;
       flex-shrink: 0;
-
     }
     @include media($phone) {
-      .gallery-overview-item{
+      .gallery-overview-item {
         max-width: 100%;
       }
     }
@@ -197,21 +191,20 @@ body {
 .gallery-overview-item-wrapper {
   width: 50%;
 
-  .gallery-overview-item{
-    .heading-container{
+  .gallery-overview-item {
+    .heading-container {
       height: 4em;
     }
 
-    img.gallery-thumbnail{
+    img.gallery-thumbnail {
       width: 256px;
       height: 144px;
     }
-
   }
-
 }
 
-p.project-authors, p.project-description{
+p.project-authors,
+p.project-description {
   font-size: 1.2em;
   font-style: italic;
 }
@@ -225,7 +218,8 @@ p {
   }
 }
 
-.fhnw-logo {
+.fhnw-logo,
+.sponsor-logo {
   // padding-left: 25px;
   a {
     img {
@@ -257,7 +251,7 @@ p {
     list-style-type: none;
     width: 30px;
     height: 1px;
-    background-color: #2AFFFF;
+    background-color: #2affff;
     position: absolute;
     margin-top: -1px;
     top: 50%;
@@ -267,19 +261,19 @@ p {
 
     &:first-child {
       -webkit-transform: translateY(-10px) rotate(0deg);
-              transform: translateY(-10px) rotate(0deg);
+      transform: translateY(-10px) rotate(0deg);
     }
 
     &:last-child {
       -webkit-transform: translateY(10px) rotate(0deg);
-              transform: translateY(10px) rotate(0deg);
+      transform: translateY(10px) rotate(0deg);
     }
   }
 
   &.opened ul li {
     &:first-child {
       -webkit-transform: translate(0) rotate(45deg);
-              transform: translate(0) rotate(45deg);
+      transform: translate(0) rotate(45deg);
     }
 
     &:nth-child(2) {
@@ -288,7 +282,7 @@ p {
 
     &:last-child {
       -webkit-transform: translate(0) rotate(-45deg);
-              transform: translate(0) rotate(-45deg);
+      transform: translate(0) rotate(-45deg);
     }
   }
 
@@ -302,7 +296,9 @@ img {
   width: 100%;
 }
 
-h1, h2, strong {
+h1,
+h2,
+strong {
   color: $headLineColor;
 }
 
@@ -310,14 +306,19 @@ a {
   cursor: pointer;
   text-decoration: none;
   color: #000;
-  border-bottom: 1px solid #9636FC;
+  border-bottom: 1px solid #9636fc;
 
   &:hover {
     background-image: url("/assets/images/stripe_c40ccfac0db9e43c48e95a530d787366.png");
   }
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   text-decoration: underline;
   color: $headLineColor;
 }
@@ -417,8 +418,6 @@ pre {
   padding: 1.2em;
 }
 
-
-
 //-------media queries
 
 // @media only screen
@@ -449,17 +448,22 @@ pre {
 // @Son Please merge this so we don't have
 // double definitions
 .tweet {
-  .message, .tweettime{
-    font-size: 14px;
-    padding-left: 25px;
-
+  font-size: 14px;
+  padding-left: 25px;
+  .message,
+  .tweettime {
   }
-  .message, .tweettime, .twitter-link{
-    margin-bottom: 0.75em;
+  .message,
+  .tweettime,
+  .twitter-link {
   }
-
+  margin-bottom: 0.75em;
 }
-
+.sponsors-text {
+  font-size: 14px;
+  padding-left: 25px;
+  margin-bottom: 0.75em;
+}
 a.textgrow {
   padding-left: 25px;
   border: none;
@@ -481,7 +485,7 @@ a.textgrow {
   height: auto;
   display: inline-block;
   font-weight: 700;
-  span{
+  span {
     // position: relative;
     // padding: 0px 4px;
     border-bottom: 1px solid $textColor;
