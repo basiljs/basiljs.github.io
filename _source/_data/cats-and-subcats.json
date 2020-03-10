@@ -3,6 +3,48 @@
     {
       "entries": [
         {
+          "name": "background",
+          "description": "Sets a background on the current page. The function takes the current canvas mode into account, so setting canvas mode to `FACING_PAGES` beforehand would result in the background to be drawn across the entire spread. The background will be placed on a background layer that basil creates automatically.",
+          "returns": {
+            "name": null,
+            "description": "The newly created background shape.",
+            "type": [
+              "Rectangle"
+            ]
+          },
+          "category": "Color",
+          "subcategory": null,
+          "parameters": [
+            {
+              "name": "bgColor",
+              "description": "Accepts a color/gradient/swatch as string name or variable. Or values: GRAY / R,G,B / C,M,Y,K.",
+              "optional": false,
+              "type": [
+                "Color",
+                "Gradient",
+                "Swatch",
+                "Numbers",
+                "String"
+              ]
+            }
+          ],
+          "kind": "function",
+          "tags": [
+            {
+              "title": "summary",
+              "description": "Sets a background on the current page."
+            },
+            {
+              "title": "description",
+              "description": "Sets a background on the current page. The function takes the current canvas mode into account, so setting canvas mode to `FACING_PAGES` beforehand would result in the background to be drawn across the entire spread. The background will be placed on a background layer that basil creates automatically."
+            }
+          ],
+          "examples": [],
+          "todo": null,
+          "summary": "Sets a background on the current page.",
+          "codetitle": "background(bgColor)"
+        },
+        {
           "name": "blendMode",
           "description": "Sets the Effects blendMode property of an object.",
           "returns": null,
@@ -5226,6 +5268,14 @@
                 "String",
                 "File"
               ]
+            },
+            {
+              "name": "userAgent",
+              "description": "Optional parameter when URL is used, to specify a user-agent making request.",
+              "optional": true,
+              "type": [
+                "String"
+              ]
             }
           ],
           "kind": "function",
@@ -5242,7 +5292,7 @@
           "examples": [],
           "todo": null,
           "summary": "Gets and parses the contents of a JSON file.",
-          "codetitle": "loadJSON(file)"
+          "codetitle": "loadJSON(file, [userAgent])"
         },
         {
           "name": "loadString",
@@ -5265,6 +5315,14 @@
                 "String",
                 "File"
               ]
+            },
+            {
+              "name": "userAgent",
+              "description": "Optional parameter when URL is used, to specify a user-agent making request.",
+              "optional": true,
+              "type": [
+                "String"
+              ]
             }
           ],
           "kind": "function",
@@ -5281,7 +5339,7 @@
           "examples": [],
           "todo": null,
           "summary": "Gets the contents of a file or loads an URL into a string.",
-          "codetitle": "loadString(file)"
+          "codetitle": "loadString(file, [userAgent])"
         },
         {
           "name": "loadStrings",
@@ -5304,6 +5362,14 @@
                 "String",
                 "File"
               ]
+            },
+            {
+              "name": "userAgent",
+              "description": "Optional parameter when URL is used, to specify a user-agent making request.",
+              "optional": true,
+              "type": [
+                "String"
+              ]
             }
           ],
           "kind": "function",
@@ -5320,7 +5386,7 @@
           "examples": [],
           "todo": null,
           "summary": "Gets the contents of a file or loads an URL into an array of its individual lines.",
-          "codetitle": "loadStrings(file)"
+          "codetitle": "loadStrings(file, [userAgent])"
         },
         {
           "name": "selectFile",
@@ -5768,13 +5834,13 @@
           "codetitle": "timestamp()"
         },
         {
-          "name": "weekday",
-          "description": "The `weekday()` function returns the current weekday as a string from `Sunday`, `Monday`, `Tuesday` ...",
+          "name": "week",
+          "description": "The `week()` function returns the current week as a value from `1`-`52`.",
           "returns": {
             "name": null,
-            "description": "The current weekday name.",
+            "description": "The current week number of the year.",
             "type": [
-              "String"
+              "Number"
             ]
           },
           "category": "Input",
@@ -5784,16 +5850,45 @@
           "tags": [
             {
               "title": "summary",
-              "description": "Returns the current day of the week."
+              "description": "Returns the current week number of the year."
             },
             {
               "title": "description",
-              "description": "The `weekday()` function returns the current weekday as a string from `Sunday`, `Monday`, `Tuesday` ..."
+              "description": "The `week()` function returns the current week as a value from `1`-`52`."
             }
           ],
           "examples": [],
           "todo": null,
-          "summary": "Returns the current day of the week.",
+          "summary": "Returns the current week number of the year.",
+          "codetitle": "week()"
+        },
+        {
+          "name": "weekday",
+          "description": "The `weekday()` function returns the current weekday as a value from `0` - `6` (starting Sunday).",
+          "returns": {
+            "name": null,
+            "description": "The current weekday as number.",
+            "type": [
+              "Number"
+            ]
+          },
+          "category": "Input",
+          "subcategory": "Time & Date",
+          "parameters": [],
+          "kind": "function",
+          "tags": [
+            {
+              "title": "summary",
+              "description": "Returns the current day number of the week."
+            },
+            {
+              "title": "description",
+              "description": "The `weekday()` function returns the current weekday as a value from `0` - `6` (starting Sunday)."
+            }
+          ],
+          "examples": [],
+          "todo": null,
+          "summary": "Returns the current day number of the week.",
           "codetitle": "weekday()"
         },
         {
@@ -6942,12 +7037,13 @@
         },
         {
           "name": "random",
-          "description": "Generates random numbers. Each time the `random()` function is called, it returns an unexpected value within the specified range. If one parameter is passed to the function it will return a float between zero and the value of the high parameter. The function call `random(5)` returns values between `0` and `5`. If two parameters are passed, it will return a float with a value between the the parameters. The function call `random(-5, 10.2)` returns values between `-5` and `10.2`.\nOne parameter sets the range from `0` to the given parameter, while with two parameters present you set the range from `val1` to `val2`.",
+          "description": "Generates random numbers. Each time the `random()` function is called, it returns an unexpected value within the specified range. If one parameter is passed to the function it will return a float between zero and the value of the high parameter. The function call `random(5)` returns values between `0` and `5`. If two parameters are passed, it will return a float with a value between the the parameters. The function call `random(-5, 10.2)` returns values between `-5` and `10.2`.\nOne parameter sets the range from `0` to the given parameter, while with two parameters present you set the range from `val1` to `val2`.\nIf one argument is given and it is an array, returns a random element from that array.",
           "returns": {
             "name": null,
-            "description": "A random number.",
+            "description": "A random number or a random element from array.",
             "type": [
-              "Number"
+              "Number",
+              "Object"
             ]
           },
           "category": "Math",
@@ -6974,16 +7070,16 @@
           "tags": [
             {
               "title": "summary",
-              "description": "Generates a random number."
+              "description": "Generates a random number or returns a random array item."
             },
             {
               "title": "description",
-              "description": "Generates random numbers. Each time the `random()` function is called, it returns an unexpected value within the specified range. If one parameter is passed to the function it will return a float between zero and the value of the high parameter. The function call `random(5)` returns values between `0` and `5`. If two parameters are passed, it will return a float with a value between the the parameters. The function call `random(-5, 10.2)` returns values between `-5` and `10.2`.\nOne parameter sets the range from `0` to the given parameter, while with two parameters present you set the range from `val1` to `val2`."
+              "description": "Generates random numbers. Each time the `random()` function is called, it returns an unexpected value within the specified range. If one parameter is passed to the function it will return a float between zero and the value of the high parameter. The function call `random(5)` returns values between `0` and `5`. If two parameters are passed, it will return a float with a value between the the parameters. The function call `random(-5, 10.2)` returns values between `-5` and `10.2`.\nOne parameter sets the range from `0` to the given parameter, while with two parameters present you set the range from `val1` to `val2`.\nIf one argument is given and it is an array, returns a random element from that array."
             }
           ],
           "examples": [],
           "todo": null,
-          "summary": "Generates a random number.",
+          "summary": "Generates a random number or returns a random array item.",
           "codetitle": "random([low], [high])"
         },
         {
