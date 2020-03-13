@@ -1,31 +1,36 @@
-const path = require('path');
+const path = require("path");
 // eslint-disable-next-line no-unused-vars
-const webpack = require('webpack');
+const webpack = require("webpack");
 // if we want to create a sseparate css file we
 // need this module
 
 module.exports = {
   watch: true,
-  mode: 'development',
-  devtool: 'source-map',
-  target:'web',
-  context: path.resolve(__dirname, '../'),
+  mode: "development",
+  devtool: "source-map",
+  target: "web",
+  context: path.resolve(__dirname, "../"),
   entry: {
-    reference: './_source/assets/js/src/reference.js',
-    main:'./_source/assets/js/src/main.js'
+    reference: "./_source/assets/js/src/reference.js",
+    main: "./_source/assets/js/src/main.js"
   },
   externals: {
-    jquery: 'jQuery'
+    jquery: "jQuery"
   },
   output: {
-    path: path.resolve(__dirname, '../', './_source/assets/js'),
-    filename: '[name].bundle.js'
+    path: path.resolve(__dirname, "../", "./_source/assets/js"),
+    filename: "[name].bundle.js"
   },
   module: {
     rules: [
-      { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader', options: {
-        presets: ['@babel/preset-env']
-      }}
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: "babel-loader",
+        options: {
+          presets: ["@babel/preset-env"]
+        }
+      }
     ]
   },
   // if we want to refernce our css within the js this is the way to go

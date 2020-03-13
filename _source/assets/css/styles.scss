@@ -1,17 +1,11 @@
----
-css: true
----
-
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-@import "mixins";
-
-@import "typescale";
-
-@import "highlight";
+@import "./scss/_mixins.scss";
+@import "./scss/_typescale.scss";
+@import "./scss/_highlight.scss";
 
 $textColor: #000;
 $bgColor: #fff;
@@ -401,7 +395,7 @@ ul {
 
 // ------------ code
 //
-@import "syntax";
+@import "./scss/syntax.scss";
 
 pre {
   background: #eee !important;
@@ -492,7 +486,8 @@ a.textgrow {
   }
 }
 
-@import "guidelines", "reference", "changelog";
+@import "./scss/_guidelines.scss", "./scss/reference.scss",
+  "./scss/changelog.scss";
 
 // ------------------------
 // old basil css. Overwrite new settings
