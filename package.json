@@ -32,7 +32,7 @@
     "@babel/plugin-transform-runtime": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
     "@babel/runtime": "^7.5.5",
-    "acorn": "^7.0.0",
+    "acorn": "^7.1.1",
     "babel-loader": "^8.0.6",
     "basiljs": "github:basiljs/basil.js#develop",
     "cz-conventional-changelog": "^3.0.2",
