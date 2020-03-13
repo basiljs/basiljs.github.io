@@ -14,9 +14,6 @@ module.exports = {
     "./_source/assets/ts/index.ts",
     "./_source/assets/css/styles.scss"
   ],
-  externals: {
-    jquery: "jQuery"
-  },
   optimization: {
     splitChunks: {
       chunks: "all",
@@ -61,7 +58,7 @@ module.exports = {
           },
           { loader: "sass-loader" }
         ]
-      },
+      }
       // {
       //   test: /\.tsx?$/,
       //   use: "ts-loader",

@@ -10,6 +10,9 @@ module.exports = merge(common, {
   output: {
     chunkFilename: "[name].chunk.js"
   },
+  externals: {
+    jquery: "jQuery"
+  },
   watch: true,
   resolve: {
     extensions: [".tsx", ".ts", ".js"]
