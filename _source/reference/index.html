@@ -40,7 +40,7 @@ order: 3
             {%- for entry in ele.entries -%}
             {%- assign eid = entry.name | downcase -%}
             <div class="ref-entry" id="{{eid}}">
-              <div class="entry-heading"><a class="entry-heading-link" href="/reference/{{ele.cat}}/{{entry.name}}.html">{{entry.codetitle}}</a></div>
+              <h4 class="entry-heading"><a class="entry-heading-link" href="/reference/{{ele.cat}}/{{entry.name}}.html">{{entry.codetitle}}</a></h4>
                 {%- if entry.summary != null -%}
                 <p class="summary">{{entry.summary | markdownify | replace: '<p>', ''| replace: '</p>', '' }}</p>
                 {%- else -%}
@@ -55,6 +55,7 @@ order: 3
                   {%- endif -%}
                   </p>
               {%- endif -%}
+
             </div>
             {%- endfor -%} <!-- End of sub entries loop-->
           </section>
@@ -64,48 +65,10 @@ order: 3
       </section>
 </div>
 
-<script>
-// const searchstring = 'foo';
-// window.lunrjssearchdata = JSON.parse(searchstring);
-</script>
- {%- comment -%}
- <h2 id="cat-ndx">Categories</h2>
- <div class="index">
- {%- for element in site.data.cats-and-subcats %}
- <section class="category">
-   {%- assign newcat = true -%}
-   {%- for ele in element -%}
-   {%- if newcat == true -%}
-   <h3 class="reference-category">{{ele.cat}}</h3>
-   {%- assign newcat = false -%}
-   {%- endif -%}
-   {%- unless ele.subcat == 'null' -%}<h4 class="reference-subcategory">{{ele.subcat}}</h4>{%- endunless -%}
-   <ul class="reference-lists">
-     <!-- this is the list -->
-     {%- for entry in ele.entries -%}
-     {%- assign eid = entry.name |downcase -%}
-     <li id="{{eid}}-ndx"><a href="#{{eid}}">{{entry.codetitle}}</a></li>
-     {%- endfor -%}
-    </ul>{%- endfor -%}
-  </section>
-  {%- endfor -%}
+
+<div class="totop">
+  <a href="#">☝︎ back to top</a>
 </div>
-
-<!-- start item in cat loop -->
-
-<div class="entries">
-  {%- for item in site.data.categories -%}{%- assign id = item.cat | downcase -%}
-  <h3 id="{{id}}">{{item.cat}}</h3>
-  <!-- start entries in cat loop -->
-  {%- for entry in item.entries -%}{%- include entry-card.html entry=entry ispage=false -%}{%- endfor -%}
-  <!-- end entries in cat loop -->
-  {%- endfor -%}
-  <!-- end item in cat loop --></div>
-
-{%- endcomment -%}
-  <div class="totop"><a href="#">☝︎ back to top</a></div>
-  <div class="totop-shadow"><a href="#">☝︎ back to top</a>
-  </div>
-  <script type="text/javascript">
-// var searchindex = {{ site.data.categories | jsonify }};
-</script>
+  <div class="totop-shadow">
+    <a href="#">☝︎ back to top</a>
+</div>
