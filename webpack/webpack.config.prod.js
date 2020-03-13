@@ -9,12 +9,18 @@ module.exports = merge(common, {
   stats: "errors-only",
   bail: true,
   output: {
-    filename: "[name].bundle.js",
-    chunkFilename: "[name].[chunkhash:8].chunk.js"
+    filename: "[name].bundle.js"
+    // chunkFilename: "[name].[chunkhash:8].chunk.js"
   },
+  externals: {},
   optimization: {
     splitChunks: {
-      chunks: "all"
+      chunks: "all",
+      cacheGroups: {
+        vendors: {
+          enforce: true
+        }
+      }
     }
   },
   plugins: [
