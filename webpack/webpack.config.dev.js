@@ -8,11 +8,12 @@ module.exports = merge(common, {
   // entry: "./src/assets/ts/index.ts",
   devtool: "inline-source-map",
   output: {
-    chunkFilename: "[name].chunk.js"
+    filename: "[name].bundle.js"
+    // chunkFilename: "[name].[chunkhash:8].chunk.js"
   },
-  externals: {
-    jquery: "jQuery"
-  },
+  // externals: {
+  //   jquery: "jQuery"
+  // },
   watch: true,
   resolve: {
     extensions: [".tsx", ".ts", ".js"]

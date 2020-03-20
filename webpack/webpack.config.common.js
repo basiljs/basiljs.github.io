@@ -8,12 +8,21 @@ module.exports = {
   target: "web",
   plugins: [],
   context: path.resolve(__dirname, "../"),
-  entry: [
-    "./_source/assets/js/src/reference.js",
-    "./_source/assets/js/src/main.js",
-    "./_source/assets/ts/index.ts",
-    "./_source/assets/css/styles.scss"
-  ],
+  entry: {
+    main: [
+      "./_source/assets/js/src/main.js",
+      // "./_source/assets/ts/index.ts",
+      "./_source/assets/css/styles.scss"
+    ],
+    reference: "./_source/assets/js/src/reference.js"
+  },
+  // entry: {
+  //   reference: "./_source/assets/js/src/reference.js",
+  //   main: "./_source/assets/js/src/main.js",
+  //   index: "./_source/assets/ts/index.ts",
+  //   styles: "./_source/assets/css/styles.scss"
+  // },
+
   optimization: {
     splitChunks: {
       chunks: "all",
@@ -67,7 +76,7 @@ module.exports = {
     ]
   },
   resolve: {
-    extensions: [/*".tsx", ".ts",*/ ".js"]
+    extensions: [".js"]
   },
   output: {
     path: path.resolve(__dirname, "../_source/assets/js"),

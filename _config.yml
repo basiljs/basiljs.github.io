@@ -25,6 +25,7 @@ url: "https://basiljs.github.io/" # the base hostname & protocol for your site, 
 twitter_username: basil_js
 github_username:  basiljs
 
+host: 0.0.0.0
 # sass:
 #     style: compressed
 #     sass_dir: _sass

@@ -1,11 +1,12 @@
-import p5 from 'p5/lib/p5.min';
-import sketch from './p5sketch.js';
-import mobileNav from './mobile-nav.js';
-import tweets from './tweets.js';
-import {specialChars, createGuideLines} from './decoration.js';
-import {shuffleGalleryItems} from './shuffle-gallery-items';
+import p5 from "p5/lib/p5";
+import sketch from "./p5sketch";
+import mobileNav from "./mobile-nav";
+import tweets from "./tweets";
+import { specialChars, createGuideLines } from "./decoration";
+import { shuffleGalleryItems } from "./shuffle-gallery-items";
 let p5sketch;
-document.addEventListener('DOMContentLoaded',() =>{
+document.addEventListener("DOMContentLoaded", () => {
+  console.log("hello world");
   tweets();
   shuffleGalleryItems();
   specialChars();
@@ -13,8 +14,6 @@ document.addEventListener('DOMContentLoaded',() =>{
   mobileNav();
   p5sketch = new p5(sketch);
 });
-
-
 
 window.onblur = function() {
   p5sketch.noLoop();
