@@ -3,12 +3,10 @@ import sketch from "./p5sketch";
 import mobileNav from "./mobile-nav";
 import tweets from "./tweets";
 import { specialChars, createGuideLines } from "./decoration";
-import { shuffleGalleryItems } from "./shuffle-gallery-items";
 let p5sketch;
 document.addEventListener("DOMContentLoaded", () => {
-  console.log("hello world");
+  // console.log("hello main");
   tweets();
-  shuffleGalleryItems();
   specialChars();
   createGuideLines();
   mobileNav();

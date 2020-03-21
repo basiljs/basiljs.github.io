@@ -1,0 +1,36 @@
+.featured-projects {
+  height: 25em;
+}
+
+ul.featured-projects-list {
+}
+
+.featured-project-thumb {
+  max-width: 100%;
+  height: auto;
+  /* width: 1280px; */
+  /* height: 720px; */
+}
+
+li.featured-project {
+  position: relative;
+  list-style: none;
+  display: none;
+}
+
+.featured-project-title {
+  margin: 0;
+  position: absolute;
+  float: left;
+  left: 0px;
+  top: -25px;
+  z-index: 0;
+  background-color: white;
+  padding-right: 1em;
+  padding-left: 0.5em;
+  width: 100%;
+}
+
+img.featured-project-thumb {
+  display: inline;
+}

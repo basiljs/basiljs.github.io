@@ -1,6 +1,6 @@
 ---
 author: admin
-layout: default
+layout: gallery
 title: gallery
 order: 6
 ---
@@ -29,18 +29,3 @@ filter pages based in layout
   {% endif %}
   {% endfor %}
 </section>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    if ([...document.body.classList].includes('gallery')) {
-
-      const elements = document.querySelectorAll('.gallery-overview-item-wrapper');
-      if (elements.length >= 0) {
-        Array.from(elements).forEach(element => {
-          element.style.order = Math.floor(Math.random() * elements.length);
-        });
-
-      }
-    }
-  });
-</script>
