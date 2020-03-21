@@ -4,6 +4,7 @@
   "description": "the docs for Basil.js",
   "scripts": {
     "dev": "npm-run-all --parallel  webpack:dev jekyll:dev",
+    "build": "npm run build:api-markup && npm run webpack:prod && bundle exec jekyll build",
     "test": "echo \"no test specified\" && exit 0",
     "webpack:dev": "cross-env NODE_ENV=development webpack --progress --info-verbosity  --colors --config webpack/webpack.config.dev.js",
     "webpack:prod": "cross-env NODE_ENV=production webpack --config webpack/webpack.config.prod.js --colors",
