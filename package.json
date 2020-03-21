@@ -7,7 +7,7 @@
     "test": "echo \"no test specified\" && exit 0",
     "webpack:dev": "cross-env NODE_ENV=development webpack --progress --info-verbosity  --colors --config webpack/webpack.config.dev.js",
     "webpack:prod": "cross-env NODE_ENV=production webpack --config webpack/webpack.config.prod.js --colors",
-    "jekyll:dev": "bundle exec jekyll serve --livereload --limit_posts 5",
+    "jekyll:dev": "bundle exec jekyll serve --livereload --incremental --limit_posts 5",
     "jekyll:prod": "JEKYLL_ENV=production bundle exec jekyll build",
     "documentationjs": "documentation",
     "update-and-generate": "sh ./bootstrap-scripts/update-and-generate.sh",
