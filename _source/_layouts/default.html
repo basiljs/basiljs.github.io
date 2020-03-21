@@ -41,9 +41,11 @@
     {% endif %}
 
     {%- if page.layout == 'gallery' -%}
+    <script src="/assets/js/vendors~gallery-randomize.bundle.js" defer></script>
     <script src="/assets/js/gallery-randomize.bundle.js"></script>
     {%- endif -%}
     {%- if page.hasFeaturedProjects == true -%}
+    <script src="/assets/js/vendors~featured-carousel.bundle.js" defer></script>
     <script src="/assets/js/featured-carousel.bundle.js"></script>
     {%- endif -%}
 </body>
