@@ -33,8 +33,8 @@ title: Basil.js
     position: absolute;
     float: left;
     left: 0px;
-    top: -3.2em;
-    z-index: 1000;
+    top: -25px;
+    z-index: 0;
     background-color: white;
     padding-right: 1em;
     padding-left: 0.5em;
@@ -51,7 +51,19 @@ title: Basil.js
     <li class="featured-project">
       <div class="featured-project-title">
         <span class="textshrink">{{ project.title }}</span><br>
-        <span>by {Author Names}</span>
+        <span>by </span>{%- for author in project.authors -%}
+  {%- if author.url != null -%}
+    <a href="{{author.url}}">{{author.name}}</a>
+    {%- if forloop.last == false -%}
+    <span>{% if forloop.rindex0  != 1 %}, {% else %} and {% endif %}</span>
+    {%- endif -%}
+  {%- else -%}
+    {{author.name}}
+    {%- if forloop.last == false -%}
+    <span>{% if forloop.rindex0  != 1 %}, {% else %} and {% endif %}</span>
+    {%- endif -%}
+  {%- endif -%}
+{%- endfor -%}
       </div>
       <a href="{{project.url}}" class="featured-project-link">
         <img src="{{project.url}}/splash.png" class="featured-project-thumb"

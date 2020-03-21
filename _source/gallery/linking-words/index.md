@@ -6,6 +6,7 @@ authors:
     url: null
 
 layout: gallery-item
+publish: true
 title: "-linking-words-"
 description: The act of reading is simple and sometimes boring. You start at the top left corner and finish at the bottom right corner. The goal of this project is to change the act of reading. In doing so we keep the reader focused and aware of what he is doing.
 ---

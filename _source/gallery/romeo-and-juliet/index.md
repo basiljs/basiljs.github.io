@@ -5,6 +5,7 @@ authors:
   - name: Inken Zierenberg
     url:  null
 layout: gallery-item
+publish: true
 title: Romeo and Juliet
 description: Text visualizations that highlight the narrative intensity for Shakespeare’s Romeo and Juliet by simple algorithmic rules.
 featured: true

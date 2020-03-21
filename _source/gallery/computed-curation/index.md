@@ -3,6 +3,7 @@ authors:
   - name: Philipp Schmitt
     url: https://philippschmitt.com
 layout: gallery-item
+publish: true
 title: Computed Curation
 description: Curating photography with neural networks.
 featured: true

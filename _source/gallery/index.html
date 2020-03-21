@@ -15,6 +15,7 @@ filter pages based in layout
 <section id="gallery-overview">
   {% for page in filteredPages %}
   {% if page.layout == 'gallery-item' %}
+  {% if page.publish == true %}
   <a class="gallery-overview-item-wrapper" href="{{page.url}}">
   <div class="gallery-overview-item">
       <div class="heading-container">
@@ -24,6 +25,7 @@ filter pages based in layout
         <p>{{page.description}}</p>
     </div>
   </a>
+  {% endif %}
   {% endif %}
   {% endfor %}
 </section>

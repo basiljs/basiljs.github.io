@@ -3,6 +3,7 @@ authors:
   - name: Bettina Schneebeli
     url: null
 layout: gallery-item
+publish: true
 title: Ending  the  Depression  through  Amazon
 description: A text – image correlation between an article by Bernhard London from 1932 and according product pictures from amazon.com.
 featured: true
