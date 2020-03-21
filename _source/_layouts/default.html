@@ -36,11 +36,18 @@
 
     <script src="/assets/js/main.bundle.js" type="text/javascript"></script>
     {% if page.layout == 'reference' or page.layout == 'entry' %}
-
     <script src="/assets/js/vendors~reference.bundle.js" type="text/javascript" defer></script>
-
     <script src="/assets/js/reference.bundle.js" type="text/javascript"></script>
     {% endif %}
+
+    {%- if page.layout == 'gallery' -%}
+    <script src="/assets/js/vendors~gallery-randomize.bundle.js" defer></script>
+    <script src="/assets/js/gallery-randomize.bundle.js"></script>
+    {%- endif -%}
+    {%- if page.hasFeaturedProjects == true -%}
+    <script src="/assets/js/vendors~featured-carousel.bundle.js" defer></script>
+    <script src="/assets/js/featured-carousel.bundle.js"></script>
+    {%- endif -%}
 </body>
 
 </html>

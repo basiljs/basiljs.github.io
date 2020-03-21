@@ -114,7 +114,18 @@ To work on the Javascript and SCSS of the site you need to run
 npm run webpack:dev
 ```
 
+## Gallery Content
 
+To add a new gallery item you can duplicate the folder `_source/gallery/example-gallery-item`
+
+There Need to be two images present.
+
+1. thumbnail.png with a size of 320 × 180 px (this will be used in the gallery overview)
+2. splash.png with a size of 1280 × 720 px (this will be used on the start page if featured is true)
+
+You also should replace all the values in the frontmatter of the `index.md` file.  
+
+Please set your project first to `publish: false` and also the `featured: false` to get a review by the maintainers.
 
 ## Recipes
 

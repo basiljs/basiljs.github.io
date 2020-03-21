@@ -3,6 +3,7 @@ authors:
   - name: Sophie Fischer
     url: null
 layout: gallery-item
+publish: true
 title: Weather Cities
 description: This is a data visualization of the 14-days weather forecasts from 28 cities around the world.
 

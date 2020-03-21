@@ -14,7 +14,9 @@ module.exports = {
       // "./_source/assets/ts/index.ts",
       "./_source/assets/css/styles.scss"
     ],
-    reference: "./_source/assets/js/src/reference.js"
+    reference: "./_source/assets/js/src/reference.js",
+    "gallery-randomize": "./_source/assets/ts/gallery-randomize.ts",
+    "featured-carousel": "./_source/assets/ts/featured-carousel.ts"
   },
   // entry: {
   //   reference: "./_source/assets/js/src/reference.js",
@@ -67,16 +69,16 @@ module.exports = {
           },
           { loader: "sass-loader" }
         ]
+      },
+      {
+        test: /\.tsx?$/,
+        use: "ts-loader",
+        exclude: /node_modules/
       }
-      // {
-      //   test: /\.tsx?$/,
-      //   use: "ts-loader",
-      //   exclude: /node_modules/
-      // }
     ]
   },
   resolve: {
-    extensions: [".js"]
+    extensions: [".js", ".ts"]
   },
   output: {
     path: path.resolve(__dirname, "../_source/assets/js"),

@@ -9,6 +9,7 @@ authors:
   - name: Sarah Sbalchiero
     url: null
 layout: gallery-item
+publish: true
 title: Geometrie 1
 description: Results of the foundational introduction course into Generative Design with basil.js at the Visual Communication Institute in Basel by Martin Fuchs and Ludwig Zeller.
 ---

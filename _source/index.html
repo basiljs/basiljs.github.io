@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Basil.js
+hasFeaturedProjects: true
 ---
 
 <h1 class="dont-decorate">{{page.title}}</h1>
@@ -9,41 +10,6 @@ title: Basil.js
   featured projects:
 -->
 <style>
-  .featured-projects {
-    height: 25em;
-  }
-
-  ul.featured-projects-list {}
-
-  .featured-project-thumb {
-    max-width: 100%;
-    height: auto;
-    /* width: 1280px; */
-    /* height: 720px; */
-  }
-
-  li.featured-project {
-    position: relative;
-    list-style: none;
-    display: none;
-  }
-
-  .featured-project-title {
-    margin: 0;
-    position: absolute;
-    float: left;
-    left: 0px;
-    top: -3.2em;
-    z-index: 1000;
-    background-color: white;
-    padding-right: 1em;
-    padding-left: 0.5em;
-    width:100%;
-  }
-
-  img.featured-project-thumb {
-    display: inline;
-  }
 </style>
 <section class="featured-projects">
   <ul class="featured-projects-list">
@@ -51,7 +17,19 @@ title: Basil.js
     <li class="featured-project">
       <div class="featured-project-title">
         <span class="textshrink">{{ project.title }}</span><br>
-        <span>by {Author Names}</span>
+        <span>by </span>{%- for author in project.authors -%}
+  {%- if author.url != null -%}
+    <a href="{{author.url}}">{{author.name}}</a>
+    {%- if forloop.last == false -%}
+    <span>{% if forloop.rindex0  != 1 %}, {% else %} and {% endif %}</span>
+    {%- endif -%}
+  {%- else -%}
+    {{author.name}}
+    {%- if forloop.last == false -%}
+    <span>{% if forloop.rindex0  != 1 %}, {% else %} and {% endif %}</span>
+    {%- endif -%}
+  {%- endif -%}
+{%- endfor -%}
       </div>
       <a href="{{project.url}}" class="featured-project-link">
         <img src="{{project.url}}/splash.png" class="featured-project-thumb"
@@ -62,28 +40,6 @@ title: Basil.js
     {%- endfor -%}
   </ul>
 </section>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    if ([...document.body.classList].includes('basiljs')) {
-      const elements = document.querySelectorAll('.featured-project');
-      if(elements.length !== 0){
-        let idx = 0;
-        elements[0].style.display = 'inline';
-
-        const interval = setInterval(()=>{
-          elements[idx%elements.length].style.display = 'inline';
-          elements.forEach((ele, i)=>{
-            if(i !== idx%elements.length){
-              ele.style.display = 'none';
-            }
-          });
-          idx++;
-        },2000);
-      }
-    }
-  });
-</script>
 
 {%- capture md -%}
 

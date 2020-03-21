@@ -8,6 +8,7 @@ authors:
     url: null
 
 layout: gallery-item
+publish: true
 title: "Breaking the Grid"
 description: Our goal was to relate our experiments to the given text (Program or Be Programmed by Douglas Rushkoff), for example, when you take a program as it is you find yourself in a grid with certain limitations; however when you learn to control the program you allow yourself to stray from the grid, break free from it.
 ---

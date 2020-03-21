@@ -317,7 +317,8 @@ h6 {
   color: $headLineColor;
 }
 
-h4.entries-title {
+h4.entries-title,
+h4.entry-heading {
   text-decoration: none !important;
 }
 
@@ -395,7 +396,7 @@ ul {
 
 // ------------ code
 //
-@import "./scss/syntax.scss";
+@import "./scss/_syntax.scss";
 
 pre {
   background: #eee !important;
@@ -486,8 +487,8 @@ a.textgrow {
   }
 }
 
-@import "./scss/_guidelines.scss", "./scss/reference.scss",
-  "./scss/changelog.scss";
+@import "./scss/_guidelines.scss", "./scss/_reference.scss",
+  "./scss/_changelog.scss", "./scss/_featured-projects.scss";
 
 // ------------------------
 // old basil css. Overwrite new settings
