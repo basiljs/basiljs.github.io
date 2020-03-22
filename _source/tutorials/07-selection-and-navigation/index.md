@@ -7,7 +7,7 @@ description: "How to stroll around in the InDesign object model."
 
 ## Get the mouse selection
 
-```
+```js
 // @includepath "~/Documents/;%USERPROFILE%Documents";
 // @include "basiljs/basil.js";
 
@@ -37,7 +37,7 @@ function draw() {
 - Also good for changing certain items only that you select by e.g. aesthetical criteria
 
 ## Add, get and set a layer
-```
+```js
 // @includepath "~/Documents/;%USERPROFILE%Documents";
 // @include "basiljs/basil.js";
 
@@ -62,7 +62,7 @@ function draw() {
 - You can also use layers to select and alter the new items easily or set them to invisible
 
 ##Process all objects from a layer, page or document 
-```
+```js
 // @includepath "~/Documents/;%USERPROFILE%Documents";
 // @include "basiljs/basil.js";
 
@@ -91,7 +91,7 @@ function draw() {
 
 <!--
 ## Changing strokeColor, strokeWeight and fillColor on existing items
-```
+```js
 // @includepath "~/Documents/;%USERPROFILE%Documents";
 // @include "basiljs/basil.js";
 
@@ -110,7 +110,7 @@ function draw() {
 -->
 
 ## Attaching labels to created items
-```
+```js
 // @includepath "~/Documents/;%USERPROFILE%Documents";
 // @include "basiljs/basil.js";
 
@@ -150,7 +150,7 @@ select() is cancelling selection on previously selected things...
 <!-- ## How to use the Adobe Object Model and work with collections -->
 
 ## Cleaning up and removing stuff
-```
+```js
 // @includepath "~/Documents/;%USERPROFILE%Documents";
 // @include "basiljs/basil.js";
 

@@ -5,7 +5,7 @@ title: "Transform PageItems"
 description: "Moving things around (i.e. PageItem) that you have created in code or by mouse."
 ---
 
-```
+```js
 // @includepath "~/Documents/;%USERPROFILE%Documents";
 // @include "basiljs/basil.js";
 
@@ -52,6 +52,5 @@ function draw() {
   }
 
   r.remove();
-
 }
 ```

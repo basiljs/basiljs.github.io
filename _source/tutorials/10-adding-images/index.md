@@ -11,11 +11,12 @@ When adding images to your document, one of the most important factors is where 
 While it is best practice to keep resources for InDesign close to the actual document, sometimes you may want to keep a pool of images in one location that multiple documents can reach. 
 
 Before we begin, download the following image and save it into your ~/Pictures/ folder: 
-![image-example.jpg](images/image-example.jpg)
+
+<img src="images/image-example.jpg" style="width:100px;">
 
 Now we can import this image using the following code (on OS X):
 
-```
+```js
 // @includepath "~/Documents/;%USERPROFILE%Documents";
 // @include "basiljs/basil.js";
 
@@ -31,7 +32,7 @@ function draw() {
 ## 2. Importing images with a relative path
 Once we have saved our InDesign file, we can use clean relative paths to find images located near our document. Begin by creating a new document and save it within it's own folder somewhere on your computer. Create a new script with the following code and run it once:
 
-```
+```js
 // @includepath "~/Documents/;%USERPROFILE%Documents";
 // @include "basiljs/basil.js";
 
@@ -52,7 +53,7 @@ Take a journey to our tutorial on this subject: [Getting Images from URLs](/tuto
 ## 4. Reposition and resizing images
 While the first example showed that the image() function can be used to set a size when first creating the image, we can easily change these attributes after the fact using the [`transform()`](/reference/#transform) function:
 
-```
+```js
 // @includepath "~/Documents/;%USERPROFILE%Documents";
 // @include "basiljs/basil.js";
 
@@ -74,10 +75,10 @@ Note that we are now using a variable before generating our second image, thus a
 ## 5. Set image blending modes
 The minute you start playing with multiple images and type, blending modes such as 'multiply' will quickly be needed. Here we can change both the blendMode and opacity once we have generated our image by adding the following code beneath it:
 
-```
+```js
  blendMode(img, MULTIPLY);
  opacity(img, 50); // from 0 - 100
-</pre>
+```
 
 Here is a long list of additional blendMode settings to used,
 
@@ -109,7 +110,7 @@ Beyond importing images, try importing your image with a loop and have some of t
 ## 6. Set orientation point for images
 By default the image coordinates are being referenced from the upper left corner. This is very helpful when adjusting the size of the image and knowing where it will go, but often it can be more useful to change that reference point to the center if aligning with other objects.
 
-```
+```js
 // @includepath "~/Documents/;%USERPROFILE%Documents";
 // @include "basiljs/basil.js";
 
@@ -130,7 +131,7 @@ function draw() {
 ## Bonus - Replace type with images
 Here is the code from the last example in our basil.js video teaser. It finds all b's within a body of text and replaces them with that lovely leaf. 
 
-```
+```js
 // @includepath "~/Documents/;%USERPROFILE%Documents";
 // @include "basiljs/basil.js";
 

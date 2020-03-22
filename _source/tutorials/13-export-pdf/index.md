@@ -5,26 +5,28 @@ title: "Export PDF"
 description: "Create hundreds of variation in a single InDesign project."
 ---
 
-```
+```js
 // @includepath "~/Documents/;%USERPROFILE%Documents";
 // @include "basiljs/basil.js";
 
-function draw() {
-  
-  textSize(64);
-  var tf = text("this content will be overwritten", width/2-250, height/2-150, 500, 300);
-  
-  for (var i = 0; i < 20; i++) {
-    tf.contents = "hello pdf " + i;
-    savePDF("hello-pdf-" + i + ".pdf");
+function draw(){
+  pageCount(1); // clear any previous pages
+  var numPages = 10; // set number of pages to generate
+
+  for (var i=0; i < numPages; i++) {
+    if(i > 0){
+      addPage(); // add new page if not first page
+    }
+    textSize(10 + i * 10);
+    text("page " + (i + 1), 0, 0, width, height);
   }
-  
-  // show export options
-  //savePDF("hello.pdf",true);
+
+  savePDF("PDFdemo_" + timestamp() + ".pdf"); // exports file with current PDF settings
+  // savePDF(timestamp()+".pdf", true); // brings up dialog box for PDF settings
 }
 ```
 
-- The InDesign document needs to be saved first so that basil.js knows where to put the exported PDF.
-- The second parameter can turn on the export settings dialog for quality, etc
-- If the second parameter is not given savePDF will use the previous export settings.
+- The InDesign document needs to be saved first, so basil.js knows where it can export the pdf.
+- The second parameter activates the PDF export dialog for adjusting export settings.
+- If the second parameter is not given `savePDF()` will use the previous export settings.
 

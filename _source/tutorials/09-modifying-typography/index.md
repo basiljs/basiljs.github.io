@@ -8,7 +8,7 @@ description: "Changing InDesign text programatically."
 ## 1. Getting started with type
 
 ### Add basic text box
-```
+```js
 // @includepath "~/Documents/;%USERPROFILE%Documents";
 // @include "basiljs/basil.js";
 
@@ -24,7 +24,7 @@ Visit our reference section on [`text()`](/reference/#text) for additional typog
 
 ### Change type attributes
 Add these one at a time *before* your text frame, as they only effect proceeding `text()`.
-```
+```js
 textFont("Helvetica", "Regular"); 
 // copy name exactly as found when selecting fonts by pull-down menu
 // optional 2nd param to specify font-weight
@@ -36,14 +36,14 @@ textTracking(500);
 ### Overflowing text
 If the font gets too big, you'll see that the type is now flowing past the bounds of the box, so let's resize it. In order to change the TextFrame we just built, we need to create it as a variable so that we can easily refer to it later. To do this, simply changing the following:
 
-```
+```js
 // text("hello world", 0, 0, 350, 50);
 var myFrame = text("hello world", 0, 0, 350, 50);
 ```
 
 Note the 'var myFrame = ' placed in front of our text() code.<br>
 We can now refer to it and resize it, by writing the following after our manipulations:
-```
+```js
 transform(myFrame, "size", [width, height]);
 ```
 
@@ -51,7 +51,7 @@ The bounding box is now as big as our page's width + height.
 ### Styling those contents
 
 Now that you can refer to your text frame, let's change further attributes inside using the all encompassing `typo()` function:
-```
+```js
 typo(myFrame, 'pointSize', 100);
 typo(myFrame, 'strikeThru', true); // add strike through
 typo(myFrame, 'characterRotation', -45); // add strike through
@@ -71,7 +71,7 @@ If creating a generative book across multiple pages, you'll surely want to know 
 
 Start with a new document and let's build two very generative text frames 
 
-```
+```js
 // @includepath "~/Documents/;%USERPROFILE%Documents";
 // @include "basiljs/basil.js";
 
@@ -86,14 +86,14 @@ function draw() {
 
 To link these text boxes, you simply write the following after they have been created:
 
-```
+```js
 linkTextFrames(myFrame1, myFrame2);
 ```
 
 If you saw the type leave myFrame2 and join myFrame1, then they have been properly linked.<br>
 Just to test out that it's working, try flowing some placeholder text through the two text frames:
 
-```
+```js
 typo(myFrame1, "contents", ""); // clear the current text
 myFrame1.contents = TextFrameContents.placeholderText;
 ```
@@ -106,14 +106,14 @@ Each can be set in the following way:
 
 Before you generate the text frame
 
-```
+```js
 textAlign(CENTER_ALIGN);
 // var myFrame1 = text("this is frame 1", 30, 30, 300, 300);
 ```
 
 After you've generated the text frame
 
-```
+```js
 // var myFrame1 = text("this is frame 1", 30, 30, 300, 300);
 typo(myFrame1, "justification", Justification.CENTER_ALIGN);
 ```
@@ -136,7 +136,7 @@ Refer to the following list for setting various justifications:
 
 Note: vertical justification of a text frame should be done before generating it, also using the [`textAlign()`](/reference/#textAlign) function.
 
-```
+```js
 textAlign(Justification.FULLY_JUSTIFIED, VerticalJustification.CENTER_ALIGN);
 ```
 
@@ -157,7 +157,7 @@ Incase you are not opening an old project, create a new document and place a new
 
 To begin let's get our selected text frame or text into something that we can refer to by code, a variable:
 
-```
+```js
 // @includepath "~/Documents/;%USERPROFILE%Documents";
 // @include "basiljs/basil.js";
 
@@ -170,7 +170,7 @@ This code is looking for an object or text that is selected and grabs the very f
 
 Next let's break the selection down and isolate every single word within the text. Todo this, we have two ways to walk forward. Both accomplish the exact same task, but approach it quite differently.  
 
-```
+```js
 words(selItems, function(w, n){
   typo(w, "pointSize", n+1);
 });
@@ -180,7 +180,7 @@ The snippet above is the most efficient way to cycle through all of the words, o
 
 Think about how long that would take you with the mouse...!
 
-```
+```js
 var myWords = words(selItems);
 
 for (var i = 0; i < myWords.length; i++) {
@@ -208,7 +208,7 @@ and test different combinations of modifying the content based on typo() or othe
 ## 4. Example - Website typo
 Here is a quick script demonstrating how to recreate the headlines as seen on this website:
 
-```
+```js
 // @includepath "~/Documents/;%USERPROFILE%Documents";
 // @include "basiljs/basil.js";
 
