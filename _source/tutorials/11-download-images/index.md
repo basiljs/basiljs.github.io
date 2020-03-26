@@ -9,7 +9,7 @@ Obviously you have to download a resources first, before you can you can make us
 
 For the download part basil.js provides a `download()` function. Depending where you want to save the file you have to set the second parameter (optional) eg.:
 
-```
+```js
 // @includepath "~/Documents/;%USERPROFILE%Documents";
 // @include "basiljs/basil.js";
 
@@ -33,7 +33,7 @@ function draw() {
 
 If you want to add afterwards the image to a document, you simply have to know where you've saved the file earlier. You can use for instance `image()` to add an image to the current page.
 
-```
+```js
 // @includepath "~/Documents/;%USERPROFILE%Documents";
 // @include "basiljs/basil.js";
 

@@ -12,7 +12,7 @@ Create a new file and save it to helloworld.jsx within your user folder. Copy an
 
 ## Simple Hello World example
 
-```
+```js
 // @includepath "~/Documents/;%USERPROFILE%Documents";
 // @include "basiljs/basil.js";
 
@@ -29,7 +29,7 @@ Now run the script... either by pressing the play button from within the ExtendS
 
 No wonder, the statement
 
-```
+```js
 println( "Hello World!" );
 ```
 
@@ -41,7 +41,7 @@ Printing to the console is nice, but actually far from what basil.js is designed
 
 ## Hello World example using a textbox
 
-```
+```js
 // @includepath "~/Documents/;%USERPROFILE%Documents";
 // @include "basiljs/basil.js";
 
