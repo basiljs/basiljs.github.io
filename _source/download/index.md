@@ -19,13 +19,13 @@ the steps in our [installation guide](/tutorials/01-getting-started) at our tuto
 ## Cheatsheets and References
 
 The basil.js cheatsheet:
-[basiljs-cheatsheet-0.3](/assets/files/basiljs-cheatsheet.pdf)
+[basiljs_cheatsheet_v2_02.pdf](/assets/files/basiljs_cheatsheet_v2_02.pdf)
 
 The basil.js InDesign Object Model:
-[basiljs-IOM-0.2](/assets/files/basiljs-IOM-0.2.pdf)
+[basiljs-IOM-0.2.pdf](/assets/files/basiljs-IOM-0.2.pdf)
 
 The basil.js b.typo cheatsheet:
-[basiljs_b_typo_cheatsheet_v0_2.pdf](/assets/files/basiljs_b_typo_cheatsheet_v0_2.pdf)
+[basiljs_typo_cheatsheet_v2_01.pdf](/assets/files/basiljs_typo_cheatsheet_v2_01.pdf)
 
 ## Source code
 

@@ -3,9 +3,11 @@
   "version": "0.1.0",
   "description": "the docs for Basil.js",
   "scripts": {
+    "dev": "npm-run-all --parallel  webpack:dev jekyll:dev",
+    "build": "npm run build:api-markup && npm run webpack:prod && bundle exec jekyll build",
     "test": "echo \"no test specified\" && exit 0",
-    "webpack:dev": "webpack --config webpack-config/index.js --env dev --colors --progress --watch",
-    "webpack:prod": "webpack --config webpack-config/index.js --env prod --colors --progress",
+    "webpack:dev": "cross-env NODE_ENV=development webpack --progress --info-verbosity  --colors --config webpack/webpack.config.dev.js",
+    "webpack:prod": "cross-env NODE_ENV=production webpack --config webpack/webpack.config.prod.js --colors",
     "jekyll:dev": "bundle exec jekyll serve --livereload --incremental --limit_posts 5",
     "jekyll:prod": "JEKYLL_ENV=production bundle exec jekyll build",
     "documentationjs": "documentation",
@@ -28,29 +30,44 @@
   },
   "homepage": "https://github.com/basiljs/basiljs.github.io#readme",
   "devDependencies": {
-    "@babel/core": "^7.5.5",
-    "@babel/plugin-transform-runtime": "^7.5.5",
-    "@babel/preset-env": "^7.5.5",
-    "@babel/runtime": "^7.5.5",
-    "acorn": "^7.0.0",
-    "babel-loader": "^8.0.6",
+    "@babel/core": "7.5.5",
+    "@babel/plugin-transform-runtime": "7.5.5",
+    "@babel/preset-env": "7.5.5",
+    "@babel/runtime": "7.5.5",
+    "acorn": "7.1.1",
+    "autoprefixer": "9.7.4",
+    "babel-loader": "8.0.6",
     "basiljs": "github:basiljs/basil.js#develop",
-    "cz-conventional-changelog": "^3.0.2",
-    "documentation": "^12.1.1",
-    "eslint": "^6.1.0",
-    "eslint-config-unobtrusive": "^1.2.3",
-    "eslint-plugin-babel": "^5.3.0",
-    "flexsearch": "^0.6.30",
-    "fs-extra": "^8.1.0",
-    "husky": "^3.0.3",
-    "jquery": "^3.4.1",
-    "lodash": "^4.17.15",
-    "normalize.css": "^8.0.1",
-    "p5": "^0.9.0",
-    "path-exists": "^4.0.0",
-    "webpack": "^4.39.2",
-    "webpack-cli": "^3.3.6",
-    "yamljs": "^0.3.0"
+    "cross-env": "7.0.2",
+    "css-loader": "3.4.2",
+    "cssnano": "4.1.10",
+    "cz-conventional-changelog": "3.0.2",
+    "documentation": "12.1.1",
+    "eslint": "6.1.0",
+    "eslint-config-unobtrusive": "1.2.3",
+    "eslint-plugin-babel": "5.3.0",
+    "extract-loader": "5.0.1",
+    "file-loader": "^6.0.0",
+    "flexsearch": "0.6.30",
+    "fs-extra": "^9.0.0",
+    "husky": "^4.2.3",
+    "jquery": "3.4.1",
+    "lodash": "4.17.15",
+    "node-sass": "4.13.1",
+    "normalize.css": "8.0.1",
+    "npm-run-all": "4.1.5",
+    "p5": "^1.0.0",
+    "path-exists": "4.0.0",
+    "postcss-cli": "7.1.0",
+    "postcss-load-config": "2.1.0",
+    "postcss-loader": "3.0.0",
+    "sass-loader": "8.0.2",
+    "ts-loader": "6.2.1",
+    "typescript": "3.8.3",
+    "webpack": "4.39.2",
+    "webpack-cli": "3.3.6",
+    "webpack-merge": "4.2.2",
+    "yamljs": "0.3.0"
   },
   "dependencies": {},
   "config": {
@@ -62,5 +79,42 @@
     "hooks": {
       "pre-commit": "#npm run webpack:prod && git add _source/assets/js"
     }
+  },
+  "browserslist": [
+    ">5%",
+    "last 2 versions",
+    "not dead",
+    "Firefox ESR",
+    "not IE 11",
+    "not IE_Mob 11",
+    "maintained node versions"
+  ],
+  "//comment-postcss": "cssnano is configured based on NODE_ENV in webpack",
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "renovate": {
+    "extends": [
+      "config:base"
+    ],
+    "packageRules": [
+      {
+        "packageNames": [
+          "basiljs"
+        ],
+        "enabled": false
+      },
+      {
+        "updateTypes": [
+          "minor",
+          "patch",
+          "pin",
+          "digest"
+        ],
+        "automerge": true
+      }
+    ]
   }
 }

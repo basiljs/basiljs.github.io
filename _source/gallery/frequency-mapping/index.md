@@ -3,6 +3,7 @@ authors:
   - name: Nicole Lesniak
     url: null
 layout: gallery-item
+publish: true
 title: "Frequency mapping"
 description: The goal of this code was to enlarge the most used words and then the least used words in a document. The code was applied to three different kinds of texts – a persuasive essay, a science fiction movie script, and an instructional guide.
 

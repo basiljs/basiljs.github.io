@@ -6,6 +6,7 @@ authors:
     url: null
 
 layout: gallery-item
+publish: true
 title: "Affected  Perception"
 description: The automated design works with the typographical layout content. Out of the manual word categorization eight arrays are sorted after the word importance. The automated scripting changes the words in the single arrays after the defined objectstyles. Through this the most important word groups stay readable and the less important word groups get less readable.
 ---

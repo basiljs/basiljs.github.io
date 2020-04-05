@@ -1,8 +1,8 @@
 ---
 layout: entry
 title: Vector.dist
-codetitle: 'Vector.dist(v, [y], [z])'
-description: 'Calculates the distance from this vector to another as `x`, `y`, and `z` components or full vector.'
+codetitle: 'Vector.dist(v1, v2)'
+description: 'Static function. Calculates the Euclidean distance between two points (considering a point as a vector object). Is meant to be called "static" i.e. `Vector.dist(v1, v2);`'
 category: Math
 subcategory: Vector
 returns:
@@ -10,9 +10,14 @@ returns:
     description: 'The distance.'
     type: [Number]
 parameters:
-    - {name: v, description: 'Either a full vector or an `x` component.', optional: false, type: [Vector, Number]}
-    - {name: y, description: 'The `y` component.', optional: true, type: [Number]}
-    - {name: z, description: 'The `z` component.', optional: true, type: [Number]}
+    - {name: v1, description: 'The first vector.', optional: false, type: [Vector]}
+    - {name: v2, description: 'The second vector.', optional: false, type: [Vector]}
+kind: function
+todo: null
+examples: []
+
+---
+}
 kind: function
 todo: null
 examples: []

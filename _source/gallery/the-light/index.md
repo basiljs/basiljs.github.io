@@ -6,6 +6,7 @@ authors:
     url: null
 
 layout: gallery-item
+publish: true
 title: "The Light"
 description: The project visually emphasizes the role of scripting by comparing it with natural light situation. By applying either light or scripting on a page, it simply creates new images on the page and can be completely converted into something new.
 

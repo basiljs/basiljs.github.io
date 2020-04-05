@@ -15,7 +15,7 @@ description: "Adding new shapes and color swatches."
 
 
 ### 1. Filling the paper with a rect() by reading its size
-```
+```js
 // @includepath "~/Documents/;%USERPROFILE%Documents";
 // @include "basiljs/basil.js";
 
@@ -30,12 +30,11 @@ function draw() {
 
 ### How to account for margins or bleed settings
 
-```
+```js
 // @includepath "~/Documents/;%USERPROFILE%Documents";
 // @include "basiljs/basil.js";
 
 function draw() {
-
     noFill();
     stroke(0, 255, 0);
 
@@ -49,7 +48,6 @@ function draw() {
     rect(0, 0, width, height);    
 
    //  the following examples only work for documents with facing pages
-
    canvasMode(FACING_MARGINS); 
    rect(0, 0, width, height);
 
@@ -67,12 +65,11 @@ function draw() {
 - You can still use other spots of the canvas with extreme coordinates as the canvas modes are not limiting you down to them.
 
 ### 2. Generate several swatches with color() and paint with rect()
-```
+```js
 // @includepath "~/Documents/;%USERPROFILE%Documents";
 // @include "basiljs/basil.js";
 
 function draw() {
-
   colorMode(RGB); // this is the default anyways
 
   // create new RGB color
@@ -114,7 +111,7 @@ function draw() {
 <!-- Exercise: Create a horizontal rainbow -->
 
 ### 3. Using random() to pick a color and fill the background
-```
+```js
 // @includepath "~/Documents/;%USERPROFILE%Documents";
 // @include "basiljs/basil.js";
 
@@ -130,7 +127,7 @@ function draw() {
 
 
 ### 4. Using line() to create a cross
-```
+```js
 // @includepath "~/Documents/;%USERPROFILE%Documents";
 // @include "basiljs/basil.js";
 
@@ -146,7 +143,7 @@ function draw() {
 <!--  Exercise: Create a Haus of Nikolaus -->
 
 ### 5. Using random() and ellipse() to fill the page with circles
-```
+```js
 // @includepath "~/Documents/;%USERPROFILE%Documents";
 // @include "basiljs/basil.js";
 
@@ -169,7 +166,7 @@ function draw() {
 
 
 ### 6. Using a for-loop and map() to create a gradient
-```
+```js
 // @includepath "~/Documents/;%USERPROFILE%Documents";
 // @include "basiljs/basil.js";
 
@@ -190,7 +187,7 @@ function draw() {
 
 
 ### 8. Using random() and nested for loops to create a matrix of lines 
-```
+```js
 // @includepath "~/Documents/;%USERPROFILE%Documents";
 // @include "basiljs/basil.js";
 

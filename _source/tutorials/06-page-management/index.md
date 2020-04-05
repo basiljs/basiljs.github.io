@@ -6,7 +6,7 @@ description: "How to add, remove, count and manage the pages of your document."
 ---
 
 ## Adding pages 
-```
+```js
 // @includepath "~/Documents/;%USERPROFILE%Documents";
 // @include "basiljs/basil.js";
 
@@ -18,19 +18,19 @@ function draw() {
 ```
 
 ## Removing pages
-```
-    // removes current page
-    removePage();
+```js
+// removes current page
+removePage();
     
-    // fill up again...
-    addPage();
+// fill up again...
+addPage();
 
-    // removes page 1
-    removePage(1);
+// removes page 1
+removePage(1);
 ```
 
 ## Using references to pages
-```
+```js
 // @includepath "~/Documents/;%USERPROFILE%Documents";
 // @include "basiljs/basil.js";
 
@@ -49,7 +49,7 @@ function draw() {
 - You can pass a PageItem such as a TextFrame to `page()` in order to jump to the page that contains the given PageItem
 
 ## Populating larger documents and adding between pages
-```
+```js
 // @includepath "~/Documents/;%USERPROFILE%Documents";
 // @include "basiljs/basil.js";
 

@@ -6,6 +6,7 @@ authors:
     url: null
 
 layout: gallery-item
+publish: true
 title: "Alphabet  Bars"
 description: Our designs visualize the text, Program or Be Programmed by Douglas Rushkoff, alphabetically with rectangles of varying length. The length of each rectangle or bar is determined by the amount of times a letter or character appears on the page. Our goal was to use JavaScript to deconstruct the meaning of text completely, and reorganize and restructure the way it is read.
 

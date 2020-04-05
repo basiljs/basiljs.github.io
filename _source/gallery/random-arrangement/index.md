@@ -6,6 +6,7 @@ authors:
     url: null
 
 layout: gallery-item
+publish: true
 title: "Random Arrangement of Vectors"
 description: Ornamental generators by using pre-designed Vector shapes from within Adobe InDesign and repeat them through code in a 2D matrix.
 ---

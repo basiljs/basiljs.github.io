@@ -18,19 +18,26 @@
         exclude the root path
         -->
       {% assign pages = site.pages | sort: 'order'  %}
-      {% for item in pages %}{% if item.layout != 'entry' %}{%if item.layout == 'default' or item.layout == 'reference' %}{% if item.url != '/' %}
+      {% for item in pages %}{% if item.layout != 'entry' %}{%if item.layout == 'default' or item.layout == 'reference' or item.layout == 'gallery' %}{% if item.url != '/' %}
       <li class="menu-item {% if item.title == page.title %}active{% endif %}"><a href="{{item.url}}"
           class="textgrow menu-link">{{item.title}}</a></li>
       {% endif %}{% endif %}{% endif %}{% endfor %}
 
     </ul>
     <div class="tweet">
+      <p>Latest Tweets:</p>
       <div class="message"></div>
       <div class="tweettime"></div>
       <div class="twitter-link"><a href="https://twitter.com/basil_js" class="textgrow menu-link">@basil_js</a></div>
     </div>
-    <div class="fhnw-logo">
-      <a href="https://www.fhnw.ch/hgk/ivk"><img src="/assets/images/fhnwlogo.png" alt="FHNW logo and link"></a>
+    <div class="sponsors-text">
+      <p>Generously sponsored by</p>
+    </div>
+    <div class="logo">
+      <a href="https://www.fhnw.ch/hgk/ivk"><img src="/assets/images/fhnw-logo.svg" alt="FHNW logo and link"></a>
+    </div>
+    <div class="logo">
+      <a href="https://www.netlify.com/"><img src="/assets/images/netlify-logo-light-simple.svg" alt="Netlify logo"></a>
     </div>
   </nav>
 </aside>

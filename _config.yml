@@ -25,9 +25,10 @@ url: "https://basiljs.github.io/" # the base hostname & protocol for your site, 
 twitter_username: basil_js
 github_username:  basiljs
 
-sass:
-    style: compressed
-    sass_dir: _sass
+host: 0.0.0.0
+# sass:
+#     style: compressed
+#     sass_dir: _sass
 # Build settings
 markdown: kramdown
 # kramdown:
@@ -36,6 +37,7 @@ highlighter: rouge
 plugins:
   - jekyll-feed
 exclude:
+  - assets/ts
   - Gemfile
   - Gemfile.lock
   - package.json
