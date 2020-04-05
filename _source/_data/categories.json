@@ -2672,7 +2672,7 @@
       },
       {
         "name": "margins",
-        "description": "Sets the margins of a given page. If 1 value is given, all 4 sides are set equally. If 4 values are given, the current page will be adjusted. Adding a 5th value will set the margin of a given page. Calling the function without any values, will return the margins for the current page.",
+        "description": "Sets the margins of a given page. If 1 value is given, all 4 sides are set equally. If 4 values are given, the current page will be adjusted. Optionally a page number or name can be given to set the margins of a specific page. Calling the function without any values will return the margins for the current page.",
         "returns": {
           "name": null,
           "description": "Current page margins with the properties: `top`, `right`, `bottom`, `left`.",
@@ -2717,7 +2717,7 @@
           },
           {
             "name": "pageNumber",
-            "description": "Sets margins to selected page, currentPage() if left blank.",
+            "description": "Page number, page name or page object of the page with margins to set; current page if left blank.",
             "optional": true,
             "type": [
               "Number"
@@ -2732,7 +2732,7 @@
           },
           {
             "title": "description",
-            "description": "Sets the margins of a given page. If 1 value is given, all 4 sides are set equally. If 4 values are given, the current page will be adjusted. Adding a 5th value will set the margin of a given page. Calling the function without any values, will return the margins for the current page."
+            "description": "Sets the margins of a given page. If 1 value is given, all 4 sides are set equally. If 4 values are given, the current page will be adjusted. Optionally a page number or name can be given to set the margins of a specific page. Calling the function without any values will return the margins for the current page."
           }
         ],
         "examples": [],
@@ -3307,7 +3307,7 @@
       },
       {
         "name": "duplicate",
-        "description": "Duplicates the given page after the current page or the given page item to the current page and layer. Use `rectMode()` to set center point.",
+        "description": "Duplicates the given page after the current page or the given page item to the current page and layer. If a page is duplicated, basil.js automatically jumps to the new page.",
         "returns": {
           "name": null,
           "description": "The new page item or page.",
@@ -3336,7 +3336,7 @@
           },
           {
             "title": "description",
-            "description": "Duplicates the given page after the current page or the given page item to the current page and layer. Use `rectMode()` to set center point."
+            "description": "Duplicates the given page after the current page or the given page item to the current page and layer. If a page is duplicated, basil.js automatically jumps to the new page."
           }
         ],
         "examples": [],
