@@ -4,9 +4,26 @@ $solidline: 1px solid $guidecolor;
 
 @import "./_mixins.scss";
 
+h4.entries-title,
+h4.entry-heading {
+  text-decoration: none !important;
+}
+
+.h3-subcat {
+  color: lighten($headLineColor, 20%);
+}
 .index {
   -webkit-column-width: 250px;
   column-width: 250px;
+}
+.entry {
+  border-bottom: 1px dashed #000;
+  padding-right: 2em;
+}
+.descriptions {
+  code {
+    display: inline;
+  }
 }
 
 .category {
