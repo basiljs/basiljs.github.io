@@ -2,14 +2,24 @@
   <a href="/">
     <div class="logo" id="logo"></div>
   </a>
-  <div class="nav-o-meter">
+  <!-- <div class="nav-o-meter">
     <ul class="bars">
       <li></li>
       <li></li>
       <li></li>
     </ul>
-  </div>
+  </div> -->
   <nav class="main-menu">
+    <input type="checkbox" role='button'
+                     aria-label='menu'
+            aria-expanded='false'
+           class='navbar-burger-toggle is-hidden' id="navbar-burger-toggle">
+    <label for="navbar-burger-toggle" class="navbar-burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <div class="navbar-menu">
     <ul>
       <!--
         loop all pages
@@ -39,5 +49,7 @@
     <div class="logo">
       <a href="https://www.netlify.com/"><img src="/assets/images/netlify-logo-light-simple.svg" alt="Netlify logo"></a>
     </div>
+  </div>
+
   </nav>
 </aside>

@@ -1,0 +1,101 @@
+@import "./mixins";
+@import "./variables.scss";
+/**
+   * Based on
+   * https://codepen.io/erikterwan/pen/EVzeRP
+   * Made by Erik Terwan
+   * MIT License
+   */
+.is-hidden {
+  display: none;
+}
+
+.navbar-burger {
+  display: none;
+}
+
+.navbar-burger {
+  @include media($phone) {
+    display: block;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+  }
+}
+.navbar-burger span {
+  display: block;
+  width: 33px;
+  height: 1px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #cdcdcd;
+  border-radius: 0px;
+  z-index: 1;
+  transform-origin: 0px 0px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+
+.navbar-burger-toggle {
+  cursor: pointer;
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  opacity: 0;
+  /* hide this */
+  z-index: 2;
+  /* and place it over the hamburger */
+  -webkit-touch-callout: none;
+}
+
+/* Fix hamburger button position. */
+/* Hamburger/X animation (1/3). */
+.navbar-burger-toggle:checked + .navbar-burger span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-9px, -8px);
+  background: #232323;
+}
+
+/* Hamburger/X animation (1/3). */
+.navbar-burger-toggle:checked + .navbar-burger span:nth-child(1) {
+  transform-origin: 0% 0%;
+}
+
+/* Hamburger/X animation (2/3). */
+.navbar-burger-toggle:checked + .navbar-burger span:nth-child(2) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/* Hamburger/X animation (3/3). */
+.navbar-burger-toggle:checked + .navbar-burger span:nth-child(3) {
+  transform-origin: 0% 100%;
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/* Display menu when it's checked. */
+.navbar-burger-toggle:checked ~ .navbar-menu {
+  display: block;
+  opacity: 1;
+  // transform-origin: 0% 0%;
+  // transform: translate(100%, 0);
+  transition: opacity 0.75s ease;
+}
+
+.navbar-menu {
+  @include media($phone) {
+    opacity: 0;
+  }
+  /*display: none;*/
+  // transform: translate(-100%, 0);
+  // transition: opacity 0.75s ease, transform 0.5s;
+}
+
+nav {
+  position: absolute;
+  /*background: red;*/
+}
