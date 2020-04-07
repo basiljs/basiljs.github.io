@@ -35,7 +35,7 @@
     "@babel/preset-env": "7.5.5",
     "@babel/runtime": "7.5.5",
     "acorn": "7.1.1",
-    "autoprefixer": "9.7.4",
+    "autoprefixer": "9.7.6",
     "babel-loader": "8.0.6",
     "basiljs": "github:basiljs/basil.js#develop",
     "cross-env": "7.0.2",
