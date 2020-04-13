@@ -796,8 +796,8 @@
     {
       "entries": [
         {
-          "name": "CSV.decode",
-          "description": "Function parses a string as CSV-object Array.",
+          "name": "CSV.parse",
+          "description": "Function parses a string as CSV-object Array, with optional custom delimiter.",
           "returns": {
             "name": null,
             "description": "Returns CSV-object Array",
@@ -815,45 +815,10 @@
               "type": [
                 "String"
               ]
-            }
-          ],
-          "kind": "function",
-          "tags": [
-            {
-              "title": "summary",
-              "description": "Decodes a CSV string to an array."
             },
             {
-              "title": "description",
-              "description": "Function parses a string as CSV-object Array."
-            }
-          ],
-          "examples": [
-            {
-              "description": null,
-              "code": "var arr = CSV.decode(str);\nvar str = CSV.encode(arr);"
-            }
-          ],
-          "todo": null,
-          "summary": "Decodes a CSV string to an array.",
-          "codetitle": "CSV.decode(String)"
-        },
-        {
-          "name": "CSV.delimiter",
-          "description": "Sets the delimiter of the CSV decode and encode function.",
-          "returns": {
-            "name": null,
-            "description": "Returns the current delimiter if called without argument",
-            "type": [
-              "String"
-            ]
-          },
-          "category": "Data",
-          "subcategory": "CSV",
-          "parameters": [
-            {
               "name": "delimiter",
-              "description": "Optional Sets the delimiter for CSV parsing",
+              "description": "optional character[s] used to separate data.",
               "optional": true,
               "type": [
                 "String"
@@ -864,21 +829,26 @@
           "tags": [
             {
               "title": "summary",
-              "description": "Sets the delimiter of the CSV decode and encode function."
+              "description": "Parses (decodes) a CSV string to an array."
             },
             {
               "title": "description",
-              "description": "Sets the delimiter of the CSV decode and encode function."
+              "description": "Function parses a string as CSV-object Array, with optional custom delimiter."
             }
           ],
-          "examples": [],
+          "examples": [
+            {
+              "description": null,
+              "code": "var arr = CSV.parse(str);\nvar str = CSV.stringify(arr);"
+            }
+          ],
           "todo": null,
-          "summary": "Sets the delimiter of the CSV decode and encode function.",
-          "codetitle": "CSV.delimiter([delimiter])"
+          "summary": "Parses (decodes) a CSV string to an array.",
+          "codetitle": "CSV.parse(String, [delimiter])"
         },
         {
-          "name": "CSV.encode",
-          "description": "Function convert an javascript array of objects to a CSV-string.",
+          "name": "CSV.stringify",
+          "description": "Function convert an javascript array of objects to a CSV-string, with optional custom delimiter.",
           "returns": {
             "name": null,
             "description": "Returns CSV-string",
@@ -896,28 +866,36 @@
               "type": [
                 "Array"
               ]
+            },
+            {
+              "name": "delimiter",
+              "description": "optional character[s] used to separate data.",
+              "optional": true,
+              "type": [
+                "String"
+              ]
             }
           ],
           "kind": "function",
           "tags": [
             {
               "title": "summary",
-              "description": "Encodes an array to a CSV string."
+              "description": "Stringifies (encodes) an array to a CSV string."
             },
             {
               "title": "description",
-              "description": "Function convert an javascript array of objects to a CSV-string."
+              "description": "Function convert an javascript array of objects to a CSV-string, with optional custom delimiter."
             }
           ],
           "examples": [
             {
               "description": null,
-              "code": "var str = CSV.encode(arr);\nvar arr = CSV.decode(str);"
+              "code": "var str = CSV.stringify(arr);\nvar arr = CSV.parse(str);"
             }
           ],
           "todo": null,
-          "summary": "Encodes an array to a CSV string.",
-          "codetitle": "CSV.encode(Array)"
+          "summary": "Stringifies (encodes) an array to a CSV string.",
+          "codetitle": "CSV.stringify(Array, [delimiter])"
         }
       ],
       "subcat": "CSV",
@@ -5248,6 +5226,53 @@
           "codetitle": "folder([folderPath])"
         },
         {
+          "name": "loadCSV",
+          "description": "Reads the contents of a CSV file and returns a CSV-object array with the data. If the file is specified by name as string, the path can point either directly at a file in the document's data directory or be specified as an absolute path.",
+          "returns": {
+            "name": null,
+            "description": "The resulting data object.",
+            "type": [
+              "Object"
+            ]
+          },
+          "category": "Input",
+          "subcategory": "Files",
+          "parameters": [
+            {
+              "name": "file",
+              "description": "The CSV file name in the document's data directory, an absolute path to a CSV file, a File instance or an URL.",
+              "optional": false,
+              "type": [
+                "String",
+                "File"
+              ]
+            },
+            {
+              "name": "delimiter",
+              "description": "optional character[s] used to separate data.",
+              "optional": true,
+              "type": [
+                "String"
+              ]
+            }
+          ],
+          "kind": "function",
+          "tags": [
+            {
+              "title": "summary",
+              "description": "Gets and parses the contents of a CSV file."
+            },
+            {
+              "title": "description",
+              "description": "Reads the contents of a CSV file and returns a CSV-object array with the data. If the file is specified by name as string, the path can point either directly at a file in the document's data directory or be specified as an absolute path."
+            }
+          ],
+          "examples": [],
+          "todo": null,
+          "summary": "Gets and parses the contents of a CSV file.",
+          "codetitle": "loadCSV(file, [delimiter])"
+        },
+        {
           "name": "loadJSON",
           "description": "Reads the contents of a JSON file and returns an object with the data. If the file is specified by name as string, the path can point either directly at a file in the document's data directory or be specified as an absolute path.",
           "returns": {
@@ -8418,6 +8443,61 @@
     },
     {
       "entries": [
+        {
+          "name": "saveCSV",
+          "description": "Encodes a CSV-object array to multi-line strings and saves it to a CSV file. If the given file exists it gets overridden.",
+          "returns": {
+            "name": null,
+            "description": "The CSV file the data was written to.",
+            "type": [
+              "File"
+            ]
+          },
+          "category": "Output",
+          "subcategory": "Files",
+          "parameters": [
+            {
+              "name": "file",
+              "description": "The file name or a File instance.",
+              "optional": false,
+              "type": [
+                "String",
+                "File"
+              ]
+            },
+            {
+              "name": "data",
+              "description": "The object to encode and save in the file.",
+              "optional": false,
+              "type": [
+                "Object"
+              ]
+            },
+            {
+              "name": "delimiter",
+              "description": "optional character[s] used to separate data.",
+              "optional": true,
+              "type": [
+                "String"
+              ]
+            }
+          ],
+          "kind": "function",
+          "tags": [
+            {
+              "title": "summary",
+              "description": "Encodes a CSV-object array to multi-line strings and saves it to a CSV file."
+            },
+            {
+              "title": "description",
+              "description": "Encodes a CSV-object array to multi-line strings and saves it to a CSV file. If the given file exists it gets overridden."
+            }
+          ],
+          "examples": [],
+          "todo": null,
+          "summary": "Encodes a CSV-object array to multi-line strings and saves it to a CSV file.",
+          "codetitle": "saveCSV(file, data, [delimiter])"
+        },
         {
           "name": "saveJSON",
           "description": "Encodes an object to a JSON string and saves it to a JSON file. If the given file exists it gets overridden.",
