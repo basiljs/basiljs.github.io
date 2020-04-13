@@ -96,7 +96,7 @@
     }
   },
   "renovate": {
-    "assignAutomerge":true,
+    "assignAutomerge": true,
     "extends": [
       "config:base"
     ],
