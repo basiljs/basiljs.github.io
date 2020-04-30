@@ -51,7 +51,7 @@
     "flexsearch": "0.6.32",
     "fs-extra": "9.0.0",
     "husky": "4.2.5",
-    "jquery": "3.4.1",
+    "jquery": "3.5.0",
     "lodash": "4.17.15",
     "node-sass": "4.14.0",
     "normalize.css": "8.0.1",
