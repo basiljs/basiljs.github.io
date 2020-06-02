@@ -45,7 +45,7 @@ exclude:
   - lib/
   - node_modules
   - test/
-  - assets/js/src/
+  - assets/js/src/old/*.js
   - .cache/
   - webpack.config/
   - bootstrap-scripts/
