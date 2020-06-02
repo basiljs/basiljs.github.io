@@ -77,3 +77,5 @@ _source/assets/js/*.bundle.js
 _source/assets/js/*.bundle.js.map
 
 _source/assets/css/styles.css
+
+.vscode
