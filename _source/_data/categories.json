@@ -7759,6 +7759,62 @@
         "todo": null,
         "summary": "Gets a text's paragraph style or gets a paragraph style by name.",
         "codetitle": "paragraphStyle(textOrName, [props])"
+      },
+      {
+        "name": "createOutlines",
+        "description": "Returns an array of polygons after outlining text and optionally processes them with a callback function.\nUse together with `pathToPoints()` for getting point and bezier coordinates from outlines. If used on a text frame,\nall linked text frames will be converted to outlines as well.",
+        "returns": {
+          "name": null,
+          "description": "Returns an array of polygons.",
+          "type": [
+            "Array"
+          ]
+        },
+        "category": "Typography",
+        "subcategory": null,
+        "parameters": [
+          {
+            "name": "item",
+            "description": "Text or TextPath to be outlined.",
+            "optional": false,
+            "type": [
+              "TextFrame",
+              "TextPath"
+            ]
+          },
+          {
+            "name": "cb",
+            "description": "Optional: Callback function to use with each polygon. Passed arguments: `obj`, `loopCounter`",
+            "optional": true,
+            "type": [
+              "Function"
+            ]
+          }
+        ],
+        "kind": "function",
+        "tags": [
+          {
+            "title": "summary",
+            "description": "Convert text items to outlines."
+          },
+          {
+            "title": "description",
+            "description": "Returns an array of polygons after outlining text and optionally processes them with a callback function.\nUse together with `pathToPoints()` for getting point and bezier coordinates from outlines. If used on a text frame,\nall linked text frames will be converted to outlines as well."
+          }
+        ],
+        "examples": [
+          {
+            "description": "Convert text to outlines",
+            "code": "textSize(150);\nvar myText = text(\"Hello\", 0, 0, width, height);\nvar outlines = createOutlines(myText);"
+          },
+          {
+            "description": "Run a callback function on each resulting shape",
+            "code": "textSize(150);\nvar myText = text(\"Hello \\nWorld\", 0, 0, width, height);\nvar outlines = createOutlines(myText, function(obj){\n  var pts = pathToPoints(obj);\n  println(pts.length); // check number of points\n});"
+          }
+        ],
+        "todo": null,
+        "summary": "Convert text items to outlines.",
+        "codetitle": "createOutlines(item, [cb])"
       }
     ],
     "cat": "Typography"
@@ -9994,6 +10050,69 @@
         "todo": null,
         "summary": "Adds a vertex during drawing complex paths or shapes.",
         "codetitle": "vertex(x, y, [xLeftHandle], [yLeftHandle], [xRightHandle], [yRightHandle])"
+      },
+      {
+        "name": "pathToPoints",
+        "description": "Returns an object containing an array of all points, an array of all beziers (points + their anchor points) and an array of all paths (containing its array of points + beziers) of a given pageItem in InDesign. Together with `createOutlines()` this can be used on text items. Accepts both single paths or a collection/group of paths.\nWhen using this on a multi path object (e.g. text with separate paths), the `paths` property can be used to loop over every path separately, whereas the properties `points` and `beziers` contain arrays for all paths combined.\nAn optional second parameter adds interpolated points between existing points, which is helpful for subdividing existing paths.",
+        "returns": {
+          "name": null,
+          "description": "Returns object with the following arrays `points`, `beziers`, `paths`",
+          "type": [
+            "Object"
+          ]
+        },
+        "category": "Shape",
+        "subcategory": null,
+        "parameters": [
+          {
+            "name": "obj",
+            "description": "The pageItem(s) to process point/bezier coordinates of.",
+            "optional": false,
+            "type": [
+              "Object"
+            ]
+          },
+          {
+            "name": "addPoints",
+            "description": "Optional amount of additional interpolated points.",
+            "optional": true,
+            "type": [
+              "Number"
+            ]
+          }
+        ],
+        "kind": "function",
+        "tags": [
+          {
+            "title": "summary",
+            "description": "Get points and bezier coordinates from path(s)."
+          },
+          {
+            "title": "description",
+            "description": "Returns an object containing an array of all points, an array of all beziers (points + their anchor points) and an array of all paths (containing its array of points + beziers) of a given pageItem in InDesign. Together with `createOutlines()` this can be used on text items. Accepts both single paths or a collection/group of paths.\nWhen using this on a multi path object (e.g. text with separate paths), the `paths` property can be used to loop over every path separately, whereas the properties `points` and `beziers` contain arrays for all paths combined.\nAn optional second parameter adds interpolated points between existing points, which is helpful for subdividing existing paths."
+          }
+        ],
+        "examples": [
+          {
+            "description": "Draw all points of a vector path",
+            "code": "noFill();\nvar myCircle = ellipse(width / 2, height / 2, width / 2, width / 2);\nvar pts = pathToPoints(myCircle);\n\nfor (var i = 0; i < pts.points.length; i++) {\n  var pt = pts.points[i];\n  ellipse(pt.x, pt.y, 3, 3);\n}"
+          },
+          {
+            "description": "With Interpolation between Points",
+            "code": "noFill();\nvar myCircle = ellipse(width / 2, height / 2, width / 2, width / 2);\nvar pts = pathToPoints(myCircle, 5); // add 5 points between each point\n\nfor (var i = 0; i < pts.points.length; i++) {\n  var pt = pts.points[i];\n  ellipse(pt.x, pt.y, 3, 3);\n}"
+          },
+          {
+            "description": "Draw Beziers and handles from Path",
+            "code": "noFill();\ntextSize(400);\nvar myText = text('S', 0, 0, width, height);\nvar myOutlines = createOutlines(myText);\nvar pts = pathToPoints(myOutlines);\n\nbeginShape();\nfor (var i = 0; i < pts.beziers.length; i++) {\n  var bz = pts.beziers[i];\n  vertex(bz.anchor.x, bz.anchor.y, bz.left.x, bz.left.y, bz.right.x, bz.right.y);\n  line(bz.anchor.x, bz.anchor.y, bz.left.x, bz.left.y); // left handle\n  line(bz.anchor.x, bz.anchor.y, bz.right.x, bz.right.y); // right handle\n}\nendShape(CLOSE);"
+          },
+          {
+            "description": "Separated Paths of Beziers",
+            "code": "noFill();\ntextSize(400);\nvar myText = text('B', 0, 0, width, height);\nvar myOutlines = createOutlines(myText);\nvar pts = pathToPoints(myOutlines); // add 3 for more detail\n\nfor (var j = 0; j < pts.paths.length; j++) {\n  var path = pts.paths[j];\n\n  beginShape();\n    for (var i = 0; i < path.beziers.length; i++) {\n      var bz = path.beziers[i];\n      vertex(bz.anchor.x, bz.anchor.y, bz.left.x, bz.left.y, bz.right.x, bz.right.y);\n      line(bz.anchor.x, bz.anchor.y, bz.left.x, bz.left.y); // left handle\n      line(bz.anchor.x, bz.anchor.y, bz.right.x, bz.right.y); // right handle\n    }\n  endShape(CLOSE);\n}"
+          }
+        ],
+        "todo": null,
+        "summary": "Get points and bezier coordinates from path(s).",
+        "codetitle": "pathToPoints(obj, [addPoints])"
       }
     ],
     "cat": "Shape"
