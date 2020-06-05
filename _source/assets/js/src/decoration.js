@@ -8,7 +8,8 @@ export function specialChars() {
       element.innerHTML = null;
       chars.forEach((char, i) => {
         const fontSize = 30 - (1.2 * i);
-        const style = `border-bottom-width: ${(i + 1)}px; font-size: ${fontSize}px; top: -${(i + (2 * i))}px; padding:0px ${(i + 1)*.7}px;`;
+        let fs = map(i, 0, chars.length, 30, 20).toPrecision(2);
+        const style = `border-bottom-width: ${(i + 1)}px; font-size: ${fs}px; top: -${(i + (2 * i))}px; padding:0px ${(i + 1)*.7}px;`;
         const node = document.createElement('span');
         node.style.cssText = style;
         const content = document.createTextNode(char);
@@ -21,7 +22,8 @@ export function specialChars() {
   /**
    * not in the reference
    */
-  if ([...document.body.classList].includes('reference') === false) {
+  // if ([...document.body.classList].includes('reference') === false) {
+  if ([...document.body.classList].includes('dont-decorate') === false) {
 
     let elementsShrink = document.querySelectorAll('.textshrink, h1, h2, h3, h4, h5, h6');
 
@@ -29,13 +31,12 @@ export function specialChars() {
       if (element.classList.contains('dont-decorate') !== true) {
         const chars = element.innerText.split('');
         const style = window.getComputedStyle(element, null).getPropertyValue('font-size');
-        let fs = parseFloat(style);
+        let maxSize = parseFloat(style);
         element.innerHTML = null;
-        const minfs = 16;
-        const decr = (fs - minfs) / chars.length;
         chars.forEach((char, i) => {
-          fs -= decr;
-          const style = `border-bottom-width: ${(2 / i)}px; font-size: ${fs}px; top: -${i}px;`;
+          let fs = map(i, 0, chars.length, maxSize, maxSize/2).toPrecision(2);
+          let ts = map(i, 0, chars.length, 0, 5).toPrecision(2);
+          const style = `position:relative;border-bottom-width: ${fs/8}px; font-size: ${fs}px; padding-left:${i/6}px; top: -${ts}px;`;
           const node = document.createElement('span');
           node.className = 'textshrink-item';
           node.style.cssText = style;
@@ -46,6 +47,10 @@ export function specialChars() {
       }
     });
   }
+
+  function map(n, start1, stop1, start2, stop2) {
+    return ((n-start1)/(stop1-start1))*(stop2-start2)+start2;
+  };
 }
 
 

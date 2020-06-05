@@ -4,7 +4,6 @@ title: Basil.js
 hasFeaturedProjects: true
 ---
 
-<h1 class="dont-decorate">{{page.title}}</h1>
 {%- assign featuredProjects = site.pages | where: "layout" , "gallery-item" | where_exp: "item", "item.featured == true" -%}
 <!--
   featured projects:

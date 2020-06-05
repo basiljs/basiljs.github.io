@@ -19,9 +19,18 @@ filter pages based in layout
   <a class="gallery-overview-item-wrapper" href="{{page.url}}">
   <div class="gallery-overview-item">
       <div class="heading-container">
-        <h2>{{page.title}}</h2>
+        <h3 class="gallery-overview-title textshrink">{{page.title}}</h3>
+        <p class="gallery-overview-authors">
+          {%- for author in page.authors -%}
+            {{author.name}}
+            {%- if forloop.last == false -%}
+            ,&nbsp;
+            {%- endif -%}
+          {%- endfor -%}
+        </p>
       </div>
-        <img src="{{page.url}}/thumbnail.png" alt="{{page.title}} Thumbnail" class="gallery-thumbnail">
+      <div class="gallery-overview-thumb" alt="{{page.title}} Thumbnail" style="background-image:url({{page.url}}/thumbnail.png);"></div>
+        <!-- <img src="{{page.url}}/thumbnail.png" alt="{{page.title}} Thumbnail" class="gallery-thumbnail"> -->
         <p>{{page.description}}</p>
     </div>
   </a>

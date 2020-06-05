@@ -6,9 +6,9 @@ order: 1
 ---
 
 
-# Downloads
+# download
 
-## Download basil.js
+## Library
 
 This website is based on the in-progress [basil.js *develop* branch](https://github.com/basiljs/basil.js/tree/develop)  
 In the future, this will link to the:

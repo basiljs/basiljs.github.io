@@ -21,6 +21,10 @@
       {% for item in pages %}{% if item.layout != 'entry' %}{%if item.layout == 'default' or item.layout == 'reference' or item.layout == 'gallery' %}{% if item.url != '/' %}
       <li class="menu-item {% if item.title == page.title %}active{% endif %}"><a href="{{item.url}}"
           class="textgrow menu-link">{{item.title}}</a></li>
+      {%if item.title == 'support'%}
+        <li class="menu-item"><a href="https://basiljs.discourse.group/" target="_blank"
+          class="textgrow menu-link">forum</a></li>
+      {% endif %}
       {% endif %}{% endif %}{% endif %}{% endfor %}
 
     </ul>
