@@ -97,7 +97,7 @@ body {
 
         span {
           position: relative;
-          padding: 0px 4px;
+          padding: 0px 3px;
           font-size: 30px;
           border-bottom: 1px solid $textColor;
         }
@@ -210,6 +210,12 @@ p {
     // vertical-align: bottom
     font-size: 0.9em;
   }
+}
+
+#logo {
+  background-image:url('/assets/images/p5-static.png');
+  width:180px !important;
+  height:130px !important;
 }
 
 .fhnw-logo,
@@ -443,16 +449,18 @@ pre {
 // @Son Please merge this so we don't have
 // double definitions
 .tweet {
-  font-size: 14px;
+  max-width:200px;
   padding-left: 25px;
-  .message,
-  .tweettime {
-  }
-  .message,
-  .tweettime,
-  .twitter-link {
-  }
-  margin-bottom: 0.75em;
+  margin-bottom: 25px;
+}
+.message, .tweettime{
+  font-size: 9pt;
+  line-height:1.3em;
+  font-style:italic;
+}
+.twitter-link {
+  margin-top:10px;
+  margin-left:-25px;
 }
 .sponsors-text {
   font-size: 14px;
@@ -468,7 +476,7 @@ a.textgrow {
 
   span {
     position: relative;
-    padding: 0px 4px;
+    padding: 0px 1px;
     font-size: 30px;
     border-bottom: 1px solid $textColor;
   }
@@ -482,7 +490,7 @@ a.textgrow {
   font-weight: 700;
   span {
     // position: relative;
-    // padding: 0px 4px;
+    // padding: 0px 1px;
     border-bottom: 1px solid $textColor;
   }
 }

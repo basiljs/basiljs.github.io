@@ -6,11 +6,11 @@ import { specialChars, createGuideLines } from "./decoration";
 let p5sketch;
 document.addEventListener("DOMContentLoaded", () => {
   // console.log("hello main");
-  tweets();
   specialChars();
   createGuideLines();
   mobileNav();
   p5sketch = new p5(sketch);
+  tweets();
 });
 
 window.onblur = function() {

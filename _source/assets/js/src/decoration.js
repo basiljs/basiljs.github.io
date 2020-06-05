@@ -7,8 +7,8 @@ export function specialChars() {
       const chars = element.innerText.split('');
       element.innerHTML = null;
       chars.forEach((char, i) => {
-        const fontSize = 30 - (2 * i);
-        const style = `border-bottom-width: ${(i + 1)}px; font-size: ${fontSize}px; top: -${(i + (2 * i))}px;`;
+        const fontSize = 30 - (1.2 * i);
+        const style = `border-bottom-width: ${(i + 1)}px; font-size: ${fontSize}px; top: -${(i + (2 * i))}px; padding:0px ${(i + 1)*.7}px;`;
         const node = document.createElement('span');
         node.style.cssText = style;
         const content = document.createTextNode(char);
