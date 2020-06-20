@@ -34,7 +34,7 @@
     "@babel/plugin-transform-runtime": "7.10.1",
     "@babel/preset-env": "7.10.2",
     "@babel/runtime": "7.10.2",
-    "acorn": "7.1.1",
+    "acorn": "7.3.1",
     "autoprefixer": "9.8.1",
     "babel-loader": "8.1.0",
     "basiljs": "github:basiljs/basil.js#develop",
