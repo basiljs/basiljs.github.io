@@ -42,7 +42,7 @@
     "css-loader": "3.6.0",
     "cssnano": "4.1.10",
     "cz-conventional-changelog": "3.0.2",
-    "documentation": "13.0.1",
+    "documentation": "13.0.2",
     "eslint": "7.2.0",
     "eslint-config-unobtrusive": "1.2.5",
     "eslint-plugin-babel": "5.3.1",
