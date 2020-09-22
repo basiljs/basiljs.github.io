@@ -61,7 +61,7 @@
     "postcss-cli": "7.1.1",
     "postcss-load-config": "2.1.0",
     "postcss-loader": "3.0.0",
-    "sass-loader": "9.0.2",
+    "sass-loader": "9.0.3",
     "ts-loader": "8.0.1",
     "typescript": "3.9.7",
     "webpack": "4.44.0",
