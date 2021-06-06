@@ -39,7 +39,7 @@
     "babel-loader": "8.1.0",
     "basiljs": "github:basiljs/basil.js#develop",
     "cross-env": "7.0.2",
-    "css-loader": "3.6.0",
+    "css-loader": "5.2.6",
     "cssnano": "4.1.10",
     "cz-conventional-changelog": "3.0.2",
     "documentation": "13.0.2",
